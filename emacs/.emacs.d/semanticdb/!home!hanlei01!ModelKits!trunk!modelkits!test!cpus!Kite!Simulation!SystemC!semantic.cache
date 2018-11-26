@@ -1,0 +1,139 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "system_test_1CPU.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/SimpleFlash.h" include nil nil [831 862])
+            ("models/SimpleFlashImp.h" include nil nil [863 897])
+            ("models/RAMBlock.h" include nil nil [898 926])
+            ("models/SimpleBus.h" include nil nil [927 956])
+            ("libKite.tlm.h" include nil nil [957 981])
+            ("models/BasicUART.h" include nil nil [982 1011])
+            ("models/ElfLoader.h" include nil nil [1012 1041])
+            ("DummyPortModule.h" include nil nil [1042 1070])
+            ("adapters/axi_pin_to_tlm.h" include nil nil [1071 1107])
+            ("adapters/axi_tlm_to_pin.h" include nil nil [1108 1144])
+            ("scx/scx.h" include (:system-flag t) nil [1146 1166])
+            ("scx_simcontroller.cpp" include (:system-flag t) nil [1167 1199])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1200 1236])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1237 1270])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1272 1296])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1310 1319])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1320 1333]))                  
+                :type "int")
+                nil [1298 7006]))          
+      :file "system_test_1CPU.cpp"
+      :pointmax 7007
+      :fsize 7006
+      :lastmodtime '(23147 32587 131832 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "DummyPortModule.h"
+      :file "DummyPortModule.h"
+      :fsize 1136
+      :lastmodtime '(22423 32942 0 0))
+    (semanticdb-table "system_test_4CPU.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/SimpleFlash.h" include nil nil [831 862])
+            ("models/SimpleFlashImp.h" include nil nil [863 897])
+            ("models/RAMBlock.h" include nil nil [898 926])
+            ("models/SimpleBus.h" include nil nil [927 956])
+            ("libKite.tlm.h" include nil nil [957 981])
+            ("models/BasicUART.h" include nil nil [982 1011])
+            ("models/ElfLoader.h" include nil nil [1012 1041])
+            ("DummyPortModule.h" include nil nil [1042 1070])
+            ("scx/scx.h" include (:system-flag t) nil [1071 1091])
+            ("scx_simcontroller.cpp" include (:system-flag t) nil [1092 1124])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1125 1161])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1162 1195])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1197 1221])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1235 1244])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1245 1258]))                  
+                :type "int")
+                nil [1223 7380]))          
+      :file "system_test_4CPU.cpp"
+      :pointmax 7381
+      :fsize 7380
+      :lastmodtime '(23137 13791 673900 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++" "-g" "-O0" "-DSC_INCLUDE_DYNAMIC_PROCESSES" "-Wall" "-Wextra" "-Werror" "-Wno-unused-parameter" "-std=c++11" "-DNUM_CPUS=$(CONFIG_CPUS)")) nil [86 213])
+            ("KITE_DIR" variable (:default-value ("./MODELS/Kite/$(MODEL_CONFIG)/gcc/SystemC")) nil [331 384])
+            ("NUM_CPU" variable (:default-value ("$(shell expr match \"$(MODEL_CONFIG)\" \".*\\([1-9]CPU\\)\")")) nil [428 493])
+            ("CONFIG_CPUS" variable (:default-value ("$(shell expr match \"$(MODEL_CONFIG)\" \".*\\([1-9]\\)\")")) nil [493 559])
+            ("$(CM_SYSC_HOME)/makefiles/cm_sysc_common.mak" include nil nil [712 765])
+            ("PMU" variable (:default-value ("True")) nil [766 775])
+            ("system_test" function (:arguments ("system_test.o" "KiteResetImp.o" "$(KITE_DIR)/libKite.tlm.a" "$(KITE_DIR)/lib/libKite.icm.so" "$(KITE_DIR)/lib/libicm_runtime.so" "$(FM_LIB)")) nil [775 1275])
+            ("KiteResetImp.o" function (:arguments ("$(KITE_DIR)/KiteResetImp.cpp")) nil [1276 1445])
+            ("system_test.o" function (:arguments ("system_test_$(NUM_CPU).cpp")) nil [1466 1651])
+            ("system_test.o" function (:arguments ("system_test_$(NUM_CPU).cpp")) nil [1677 1843])
+            ("system_test.o" function (:arguments ("system_test_$(NUM_CPU).cpp")) nil [1848 1963])
+            ("clean" function nil nil [1976 2019]))          
+      :file "Makefile"
+      :pointmax 2021
+      :fsize 2020
+      :lastmodtime '(23022 24816 953998 0)
+      :unmatched-syntax '((bol 710 . 710) (symbol 419 . 427) (semantic-list 402 . 419) (punctuation 401 . 402) (punctuation 399 . 400) (punctuation 398 . 399) (symbol 385 . 397) (bol 385 . 385) (symbol 317 . 330) (semantic-list 303 . 317) (punctuation 302 . 303) (punctuation 300 . 301) (punctuation 299 . 300) (symbol 287 . 298) (bol 287 . 287) (symbol 277 . 286) (semantic-list 263 . 277) (punctuation 262 . 263) (punctuation 260 . 261) (punctuation 259 . 260) (symbol 247 . 258) (bol 247 . 247)))
+    (semanticdb-table "system_test_2CPU.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/SimpleFlash.h" include nil nil [831 862])
+            ("models/SimpleFlashImp.h" include nil nil [863 897])
+            ("models/RAMBlock.h" include nil nil [898 926])
+            ("models/SimpleBus.h" include nil nil [927 956])
+            ("libKite.tlm.h" include nil nil [957 981])
+            ("models/BasicUART.h" include nil nil [982 1011])
+            ("models/ElfLoader.h" include nil nil [1012 1041])
+            ("DummyPortModule.h" include nil nil [1042 1070])
+            ("scx/scx.h" include (:system-flag t) nil [1071 1091])
+            ("scx_simcontroller.cpp" include (:system-flag t) nil [1092 1124])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1125 1161])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1162 1195])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1197 1221])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1235 1244])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1245 1258]))                  
+                :type "int")
+                nil [1223 6313]))          
+      :file "system_test_2CPU.cpp"
+      :pointmax 6314
+      :fsize 6313
+      :lastmodtime '(23137 13791 650901 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!Kite!Simulation!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

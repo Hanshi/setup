@@ -1,0 +1,150 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "GIC500ResetModule.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ARM" type
+               (:members 
+                  ( ("Models" type
+                       (:members 
+                          ( ("Cycle" type
+                               (:members 
+                                  ( ("ModelGIC500" type
+                                       (:members 
+                                          ( ("GIC500ResetModule" type
+                                               (:superclasses 
+                                                  ( ("sc_core::sc_module" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :members 
+                                                  ( ("SC_HAS_PROCESS" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("" variable (:type ("GIC500ResetModule" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [949 967]))                                                          
+                                                        :type "int")
+                                                        (reparse-symbol classsubparts) [934 968])
+                                                    ("public" label nil (reparse-symbol classsubparts) [969 976])
+                                                    ("clk" variable (:type ("sc_core::sc_in_clk" type (:type "class") nil nil)) (reparse-symbol classsubparts) [979 1002])
+                                                    ("cpu_active_0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1031 1064])
+                                                    ("ppi31_0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1067 1095])
+                                                    ("ppi30_0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1098 1126])
+                                                    ("ppi29_0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1129 1157])
+                                                    ("ppi28_0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1160 1188])
+                                                    ("ppi27_0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1191 1219])
+                                                    ("ppi26_0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1222 1250])
+                                                    ("ppi25_0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1253 1281])
+                                                    ("ppi24_0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1284 1312])
+                                                    ("ppi23_0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1315 1343])
+                                                    ("ppi22_0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1346 1374])
+                                                    ("ppi21_0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1377 1405])
+                                                    ("ppi20_0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1408 1436])
+                                                    ("ppi19_0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1439 1467])
+                                                    ("ppi18_0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1470 1498])
+                                                    ("ppi17_0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1501 1529])
+                                                    ("ppi16_0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1532 1560])
+                                                    ("resetn" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1563 1584])
+                                                    ("GIC500ResetModule" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("name" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("sc_core::sc_module_name" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1609 1645]))                                                          
+                                                        :type ("GIC500ResetModule" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1591 2220])
+                                                    ("reset" function (:type "void") (reparse-symbol classsubparts) [2224 2896]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [878 2899]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [854 2902]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [836 2904]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [817 2906]))                  
+                :type "namespace")
+                nil [801 2908]))          
+      :file "GIC500ResetModule.h"
+      :pointmax 2908
+      :fsize 2907
+      :lastmodtime '(22901 6033 0 0)
+      :unmatched-syntax nil))
+  :file "!o!release!CPAK!A53-MP2_NIC-400_GIC-500-SysC!mainline!A53-MP2_NIC-400_GIC-500-SysC-Vmainline-CMSmainline-MKmainline-SOCDmainline!MODELS!GIC500_2Core!gcc483!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

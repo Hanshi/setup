@@ -1,0 +1,1549 @@
+;; Object Regtests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Regtests/"
+  :tables
+  (list
+    (semanticdb-table "regtest_basic.mxscr"
+      :major-mode 'c-mode
+      :tags 
+        '( ("setAppFile" function
+               (:prototype-flag t
+                :type "int")
+                nil [14 62])
+            ("SYSTEM" variable (:constant-flag t) nil [71 77])
+            ("openSystem" function
+               (:prototype-flag t
+                :type "int")
+                nil [98 117])
+            ("step" function
+               (:prototype-flag t
+                :type "int")
+                nil [118 131]))          
+      :file "regtest_basic.mxscr"
+      :pointmax 133
+      :fsize 132
+      :lastmodtime '(20672 44019 0 0)
+      :unmatched-syntax '((number 123 . 129) (string "\"regtest_basic.mxp\"" 109 . 115) (string 42 . 60) (string 25 . 40))
+      :lexical-table 
+        '(("SYSTEM" . ((string "\"regtest_basic.mxp\"" 78 . 97)))
+          )
+)
+    (semanticdb-table "axi4_stub0.mxscr"
+      :major-mode 'c-mode
+      :tags 
+        '( ("regtest_stub.h" include nil nil [14 39]))          
+      :file "axi4_stub0.mxscr"
+      :pointmax 40
+      :fsize 39
+      :lastmodtime '(20608 52695 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "regtest_stub.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("AXI4_Stub_CheckMacros.h" include nil nil [1 35])
+            ("regtest_functions.h" include nil nil [36 66])
+            ("myInstanceId" variable
+               (:default-value "getInstanceID()"
+                :type ("string" type (:type "class") nil nil))
+                nil [141 179])
+            ("myInstanceMemSpaceName" variable
+               (:default-value "\"AXI-Master (Secure)\""
+                :type ("string" type (:type "class") nil nil))
+                nil [180 234])
+            ("LOG_FILE_NAME" variable (:constant-flag t) nil [266 279])
+            ("MX_STATUS_OK" variable (:constant-flag t) nil [306 318])
+            ("MX_STATUS_ERROR" variable (:constant-flag t) nil [330 345])
+            ("RESP_OKAY" variable (:constant-flag t) nil [357 366])
+            ("RESP_EXOKAY" variable (:constant-flag t) nil [384 395])
+            ("RESP_SLVERR" variable (:constant-flag t) nil [411 422])
+            ("RESP_DECERR" variable (:constant-flag t) nil [438 449])
+            ("PRINT_FAIL2" variable (:constant-flag t) nil [467 478])
+            ("PRINT_PASS2" variable (:constant-flag t) nil [646 657])
+            ("PRINT_FAIL3" variable (:constant-flag t) nil [784 795])
+            ("PRINT_FAIL4" variable (:constant-flag t) nil [990 1001])
+            ("PRINT_PASS3" variable (:constant-flag t) nil [1214 1225])
+            ("PRINT" variable (:constant-flag t) nil [1367 1372])
+            ("PRINT_ARG" variable (:constant-flag t) nil [1461 1470])
+            ("GICD_BASE" variable (:constant-flag t) nil [1611 1620])
+            ("GICH_BASE" variable (:constant-flag t) nil [1638 1647])
+            ("GICC_BASE" variable (:constant-flag t) nil [1665 1674])
+            ("GICV_BASE" variable (:constant-flag t) nil [1692 1701])
+            ("OFFSET_GICD_CTLR" variable (:constant-flag t) nil [1721 1737])
+            ("OFFSET_GICD_TYPER" variable (:constant-flag t) nil [1763 1780])
+            ("OFFSET_GICD_IIDR" variable (:constant-flag t) nil [1806 1822])
+            ("OFFSET_GICD_IGROUPR0" variable (:constant-flag t) nil [1848 1868])
+            ("OFFSET_GICD_IGROUPR1" variable (:constant-flag t) nil [1894 1914])
+            ("OFFSET_GICD_IGROUPR2" variable (:constant-flag t) nil [1940 1960])
+            ("OFFSET_GICD_ISENABLER0" variable (:constant-flag t) nil [1986 2008])
+            ("OFFSET_GICD_ISENABLER1" variable (:constant-flag t) nil [2035 2057])
+            ("OFFSET_GICD_ICENABLER0" variable (:constant-flag t) nil [2084 2106])
+            ("OFFSET_GICD_ICENABLER1" variable (:constant-flag t) nil [2133 2155])
+            ("OFFSET_GICD_ISPENDR0" variable (:constant-flag t) nil [2181 2201])
+            ("OFFSET_GICD_ISPENDR1" variable (:constant-flag t) nil [2227 2247])
+            ("OFFSET_GICD_ICPENDR0" variable (:constant-flag t) nil [2274 2294])
+            ("OFFSET_GICD_ICPENDR1" variable (:constant-flag t) nil [2320 2340])
+            ("OFFSET_GICD_ISACTIVER0" variable (:constant-flag t) nil [2367 2389])
+            ("OFFSET_GICD_ISACTIVER1" variable (:constant-flag t) nil [2416 2438])
+            ("OFFSET_GICD_ICACTIVER0" variable (:constant-flag t) nil [2466 2488])
+            ("OFFSET_GICD_ICACTIVER1" variable (:constant-flag t) nil [2515 2537])
+            ("OFFSET_GICD_IPRIORITYR0" variable (:constant-flag t) nil [2565 2588])
+            ("OFFSET_GICD_IPRIORITYR1" variable (:constant-flag t) nil [2613 2636])
+            ("OFFSET_GICD_IPRIORITYR2" variable (:constant-flag t) nil [2661 2684])
+            ("OFFSET_GICD_IPRIORITYR3" variable (:constant-flag t) nil [2709 2732])
+            ("OFFSET_GICD_IPRIORITYR4" variable (:constant-flag t) nil [2757 2780])
+            ("OFFSET_GICD_IPRIORITYR5" variable (:constant-flag t) nil [2805 2828])
+            ("OFFSET_GICD_IPRIORITYR6" variable (:constant-flag t) nil [2853 2876])
+            ("OFFSET_GICD_IPRIORITYR7" variable (:constant-flag t) nil [2901 2924])
+            ("OFFSET_GICD_IPRIORITYR8" variable (:constant-flag t) nil [2949 2972])
+            ("OFFSET_GICD_ITARGETSR0" variable (:constant-flag t) nil [2998 3020])
+            ("OFFSET_GICD_ITARGETSR1" variable (:constant-flag t) nil [3047 3069])
+            ("OFFSET_GICD_ITARGETSR2" variable (:constant-flag t) nil [3096 3118])
+            ("OFFSET_GICD_ITARGETSR3" variable (:constant-flag t) nil [3145 3167])
+            ("OFFSET_GICD_ITARGETSR4" variable (:constant-flag t) nil [3194 3216])
+            ("OFFSET_GICD_ITARGETSR5" variable (:constant-flag t) nil [3243 3265])
+            ("OFFSET_GICD_ITARGETSR6" variable (:constant-flag t) nil [3292 3314])
+            ("OFFSET_GICD_ITARGETSR7" variable (:constant-flag t) nil [3341 3363])
+            ("OFFSET_GICD_ITARGETSR8" variable (:constant-flag t) nil [3390 3412])
+            ("OFFSET_GICD_ICFGR0" variable (:constant-flag t) nil [3440 3458])
+            ("OFFSET_GICD_ICFGR1" variable (:constant-flag t) nil [3484 3502])
+            ("OFFSET_GICD_ICFGR2" variable (:constant-flag t) nil [3528 3546])
+            ("OFFSET_GICD_ICFGR3" variable (:constant-flag t) nil [3572 3590])
+            ("OFFSET_GICD_PPISR" variable (:constant-flag t) nil [3616 3633])
+            ("OFFSET_GICD_SPISR0" variable (:constant-flag t) nil [3659 3677])
+            ("OFFSET_GICD_NSACR0" variable (:constant-flag t) nil [3704 3722])
+            ("OFFSET_GICD_SGIR" variable (:constant-flag t) nil [3748 3764])
+            ("OFFSET_GICD_CPENDSGIR0" variable (:constant-flag t) nil [3790 3812])
+            ("OFFSET_GICD_SPENDSGIR0" variable (:constant-flag t) nil [3839 3861])
+            ("OFFSET_GICD_PIDR4" variable (:constant-flag t) nil [3889 3906])
+            ("OFFSET_GICD_PIDR5" variable (:constant-flag t) nil [3938 3955])
+            ("OFFSET_GICD_PIDR6" variable (:constant-flag t) nil [3987 4004])
+            ("OFFSET_GICD_PIDR7" variable (:constant-flag t) nil [4036 4053])
+            ("OFFSET_GICD_PIDR0" variable (:constant-flag t) nil [4085 4102])
+            ("OFFSET_GICD_PIDR1" variable (:constant-flag t) nil [4134 4151])
+            ("OFFSET_GICD_PIDR2" variable (:constant-flag t) nil [4183 4200])
+            ("OFFSET_GICD_PIDR3" variable (:constant-flag t) nil [4232 4249])
+            ("OFFSET_GICD_CIDR0" variable (:constant-flag t) nil [4282 4299])
+            ("OFFSET_GICD_CIDR1" variable (:constant-flag t) nil [4331 4348])
+            ("OFFSET_GICD_CIDR2" variable (:constant-flag t) nil [4380 4397])
+            ("OFFSET_GICD_CIDR3" variable (:constant-flag t) nil [4429 4446])
+            ("OFFSET_GICC_CTLR" variable (:constant-flag t) nil [4480 4496])
+            ("OFFSET_GICC_PMR" variable (:constant-flag t) nil [4523 4538])
+            ("OFFSET_GICC_BPR" variable (:constant-flag t) nil [4566 4581])
+            ("OFFSET_GICC_IAR" variable (:constant-flag t) nil [4609 4624])
+            ("OFFSET_GICC_EOIR" variable (:constant-flag t) nil [4652 4668])
+            ("OFFSET_GICC_RPR" variable (:constant-flag t) nil [4695 4710])
+            ("OFFSET_GICC_HPPIR" variable (:constant-flag t) nil [4738 4755])
+            ("OFFSET_GICC_ABPR" variable (:constant-flag t) nil [4782 4798])
+            ("OFFSET_GICC_AIAR" variable (:constant-flag t) nil [4826 4842])
+            ("OFFSET_GICC_AEOIR" variable (:constant-flag t) nil [4870 4887])
+            ("OFFSET_GICC_AHPPIR" variable (:constant-flag t) nil [4915 4933])
+            ("OFFSET_GICC_APR0" variable (:constant-flag t) nil [4961 4977])
+            ("OFFSET_GICC_NSAPR0" variable (:constant-flag t) nil [5005 5023])
+            ("OFFSET_GICC_IIDR" variable (:constant-flag t) nil [5050 5066])
+            ("OFFSET_GICC_DIR" variable (:constant-flag t) nil [5093 5108])
+            ("OFFSET_GICV_CTLR" variable (:constant-flag t) nil [5137 5153])
+            ("OFFSET_GICV_PMR" variable (:constant-flag t) nil [5183 5198])
+            ("OFFSET_GICV_BPR" variable (:constant-flag t) nil [5229 5244])
+            ("OFFSET_GICV_IAR" variable (:constant-flag t) nil [5275 5290])
+            ("OFFSET_GICV_EOIR" variable (:constant-flag t) nil [5321 5337])
+            ("OFFSET_GICV_RPR" variable (:constant-flag t) nil [5367 5382])
+            ("OFFSET_GICV_HPPIR" variable (:constant-flag t) nil [5413 5430])
+            ("OFFSET_GICV_ABPR" variable (:constant-flag t) nil [5459 5475])
+            ("OFFSET_GICV_AIAR" variable (:constant-flag t) nil [5505 5521])
+            ("OFFSET_GICV_AEOIR" variable (:constant-flag t) nil [5551 5568])
+            ("OFFSET_GICV_AHPPIR" variable (:constant-flag t) nil [5597 5615])
+            ("OFFSET_GICV_APR0" variable (:constant-flag t) nil [5643 5659])
+            ("OFFSET_GICV_IIDR" variable (:constant-flag t) nil [5689 5705])
+            ("OFFSET_GICV_DIR" variable (:constant-flag t) nil [5735 5750])
+            ("OFFSET_GICH_HCR" variable (:constant-flag t) nil [5783 5798])
+            ("OFFSET_GICH_VTR" variable (:constant-flag t) nil [5825 5840])
+            ("OFFSET_GICH_VMCR" variable (:constant-flag t) nil [5867 5883])
+            ("OFFSET_GICH_MISR" variable (:constant-flag t) nil [5909 5925])
+            ("OFFSET_GICH_EISR0" variable (:constant-flag t) nil [5951 5968])
+            ("OFFSET_GICH_EISR1" variable (:constant-flag t) nil [5993 6010])
+            ("OFFSET_GICH_ELSR0" variable (:constant-flag t) nil [6035 6052])
+            ("OFFSET_GICH_ELSR1" variable (:constant-flag t) nil [6077 6094])
+            ("OFFSET_GICH_APR" variable (:constant-flag t) nil [6119 6134])
+            ("OFFSET_GICH_LR0" variable (:constant-flag t) nil [6161 6176])
+            ("OFFSET_GICH_LR1" variable (:constant-flag t) nil [6203 6218])
+            ("OFFSET_GICH_LR2" variable (:constant-flag t) nil [6245 6260])
+            ("OFFSET_GICH_LR3" variable (:constant-flag t) nil [6287 6302])
+            ("MASK_GICD_CTLR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [6392 6424])
+            ("MASK_GICD_TYPER" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [6425 6458])
+            ("MASK_GICD_IIDR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [6459 6491])
+            ("MASK_GICD_ISENABLER0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [6492 6531])
+            ("MASK_GICD_ICENABLER0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [6532 6571])
+            ("MASK_GICD_IGROUPR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [6572 6608])
+            ("MASK_GICD_ISENABLER" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [6609 6647])
+            ("MASK_GICD_ICENABLER" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [6648 6686])
+            ("MASK_GICD_ISPENDR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [6687 6723])
+            ("MASK_GICD_ICPENDR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [6724 6760])
+            ("MASK_GICD_ISACTIVER0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [6761 6800])
+            ("MASK_GICD_ICACTIVER0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [6801 6840])
+            ("MASK_GICD_IPRIORITYR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [6841 6880])
+            ("MASK_GICD_IPRIORITYR8" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [6881 6921])
+            ("MASK_GICD_ITARGETSR_PPISGI" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [6922 6967])
+            ("MASK_GICD_ITARGETSR_SPI_single_cpu" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [6968 7020])
+            ("MASK_GICD_ITARGETSR_SPI_2_cpus" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7021 7069])
+            ("MASK_GICD_ITARGETSR_SPI_3_cpus" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7070 7118])
+            ("MASK_GICD_ITARGETSR_SPI_4_cpus" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7119 7167])
+            ("MASK_GICD_ITARGETSR_SPI_5_cpus" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7168 7216])
+            ("MASK_GICD_ITARGETSR_SPI_6_cpus" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7217 7265])
+            ("MASK_GICD_ITARGETSR_SPI_7_cpus" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7266 7314])
+            ("MASK_GICD_ITARGETSR_SPI_8_cpus" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7315 7363])
+            ("MASK_GICD_ICFGR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7364 7397])
+            ("MASK_GICD_PPISR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7398 7431])
+            ("MASK_GICD_SPISR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7432 7466])
+            ("MASK_GICD_NSACR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7467 7501])
+            ("MASK_GICD_SGIR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7502 7536])
+            ("MASK_GICD_CPENDSGIR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7537 7576])
+            ("MASK_GICD_SPENDSGIR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7577 7616])
+            ("MASK_GICC_CTLR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7618 7651])
+            ("MASK_GICC_PMR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7652 7685])
+            ("MASK_GICC_BPR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7686 7719])
+            ("MASK_GICC_IAR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7720 7753])
+            ("MASK_GICC_EOIR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7754 7787])
+            ("MASK_GICC_RPR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7788 7821])
+            ("MASK_GICC_HPPIR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7822 7855])
+            ("MASK_GICC_ABPR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7856 7889])
+            ("MASK_GICC_AIAR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7890 7923])
+            ("MASK_GICC_AEOIR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7924 7958])
+            ("MASK_GICC_AHPPIR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7959 7994])
+            ("MASK_GICC_APR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [7995 8027])
+            ("MASK_GICC_NSAPR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8028 8062])
+            ("MASK_GICC_IIDR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8063 8095])
+            ("MASK_GICC_DIR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8096 8128])
+            ("MASK_GICV_CTLR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8129 8162])
+            ("MASK_GICV_PMR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8163 8196])
+            ("MASK_GICV_BPR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8197 8230])
+            ("MASK_GICV_IAR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8231 8265])
+            ("MASK_GICV_EOIR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8266 8300])
+            ("MASK_GICV_RPR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8301 8335])
+            ("MASK_GICV_HPPIR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8336 8370])
+            ("MASK_GICV_ABPR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8371 8404])
+            ("MASK_GICV_AIAR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8405 8439])
+            ("MASK_GICV_AEOIR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8440 8474])
+            ("MASK_GICV_AHPPIR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8475 8509])
+            ("MASK_GICV_APR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8510 8543])
+            ("MASK_GICV_IIDR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8544 8577])
+            ("MASK_GICV_DIR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8578 8612])
+            ("MASK_GICH_HCR" variable
+               (:default-value "0xFFFFFFFE"
+                :type "int")
+                nil [8613 8646])
+            ("MASK_GICH_VTR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8745 8778])
+            ("MASK_GICH_VMCR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8779 8812])
+            ("MASK_GICH_MISR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8813 8846])
+            ("MASK_GICH_EISR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8847 8880])
+            ("MASK_GICH_EISR1" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8881 8914])
+            ("MASK_GICH_ELSR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8915 8948])
+            ("MASK_GICH_ELSR1" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8949 8982])
+            ("MASK_GICH_APR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [8983 9016])
+            ("MASK_GICH_LR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [9017 9049])
+            ("RDMASK_GICD_CTLR" variable
+               (:default-value "0x3"
+                :type "int")
+                nil [9108 9137])
+            ("RDMASK_GICD_CTLR_NS" variable
+               (:default-value "0x1"
+                :type "int")
+                nil [9138 9170])
+            ("RDMASK_GICD_TYPER" variable
+               (:default-value "0xFFFF"
+                :type "int")
+                nil [9171 9204])
+            ("RDMASK_GICD_IIDR" variable
+               (:default-value "0xFF0FFFFF"
+                :type "int")
+                nil [9205 9241])
+            ("RDMASK_GICD_ISENABLER0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [9242 9283])
+            ("RDMASK_GICD_ICENABLER0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [9284 9325])
+            ("RDMASK_GICD_IGROUPR0" variable
+               (:default-value "0xFE00FFFF"
+                :type "int")
+                nil [9326 9365])
+            ("RDMASK_GICD_IGROUPR1" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [9366 9405])
+            ("RDMASK_GICD_ISENABLER" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [9406 9446])
+            ("RDMASK_GICD_ICENABLER" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [9447 9487])
+            ("RDMASK_GICD_ISPENDR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [9488 9527])
+            ("RDMASK_GICD_ICPENDR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [9528 9567])
+            ("RDMASK_GICD_ISACTIVER0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [9568 9609])
+            ("RDMASK_GICD_ICACTIVER0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [9610 9651])
+            ("RDMASK_GICD_IPRIORITYR0" variable
+               (:default-value "0xF8F8F8F8"
+                :type "int")
+                nil [9652 9693])
+            ("RDMASK_GICD_IPRIORITYR4" variable
+               (:default-value "0"
+                :type "int")
+                nil [9694 9726])
+            ("RDMASK_GICD_IPRIORITYR5" variable
+               (:default-value "0"
+                :type "int")
+                nil [9727 9759])
+            ("RDMASK_GICD_IPRIORITYR6" variable
+               (:default-value "0xF8F8F800"
+                :type "int")
+                nil [9760 9801])
+            ("RDMASK_GICD_IPRIORITYR8" variable
+               (:default-value "0xF8F8F8F8"
+                :type "int")
+                nil [9802 9843])
+            ("RDMASK_GICD_ITARGETSR_PPISGI" variable
+               (:default-value "0x01010101"
+                :type "int")
+                nil [9844 9891])
+            ("RDMASK_GICD_ITARGETSR_SPI_single_cpu" variable
+               (:default-value "0"
+                :type "int")
+                nil [9892 9937])
+            ("RDMASK_GICD_ITARGETSR_SPI_2_cpus" variable
+               (:default-value "0x03030303"
+                :type "int")
+                nil [9938 9988])
+            ("RDMASK_GICD_ITARGETSR_SPI_3_cpus" variable
+               (:default-value "0x07070707"
+                :type "int")
+                nil [9989 10039])
+            ("RDMASK_GICD_ITARGETSR_SPI_4_cpus" variable
+               (:default-value "0x0F0F0F0F"
+                :type "int")
+                nil [10040 10090])
+            ("RDMASK_GICD_ITARGETSR_SPI_5_cpus" variable
+               (:default-value "0x1F1F1F1F"
+                :type "int")
+                nil [10091 10141])
+            ("RDMASK_GICD_ITARGETSR_SPI_6_cpus" variable
+               (:default-value "0x3F3F3F3F"
+                :type "int")
+                nil [10142 10192])
+            ("RDMASK_GICD_ITARGETSR_SPI_7_cpus" variable
+               (:default-value "0x7F7F7F7F"
+                :type "int")
+                nil [10193 10243])
+            ("RDMASK_GICD_ITARGETSR_SPI_8_cpus" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [10244 10294])
+            ("RDMASK_GICD_ICFGR0" variable
+               (:default-value "0xAAAAAAAA"
+                :type "int")
+                nil [10295 10334])
+            ("RDMASK_GICD_ICFGR1" variable
+               (:default-value "0x55540000"
+                :type "int")
+                nil [10335 10374])
+            ("RDMASK_GICD_ICFGR2" variable
+               (:default-value "0xAAAAAAAA"
+                :type "int")
+                nil [10375 10414])
+            ("RDMASK_GICD_PPISR" variable
+               (:default-value "0x0000FE00"
+                :type "int")
+                nil [10416 10453])
+            ("RDMASK_GICD_SPISR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [10454 10493])
+            ("RDMASK_GICD_NSACR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [10494 10533])
+            ("RDMASK_GICD_SGIR" variable
+               (:default-value "0x03FF800F"
+                :type "int")
+                nil [10534 10572])
+            ("RDMASK_GICD_CPENDSGIR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [10573 10614])
+            ("RDMASK_GICD_SPENDSGIR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [10615 10656])
+            ("RDMASK_GICD_PIDR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [10657 10692])
+            ("RDMASK_GICD_CIDR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [10693 10728])
+            ("RDMASK_GICC_CTLR_S" variable
+               (:default-value "0x7FF"
+                :type "int")
+                nil [10729 10761])
+            ("RDMASK_GICC_CTLR_NS" variable
+               (:default-value "0x261"
+                :type "int")
+                nil [10762 10795])
+            ("RDMASK_GICC_PMR" variable
+               (:default-value "0x1F"
+                :type "int")
+                nil [10796 10825])
+            ("RDMASK_GICC_BPR" variable
+               (:default-value "0x7"
+                :type "int")
+                nil [10826 10854])
+            ("RDMASK_GICC_IAR" variable
+               (:default-value "0"
+                :type "int")
+                nil [10855 10881])
+            ("RDMASK_GICC_EOIR" variable
+               (:default-value "0x1FFF"
+                :type "int")
+                nil [10882 10913])
+            ("RDMASK_GICC_RPR" variable
+               (:default-value "0"
+                :type "int")
+                nil [10914 10940])
+            ("RDMASK_GICC_HPPIR" variable
+               (:default-value "0"
+                :type "int")
+                nil [10941 10967])
+            ("RDMASK_GICC_ABPR" variable
+               (:default-value "0x7"
+                :type "int")
+                nil [10968 10996])
+            ("RDMASK_GICC_AIAR" variable
+               (:default-value "0"
+                :type "int")
+                nil [10997 11023])
+            ("RDMASK_GICC_AEOIR" variable
+               (:default-value "0"
+                :type "int")
+                nil [11024 11051])
+            ("RDMASK_GICC_AHPPIR" variable
+               (:default-value "0"
+                :type "int")
+                nil [11052 11080])
+            ("RDMASK_GICC_APR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [11081 11115])
+            ("RDMASK_GICC_NSAPR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [11116 11152])
+            ("RDMASK_GICC_IIDR" variable
+               (:default-value "0"
+                :type "int")
+                nil [11153 11178])
+            ("RDMASK_GICC_DIR" variable
+               (:default-value "0x1FFF"
+                :type "int")
+                nil [11179 11211])
+            ("RDMASK_GICV_CTLR" variable
+               (:default-value "0x21F"
+                :type "int")
+                nil [11212 11242])
+            ("RDMASK_GICV_PMR" variable
+               (:default-value "0xF8"
+                :type "int")
+                nil [11243 11272])
+            ("RDMASK_GICV_BPR" variable
+               (:default-value "0x7"
+                :type "int")
+                nil [11273 11301])
+            ("RDMASK_GICV_IAR" variable
+               (:default-value "0"
+                :type "int")
+                nil [11302 11329])
+            ("RDMASK_GICV_EOIR" variable
+               (:default-value "0x1FFF"
+                :type "int")
+                nil [11330 11362])
+            ("RDMASK_GICV_RPR" variable
+               (:default-value "0"
+                :type "int")
+                nil [11363 11392])
+            ("RDMASK_GICV_HPPIR" variable
+               (:default-value "0"
+                :type "int")
+                nil [11393 11420])
+            ("RDMASK_GICV_ABPR" variable
+               (:default-value "0x7"
+                :type "int")
+                nil [11421 11449])
+            ("RDMASK_GICV_AIAR" variable
+               (:default-value "0"
+                :type "int")
+                nil [11450 11477])
+            ("RDMASK_GICV_AEOIR" variable
+               (:default-value "0"
+                :type "int")
+                nil [11478 11505])
+            ("RDMASK_GICV_AHPPIR" variable
+               (:default-value "0"
+                :type "int")
+                nil [11506 11533])
+            ("RDMASK_GICV_APR0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [11534 11569])
+            ("RDMASK_GICV_IIDR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [11570 11605])
+            ("RDMASK_GICV_DIR" variable
+               (:default-value "0x1FFF"
+                :type "int")
+                nil [11606 11638])
+            ("RDMASK_GICH_HCR" variable
+               (:default-value "0xF80000FF"
+                :type "int")
+                nil [11639 11674])
+            ("RDMASK_GICH_VTR" variable
+               (:default-value "0"
+                :type "int")
+                nil [11675 11701])
+            ("RDMASK_GICH_VMCR" variable
+               (:default-value "0xF8FC021F"
+                :type "int")
+                nil [11702 11737])
+            ("RDMASK_GICH_MISR" variable
+               (:default-value "0"
+                :type "int")
+                nil [11738 11764])
+            ("RDMASK_GICH_EISR0" variable
+               (:default-value "0"
+                :type "int")
+                nil [11765 11791])
+            ("RDMASK_GICH_EISR1" variable
+               (:default-value "0"
+                :type "int")
+                nil [11792 11818])
+            ("RDMASK_GICH_ELSR0" variable
+               (:default-value "0"
+                :type "int")
+                nil [11819 11845])
+            ("RDMASK_GICH_ELSR1" variable
+               (:default-value "0"
+                :type "int")
+                nil [11846 11872])
+            ("RDMASK_GICH_APR" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [11873 11908])
+            ("RDMASK_GICH_LR" variable
+               (:default-value "0xFF87FFFF"
+                :type "int")
+                nil [11909 11943])
+            ("TEST_AXI_READ" variable (:constant-flag t) nil [12011 12024])
+            ("TEST_AXI_WRITE" variable (:constant-flag t) nil [12714 12728])
+            ("INIT_AXI_WRITE" variable (:constant-flag t) nil [13704 13718])
+            ("INIT_AXI_WRITE_ABPR" variable (:constant-flag t) nil [15231 15250])
+            ("INIT_AXI_WRITE_CFG2" variable (:constant-flag t) nil [15535 15554])
+            ("INIT_AXI_READ" variable (:constant-flag t) nil [16862 16875])
+            ("AFTER_AXI_READ" variable (:constant-flag t) nil [16948 16962])
+            ("AFTER_AXI_WRITE" variable (:constant-flag t) nil [17112 17127])
+            ("log_file" variable
+               (:default-value "fopen(LOG_FILE_NAME, \"w\")"
+                :type "int")
+                nil [17766 17807])
+            ("componentName" variable
+               (:default-value "\"gic400[0]\""
+                :type ("string" type (:type "class") nil nil))
+                nil [17808 17843])
+            ("regAddrVal" variable
+               (:default-value "OFFSET_GICH_VTR"
+                :type "int")
+                nil [17867 17900])
+            ("regName" variable
+               (:default-value "\"GICH_VTR\""
+                :type ("string" type (:type "class") nil nil))
+                nil [17901 17929])
+            ("expectedValue1" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [17930 17962])
+            ("numBytes" variable
+               (:default-value "4"
+                :type "int")
+                nil [17963 17980])
+            ("mask" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [17981 18003])
+            ("rd_data" variable
+               (:default-value "0x17"
+                :type "int")
+                nil [18004 18023])
+            ("Data0_hi" variable
+               (:default-value "3"
+                :type "int")
+                nil [18024 18039])
+            ("wr_val" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [18040 18062])
+            ("cpuname" variable
+               (:default-value "\"_cpu0\""
+                :type ("string" type (:type "class") nil nil))
+                nil [18064 18088])
+            ("cpunum" variable
+               (:default-value "-1"
+                :type "int")
+                nil [18089 18103])
+            ("spinum" variable
+               (:default-value "-1"
+                :type "int")
+                nil [18104 18118])
+            ("regnum" variable
+               (:default-value "-17"
+                :type "int")
+                nil [18119 18134])
+            ("regnameSpi" variable
+               (:default-value "\"\""
+                :type ("string" type (:type "class") nil nil))
+                nil [18135 18156])
+            ("MAX_CPU" variable
+               (:default-value "8"
+                :type "int")
+                nil [18157 18171])
+            ("MAX_SPI" variable
+               (:default-value "480"
+                :type "int")
+                nil [18172 18188])
+            ("MAX_SPI_IPRIORITYR" variable
+               (:default-value "(MAX_SPI/4)"
+                :type "int")
+                nil [18216 18251])
+            ("MAX_SPI_ITARGETSR" variable
+               (:default-value "(MAX_SPI/4)"
+                :type "int")
+                nil [18252 18286])
+            ("MAX_SPI_ICFGR" variable
+               (:default-value "(MAX_SPI/16)"
+                :type "int")
+                nil [18287 18318])
+            ("MAX_SPI_SPISR" variable
+               (:default-value "(MAX_SPI/32)"
+                :type "int")
+                nil [18319 18350])
+            ("MAX_SPI_ISPENDR" variable
+               (:default-value "(MAX_SPI/32)"
+                :type "int")
+                nil [18351 18384])
+            ("MASK_GICD_ITARGETSR_SPI" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [18386 18429])
+            ("RDMASK_GICD_ITARGETSR_SPI" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [18430 18473])
+            ("igroup_val" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [18475 18501])
+            ("irq0" variable
+               (:default-value "0"
+                :type "int")
+                nil [18502 18515])
+            ("irq1" variable
+               (:default-value "0"
+                :type "int")
+                nil [18516 18529])
+            ("irq2" variable
+               (:default-value "0"
+                :type "int")
+                nil [18530 18543])
+            ("irq3" variable
+               (:default-value "0"
+                :type "int")
+                nil [18544 18557])
+            ("RD_MASK_INT_3_0" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [18558 18591])
+            ("RD_MASK_INT_7_4" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [18592 18625])
+            ("RD_MASK_INT_11_8" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [18626 18660])
+            ("RD_MASK_INT_15_12" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [18661 18696])
+            ("RD_MASK_INT_19_16" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [18697 18732])
+            ("RD_MASK_INT_23_20" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [18733 18768])
+            ("RD_MASK_INT_27_24" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [18769 18804])
+            ("RD_MASK_INT_31_28" variable
+               (:default-value "0xFFFFFFFF"
+                :type "int")
+                nil [18805 18840])
+            ("PRINT_TEST_SUMMARY" variable (:type "int") nil [21596 21615]))          
+      :file "regtest_stub.h"
+      :pointmax 21678
+      :fsize 21677
+      :lastmodtime '(21435 19410 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PRINT_ARG" (spp-arg-list ("File" "Text" "Suffix") 1470 . 1490) . ((semantic-list "{ \\
+  fprintf(File, Text, Suffix); \\
+  message(MX_MSG_INFO, Text, Suffix); \\
+}" 1493 . 1571)))
+          ("GICC_BASE" . ((number "0x2000" 1676 . 1682)))
+          ("OFFSET_GICD_ICENABLER0" . 
+              ((symbol "GICD_BASE" 2108 . 2117) (punctuation "+" 2117 . 2118) (number "0x180" 2118 . 2123)))
+          ("OFFSET_GICD_IPRIORITYR8" . 
+              ((symbol "GICD_BASE" 2973 . 2982) (punctuation "+" 2982 . 2983) (number "0x420" 2983 . 2988)))
+          ("OFFSET_GICD_SPISR0" . 
+              ((symbol "GICD_BASE" 3678 . 3687) (punctuation "+" 3687 . 3688) (number "0xD04" 3688 . 3693)))
+          ("OFFSET_GICV_HPPIR" . 
+              ((symbol "GICV_BASE" 5433 . 5442) (punctuation "+" 5442 . 5443) (number "0x0018" 5443 . 5449)))
+          ("RESP_SLVERR" . ((number "2" 428 . 429)))
+          ("OFFSET_GICD_CTLR" . 
+              ((symbol "GICD_BASE" 1738 . 1747) (punctuation "+" 1747 . 1748) (number "0x000" 1748 . 1753)))
+          ("OFFSET_GICD_IIDR" . 
+              ((symbol "GICD_BASE" 1823 . 1832) (punctuation "+" 1832 . 1833) (number "0x008" 1833 . 1838)))
+          ("OFFSET_GICD_ISENABLER0" . 
+              ((symbol "GICD_BASE" 2010 . 2019) (punctuation "+" 2019 . 2020) (number "0x100" 2020 . 2025)))
+          ("OFFSET_GICD_ICENABLER1" . 
+              ((symbol "GICD_BASE" 2157 . 2166) (punctuation "+" 2166 . 2167) (number "0x184" 2167 . 2172)))
+          ("OFFSET_GICD_PIDR0" . 
+              ((symbol "GICD_BASE" 4109 . 4118) (punctuation "+" 4118 . 4119) (number "0xFE0" 4119 . 4124)))
+          ("OFFSET_GICD_CIDR0" . 
+              ((symbol "GICD_BASE" 4306 . 4315) (punctuation "+" 4315 . 4316) (number "0xFF0" 4316 . 4321)))
+          ("OFFSET_GICC_AIAR" . 
+              ((symbol "GICC_BASE" 4844 . 4853) (punctuation "+" 4853 . 4854) (number "0x0020" 4854 . 4860)))
+          ("AFTER_AXI_READ" (spp-arg-list ("regName" "regAddrVal" "unused_expectedValue1" "unused_mask") 16962 . 17019) . ((symbol "TEST_AXI_READ" 17032 . 17045) (semantic-list "(regName, regAddrVal, unused_expectedValue1, unused_mask)" 17045 . 17102)))
+          ("LOG_FILE_NAME" . ((string "\"test.log\"" 280 . 290)))
+          ("GICV_BASE" . ((number "0x6000" 1703 . 1709)))
+          ("OFFSET_GICD_TYPER" . 
+              ((symbol "GICD_BASE" 1781 . 1790) (punctuation "+" 1790 . 1791) (number "0x004" 1791 . 1796)))
+          ("OFFSET_GICD_IGROUPR0" . 
+              ((symbol "GICD_BASE" 1869 . 1878) (punctuation "+" 1878 . 1879) (number "0x080" 1879 . 1884)))
+          ("OFFSET_GICD_ISENABLER1" . 
+              ((symbol "GICD_BASE" 2059 . 2068) (punctuation "+" 2068 . 2069) (number "0x104" 2069 . 2074)))
+          ("OFFSET_GICD_SPENDSGIR0" . 
+              ((symbol "GICD_BASE" 3863 . 3872) (punctuation "+" 3872 . 3873) (number "0xF20" 3873 . 3878)))
+          ("OFFSET_GICD_PIDR1" . 
+              ((symbol "GICD_BASE" 4158 . 4167) (punctuation "+" 4167 . 4168) (number "0xFE4" 4168 . 4173)))
+          ("OFFSET_GICD_CIDR1" . 
+              ((symbol "GICD_BASE" 4355 . 4364) (punctuation "+" 4364 . 4365) (number "0xFF4" 4365 . 4370)))
+          ("TEST_AXI_READ" (spp-arg-list ("regName" "regAddrVal" "unused_expectedValue1" "unused_mask") 12024 . 12081) . ((semantic-list "{	\\
+    PRINT_ARG(log_file, \"______ TIME: %d\\n\", getTime(\"ns\"))		\\
+    PRINT_ARG(log_file, \"**** read-testing register %s\\n\", regName)	\\
+    PRINT_ARG(log_file, \"****    at addr 0x%x\\n\", regAddrVal)	\\
+    BURST1_READ128( regAddrVal, 4, rd_data, Data0_hi);		\\
+    PRINT_ARG(log_file, \"**** data read via AXI: %x\\n\", rd_data)	\\
+    CHECK_REGISTER_DEBUG_READ(componentName, regName, rd_data);	\\
+    PRINT_ARG(log_file, \"**** AXI_Stub_CheckMacros_Pass: %d\\n\", AXI_Stub_CheckMacros_Pass) \\
+    PRINT_ARG(log_file, \"**** AXI_Stub_CheckMacros_Fail: %d\\n\", AXI_Stub_CheckMacros_Fail) \\
+}" 12082 . 12661)))
+          ("TEST_AXI_WRITE" (spp-arg-list ("regName" "regAddrVal" "wrval" "rd_mask") 12728 . 12765) . ((semantic-list "{ \\
+    int expectedReadVal = wrval & rd_mask;			 \\
+    PRINT_ARG(log_file, \"______ TIME: %d\\n\", getTime(\"ns\"))		\\
+    PRINT_ARG(log_file, \"**** write-testing register %s\\n\", regName)	\\
+    PRINT_ARG(log_file, \"**** at addr 0x%x\\n\", regAddrVal)	\\
+    BURST1_WRITE128( regAddrVal, 4, wrval, Data0_hi);			\\
+    BURST1_READ128( regAddrVal, 4, rd_data, Data0_hi);			\\
+    if (rd_data != expectedReadVal)					\\
+      PRINT_FAIL3(log_file, \"BURST1_READ128 FAILED for register %s. data0_0 wrong: 0x%X != 0x%X \\n\", regName, rd_data, expectedReadVal) \\
+    else								\\
+      PRINT_PASS2(log_file, \"BURST1_READ128 PASSED for register %s (data read is : 0x%X)\\n\", regName, rd_data) \\
+    CHECK_REGISTER_DEBUG_READ(componentName, regName, rd_data); \\
+    PRINT_ARG(log_file, \"**** AXI_Stub_CheckMacros_Pass: %d\\n\", AXI_Stub_CheckMacros_Pass) \\
+    PRINT_ARG(log_file, \"**** AXI_Stub_CheckMacros_Fail: %d\\n\", AXI_Stub_CheckMacros_Fail) \\
+}" 12766 . 13694)))
+          ("INIT_AXI_WRITE_CFG2" (spp-arg-list ("regName" "regAddrVal" "wrval" "rd_mask") 15554 . 15591) . ((semantic-list "{ \\
+    int expectedReadVal = (wrval & rd_mask) | 0x55555555;			   \\
+    PRINT_ARG(log_file, \"______ TIME: %d\\n\", getTime(\"ns\"))		\\
+    BURST1_READ128( regAddrVal, 4, rd_data, Data0_hi);			\\
+    PRINT_ARG(log_file, \">>>>>>>>>>>>>>>>> NON-SECURE mode: %d\\n\", gblvar_PROT) \\
+    PRINT_ARG(log_file, \">>>> wrval: 0x%x\\n\", wrval) \\
+    PRINT_ARG(log_file, \">>>> rd_mask: 0x%x\\n\", rd_mask) \\
+    PRINT_ARG(log_file, \">>>> expectedReadVal_mask: 0x%x\\n\", expectedReadVal) \\
+    PRINT_ARG(log_file, \"**** writing to register %s\\n\", regName)	\\
+    PRINT_ARG(log_file, \"**** at addr 0x%x\\n\", regAddrVal)	\\
+    BURST1_WRITE128( regAddrVal, 4, wrval, Data0_hi);			\\
+    BURST1_READ128( regAddrVal, 4, rd_data, Data0_hi);			\\
+    _num_tests++;							\\
+    if (rd_data != expectedReadVal)					\\
+      PRINT_FAIL3(log_file, \"BURST1_READ128 FAILED for initial write to register %s. data0_0 wrong: 0x%X != 0x%X \\n\", regName, rd_data, expectedReadVal) \\
+    else \\
+      PRINT_PASS2(log_file, \"BURST1_READ128 PASSED for initial write to register %s. data read: 0x%X \\n\", regName, rd_data) \\
+    PRINT_ARG(log_file, \"**** AXI_Stub_CheckMacros_Pass: %d\\n\", AXI_Stub_CheckMacros_Pass) \\
+    PRINT_ARG(log_file, \"**** AXI_Stub_CheckMacros_Fail: %d\\n\", AXI_Stub_CheckMacros_Fail) \\
+}" 15592 . 16852)))
+          ("MX_STATUS_ERROR" . ((number "1" 347 . 348)))
+          ("RESP_OKAY" . ((number "0" 374 . 375)))
+          ("OFFSET_GICD_IGROUPR1" . 
+              ((symbol "GICD_BASE" 1915 . 1924) (punctuation "+" 1924 . 1925) (number "0x084" 1925 . 1930)))
+          ("OFFSET_GICD_PIDR2" . 
+              ((symbol "GICD_BASE" 4207 . 4216) (punctuation "+" 4216 . 4217) (number "0xFE8" 4217 . 4222)))
+          ("OFFSET_GICD_CIDR2" . 
+              ((symbol "GICD_BASE" 4404 . 4413) (punctuation "+" 4413 . 4414) (number "0xFF8" 4414 . 4419)))
+          ("OFFSET_GICC_APR0" . 
+              ((symbol "GICC_BASE" 4979 . 4988) (punctuation "+" 4988 . 4989) (number "0x00D0" 4989 . 4995)))
+          ("OFFSET_GICC_DIR" . 
+              ((symbol "GICC_BASE" 5110 . 5119) (punctuation "+" 5119 . 5120) (number "0x1000" 5120 . 5126)))
+          ("OFFSET_GICV_IAR" . 
+              ((symbol "GICV_BASE" 5295 . 5304) (punctuation "+" 5304 . 5305) (number "0x000C" 5305 . 5311)))
+          ("OFFSET_GICV_AIAR" . 
+              ((symbol "GICV_BASE" 5525 . 5534) (punctuation "+" 5534 . 5535) (number "0x0020" 5535 . 5541)))
+          ("OFFSET_GICH_EISR0" . 
+              ((symbol "GICH_BASE" 5969 . 5978) (punctuation "+" 5978 . 5979) (number "0x20" 5979 . 5983)))
+          ("INIT_AXI_READ" (spp-arg-list ("regName" "regAddrVal" "unused_expectedValue1" "unused_mask") 16875 . 16932) . ((semantic-list "{	\\
+}" 16933 . 16938)))
+          ("OFFSET_GICD_IGROUPR2" . 
+              ((symbol "GICD_BASE" 1961 . 1970) (punctuation "+" 1970 . 1971) (number "0x088" 1971 . 1976)))
+          ("OFFSET_GICD_ICPENDR0" . 
+              ((symbol "GICD_BASE" 2295 . 2304) (punctuation "+" 2304 . 2305) (number "0x280" 2305 . 2310)))
+          ("OFFSET_GICD_ITARGETSR0" . 
+              ((symbol "GICD_BASE" 3022 . 3031) (punctuation "+" 3031 . 3032) (number "0x800" 3032 . 3037)))
+          ("OFFSET_GICD_PIDR3" . 
+              ((symbol "GICD_BASE" 4256 . 4265) (punctuation "+" 4265 . 4266) (number "0xFEC" 4266 . 4271)))
+          ("OFFSET_GICD_CIDR3" . 
+              ((symbol "GICD_BASE" 4453 . 4462) (punctuation "+" 4462 . 4463) (number "0xFFC" 4463 . 4468)))
+          ("OFFSET_GICC_NSAPR0" . 
+              ((symbol "GICC_BASE" 5024 . 5033) (punctuation "+" 5033 . 5034) (number "0x00E0" 5034 . 5040)))
+          ("OFFSET_GICH_EISR1" . 
+              ((symbol "GICH_BASE" 6011 . 6020) (punctuation "+" 6020 . 6021) (number "0x24" 6021 . 6025)))
+          ("RESP_EXOKAY" . ((number "1" 401 . 402)))
+          ("OFFSET_GICD_ICPENDR1" . 
+              ((symbol "GICD_BASE" 2341 . 2350) (punctuation "+" 2350 . 2351) (number "0x284" 2351 . 2356)))
+          ("OFFSET_GICD_IPRIORITYR0" . 
+              ((symbol "GICD_BASE" 2589 . 2598) (punctuation "+" 2598 . 2599) (number "0x400" 2599 . 2604)))
+          ("OFFSET_GICD_ITARGETSR1" . 
+              ((symbol "GICD_BASE" 3071 . 3080) (punctuation "+" 3080 . 3081) (number "0x804" 3081 . 3086)))
+          ("OFFSET_GICD_PIDR4" . 
+              ((symbol "GICD_BASE" 3913 . 3922) (punctuation "+" 3922 . 3923) (number "0xFD0" 3923 . 3928)))
+          ("OFFSET_GICC_CTLR" . 
+              ((symbol "GICC_BASE" 4497 . 4506) (punctuation "+" 4506 . 4507) (number "0x0000" 4507 . 4513)))
+          ("OFFSET_GICC_EOIR" . 
+              ((symbol "GICC_BASE" 4669 . 4678) (punctuation "+" 4678 . 4679) (number "0x0010" 4679 . 4685)))
+          ("OFFSET_GICC_AEOIR" . 
+              ((symbol "GICC_BASE" 4889 . 4898) (punctuation "+" 4898 . 4899) (number "0x0024" 4899 . 4905)))
+          ("OFFSET_GICC_IIDR" . 
+              ((symbol "GICC_BASE" 5067 . 5076) (punctuation "+" 5076 . 5077) (number "0x00FC" 5077 . 5083)))
+          ("OFFSET_GICV_APR0" . 
+              ((symbol "GICV_BASE" 5663 . 5672) (punctuation "+" 5672 . 5673) (number "0x00D0" 5673 . 5679)))
+          ("OFFSET_GICH_VTR" . 
+              ((symbol "GICH_BASE" 5843 . 5852) (punctuation "+" 5852 . 5853) (number "0x04" 5853 . 5857)))
+          ("OFFSET_GICH_VMCR" . 
+              ((symbol "GICH_BASE" 5885 . 5894) (punctuation "+" 5894 . 5895) (number "0x08" 5895 . 5899)))
+          ("OFFSET_GICH_LR0" . 
+              ((symbol "GICH_BASE" 6179 . 6188) (punctuation "+" 6188 . 6189) (number "0x100" 6189 . 6194)))
+          ("INIT_AXI_WRITE" (spp-arg-list ("regName" "regAddrVal" "wrval" "rd_mask") 13718 . 13755) . ((semantic-list "{ \\
+    int expectedReadVal = wrval & rd_mask;			 \\
+    PRINT_ARG(log_file, \"______ TIME: %d\\n\", getTime(\"ns\"))		\\
+    PRINT_ARG(log_file, \">>>>>>>>>>>>>>>>> NON-SECURE mode: %d\\n\", gblvar_PROT) \\
+    PRINT_ARG(log_file, \">>>> wrval: 0x%x\\n\", wrval) \\
+    PRINT_ARG(log_file, \">>>> rd_mask: 0x%x\\n\", rd_mask) \\
+    PRINT_ARG(log_file, \">>>> expectedReadVal_mask: 0x%x\\n\", expectedReadVal) \\
+    PRINT_ARG(log_file, \"**** writing to register %s\\n\", regName)	\\
+    PRINT_ARG(log_file, \"**** at addr 0x%x\\n\", regAddrVal)	\\
+    BURST1_WRITE128( regAddrVal, 4, wrval, Data0_hi);			\\
+    BURST1_READ128( regAddrVal, 4, rd_data, Data0_hi);			\\
+    _num_tests++;							\\
+    if ((rd_data & rd_mask) != (wrval & rd_mask))			\\
+      PRINT_FAIL3(log_file, \"BURST1_READ128 FAILED for initial write to register %s. data0_0 wrong: 0x%X != 0x%X \\n\", regName, rd_data, expectedReadVal) \\
+    else                                                                                                                                                 \\
+      PRINT_PASS2(log_file, \"BURST1_READ128 PASSED for initial write to register %s. data0: 0x%X \\n\", regName, rd_data) \\
+    PRINT_ARG(log_file, \"**** AXI_Stub_CheckMacros_Pass: %d\\n\", AXI_Stub_CheckMacros_Pass) \\
+    PRINT_ARG(log_file, \"**** AXI_Stub_CheckMacros_Fail: %d\\n\", AXI_Stub_CheckMacros_Fail) \\
+}" 13756 . 15092)))
+          ("PRINT_PASS2" (spp-arg-list ("File" "Text" "InfoText" "Suffix") 657 . 687) . ((semantic-list "{ \\
+  fprintf(File, Text, InfoText, Suffix); \\
+  AXI_Stub_CheckMacros_Pass++; \\
+}" 690 . 771)))
+          ("GICH_BASE" . ((number "0x4000" 1649 . 1655)))
+          ("OFFSET_GICD_IPRIORITYR1" . 
+              ((symbol "GICD_BASE" 2637 . 2646) (punctuation "+" 2646 . 2647) (number "0x404" 2647 . 2652)))
+          ("OFFSET_GICD_ITARGETSR2" . 
+              ((symbol "GICD_BASE" 3120 . 3129) (punctuation "+" 3129 . 3130) (number "0x808" 3130 . 3135)))
+          ("OFFSET_GICD_PIDR5" . 
+              ((symbol "GICD_BASE" 3962 . 3971) (punctuation "+" 3971 . 3972) (number "0xFD4" 3972 . 3977)))
+          ("OFFSET_GICC_PMR" . 
+              ((symbol "GICC_BASE" 4540 . 4549) (punctuation "+" 4549 . 4550) (number "0x0004" 4550 . 4556)))
+          ("OFFSET_GICC_BPR" . 
+              ((symbol "GICC_BASE" 4583 . 4592) (punctuation "+" 4592 . 4593) (number "0x0008" 4593 . 4599)))
+          ("OFFSET_GICC_AHPPIR" . 
+              ((symbol "GICC_BASE" 4935 . 4944) (punctuation "+" 4944 . 4945) (number "0x0028" 4945 . 4951)))
+          ("OFFSET_GICH_ELSR0" . 
+              ((symbol "GICH_BASE" 6053 . 6062) (punctuation "+" 6062 . 6063) (number "0x30" 6063 . 6067)))
+          ("OFFSET_GICH_LR1" . 
+              ((symbol "GICH_BASE" 6221 . 6230) (punctuation "+" 6230 . 6231) (number "0x104" 6231 . 6236)))
+          ("PRINT_PASS3" (spp-arg-list ("File" "Text" "RegName" "Suffix" "ExpData") 1225 . 1263) . ((semantic-list "{ \\
+  fprintf(File, Text, RegName, Suffix, ExpData); \\
+  AXI_Stub_CheckMacros_Pass++; \\
+}" 1266 . 1355)))
+          ("OFFSET_GICD_ISPENDR0" . 
+              ((symbol "GICD_BASE" 2202 . 2211) (punctuation "+" 2211 . 2212) (number "0x200" 2212 . 2217)))
+          ("OFFSET_GICD_IPRIORITYR2" . 
+              ((symbol "GICD_BASE" 2685 . 2694) (punctuation "+" 2694 . 2695) (number "0x408" 2695 . 2700)))
+          ("OFFSET_GICD_ITARGETSR3" . 
+              ((symbol "GICD_BASE" 3169 . 3178) (punctuation "+" 3178 . 3179) (number "0x80C" 3179 . 3184)))
+          ("OFFSET_GICD_ICFGR0" . 
+              ((symbol "GICD_BASE" 3459 . 3468) (punctuation "+" 3468 . 3469) (number "0xC00" 3469 . 3474)))
+          ("OFFSET_GICD_NSACR0" . 
+              ((symbol "GICD_BASE" 3723 . 3732) (punctuation "+" 3732 . 3733) (number "0xE00" 3733 . 3738)))
+          ("OFFSET_GICD_PIDR6" . 
+              ((symbol "GICD_BASE" 4011 . 4020) (punctuation "+" 4020 . 4021) (number "0xFD5" 4021 . 4026)))
+          ("OFFSET_GICC_RPR" . 
+              ((symbol "GICC_BASE" 4712 . 4721) (punctuation "+" 4721 . 4722) (number "0x0014" 4722 . 4728)))
+          ("OFFSET_GICC_HPPIR" . 
+              ((symbol "GICC_BASE" 4756 . 4765) (punctuation "+" 4765 . 4766) (number "0x0018" 4766 . 4772)))
+          ("OFFSET_GICV_CTLR" . 
+              ((symbol "GICV_BASE" 5157 . 5166) (punctuation "+" 5166 . 5167) (number "0x0000" 5167 . 5173)))
+          ("OFFSET_GICV_EOIR" . 
+              ((symbol "GICV_BASE" 5341 . 5350) (punctuation "+" 5350 . 5351) (number "0x0010" 5351 . 5357)))
+          ("OFFSET_GICV_IIDR" . 
+              ((symbol "GICV_BASE" 5709 . 5718) (punctuation "+" 5718 . 5719) (number "0x00FC" 5719 . 5725)))
+          ("OFFSET_GICH_ELSR1" . 
+              ((symbol "GICH_BASE" 6095 . 6104) (punctuation "+" 6104 . 6105) (number "0x34" 6105 . 6109)))
+          ("OFFSET_GICH_LR2" . 
+              ((symbol "GICH_BASE" 6263 . 6272) (punctuation "+" 6272 . 6273) (number "0x108" 6273 . 6278)))
+          ("RESP_DECERR" . ((number "3" 455 . 456)))
+          ("PRINT_FAIL2" (spp-arg-list ("File" "Text" "Data" "ExpData") 478 . 505) . ((semantic-list "{ \\
+  fprintf(File, Text, Data, ExpData);	\\
+  message(MX_MSG_WARNING, Text, Data, ExpData); \\
+  AXI_Stub_CheckMacros_Fail++; \\
+}" 508 . 636)))
+          ("OFFSET_GICD_ISPENDR1" . 
+              ((symbol "GICD_BASE" 2248 . 2257) (punctuation "+" 2257 . 2258) (number "0x204" 2258 . 2263)))
+          ("OFFSET_GICD_IPRIORITYR3" . 
+              ((symbol "GICD_BASE" 2733 . 2742) (punctuation "+" 2742 . 2743) (number "0x40C" 2743 . 2748)))
+          ("OFFSET_GICD_ITARGETSR4" . 
+              ((symbol "GICD_BASE" 3218 . 3227) (punctuation "+" 3227 . 3228) (number "0x810" 3228 . 3233)))
+          ("OFFSET_GICD_ICFGR1" . 
+              ((symbol "GICD_BASE" 3503 . 3512) (punctuation "+" 3512 . 3513) (number "0xC04" 3513 . 3518)))
+          ("OFFSET_GICD_SGIR" . 
+              ((symbol "GICD_BASE" 3765 . 3774) (punctuation "+" 3774 . 3775) (number "0xF00" 3775 . 3780)))
+          ("OFFSET_GICD_PIDR7" . 
+              ((symbol "GICD_BASE" 4060 . 4069) (punctuation "+" 4069 . 4070) (number "0xFDC" 4070 . 4075)))
+          ("OFFSET_GICV_DIR" . 
+              ((symbol "GICV_BASE" 5755 . 5764) (punctuation "+" 5764 . 5765) (number "0x1000" 5765 . 5771)))
+          ("OFFSET_GICH_MISR" . 
+              ((symbol "GICH_BASE" 5927 . 5936) (punctuation "+" 5936 . 5937) (number "0x10" 5937 . 5941)))
+          ("OFFSET_GICH_LR3" . 
+              ((symbol "GICH_BASE" 6305 . 6314) (punctuation "+" 6314 . 6315) (number "0x10C" 6315 . 6320)))
+          ("MX_STATUS_OK" . ((number "0" 320 . 321)))
+          ("PRINT_FAIL3" (spp-arg-list ("File" "Text" "RegName" "Data" "ExpData") 795 . 831) . ((semantic-list "{ \\
+  fprintf(File, Text, RegName, Data, ExpData);	\\
+  message(MX_MSG_WARNING, Text, RegName, Data, ExpData); \\
+  AXI_Stub_CheckMacros_Fail++; \\
+}" 834 . 980)))
+          ("GICD_BASE" . ((number "0x1000" 1622 . 1628)))
+          ("OFFSET_GICD_IPRIORITYR4" . 
+              ((symbol "GICD_BASE" 2781 . 2790) (punctuation "+" 2790 . 2791) (number "0x410" 2791 . 2796)))
+          ("OFFSET_GICD_ITARGETSR5" . 
+              ((symbol "GICD_BASE" 3267 . 3276) (punctuation "+" 3276 . 3277) (number "0x814" 3277 . 3282)))
+          ("OFFSET_GICD_ICFGR2" . 
+              ((symbol "GICD_BASE" 3547 . 3556) (punctuation "+" 3556 . 3557) (number "0xC08" 3557 . 3562)))
+          ("OFFSET_GICC_ABPR" . 
+              ((symbol "GICC_BASE" 4800 . 4809) (punctuation "+" 4809 . 4810) (number "0x001C" 4810 . 4816)))
+          ("PRINT_FAIL4" (spp-arg-list ("File" "Text" "RegName" "Data" "ExpData" "mask") 1001 . 1043) . ((semantic-list "{ \\
+  fprintf(File, Text, RegName, Data, ExpData, mask);	\\
+  message(MX_MSG_WARNING, Text, RegName, Data, ExpData, mask); \\
+  AXI_Stub_CheckMacros_Fail++; \\
+}" 1046 . 1204)))
+          ("PRINT" (spp-arg-list ("File" "Text") 1372 . 1384) . ((semantic-list "{ \\
+  fprintf(File, Text); \\
+  message(MX_MSG_INFO, Text); \\
+}" 1387 . 1449)))
+          ("OFFSET_GICD_ICACTIVER0" . 
+              ((symbol "GICD_BASE" 2490 . 2499) (punctuation "+" 2499 . 2500) (number "0x380" 2500 . 2505)))
+          ("OFFSET_GICD_IPRIORITYR5" . 
+              ((symbol "GICD_BASE" 2829 . 2838) (punctuation "+" 2838 . 2839) (number "0x414" 2839 . 2844)))
+          ("OFFSET_GICD_ITARGETSR6" . 
+              ((symbol "GICD_BASE" 3316 . 3325) (punctuation "+" 3325 . 3326) (number "0x818" 3326 . 3331)))
+          ("OFFSET_GICD_ICFGR3" . 
+              ((symbol "GICD_BASE" 3591 . 3600) (punctuation "+" 3600 . 3601) (number "0xC0C" 3601 . 3606)))
+          ("OFFSET_GICH_HCR" . 
+              ((symbol "GICH_BASE" 5801 . 5810) (punctuation "+" 5810 . 5811) (number "0x00" 5811 . 5815)))
+          ("INIT_AXI_WRITE_ABPR" (spp-arg-list ("regName" "regAddrVal" "wrval" "rd_mask") 15250 . 15287) . ((semantic-list "{ \\
+    int ABPR_wrval;   \\
+    if(wrval < 3)     \\
+      ABPR_wrval = 3; \\
+    else              \\
+      ABPR_wrval = 4; \\
+    INIT_AXI_WRITE(regName, regAddrVal, ABPR_wrval, rd_mask); \\
+  }" 15288 . 15479)))
+          ("OFFSET_GICD_ISACTIVER0" . 
+              ((symbol "GICD_BASE" 2391 . 2400) (punctuation "+" 2400 . 2401) (number "0x300" 2401 . 2406)))
+          ("OFFSET_GICD_ICACTIVER1" . 
+              ((symbol "GICD_BASE" 2539 . 2548) (punctuation "+" 2548 . 2549) (number "0x384" 2549 . 2554)))
+          ("OFFSET_GICD_IPRIORITYR6" . 
+              ((symbol "GICD_BASE" 2877 . 2886) (punctuation "+" 2886 . 2887) (number "0x418" 2887 . 2892)))
+          ("OFFSET_GICD_ITARGETSR7" . 
+              ((symbol "GICD_BASE" 3365 . 3374) (punctuation "+" 3374 . 3375) (number "0x81C" 3375 . 3380)))
+          ("OFFSET_GICC_IAR" . 
+              ((symbol "GICC_BASE" 4626 . 4635) (punctuation "+" 4635 . 4636) (number "0x000C" 4636 . 4642)))
+          ("OFFSET_GICV_PMR" . 
+              ((symbol "GICV_BASE" 5203 . 5212) (punctuation "+" 5212 . 5213) (number "0x0004" 5213 . 5219)))
+          ("OFFSET_GICV_BPR" . 
+              ((symbol "GICV_BASE" 5249 . 5258) (punctuation "+" 5258 . 5259) (number "0x0008" 5259 . 5265)))
+          ("OFFSET_GICV_ABPR" . 
+              ((symbol "GICV_BASE" 5479 . 5488) (punctuation "+" 5488 . 5489) (number "0x001C" 5489 . 5495)))
+          ("OFFSET_GICV_AEOIR" . 
+              ((symbol "GICV_BASE" 5571 . 5580) (punctuation "+" 5580 . 5581) (number "0x0024" 5581 . 5587)))
+          ("OFFSET_GICV_AHPPIR" . 
+              ((symbol "GICV_BASE" 5617 . 5626) (punctuation "+" 5626 . 5627) (number "0x0028" 5627 . 5633)))
+          ("OFFSET_GICD_ISACTIVER1" . 
+              ((symbol "GICD_BASE" 2440 . 2449) (punctuation "+" 2449 . 2450) (number "0x304" 2450 . 2455)))
+          ("OFFSET_GICD_IPRIORITYR7" . 
+              ((symbol "GICD_BASE" 2925 . 2934) (punctuation "+" 2934 . 2935) (number "0x41C" 2935 . 2940)))
+          ("OFFSET_GICD_ITARGETSR8" . 
+              ((symbol "GICD_BASE" 3414 . 3423) (punctuation "+" 3423 . 3424) (number "0x820" 3424 . 3429)))
+          ("OFFSET_GICD_PPISR" . 
+              ((symbol "GICD_BASE" 3634 . 3643) (punctuation "+" 3643 . 3644) (number "0xD00" 3644 . 3649)))
+          ("OFFSET_GICD_CPENDSGIR0" . 
+              ((symbol "GICD_BASE" 3814 . 3823) (punctuation "+" 3823 . 3824) (number "0xF10" 3824 . 3829)))
+          ("OFFSET_GICV_RPR" . 
+              ((symbol "GICV_BASE" 5387 . 5396) (punctuation "+" 5396 . 5397) (number "0x0014" 5397 . 5403)))
+          ("OFFSET_GICH_APR" . 
+              ((symbol "GICH_BASE" 6137 . 6146) (punctuation "+" 6146 . 6147) (number "0xF0" 6147 . 6151)))
+          ("AFTER_AXI_WRITE" (spp-arg-list ("regName" "regAddrVal" "unused_expectedValue1" "unused_mask") 17127 . 17184) . ((symbol "TEST_AXI_READ" 17197 . 17210) (semantic-list "(regName, regAddrVal, unused_expectedValue1, unused_mask)" 17210 . 17267)))
+          )
+)
+    (semanticdb-table "regtest_functions.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_tmp_memRead_data" variable (:type "int") nil [72 143])
+            ("_memRead_data" variable (:type "int") nil [72 143])
+            ("_tmp_regRead_data" variable (:type "int") nil [72 143])
+            ("_regRead_data" variable (:type "int") nil [72 143])
+            ("_tmp_numBytes" variable (:type "int") nil [144 239])
+            ("_tmp_address" variable (:type "int") nil [144 239])
+            ("_tmp_initValue" variable (:type "int") nil [144 239])
+            ("_tmp_depositValue" variable (:type "int") nil [144 239])
+            ("_tmp_expectedValue" variable (:type "int") nil [144 239])
+            ("_tmp_i" variable (:type "int") nil [144 239])
+            ("_tmp_value" variable (:type "int") nil [240 307])
+            ("_tmp_value0" variable (:type "int") nil [240 307])
+            ("_tmp_value1" variable (:type "int") nil [240 307])
+            ("_tmp_value2" variable (:type "int") nil [240 307])
+            ("_tmp_value3" variable (:type "int") nil [240 307])
+            ("_tmp_myInstanceId" variable (:type ("string" type (:type "class") nil nil)) nil [308 393])
+            ("_tmp_myInstanceMemSpaceName" variable (:type ("string" type (:type "class") nil nil)) nil [308 393])
+            ("_tmp_componentName" variable (:type ("string" type (:type "class") nil nil)) nil [308 393])
+            ("_tmp_mode" variable (:type ("string" type (:type "class") nil nil)) nil [308 393])
+            ("_num_tests" variable
+               (:default-value "0"
+                :type "int")
+                nil [394 413])
+            ("MEMORY_DEBUG_READ" variable (:constant-flag t) nil [700 717])
+            ("REGISTER_DEBUG_READ" variable (:constant-flag t) nil [1232 1251])
+            ("MEMORY_DEBUG_WRITE" variable (:constant-flag t) nil [1538 1556])
+            ("REGISTER_DEBUG_WRITE" variable (:constant-flag t) nil [2057 2077])
+            ("CHECK_MEMORY_DEBUG_READ" variable (:constant-flag t) nil [2311 2334])
+            ("CHECK_REGISTER_DEBUG_READ" variable (:constant-flag t) nil [2954 2979])
+            ("CHECK_MEMORY_READ" variable (:constant-flag t) nil [3994 4011])
+            ("CHECK_REGISTER_READ" variable (:constant-flag t) nil [4896 4915])
+            ("CHECK_MEMORY_READ_WRITE" variable (:constant-flag t) nil [5948 5971])
+            ("CHECK_REGISTER_READ_WRITE" variable (:constant-flag t) nil [7451 7476])
+            ("CHECK_REGISTER_READ_WRITEIGNORE" variable (:constant-flag t) nil [9441 9472])
+            ("CHECK_MEMORY_DEBUG_RW" variable (:constant-flag t) nil [10747 10768])
+            ("CHECK_REGISTER_VALUE" variable (:constant-flag t) nil [11972 11992])
+            ("PRINT_TEST_SUMMARY" variable (:constant-flag t) nil [13166 13184]))          
+      :file "regtest_functions.h"
+      :pointmax 13507
+      :fsize 13506
+      :lastmodtime '(20608 52695 0 0)
+      :unmatched-syntax '((close-paren 10342 . 10343) (punctuation 10338 . 10339) (semantic-list #("{  \\
+  CHECK_MEMORY_READ(myInstanceId, myInstanceMemSpaceName, numBytes, regReadAddress, expectedValue);  \\
+  CHECK_REGISTER_DEBUG_READ(componentName, regName, expectedValue);  \\
+}" 0 1 (macros (("expectedValue" symbol "expectedValue" 10324 . 10337) ("numBytes" symbol "numBytes" 10314 . 10322) ("regReadAddress" symbol "address" 10305 . 10312) ("regName" symbol "regName" 10296 . 10303) ("componentName" symbol "componentName" 10281 . 10294) ("myInstanceMemSpaceName" symbol "myInstanceMemSpaceName" 10257 . 10279) ("myInstanceId" symbol "myInstanceId" 10243 . 10255)))) 10223 . 10338) (punctuation 10216 . 10217) (semantic-list #("{  \\
+    CADIRegWrite(componentName, regName, regValue);  \\
+}" 0 1 (macros (("regValue" symbol "depositValue" 10203 . 10215) ("regName" symbol "regName" 10194 . 10201) ("componentName" symbol "componentName" 10179 . 10192)))) 10158 . 10216))
+      :lexical-table 
+        '(("REGISTER_DEBUG_WRITE" (spp-arg-list ("componentName" "regName" "regValue") 2077 . 2111) . ((semantic-list "{  \\
+    CADIRegWrite(componentName, regName, regValue);  \\
+}" 2115 . 2176)))
+          ("CHECK_REGISTER_READ_WRITE" (spp-arg-list ("myInstanceId" "myInstanceMemSpaceName" "componentName" "regName" "address" "numBytes" "depositValue" "expectedValue") 7476 . 7586) . ((semantic-list "{ \\
+  CHECK_BURST1_128BIT_WRITE(address, 4, depositValue, 0x0, MX_STATUS_OK, log_file, \"AXI Memory Write\"); \\
+  _num_tests++; \\
+  CHECK_REGISTER_READ(myInstanceId, myInstanceMemSpaceName, componentName, regName, address, numBytes, expectedValue);  \\
+  /* Disabling this and adding an additional macro to do this since the sdsim complains about macro being too long  \\
+  MEMORY_DEBUG_WRITE(myInstanceId, myInstanceMemSpaceName, numBytes, address, depositValue); \\
+  CHECK_REGISTER_READ(myInstanceId, myInstanceMemSpaceName, componentName, regName, address, numBytes, expectedValue);  \\
+   */ \\
+  REGISTER_DEBUG_WRITE(componentName, regName, depositValue); \\
+  CHECK_REGISTER_READ(myInstanceId, myInstanceMemSpaceName, componentName, regName, address, numBytes, expectedValue); \\
+}" 7587 . 8366)))
+          ("CHECK_REGISTER_VALUE" (spp-arg-list ("mode" "myInstanceId" "myInstanceMemSpaceName" "componentName" "regName" "address" "numBytes" "depositValue" "expectedValue") 11992 . 12108) . ((semantic-list "{  \\
+  REGISTER_DEBUG_READ(componentName, regName, _tmp_initValue);  \\
+  if (mode == \"R\")  \\
+  {  \\
+    CHECK_REGISTER_READ(myInstanceId, myInstanceMemSpaceName, componentName, regName, address, numBytes, expectedValue);  \\
+  }  \\
+  if (mode == \"R/W\") {  \\
+    CHECK_REGISTER_READ_WRITE(myInstanceId, myInstanceMemSpaceName, componentName, regName, address, numBytes, depositValue, expectedValue); \\
+    REGISTER_DEBUG_WRITE(componentName, regName, _tmp_initValue); \\
+    CHECK_REGISTER_READ(myInstanceId, myInstanceMemSpaceName, componentName, regName, address, numBytes, _tmp_initValue); \\
+  }  \\
+  if (mode == \"R/WI\")  {  \\
+    CHECK_REGISTER_READ_WRITEIGNORE(myInstanceId, myInstanceMemSpaceName, componentName, regName, address, numBytes, depositValue, expectedValue, _tmp_initValue); \\
+    REGISTER_DEBUG_WRITE(myInstanceId, regName, _tmp_initValue); \\
+    CHECK_REGISTER_READ(myInstanceId, myInstanceMemSpaceName, componentName, regName, address, numBytes, _tmp_initValue); \\
+  }  \\
+}" 12110 . 13101)))
+          ("CHECK_MEMORY_DEBUG_READ" (spp-arg-list ("myInstanceId" "myInstanceMemSpaceName" "numBytes" "address" "expectedValue") 2334 . 2406) . ((semantic-list "{  \\
+  MEMORY_DEBUG_READ(myInstanceId, myInstanceMemSpaceName, numBytes, address, _memRead_data);  \\
+  _num_tests++;  \\
+  if (_memRead_data == expectedValue) {  \\
+    PRINT_PASS(log_file, \"%s %s \\n\", \"Memory Debug Read Passed\" , \"Passed\");  \\
+  } else {  \\
+    PRINT_FAIL(log_file, \"%s FAILED (Memory Debug Read data value wrong: 0x%X != 0x%X)\\n\", \"Memory Read Debug\", _memRead_data, expectedValue)  \\
+  }  \\
+}" 2407 . 2817)))
+          ("MEMORY_DEBUG_READ" (spp-arg-list ("myInstanceId" "myInstanceMemSpaceName" "numBytes" "readAddress" "readData") 717 . 788) . ((semantic-list "{ \\
+  readData = 0; \\
+  if(numBytes > 16) message(MX_MSG_WARNING, \"Maximum number of bytes that can be read at one time are 16\"); \\
+  for (_tmp_i = 0; _tmp_i < numBytes; _tmp_i++) { \\
+    _tmp_memRead_data = CADIMemRead(myInstanceId, myInstanceMemSpaceName, readAddress + _tmp_i); \\
+    readData =  readData | (_tmp_memRead_data << 8*_tmp_i); \\
+  } \\
+}" 789 . 1141)))
+          ("REGISTER_DEBUG_READ" (spp-arg-list ("componentName" "regName" "regReadData") 1251 . 1288) . ((semantic-list "{ \\
+  regReadData = CADIRegRead(componentName, regName); \\
+}" 1289 . 1349)))
+          ("CHECK_REGISTER_READ_WRITEIGNORE" (spp-arg-list ("myInstanceId" "myInstanceMemSpaceName" "componentName" "regName" "address" "numBytes" "depositValue" "expectedValue" "initValue") 9472 . 9593) . 
+              ((open-paren "{" 9594 . 9595) (symbol "CHECK_BURST1_128BIT_WRITE" 9601 . 9626) (semantic-list "(address, 4, depositValue, 0x0, MX_STATUS_OK, log_file, \"AXI Memory Write\")" 9626 . 9701) (punctuation ";" 9701 . 9702) (symbol "_num_tests" 9708 . 9718) (punctuation "+" 9718 . 9719) (punctuation "+" 9719 . 9720) (punctuation ";" 9720 . 9721) (symbol "CHECK_REGISTER_READ" 9727 . 9746) (semantic-list "(myInstanceId, myInstanceMemSpaceName, componentName, regName, address, numBytes, initValue)" 9746 . 9838) (punctuation ";" 9838 . 9839)))
+          ("CHECK_REGISTER_DEBUG_READ" (spp-arg-list ("componentName" "regName" "expectedValue") 2979 . 3018) . ((semantic-list "{  \\
+  REGISTER_DEBUG_READ(componentName, regName, _tmp_regRead_data);  \\
+  _num_tests++;  \\
+  if (_tmp_regRead_data == expectedValue) {  \\
+    PRINT_PASS(log_file, \"%s %s \\n\", \"Register Debug Read Passed\" , \"Passed\");  \\
+  } else {  \\
+    PRINT_FAIL(log_file, \"%s FAILED (Register Debug Read data value wrong: 0x%X != 0x%X)\\n\", \"Register Read Debug\", _tmp_regRead_data, expectedValue)  \\
+  }  \\
+}" 3019 . 3416)))
+          ("MEMORY_DEBUG_WRITE" (spp-arg-list ("myInstanceId" "myInstanceMemSpaceName" "numBytes" "writeAddress" "writeValue") 1556 . 1630) . ((semantic-list "{ \\
+ if(numBytes > 16) message(MX_MSG_WARNING, \"Maximum number of bytes that can be written at one time are 16\"); \\
+ for (_tmp_i = 0; _tmp_i < numBytes; _tmp_i++) { \\
+  _tmp_value0 = (writeValue >> _tmp_i * 8) & 0xFF;  \\
+  CADIMemWrite(myInstanceId, myInstanceMemSpaceName, (writeAddress + _tmp_i), _tmp_value0);	\\
+ } \\
+}" 1633 . 1954)))
+          ("CHECK_MEMORY_READ" (spp-arg-list ("myInstanceId" "myInstanceMemSpaceName" "numBytes" "memReadAddress" "expectedValue") 4011 . 4090) . ((semantic-list "{  \\
+  CHECK_MEMORY_DEBUG_READ(myInstanceId, myInstanceMemSpaceName, numBytes, memReadAddress, expectedValue);  \\
+  CHECK_BURST1_128BIT_READ_PART1(memReadAddress,4);  \\
+  CHECK_BURST1_128BIT_READ_PART2(expectedValue, 0x0, MX_STATUS_OK, log_file, \"AXI Memory Read Access Check\");  \\
+  _num_tests++;  \\
+}" 4091 . 4393)))
+          ("CHECK_MEMORY_READ_WRITE" (spp-arg-list ("myInstanceId" "myInstanceMemSpaceName" "numBytes" "address" "depositValue" "expectedValue") 5971 . 6057) . ((semantic-list "{  \\
+  MEMORY_DEBUG_WRITE(myInstanceId, myInstanceMemSpaceName, numBytes, address, depositValue); \\
+  CHECK_MEMORY_READ(myInstanceId, myInstanceMemSpaceName, numBytes, address, expectedValue);  \\  \\
+  CHECK_BURST1_128BIT_WRITE(address, 4, depositValue, 0x0, MX_STATUS_OK, log_file, \"AXI Memory Write\"); \\
+  _num_tests++;  \\
+  CHECK_MEMORY_READ(myInstanceId, myInstanceMemSpaceName, numBytes, address, expectedValue);  \\
+}" 6058 . 6479)))
+          ("PRINT_TEST_SUMMARY" . ((semantic-list "{ \\
+  if ((AXI_Stub_CheckMacros_Fail == 0) && (_num_tests == AXI_Stub_CheckMacros_Pass)) \\
+    message(MX_MSG_INFO, \" Test Passed (%d tests attempted)\", _num_tests); \\
+  else \\
+    message(MX_MSG_ERROR, \" Test Failed, AXI Fails: %d, Test Fails: %d\", AXI_Stub_CheckMacros_Fail, _num_tests - AXI_Stub_CheckMacros_Pass); \\
+}" 13185 . 13506)))
+          ("CHECK_REGISTER_READ" (spp-arg-list ("myInstanceId" "myInstanceMemSpaceName" "componentName" "regName" "regReadAddress" "numBytes" "expectedValue") 4915 . 5018) . ((semantic-list "{  \\
+  CHECK_MEMORY_READ(myInstanceId, myInstanceMemSpaceName, numBytes, regReadAddress, expectedValue);  \\
+  CHECK_REGISTER_DEBUG_READ(componentName, regName, expectedValue);  \\
+}" 5019 . 5199)))
+          ("CHECK_MEMORY_DEBUG_RW" (spp-arg-list ("myInstanceId" "myInstanceMemSpaceName" "componentName" "regName" "address" "numBytes" "depositValue" "expectedValue") 10768 . 10878) . ((semantic-list "{ \\
+  MEMORY_DEBUG_WRITE(myInstanceId, myInstanceMemSpaceName, numBytes, address, depositValue); \\
+  CHECK_REGISTER_READ(myInstanceId, myInstanceMemSpaceName, componentName, regName, address, numBytes, expectedValue); \\
+}" 10882 . 11103)))
+          )
+)
+    (semanticdb-table "regreads.h"
+      :major-mode 'c-mode
+      :tags nil
+      :file "regreads.h"
+      :pointmax 11586
+      :fsize 11585
+      :lastmodtime '(20763 60390 0 0)
+      :unmatched-syntax '((semantic-list 11507 . 11585) (symbol 11492 . 11507) (semantic-list 11545 . 11568) (punctuation 11518 . 11519) (string 11508 . 11518) (semantic-list 11413 . 11491) (symbol 11398 . 11413) (semantic-list 11451 . 11474) (punctuation 11424 . 11425) (string 11414 . 11424) (semantic-list 11319 . 11397) (symbol 11304 . 11319) (semantic-list 11357 . 11380) (punctuation 11330 . 11331) (string 11320 . 11330) (semantic-list 11225 . 11303) (symbol 11210 . 11225) (semantic-list 11263 . 11286) (punctuation 11236 . 11237) (string 11226 . 11236) (semantic-list 11129 . 11209) (symbol 11114 . 11129) (semantic-list 11167 . 11191) (punctuation 11140 . 11141) (string 11130 . 11140) (semantic-list 10887 . 10975) (symbol 10873 . 10887) (semantic-list 10929 . 10955) (punctuation 10900 . 10901) (string 10888 . 10900) (semantic-list 10646 . 10734) (symbol 10632 . 10646) (semantic-list 10688 . 10714) (punctuation 10659 . 10660) (string 10647 . 10659) (semantic-list 10547 . 10631) (symbol 10533 . 10547) (semantic-list 10587 . 10612) (punctuation 10559 . 10560) (string 10548 . 10559) (semantic-list 10448 . 10532) (symbol 10433 . 10448) (semantic-list 10488 . 10513) (punctuation 10460 . 10461) (string 10449 . 10460) (semantic-list 10352 . 10432) (symbol 10338 . 10352) (semantic-list 10390 . 10414) (punctuation 10363 . 10364) (string 10353 . 10363) (semantic-list 10257 . 10337) (symbol 10242 . 10257) (semantic-list 10295 . 10319) (punctuation 10268 . 10269) (string 10258 . 10268) (semantic-list 10046 . 10130) (symbol 10032 . 10046) (semantic-list 10086 . 10111) (punctuation 10058 . 10059) (string 10047 . 10058) (semantic-list 9947 . 10031) (symbol 9932 . 9947) (semantic-list 9987 . 10012) (punctuation 9959 . 9960) (string 9948 . 9959) (semantic-list 9839 . 9931) (symbol 9825 . 9839) (semantic-list 9883 . 9910) (punctuation 9853 . 9854) (string 9840 . 9853) (semantic-list 9622 . 9706) (symbol 9608 . 9622) (semantic-list 9662 . 9687) (punctuation 9634 . 9635) (string 9623 . 9634) (semantic-list 9523 . 9607) (symbol 9508 . 9523) (semantic-list 9563 . 9588) (punctuation 9535 . 9536) (string 9524 . 9535) (semantic-list 9419 . 9507) (symbol 9405 . 9419) (semantic-list 9461 . 9487) (punctuation 9432 . 9433) (string 9420 . 9432) (semantic-list 9324 . 9404) (symbol 9310 . 9324) (semantic-list 9362 . 9386) (punctuation 9335 . 9336) (string 9325 . 9335) (semantic-list 9115 . 9195) (symbol 9101 . 9115) (semantic-list 9153 . 9177) (punctuation 9126 . 9127) (string 9116 . 9126) (semantic-list 9020 . 9100) (symbol 9005 . 9020) (semantic-list 9058 . 9082) (punctuation 9031 . 9032) (string 9021 . 9031) (semantic-list 8924 . 9004) (symbol 8909 . 8924) (semantic-list 8962 . 8986) (punctuation 8935 . 8936) (string 8925 . 8935) (semantic-list 8824 . 8908) (symbol 8809 . 8824) (semantic-list 8864 . 8889) (punctuation 8836 . 8837) (string 8825 . 8836) (semantic-list 8613 . 8697) (symbol 8599 . 8613) (semantic-list 8653 . 8678) (punctuation 8625 . 8626) (string 8614 . 8625) (semantic-list 8506 . 8598) (symbol 8491 . 8506) (semantic-list 8550 . 8577) (punctuation 8520 . 8521) (string 8507 . 8520) (semantic-list 8406 . 8490) (symbol 8391 . 8406) (semantic-list 8446 . 8471) (punctuation 8418 . 8419) (string 8407 . 8418) (semantic-list 8298 . 8390) (symbol 8284 . 8298) (semantic-list 8342 . 8369) (punctuation 8312 . 8313) (string 8299 . 8312) (semantic-list 8081 . 8165) (symbol 8067 . 8081) (semantic-list 8121 . 8146) (punctuation 8093 . 8094) (string 8082 . 8093) (semantic-list 7982 . 8066) (symbol 7967 . 7982) (semantic-list 8022 . 8047) (punctuation 7994 . 7995) (string 7983 . 7994) (semantic-list 7878 . 7966) (symbol 7864 . 7878) (semantic-list 7920 . 7946) (punctuation 7891 . 7892) (string 7879 . 7891) (semantic-list 7781 . 7863) (symbol 7767 . 7781) (semantic-list 7821 . 7845) (punctuation 7794 . 7795) (string 7782 . 7794) (semantic-list 7572 . 7652) (symbol 7558 . 7572) (semantic-list 7610 . 7634) (punctuation 7583 . 7584) (string 7573 . 7583) (semantic-list 7475 . 7557) (symbol 7460 . 7475) (semantic-list 7515 . 7539) (punctuation 7488 . 7489) (string 7476 . 7488) (semantic-list 7378 . 7458) (symbol 7364 . 7378) (semantic-list 7416 . 7440) (punctuation 7389 . 7390) (string 7379 . 7389) (semantic-list 7118 . 7207) (symbol 7103 . 7118) (semantic-list 7160 . 7185) (punctuation 7132 . 7133) (string 7119 . 7132) (ELSE 7096 . 7100) (semantic-list 7007 . 7095) (symbol 6992 . 7007) (semantic-list 7049 . 7074) (punctuation 7021 . 7022) (string 7008 . 7021) (semantic-list 6971 . 6989) (IF 6969 . 6971) (semantic-list 6911 . 6965) (symbol 6897 . 6911) (number 6963 . 6964) (string 6912 . 6924) (semantic-list 6842 . 6896) (symbol 6828 . 6842) (number 6894 . 6895) (string 6843 . 6855) (semantic-list 6773 . 6827) (symbol 6759 . 6773) (number 6825 . 6826) (string 6774 . 6786) (semantic-list 6704 . 6758) (symbol 6690 . 6704) (number 6756 . 6757) (string 6705 . 6717) (semantic-list 6635 . 6689) (symbol 6621 . 6635) (number 6687 . 6688) (string 6636 . 6648) (semantic-list 6566 . 6620) (symbol 6552 . 6566) (number 6618 . 6619) (string 6567 . 6579) (semantic-list 6497 . 6551) (symbol 6483 . 6497) (number 6549 . 6550) (string 6498 . 6510) (semantic-list 6428 . 6482) (symbol 6414 . 6428) (number 6480 . 6481) (string 6429 . 6441) (semantic-list 6359 . 6413) (symbol 6345 . 6359) (number 6411 . 6412) (string 6360 . 6372) (semantic-list 6290 . 6344) (symbol 6276 . 6290) (number 6342 . 6343) (string 6291 . 6303) (semantic-list 6221 . 6275) (symbol 6207 . 6221) (number 6273 . 6274) (string 6222 . 6234) (semantic-list 6152 . 6206) (symbol 6138 . 6152) (number 6204 . 6205) (string 6153 . 6165) (semantic-list 5561 . 5742) (semantic-list 5518 . 5560) (FOR 5515 . 5518) (semantic-list 5339 . 5514) (semantic-list 5296 . 5338) (FOR 5293 . 5296) (semantic-list 5203 . 5291) (symbol 5189 . 5203) (semantic-list 5245 . 5271) (punctuation 5216 . 5217) (string 5204 . 5216) (semantic-list 5005 . 5187) (semantic-list 4962 . 5004) (FOR 4959 . 4962) (semantic-list 4865 . 4958) (symbol 4850 . 4865) (semantic-list 4911 . 4937) (punctuation 4881 . 4882) (string 4866 . 4881) (semantic-list 4756 . 4849) (symbol 4741 . 4756) (semantic-list 4802 . 4828) (punctuation 4772 . 4773) (string 4757 . 4772) (semantic-list 4541 . 4739) (semantic-list 4494 . 4540) (FOR 4491 . 4494) (semantic-list 4369 . 4489) (symbol 4355 . 4369) (semantic-list 4421 . 4458) (punctuation 4387 . 4388) (string 4370 . 4387) (semantic-list 4234 . 4354) (symbol 4220 . 4234) (semantic-list 4286 . 4323) (punctuation 4252 . 4253) (string 4235 . 4252) (semantic-list 4099 . 4219) (symbol 4085 . 4099) (semantic-list 4151 . 4188) (punctuation 4117 . 4118) (string 4100 . 4117) (semantic-list 3964 . 4084) (symbol 3950 . 3964) (semantic-list 4016 . 4053) (punctuation 3982 . 3983) (string 3965 . 3982) (semantic-list 3829 . 3949) (symbol 3815 . 3829) (semantic-list 3881 . 3918) (punctuation 3847 . 3848) (string 3830 . 3847) (semantic-list 3694 . 3814) (symbol 3680 . 3694) (semantic-list 3746 . 3783) (punctuation 3712 . 3713) (string 3695 . 3712) (semantic-list 3559 . 3679) (symbol 3545 . 3559) (semantic-list 3611 . 3648) (punctuation 3577 . 3578) (string 3560 . 3577) (semantic-list 3424 . 3544) (symbol 3410 . 3424) (semantic-list 3476 . 3513) (punctuation 3442 . 3443) (string 3425 . 3442) (semantic-list 3212 . 3408) (semantic-list 3164 . 3211) (FOR 3161 . 3164) (semantic-list 3047 . 3159) (symbol 3032 . 3047) (semantic-list 3101 . 3133) (punctuation 3066 . 3067) (string 3048 . 3066) (semantic-list 2919 . 3031) (symbol 2904 . 2919) (semantic-list 2973 . 3005) (punctuation 2938 . 2939) (string 2920 . 2938) (semantic-list 2791 . 2903) (symbol 2776 . 2791) (semantic-list 2845 . 2877) (punctuation 2810 . 2811) (string 2792 . 2810) (semantic-list 2663 . 2775) (symbol 2648 . 2663) (semantic-list 2717 . 2749) (punctuation 2682 . 2683) (string 2664 . 2682) (semantic-list 2535 . 2647) (symbol 2520 . 2535) (semantic-list 2589 . 2621) (punctuation 2554 . 2555) (string 2536 . 2554) (semantic-list 2407 . 2519) (symbol 2392 . 2407) (semantic-list 2461 . 2493) (punctuation 2426 . 2427) (string 2408 . 2426) (semantic-list 2279 . 2391) (symbol 2264 . 2279) (semantic-list 2333 . 2365) (punctuation 2298 . 2299) (string 2280 . 2298) (semantic-list 2151 . 2263) (symbol 2136 . 2151) (semantic-list 2205 . 2237) (punctuation 2170 . 2171) (string 2152 . 2170) (semantic-list 1030 . 2133) (semantic-list 985 . 1029) (FOR 982 . 985) (semantic-list 902 . 980) (symbol 888 . 902) (number 978 . 979) (punctuation 920 . 921) (string 903 . 920) (semantic-list 809 . 887) (symbol 795 . 809) (number 885 . 886) (punctuation 827 . 828) (string 810 . 827) (semantic-list 686 . 794) (symbol 672 . 686) (semantic-list 738 . 769) (punctuation 704 . 705) (string 687 . 704) (semantic-list 563 . 671) (symbol 549 . 563) (semantic-list 615 . 646) (punctuation 581 . 582) (string 564 . 581) (semantic-list 449 . 548) (symbol 434 . 449) (semantic-list 497 . 525) (punctuation 465 . 466) (string 450 . 465) (semantic-list 354 . 433) (symbol 340 . 354) (semantic-list 407 . 432) (string 355 . 366) (semantic-list 254 . 339) (symbol 240 . 254) (semantic-list 293 . 319) (string 255 . 267) (semantic-list 160 . 239) (symbol 145 . 160) (semantic-list 195 . 220) (string 161 . 174) (semantic-list 98 . 143) (symbol 84 . 98) (number 141 . 142) (number 130 . 139) (string 99 . 110)))
+    (semanticdb-table "regwrites.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("BURST1_READ128" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("OFFSET_GICD_IGROUPR0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3038 3059])
+                    ("" variable (:type ("igroup_val" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3063 3074])
+                    ("" variable (:type ("Data0_hi" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3075 3084]))                  
+                :type "int")
+                nil [3022 3085])
+            ("irq0" variable
+               (:default-value "igroup_val & 1"
+                :type "int")
+                nil [3086 3108])
+            ("irq1" variable
+               (:default-value "igroup_val & (1 << 1)"
+                :type "int")
+                nil [3109 3138])
+            ("irq2" variable
+               (:default-value "igroup_val & (1 << 2)"
+                :type "int")
+                nil [3139 3168])
+            ("irq3" variable
+               (:default-value "igroup_val & (1 << 3)"
+                :type "int")
+                nil [3169 3198])
+            ("irq0" variable
+               (:default-value "igroup_val & (1 << 4)"
+                :type "int")
+                nil [3754 3783])
+            ("irq1" variable
+               (:default-value "igroup_val & (1 << 5)"
+                :type "int")
+                nil [3784 3813])
+            ("irq2" variable
+               (:default-value "igroup_val & (1 << 6)"
+                :type "int")
+                nil [3814 3843])
+            ("irq3" variable
+               (:default-value "igroup_val & (1 << 7)"
+                :type "int")
+                nil [3844 3873])
+            ("irq0" variable
+               (:default-value "igroup_val & (1 << 8)"
+                :type "int")
+                nil [4429 4458])
+            ("irq1" variable
+               (:default-value "igroup_val & (1 << 9)"
+                :type "int")
+                nil [4459 4488])
+            ("irq2" variable
+               (:default-value "igroup_val & (1 << 10)"
+                :type "int")
+                nil [4489 4519])
+            ("irq3" variable
+               (:default-value "igroup_val & (1 << 11)"
+                :type "int")
+                nil [4520 4550])
+            ("irq0" variable
+               (:default-value "igroup_val & (1 << 12)"
+                :type "int")
+                nil [5110 5140])
+            ("irq1" variable
+               (:default-value "igroup_val & (1 << 13)"
+                :type "int")
+                nil [5141 5171])
+            ("irq2" variable
+               (:default-value "igroup_val & (1 << 14)"
+                :type "int")
+                nil [5172 5202])
+            ("irq3" variable
+               (:default-value "igroup_val & (1 << 15)"
+                :type "int")
+                nil [5203 5233])
+            ("irq0" variable
+               (:default-value "igroup_val & (1 << 16)"
+                :type "int")
+                nil [5797 5827])
+            ("irq1" variable
+               (:default-value "igroup_val & (1 << 17)"
+                :type "int")
+                nil [5828 5858])
+            ("irq2" variable
+               (:default-value "igroup_val & (1 << 18)"
+                :type "int")
+                nil [5859 5889])
+            ("irq3" variable
+               (:default-value "igroup_val & (1 << 19)"
+                :type "int")
+                nil [5890 5920])
+            ("irq0" variable
+               (:default-value "igroup_val & (1 << 20)"
+                :type "int")
+                nil [6484 6514])
+            ("irq1" variable
+               (:default-value "igroup_val & (1 << 21)"
+                :type "int")
+                nil [6515 6545])
+            ("irq2" variable
+               (:default-value "igroup_val & (1 << 22)"
+                :type "int")
+                nil [6546 6576])
+            ("irq3" variable
+               (:default-value "igroup_val & (1 << 23)"
+                :type "int")
+                nil [6577 6607])
+            ("irq0" variable
+               (:default-value "igroup_val & (1 << 24)"
+                :type "int")
+                nil [7171 7201])
+            ("irq1" variable
+               (:default-value "igroup_val & (1 << 25)"
+                :type "int")
+                nil [7202 7232])
+            ("irq2" variable
+               (:default-value "igroup_val & (1 << 26)"
+                :type "int")
+                nil [7233 7263])
+            ("irq3" variable
+               (:default-value "igroup_val & (1 << 27)"
+                :type "int")
+                nil [7264 7294])
+            ("irq0" variable
+               (:default-value "igroup_val & (1 << 28)"
+                :type "int")
+                nil [7858 7888])
+            ("irq1" variable
+               (:default-value "igroup_val & (1 << 29)"
+                :type "int")
+                nil [7889 7919])
+            ("irq2" variable
+               (:default-value "igroup_val & (1 << 30)"
+                :type "int")
+                nil [7920 7950])
+            ("irq3" variable
+               (:default-value "igroup_val & (1 << 31)"
+                :type "int")
+                nil [7951 7981]))          
+      :file "regwrites.h"
+      :pointmax 19131
+      :fsize 19130
+      :lastmodtime '(20763 60390 0 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!primecells!PL490!Regtests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

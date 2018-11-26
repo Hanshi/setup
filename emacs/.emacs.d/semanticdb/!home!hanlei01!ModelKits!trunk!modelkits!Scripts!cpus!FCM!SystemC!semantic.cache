@@ -1,0 +1,156 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "createSysCMakefiles.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("xml.etree.ElementTree" include nil nil [1852 1886])
+            ("os.path" include nil nil [1887 1901])
+            ("glob" include nil nil [1902 1913])
+            ("sys" include nil nil [1914 1924])
+            ("xmlFileSearch" variable nil nil [1966 1999])
+            ("systemcHome" variable nil nil [2000 2050])
+            ("makefileName" variable nil nil [2052 2075])
+            ("makefileInternalName" variable nil nil [2076 2116])
+            ("makefilePmuName" variable nil nil [2117 2147])
+            ("tarmacPrometheus" variable nil nil [2149 2196])
+            ("tarmacAnanke" variable nil nil [2197 2236])
+            ("tarmacLibAnanke" variable nil nil [2237 2293])
+            ("tarmacLibPrometheus" variable nil nil [2294 2358])
+            ("prometheusBco" variable nil nil [2359 2409])
+            ("anankeBco" variable nil nil [2410 2452])
+            ("CoreConfig" type
+               (:members 
+                  ( ("_modelName" variable nil (reparse-symbol indented_block_body) [2544 2559])
+                    ("_bigCoreType" variable nil (reparse-symbol indented_block_body) [2564 2581])
+                    ("_littleCoreType" variable nil (reparse-symbol indented_block_body) [2604 2624])
+                    ("_numLittleCores" variable nil (reparse-symbol indented_block_body) [2640 2659])
+                    ("_numBigCores" variable nil (reparse-symbol indented_block_body) [2664 2680])
+                    ("_littleCoreTarmacPresent" variable nil (reparse-symbol indented_block_body) [2685 2717])
+                    ("_bigCoreTarmacPresent" variable nil (reparse-symbol indented_block_body) [2722 2751])
+                    ("_systemCFlags" variable nil (reparse-symbol indented_block_body) [2756 2774])
+                    ("_tarmacFlags" variable nil (reparse-symbol indented_block_body) [2779 2796])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [2839 2864]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2815 2819])
+                            ("xmlFile" variable nil (reparse-symbol function_parameters) [2821 2828]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2802 2865])
+                    ("isSingleCoreType" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2991 2995]))                          )
+                        (reparse-symbol indented_block_body) [2970 3129])
+                    ("getSingleCoreType" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3156 3160]))                          )
+                        (reparse-symbol indented_block_body) [3134 3473])
+                    ("getBigCoreType" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3497 3501]))                          )
+                        (reparse-symbol indented_block_body) [3478 3537])
+                    ("getLittleCoreType" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3568 3572]))                          )
+                        (reparse-symbol indented_block_body) [3546 3611])
+                    ("getNumBigCores" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3635 3639]))                          )
+                        (reparse-symbol indented_block_body) [3616 3675])
+                    ("getNumLittleCores" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3706 3710]))                          )
+                        (reparse-symbol indented_block_body) [3684 3749])
+                    ("getSystemCFlags" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3774 3778]))                          )
+                        (reparse-symbol indented_block_body) [3754 3815])
+                    ("getTarmacFlags" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3843 3847]))                          )
+                        (reparse-symbol indented_block_body) [3824 3883])
+                    ("getAllEnabledCoreTypes" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3915 3919]))                          )
+                        (reparse-symbol indented_block_body) [3888 4161])
+                    ("getModelName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4183 4187]))                          )
+                        (reparse-symbol indented_block_body) [4166 4221])
+                    ("IsBigCoreTARMACEnabled" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4253 4257]))                          )
+                        (reparse-symbol indented_block_body) [4226 4302])
+                    ("IsLittleCoreTARMACEnabled" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4337 4341]))                          )
+                        (reparse-symbol indented_block_body) [4307 4389])
+                    ("initFromXML" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4559 4563])
+                            ("xmlFile" variable nil (reparse-symbol function_parameters) [4565 4572]))                          )
+                        (reparse-symbol indented_block_body) [4543 6851]))                  
+                :type "class")
+                nil [2522 6851])
+            ("answersFileList" variable nil nil [6919 6961])
+            ("if" code nil nil [6963 7096])
+            ("coreConfig" variable nil nil [7097 7140])
+            ("coreTypes" variable nil nil [7171 7218])
+            ("if" code nil nil [7220 7280])
+            ("univentPrefixes" variable nil nil [7281 7301])
+            ("for" code nil nil [7303 7392])
+            ("bigCoreUniventPrefix" variable nil nil [7486 7562])
+            ("littleCoreUniventPrefix" variable nil nil [7563 7644])
+            ("makefile" variable nil nil [7795 7829])
+            ("if" code nil nil [8491 11041])
+            ("makefile" code nil nil [11046 11062])
+            ("makefilei" variable nil nil [11102 11145])
+            ("makefilei" code nil nil [11148 13051])
+            ("if" code nil nil [13053 14893])
+            ("makefilei" code nil nil [14894 15078])
+            ("makefilei" code nil nil [15080 15097])
+            ("makefilepmu" variable nil nil [15139 15179])
+            ("makefilepmu" code nil nil [15182 17189])
+            ("makefilepmu" code nil nil [17192 17211]))          
+      :file "createSysCMakefiles.py"
+      :pointmax 17214
+      :fsize 17901
+      :lastmodtime '(22981 6554 71255 0)
+      :unmatched-syntax nil)
+
+    (semanticdb-table "libFCM.pmu_gen.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("common/CarbonComponentHelper.h" include nil nil [225 266])
+            ("carbon/carbon_capi.h" include nil nil [267 298])
+            ("cpus/FCM/CarbonProfile.h" include nil nil [299 334])
+            ("mMyCapi" variable
+               (:pointer 1
+                :type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYFCM::CarbonProfile" type (:type "class") nil nil))
+                nil [336 403])
+            ("main" function (:type "int") nil [405 559]))          
+      :file "libFCM.pmu_gen.cpp"
+      :pointmax 560
+      :fsize 559
+      :lastmodtime '(22555 38809 0 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!Scripts!cpus!FCM!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

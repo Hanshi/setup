@@ -1,0 +1,52 @@
+;; Object Marvin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Marvin/"
+  :tables
+  (list
+
+    (semanticdb-table "ICM_MarvinModel.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("icm_impl/icm_model.h" include nil nil [65 96])
+            ("common/ICMComponentHelper.h" include nil nil [97 135])
+            ("memory" include (:system-flag t) nil [136 153])
+            ("ICM_MarvinModel" type
+               (:superclasses 
+                  ( ("icm_impl::ICMModel" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [208 215])
+                    ("ICM_MarvinModel" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("cyclem_model" variable
+                               (:pointer 1
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [234 263]))                          
+                        :type ("ICM_MarvinModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [218 264])
+                    ("ICM_MarvinModel" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [267 288])
+                    ("protected" label nil (reparse-symbol classsubparts) [292 302])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [396 405])
+                    ("private" label nil (reparse-symbol classsubparts) [408 416])
+                    ("m_component_helper" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("CARBON_MKLIB_NAMESPACE::ICMComponentHelper" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [419 498]))                  
+                :type "class")
+                nil [155 501]))          
+      :file "ICM_MarvinModel.h"
+      :pointmax 504
+      :fsize 503
+      :lastmodtime '(23385 60925 413560 0)
+      :unmatched-syntax '((semantic-list 367 . 395) (symbol 349 . 367) (punctuation 347 . 348) (symbol 339 . 347) (punctuation 338 . 339) (punctuation 337 . 338) (symbol 329 . 337) (punctuation 328 . 329) (symbol 318 . 328) (punctuation 317 . 318) (punctuation 316 . 317) (symbol 313 . 316) (VIRTUAL 305 . 312) (symbol 59 . 63) (symbol 52 . 58) (punctuation 51 . 52))))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!src!include!cpus!Marvin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

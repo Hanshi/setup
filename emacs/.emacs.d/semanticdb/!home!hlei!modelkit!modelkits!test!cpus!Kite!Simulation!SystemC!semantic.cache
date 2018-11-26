@@ -1,0 +1,136 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "system_test_1CPU.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/SimpleFlash.h" include nil nil [831 862])
+            ("models/SimpleFlashImp.h" include nil nil [863 897])
+            ("models/RAMBlock.h" include nil nil [898 926])
+            ("models/SimpleBus.h" include nil nil [927 956])
+            ("KiteImp.h" include nil nil [957 977])
+            ("models/BasicUART.h" include nil nil [978 1007])
+            ("models/ElfLoader.h" include nil nil [1008 1037])
+            ("iostream" include (:system-flag t) nil [1039 1058])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1060 1084])
+            ("num" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("N" variable (:type "int") (reparse-symbol arg-sub-list) [1109 1115]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1086 1175])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1189 1198])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1199 1212]))                  
+                :type "int")
+                nil [1177 5590]))          
+      :file "system_test_1CPU.cpp"
+      :pointmax 5591
+      :fsize 5590
+      :lastmodtime '(22381 29682 483784 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "system_test_2CPU.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/SimpleFlash.h" include nil nil [831 862])
+            ("models/SimpleFlashImp.h" include nil nil [863 897])
+            ("models/RAMBlock.h" include nil nil [898 926])
+            ("models/SimpleBus.h" include nil nil [927 956])
+            ("KiteImp.h" include nil nil [957 977])
+            ("models/BasicUART.h" include nil nil [978 1007])
+            ("models/ElfLoader.h" include nil nil [1008 1037])
+            ("iostream" include (:system-flag t) nil [1039 1058])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1060 1084])
+            ("num" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("N" variable (:type "int") (reparse-symbol arg-sub-list) [1109 1115]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1086 1175])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1189 1198])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1199 1212]))                  
+                :type "int")
+                nil [1177 6084]))          
+      :file "system_test_2CPU.cpp"
+      :pointmax 6085
+      :fsize 6084
+      :lastmodtime '(22379 60128 419726 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "system_test_4CPU.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/SimpleFlash.h" include nil nil [831 862])
+            ("models/SimpleFlashImp.h" include nil nil [863 897])
+            ("models/RAMBlock.h" include nil nil [898 926])
+            ("models/SimpleBus.h" include nil nil [927 956])
+            ("KiteImp.h" include nil nil [957 977])
+            ("models/BasicUART.h" include nil nil [978 1007])
+            ("models/ElfLoader.h" include nil nil [1008 1037])
+            ("iostream" include (:system-flag t) nil [1039 1058])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1060 1084])
+            ("num" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("N" variable (:type "int") (reparse-symbol arg-sub-list) [1109 1115]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1086 1175])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1189 1198])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1199 1212]))                  
+                :type "int")
+                nil [1177 7257]))          
+      :file "system_test_4CPU.cpp"
+      :pointmax 7258
+      :fsize 7257
+      :lastmodtime '(22379 60011 819049 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++" "-g" "-O0" "-DSC_INCLUDE_DYNAMIC_PROCESSES" "-Wall" "-Wextra" "-Werror" "-Wno-unused-parameter" "-std=c++11")) nil [86 187])
+            ("SYSTEMC_HOME" variable (:default-value ("/o/tools/systemc-2.3.1-gcc-4.7.2/systemc-2.3.1")) nil [187 249])
+            ("SYSTEMC_INC" variable (:default-value ("$(SYSTEMC_HOME)/include/")) nil [249 288])
+            ("SYSTEMC_LIB" variable (:default-value ("$(SYSTEMC_HOME)/lib-linux64/")) nil [288 331])
+            ("KITE_DIR" variable (:default-value ("./MODELS/Kite/$(MODEL_CONFIG)/gcc/SystemC")) nil [331 384])
+            ("NUM_CPU" variable (:default-value ("$(shell expr match \"$(MODEL_CONFIG)\" \".*\\([1-9]CPU\\)\")")) nil [491 556])
+            ("system_test" function (:arguments ("system_test.o")) nil [709 1277])
+            ("system_test.o" function (:arguments ("system_test_$(NUM_CPU).cpp")) nil [1278 1554])
+            ("clean" function nil nil [1555 1598]))          
+      :file "Makefile"
+      :pointmax 1600
+      :fsize 1599
+      :lastmodtime '(22323 44323 86352 0)
+      :unmatched-syntax '((bol 707 . 707) (symbol 482 . 490) (semantic-list 465 . 482) (punctuation 464 . 465) (punctuation 462 . 463) (punctuation 461 . 462) (symbol 448 . 460) (bol 448 . 448) (symbol 404 . 447) (punctuation 402 . 403) (punctuation 401 . 402) (symbol 385 . 400) (bol 385 . 385))))
+  :file "!home!hlei!modelkit!modelkits!test!cpus!Kite!Simulation!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

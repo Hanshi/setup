@@ -1,0 +1,21 @@
+;; Object AutoMem/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AutoMem/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("Makefile.targets" include nil nil [1 26])
+            ("compile" function (:arguments ("$(COMPILE_TARGETS)")) nil [27 55])
+            ("sim" function (:arguments ("$(SIM_TARGETS)")) nil [56 76])
+            ("COMPILE_%" function nil nil [77 110])
+            ("SIM_%" function nil nil [111 187]))          
+      :file "Makefile"
+      :pointmax 187
+      :fsize 186
+      :lastmodtime '(21133 19621 0 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!CortexA53!Simulation!AutoMem!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

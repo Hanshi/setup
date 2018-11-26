@@ -1,0 +1,53 @@
+;; Object comp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "comp/"
+  :tables
+  (list
+    (semanticdb-table "FMCompLogger.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FMCompLogger.h" include nil nil [499 524])
+            ("AxiMasterStateMachine.h" include nil nil [525 559])
+            ("FMCompLogger" function
+               (:constructor-flag t
+                :parent "FMCompLogger"
+                :type ("FMCompLogger" type (:type "class") nil nil))
+                nil [562 871])
+            ("<<" function
+               (:operator-flag t
+                :parent "FMCompLogger"
+                :arguments 
+                  ( ("payload" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tlm::tlm_generic_payload" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [905 945]))                  
+                :type "void")
+                nil [873 2892])
+            ("<<" function
+               (:operator-flag t
+                :parent "FMCompLogger"
+                :arguments 
+                  ( ("payload" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Carbon::Transactors::AxiPayloadData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2926 2977]))                  
+                :type "void")
+                nil [2894 3048])
+            ("FMCompLogger::logger" variable
+               (:constant-flag t
+                :type ("FMCompLogger" type (:type "class") nil nil))
+                nil [3050 3090]))          
+      :file "FMCompLogger.cpp"
+      :pointmax 3091
+      :fsize 3078
+      :lastmodtime '(22246 65449 70919 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "FMCompLogger.h"
+      :file "FMCompLogger.h"
+      :fsize 1864
+      :lastmodtime '(22246 65449 71922 0)))
+  :file "!home!cds!hlei!source!socdesigner!FastModels!src!comp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

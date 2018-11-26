@@ -1,0 +1,199 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables
+  (list
+    (semanticdb-table "PCStateMachineBase.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdexcept" include (:system-flag t) nil [572 592])
+            ("ios" include (:system-flag t) nil [593 607])
+            ("sstream" include (:system-flag t) nil [608 626])
+            ("common/SDCarbonComponentHelper.h" include nil nil [796 839])
+            ("cpus/CarbonSemihostCommandParserV7.h" include nil nil [840 887])
+            ("cpus/CarbonSemihostCommandParserV8.h" include nil nil [888 935])
+            ("cpus/CarbonSemihostCommandParserV8_32.h" include nil nil [936 986])
+            ("cpus/CarbonSemihostingCallback.h" include nil nil [987 1030])
+            ("cpus/CarbonSemihostMasterPort.h" include nil nil [1031 1073])
+            ("common/CarbonStreamIntf.h" include nil nil [1083 1119])
+            ("cpus/PCStateMachineBase.h" include nil nil [1120 1156])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1159 1179])
+            ("CARBON_MKLIB_NAMESPACE" using (:type ("CARBON_MKLIB_NAMESPACE" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1180 1219])
+            ("PCStateMachineBase" function
+               (:constructor-flag t
+                :parent "PCStateMachineBase"
+                :arguments 
+                  ( ("compHelper" variable
+                       (:pointer 1
+                        :type ("CarbonComponentHelper" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1260 1294])
+                    ("semiHost" variable
+                       (:pointer 1
+                        :type ("CarbonSemiHostMasterPort" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1334 1369])
+                    ("semiHostCallback" variable
+                       (:pointer 1
+                        :type ("SemihostingCallback" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1409 1447])
+                    ("pcBreakpointBlockSize" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1487 1522])
+                    ("IsV8" variable (:type "bool") (reparse-symbol arg-sub-list) [1562 1572])
+                    ("useMismatch" variable (:type "bool") (reparse-symbol arg-sub-list) [1612 1629]))                  
+                :type ("PCStateMachineBase" type (:type "class") nil nil))
+                nil [1221 2354])
+            ("PCStateMachineBase" function
+               (:destructor-flag t
+                :parent "PCStateMachineBase"
+                :type "void")
+                nil [2356 2401])
+            ("reset" function
+               (:parent "PCStateMachineBase"
+                :type "void")
+                nil [2403 2550])
+            ("requestForcePC" function
+               (:parent "PCStateMachineBase"
+                :arguments 
+                  ( ("pc" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3317 3333]))                  
+                :type "void")
+                nil [3277 4456])
+            ("getCommittedPCs" function
+               (:parent "PCStateMachineBase"
+                :arguments 
+                  ( ("startIndex" variable (:type "int") (reparse-symbol arg-sub-list) [4515 4530])
+                    ("desiredCount" variable (:type "int") (reparse-symbol arg-sub-list) [4588 4605])
+                    ("actualCount" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4663 4680])
+                    ("pcs" variable
+                       (:pointer 1
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4738 4752]))                  
+                :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                nil [4458 5083])
+            ("validSoftwareBreakpoint" function
+               (:parent "PCStateMachineBase"
+                :type "bool")
+                nil [5085 5235])
+            ("doCyclePreModelRun" function
+               (:parent "PCStateMachineBase"
+                :type "void")
+                nil [5492 7199])
+            ("doCyclePostModelRun" function
+               (:parent "PCStateMachineBase"
+                :type "void")
+                nil [7520 15721])
+            ("checkSemihostConnection" function
+               (:parent "PCStateMachineBase"
+                :type "void")
+                nil [15726 15957])
+            ("putSingleStep" function
+               (:parent "PCStateMachineBase"
+                :arguments 
+                  ( ("step" variable (:type "bool") (reparse-symbol arg-sub-list) [15998 16008]))                  
+                :type "void")
+                nil [15959 17230])
+            ("saveState" function
+               (:parent "PCStateMachineBase"
+                :arguments 
+                  ( ("os" variable
+                       (:pointer 1
+                        :type ("CarbonSaveStreamIntf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17267 17292]))                  
+                :type "bool")
+                nil [17232 18283])
+            ("restoreState" function
+               (:parent "PCStateMachineBase"
+                :arguments 
+                  ( ("is" variable
+                       (:pointer 1
+                        :type ("CarbonRestoreStreamIntf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18323 18351]))                  
+                :type "bool")
+                nil [18285 19513])
+            ("getCycleCount" function
+               (:parent "PCStateMachineBase"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [19515 19703])
+            ("sGetStateString" function
+               (:parent "PCStateMachineBase"
+                :arguments 
+                  ( ("state" variable (:type ("PCState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19753 19767]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [19705 20296])
+            ("resetStateVariables" function
+               (:parent "PCStateMachineBase"
+                :type "void")
+                nil [20298 21176])
+            ("forcePC" function
+               (:parent "PCStateMachineBase"
+                :arguments 
+                  ( ("pc" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21211 21227]))                  
+                :type "void")
+                nil [21178 21847])
+            ("checkBreakpoints" function
+               (:parent "PCStateMachineBase"
+                :arguments 
+                  ( ("stepFound" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [21899 21915]))                  
+                :type ("CarbonUInt32" type (:type "class") nil nil))
+                nil [21849 27594])
+            ("getStopReason" function
+               (:parent "PCStateMachineBase"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("PCStateMachineBase::StopReason" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [27970 30251])
+            ("getUpdatedPCState" function
+               (:parent "PCStateMachineBase"
+                :type ("PCStateMachineBase::PCState" type (:type "class") nil nil))
+                nil [30499 31718])
+            ("calculateReportedPC" function
+               (:parent "PCStateMachineBase"
+                :type "void")
+                nil [32384 32643])
+            ("executeInstruction" function
+               (:parent "PCStateMachineBase"
+                :type "void")
+                nil [32645 33147])
+            ("restartProcessor" function
+               (:parent "PCStateMachineBase"
+                :type "void")
+                nil [33149 33325])
+            ("isSemihost" function
+               (:parent "PCStateMachineBase"
+                :type "bool")
+                nil [33327 33614])
+            ("isPipelinePcSvc" function
+               (:parent "PCStateMachineBase"
+                :type "bool")
+                nil [33616 34603])
+            ("isActiveBreakpoint" function
+               (:parent "PCStateMachineBase"
+                :arguments 
+                  ( ("checkPC" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34724 34745]))                  
+                :type "bool")
+                nil [34680 35433])
+            ("putBreakOnSVCExceptionAndUpdate" function
+               (:parent "PCStateMachineBase"
+                :arguments 
+                  ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [35492 35504]))                  
+                :type "void")
+                nil [35435 35575]))          
+      :file "PCStateMachineBase.cpp"
+      :pointmax 41022
+      :fsize 41021
+      :lastmodtime '(22895 36217 0 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!test!modelkits!src!cpus!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

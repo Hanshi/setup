@@ -1,0 +1,55 @@
+;; Object Scripts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Scripts/"
+  :tables
+  (list
+    (semanticdb-table "CreateCPAK.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [1 10])
+            ("sys" include nil nil [11 21])
+            ("assert" code nil nil [22 54])
+            ("xml.etree.cElementTree" include nil nil [55 90])
+            ("urllib2" include nil nil [91 105])
+            ("argparse" include nil nil [106 121])
+            ("if" code nil nil [220 404])
+            ("arg_parser" variable nil nil [405 443])
+            ("arg_parser" code nil nil [444 546])
+            ("arg_parser" code nil nil [547 633])
+            ("arg_parser" code nil nil [634 723])
+            ("arg_parser" code nil nil [825 923])
+            ("arg_results" variable nil nil [924 961])
+            ("create_model_descriptions_from_portal" function nil nil [1070 2113])
+            ("create_dependencies_xml" function (:arguments 
+              ( ("cpak_name" variable nil (reparse-symbol function_parameters) [2871 2880]))              ) nil [2843 3493])
+            ("create_applications_xml" function (:arguments 
+              ( ("cpak_name" variable nil (reparse-symbol function_parameters) [3522 3531]))              ) nil [3494 3814])
+            ("create_portal_xml" function (:arguments 
+              ( ("cpak_name" variable nil (reparse-symbol function_parameters) [3839 3848]))              ) nil [3817 5632])
+            ("create_readme_xml" function (:arguments 
+              ( ("cpak_name" variable nil (reparse-symbol function_parameters) [5655 5664]))              ) nil [5633 6538])
+            ("create_filestokeep" function (:arguments 
+              ( ("cpak_name" variable nil (reparse-symbol function_parameters) [6563 6572]))              ) nil [6540 6931])
+            ("create_test_run_bat" function (:arguments 
+              ( ("cpak_name" variable nil (reparse-symbol function_parameters) [6956 6965]))              ) nil [6932 8927])
+            ("create_test_run_csh" function (:arguments 
+              ( ("cpak_name" variable nil (reparse-symbol function_parameters) [8952 8961]))              ) nil [8928 11248])
+            ("cpak_name" variable nil nil [11356 11389])
+            ("os" code nil nil [11390 11412])
+            ("os" code nil nil [11413 11457])
+            ("os" code nil nil [11458 11505])
+            ("os" code nil nil [11506 11553])
+            ("create_dependencies_xml" code nil nil [11554 11588])
+            ("create_applications_xml" code nil nil [11589 11623])
+            ("create_portal_xml" code nil nil [11624 11652])
+            ("create_readme_xml" code nil nil [11653 11681])
+            ("create_test_run_bat" code nil nil [11682 11712])
+            ("if" code nil nil [11713 11848]))          
+      :file "CreateCPAK.py"
+      :pointmax 11849
+      :fsize 11848
+      :lastmodtime '(22388 19315 645097 0)
+      :unmatched-syntax nil))
+  :file "!home!hlei!cpaks!trunk!Common!ModelData!Scripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

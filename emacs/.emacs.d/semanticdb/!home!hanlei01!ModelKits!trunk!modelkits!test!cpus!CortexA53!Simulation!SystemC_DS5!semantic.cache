@@ -1,0 +1,43 @@
+;; Object SystemC_DS5/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC_DS5/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/RAMBlock.h" include nil nil [831 859])
+            ("models/SimpleBus.h" include nil nil [860 889])
+            ("models/BasicUART.h" include nil nil [890 919])
+            ("models/ElfLoader.h" include nil nil [920 949])
+            ("libCortexA53.tlm.h" include nil nil [950 979])
+            ("CortexA53ResetModule.h" include nil nil [980 1013])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [1014 1060])
+            ("iostream" include (:system-flag t) nil [1062 1081])
+            ("scx/scx.h" include (:system-flag t) nil [1083 1103])
+            ("scx_simcontroller.cpp" include (:system-flag t) nil [1104 1136])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1137 1173])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1174 1207])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1209 1233])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1247 1256])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1257 1270]))                  
+                :type "int")
+                nil [1235 4533]))          
+      :file "system_test.cpp"
+      :pointmax 4534
+      :fsize 4533
+      :lastmodtime '(23329 14226 374048 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!CortexA53!Simulation!SystemC_DS5!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

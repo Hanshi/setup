@@ -1,0 +1,582 @@
+;; Object AXIv2PassThrough/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AXIv2PassThrough/"
+  :tables
+  (list
+    (semanticdb-table "AXIv2PassThrough.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("AXIv2PassThrough__H" variable (:constant-flag t) nil [533 552])
+            ("maxsimCompatibility.h" include nil nil [554 586])
+            ("axi_m__axiv2_TM" type
+               (:prototype t
+                :type "class")
+                nil [636 658])
+            ("axi_s__axiv2_TS" type
+               (:prototype t
+                :type "class")
+                nil [659 681])
+            ("AXIv2PassThrough" type
+               (:superclasses 
+                  ( ("CASIModule" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("eslapi::CASISaveRestoreArch" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("axi_m__axiv2_TM" friend nil (reparse-symbol classsubparts) [804 832])
+                    ("axi_s__axiv2_TS" friend nil (reparse-symbol classsubparts) [838 866])
+                    ("public" label nil (reparse-symbol classsubparts) [869 876])
+                    ("axi_m_TMaster" variable
+                       (:pointer 1
+                        :type ("axi_m__axiv2_TM" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [933 964])
+                    ("axi_s_TSlave" variable
+                       (:pointer 1
+                        :type ("axi_s__axiv2_TS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [969 999])
+                    ("AXIv2PassThrough" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("c" variable
+                               (:pointer 1
+                                :type ("CASIModuleIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1055 1071])
+                            ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1072 1088]))                          
+                        :type ("AXIv2PassThrough" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1038 1089])
+                    ("AXIv2PassThrough" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1094 1122])
+                    ("protected" label nil (reparse-symbol classsubparts) [1124 1134])
+                    ("forwardAR" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1139 1156])
+                    ("forwardR" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1161 1178])
+                    ("forwardAW" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1183 1200])
+                    ("forwardW" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1205 1222])
+                    ("forwardB" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1227 1244])
+                    ("forwardARReady" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1250 1272])
+                    ("forwardRReady" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1277 1299])
+                    ("forwardAWReady" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1304 1326])
+                    ("forwardWReady" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1331 1353])
+                    ("forwardBReady" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1358 1380])
+                    ("debugTransaction" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("info" variable
+                               (:pointer 1
+                                :type ("CASITransactionInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1422 1448]))                          
+                        :type ("eslapi::CASIStatus" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1386 1449])
+                    ("public" label nil (reparse-symbol classsubparts) [1451 1458])
+                    ("communicate" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1512 1531])
+                    ("update" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1536 1550])
+                    ("getName" function
+                       (:prototype-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1593 1610])
+                    ("setParameter" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1633 1652])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1653 1673]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1615 1674])
+                    ("getProperty" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("property" variable (:type ("eslapi::CASIPropertyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1699 1734]))                          
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1679 1735])
+                    ("init" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1740 1752])
+                    ("terminate" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1757 1774])
+                    ("reset" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("level" variable (:type ("eslapi::CASIResetLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1790 1819])
+                            ("filelist" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("CASIFileMapIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1820 1850]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1779 1851])
+                    ("initAXIv2TransactionPort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("transIf" variable
+                               (:pointer 1
+                                :type ("CASITransactionMasterIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1924 1957]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1894 1958])
+                    ("getCADI" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("CADI" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2027 2043])
+                    ("getCB" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("eslapi::CASISaveRestoreArchCallbackIF" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2048 2103])
+                    ("saveStreamType" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("eslapi::CASISaveRestoreStreamType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2108 2167])
+                    ("saveDataArch" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("eslapi::CASIODataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2198 2228]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2172 2229])
+                    ("saveDataBinary" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("eslapi::CASIODataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2326 2354]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2298 2355])
+                    ("restoreDataBinary" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("is" variable
+                               (:reference 1
+                                :type ("eslapi::CASIIDataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2391 2419]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2360 2420])
+                    ("private" label nil (reparse-symbol classsubparts) [2426 2434])
+                    ("initComplete" variable (:type "bool") (reparse-symbol classsubparts) [2441 2459])
+                    ("p_enableDbgMsg" variable (:type "bool") (reparse-symbol classsubparts) [2465 2485])
+                    ("p_Data_Bit_Width" variable (:type "int") (reparse-symbol classsubparts) [2523 2544])
+                    ("p_Address_Bit_Width" variable (:type "int") (reparse-symbol classsubparts) [2549 2573]))                  
+                :type "class")
+                nil [684 2650]))          
+      :file "AXIv2PassThrough.h"
+      :pointmax 2659
+      :fsize 2658
+      :lastmodtime '(22452 54177 809216 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("AXIv2PassThrough__H")
+          )
+)
+    (semanticdb-table "AXIv2PassThrough.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("AXIv2PassThrough.h" include nil nil [501 530])
+            ("ProtocolUtils.h" include nil nil [531 557])
+            ("stdio.h" include (:system-flag t) nil [559 577])
+            ("axi_m__axiv2_TM.h" include nil nil [579 607])
+            ("axi_s__axiv2_TS.h" include nil nil [609 637])
+            ("AXI_Sender_PortBase.h" include nil nil [639 671])
+            ("AXI_Receiver_PortBase.h" include nil nil [672 706])
+            ("AXIv2PassThrough" function
+               (:constructor-flag t
+                :parent "AXIv2PassThrough"
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [743 759])
+                    ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [760 776]))                  
+                :type ("AXIv2PassThrough" type (:type "class") nil nil))
+                nil [708 2897])
+            ("AXIv2PassThrough" function
+               (:destructor-flag t
+                :parent "AXIv2PassThrough"
+                :type "void")
+                nil [2899 2993])
+            ("forwardAR" function
+               (:parent "AXIv2PassThrough"
+                :type "bool")
+                nil [2995 3379])
+            ("forwardR" function
+               (:parent "AXIv2PassThrough"
+                :type "bool")
+                nil [3380 3890])
+            ("forwardAW" function
+               (:parent "AXIv2PassThrough"
+                :type "bool")
+                nil [3891 4275])
+            ("forwardW" function
+               (:parent "AXIv2PassThrough"
+                :type "bool")
+                nil [4276 4788])
+            ("forwardB" function
+               (:parent "AXIv2PassThrough"
+                :type "bool")
+                nil [4789 5167])
+            ("forwardARReady" function
+               (:parent "AXIv2PassThrough"
+                :type "void")
+                nil [5169 5560])
+            ("forwardAWReady" function
+               (:parent "AXIv2PassThrough"
+                :type "void")
+                nil [5562 5953])
+            ("forwardWReady" function
+               (:parent "AXIv2PassThrough"
+                :type "void")
+                nil [5955 6335])
+            ("forwardRReady" function
+               (:parent "AXIv2PassThrough"
+                :type "void")
+                nil [6337 6721])
+            ("forwardBReady" function
+               (:parent "AXIv2PassThrough"
+                :type "void")
+                nil [6723 7107])
+            ("debugTransaction" function
+               (:parent "AXIv2PassThrough"
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("CASITransactionInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7163 7189]))                  
+                :type ("eslapi::CASIStatus" type (:type "class") nil nil))
+                nil [7109 7241])
+            ("communicate" function
+               (:parent "AXIv2PassThrough"
+                :type "void")
+                nil [7245 7588])
+            ("update" function
+               (:parent "AXIv2PassThrough"
+                :type "void")
+                nil [7592 7862])
+            ("init" function
+               (:parent "AXIv2PassThrough"
+                :type "void")
+                nil [7866 8238])
+            ("reset" function
+               (:parent "AXIv2PassThrough"
+                :arguments 
+                  ( ("level" variable (:type ("eslapi::CASIResetLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8271 8300])
+                    ("filelist" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CASIFileMapIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8301 8331]))                  
+                :type "void")
+                nil [8242 8523])
+            ("terminate" function
+               (:parent "AXIv2PassThrough"
+                :type "void")
+                nil [8527 8692])
+            ("setParameter" function
+               (:parent "AXIv2PassThrough"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8733 8752])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8753 8774]))                  
+                :type "void")
+                nil [8696 9926])
+            ("getProperty" function
+               (:parent "AXIv2PassThrough"
+                :arguments 
+                  ( ("property" variable (:type ("eslapi::CASIPropertyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9968 10003]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [9930 10707])
+            ("getName" function
+               (:parent "AXIv2PassThrough"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10744 10749]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [10711 10782])
+            ("initAXIv2TransactionPort" function
+               (:parent "AXIv2PassThrough"
+                :arguments 
+                  ( ("transIf" variable
+                       (:pointer 1
+                        :type ("CASITransactionMasterIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11003 11036]))                  
+                :type "void")
+                nil [10955 12512])
+            ("getCB" function
+               (:pointer 1
+                :parent "AXIv2PassThrough"
+                :type ("eslapi::CASISaveRestoreArchCallbackIF" type (:type "class") nil nil))
+                nil [12515 12649])
+            ("saveStreamType" function
+               (:parent "AXIv2PassThrough"
+                :type ("eslapi::CASISaveRestoreStreamType" type (:type "class") nil nil))
+                nil [12651 12783])
+            ("saveDataArch" function
+               (:parent "AXIv2PassThrough"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("eslapi::CASIODataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12821 12851]))                  
+                :type "bool")
+                nil [12785 12911])
+            ("saveDataBinary" function
+               (:parent "AXIv2PassThrough"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("eslapi::CASIODataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12951 12979]))                  
+                :type "bool")
+                nil [12913 13193])
+            ("restoreDataBinary" function
+               (:parent "AXIv2PassThrough"
+                :arguments 
+                  ( ("is" variable
+                       (:reference 1
+                        :type ("eslapi::CASIIDataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13236 13264]))                  
+                :type "bool")
+                nil [13195 13487])
+            ("AXIv2PassThroughFactory" type
+               (:superclasses 
+                  ( ("CASIFactory" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [13632 13639])
+                    ("AXIv2PassThroughFactory" function
+                       (:constructor-flag t
+                        :type ("AXIv2PassThroughFactory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13644 13709])
+                    ("createInstance" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("c" variable
+                               (:pointer 1
+                                :type ("CASIModuleIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13743 13759])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13760 13777]))                          
+                        :type ("CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13714 13833]))                  
+                :type "class")
+                nil [13577 13836])
+            ("CASIInit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13951 13956]))                  
+                :type "void")
+                nil [13937 13993]))          
+      :file "AXIv2PassThrough.cpp"
+      :pointmax 13994
+      :fsize 13993
+      :lastmodtime '(22452 58801 96698 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "axi_m__axiv2_TM.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_axi_m__axiv2_TM_H_" variable (:constant-flag t) nil [532 551])
+            ("maxsimCompatibility.h" include nil nil [553 585])
+            ("AXI_Master_Port.h" include nil nil [586 614])
+            ("AXIv2PassThrough" type
+               (:prototype t
+                :type "class")
+                nil [616 639])
+            ("axi_m__axiv2_TM" type
+               (:superclasses 
+                  ( ("AXI_Master_Port" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [691 698])
+                    ("axi_m__axiv2_TM" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("_owner" variable
+                               (:pointer 1
+                                :type ("AXIv2PassThrough" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [716 741])
+                            ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [742 759]))                          
+                        :type ("axi_m__axiv2_TM" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [700 760])
+                    ("axi_m__axiv2_TM" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [762 791])
+                    ("driveTransactionCB_R" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [794 830])
+                    ("driveTransactionCB_B" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [832 868])
+                    ("notifyEventCB_AR" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [878 910])
+                    ("notifyEventCB_AW" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [919 951])
+                    ("notifyEventCB_W" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [960 992])
+                    ("private" label nil (reparse-symbol classsubparts) [994 1002])
+                    ("axi_m__axiv2_TM" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("axi_m__axiv2_TM" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1004 1022])
+                    ("axi_m__axiv2_TM" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("axi_m__axiv2_TM" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1040 1067]))                          
+                        :type ("axi_m__axiv2_TM" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1024 1068])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("axi_m__axiv2_TM" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1097 1124]))                          
+                        :type ("axi_m__axiv2_TM" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1070 1125])
+                    ("private" label nil (reparse-symbol classsubparts) [1128 1136])
+                    ("owner_master" variable
+                       (:pointer 1
+                        :type ("AXIv2PassThrough" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1138 1169]))                  
+                :type "class")
+                nil [641 1173]))          
+      :file "axi_m__axiv2_TM.h"
+      :pointmax 2345
+      :fsize 2344
+      :lastmodtime '(22246 65481 649717 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_axi_m__axiv2_TM_H_")
+          )
+)
+    (semanticdb-table "axi_s__axiv2_TS.h"
+      :file "axi_s__axiv2_TS.h"
+      :fsize 1237
+      :lastmodtime '(22246 65481 653717 0))
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("ERR" variable (:default-value ("true;")) nil [69 81])
+            ("ERR" variable (:default-value ("true;")) nil [145 157])
+            ("PACKAGE" variable (:default-value ("AXIv2PassThrough")) nil [230 260])
+            ("BUILDFLAGS" variable (:default-value ("-g3" "-fPIC" "-Wall" "-W" "-pedantic" "-Wno-long-long" "-Wwrite-strings" "-Wpointer-arith")) nil [260 351])
+            ("CXX" variable (:default-value ("g++")) nil [351 368])
+            ("CXXFLAGS" variable (:default-value ("-std=c++11" "-I." "-I$(MAXSIM_HOME)/include" "-I$(MAXSIM_PROTOCOLS)/AXIv2/include" "-I$(MAXSIM_PROTOCOLS)/Common/include" "$(BUILDFLAGS)")) nil [368 508])
+            ("LDFLAGS" variable nil nil [508 519])
+            ("COMMON_LIBS" variable (:default-value ("-L$(MAXSIM_PROTOCOLS)/AXIv2/lib" "-lAXIPorts" "-L$(MAXSIM_PROTOCOLS)/Common/lib" "-lUtilsCommon" "-L$(MAXSIM_HOME)/lib/`uname`/release" "-lmaxsimcore")) nil [519 674])
+            ("PACKAGE_SOURCES" variable (:default-value ("axi_m__axiv2_TM.cpp" "axi_s__axiv2_TS.cpp" "AXIv2PassThrough.cpp")) nil [674 762])
+            ("SO" variable (:default-value ("lib$(PACKAGE).so")) nil [763 785])
+            ("$(SO)" function (:arguments ("$(PACKAGE_SOURCES:.cpp=.o)")) nil [786 885])
+            (".PHONY" function (:arguments ("clean")) nil [886 901])
+            ("clean" function nil nil [902 936]))          
+      :file "Makefile"
+      :pointmax 936
+      :fsize 935
+      :lastmodtime '(22246 65481 644714 0)
+      :unmatched-syntax '((shell-command 911 . 935) (bol 910 . 910) (semantic-list 174 . 222) (punctuation 173 . 174) (bol 173 . 173) (semantic-list 112 . 144) (punctuation 111 . 112) (bol 111 . 111) (semantic-list 31 . 68) (punctuation 30 . 31) (bol 30 . 30))))
+  :file "!mnt!home!hlei!source!socdesigner!Protocols!AXI!components!AXIv2PassThrough!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,191 @@
+;; Object Downloads/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Downloads/"
+  :tables
+  (list
+    (semanticdb-table "conveyerBeltTestBench.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+Code Sample for Arm 
+
+Author: Sam Beaulieu
+Date:	4/12/2018
+
+
+'''" code nil nil [1 69])
+            ("numpy.random" include nil nil [70 102])
+            ("'''
+class production_line(num_slots):
+
+	conveyer = conveyer_belt(num_slots, chance_nothing)
+'''" code nil nil [104 199])
+            ("conveyer_belt" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [312 341])
+                            ("self" code nil (reparse-symbol indented_block_body) [344 378])
+                            ("self" variable nil (reparse-symbol indented_block_body) [418 460])
+                            ("self" variable nil (reparse-symbol indented_block_body) [539 560])
+                            ("self" variable nil (reparse-symbol indented_block_body) [563 586]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [236 240])
+                            ("num_slots_in" variable nil (reparse-symbol function_parameters) [242 254])
+                            ("component_options" variable nil (reparse-symbol function_parameters) [256 273]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [223 587])
+                    ("move_one_time_tick" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [612 616]))                          )
+                        (reparse-symbol indented_block_body) [589 1127])
+                    ("check_item" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1144 1148])
+                            ("item_index" variable nil (reparse-symbol function_parameters) [1150 1160]))                          )
+                        (reparse-symbol indented_block_body) [1129 1330])
+                    ("remove_item" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1348 1352])
+                            ("item_index" variable nil (reparse-symbol function_parameters) [1354 1364]))                          )
+                        (reparse-symbol indented_block_body) [1332 1721])
+                    ("place_item" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1738 1742])
+                            ("item_index" variable nil (reparse-symbol function_parameters) [1744 1754])
+                            ("item" variable nil (reparse-symbol function_parameters) [1756 1760]))                          )
+                        (reparse-symbol indented_block_body) [1723 2122])
+                    ("print_conveyer_belt" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2175 2179]))                          )
+                        (reparse-symbol indented_block_body) [2151 2334]))                  
+                :type "class")
+                nil [200 2334])
+            ("worker" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [2589 2623])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2683 2716])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2790 2814])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2852 2876])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2907 2939])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2969 2994])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3026 3068])
+                            ("for" code nil (reparse-symbol indented_block_body) [3128 3265]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2364 2368])
+                            ("worker_index" variable nil (reparse-symbol function_parameters) [2370 2382])
+                            ("component_options" variable nil (reparse-symbol function_parameters) [2384 2401])
+                            ("conveyer_belt" variable nil (reparse-symbol function_parameters) [2403 2416]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2351 3265])
+                    ("move_one_time_tick" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3290 3294])
+                            ("cant_touch_belt" variable nil (reparse-symbol function_parameters) [3296 3311]))                          )
+                        (reparse-symbol indented_block_body) [3267 6783]))                  
+                :type "class")
+                nil [2335 6783])
+            ("production_line" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [6909 6945])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6948 6977])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7014 7072])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7075 7092])
+                            ("for" code nil (reparse-symbol indented_block_body) [7123 7424]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6823 6827])
+                            ("simulate_time" variable nil (reparse-symbol function_parameters) [6829 6842])
+                            ("num_slots_in" variable nil (reparse-symbol function_parameters) [6844 6856])
+                            ("component_options" variable nil (reparse-symbol function_parameters) [6858 6875]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [6810 7424])
+                    ("run_simulation" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7445 7449])
+                            ("verbose" variable nil (reparse-symbol function_parameters) [7451 7458]))                          )
+                        (reparse-symbol indented_block_body) [7426 8158])
+                    ("get_production_output" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8186 8190]))                          )
+                        (reparse-symbol indented_block_body) [8160 8541]))                  
+                :type "class")
+                nil [6784 8541])
+            ("testbench" function nil nil [8542 8945])
+            ("testbench" code nil nil [8946 8957]))          
+      :file "conveyerBeltTestBench.py"
+      :pointmax 8972
+      :fsize 8971
+      :lastmodtime '(23247 39669 867113 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "regInfo.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [1 10])
+            ("sys" include nil nil [11 21])
+            ("getopt" include nil nil [22 35])
+            ("xml.etree.ElementTree" include nil nil [36 70])
+            ("xml.dom" include nil nil [71 98])
+            ("RegInfo" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [170 198])
+                            ("self" variable nil (reparse-symbol indented_block_body) [207 231]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [133 137])
+                            ("sourceFile" variable nil (reparse-symbol function_parameters) [139 149])
+                            ("destFile" variable nil (reparse-symbol function_parameters) [151 159]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [120 232])
+                    ("printRegInfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [268 272]))                          )
+                        (reparse-symbol indented_block_body) [251 2663]))                  
+                :type "class")
+                nil [101 2663])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [2674 2678]))              ) nil [2665 3616])
+            ("if" code nil nil [3617 3667]))          
+      :file "regInfo.py"
+      :pointmax 3667
+      :fsize 3666
+      :lastmodtime '(22961 47209 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Dhee_Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("OBJS" variable (:default-value ("$(wildcard ./csrc/sysc/*.o)")) nil [2 35])
+            ("CM_SYSC_HOME" variable (:default-value ("/o/release/cm_sysc/mainline/PRODUCT/Linux64_GCC-4.8.3/rel_ext")) nil [35 110])
+            ("LINK_LIB_PATH" variable (:default-value ("-L" "/o/release/CMS/mainline/PRODUCT/Linux64/lib/gcc/shared" "-lcarbon5" "-L$(CM_SYSC_HOME)/lib/Linux64_GCC-4.8" "-Wl,-rpath,'$(CM_SYSC_HOME)/lib/Linux64_GCC-4.8'" "-larmtlm" "-L" "/arm/tools/synopsys/vcs/2016.06-SP2/linux64/lib/")) nil [110 342])
+            ("STATIC_LIB" variable (:default-value ("/o/mkwork/dhebyk01/sandbox1/test/gcc483/test/cpus/CortexM7/Simulation/SystemC_PMU/MODELS/CortexM7/M7_1FPU_16DCache_16ICache/gcc/SystemC/libCortexM7.tlm.a" "/o/mkwork/dhebyk01/sandbox1/test/gcc483/test/cpus/CortexM7/Simulation/SystemC_PMU/MODELS/CortexM7/M7_1FPU_16DCache_16ICache/gcc/SystemC/lib/libCortexM7.a" "/o/release/cm_sysc/mainline/PRODUCT/Linux64_GCC-4.8.3/rel_ext/FMRuntime/FastModelsPortfolio/lib/Linux64_GCC-4.8/libfmruntime.a" "/o/release/cm_sysc/mainline/PRODUCT/Linux64_GCC-4.8.3/rel_ext/FMRuntime/FastModelsPortfolio/lib/Linux64_GCC-4.8/libIrisSupport.a" "/o/mkwork/dhebyk01/sandbox1/test/gcc483/test/cpus/CortexM7/Simulation/SystemC_PMU/MODELS/CortexM7/M7_1FPU_16DCache_16ICache/gcc/SystemC/univentUtil/lib/cm7_tarmac_dpi.so")) nil [343 1088])
+            ("LINK_LIB" variable (:default-value ("-lpthread" "-ldl" "-lz" "-lsystemc231-gcc4-64")) nil [1089 1138])
+            ("compile" function nil nil [1140 4248])
+            ("compile4" function (:arguments ("compile" "source.so")) nil [4250 4311])
+            ("source.so" function nil nil [4312 4390])
+            ("run" function nil nil [4393 4417])
+            ("clean" function nil nil [4418 4452]))          
+      :file "Dhee_Makefile"
+      :pointmax 4456
+      :fsize 4455
+      :lastmodtime '(23317 34898 180542 300000)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!Downloads!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

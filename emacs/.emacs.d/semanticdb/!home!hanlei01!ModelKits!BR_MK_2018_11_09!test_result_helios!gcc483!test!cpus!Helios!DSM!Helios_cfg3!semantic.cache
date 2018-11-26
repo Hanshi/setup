@@ -1,0 +1,41 @@
+;; Object Helios_cfg3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Helios_cfg3/"
+  :tables
+  (list
+    (semanticdb-table "build_dsm.log.mk"
+      :major-mode 'makefile-gmake-mode
+      :tags nil
+      :file "build_dsm.log.mk"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(23531 12802 921040 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "render.log.mk"
+      :major-mode 'makefile-gmake-mode
+      :tags nil
+      :file "render.log.mk"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(23531 12803 551042 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "syscan.wfi.log.mk"
+      :major-mode 'makefile-gmake-mode
+      :tags nil
+      :file "syscan.wfi.log.mk"
+      :pointmax 1659
+      :fsize 1658
+      :lastmodtime '(23531 23436 964142 0)
+      :unmatched-syntax '((symbol 1657 . 1658) (string 1611 . 1657) (symbol 1607 . 1611) (symbol 1467 . 1606) (symbol 1464 . 1466) (symbol 1454 . 1463) (bol 1454 . 1454) (symbol 1452 . 1453) (string 1406 . 1452) (symbol 1402 . 1406) (symbol 1274 . 1401) (symbol 1271 . 1273) (symbol 1261 . 1270) (bol 1261 . 1261) (string 1140 . 1260) (symbol 1132 . 1139) (string 1056 . 1131) (symbol 1048 . 1055) (string 1031 . 1047) (symbol 1028 . 1030) (string 867 . 1027) (string 730 . 866) (string 704 . 729) (symbol 696 . 703) (string 683 . 695) (symbol 675 . 682) (symbol 667 . 674) (symbol 663 . 666) (punctuation 662 . 663) (symbol 657 . 662) (symbol 649 . 655) (bol 649 . 649)))
+    (semanticdb-table "cm_compile_check.log.mk"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("PASSED" function (:arguments ("CM" "compliance" "checker" "has" "completed" "successfully!")) nil [1 59]))          
+      :file "cm_compile_check.log.mk"
+      :pointmax 84
+      :fsize 83
+      :lastmodtime '(23531 22491 472431 0)
+      :unmatched-syntax '((symbol 73 . 84) (symbol 68 . 72) (symbol 59 . 67) (bol 59 . 59))))
+  :file "!home!hanlei01!ModelKits!BR_MK_2018_11_09!test_result_helios!gcc483!test!cpus!Helios!DSM!Helios_cfg3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,210 @@
+;; Object CortexA53/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "CortexA53/"
+  :tables
+  (list
+    (semanticdb-table "PCStateMachine.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sstream" include (:system-flag t) nil [515 533])
+            ("common/CarbonComponentHelper.h" include nil nil [534 575])
+            ("cpus/CortexA53/PCStateMachine.h" include nil nil [576 618])
+            ("cpus/CortexA53/RegBank.h" include nil nil [619 654])
+            ("common/PCTraceReporter.h" include nil nil [655 690])
+            ("cpus/CortexA53/A53Common.h" include nil nil [691 728])
+            ("common/CarbonStreamIntf.h" include nil nil [729 765])
+            ("CARBON_MKLIB_NAMESPACE" using (:type ("CARBON_MKLIB_NAMESPACE" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [768 807])
+            ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYCORTEXA53" using (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYCORTEXA53" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [808 873])
+            ("PCStateMachine" function
+               (:constructor-flag t
+                :parent "PCStateMachine"
+                :arguments 
+                  ( ("coreNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [906 923])
+                    ("compHelper" variable
+                       (:pointer 1
+                        :type ("CarbonComponentHelper" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [955 989])
+                    ("semiHost" variable
+                       (:pointer 1
+                        :type ("CarbonSemiHostMasterPort" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1021 1056])
+                    ("semiHostCallback" variable
+                       (:pointer 1
+                        :type ("SemihostingCallback" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1088 1126]))                  
+                :type ("PCStateMachine" type (:type "class") nil nil))
+                nil [875 7694])
+            ("PCStateMachine" function
+               (:destructor-flag t
+                :parent "PCStateMachine"
+                :type "void")
+                nil [7696 7752])
+            ("getDebugHaltInstructions" function
+               (:parent "PCStateMachine"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("CARBON_MKLIB_NAMESPACE::PCStateMachineBase::DebugInstruction" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [7754 10186])
+            ("getDebugPCDepositInstructions" function
+               (:parent "PCStateMachine"
+                :type ("CARBON_MKLIB_NAMESPACE::PCStateMachineBase::DebugInstruction" type (:type "class") nil nil))
+                nil [10189 10707])
+            ("getTBit" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [10711 10869])
+            ("isAArch32" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [10973 11184])
+            ("depositHaltRequest" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("val" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11226 11243]))                  
+                :type "void")
+                nil [11186 11299])
+            ("putBreakOnSVCException" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [11599 11611]))                  
+                :type "void")
+                nil [11555 12490])
+            ("depositInstruction" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("instr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DebugInstruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12532 12562]))                  
+                :type "void")
+                nil [12492 15295])
+            ("depositRestart" function
+               (:parent "PCStateMachine"
+                :type "void")
+                nil [15297 15749])
+            ("enableStall" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("match" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15784 15803])
+                    ("doStep" variable (:type "bool") (reparse-symbol arg-sub-list) [15804 15816]))                  
+                :type "void")
+                nil [15751 16603])
+            ("readRTLValues" function
+               (:parent "PCStateMachine"
+                :type "void")
+                nil [16605 19340])
+            ("updateCommittedPCs" function
+               (:parent "PCStateMachine"
+                :type "void")
+                nil [19343 23174])
+            ("saveDebugScratchRegisters" function
+               (:parent "PCStateMachine"
+                :type "void")
+                nil [23176 23793])
+            ("restoreDebugScratchRegisters" function
+               (:parent "PCStateMachine"
+                :type "void")
+                nil [23795 24276])
+            ("isStalled" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [24278 24787])
+            ("isInstructionComplete" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [24789 26312])
+            ("isRestarted" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [26314 27212])
+            ("correctAddressMatch" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("addressMatch" variable (:type "bool") (reparse-symbol arg-sub-list) [27256 27274])
+                    ("bpAddrToCheck" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27275 27302]))                  
+                :type "bool")
+                nil [27215 27411])
+            ("findNet" function
+               (:pointer 1
+                :parent "PCStateMachine"
+                :arguments 
+                  ( ("netName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27450 27470]))                  
+                :type ("CarbonNetID" type (:type "class") nil nil))
+                nil [27413 27750])
+            ("findCpuNet" function
+               (:pointer 1
+                :parent "PCStateMachine"
+                :arguments 
+                  ( ("netName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27792 27812]))                  
+                :type ("CarbonNetID" type (:type "class") nil nil))
+                nil [27752 28070])
+            ("carbonExamine64" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("pcNetLo" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28170 28192])
+                    ("pcNetHi" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28193 28215]))                  
+                :type ("CarbonUInt64" type (:type "class") nil nil))
+                nil [28125 28385])
+            ("carbonDeposit64" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("pcNetLo" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28424 28446])
+                    ("pcNetHi" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28447 28469])
+                    ("depositValue" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28470 28496]))                  
+                :type "void")
+                nil [28387 28827])
+            ("carbonForce64" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("pcNetLo" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28864 28886])
+                    ("pcNetHi" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28886 28908])
+                    ("depositValue" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28910 28936]))                  
+                :type "void")
+                nil [28829 29321])
+            ("isAArch64EL1" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [29324 29899]))          
+      :file "PCStateMachine.cpp"
+      :pointmax 29900
+      :fsize 29899
+      :lastmodtime '(21888 26187 0 0)
+      :unmatched-syntax '((punctuation 10707 . 10708) (punctuation 10186 . 10187))))
+  :file "!home!chrdob01!dev!mk_102317!modelkits!src!cpus!CortexA53!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,43 @@
+;; Object Systems/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Systems/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/SimpleFlash.h" include nil nil [831 862])
+            ("models/SimpleFlashImp.h" include nil nil [863 897])
+            ("models/RAMBlock.h" include nil nil [898 926])
+            ("models/SimpleBus.h" include nil nil [927 956])
+            ("libCortexR52.tlm.h" include nil nil [957 986])
+            ("models/BasicUART.h" include nil nil [987 1016])
+            ("models/ElfLoader.h" include nil nil [1017 1046])
+            ("iostream" include (:system-flag t) nil [1048 1067])
+            ("scx/scx.h" include (:system-flag t) nil [1068 1088])
+            ("scx_simcontroller.cpp" include (:system-flag t) nil [1090 1122])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1123 1159])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1160 1193])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1195 1219])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1233 1242])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1243 1256]))                  
+                :type "int")
+                nil [1221 8944]))          
+      :file "system_test.cpp"
+      :pointmax 8945
+      :fsize 8944
+      :lastmodtime '(23202 53543 223968 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!OoBT!March_2018!R52-MP2-MC2-SysC-V9.1.0-CMS9.5.0-MK2018.02.28-SOCD9.6.0!Systems!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

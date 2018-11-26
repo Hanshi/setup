@@ -1,0 +1,44 @@
+;; Object Systems/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Systems/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [801 820])
+            ("time.h" include (:system-flag t) nil [821 838])
+            ("CCI550Imp.h" include nil nil [840 862])
+            ("DynamIQ_ClusterImp.h" include nil nil [863 894])
+            ("GIC_BeetonImp.h" include nil nil [895 921])
+            ("NIC400_APB4Imp.h" include nil nil [922 949])
+            ("BP140Imp.h" include nil nil [950 971])
+            ("BP140_TrickBoxImp.h" include nil nil [972 1002])
+            ("scx_signal_sizer.h" include nil nil [1003 1032])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1985 2009])
+            ("SC_MODULE" function
+               (:arguments 
+                  ( ("" variable (:type ("Counter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2021 2029]))                  
+                :type "int")
+                nil [2011 2260])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2275 2284])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2285 2298]))                  
+                :type "int")
+                nil [2263 66709]))          
+      :file "system_test.cpp"
+      :pointmax 66710
+      :fsize 66709
+      :lastmodtime '(22812 34152 416772 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!CPAK!trunk!A55-MP2_CCI-550_NIC-400_GIC-Beeton-SysC!Systems!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

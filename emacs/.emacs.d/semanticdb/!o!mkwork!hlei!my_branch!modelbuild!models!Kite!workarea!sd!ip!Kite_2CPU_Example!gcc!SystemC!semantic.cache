@@ -1,0 +1,248 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "KiteImp.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cassert" include (:system-flag t) nil [801 819])
+            ("KiteImp.h" include nil nil [821 841])
+            ("sc_len" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("t" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [929 933]))                  )
+                nil [896 956])
+            ("sc_len" function
+               (:type "int"
+                :arguments 
+                  ( ("d" variable (:type "bool") (reparse-symbol arg-sub-list) [981 988]))                  )
+                nil [958 1002])
+            ("getLength" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1040 1045]))                  )
+                nil [1004 1123])
+            ("my_to_int" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1161 1165])
+                    ("last" variable (:type "int") (reparse-symbol arg-sub-list) [1166 1175])
+                    ("first" variable (:type "int") (reparse-symbol arg-sub-list) [1176 1186]))                  )
+                nil [1125 1228])
+            ("my_to_int" function
+               (:type "int"
+                :arguments 
+                  ( ("x" variable (:type "bool") (reparse-symbol arg-sub-list) [1256 1263])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1264 1268])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1269 1273]))                  )
+                nil [1230 1292])
+            ("my_write" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1330 1335])
+                    ("last" variable (:type "int") (reparse-symbol arg-sub-list) [1336 1345])
+                    ("first" variable (:type "int") (reparse-symbol arg-sub-list) [1346 1356])
+                    ("val" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1357 1369]))                  )
+                nil [1294 1401])
+            ("my_write" function
+               (:type "void"
+                :arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [1429 1437])
+                    ("last" variable (:type "int") (reparse-symbol arg-sub-list) [1438 1447])
+                    ("first" variable (:type "int") (reparse-symbol arg-sub-list) [1448 1458])
+                    ("val" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1459 1471]))                  )
+                nil [1403 1484])
+            ("ScOutToSignal" type
+               (:template 
+                  ( ("portType" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1585 1592])
+                    ("signalType" variable (:type "int") (reparse-symbol classsubparts) [1643 1654])
+                    ("ScOutToSignal" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("p" variable
+                               (:pointer 1
+                                :type ("portType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1671 1683])
+                            ("s" variable
+                               (:pointer 1
+                                :type ("signalType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1684 1698]))                          
+                        :type ("ScOutToSignal" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1657 1811])
+                    ("get_ptr" function
+                       (:arguments 
+                          ( ("value" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1828 1843]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1815 2173])
+                    ("set_ptr" function
+                       (:arguments 
+                          ( ("xx" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2190 2202]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2177 2205])
+                    ("ScOutToSignal" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2209 2227])
+                    ("private" label nil (reparse-symbol classsubparts) [2230 2238])
+                    ("port" variable
+                       (:pointer 1
+                        :type ("portType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2241 2256])
+                    ("signal" variable
+                       (:pointer 1
+                        :type ("signalType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2259 2278]))                  
+                :superclasses 
+                  ( ("ARM::Models::SignalLevel::SignalAccess" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [1486 2281])
+            ("SignalToScIn" type
+               (:template 
+                  ( ("portType" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2380 2387])
+                    ("signalType" variable (:type "int") (reparse-symbol classsubparts) [2438 2449])
+                    ("SignalToScIn" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("p" variable
+                               (:pointer 1
+                                :type ("portType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2466 2478])
+                            ("s" variable
+                               (:pointer 1
+                                :type ("signalType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2479 2493]))                          
+                        :type ("SignalToScIn" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2453 2606])
+                    ("set_ptr" function
+                       (:arguments 
+                          ( ("value" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2623 2638]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2610 2960])
+                    ("SignalToScIn" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2964 2982])
+                    ("get_ptr" function
+                       (:arguments 
+                          ( ("value" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2999 3014]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2986 3023])
+                    ("private" label nil (reparse-symbol classsubparts) [3025 3033])
+                    ("port" variable
+                       (:pointer 1
+                        :type ("portType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3036 3051])
+                    ("signal" variable
+                       (:pointer 1
+                        :type ("signalType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3054 3073]))                  
+                :superclasses 
+                  ( ("ARM::Models::SignalLevel::SignalAccess" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [2282 3076])
+            ("ARM" type
+               (:members 
+                  ( ("Models" type
+                       (:members 
+                          ( ("Cycle" type
+                               (:members 
+                                  ( ("ModelKite" type
+                                       (:members 
+                                          ( ("KiteImp" function
+                                               (:constructor-flag t
+                                                :parent "KiteImp"
+                                                :arguments 
+                                                  ( ("name" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("sc_core::sc_module_name" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3171 3207]))                                                  
+                                                :type ("KiteImp" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3154 79807])
+                                            ("tick_model" function
+                                               (:parent "KiteImp"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [79809 79865])
+                                            ("KiteImp" function
+                                               (:destructor-flag t
+                                                :parent "KiteImp"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [79881 79982])
+                                            ("getName" function
+                                               (:parent "KiteImp"
+                                                :arguments 
+                                                  ( ("name" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [80019 80043]))                                                  
+                                                :type ("ARM::Models::Name" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [79984 80377])
+                                            ("posedge" function
+                                               (:parent "KiteImp"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [80438 83209])
+                                            ("negedge" function
+                                               (:parent "KiteImp"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [83211 83599]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [3131 83601]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [3113 83603]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3094 83605]))                  
+                :type "namespace")
+                nil [3078 83607]))          
+      :file "KiteImp.cpp"
+      :pointmax 83607
+      :fsize 83606
+      :lastmodtime '(22380 9973 779202 0)
+      :unmatched-syntax '((punctuation 2436 . 2437) (symbol 2427 . 2436) (punctuation 2426 . 2427) (punctuation 2425 . 2426) (symbol 2417 . 2425) (TYPENAME 2408 . 2416) (punctuation 2407 . 2408) (symbol 2398 . 2407) (TYPEDEF 2390 . 2397) (punctuation 2227 . 2228) (punctuation 1641 . 1642) (symbol 1632 . 1641) (punctuation 1631 . 1632) (punctuation 1630 . 1631) (symbol 1622 . 1630) (TYPENAME 1613 . 1621) (punctuation 1612 . 1613) (symbol 1603 . 1612) (TYPEDEF 1595 . 1602)))
+    (semanticdb-table "KiteImp.h"
+      :file "KiteImp.h"
+      :fsize 37365
+      :lastmodtime '(22380 9973 717201 0)))
+  :file "!o!mkwork!hlei!my_branch!modelbuild!models!Kite!workarea!sd!ip!Kite_2CPU_Example!gcc!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

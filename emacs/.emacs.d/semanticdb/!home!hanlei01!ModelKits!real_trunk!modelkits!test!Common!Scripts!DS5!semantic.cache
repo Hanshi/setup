@@ -1,0 +1,86 @@
+;; Object DS5/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "DS5/"
+  :tables
+  (list
+    (semanticdb-table "functions.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("global" code nil nil [26 46])
+            ("global" code nil nil [47 66])
+            ("regTestFailed" variable nil nil [67 84])
+            ("regTestCount" variable nil nil [85 101])
+            ("saveRegFileWrite" function (:arguments 
+              ( ("ec" variable nil (reparse-symbol function_parameters) [156 158])
+                ("f" variable nil (reparse-symbol function_parameters) [160 161])
+                ("name" variable nil (reparse-symbol function_parameters) [163 167]))              ) nil [135 388])
+            ("saveRegFileRead" function (:arguments 
+              ( ("ec" variable nil (reparse-symbol function_parameters) [413 415])
+                ("f" variable nil (reparse-symbol function_parameters) [417 418])
+                ("name" variable nil (reparse-symbol function_parameters) [420 424]))              ) nil [393 673])
+            ("CADIRegWrite" function (:arguments 
+              ( ("ec" variable nil (reparse-symbol function_parameters) [695 697])
+                ("name" variable nil (reparse-symbol function_parameters) [699 703])
+                ("value" variable nil (reparse-symbol function_parameters) [705 710]))              ) nil [678 851])
+            ("CADIRegRead" function (:arguments 
+              ( ("ec" variable nil (reparse-symbol function_parameters) [872 874])
+                ("name" variable nil (reparse-symbol function_parameters) [876 880]))              ) nil [856 1030])
+            ("CADIMemRead" function (:arguments 
+              ( ("ec" variable nil (reparse-symbol function_parameters) [1047 1049])
+                ("memspace" variable nil (reparse-symbol function_parameters) [1051 1059])
+                ("addr" variable nil (reparse-symbol function_parameters) [1061 1065]))              ) nil [1031 1210])
+            ("READ_WORD" function (:arguments 
+              ( ("ec" variable nil (reparse-symbol function_parameters) [1229 1231])
+                ("memspace" variable nil (reparse-symbol function_parameters) [1233 1241])
+                ("addr" variable nil (reparse-symbol function_parameters) [1243 1247]))              ) nil [1215 2033])
+            ("RUNTO" function (:arguments 
+              ( ("ec" variable nil (reparse-symbol function_parameters) [2443 2445])
+                ("targetPC" variable nil (reparse-symbol function_parameters) [2447 2455])
+                ("memSpace" variable nil (reparse-symbol function_parameters) [2457 2465])
+                ("maxAttempts" variable nil (reparse-symbol function_parameters) [2467 2478]))              ) nil [2433 3113])
+            ("getRegisterValue" function
+               (:documentation "Get register value and return string with unsigned hex and signed
+    integer, possibly string \"error\" if there was a problem reading
+    the register.
+    "
+                :arguments 
+                  ( ("executionContext" variable nil (reparse-symbol function_parameters) [3991 4007])
+                    ("name" variable nil (reparse-symbol function_parameters) [4009 4013]))                  )
+                nil [3970 4508])
+            ("CHECK_REGISTER_VALUE" function (:arguments 
+              ( ("ec" variable nil (reparse-symbol function_parameters) [4706 4708])
+                ("reg" variable nil (reparse-symbol function_parameters) [4710 4713])
+                ("value" variable nil (reparse-symbol function_parameters) [4715 4720]))              ) nil [4681 5237])
+            ("CHECK_REGISTER_REG_VALUE" function (:arguments 
+              ( ("ec" variable nil (reparse-symbol function_parameters) [5334 5336])
+                ("reg" variable nil (reparse-symbol function_parameters) [5338 5341])
+                ("expReg" variable nil (reparse-symbol function_parameters) [5343 5349]))              ) nil [5305 5895])
+            ("CHECK_REGISTER_REG_VALUE2" function (:arguments 
+              ( ("ec" variable nil (reparse-symbol function_parameters) [5998 6000])
+                ("reg" variable nil (reparse-symbol function_parameters) [6002 6005])
+                ("expReg0" variable nil (reparse-symbol function_parameters) [6007 6014])
+                ("expReg1" variable nil (reparse-symbol function_parameters) [6016 6023]))              ) nil [5968 6173])
+            ("CHECK_REGISTER_MEM_VALUE" function (:arguments 
+              ( ("ec" variable nil (reparse-symbol function_parameters) [6298 6300])
+                ("reg" variable nil (reparse-symbol function_parameters) [6302 6305])
+                ("addr" variable nil (reparse-symbol function_parameters) [6307 6311])
+                ("size" variable nil (reparse-symbol function_parameters) [6313 6317]))              ) nil [6269 6510])
+            ("GET_FAILSTATUS" function nil nil [6511 6580])
+            ("CHECK_REGISTER_SUMMARY" function nil nil [6627 6882])
+            ("CHECK_MEMORY_SUMMARY" function nil nil [6927 7190])
+            ("DEPOSIT_REG" function (:arguments 
+              ( ("ec" variable nil (reparse-symbol function_parameters) [7207 7209])
+                ("name" variable nil (reparse-symbol function_parameters) [7211 7215])
+                ("value" variable nil (reparse-symbol function_parameters) [7217 7222]))              ) nil [7191 7268])
+            ("SAVEREGS" function (:arguments 
+              ( ("ec" variable nil (reparse-symbol function_parameters) [7282 7284]))              ) nil [7269 34030])
+            ("RESTOREREGS" function (:arguments 
+              ( ("ec" variable nil (reparse-symbol function_parameters) [44333 44335]))              ) nil [44317 70642]))          
+      :file "functions.py"
+      :pointmax 80754
+      :fsize 80753
+      :lastmodtime '(23326 49074 0 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!real_trunk!modelkits!test!Common!Scripts!DS5!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

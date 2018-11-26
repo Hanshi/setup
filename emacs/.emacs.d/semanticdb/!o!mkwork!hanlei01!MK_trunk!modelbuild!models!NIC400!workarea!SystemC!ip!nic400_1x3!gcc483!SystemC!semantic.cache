@@ -1,0 +1,89 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "nic400_1x3aImp.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cassert" include (:system-flag t) nil [801 819])
+            ("nic400_1x3aImp.h" include nil nil [821 848])
+            ("ARM" type
+               (:members 
+                  ( ("Models" type
+                       (:members 
+                          ( ("Cycle" type
+                               (:members 
+                                  ( ("Modelnic400_1x3a" type
+                                       (:members 
+                                          ( ("nic400_1x3aImp" function
+                                               (:constructor-flag t
+                                                :parent "nic400_1x3aImp"
+                                                :arguments 
+                                                  ( ("name" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("sc_core::sc_module_name" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1018 1054])
+                                                    ("add_tarmac_prefix" variable (:type "bool") (reparse-symbol arg-sub-list) [1054 1077]))                                                  
+                                                :type ("nic400_1x3aImp" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [987 25109])
+                                            ("tick_model" function
+                                               (:parent "nic400_1x3aImp"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [25112 25175])
+                                            ("nic400_1x3aImp" function
+                                               (:destructor-flag t
+                                                :parent "nic400_1x3aImp"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [25191 25309])
+                                            ("posedge" function
+                                               (:parent "nic400_1x3aImp"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [25717 26046])
+                                            ("negedge" function
+                                               (:parent "nic400_1x3aImp"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [26048 26376]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [957 26378]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [939 26380]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [920 26382]))                  
+                :type "namespace")
+                nil [904 26384]))          
+      :file "nic400_1x3aImp.cpp"
+      :pointmax 26385
+      :fsize 26384
+      :lastmodtime '(22796 58686 463736 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "nic400_1x3aImp.h"
+      :file "nic400_1x3aImp.h"
+      :fsize 12831
+      :lastmodtime '(22796 58686 428730 0))
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("LINUX_DIR" variable (:default-value (".")) nil [1 15])
+            ("PACKAGE_LIB_DIR" variable (:default-value ("./lib")) nil [66 90])
+            ("COMP_NAME" variable (:default-value ("$(subst lib,,$(basename $(notdir $(wildcard $(PACKAGE_LIB_DIR)/lib*.a))))")) nil [188 274])
+            ("clean" function nil nil [275 300])
+            ("gen_code" function nil nil [301 311])
+            ("Makefile.internal" include nil nil [330 356])
+            ("CXX" variable (:default-value ("g++")) nil [418 426])
+            ("CXXFLAGS" variable (:default-value ("-fPIC" "-g" "-DCARBON_DUMP_VCD=0" "-std=c++11" "-I$(SYSTEMC_HOME)/include" "-I$(CARBON_HOME)/include" "$(CM_SYSC_CXXFLAGS)" "-I." "-I$(LINUX_DIR)" "-DGENERATE_SLAVE_PORTS=1")) nil [427 640])
+            ("OBJS" variable (:default-value ("$(COMP_NAME)Imp.o" "lib$(COMP_NAME).systemc.o")) nil [641 699])
+            ("all" function (:arguments ("lib$(COMP_NAME).so")) nil [700 724])
+            ("lib" function (:arguments ("$(OBJS)")) nil [725 1122])
+            ("$(COMP_NAME)" function (:arguments ("gen_code")) nil [1124 1154])
+            ("$(COMP_NAME)" function (:arguments ("$(COMP_NAME)Imp.cpp")) nil [1155 1227])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp" "gen_code")) nil [1228 1324]))          
+      :file "Makefile"
+      :pointmax 1325
+      :fsize 1324
+      :lastmodtime '(22796 58686 278728 0)
+      :unmatched-syntax nil))
+  :file "!o!mkwork!hanlei01!MK_trunk!modelbuild!models!NIC400!workarea!SystemC!ip!nic400_1x3!gcc483!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

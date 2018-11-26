@@ -1,0 +1,89 @@
+;; Object PlatformUtils/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "PlatformUtils/"
+  :tables
+  (list
+    (semanticdb-table "Environment.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Environment.h" include nil nil [264 288])
+            ("cstdlib" include (:system-flag t) nil [289 307])
+            ("iomanip" include (:system-flag t) nil [308 326])
+            ("sstream" include (:system-flag t) nil [327 345])
+            ("string" include (:system-flag t) nil [346 363])
+            ("stdexcept" include (:system-flag t) nil [364 384])
+            ("boost/filesystem.hpp" include (:system-flag t) nil [386 417])
+            ("boost/filesystem/fstream.hpp" include (:system-flag t) nil [418 457])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [501 521])
+            ("fs" type
+               (:kind alias
+                :members 
+                  ( ("boost::filesystem" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [522 555])
+            ("Carbon" type
+               (:members 
+                  ( ("PlatformUtils" type
+                       (:members 
+                          ( ("getEnvironmentVariable" function
+                               (:arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [638 662]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [603 787])
+                            ("environmentVariableIsSet" function
+                               (:arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [820 844]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [790 899])
+                            ("setEnvironmentVariable" function
+                               (:arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1330 1354])
+                                    ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1355 1380]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1302 1426])
+                            ("getEnvironment" function (:type ("map" type
+                                 (:template-specifier 
+                                    ( ("string" type nil nil nil)
+                                      ("string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1485 2073])
+                            ("reportEnvironment" function
+                               (:arguments 
+                                  ( ("report_path" variable (:type ("fs::path" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2167 2188]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2144 2905]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [576 2908]))                  
+                :type "namespace")
+                nil [557 2910]))          
+      :file "Environment.cpp"
+      :pointmax 2945
+      :fsize 2944
+      :lastmodtime '(22617 57199 112893 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Environment.h"
+      :file "Environment.h"
+      :fsize 913
+      :lastmodtime '(22617 57199 113896 0)))
+  :file "!home!hanlei01!Source!socdesigner!MaxSim!PlatformUtils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

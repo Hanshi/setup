@@ -1,0 +1,61 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("models/Memory.h" include nil nil [22 48])
+            ("models/TrafficGenerator.h" include nil nil [49 85])
+            ("models/Monitor.h" include nil nil [86 113])
+            ("nic400_1x3aImp.h" include nil nil [114 141])
+            ("ARM::AXI4" using (:type ("ARM::AXI4" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [142 168])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1421 1445])
+            ("ARM::Models" using (:type ("ARM::Models" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1446 1474])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1488 1497])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1498 1511]))                  
+                :type "int")
+                nil [1476 3791]))          
+      :file "system_test.cpp"
+      :pointmax 3792
+      :fsize 3869
+      :lastmodtime '(22490 62661 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++" "-g" "-O0" "-DSC_INCLUDE_DYNAMIC_PROCESSES" "-Wall" "-Wextra" "-Werror" "-Wno-unused-parameter" "-DGENERATE_SLAVE_PORTS=1" "-std=c++11")) nil [88 214])
+            ("SYSTEMC_INC" variable (:default-value ("$(SYSTEMC_HOME)/include/")) nil [249 288])
+            ("SYSTEMC_LIB" variable (:default-value ("$(SYSTEMC_HOME)/lib-linux64/")) nil [288 331])
+            ("NIC400_DIR" variable (:default-value ("./MODELS/NIC400/nic400_1x3/gcc/SystemC")) nil [331 383])
+            ("all" function (:arguments ("system_test")) nil [427 445])
+            ("$(CM_SYSC_HOME)/makefiles/cm_sysc_common.mak" include nil nil [446 499])
+            ("system_test" function (:arguments ("system_test.o" "nic400_1x3aResetImp.o")) nil [500 764])
+            ("nic400_1x3aResetImp.o" function (:arguments ("$(NIC400_DIR)/nic400_1x3aResetImp.cpp")) nil [765 958])
+            ("system_test.o" function (:arguments ("system_test.cpp")) nil [959 1122])
+            ("clean" function nil nil [1123 1154]))          
+      :file "Makefile"
+      :pointmax 1156
+      :fsize 1155
+      :lastmodtime '(22681 1833 0 0)
+      :unmatched-syntax '((symbol 417 . 425) (semantic-list 400 . 417) (punctuation 399 . 400) (punctuation 397 . 398) (punctuation 396 . 397) (symbol 383 . 395) (bol 383 . 383))))
+  :file "!home!ronmax01!dev!modelkits!test!primecells!NIC400!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

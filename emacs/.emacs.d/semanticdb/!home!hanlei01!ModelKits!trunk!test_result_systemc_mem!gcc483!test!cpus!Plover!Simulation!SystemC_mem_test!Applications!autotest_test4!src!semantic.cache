@@ -1,0 +1,74 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "app.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [44 62])
+            ("trickbox_defs.h" include nil nil [63 89])
+            ("TRICKBOX_SPACE" variable
+               (:dereference 1
+                :typemodifiers ("volatile" "static")
+                :type "char")
+                nil [91 199])
+            ("op_ptr" variable
+               (:pointer 1
+                :default-value "(enum operations *) &TRICKBOX_SPACE[OPERATION_INDEX]"
+                :type ("operations" type (:type "enum") nil nil))
+                nil [201 280])
+            ("data_ptr" variable
+               (:pointer 1
+                :default-value "(char *) &TRICKBOX_SPACE[DATA_INDEX]"
+                :type "char")
+                nil [281 335])
+            ("data_length_ptr" variable
+               (:pointer 1
+                :default-value "(uint32_t *) &TRICKBOX_SPACE[DATA_LENGTH_INDEX]"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [336 412])
+            ("address_ptr" variable
+               (:pointer 1
+                :default-value "(uint32_t *) &TRICKBOX_SPACE[ADDRESS_INDEX]"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [413 481])
+            ("waiting_ptr" variable
+               (:pointer 1
+                :default-value "(uint32_t *) &TRICKBOX_SPACE[WAITING_INDEX]"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [482 550])
+            ("autotest_test4" function
+               (:arguments 
+                  ( ("start_addr" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [647 674]))                  
+                :type "void")
+                nil [627 5351])
+            ("testbase" variable
+               (:pointer 1
+                :default-value "(unsigned char *)0x500000"
+                :type "unsigned char")
+                nil [5352 5404])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5416 5425])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5426 5438]))                  
+                :type "int")
+                nil [5406 6509]))          
+      :file "app.c"
+      :pointmax 6510
+      :fsize 6509
+      :lastmodtime '(23404 47875 474359 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "trickbox_defs.h"
+      :file "trickbox_defs.h"
+      :fsize 569
+      :lastmodtime '(23404 47875 560368 0)))
+  :file "!home!hanlei01!ModelKits!trunk!test_result_systemc_mem!gcc483!test!cpus!Plover!Simulation!SystemC_mem_test!Applications!autotest_test4!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

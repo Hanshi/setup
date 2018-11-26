@@ -1,0 +1,79 @@
+;; Object dsm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dsm/"
+  :tables
+  (list
+    (semanticdb-table "dsm_gen.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [2199 2209])
+            ("os" include nil nil [2210 2219])
+            ("re" include nil nil [2220 2229])
+            ("datetime" include nil nil [2230 2245])
+            ("copy" include nil nil [2246 2257])
+            ("optparse" include nil nil [2306 2339])
+            ("DSM_GEN_VERSION" variable nil nil [2341 2365])
+            ("VerilogTime" type
+               (:members 
+                  ( ("time" variable nil (reparse-symbol indented_block_body) [2471 2481]))                  
+                :type "class")
+                nil [2448 2482])
+            ("atomic_write" function (:arguments 
+              ( ("output_file" variable nil (reparse-symbol function_parameters) [2548 2559])
+                ("string_in" variable nil (reparse-symbol function_parameters) [2561 2570]))              ) nil [2531 2784])
+            ("getconfig" function nil nil [2819 4073])
+            ("main" function (:arguments 
+              ( ("config" variable nil (reparse-symbol function_parameters) [4180 4186])
+                ("args" variable nil (reparse-symbol function_parameters) [4188 4192]))              ) nil [4171 7827])
+            ("indentation" function (:arguments 
+              ( ("s" variable nil (reparse-symbol function_parameters) [7942 7943])
+                ("tabsize" variable nil (reparse-symbol function_parameters) [7945 7952]))              ) nil [7926 8124])
+            ("parse_io_list_text_file" function (:arguments 
+              ( ("output_file" variable nil (reparse-symbol function_parameters) [8290 8301])
+                ("pinlist_filename" variable nil (reparse-symbol function_parameters) [8303 8319]))              ) nil [8262 13499])
+            ("get_signal_slice_name" function (:arguments 
+              ( ("signame_in" variable nil (reparse-symbol function_parameters) [13591 13601]))              ) nil [13565 13837])
+            ("create_signal_slice_name" function (:arguments 
+              ( ("portslist" variable nil (reparse-symbol function_parameters) [13919 13928])
+                ("signalname" variable nil (reparse-symbol function_parameters) [13930 13940])
+                ("bit_slice" variable nil (reparse-symbol function_parameters) [13942 13951]))              ) nil [13890 14103])
+            ("list2str" function (:arguments 
+              ( ("list_in" variable nil (reparse-symbol function_parameters) [14157 14164]))              ) nil [14144 14217])
+            ("timestep_adjust_order" function (:arguments 
+              ( ("timestep_buf" variable nil (reparse-symbol function_parameters) [14472 14484])
+                ("time" variable nil (reparse-symbol function_parameters) [14486 14490]))              ) nil [14446 15161])
+            ("parse_vcd_to_create_stimulus" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [15347 15355])
+                ("get_header" variable nil (reparse-symbol function_parameters) [15357 15367])
+                ("check_start_time" variable nil (reparse-symbol function_parameters) [15369 15385])
+                ("parameters" variable nil (reparse-symbol function_parameters) [15387 15397])
+                ("pins" variable nil (reparse-symbol function_parameters) [15399 15403]))              ) nil [15314 25990])
+            ("gen_testbench" function (:arguments 
+              ( ("output_file" variable nil (reparse-symbol function_parameters) [26040 26051])
+                ("dsm_name" variable nil (reparse-symbol function_parameters) [26053 26061])
+                ("options" variable nil (reparse-symbol function_parameters) [26063 26070])
+                ("parameters" variable nil (reparse-symbol function_parameters) [26072 26082])
+                ("pins" variable nil (reparse-symbol function_parameters) [26084 26088])
+                ("vcd_filename" variable nil (reparse-symbol function_parameters) [26090 26102])
+                ("reset_time" variable nil (reparse-symbol function_parameters) [26104 26114]))              ) nil [26022 28482])
+            ("gen_testbench_script" function (:arguments 
+              ( ("output_file" variable nil (reparse-symbol function_parameters) [28828 28839])
+                ("dsm_name" variable nil (reparse-symbol function_parameters) [28841 28849])
+                ("module_name" variable nil (reparse-symbol function_parameters) [28851 28862])
+                ("options" variable nil (reparse-symbol function_parameters) [28864 28871]))              ) nil [28803 35708])
+            ("gen_docs" function (:arguments 
+              ( ("output_file" variable nil (reparse-symbol function_parameters) [35762 35773])
+                ("dsm_name" variable nil (reparse-symbol function_parameters) [35775 35783])
+                ("module_name" variable nil (reparse-symbol function_parameters) [35785 35796])
+                ("options" variable nil (reparse-symbol function_parameters) [35798 35805])
+                ("parameters" variable nil (reparse-symbol function_parameters) [35807 35817])
+                ("pins" variable nil (reparse-symbol function_parameters) [35819 35823]))              ) nil [35749 45327])
+            ("if" code nil nil [45341 45422]))          
+      :file "dsm_gen.py"
+      :pointmax 45422
+      :fsize 45421
+      :lastmodtime '(22923 30844 0 0)
+      :unmatched-syntax '((RETURN 8057 . 8063) (IF 8066 . 8068) (ELSE 8082 . 8086))))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!Scripts!dsm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

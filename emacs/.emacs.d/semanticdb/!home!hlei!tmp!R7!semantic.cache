@@ -1,0 +1,141 @@
+;; Object R7/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "R7/"
+  :tables
+  (list
+    (semanticdb-table "FM_r7.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cstdlib" include (:system-flag t) nil [36 54])
+            ("FM_r7.h" include nil nil [55 73])
+            ("R7_save_createHandler" function
+               (:prototype-flag t
+                :pointer 1
+                :type ("ArchSaveHandlerIF" type (:type "class") nil nil))
+                nil [86 129])
+            ("FM_r7" function
+               (:constructor-flag t
+                :parent "FM_r7"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [143 172])
+                    ("scName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sc_module_name" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [173 202])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [203 227]))                  
+                :type ("FM_r7" type (:type "class") nil nil))
+                nil [130 573])
+            ("FM_r7" function
+               (:destructor-flag t
+                :parent "FM_r7"
+                :type "void")
+                nil [575 594])
+            ("init" function
+               (:parent "FM_r7"
+                :type "void")
+                nil [596 762])
+            ("before_end_of_elaboration" function
+               (:parent "FM_r7"
+                :type "void")
+                nil [764 857])
+            ("terminate" function
+               (:parent "FM_r7"
+                :type "void")
+                nil [858 939])
+            ("getName" function
+               (:parent "FM_r7"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [941 991])
+            ("setParameter" function
+               (:parent "FM_r7"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1018 1042])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1043 1068]))                  
+                :type "void")
+                nil [993 1121])
+            ("getParameter" function
+               (:parent "FM_r7"
+                :arguments 
+                  ( ("key" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1155 1178]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1123 1443])
+            ("getProperty" function
+               (:parent "FM_r7"
+                :arguments 
+                  ( ("property" variable (:type ("eslapi::CASIPropertyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1476 1510]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1445 2374])
+            ("addRegisters_0" function
+               (:parent "FM_r7"
+                :type "void")
+                nil [2376 44803])
+            ("FM_r7Factory" type
+               (:superclasses 
+                  ( ("CASIFactory" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [44846 44853])
+                    ("FM_r7Factory" function
+                       (:constructor-flag t
+                        :type ("FM_r7Factory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [44856 44896])
+                    ("createInstance" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("c" variable
+                               (:pointer 1
+                                :type ("CASIModuleIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [44928 44944])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [44945 44962]))                          
+                        :type ("CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [44899 45118]))                  
+                :type "class")
+                nil [44804 45121])
+            ("CASIInit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [45149 45154]))                  
+                :type "void")
+                nil [45134 45179])
+            ("CASIInit_SCImport" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [45216 45221]))                  
+                :type "void")
+                nil [45192 45225]))          
+      :file "FM_r7.cpp"
+      :pointmax 45227
+      :fsize 45226
+      :lastmodtime '(22423 54050 198943 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "FM_r7.h"
+      :file "FM_r7.h"
+      :fsize 820
+      :lastmodtime '(22423 54050 193923 0)))
+  :file "!home!hlei!tmp!R7!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

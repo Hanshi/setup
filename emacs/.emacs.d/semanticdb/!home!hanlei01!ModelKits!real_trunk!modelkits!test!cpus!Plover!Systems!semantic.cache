@@ -1,0 +1,150 @@
+;; Object Systems/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Systems/"
+  :tables
+  (list
+    (semanticdb-table "Plover_base_SystemC_TEMPLATE.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("set_actions" function
+               (:prototype-flag t
+                :parent "sc_report_handler"
+                :arguments 
+                  ( ("" variable (:type ("SC_ID_DISABLE_WILL_ORPHAN_PROCESS_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [736 771])
+                    ("" variable (:type ("SC_DO_NOTHING" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [771 785]))                  
+                :type "int")
+                nil [704 786])
+            ("cpu_clk" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SC_NS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [907 913]))                  
+                :type ("sc_clock" type (:type "class") nil nil))
+                nil [880 919])
+            ("core" function
+               (:prototype-flag t
+                :type ("ARM::Models::Cycle::ModelPlover::PloverImp" type (:type "class") nil nil))
+                nil [923 983])
+            ("ram_block" variable (:type ("ARM::Models::RAMBlock" type (:type "class") nil nil)) nil [1004 1036])
+            ("simple_mem_params" variable (:type ("ARM::Models::SimpleMemConfig" type (:type "class") nil nil)) nil [1039 1086])
+            ("delay" variable
+               (:default-value "1"
+                :type "int")
+                nil [1107 1117])
+            ("ram_block" variable
+               (:default-value "&ram_block"
+                :type "int")
+                nil [1138 1161])
+            ("busWidthBits" variable
+               (:default-value "64"
+                :type "int")
+                nil [1182 1200])
+            ("simple_mem" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("simple_mem_params" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1245 1263]))                  
+                :type ("ARM::Models::SimpleMem" type (:type "class") nil nil))
+                nil [1204 1264])
+            ("uart" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("std::cout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1303 1313]))                  
+                :type ("ARM::Models::BasicUART" type (:type "class") nil nil))
+                nil [1267 1324])
+            ("bus" function
+               (:prototype-flag t
+                :type ("ARM::Models::SimpleBus" type (:type "class") nil nil))
+                nil [2054 2107])
+            ("addMap" function
+               (:prototype-flag t
+                :type "int")
+                nil [2114 2139])
+            ("bind" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("bus" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2440 2444])
+                    ("" variable (:type ("tSkt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2444 2449]))                  
+                :type "int")
+                nil [2435 2450])
+            ("bind" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("simple_mem" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2492 2503])
+                    ("" variable (:type ("directTskt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2503 2514]))                  
+                :type "int")
+                nil [2487 2515])
+            ("scx_set_parameter" function
+               (:prototype-flag t
+                :parent "scx"
+                :type "int")
+                nil [3619 3673])
+            ("scx_set_parameter" function
+               (:prototype-flag t
+                :parent "scx"
+                :type "int")
+                nil [3676 3730])
+            ("scx_set_parameter" function
+               (:prototype-flag t
+                :parent "scx"
+                :type "int")
+                nil [3733 3785])
+            ("write" function
+               (:prototype-flag t
+                :type "int")
+                nil [3804 3815])
+            ("write" function
+               (:prototype-flag t
+                :type "int")
+                nil [3834 3845])
+            ("bind" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("uart" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3929 3934])
+                    ("" variable (:type ("tSkt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3934 3939]))                  
+                :type "int")
+                nil [3924 3940])
+            ("bind" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("uart" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3981 3986])
+                    ("" variable (:type ("directTskt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3986 3997]))                  
+                :type "int")
+                nil [3976 3998])
+            ("bind" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("simple_mem" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4062 4073])
+                    ("" variable (:type ("tSkt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4073 4078]))                  
+                :type "int")
+                nil [4057 4079])
+            ("clk" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("cpu_clk" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4186 4194]))                  
+                :type "int")
+                nil [4182 4195])
+            ("bind" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("cpu_clk" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4220 4228]))                  
+                :type "int")
+                nil [4215 4229])
+            ("bind" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("cpu_clk" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4248 4256]))                  
+                :type "int")
+                nil [4243 4257])
+            ("bind" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("cpu_clk" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4312 4320]))                  
+                :type "int")
+                nil [4307 4321]))          
+      :file "Plover_base_SystemC_TEMPLATE.h"
+      :pointmax 4429
+      :fsize 4428
+      :lastmodtime '(23303 8252 0 0)
+      :unmatched-syntax '((punctuation 4306 . 4307) (symbol 4301 . 4306) (punctuation 4300 . 4301) (symbol 4297 . 4300) (punctuation 4242 . 4243) (symbol 4237 . 4242) (punctuation 4236 . 4237) (symbol 4232 . 4236) (punctuation 4214 . 4215) (symbol 4209 . 4214) (punctuation 4208 . 4209) (symbol 4198 . 4208) (punctuation 4181 . 4182) (symbol 4177 . 4181) (punctuation 4072 . 4073) (punctuation 4056 . 4057) (punctuation 4055 . 4056) (semantic-list 4052 . 4055) (symbol 4048 . 4052) (punctuation 4047 . 4048) (symbol 4044 . 4047) (punctuation 3985 . 3986) (punctuation 3975 . 3976) (symbol 3948 . 3975) (punctuation 3947 . 3948) (symbol 3943 . 3947) (punctuation 3933 . 3934) (punctuation 3923 . 3924) (punctuation 3922 . 3923) (symbol 3901 . 3922) (punctuation 3900 . 3901) (symbol 3896 . 3900) (number 3840 . 3843) (punctuation 3833 . 3834) (symbol 3823 . 3833) (punctuation 3822 . 3823) (symbol 3818 . 3822) (number 3810 . 3813) (punctuation 3803 . 3804) (symbol 3793 . 3803) (punctuation 3792 . 3793) (symbol 3788 . 3792) (number 3778 . 3783) (string 3756 . 3777) (number 3723 . 3728) (string 3699 . 3722) (number 3664 . 3671) (string 3642 . 3663) (punctuation 2502 . 2503) (punctuation 2486 . 2487) (symbol 2458 . 2486) (punctuation 2457 . 2458) (symbol 2453 . 2457) (punctuation 2443 . 2444) (punctuation 2434 . 2435) (punctuation 2433 . 2434) (symbol 2411 . 2433) (punctuation 2410 . 2411) (symbol 2406 . 2410) (number 2127 . 2137) (number 2124 . 2125) (number 2121 . 2122) (punctuation 2113 . 2114) (symbol 2110 . 2113) (number 2103 . 2105) (number 2100 . 2101) (number 2097 . 2098) (string 2081 . 2095) (string 1314 . 1322) (string 1295 . 1301) (string 1238 . 1243) (punctuation 1181 . 1182) (symbol 1164 . 1181) (punctuation 1137 . 1138) (symbol 1120 . 1137) (punctuation 1106 . 1107) (symbol 1089 . 1106) (string 971 . 981) (number 914 . 917) (number 904 . 905) (string 897 . 902) (symbol 850 . 860) (symbol 839 . 849) (symbol 828 . 838) (symbol 817 . 827) (symbol 805 . 816) (symbol 787 . 804))))
+  :file "!home!hanlei01!ModelKits!real_trunk!modelkits!test!cpus!Plover!Systems!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

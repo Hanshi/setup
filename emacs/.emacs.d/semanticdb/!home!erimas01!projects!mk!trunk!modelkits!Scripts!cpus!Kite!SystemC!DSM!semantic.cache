@@ -1,0 +1,71 @@
+;; Object DSM/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "DSM/"
+  :tables
+  (list
+    (semanticdb-table "createDSMRamCfg.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("xml.etree.ElementTree" include nil nil [1069 1103])
+            ("os.path" include nil nil [1104 1118])
+            ("glob" include nil nil [1119 1130])
+            ("sys" include nil nil [1131 1141])
+            ("optparse" include nil nil [1159 1192])
+            ("RamConfig" type
+               (:members 
+                  ( ("_core" variable nil (reparse-symbol indented_block_body) [1266 1276])
+                    ("_numCores" variable nil (reparse-symbol indented_block_body) [1281 1294])
+                    ("_compName" variable nil (reparse-symbol indented_block_body) [1299 1313])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [1356 1381]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1332 1336])
+                            ("xmlFile" variable nil (reparse-symbol function_parameters) [1338 1345]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1319 1382])
+                    ("getNumCores" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1403 1407]))                          )
+                        (reparse-symbol indented_block_body) [1387 1440])
+                    ("getComponentName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1466 1470]))                          )
+                        (reparse-symbol indented_block_body) [1445 1503])
+                    ("initFromXML" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1673 1677])
+                            ("xmlFile" variable nil (reparse-symbol function_parameters) [1679 1686]))                          )
+                        (reparse-symbol indented_block_body) [1657 3208])
+                    ("getSetting" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3285 3289])
+                            ("setting" variable nil (reparse-symbol function_parameters) [3291 3298]))                          )
+                        (reparse-symbol indented_block_body) [3270 3466]))                  
+                :type "class")
+                nil [1245 3466])
+            ("parser" variable nil nil [3833 3943])
+            ("parser" code nil nil [3944 4052])
+            ("" code nil nil [4053 4090])
+            ("if" code nil nil [4092 4174])
+            ("ramConfig" variable nil nil [4228 4266])
+            ("ramCfgFileName" variable nil nil [4292 4362])
+            ("ramCfgFile" variable nil nil [4364 4402])
+            ("print" code nil nil [4405 4439])
+            ("ramCfgFile" code nil nil [4441 5261])
+            ("for" code nil nil [5302 9522])
+            ("ramCfgFile" code nil nil [9523 9635])
+            ("ramCfgFile" code nil nil [9637 9655]))          
+      :file "createDSMRamCfg.py"
+      :pointmax 9658
+      :fsize 9657
+      :lastmodtime '(23018 24874 654288 0)
+      :unmatched-syntax '(($EOI 9658 . 9658) (NEWLINE 8979 . 8980) (SEMICOLON 8978 . 8979) (RBRACE 8977 . 8978) (RBRACE 8976 . 8977) (NEWLINE 8975 . 8976) (RBRACE 8971 . 8972) (LBRACE 8965 . 8966) (NEWLINE 8962 . 8963) (RPAREN 8961 . 8962) (LPAREN 8960 . 8961) (RBRACE 8950 . 8951) (LBRACE 8947 . 8948) (NEWLINE 8944 . 8945) (NAME 5358 . 5368) (RBRACE 8943 . 8944))))
+  :file "!home!erimas01!projects!mk!trunk!modelkits!Scripts!cpus!Kite!SystemC!DSM!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

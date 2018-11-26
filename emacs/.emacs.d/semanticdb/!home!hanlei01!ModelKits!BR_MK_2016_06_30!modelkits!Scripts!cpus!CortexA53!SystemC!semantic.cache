@@ -1,0 +1,48 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("LINUX_DIR" variable (:default-value (".")) nil [1 15])
+            ("PACKAGE_LIB_DIR" variable (:default-value ("./lib")) nil [143 167])
+            ("COMP_NAME" variable (:default-value ("$(subst lib,,$(basename $(notdir $(wildcard $(PACKAGE_LIB_DIR)/lib*.a))))")) nil [222 308])
+            ("MODEL_NAME" variable (:default-value ("CortexA53")) nil [308 331])
+            ("clean" function nil nil [332 357])
+            ("gen_code" function nil nil [358 368])
+            ("NUM_CPUS" variable (:default-value ("$(shell grep NUM_CPUS ./$(MODEL_NAME).xmlAnswers)")) nil [445 506])
+            ("NUM_CPUS" variable (:default-value ("4")) nil [560 571])
+            ("NUM_CPUS" variable (:default-value ("3")) nil [631 642])
+            ("NUM_CPUS" variable (:default-value ("2")) nil [702 713])
+            ("NUM_CPUS" variable (:default-value ("1")) nil [718 729])
+            ("MASTER_PROTOCOL" variable (:default-value ("$(shell grep BUS_INTERFACE ./$(MODEL_NAME).xmlAnswers)")) nil [748 821])
+            ("Makefile.internal" include nil nil [840 866])
+            ("CXX" variable (:default-value ("g++")) nil [928 936])
+            ("CXXFLAGS" variable (:default-value ("-fPIC" "-g" "-DCARBON_DUMP_VCD=0" "-std=c++11" "-I$(SYSTEMC_HOME)/include" "-I$(CARBON_HOME)/include" "-I$(CM_SYSC_HOME)/include" "-I$(CM_SYSC_HOME)/include/ARM/Models/" "-I." "-I$(LINUX_DIR)" "-DNUM_CPUS=$(NUM_CPUS)")) nil [937 1199])
+            ("ENABLE_PMU" variable (:default-value ("-DENABLE_PMU=1")) nil [1199 1225])
+            ("DISABLE_PMU" variable (:default-value ("-DENABLE_PMU=0")) nil [1226 1253])
+            ("OBJS" variable (:default-value ("$(MODEL_NAME)Imp.o" "lib$(COMP_NAME).systemc.o")) nil [1254 1314])
+            ("OBJS_noPMU" variable (:default-value ("$(MODEL_NAME)Imp_noPMU.o" "lib$(COMP_NAME)_noPMU.systemc.o")) nil [1315 1393])
+            ("all" function (:arguments ("lib$(COMP_NAME)_noPMU.so" "lib$(COMP_NAME).so")) nil [1394 1443])
+            ("lib" function (:arguments ("$(OBJS_noPMU)")) nil [1444 1864])
+            ("lib" function (:arguments ("$(OBJS)")) nil [1865 2262])
+            ("$(MODEL_NAME)" function (:arguments ("gen_code")) nil [2263 2294])
+            ("$(MODEL_NAME)" function (:arguments ("$(MODEL_NAME)Imp.cpp")) nil [2295 2383])
+            ("$(MODEL_NAME)" function (:arguments ("$(MODEL_NAME)Imp.cpp")) nil [2384 2479])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp" "gen_code")) nil [2480 2590])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp" "gen_code")) nil [2591 2708])
+            ("all" function nil nil [2714 2745]))          
+      :file "Makefile"
+      :pointmax 2751
+      :fsize 2750
+      :lastmodtime '(22803 31526 311842 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile.internal"
+      :file "Makefile.internal"
+      :fsize 2005
+      :lastmodtime '(22385 27724 0 0)))
+  :file "!home!hanlei01!ModelKits!BR_MK_2016_06_30!modelkits!Scripts!cpus!CortexA53!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

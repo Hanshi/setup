@@ -1,0 +1,168 @@
+;; Object memory/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "memory/"
+  :tables
+  (list
+    (semanticdb-table "Memory.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("icm_impl/memory/MemoryDescription.h" include nil nil [263 309])
+            ("icm_impl/memory/MemoryPort.h" include nil nil [310 349])
+            ("string" include (:system-flag t) nil [350 367])
+            ("vector" include (:system-flag t) nil [368 385])
+            ("icm_impl" type
+               (:members 
+                  ( ("Memory" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [429 436])
+                            ("Memory" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("desc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MemoryDescription" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [448 478])
+                                    ("mem_ports" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("MemoryPort" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [479 515]))                                  
+                                :type ("Memory" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [441 516])
+                            ("Memory" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [521 539])
+                            ("get_name" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [549 595])
+                            ("get_description" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [600 653])
+                            ("get_mem_port" function
+                               (:pointer 1
+                                :constant-flag t
+                                :arguments 
+                                  ( ("port_id" variable
+                                       (:default-value "0"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [690 705]))                                  
+                                :type ("MemoryPort" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [658 742])
+                            ("get_start_address" function (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [748 809])
+                            ("get_end_address" function (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [814 871])
+                            ("get_attributes" function (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [876 931])
+                            ("memory_read" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("addr" variable
+                                       (:constant-flag t
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1009 1029])
+                                    ("num_bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1030 1049])
+                                    ("bytes_processed" variable
+                                       (:pointer 1
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1079 1105])
+                                    ("buf" variable
+                                       (:pointer 1
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1106 1119]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [984 1120])
+                            ("memory_write" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1156 1170])
+                                    ("num_bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1171 1190])
+                                    ("bytes_processed" variable
+                                       (:pointer 1
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1221 1247])
+                                    ("buf" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1248 1267]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1130 1268])
+                            ("read_port" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("port_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1340 1357])
+                                    ("addr" variable
+                                       (:constant-flag t
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1358 1378])
+                                    ("num_bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1379 1398])
+                                    ("bytes_processed" variable
+                                       (:pointer 1
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1426 1452])
+                                    ("buf" variable
+                                       (:pointer 1
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1453 1466]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1317 1467])
+                            ("write_port" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("port_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1501 1518])
+                                    ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1519 1533])
+                                    ("num_bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1534 1553])
+                                    ("bytes_processed" variable
+                                       (:pointer 1
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1582 1608])
+                                    ("buf" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1609 1628]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1477 1629])
+                            ("print" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("prefix" variable
+                                       (:default-value "\"\""
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1657 1678]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1639 1680])
+                            ("protected" label nil (reparse-symbol classsubparts) [1684 1694])
+                            ("m_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1699 1726])
+                            ("m_desc" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1699 1726])
+                            ("m_start_address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1731 1771])
+                            ("m_end_address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1731 1771])
+                            ("m_attributes" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1776 1798])
+                            ("m_mem_ports" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("MemoryPort" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1804 1842]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [410 1847]))                  
+                :type "namespace")
+                nil [387 1849]))          
+      :file "Memory.h"
+      :pointmax 1851
+      :fsize 1850
+      :lastmodtime '(23051 26859 0 0)
+      :unmatched-syntax '((punctuation 1849 . 1850) (symbol 258 . 262) (symbol 251 . 257) (punctuation 250 . 251)))
+    (semanticdb-table "MemoryDescription.h"
+      :file "MemoryDescription.h"
+      :fsize 2699
+      :lastmodtime '(23051 26859 0 0))
+    (semanticdb-table "MemoryPort.h"
+      :file "MemoryPort.h"
+      :fsize 761
+      :lastmodtime '(23051 26859 0 0)))
+  :file "!o!release!icm!master!125!Release!internal!include!icm_impl!memory!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

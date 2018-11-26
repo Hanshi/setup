@@ -1,0 +1,36 @@
+;; Object test1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test1/"
+  :tables
+  (list
+    (semanticdb-table "makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("TARGET" variable (:default-value ("autotest_test1.axf")) nil [375 401])
+            ("CC" variable (:default-value ("armcc")) nil [402 411])
+            ("AS" variable (:default-value ("armasm")) nil [411 421])
+            ("LD" variable (:default-value ("armlink")) nil [421 432])
+            ("AR" variable (:default-value ("armar")) nil [432 441])
+            ("FE" variable (:default-value ("fromelf")) nil [441 452])
+            ("SHELL" variable (:default-value ("$(WINDIR)\\system32\\cmd.exe")) nil [583 616])
+            ("SHELL" variable (:default-value ("$(windir)\\system32\\cmd.exe")) nil [705 738])
+            ("RM" variable (:default-value ("rm" "-f" "$(1)")) nil [796 810])
+            ("all" function (:arguments ("$(TARGET)")) nil [824 863])
+            ("rebuild" function (:arguments ("clean" "all")) nil [864 883])
+            ("clean" function nil nil [884 929])
+            ("CFLAGS" variable (:default-value ("-g" "-O2" "--c99" "--asm" "--cpu=Cortex-M7")) nil [1051 1093])
+            ("ASMFLAGS" variable (:default-value ("-g" "--cpu=Cortex-M7")) nil [1093 1122])
+            ("$(TARGET)" function (:arguments ("autotest_test1.o" "test.o" "exceptions.o" "nvic.o" "sort.o" "../base/scatter.scat")) nil [1123 1374])
+            ("autotest_test1.o" function (:arguments ("autotest_test1.s")) nil [1375 1466])
+            ("test.o" function (:arguments ("test.c" "../base/sort.h")) nil [1467 1524])
+            ("exceptions.o" function (:arguments ("../base/exceptions.c")) nil [1525 1601])
+            ("nvic.o" function (:arguments ("../base/nvic.c" "../base/nvic.h")) nil [1602 1675])
+            ("sort.o" function (:arguments ("../base/sort.c" "../base/sort.h")) nil [1676 1749]))          
+      :file "makefile"
+      :pointmax 1752
+      :fsize 1819
+      :lastmodtime '(23087 65055 185789 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!CortexM7!Applications!Memory!Auto!test1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

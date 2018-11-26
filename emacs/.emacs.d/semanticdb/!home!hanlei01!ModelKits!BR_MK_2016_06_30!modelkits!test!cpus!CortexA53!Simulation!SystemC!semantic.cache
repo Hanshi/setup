@@ -1,0 +1,77 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/RAMBlock.h" include nil nil [831 859])
+            ("models/SimpleBus.h" include nil nil [860 889])
+            ("models/BasicUART.h" include nil nil [890 919])
+            ("models/ElfLoader.h" include nil nil [920 949])
+            ("CortexA53Imp.h" include nil nil [950 975])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [976 1022])
+            ("iostream" include (:system-flag t) nil [1024 1043])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1045 1069])
+            ("dummyInitiator" type
+               (:superclasses 
+                  ( ("sc_module" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("isocket" variable (:type ("tlm_utils::simple_initiator_socket" type
+                         (:template-specifier 
+                            ( ("dummyInitiator" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1108 1167])
+                    ("SC_CTOR" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type ("dummyInitiator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1179 1194]))                          
+                        :type ("dummyInitiator" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [1171 1223]))                  
+                :type "struct")
+                nil [1071 1226])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1240 1249])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1250 1263]))                  
+                :type "int")
+                nil [1228 3171]))          
+      :file "system_test.cpp"
+      :pointmax 3172
+      :fsize 3171
+      :lastmodtime '(22804 31204 919374 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++" "-g" "-O0" "-DSC_INCLUDE_DYNAMIC_PROCESSES" "-Wall" "-Wextra" "-Werror" "-Wno-unused-parameter" "-std=c++11")) nil [27 128])
+            ("SYSTEMC_HOME" variable (:default-value ("/o/tools/systemc-2.3.1-gcc-4.7.2/systemc-2.3.1")) nil [128 190])
+            ("SYSTEMC_INC" variable (:default-value ("$(SYSTEMC_HOME)/include/")) nil [190 229])
+            ("SYSTEMC_LIB" variable (:default-value ("$(SYSTEMC_HOME)/lib-linux64/")) nil [229 272])
+            ("A53_DIR" variable (:default-value ("MODELS/CortexA53/A53_1CPU_min_8KL1_256KL2_AXI3/gcc/SystemC")) nil [272 341])
+            ("PMU" variable (:default-value ("True")) nil [408 417])
+            ("system_test" function (:arguments ("system_test.o")) nil [439 963])
+            ("system_test" function (:arguments ("system_test.o")) nil [990 1515])
+            ("system_test" function (:arguments ("system_test.o")) nil [1521 1622])
+            ("system_test.o" function (:arguments ("system_test.cpp")) nil [1635 1899])
+            ("clean" function nil nil [1900 1927]))          
+      :file "Makefile"
+      :pointmax 1929
+      :fsize 1928
+      :lastmodtime '(22804 52991 730379 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!BR_MK_2016_06_30!modelkits!test!cpus!CortexA53!Simulation!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,67 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "nic400_1x3aImp.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cassert" include (:system-flag t) nil [801 819])
+            ("nic400_1x3aImp.h" include nil nil [821 848])
+            ("ARM" type
+               (:members 
+                  ( ("Models" type
+                       (:members 
+                          ( ("Cycle" type
+                               (:members 
+                                  ( ("Modelnic400_1x3a" type
+                                       (:members 
+                                          ( ("nic400_1x3aImp" function
+                                               (:constructor-flag t
+                                                :parent "nic400_1x3aImp"
+                                                :arguments 
+                                                  ( ("name" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("sc_core::sc_module_name" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1018 1054])
+                                                    ("add_tarmac_prefix" variable (:type "bool") (reparse-symbol arg-sub-list) [1054 1077]))                                                  
+                                                :type ("nic400_1x3aImp" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [987 25162])
+                                            ("tick_model" function
+                                               (:parent "nic400_1x3aImp"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [25165 25228])
+                                            ("nic400_1x3aImp" function
+                                               (:destructor-flag t
+                                                :parent "nic400_1x3aImp"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [25244 25362])
+                                            ("posedge" function
+                                               (:parent "nic400_1x3aImp"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [25770 26099])
+                                            ("negedge" function
+                                               (:parent "nic400_1x3aImp"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [26101 26429]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [957 26431]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [939 26433]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [920 26435]))                  
+                :type "namespace")
+                nil [904 26437]))          
+      :file "nic400_1x3aImp.cpp"
+      :pointmax 26438
+      :fsize 26437
+      :lastmodtime '(22787 35452 645721 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "nic400_1x3aImp.h"
+      :file "nic400_1x3aImp.h"
+      :fsize 12831
+      :lastmodtime '(22787 35452 510726 0)))
+  :file "!o!mkwork!hanlei01!MK_trunk!modelbuild!models!builddir!NIC400!workarea!SystemC!ip!nic400_1x3!gcc483!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

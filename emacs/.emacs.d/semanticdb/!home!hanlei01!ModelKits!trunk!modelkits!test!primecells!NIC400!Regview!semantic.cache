@@ -1,0 +1,495 @@
+;; Object Regview/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Regview/"
+  :tables
+  (list
+    (semanticdb-table "axi_stub1.mxscr"
+      :major-mode 'c-mode
+      :tags 
+        '( ("bytePerBeat" variable
+               (:default-value "0"
+                :type "int")
+                nil [76 96])
+            ("myInstanceId" variable
+               (:default-value "getInstanceID()"
+                :type ("string" type (:type "class") nil nil))
+                nil [97 135])
+            ("parameter_val" variable
+               (:default-value "getParameter(myInstanceId, \"Data Width\")"
+                :type ("string" type (:type "class") nil nil))
+                nil [136 200])
+            ("message" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MX_MSG_INFO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [456 468])
+                    ("" variable
+                       (:pointer 1
+                        :type ("bytePerBeat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [516 529])
+                    ("" variable (:type ("bytePerBeat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [531 543]))                  
+                :type "int")
+                nil [448 544])
+            ("baseA" variable
+               (:default-value "0x100000"
+                :type "int")
+                nil [598 619])
+            ("baseB" variable
+               (:default-value "0x200000"
+                :type "int")
+                nil [659 680])
+            ("baseC" variable
+               (:default-value "0x300000"
+                :type "int")
+                nil [727 748])
+            ("test_phase" variable
+               (:default-value "0"
+                :type "int")
+                nil [824 843])
+            ("resp" variable
+               (:default-value "0"
+                :type "int")
+                nil [844 858])
+            ("LOG_FILE_NAME" variable (:constant-flag t) nil [890 903])
+            ("log_file" variable
+               (:default-value "fopen(LOG_FILE_NAME, \"w\")"
+                :type "int")
+                nil [927 968])
+            ("fill" variable (:type "int") nil [970 979])
+            ("fill" variable
+               (:default-value "0xaa"
+                :type "int")
+                nil [980 992])
+            ("myInstanceMemSpaceName" variable
+               (:default-value "\"AXI-Master (Non-Secure)\""
+                :type ("string" type (:type "class") nil nil))
+                nil [993 1051])
+            ("debugOffset" variable
+               (:default-value "0x0"
+                :type "int")
+                nil [1053 1075])
+            ("testOffset" variable
+               (:default-value "0x20"
+                :type "int")
+                nil [1116 1138])
+            ("summary" variable (:type ("string" type (:type "class") nil nil)) nil [1140 1155])
+            ("sprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("summary" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1164 1172])
+                    ("" variable (:type ("test_phase" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1186 1197]))                  
+                :type "int")
+                nil [1156 1198]))          
+      :file "axi_stub1.mxscr"
+      :pointmax 1199
+      :fsize 1198
+      :lastmodtime '(21031 23646 0 0)
+      :unmatched-syntax '((string 1173 . 1184) (number 528 . 529) (string 469 . 514) (semantic-list 374 . 447) (ELSE 369 . 373) (semantic-list 345 . 368) (semantic-list 318 . 344) (IF 315 . 317) (ELSE 310 . 314) (semantic-list 287 . 309) (semantic-list 261 . 286) (IF 258 . 260) (ELSE 253 . 257) (semantic-list 230 . 252) (semantic-list 204 . 229) (IF 201 . 203))
+      :lexical-table 
+        '(("LOG_FILE_NAME" . ((string "\"test_reg.log\"" 904 . 918)))
+          )
+)
+    (semanticdb-table "ahbv2_stub.mxscr"
+      :major-mode 'c-mode
+      :tags 
+        '( ("bytePerBeat" variable
+               (:default-value "0"
+                :type "int")
+                nil [76 96])
+            ("myInstanceId" variable
+               (:default-value "getInstanceID()"
+                :type ("string" type (:type "class") nil nil))
+                nil [97 135])
+            ("parameter_val" variable
+               (:default-value "getParameter(myInstanceId, \"Data Width\")"
+                :type ("string" type (:type "class") nil nil))
+                nil [136 200])
+            ("message" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MX_MSG_INFO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [456 468])
+                    ("" variable
+                       (:pointer 1
+                        :type ("bytePerBeat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [516 529])
+                    ("" variable (:type ("bytePerBeat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [531 543]))                  
+                :type "int")
+                nil [448 544])
+            ("AHBv2_Stub_Macros.h" include nil nil [545 575])
+            ("baseA" variable
+               (:default-value "0x100000"
+                :type "int")
+                nil [629 650])
+            ("baseB" variable
+               (:default-value "0x200000"
+                :type "int")
+                nil [690 711])
+            ("baseC" variable
+               (:default-value "0x300000"
+                :type "int")
+                nil [758 779])
+            ("test_phase" variable
+               (:default-value "0"
+                :type "int")
+                nil [855 874])
+            ("resp" variable
+               (:default-value "0"
+                :type "int")
+                nil [875 889])
+            ("LOG_FILE_NAME" variable (:constant-flag t) nil [921 934])
+            ("log_file" variable
+               (:default-value "fopen(LOG_FILE_NAME, \"w\")"
+                :type "int")
+                nil [958 999])
+            ("fill" variable (:type "int") nil [1001 1010])
+            ("fill" variable
+               (:default-value "0xaa"
+                :type "int")
+                nil [1011 1023])
+            ("myInstanceMemSpaceName" variable
+               (:default-value "\"AXI-Master (Non-Secure)\""
+                :type ("string" type (:type "class") nil nil))
+                nil [1024 1082])
+            ("debugOffset" variable
+               (:default-value "0x0"
+                :type "int")
+                nil [1084 1106])
+            ("testOffset" variable
+               (:default-value "0x20"
+                :type "int")
+                nil [1147 1169])
+            ("summary" variable (:type ("string" type (:type "class") nil nil)) nil [1227 1242])
+            ("sprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("summary" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1251 1259])
+                    ("" variable (:type ("test_phase" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1273 1284]))                  
+                :type "int")
+                nil [1243 1285]))          
+      :file "ahbv2_stub.mxscr"
+      :pointmax 1287
+      :fsize 1286
+      :lastmodtime '(21031 23626 0 0)
+      :unmatched-syntax '((string 1260 . 1271) (number 528 . 529) (string 469 . 514) (semantic-list 374 . 447) (ELSE 369 . 373) (semantic-list 345 . 368) (semantic-list 318 . 344) (IF 315 . 317) (ELSE 310 . 314) (semantic-list 287 . 309) (semantic-list 261 . 286) (IF 258 . 260) (ELSE 253 . 257) (semantic-list 230 . 252) (semantic-list 204 . 229) (IF 201 . 203))
+      :lexical-table 
+        '(("LOG_FILE_NAME" . ((string "\"test_reg.log\"" 935 . 949)))
+          )
+)
+    (semanticdb-table "axi_regview_stub.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("NODEID_MASTER_0" variable (:constant-flag t) nil [196 211])
+            ("NODEID_MASTER_1" variable (:constant-flag t) nil [223 238])
+            ("NODEID_MASTER_2" variable (:constant-flag t) nil [250 265])
+            ("NODEID_SLAVE_0" variable (:constant-flag t) nil [312 326])
+            ("NODEID_SLAVE_1" variable (:constant-flag t) nil [337 351])
+            ("NODEID_SLAVE_7" variable (:constant-flag t) nil [362 376])
+            ("NODEID_SLAVE_5" variable (:constant-flag t) nil [387 401])
+            ("NODEID_SLAVE_6" variable (:constant-flag t) nil [412 426])
+            ("NODEID_IB_4" variable (:constant-flag t) nil [437 448])
+            ("NODEID_IB_1" variable (:constant-flag t) nil [461 472])
+            ("AXIv2_Stub_CheckMacros.h" include nil nil [492 527])
+            ("bytePerBeat" variable
+               (:default-value "0"
+                :type "int")
+                nil [529 549])
+            ("myInstanceId" variable
+               (:default-value "getInstanceID()"
+                :type ("string" type (:type "class") nil nil))
+                nil [550 588])
+            ("myInstanceMemSpaceName" variable
+               (:default-value "\"AXI-Master (Secure)\""
+                :type ("string" type (:type "class") nil nil))
+                nil [589 643])
+            ("parameter_val" variable
+               (:default-value "getParameter(myInstanceId, \"Data Width\")"
+                :type ("string" type (:type "class") nil nil))
+                nil [644 708])
+            ("message" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MX_MSG_INFO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [964 976])
+                    ("" variable
+                       (:pointer 1
+                        :type ("bytePerBeat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1024 1037])
+                    ("" variable (:type ("bytePerBeat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1039 1051]))                  
+                :type "int")
+                nil [956 1052])
+            ("MX_STATUS_OK" variable (:constant-flag t) nil [1064 1076])
+            ("MX_STATUS_ERROR" variable (:constant-flag t) nil [1088 1103])
+            ("RESP_OKAY" variable (:constant-flag t) nil [1115 1124])
+            ("RESP_EXOKAY" variable (:constant-flag t) nil [1142 1153])
+            ("RESP_SLVERR" variable (:constant-flag t) nil [1169 1180])
+            ("RESP_DECERR" variable (:constant-flag t) nil [1196 1207])
+            ("LOG_FILE_NAME" variable (:constant-flag t) nil [1246 1259])
+            ("log_file" variable
+               (:default-value "fopen(LOG_FILE_NAME, \"w\")"
+                :type "int")
+                nil [1279 1320])
+            ("test_phase" variable
+               (:default-value "0"
+                :type "int")
+                nil [1321 1340])
+            ("MASK_1" variable (:constant-flag t) nil [1351 1357])
+            ("MASK_2" variable (:constant-flag t) nil [1370 1376])
+            ("MASK_3" variable (:constant-flag t) nil [1389 1395])
+            ("MASK_4" variable (:constant-flag t) nil [1408 1414])
+            ("TwoWayRead" variable (:constant-flag t) nil [1853 1863])
+            ("IDbase" variable
+               (:default-value "GPVBase + 0x1000"
+                :type "int")
+                nil [2720 2755])
+            ("baseA" variable
+               (:default-value "0x0"
+                :type "int")
+                nil [2756 2778])
+            ("debugOffset" variable
+               (:default-value "0x0"
+                :type "int")
+                nil [2779 2801])
+            ("testOffset" variable
+               (:default-value "0x20"
+                :type "int")
+                nil [2803 2826])
+            ("message" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MX_MSG_INFO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2835 2847]))                  
+                :type "int")
+                nil [2827 2872])
+            ("CHECK_BURST1_WRITE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("IDbase" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2893 2900])
+                    ("" variable (:type ("bytePerBeat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2907 2919])
+                    ("" variable (:type ("log_file" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2940 2949]))                  
+                :type "int")
+                nil [2873 2967])
+            ("OFFSET_FN_MOD_BM_ISS" variable (:constant-flag t) nil [3928 3948])
+            ("OFFSET_FN_MOD_BM_ISS" variable (:constant-flag t) nil [3928 3948])
+            ("OFFSET_SYNC_MODE" variable (:constant-flag t) nil [3983 3999])
+            ("OFFSET_FN_MOD2" variable (:constant-flag t) nil [4038 4052])
+            ("OFFSET_FN_MOD_AHB_ASIB" variable (:constant-flag t) nil [4093 4115])
+            ("OFFSET_FN_MOD_BB_IB" variable (:constant-flag t) nil [4179 4198])
+            ("OFFSET_FN_MOD_BB_AMIB" variable (:constant-flag t) nil [4258 4279])
+            ("OFFSET_FN_MOD_BB_ASIB" variable (:constant-flag t) nil [4339 4360])
+            ("OFFSET_WR_TIDEMARK" variable (:constant-flag t) nil [4420 4438])
+            ("OFFSET_AHB_CNTL_AMIB" variable (:constant-flag t) nil [4474 4494])
+            ("OFFSET_READ_QOS_ASIB" variable (:constant-flag t) nil [4546 4566])
+            ("OFFSET_WRITE_QOS_ASIB" variable (:constant-flag t) nil [4603 4624])
+            ("OFFSET_FN_MOD" variable (:constant-flag t) nil [4661 4674])
+            ("info_text" variable (:type ("string" type (:type "class") nil nil)) nil [4708 4725])
+            ("reg_address" variable (:type "int") nil [4726 4742])
+            ("test_value" variable (:type "int") nil [4743 4758])
+            ("reset_value" variable
+               (:default-value "0x0"
+                :type "int")
+                nil [4759 4780])
+            ("Status" variable (:type "int") nil [4781 4792])
+            ("CALL_BURST1_WRITE" variable (:constant-flag t) nil [4927 4944])
+            ("CALL_DO_CHECK_WRITE_WITH_MASKING" variable (:constant-flag t) nil [5029 5061])
+            ("CALL_CHECK_BURST1_WRITE_WITH_MASKING" variable (:constant-flag t) nil [5386 5422])
+            ("WriteAndReadWithCheck" variable (:constant-flag t) nil [5614 5635])
+            ("FrontDoor_WriteAndReadWithCheck" variable (:constant-flag t) nil [6211 6242])
+            ("BackDoor_WriteAndReadWithCheck" variable (:constant-flag t) nil [6609 6639])
+            ("FrontAndBackDoorWriteAndReadWithCheck" variable (:constant-flag t) nil [7488 7525])
+            ("ComputeRegAddress" variable (:constant-flag t) nil [7889 7906])
+            ("m_0_base" variable
+               (:default-value "(0x1000 * (NODEID_MASTER_0))"
+                :type "int")
+                nil [8425 8469])
+            ("info_text" variable
+               (:default-value "\"Read of m_0 fn_mod2 register\""
+                :type "int")
+                nil [8978 9023])
+            ("reset_value" variable
+               (:default-value "0x0"
+                :type "int")
+                nil [9024 9042])
+            ("test_value" variable
+               (:default-value "0x1"
+                :type "int")
+                nil [9043 9061])
+            ("info_text" variable
+               (:default-value "\"Read of m_0 fn_mod_ahb register\""
+                :type "int")
+                nil [9254 9302])
+            ("reset_value" variable
+               (:default-value "0x0"
+                :type "int")
+                nil [9303 9321])
+            ("test_value" variable
+               (:default-value "0x7"
+                :type "int")
+                nil [9322 9340])
+            ("info_text" variable
+               (:default-value "\"Read of m_0 fn_mod register\""
+                :type "int")
+                nil [10633 10677])
+            ("reset_value" variable
+               (:default-value "0x0"
+                :type "int")
+                nil [10678 10696])
+            ("test_value" variable
+               (:default-value "0xA"
+                :type "int")
+                nil [10697 10715])
+            ("_NumBytes" variable
+               (:default-value "1"
+                :type "int")
+                nil [10818 10836])
+            ("_Register_address" variable
+               (:default-value "reg_address"
+                :type "int")
+                nil [10837 10873])
+            ("_Test_value" variable
+               (:default-value "test_value"
+                :type "int")
+                nil [10874 10903])
+            ("_Reset_value" variable
+               (:default-value "reset_value"
+                :type "int")
+                nil [10904 10935])
+            ("_Mask_value" variable
+               (:default-value "MASK_2"
+                :type "int")
+                nil [10936 10961])
+            ("_Info_text" variable
+               (:default-value "info_text"
+                :type ("string" type (:type "class") nil nil))
+                nil [10962 10992])
+            ("BURST1_WRITE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("_Register_address" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("bytePerBeat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("_Test_value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [11067 11188])
+            ("_Test_value" variable (:type "int") nil [11207 11219])
+            ("__masked" variable
+               (:default-value "_Test_value & _Mask_value"
+                :type "int")
+                nil [11341 11382])
+            ("CADIMemWrite" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("myInstanceId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11399 11412])
+                    ("" variable (:type ("myInstanceMemSpaceName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11413 11436])
+                    ("" variable (:type ("_Register_address" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11438 11458])
+                    ("" variable (:type ("__masked" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11459 11468]))                  
+                :type "int")
+                nil [11386 11469])
+            ("actual" variable
+               (:default-value "CADIMemRead(myInstanceId,myInstanceMemSpaceName, _Register_address)"
+                :type "int")
+                nil [11474 11551]))          
+      :file "axi_regview_stub.h"
+      :pointmax 30868
+      :fsize 30867
+      :lastmodtime '(23183 9515 896431 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CALL_CHECK_BURST1_WRITE_WITH_MASKING" (spp-arg-list ("Addr" "BytesPerBeat" "Data0" "_Mask_value" "File" "InfoText") 5422 . 5479) . 
+              ((symbol "CALL_BURST1_WRITE" 5483 . 5500) (semantic-list "( Addr, BytesPerBeat, Data0)" 5500 . 5528) (punctuation ";" 5528 . 5529) (symbol "CALL_DO_CHECK_WRITE_WITH_MASKING" 5533 . 5565) (semantic-list "(Data0, _Mask_value, File, InfoText)" 5565 . 5601) (punctuation ";" 5601 . 5602)))
+          ("BackDoor_WriteAndReadWithCheck" (spp-arg-list ("_NumBytes" "_Register_address" "_Test_value" "_Reset_value" "_Mask_value" "_Info_text") 6639 . 6722) . ((semantic-list "{ \\
+   CADIMemWrite(myInstanceId, myInstanceMemSpaceName,  _Register_address  , _Test_value); \\
+   actual = CADIMemRead(myInstanceId,myInstanceMemSpaceName, _Register_address); \\
+   if (actual == (_Test_value & _Mask_value) ) { \\
+      PRINT_PASS(log_file, \"%s %s\\n\", _Info_text, \"passed\") \\
+   } else { \\
+     PRINT_FAIL(log_file, \"%s BackDoor access FAILED ( %d (CADIMemRead result) != %d (bus read result after masking))\\n\", _Info_text, actual, _Test_value & _Mask_value) \\
+   } \\
+   int _masked_exp = _Test_value & _Mask_value; \\
+   message(MX_MSG_INFO, \"BackDoor_WriteAndReadWithCheck: _Test_value:%d  _Mask_value:%d  masked_exp= %d \", _Test_value,  _Mask_value, _masked_exp); \\
+   TwoWayRead(_NumBytes,_Register_address, _masked_exp, _Info_text);\\
+}" 6723 . 7478)))
+          ("NODEID_SLAVE_5" . ((number "7" 402 . 403)))
+          ("RESP_SLVERR" . ((number "2" 1186 . 1187)))
+          ("OFFSET_FN_MOD2" . ((number "0x024" 4059 . 4064)))
+          ("OFFSET_FN_MOD" . ((number "0x108" 4682 . 4687)))
+          ("NODEID_SLAVE_6" . ((number "8" 427 . 428)))
+          ("LOG_FILE_NAME" . ((string "\"test.log\"" 1260 . 1270)))
+          ("NODEID_SLAVE_7" . ((number "4" 377 . 378)))
+          ("MX_STATUS_ERROR" . ((number "1" 1105 . 1106)))
+          ("RESP_OKAY" . ((number "0" 1132 . 1133)))
+          ("MASK_1" . ((number "0x1" 1358 . 1361)))
+          ("OFFSET_FN_MOD_AHB_ASIB" . ((number "0x028" 4119 . 4124)))
+          ("FrontDoor_WriteAndReadWithCheck" (spp-arg-list ("_NumBytes" "_Register_address" "_Test_value" "_Reset_value" "_Mask_value" "_Info_text") 6242 . 6325) . ((semantic-list "{ \\
+   TwoWayRead(_NumBytes,_Register_address, _Reset_value, _Info_text);\\
+   CALL_CHECK_BURST1_WRITE_WITH_MASKING(_Register_address, bytePerBeat, _Test_value, _Mask_value, log_file, \"attempt write\"); \\
+}" 6326 . 6530)))
+          ("NODEID_MASTER_0" . ((number "67" 212 . 214)))
+          ("RESP_EXOKAY" . ((number "1" 1159 . 1160)))
+          ("MASK_2" . ((number "0x2" 1377 . 1380)))
+          ("NODEID_MASTER_1" . ((number "68" 239 . 241)))
+          ("MASK_3" . ((number "0x3" 1396 . 1399)))
+          ("OFFSET_READ_QOS_ASIB" . ((number "0x100" 4572 . 4577)))
+          ("NODEID_MASTER_2" . ((number "66" 266 . 268)))
+          ("MASK_4" . ((number "0x4" 1415 . 1418)))
+          ("TwoWayRead" (spp-arg-list ("numBytes" "address" "expected" "info") 1863 . 1895) . ((semantic-list "{ \\
+  tests_attempted++; \\
+  actual = CADIMemRead(myInstanceId,myInstanceMemSpaceName, address); \\
+  if ( numBytes > 1 ) {\\
+    test_temp = CADIMemRead(myInstanceId,myInstanceMemSpaceName, address+1); \\
+    actual = actual | (test_temp << 8);\\
+  }\\
+  if ( numBytes > 2 ) {\\
+    test_temp = CADIMemRead(myInstanceId,myInstanceMemSpaceName, address+2); \\
+    actual = actual | (test_temp << 16);\\
+  }\\
+  if ( numBytes > 3 ) {\\
+    test_temp = CADIMemRead(myInstanceId,myInstanceMemSpaceName, address+3); \\
+    actual = actual | (test_temp << 24);\\
+  }\\
+  if ( actual == expected) { \\
+    tests_passed++; \\
+  } else { \\
+    message(MX_MSG_ERROR, \"CADIMemRead for %s Failed!, expected: 0x%x, actual: 0x%x\", info, expected, actual); \\
+  } \\
+  CHECK_BURST1_READ(address, bytePerBeat, expected, MX_STATUS_OK, log_file, info); \\
+}" 1896 . 2718)))
+          ("RESP_DECERR" . ((number "3" 1213 . 1214)))
+          ("OFFSET_FN_MOD_BM_ISS" . ((number "0x008" 3949 . 3954)))
+          ("OFFSET_FN_MOD_BB_IB" . ((number "0X02C" 4203 . 4208)))
+          ("CALL_BURST1_WRITE" (spp-arg-list ("Addr" "BytesPerBeat" "Data0") 4944 . 4972) . 
+              ((symbol "BURST1_WRITE" 4976 . 4988) (semantic-list "( Addr, BytesPerBeat, Data0)" 4988 . 5016) (punctuation ";" 5016 . 5017)))
+          ("NODEID_SLAVE_0" . ((number "2" 327 . 328)))
+          ("NODEID_IB_1" . ((number "196" 473 . 476)))
+          ("MX_STATUS_OK" . ((number "0" 1078 . 1079)))
+          ("OFFSET_SYNC_MODE" . ((number "0x020" 4004 . 4009)))
+          ("OFFSET_FN_MOD_BB_AMIB" . ((number "0X02C" 4284 . 4289)))
+          ("NODEID_SLAVE_1" . ((number "3" 352 . 353)))
+          ("OFFSET_WR_TIDEMARK" . ((number "0x040" 4441 . 4446)))
+          ("CALL_DO_CHECK_WRITE_WITH_MASKING" (spp-arg-list ("ExpValue" "_Mask_value" "File" "InfoText") 5061 . 5100) . ((semantic-list "{ \\
+ AXI_Stub_CheckMacros_Attempts++; \\
+ if (GET_VAL_BRESP() == (ExpValue & _Mask_value)) { \\
+   PRINT_PASS(File, \"%s %s\\n\", InfoText, \"passed\") \\
+ } else { \\
+   PRINT_FAIL(File, \"%s FAILED (expected value is wrong: %d != %d)\\n\", InfoText, GET_VAL_BRESP(), ExpValue) \\
+ } \\
+}" 5101 . 5376)))
+          ("OFFSET_FN_MOD_BB_ASIB" . ((number "0X110" 4365 . 4370)))
+          ("OFFSET_AHB_CNTL_AMIB" . ((number "0x044" 4500 . 4505)))
+          ("WriteAndReadWithCheck" (spp-arg-list ("_NumBytes" "_Register_address" "_Test_value" "_Reset_value" "_Mask_value" "_Info_text") 5635 . 5718) . ((semantic-list "{ \\
+   TwoWayRead(_NumBytes,_Register_address, _Reset_value, _Info_text);\\
+   CALL_CHECK_BURST1_WRITE_WITH_MASKING(_Register_address, bytePerBeat, _Test_value, _Mask_value, log_file, \"attempt write\"); \\
+   TwoWayRead(_NumBytes,_Register_address, _Test_value, _Info_text);\\
+   CALL_CHECK_BURST1_WRITE_WITH_MASKING(_Register_address, bytePerBeat, _Reset_value, _Mask_value, log_file, \"restore to reset value\");\\
+   TwoWayRead(_NumBytes,_Register_address, _Reset_value, _Info_text);\\
+}" 5719 . 6201)))
+          ("FrontAndBackDoorWriteAndReadWithCheck" (spp-arg-list ("_NumBytes" "_Register_address" "_Test_value" "_Reset_value" "_Mask_value" "_Info_text") 7525 . 7608) . ((semantic-list "{ \\
+ FrontDoor_WriteAndReadWithCheck(_NumBytes, _Register_address, _Test_value, _Reset_value ,_Mask_value , _Info_text);\\
+ _Test_value =~ _Test_value; \\
+ BackDoor_WriteAndReadWithCheck(_NumBytes, _Register_address, _Test_value, _Reset_value ,_Mask_value , _Info_text)\\
+}" 7609 . 7879)))
+          ("NODEID_IB_4" . ((number "194" 449 . 452)))
+          ("OFFSET_WRITE_QOS_ASIB" . ((number "0x104" 4629 . 4634)))
+          ("ComputeRegAddress" (spp-arg-list ("_ComputedAddressValue" "_baseAddressID" "_RegisterOffset") 7906 . 7962) . ((semantic-list "{ \\
+  _ComputedAddressValue = GPVBase + _baseAddressID + _RegisterOffset; \\
+}" 7963 . 8040)))
+          )
+))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!primecells!NIC400!Regview!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

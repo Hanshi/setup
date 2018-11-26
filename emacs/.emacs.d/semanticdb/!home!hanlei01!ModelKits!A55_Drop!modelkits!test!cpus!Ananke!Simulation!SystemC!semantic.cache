@@ -1,0 +1,92 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "system_test_1CPU.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/RAMBlock.h" include nil nil [831 859])
+            ("models/SimpleBus.h" include nil nil [860 889])
+            ("models/BasicUART.h" include nil nil [890 919])
+            ("models/ElfLoader.h" include nil nil [920 949])
+            ("libAnanke.tlm.h" include nil nil [950 976])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [977 1023])
+            ("iostream" include (:system-flag t) nil [1025 1044])
+            ("scx/scx.h" include (:system-flag t) nil [1045 1065])
+            ("scx_simcontroller.cpp" include (:system-flag t) nil [1066 1098])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1099 1135])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1136 1169])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1171 1195])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1209 1218])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1219 1232]))                  
+                :type "int")
+                nil [1197 5383]))          
+      :file "system_test_1CPU.cpp"
+      :pointmax 5384
+      :fsize 5383
+      :lastmodtime '(23095 62922 528078 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "system_test_4CPU.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/RAMBlock.h" include nil nil [831 859])
+            ("models/SimpleBus.h" include nil nil [860 889])
+            ("models/BasicUART.h" include nil nil [890 919])
+            ("models/ElfLoader.h" include nil nil [920 949])
+            ("libAnanke.tlm.h" include nil nil [950 976])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [977 1023])
+            ("iostream" include (:system-flag t) nil [1025 1044])
+            ("scx/scx.h" include (:system-flag t) nil [1045 1065])
+            ("scx_simcontroller.cpp" include (:system-flag t) nil [1066 1098])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1099 1135])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1136 1169])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1171 1195])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1209 1218])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1219 1232]))                  
+                :type "int")
+                nil [1197 5462]))          
+      :file "system_test_4CPU.cpp"
+      :pointmax 5463
+      :fsize 5462
+      :lastmodtime '(23073 29862 356804 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++" "-g" "-O0" "-DSC_INCLUDE_DYNAMIC_PROCESSES" "-Wall" "-Wextra" "-Werror" "-Wno-unused-parameter" "-DGENERATE_SLAVE_PORTS=1" "-std=c++11")) nil [30 156])
+            ("ANANKE_DIR" variable (:default-value ("./MODELS/FCM/$(MODEL_CONFIG)/gcc/SystemC")) nil [275 329])
+            ("NUM_CPU" variable (:default-value ("$(shell expr match \"$(MODEL_CONFIG)\" \".*\\([1-9]CPU\\)\")")) nil [373 438])
+            ("$(CM_SYSC_HOME)/makefiles/cm_sysc_common.mak" include nil nil [439 492])
+            ("system_test" function (:arguments ("system_test.o" "AnankeResetImp.o" "$(ANANKE_DIR)/libAnanke.tlm.a" "$(ANANKE_DIR)/lib/libAnanke.a" "$(FM_LIB)")) nil [493 942])
+            ("AnankeResetImp.o" function (:arguments ("$(ANANKE_DIR)/AnankeResetImp.cpp")) nil [944 1121])
+            ("system_test.o" function (:arguments ("system_test_$(NUM_CPU).cpp")) nil [1122 1296])
+            ("clean" function nil nil [1297 1327]))          
+      :file "Makefile"
+      :pointmax 1329
+      :fsize 1328
+      :lastmodtime '(23016 58052 0 0)
+      :unmatched-syntax '((symbol 363 . 371) (semantic-list 346 . 363) (punctuation 345 . 346) (punctuation 343 . 344) (punctuation 342 . 343) (symbol 329 . 341) (bol 329 . 329) (symbol 261 . 274) (semantic-list 247 . 261) (punctuation 246 . 247) (punctuation 244 . 245) (punctuation 243 . 244) (symbol 231 . 242) (bol 231 . 231) (symbol 221 . 230) (semantic-list 207 . 221) (punctuation 206 . 207) (punctuation 204 . 205) (punctuation 203 . 204) (symbol 191 . 202) (bol 191 . 191))))
+  :file "!home!hanlei01!ModelKits!A55_Drop!modelkits!test!cpus!Ananke!Simulation!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

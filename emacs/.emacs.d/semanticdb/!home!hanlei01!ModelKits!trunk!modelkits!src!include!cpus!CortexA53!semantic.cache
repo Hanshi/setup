@@ -1,0 +1,1888 @@
+;; Object CortexA53/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "CortexA53/"
+  :tables
+  (list
+    (semanticdb-table "RegBank.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__REGBANK_H__" variable (:constant-flag t) nil [546 559])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("CARBONMKLIBRARYCORTEXA53" type
+                       (:members 
+                          ( ("GPRegWord" type
+                               (:members 
+                                  ( ("eGPReg_WordLo" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [665 679])
+                                    ("eGPReg_WordHi" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [686 705]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [638 706])
+                            ("GeneralRegisterMapping" type
+                               (:members 
+                                  ( ("eGRM_R0" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [813 821])
+                                    ("eGRM_R1" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [828 836])
+                                    ("eGRM_R2" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [843 851])
+                                    ("eGRM_R3" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [858 866])
+                                    ("eGRM_R4" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [873 881])
+                                    ("eGRM_R5" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [888 896])
+                                    ("eGRM_R6" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [903 911])
+                                    ("eGRM_R7" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [918 926])
+                                    ("eGRM_R8_USR" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [933 945])
+                                    ("eGRM_R9_USR" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [952 964])
+                                    ("eGRM_R10_USR" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [971 984])
+                                    ("eGRM_R11_USR" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [991 1004])
+                                    ("eGRM_R12_USR" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1011 1024])
+                                    ("eGRM_R13_USR" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1031 1044])
+                                    ("eGRM_R14_USR" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1051 1064])
+                                    ("eGRM_R13_HYP" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1071 1084])
+                                    ("eGRM_R14_IRQ" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1097 1110])
+                                    ("eGRM_R13_IRQ" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1123 1136])
+                                    ("eGRM_R14_SVC" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1149 1162])
+                                    ("eGRM_R13_SVC" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1175 1188])
+                                    ("eGRM_R14_ABT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1201 1214])
+                                    ("eGRM_R13_ABT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1227 1240])
+                                    ("eGRM_R14_UND" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1253 1266])
+                                    ("eGRM_R13_UND" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1279 1292])
+                                    ("eGRM_R8_FIQ" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1305 1317])
+                                    ("eGRM_R9_FIQ" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1331 1343])
+                                    ("eGRM_R10_FIQ" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1357 1370])
+                                    ("eGRM_R11_FIQ" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1383 1396])
+                                    ("eGRM_R12_FIQ" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1409 1422])
+                                    ("eGRM_R13_FIQ" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1435 1448])
+                                    ("eGRM_R14_FIQ" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1461 1474])
+                                    ("eGRM_31_UNUSED" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1488 1503])
+                                    ("eGRM_32_UNUSED" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1516 1531])
+                                    ("eGRM_33_UNUSED" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1544 1559])
+                                    ("eGRM_R13_MON" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1572 1585])
+                                    ("eGRM_35_UNUSED" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1598 1613])
+                                    ("eGRM_ELR_HYP" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1626 1639])
+                                    ("eGRM_R14_MON" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1652 1676]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [773 1677])
+                            ("GeneralXRegisterMapping" type
+                               (:members 
+                                  ( ("eGRM_X0" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1816 1824])
+                                    ("eGRM_X1" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1831 1839])
+                                    ("eGRM_X2" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1846 1854])
+                                    ("eGRM_X3" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1861 1869])
+                                    ("eGRM_X4" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1876 1884])
+                                    ("eGRM_X5" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1891 1899])
+                                    ("eGRM_X6" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1906 1914])
+                                    ("eGRM_X7" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1921 1929])
+                                    ("eGRM_X8" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1936 1944])
+                                    ("eGRM_X9" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1951 1959])
+                                    ("eGRM_X10" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1966 1975])
+                                    ("eGRM_X11" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1982 1991])
+                                    ("eGRM_X12" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1998 2007])
+                                    ("eGRM_X13" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2014 2023])
+                                    ("eGRM_X14" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2030 2039])
+                                    ("eGRM_X15" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2046 2055])
+                                    ("eGRM_X16" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2062 2071])
+                                    ("eGRM_X17" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2078 2087])
+                                    ("eGRM_X18" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2094 2103])
+                                    ("eGRM_X19" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2110 2119])
+                                    ("eGRM_X20" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2126 2135])
+                                    ("eGRM_X21" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2142 2151])
+                                    ("eGRM_X22" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2158 2167])
+                                    ("eGRM_X23" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2174 2183])
+                                    ("eGRM_X24" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2190 2199])
+                                    ("eGRM_X25" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2206 2215])
+                                    ("eGRM_X26" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2222 2231])
+                                    ("eGRM_X27" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2238 2247])
+                                    ("eGRM_X28" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2254 2263])
+                                    ("eGRM_X29" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2270 2279])
+                                    ("eGRM_X30" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2286 2295])
+                                    ("eGRM_SP_EL0" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2302 2314])
+                                    ("eGRM_SP_EL1" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2321 2333])
+                                    ("eGRM_SP_EL2" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2340 2352])
+                                    ("eGRM_SP_EL3" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2359 2371])
+                                    ("eGRM_ELR_EL1" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2378 2391])
+                                    ("eGRM_ELR_EL2" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2398 2411])
+                                    ("eGRM_ELR_EL3" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2418 2436]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [1775 2437])
+                            ("GeneralFPUSRegisterMapping" type
+                               (:members 
+                                  ( ("eGRM_S0" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2519 2527])
+                                    ("eGRM_S1" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2534 2542])
+                                    ("eGRM_S2" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2549 2557])
+                                    ("eGRM_S3" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2564 2572])
+                                    ("eGRM_S4" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2579 2587])
+                                    ("eGRM_S5" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2594 2602])
+                                    ("eGRM_S6" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2609 2617])
+                                    ("eGRM_S7" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2624 2632])
+                                    ("eGRM_S8" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2639 2647])
+                                    ("eGRM_S9" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2654 2662])
+                                    ("eGRM_S10" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2669 2678])
+                                    ("eGRM_S11" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2685 2694])
+                                    ("eGRM_S12" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2701 2710])
+                                    ("eGRM_S13" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2717 2726])
+                                    ("eGRM_S14" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2733 2742])
+                                    ("eGRM_S15" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2749 2758])
+                                    ("eGRM_S16" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2765 2774])
+                                    ("eGRM_S17" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2781 2790])
+                                    ("eGRM_S18" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2797 2806])
+                                    ("eGRM_S19" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2813 2822])
+                                    ("eGRM_S20" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2829 2838])
+                                    ("eGRM_S21" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2845 2854])
+                                    ("eGRM_S22" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2861 2870])
+                                    ("eGRM_S23" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2877 2886])
+                                    ("eGRM_S24" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2893 2902])
+                                    ("eGRM_S25" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2909 2918])
+                                    ("eGRM_S26" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2925 2934])
+                                    ("eGRM_S27" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2941 2950])
+                                    ("eGRM_S28" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2957 2966])
+                                    ("eGRM_S29" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2973 2982])
+                                    ("eGRM_S30" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2989 2998])
+                                    ("eGRM_S31" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3005 3019]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [2475 3020])
+                            ("GeneralFPUDRegisterMapping" type
+                               (:members 
+                                  ( ("eGRM_D0" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3105 3113])
+                                    ("eGRM_D1" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3120 3128])
+                                    ("eGRM_D2" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3135 3143])
+                                    ("eGRM_D3" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3150 3158])
+                                    ("eGRM_D4" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3165 3173])
+                                    ("eGRM_D5" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3180 3188])
+                                    ("eGRM_D6" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3195 3203])
+                                    ("eGRM_D7" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3210 3218])
+                                    ("eGRM_D8" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3225 3233])
+                                    ("eGRM_D9" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3240 3248])
+                                    ("eGRM_D10" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3255 3264])
+                                    ("eGRM_D11" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3271 3280])
+                                    ("eGRM_D12" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3287 3296])
+                                    ("eGRM_D13" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3303 3312])
+                                    ("eGRM_D14" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3319 3328])
+                                    ("eGRM_D15" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3335 3344])
+                                    ("eGRM_D16" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3351 3360])
+                                    ("eGRM_D17" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3367 3376])
+                                    ("eGRM_D18" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3383 3392])
+                                    ("eGRM_D19" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3399 3408])
+                                    ("eGRM_D20" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3415 3424])
+                                    ("eGRM_D21" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3431 3440])
+                                    ("eGRM_D22" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3447 3456])
+                                    ("eGRM_D23" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3463 3472])
+                                    ("eGRM_D24" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3479 3488])
+                                    ("eGRM_D25" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3495 3504])
+                                    ("eGRM_D26" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3511 3520])
+                                    ("eGRM_D27" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3527 3536])
+                                    ("eGRM_D28" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3543 3552])
+                                    ("eGRM_D29" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3559 3568])
+                                    ("eGRM_D30" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3575 3584])
+                                    ("eGRM_D31" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3591 3600])
+                                    ("eGRM_D32" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3607 3616])
+                                    ("eGRM_D33" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3623 3632])
+                                    ("eGRM_D34" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3639 3648])
+                                    ("eGRM_D35" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3655 3664])
+                                    ("eGRM_D36" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3671 3680])
+                                    ("eGRM_D37" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3687 3696])
+                                    ("eGRM_D38" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3703 3712])
+                                    ("eGRM_D39" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3719 3728])
+                                    ("eGRM_D40" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3735 3744])
+                                    ("eGRM_D41" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3751 3760])
+                                    ("eGRM_D42" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3767 3776])
+                                    ("eGRM_D43" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3783 3792])
+                                    ("eGRM_D44" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3799 3808])
+                                    ("eGRM_D45" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3815 3824])
+                                    ("eGRM_D46" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3831 3840])
+                                    ("eGRM_D47" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3847 3856])
+                                    ("eGRM_D48" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3863 3872])
+                                    ("eGRM_D49" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3879 3888])
+                                    ("eGRM_D50" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3895 3904])
+                                    ("eGRM_D51" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3911 3920])
+                                    ("eGRM_D52" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3927 3936])
+                                    ("eGRM_D53" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3943 3952])
+                                    ("eGRM_D54" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3959 3968])
+                                    ("eGRM_D55" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3975 3984])
+                                    ("eGRM_D56" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3991 4000])
+                                    ("eGRM_D57" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4007 4016])
+                                    ("eGRM_D58" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4023 4032])
+                                    ("eGRM_D59" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4039 4048])
+                                    ("eGRM_D60" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4055 4064])
+                                    ("eGRM_D61" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4071 4080])
+                                    ("eGRM_D62" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4087 4096])
+                                    ("eGRM_D63" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4103 4112]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [3061 4119])
+                            ("RegBank" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [4237 4244])
+                                    ("RegBank" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("compHelper" variable
+                                               (:pointer 1
+                                                :type ("CARBON_MKLIB_NAMESPACE::CarbonComponentHelper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4259 4317])
+                                            ("coreNum" variable (:type "int") (reparse-symbol arg-sub-list) [4337 4349]))                                          
+                                        :type ("RegBank" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4251 4350])
+                                    ("read" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("buf" variable
+                                               (:pointer 1
+                                                :type ("CarbonUInt32" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4447 4465])
+                                            ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4466 4485]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4437 4486])
+                                    ("write" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("buf" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("CarbonUInt32" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4593 4617])
+                                            ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4618 4637]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4582 4638])
+                                    ("read64" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("buf" variable
+                                               (:pointer 1
+                                                :type ("CarbonUInt32" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4744 4762])
+                                            ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4763 4782]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4732 4783])
+                                    ("write64" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("buf" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("CarbonUInt32" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4899 4923])
+                                            ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4924 4943]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4886 4944])
+                                    ("readFPU" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("buf" variable
+                                               (:pointer 1
+                                                :type ("CarbonUInt32" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5044 5062])
+                                            ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5063 5082]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5031 5083])
+                                    ("writeFPU" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("buf" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("CarbonUInt32" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5193 5217])
+                                            ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5218 5237]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [5179 5238])
+                                    ("readGPRegWord" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("gpRegNum" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5273 5295])
+                                            ("wordIndex" variable (:type "int") (reparse-symbol arg-sub-list) [5296 5310]))                                          
+                                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5246 5311])
+                                    ("writeGPRegWord" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("value" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5338 5357])
+                                            ("gpRegNum" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5358 5380])
+                                            ("wordIndex" variable (:type "int") (reparse-symbol arg-sub-list) [5381 5395]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5318 5396])
+                                    ("readFPRegWord" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("gpRegNum" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5431 5453])
+                                            ("wordIndex" variable (:type "int") (reparse-symbol arg-sub-list) [5454 5468]))                                          
+                                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5404 5469])
+                                    ("writeFPRegWord" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("value" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5496 5515])
+                                            ("gpRegNum" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5516 5538])
+                                            ("wordIndex" variable (:type "int") (reparse-symbol arg-sub-list) [5539 5553]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5476 5554])
+                                    ("private" label nil (reparse-symbol classsubparts) [5560 5568])
+                                    ("mCompHelper" variable
+                                       (:pointer 1
+                                        :type ("CARBON_MKLIB_NAMESPACE::CarbonComponentHelper" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5641 5700])
+                                    ("mCarbonObj" variable
+                                       (:pointer 1
+                                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5735 5762])
+                                    ("mRegBankHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonMemoryID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5809 5838])
+                                    ("mFPURegBankHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonMemoryID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5888 5920])
+                                    ("mVerbose" variable (:type "bool") (reparse-symbol classsubparts) [5928 5942]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [4213 6003]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [596 6024]))                  
+                :type "namespace")
+                nil [561 6025]))          
+      :file "RegBank.h"
+      :pointmax 6048
+      :fsize 7637
+      :lastmodtime '(23138 8393 828562 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__REGBANK_H__")
+          )
+)
+    (semanticdb-table "PCStateMachine.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__PC_STATE_MACHINE_H__" variable (:constant-flag t) nil [555 577])
+            ("cpus/PCStateMachineBase.h" include nil nil [579 615])
+            ("list" include (:system-flag t) nil [616 631])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("CARBONMKLIBRARYCORTEXA53" type
+                       (:members 
+                          ( ("RegBank" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [706 720])
+                            ("PCStateMachine" type
+                               (:superclasses 
+                                  ( ("PCStateMachineBase" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [775 782])
+                                    ("PCStateMachine" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("coreNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [800 817])
+                                            ("compHelper" variable
+                                               (:pointer 1
+                                                :type ("CarbonComponentHelper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [835 869])
+                                            ("semiHost" variable
+                                               (:pointer 1
+                                                :type ("CarbonSemiHostMasterPort" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [887 922])
+                                            ("semiHostCallback" variable
+                                               (:pointer 1
+                                                :type ("SemihostingCallback" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [940 978]))                                          
+                                        :type ("PCStateMachine" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [785 979])
+                                    ("PCStateMachine" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [982 1008])
+                                    ("protected" label nil (reparse-symbol classsubparts) [1010 1020])
+                                    ("getDebugHaltInstructions" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("DebugInstruction" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [1067 1133])
+                                    ("getDebugPCDepositInstructions" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("DebugInstruction" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1180 1238])
+                                    ("getTBit" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1279 1308])
+                                    ("isAArch32" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1369 1400])
+                                    ("depositHaltRequest" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("val" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1479 1496]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1447 1497])
+                                    ("putBreakOnSVCException" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [1603 1615]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1567 1616])
+                                    ("depositInstruction" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("instr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("DebugInstruction" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1693 1723]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1661 1724])
+                                    ("depositRestart" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1773 1803])
+                                    ("enableStall" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("match" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2295 2314])
+                                            ("doStep" variable (:type "bool") (reparse-symbol arg-sub-list) [2315 2327]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2270 2328])
+                                    ("readRTLValues" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2481 2510])
+                                    ("updateCommittedPCs" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2561 2595])
+                                    ("saveDebugScratchRegisters" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2671 2712])
+                                    ("restoreDebugScratchRegisters" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2789 2839])
+                                    ("isStalled" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3210 3241])
+                                    ("isInstructionComplete" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3303 3346])
+                                    ("isRestarted" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3520 3553])
+                                    ("correctAddressMatch" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("addressMatch" variable (:type "bool") (reparse-symbol arg-sub-list) [3643 3661])
+                                            ("bpAddrToCheck" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3662 3689]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3610 3690])
+                                    ("private" label nil (reparse-symbol classsubparts) [3693 3701])
+                                    ("mRegBank" variable
+                                       (:pointer 1
+                                        :type ("RegBank" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3704 3722])
+                                    ("mCPSRHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3725 3748])
+                                    ("mSPSRHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3803 3826])
+                                    ("mThumbBit" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3881 3904])
+                                    ("mDeI0StateHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3907 3935])
+                                    ("mDbgAckHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3939 3964])
+                                    ("mPfStateHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3968 3994])
+                                    ("mPCInstr0WrHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3998 4027])
+                                    ("mRestartHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4090 4116])
+                                    ("mCheckRestartHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4180 4211])
+                                    ("mRestartReqHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4275 4304])
+                                    ("temp1" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4309 4328])
+                                    ("mPipelinePCHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4331 4360])
+                                    ("mDbgVcr" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4364 4385])
+                                    ("mDp0PcHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4388 4412])
+                                    ("mDp0PcHndl1" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4443 4468])
+                                    ("mDp0PcReqHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4546 4573])
+                                    ("mBreakpointMatch" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4619 4649])
+                                    ("mBreakpointValid" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4698 4728])
+                                    ("mMismatchEnable" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4777 4806])
+                                    ("mMismatchPC" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4860 4885])
+                                    ("mBMForceValid" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4945 4972])
+                                    ("mHaltRequestHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4975 5005])
+                                    ("mScrHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5008 5030])
+                                    ("mSSHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5037 5058])
+                                    ("mSSEnHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5061 5084])
+                                    ("mSSKdeHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5087 5111])
+                                    ("mSSSupportHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5114 5142])
+                                    ("mBrkptEnHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5151 5177])
+                                    ("mExceptionStatus" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5182 5212])
+                                    ("mAlast" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5220 5240])
+                                    ("mACurrent" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5243 5266])
+                                    ("mNewMatch" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5269 5292])
+                                    ("mState" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5295 5315])
+                                    ("mPrevDebugState" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5321 5350])
+                                    ("mCurrentDebugState" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5353 5385])
+                                    ("mRecordDebugState" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5388 5419])
+                                    ("mReportPipelinePC" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5422 5453])
+                                    ("mR0Hndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5526 5547])
+                                    ("mR14Hndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5593 5615])
+                                    ("mAA64nAA32" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5659 5683])
+                                    ("mSetR14Value" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5686 5712])
+                                    ("mSctlrEndian" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5715 5741])
+                                    ("mItrHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5816 5838])
+                                    ("mWrItrHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5909 5933])
+                                    ("mWrIteHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5979 6003])
+                                    ("mWrItrHndl1" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6049 6074])
+                                    ("mItrEnHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6120 6144])
+                                    ("mRestartClrHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6190 6219])
+                                    ("mHaltClrHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6265 6291])
+                                    ("mPCDebugWrHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6337 6366])
+                                    ("mInstrComplHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6370 6399])
+                                    ("mHalted" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6459 6480])
+                                    ("mHalted1" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6550 6572])
+                                    ("mEtmIfEnHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6644 6670])
+                                    ("mEtmIfEnInHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6673 6701])
+                                    ("mEtmIAHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6704 6728])
+                                    ("mEtmIAValidHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6731 6760])
+                                    ("mEtmIATypeHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6763 6791])
+                                    ("mEtmIALinkHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6794 6822])
+                                    ("mBrnTaken0" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6872 6896])
+                                    ("mBrnTaken1" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6899 6923])
+                                    ("mGrpReseed" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6926 6950])
+                                    ("mWptTargetPC" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6953 6979])
+                                    ("mWptPC" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6982 7002])
+                                    ("mWptValid" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7005 7028])
+                                    ("mWptType" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7031 7053])
+                                    ("mWptTaken" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7056 7079])
+                                    ("mWptTargetTBit" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7082 7110])
+                                    ("mLogPCTraceReport" variable (:type "bool") (reparse-symbol classsubparts) [7190 7213])
+                                    ("mLogPCTraceReportDebug" variable (:type "bool") (reparse-symbol classsubparts) [7216 7244])
+                                    ("mPCDebugWrLoHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7248 7278])
+                                    ("mFirstInstrCommitted" variable (:type "bool") (reparse-symbol classsubparts) [7282 7308])
+                                    ("recordCommittedPCs" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7311 7337])
+                                    ("mcurrentPipelineInstrPC" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7341 7378])
+                                    ("mCPUNum" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7381 7402])
+                                    ("mEdscrStatus" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7405 7431])
+                                    ("mETMIfEventValid" variable (:type "bool") (reparse-symbol classsubparts) [7584 7606])
+                                    ("mVBarSHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7612 7636])
+                                    ("mVBarNSHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7672 7697])
+                                    ("mSctlrSHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7736 7761])
+                                    ("mSctlrNSHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7797 7823])
+                                    ("forcebvr" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7863 7885])
+                                    ("forcebcr" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7924 7946])
+                                    ("mR3SavedValue" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7988 8015])
+                                    ("mDbgEnterDLRVal" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8018 8047])
+                                    ("mHCR_tpc" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8050 8072])
+                                    ("mSCTLR_uci" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8075 8099])
+                                    ("mDLRRestore" variable
+                                       (:typemodifiers ("mutable")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [8102 8127])
+                                    ("mEL0usingAA32" variable
+                                       (:typemodifiers ("mutable")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [8130 8157])
+                                    ("mForceDCCatEL1" variable
+                                       (:typemodifiers ("mutable")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [8160 8188])
+                                    ("mAA64atEL3Hndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8191 8219])
+                                    ("mHCR_TPCHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8222 8248])
+                                    ("mSCTLR_EL1_UCIHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8251 8283])
+                                    ("mHCR_RWHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8286 8311])
+                                    ("mSCR_RWHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8314 8339])
+                                    ("mSCR_NSHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8342 8367])
+                                    ("isAArch64EL1" function
+                                       (:prototype-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [8371 8391])
+                                    ("mIsStep" variable (:type "bool") (reparse-symbol classsubparts) [8463 8476])
+                                    ("findNet" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :arguments 
+                                          ( ("netName" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [8573 8593]))                                          
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8552 8594])
+                                    ("findCpuNet" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :arguments 
+                                          ( ("netName" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [8621 8641]))                                          
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8597 8642])
+                                    ("carbonDeposit64" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("pcNetLo" variable
+                                               (:pointer 1
+                                                :type ("CarbonNetID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8666 8688])
+                                            ("pcNetHi" variable
+                                               (:pointer 1
+                                                :type ("CarbonNetID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8689 8711])
+                                            ("depositValue" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8712 8738]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8645 8739])
+                                    ("carbonForce64" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("pcNetLo" variable
+                                               (:pointer 1
+                                                :type ("CarbonNetID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8761 8783])
+                                            ("pcNetHi" variable
+                                               (:pointer 1
+                                                :type ("CarbonNetID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8783 8805])
+                                            ("depositValue" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8807 8833]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8742 8834])
+                                    ("carbonExamine64" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("pcNetlo" variable
+                                               (:pointer 1
+                                                :type ("CarbonNetID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8866 8888])
+                                            ("pcNetHi" variable
+                                               (:pointer 1
+                                                :type ("CarbonNetID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8889 8911]))                                          
+                                        :type ("CarbonUInt64" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8837 8912]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [724 8918]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [668 8921]))                  
+                :type "namespace")
+                nil [633 8922]))          
+      :file "PCStateMachine.h"
+      :pointmax 8945
+      :fsize 8944
+      :lastmodtime '(21888 26187 0 0)
+      :unmatched-syntax '((punctuation 3994 . 3995) (punctuation 3964 . 3965) (punctuation 3935 . 3936))
+      :lexical-table 
+        '(("__PC_STATE_MACHINE_H__")
+          )
+)
+    (semanticdb-table "CarbonMemSystem.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_CARBONCORTEXA53L1MEMSYSTEM_H_" variable (:constant-flag t) nil [614 644])
+            ("stddef.h" include nil nil [646 665])
+            ("eslapi/CADI.h" include nil nil [667 691])
+            ("carbon/carbon_capi.h" include nil nil [692 723])
+            ("carbon/CarbonCADITypes.h" include nil nil [724 759])
+            ("cpus/CarbonTransTableEntry.h" include nil nil [760 799])
+            ("common/carbon_mkversion.h" include nil nil [800 836])
+            ("cpus/CarbonTrustZone.h" include nil nil [837 870])
+            ("common/CarbonComponentHelper.h" include nil nil [871 912])
+            ("ArchRestoreHandlerIF.h" include nil nil [913 946])
+            ("CarbonComponentHelperIF" type
+               (:prototype t
+                :type "class")
+                nil [980 1010])
+            ("L2_NUM_WAYS" variable (:constant-flag t) nil [1089 1100])
+            ("L2_NUM_DATA_BANKS" variable (:constant-flag t) nil [1124 1141])
+            ("L1_NUM_WAYS" variable (:constant-flag t) nil [1158 1169])
+            ("L1_NUM_DATA_BANKS" variable (:constant-flag t) nil [1192 1209])
+            ("TOTAL_MAX_CPUS" variable (:constant-flag t) nil [1226 1240])
+            ("FM_L2_DATA_LINE_BYTES" variable (:constant-flag t) nil [1331 1352])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("CarbonComponentHelper" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1423 1451])
+                    ("CarbonTrustZone" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1454 1476])
+                    ("CARBONMKLIBRARYCORTEXA53" type
+                       (:members 
+                          ( ("CarbonMMUAccess" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1609 1631])
+                            ("CarbonMemSystem" type
+                               (:superclasses 
+                                  ( ("Carbon::ArchRestoreHandlerIF::ArchRestoreHandlerIF" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1786 1793])
+                                    ("CarbonMemSystem" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("trustZone" variable (:type ("CARBON_MKLIB_NAMESPACE::CarbonTrustZone::TrustZone" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1858 1919])
+                                            ("cpuNum" variable (:type "int") (reparse-symbol arg-sub-list) [1920 1931])
+                                            ("compHelper" variable
+                                               (:pointer 1
+                                                :type ("CarbonComponentHelperIF" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1954 1990])
+                                            ("cadi" variable
+                                               (:pointer 1
+                                                :type ("eslapi::CADI" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1991 2010])
+                                            ("memSystemIdx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2011 2037]))                                          
+                                        :type ("CarbonMemSystem" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1842 2038])
+                                    ("CarbonMemSystem" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2067 2086])
+                                    ("setMMUSystem" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("mmu" variable
+                                               (:pointer 1
+                                                :type ("CarbonMMUAccess" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2194 2215]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2176 2216])
+                                    ("read" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("va" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2283 2295])
+                                            ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2296 2308])
+                                            ("bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2309 2324])
+                                            ("buf" variable
+                                               (:pointer 1
+                                                :type "unsigned char")
+                                                (reparse-symbol arg-sub-list) [2325 2344]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2273 2345])
+                                    ("readinternal" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("va" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2426 2438])
+                                            ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2439 2451])
+                                            ("bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2452 2467])
+                                            ("buf" variable
+                                               (:pointer 1
+                                                :type "unsigned char")
+                                                (reparse-symbol arg-sub-list) [2468 2487]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2408 2488])
+                                    ("write" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("va" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2555 2567])
+                                            ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2568 2580])
+                                            ("bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2581 2596])
+                                            ("buf" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "unsigned char")
+                                                (reparse-symbol arg-sub-list) [2597 2622]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2544 2623])
+                                    ("writeinternal" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("va" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2709 2721])
+                                            ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2722 2734])
+                                            ("bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2735 2750])
+                                            ("buf" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "unsigned char")
+                                                (reparse-symbol arg-sub-list) [2751 2776]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2690 2777])
+                                    ("restore" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("name" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2822 2846])
+                                            ("stream" variable
+                                               (:reference 1
+                                                :type ("Carbon::ArchRestoreHandlerIF::RestoreArchStream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2847 2903]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2810 2904])
+                                    ("ObtainInterface" function
+                                       (:pointer 1
+                                        :arguments 
+                                          ( ("ifName" variable (:type ("eslapi::if_name_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2942 2967])
+                                            ("minRev" variable (:type ("eslapi::if_rev_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2967 2991])
+                                            ("actualRev" variable
+                                               (:pointer 1
+                                                :type ("eslapi::if_rev_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2991 3019]))                                          
+                                        :type ("CAInterface" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2912 3064])
+                                    ("private" label nil (reparse-symbol classsubparts) [3073 3081])
+                                    ("cacheHitL1" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("way" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3288 3301])
+                                            ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3302 3314])
+                                            ("cpu" variable (:type "int") (reparse-symbol arg-sub-list) [3315 3323])
+                                            ("isDirty" variable
+                                               (:pointer 1
+                                                :default-value "NULL"
+                                                :type "bool")
+                                                (reparse-symbol arg-sub-list) [3324 3344]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3272 3346])
+                                    ("cacheHitL2" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("way" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3540 3553])
+                                            ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3554 3566])
+                                            ("tagMask" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3567 3584])
+                                            ("tagAddr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3585 3602])
+                                            ("dirty" variable
+                                               (:pointer 1
+                                                :default-value "NULL"
+                                                :type "bool")
+                                                (reparse-symbol arg-sub-list) [3631 3649]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3524 3651])
+                                    ("accessL1CacheData" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("isWrite" variable (:type "bool") (reparse-symbol arg-sub-list) [4193 4206])
+                                            ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4207 4219])
+                                            ("data" variable
+                                               (:pointer 1
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4220 4234])
+                                            ("verbose" variable (:type "bool") (reparse-symbol arg-sub-list) [4235 4248])
+                                            ("cpu" variable (:type "int") (reparse-symbol arg-sub-list) [4249 4257])
+                                            ("isDirty" variable
+                                               (:pointer 1
+                                                :default-value "NULL"
+                                                :type "bool")
+                                                (reparse-symbol arg-sub-list) [4258 4276]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4170 4278])
+                                    ("getRotatedIndex" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :arguments 
+                                          ( ("index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4536 4551])
+                                            ("way" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4552 4569]))                                          
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4510 4570])
+                                    ("setIndex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4585 4603])
+                                    ("returnIndex" variable
+                                       (:dereference 1
+                                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4662 4690])
+                                    ("accessL2CacheData" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("isWrite" variable (:type "bool") (reparse-symbol arg-sub-list) [5281 5294])
+                                            ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5295 5307])
+                                            ("data" variable
+                                               (:pointer 1
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5308 5322])
+                                            ("verbose" variable (:type "bool") (reparse-symbol arg-sub-list) [5323 5336])
+                                            ("isDirty" variable
+                                               (:pointer 1
+                                                :default-value "NULL"
+                                                :type "bool")
+                                                (reparse-symbol arg-sub-list) [5337 5355]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [5258 5357])
+                                    ("setCacheData" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("va" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5756 5768])
+                                            ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5769 5781])
+                                            ("data" variable (:type ("CarbonUInt8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5782 5799])
+                                            ("verbose" variable (:type "bool") (reparse-symbol arg-sub-list) [5800 5813]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [5738 5814])
+                                    ("setupL1Nets" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("cpuNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5880 5896]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5863 5897])
+                                    ("setupL2Nets" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5946 5965])
+                                    ("set_total_num_cpu" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6011 6036])
+                                    ("restoreL2Cache" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6095 6107])
+                                            ("tag" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6108 6121])
+                                            ("way" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6122 6135])
+                                            ("shareability" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6136 6157])
+                                            ("dirty" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6158 6172])
+                                            ("data" variable
+                                               (:pointer 1
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6173 6187])
+                                            ("validate" variable (:type "bool") (reparse-symbol arg-sub-list) [6188 6202]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6075 6203])
+                                    ("findNet" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :arguments 
+                                          ( ("netPath" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6290 6317]))                                          
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6269 6318])
+                                    ("findMemory" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :arguments 
+                                          ( ("memPath" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6411 6438]))                                          
+                                        :type ("CarbonMemoryID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6384 6439])
+                                    ("mCadi" variable
+                                       (:pointer 1
+                                        :type ("eslapi::CADI" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6456 6488])
+                                    ("mMemSystemIdx" variable
+                                       (:constant-flag t
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6495 6535])
+                                    ("mTrustZone" variable
+                                       (:constant-flag t
+                                        :type ("CarbonTrustZone::TrustZone" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6542 6586])
+                                    ("mCompHelper" variable
+                                       (:pointer 1
+                                        :type ("CarbonComponentHelper" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6594 6632])
+                                    ("mObj" variable
+                                       (:pointer 1
+                                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6639 6670])
+                                    ("mMMUSystem" variable
+                                       (:pointer 1
+                                        :type ("CarbonMMUAccess" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6678 6715])
+                                    ("L2Size" type
+                                       (:members 
+                                          ( ("eL2Size128K" variable
+                                               (:constant-flag t
+                                                :default-value (6778 6779)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [6764 6779])
+                                            ("eL2Size256K" variable
+                                               (:constant-flag t
+                                                :default-value (6803 6804)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [6789 6804])
+                                            ("eL2Size512K" variable
+                                               (:constant-flag t
+                                                :default-value (6828 6829)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [6814 6829])
+                                            ("eL2Size1M" variable
+                                               (:constant-flag t
+                                                :default-value (6851 6852)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [6839 6852])
+                                            ("eL2Size2M" variable
+                                               (:constant-flag t
+                                                :default-value (6874 6876)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [6862 6876]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [6736 6885])
+                                    ("mL2Size" variable (:type ("L2Size" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6892 6926])
+                                    ("mL1TagBankHndl" variable
+                                       (:pointer 1
+                                        :dereference 2
+                                        :type ("CarbonMemoryID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6964 7034])
+                                    ("mL1DataBankHndl" variable
+                                       (:pointer 1
+                                        :dereference 2
+                                        :type ("CarbonMemoryID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7041 7118])
+                                    ("mDCacheSizeHndl" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7126 7171])
+                                    ("mL2TagBankHndl" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type ("CarbonMemoryID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7209 7263])
+                                    ("mL2DataBankHndl" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type ("CarbonMemoryID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7270 7331])
+                                    ("mtotal_num_cpus" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7369 7398])
+                                    ("mDoesL2Exist" variable (:type "bool") (reparse-symbol classsubparts) [7426 7444])
+                                    ("mL2RestoreValidation" variable (:type "bool") (reparse-symbol classsubparts) [7488 7514])
+                                    ("AccessType" type
+                                       (:members 
+                                          ( ("eRead" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [7604 7610])
+                                            ("eWrite" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [7619 7626])
+                                            ("eNumAccessTypes" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [7635 7658]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [7572 7659])
+                                    ("mL1Hit" variable
+                                       (:dereference 2
+                                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7713 7763])
+                                    ("mL2Hit" variable
+                                       (:dereference 2
+                                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7770 7820]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1695 7836]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1541 7865]))                  
+                :type "namespace")
+                nil [1358 7907]))          
+      :file "CarbonMemSystem.h"
+      :pointmax 7980
+      :fsize 8748
+      :lastmodtime '(23190 53122 841531 0)
+      :unmatched-syntax '((punctuation 7865 . 7866))
+      :lexical-table 
+        '(("L1_NUM_DATA_BANKS" . ((number "8" 1216 . 1217)))
+          ("L2_NUM_DATA_BANKS" . ((number "8" 1148 . 1149)))
+          ("FM_L2_DATA_LINE_BYTES" . ((number "8" 1355 . 1356)))
+          ("TOTAL_MAX_CPUS" . ((number "4" 1250 . 1251)))
+          ("L1_NUM_WAYS" . ((number "4" 1182 . 1183)))
+          ("_CARBONCORTEXA53L1MEMSYSTEM_H_")
+          ("L2_NUM_WAYS" . ((number "16" 1113 . 1115)))
+          )
+)
+    (semanticdb-table "ICM_CortexA53DebugController.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("cpus/ICM_DebugController.h" include nil nil [223 260])
+            ("cpus/CortexA53/PCStateMachine.h" include nil nil [261 303])
+            ("ICM_CortexA53DebugController" type
+               (:superclasses 
+                  ( ("ICM_DebugController" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [372 379])
+                    ("ICM_DebugController" function
+                       (:arguments 
+                          ( ("" variable (:type ("component_helper" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [632 649])
+                            ("" variable (:type ("cycle_model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [650 662])
+                            ("" variable (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYCORTEXA53::PCStateMachine" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [693 808])
+                            ("" variable (:type ("icm_model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [834 844]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [612 944])
+                    ("ICM_CortexA53DebugController" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [948 989]))                  
+                :type "class")
+                nil [305 992]))          
+      :file "ICM_CortexA53DebugController.h"
+      :pointmax 993
+      :fsize 992
+      :lastmodtime '(23318 61034 264326 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!src!include!cpus!CortexA53!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

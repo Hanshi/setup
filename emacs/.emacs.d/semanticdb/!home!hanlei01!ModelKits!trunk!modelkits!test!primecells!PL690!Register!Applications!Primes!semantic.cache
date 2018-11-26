@@ -1,0 +1,1877 @@
+;; Object Primes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Primes/"
+  :tables
+  (list
+    (semanticdb-table "main.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [181 199])
+            ("armv8_aarch64_SystemTimer.h" include nil nil [200 238])
+            ("armv8_aarch64_gicv3.h" include nil nil [239 271])
+            ("dummymaster.h" include nil nil [272 296])
+            ("DummyMaster" variable (:constant-flag t) nil [306 317])
+            ("GITS_TRANSLATER" variable (:constant-flag t) nil [347 362])
+            ("TEST_ATTR" variable (:constant-flag t) nil [388 397])
+            ("flag" variable
+               (:typemodifiers ("volatile")
+                :type "unsigned int")
+                nil [438 465])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [537 542]))                  
+                :type "int")
+                nil [528 1319])
+            ("fiqHandler" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1399 1404]))                  
+                :type "void")
+                nil [1383 3832])
+            ("irqHandler" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3911 3916]))                  
+                :type "void")
+                nil [3895 6284]))          
+      :file "main.c"
+      :pointmax 6346
+      :fsize 6628
+      :lastmodtime '(22505 23512 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TEST_ATTR" . ((semantic-list "(DM_ATTR_DATA | DM_ATTR_NS)" 407 . 434)))
+          ("GITS_TRANSLATER" . ((symbol "0xE0030040LL" 366 . 378)))
+          ("DummyMaster" . ((semantic-list "(void*)" 319 . 326) (number "0xd0000000" 327 . 337)))
+          )
+)
+    (semanticdb-table "armv8_aarch64_SystemTimer.h"
+      :file "armv8_aarch64_SystemTimer.h"
+      :fsize 8260
+      :lastmodtime '(22472 40193 0 0))
+    (semanticdb-table "armv8_aarch64_gicv3.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__gicv3_h" variable (:constant-flag t) nil [229 238])
+            ("stdint.h" include (:system-flag t) nil [240 259])
+            ("setDistributorBaseAddr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("addr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [636 647]))                  
+                :type "void")
+                nil [608 648])
+            ("setRedistributorBaseAddr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("RD_base" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [869 883]))                  
+                :type "void")
+                nil [839 884])
+            ("setITSBaseAddress" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ITS_base" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [983 998]))                  
+                :type "void")
+                nil [960 999])
+            ("GICV3_DCTLR_DISABLE_SECURITY" variable (:constant-flag t) nil [1163 1191])
+            ("GICV3_DCTLR_ENABLE_SECURITY" variable (:constant-flag t) nil [1213 1240])
+            ("GICV3_DCTLR_ARE_NS_ENABLE" variable (:constant-flag t) nil [1259 1284])
+            ("GICV3_DCTLR_ARE_NS_DISABLE" variable (:constant-flag t) nil [1309 1335])
+            ("GICV3_DCTLR_ARE_S_ENABLE" variable (:constant-flag t) nil [1355 1379])
+            ("GICV3_DCTLR_ARE_S_DISABLE" variable (:constant-flag t) nil [1405 1430])
+            ("enableGIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("security" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1766 1784])
+                    ("ARE_S" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1785 1800])
+                    ("ARE_NS" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1801 1817]))                  
+                :type "void")
+                nil [1751 1818])
+            ("disableGIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1874 1879]))                  
+                :type "void")
+                nil [1858 1880])
+            ("writeRegister" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1930 1935]))                  
+                :type "void")
+                nil [1911 1936])
+            ("debugReadRegister" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1996 2001]))                  
+                :type "void")
+                nil [1973 2002])
+            ("wakeUpRedist" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2416 2421]))                  
+                :type "void")
+                nil [2398 2422])
+            ("GICV3_LPI_INNER_SHARED" variable (:constant-flag t) nil [2497 2519])
+            ("GICV3_LPI_OUTER_SHARED" variable (:constant-flag t) nil [2541 2563])
+            ("GICV3_LPI_NON_SHARED" variable (:constant-flag t) nil [2585 2605])
+            ("GICV3_LPI_NORMAL_WBWA" variable (:constant-flag t) nil [2622 2643])
+            ("GICV3_LPI_DEVICE_nGnRnE" variable (:constant-flag t) nil [2681 2704])
+            ("setLPIConfigTableAddr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3176 3190])
+                    ("attributes" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3191 3211])
+                    ("IDbits" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3212 3228]))                  
+                :type "void")
+                nil [3149 3229])
+            ("setLPIPendingTableAddr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3683 3697])
+                    ("attributes" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3698 3718])
+                    ("IDbits" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3719 3735]))                  
+                :type "void")
+                nil [3655 3736])
+            ("enableLPIs" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3864 3869]))                  
+                :type "void")
+                nil [3848 3870])
+            ("disableLPIs" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3948 3953]))                  
+                :type "void")
+                nil [3931 3954])
+            ("GICV3_LPI_ENABLE" variable (:constant-flag t) nil [3965 3981])
+            ("GICV3_LPI_DISABLE" variable (:constant-flag t) nil [4010 4027])
+            ("configureLPI" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4273 4285])
+                    ("enable" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4286 4302])
+                    ("priority" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4303 4321]))                  
+                :type "void")
+                nil [4255 4322])
+            ("sendLPI" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4458 4470]))                  
+                :type "void")
+                nil [4445 4471])
+            ("clearLPI" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4610 4622]))                  
+                :type "void")
+                nil [4596 4623])
+            ("enableSPI" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4901 4913]))                  
+                :type "void")
+                nil [4886 4914])
+            ("disableSPI" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5039 5051]))                  
+                :type "void")
+                nil [5023 5052])
+            ("setSPIPriority" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5220 5232])
+                    ("priority" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5233 5251]))                  
+                :type "void")
+                nil [5200 5252])
+            ("getIntPriority" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5381 5393]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [5357 5394])
+            ("GICV3_ROUTE_MODE_ANY" variable (:constant-flag t) nil [5430 5450])
+            ("GICV3_ROUTE_MODE_COORDINATE" variable (:constant-flag t) nil [5484 5511])
+            ("setSPIRoute" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5719 5731])
+                    ("mode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5732 5746])
+                    ("aff3" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5747 5761])
+                    ("aff2" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5762 5776])
+                    ("aff1" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5777 5791])
+                    ("aff0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5792 5806]))                  
+                :type "void")
+                nil [5702 5807])
+            ("getSPIRoute" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5984 5996]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [5963 5997])
+            ("setSPITarget" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6178 6190])
+                    ("target" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6191 6207]))                  
+                :type "void")
+                nil [6160 6208])
+            ("getSPITarget" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6344 6356]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [6322 6357])
+            ("GICV3_CONFIG_LEVEL" variable (:constant-flag t) nil [6591 6609])
+            ("GICV3_CONFIG_EDGE" variable (:constant-flag t) nil [6636 6653])
+            ("configureInt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6692 6704])
+                    ("conf" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6705 6719]))                  
+                :type "void")
+                nil [6674 6720])
+            ("setSPIPending" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6902 6914]))                  
+                :type "void")
+                nil [6883 6915])
+            ("clearSPIPending" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7039 7051]))                  
+                :type "void")
+                nil [7018 7052])
+            ("GICV3_PENDING_IS_SET" variable (:constant-flag t) nil [7176 7196])
+            ("GICV3_PENDING_IS_CLEAR" variable (:constant-flag t) nil [7221 7243])
+            ("getSPIPending" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7282 7294]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [7259 7295])
+            ("GICV3_SPI_GROUP0" variable (:constant-flag t) nil [7436 7452])
+            ("GICV3_SPI_GROUP1_SECURE" variable (:constant-flag t) nil [7481 7504])
+            ("GICV3_SPI_GROUP1_NON_SECURE" variable (:constant-flag t) nil [7526 7553])
+            ("setSPISecurity" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7584 7596])
+                    ("security" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7597 7615]))                  
+                :type "void")
+                nil [7564 7616])
+            ("enablePrivateID" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7985 7997]))                  
+                :type "void")
+                nil [7964 7998])
+            ("disablePrivateID" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8116 8128]))                  
+                :type "void")
+                nil [8094 8129])
+            ("setPrivateIDPriority" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8301 8313])
+                    ("priority" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8314 8332]))                  
+                :type "void")
+                nil [8275 8333])
+            ("getPrivateIntPriority" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8461 8473]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [8430 8474])
+            ("GICV3_SGI_PPI_GROUP0" variable (:constant-flag t) nil [8614 8634])
+            ("GICV3_SGI_PPI_GROUP1_SECURE" variable (:constant-flag t) nil [8659 8686])
+            ("GICV3_SGI_PPI_GROUP1_NON_SECURE" variable (:constant-flag t) nil [8704 8735])
+            ("setPrivateIDSecurity" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8768 8780])
+                    ("group" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8781 8796]))                  
+                :type "void")
+                nil [8742 8797])
+            ("setPrivateIntPending" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8920 8932]))                  
+                :type "void")
+                nil [8894 8933])
+            ("clearPrivateIntPending" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9060 9072]))                  
+                :type "void")
+                nil [9032 9073])
+            ("getPrivateIntPending" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9214 9226]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [9184 9227])
+            ("GICV3_SRE_ENABLE" variable (:constant-flag t) nil [9393 9409])
+            ("GICV3_SRE_DISABLE_FIQ_BYPASS" variable (:constant-flag t) nil [9435 9463])
+            ("GICV3_SRE_DISABLE_IRQ_BYPASS" variable (:constant-flag t) nil [9482 9510])
+            ("GICV3_SRE_LOWER_EL_ACCESS" variable (:constant-flag t) nil [9529 9554])
+            ("setICC_SRE_EL1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("value" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9673 9688]))                  
+                :type "void")
+                nil [9653 9689])
+            ("getICC_SRE_EL1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9803 9808]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [9779 9809])
+            ("setICC_SRE_EL2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("value" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9865 9880]))                  
+                :type "void")
+                nil [9845 9881])
+            ("getICC_SRE_EL2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9944 9949]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [9920 9950])
+            ("setICC_SRE_EL3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("value" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10006 10021]))                  
+                :type "void")
+                nil [9986 10022])
+            ("getICC_SRE_EL3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10085 10090]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [10061 10091])
+            ("enableGroup0Ints" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10249 10254]))                  
+                :type "void")
+                nil [10227 10255])
+            ("disableGroup0Ints" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10415 10420]))                  
+                :type "void")
+                nil [10392 10421])
+            ("enableGroup1Ints" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10606 10611]))                  
+                :type "void")
+                nil [10584 10612])
+            ("disableGroup1Ints" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10799 10804]))                  
+                :type "void")
+                nil [10776 10805])
+            ("enableNSGroup1Ints" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10941 10946]))                  
+                :type "void")
+                nil [10917 10947])
+            ("disableNSGroup1Ints" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11086 11091]))                  
+                :type "void")
+                nil [11061 11092])
+            ("setICC_CTLR_EL3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11166 11175]))                  
+                :type "void")
+                nil [11145 11176])
+            ("getICC_CTLR_EL3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11268 11273]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [11243 11274])
+            ("setICC_CTLR_EL1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11348 11357]))                  
+                :type "void")
+                nil [11327 11358])
+            ("getICC_CTLR_EL1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11450 11455]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [11425 11456])
+            ("readIntAck" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11538 11543]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [11518 11544])
+            ("writeEOI" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11607 11619]))                  
+                :type "void")
+                nil [11593 11620])
+            ("writeDIR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11686 11698]))                  
+                :type "void")
+                nil [11672 11699])
+            ("readAliasedIntAck" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11796 11801]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [11769 11802])
+            ("writeAliasedEOI" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11880 11892]))                  
+                :type "void")
+                nil [11859 11893])
+            ("setPriorityMask" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("priority" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12115 12133]))                  
+                :type "void")
+                nil [12094 12134])
+            ("setBinaryPoint" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("priority" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12244 12262]))                  
+                :type "void")
+                nil [12224 12263])
+            ("getBinaryPoint" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12348 12353]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [12324 12354])
+            ("setAliasedBinaryPoint" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("priority" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12471 12489]))                  
+                :type "void")
+                nil [12444 12490])
+            ("getAliasedBinaryPoint" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12582 12587]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [12551 12588])
+            ("getRunningPriority" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12675 12680]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [12647 12681])
+            ("GICV3_SGI_AFF3_SHIFT" variable (:constant-flag t) nil [12828 12848])
+            ("GICV3_SGI_AFF2_SHIFT" variable (:constant-flag t) nil [12871 12891])
+            ("GICV3_SGI_AFF1_SHIFT" variable (:constant-flag t) nil [12914 12934])
+            ("GICV3_SGI_ROUTING_ALL" variable (:constant-flag t) nil [12958 12979])
+            ("GICV3_SGI_ROUTING_LIST" variable (:constant-flag t) nil [13006 13028])
+            ("GICV3_SGI_TARGET_CPU0" variable (:constant-flag t) nil [13049 13070])
+            ("GICV3_SGI_TARGET_CPU1" variable (:constant-flag t) nil [13096 13117])
+            ("GICV3_SGI_TARGET_CPU2" variable (:constant-flag t) nil [13143 13164])
+            ("GICV3_SGI_TARGET_CPU3" variable (:constant-flag t) nil [13190 13211])
+            ("GICV3_SGI_TARGET_CPU4" variable (:constant-flag t) nil [13237 13258])
+            ("GICV3_SGI_TARGET_CPU5" variable (:constant-flag t) nil [13284 13305])
+            ("GICV3_SGI_TARGET_CPU6" variable (:constant-flag t) nil [13331 13352])
+            ("GICV3_SGI_TARGET_CPU7" variable (:constant-flag t) nil [13378 13399])
+            ("GICV3_SGI_TARGET_CPU8" variable (:constant-flag t) nil [13425 13446])
+            ("GICV3_SGI_TARGET_CPU9" variable (:constant-flag t) nil [13472 13493])
+            ("GICV3_SGI_TARGET_CPU10" variable (:constant-flag t) nil [13519 13541])
+            ("GICV3_SGI_TARGET_CPU11" variable (:constant-flag t) nil [13566 13588])
+            ("GICV3_SGI_TARGET_CPU12" variable (:constant-flag t) nil [13613 13635])
+            ("GICV3_SGI_TARGET_CPU13" variable (:constant-flag t) nil [13660 13682])
+            ("GICV3_SGI_TARGET_CPU14" variable (:constant-flag t) nil [13707 13729])
+            ("GICV3_SGI_TARGET_CPU15" variable (:constant-flag t) nil [13754 13776])
+            ("GICV3_SGI_ID0" variable (:constant-flag t) nil [13802 13815])
+            ("GICV3_SGI_ID1" variable (:constant-flag t) nil [13852 13865])
+            ("GICV3_SGI_ID2" variable (:constant-flag t) nil [13902 13915])
+            ("GICV3_SGI_ID3" variable (:constant-flag t) nil [13952 13965])
+            ("GICV3_SGI_ID4" variable (:constant-flag t) nil [14002 14015])
+            ("GICV3_SGI_ID5" variable (:constant-flag t) nil [14052 14065])
+            ("GICV3_SGI_ID6" variable (:constant-flag t) nil [14102 14115])
+            ("GICV3_SGI_ID7" variable (:constant-flag t) nil [14152 14165])
+            ("GICV3_SGI_ID8" variable (:constant-flag t) nil [14202 14215])
+            ("GICV3_SGI_ID9" variable (:constant-flag t) nil [14252 14265])
+            ("GICV3_SGI_ID10" variable (:constant-flag t) nil [14302 14316])
+            ("GICV3_SGI_ID11" variable (:constant-flag t) nil [14352 14366])
+            ("GICV3_SGI_ID12" variable (:constant-flag t) nil [14402 14416])
+            ("GICV3_SGI_ID13" variable (:constant-flag t) nil [14452 14466])
+            ("GICV3_SGI_ID14" variable (:constant-flag t) nil [14502 14516])
+            ("GICV3_SGI_ID15" variable (:constant-flag t) nil [14552 14566])
+            ("sendGroup0SGI" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14636 14648])
+                    ("mode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14649 14663])
+                    ("target_list" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14664 14685]))                  
+                :type "void")
+                nil [14617 14686])
+            ("sendGroup1SGI" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14754 14766])
+                    ("mode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14767 14781])
+                    ("target_list" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14782 14803]))                  
+                :type "void")
+                nil [14735 14804])
+            ("sendOtherGroup1SGI" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14875 14887])
+                    ("mode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14888 14902])
+                    ("target_list" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14903 14924]))                  
+                :type "void")
+                nil [14851 14925])
+            ("GICV3_SGI_NO_NS_ACCESS" variable (:constant-flag t) nil [15045 15067])
+            ("GICV3_SGI_NS_ACCESS_GROUP0" variable (:constant-flag t) nil [15087 15113])
+            ("GICV3_SGI_NS_ACCESS_GROUP1" variable (:constant-flag t) nil [15131 15157])
+            ("configNSAccessSGI" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15191 15203])
+                    ("access" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15204 15220]))                  
+                :type "void")
+                nil [15168 15221])
+            ("sendMsgNS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15953 15965])
+                    ("gicd_alias" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15966 15983]))                  
+                :type "void")
+                nil [15938 15984])
+            ("sendMsgS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16111 16123])
+                    ("gicd_alias" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16124 16141]))                  
+                :type "void")
+                nil [16097 16142])
+            ("clearMsgNS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16325 16337])
+                    ("gidc_alias" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16338 16355]))                  
+                :type "void")
+                nil [16309 16356])
+            ("clearMsgS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16471 16483])
+                    ("gicd_alias" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16484 16501]))                  
+                :type "void")
+                nil [16456 16502])
+            ("GICV3_ITS_CQUEUE_VALID" variable (:constant-flag t) nil [16853 16875])
+            ("GICV3_ITS_CQUEUE_INVALID" variable (:constant-flag t) nil [16913 16937])
+            ("initITSCommandQueue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17442 17456])
+                    ("attributes" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17457 17477])
+                    ("num_pages" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17478 17497]))                  
+                :type "void")
+                nil [17417 17498])
+            ("itsMAPD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("device_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17850 17869])
+                    ("table" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17870 17885])
+                    ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17886 17900]))                  
+                :type "void")
+                nil [17837 17901])
+            ("itsMAPC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("target" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18098 18114])
+                    ("collection" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18115 18135]))                  
+                :type "void")
+                nil [18085 18136])
+            ("itsMAPI" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("device_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18226 18245])
+                    ("event_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18246 18264])
+                    ("cid" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18265 18278]))                  
+                :type "void")
+                nil [18213 18279])
+            ("itsMAPTI" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("device_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18551 18570])
+                    ("event_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18571 18589])
+                    ("intid" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18590 18605])
+                    ("cid" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18606 18619]))                  
+                :type "void")
+                nil [18537 18620])
+            ("itsINVALL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cid" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18728 18741]))                  
+                :type "void")
+                nil [18713 18742])
+            ("itsINV" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("device_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18867 18886])
+                    ("event_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18887 18905]))                  
+                :type "void")
+                nil [18855 18906])
+            ("itsSYNC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("target" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19065 19081]))                  
+                :type "void")
+                nil [19052 19082])
+            ("itsINT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("device" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19240 19256])
+                    ("event_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19257 19275]))                  
+                :type "void")
+                nil [19228 19276])
+            ("GICV3_ITS_TABLE_TYPE_UNIMPLEMENTED" variable (:constant-flag t) nil [19659 19693])
+            ("GICV3_ITS_TABLE_TYPE_DEVICE" variable (:constant-flag t) nil [19708 19735])
+            ("GICV3_ITS_TABLE_TYPE_VIRTUAL" variable (:constant-flag t) nil [19757 19785])
+            ("GICV3_ITS_TABLE_TYPE_COLLECTION" variable (:constant-flag t) nil [19806 19837])
+            ("GICV3_ITS_TABLE_PAGE_SIZE_4K" variable (:constant-flag t) nil [19856 19884])
+            ("GICV3_ITS_TABLE_PAGE_SIZE_16K" variable (:constant-flag t) nil [19905 19934])
+            ("GICV3_ITS_TABLE_PAGE_SIZE_64K" variable (:constant-flag t) nil [19954 19983])
+            ("getITSTableType" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20021 20036])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20037 20052])
+                    ("entry_size" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20053 20074]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [19996 20075])
+            ("GICV3_ITS_TABLE_PAGE_VALID" variable (:constant-flag t) nil [20581 20607])
+            ("GICV3_ITS_TABLE_PAGE_INVALID" variable (:constant-flag t) nil [20647 20675])
+            ("GICV3_ITS_TABLE_PAGE_DIRECT" variable (:constant-flag t) nil [20698 20725])
+            ("GICV3_ITS_TABLE_PAGE_INDIRECT" variable (:constant-flag t) nil [20748 20777])
+            ("GICV3_ITS_TABLE_PAGE_DEVICE_nGnRnE" variable (:constant-flag t) nil [20805 20839])
+            ("GICV3_ITS_TABLE_PAGE_NORM_WBWA" variable (:constant-flag t) nil [20855 20885])
+            ("GICV3_ITS_TABLE_INNER_SHAREABLE" variable (:constant-flag t) nil [20930 20961])
+            ("GICV3_ITS_TABLE_OUTER_SHAREABLE" variable (:constant-flag t) nil [20988 21019])
+            ("GICV3_ITS_TABLE_NON_SHAREABLE" variable (:constant-flag t) nil [21046 21075])
+            ("setITSTableAddr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21110 21125])
+                    ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21126 21140])
+                    ("attributes" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21141 21161])
+                    ("page_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21162 21181])
+                    ("num_pages" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21182 21201]))                  
+                :type "void")
+                nil [21089 21202])
+            ("GICV3_ITS_PTA_ADDRESS" variable (:constant-flag t) nil [21279 21300])
+            ("GICV3_ITS_PTA_ID" variable (:constant-flag t) nil [21326 21342])
+            ("getITSPTA" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21385 21390]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [21366 21391])
+            ("enableITS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21443 21448]))                  
+                :type "void")
+                nil [21428 21449])
+            ("disableITS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21504 21509]))                  
+                :type "void")
+                nil [21488 21510]))          
+      :file "armv8_aarch64_gicv3.h"
+      :pointmax 21676
+      :fsize 22333
+      :lastmodtime '(22505 23512 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GICV3_LPI_DISABLE" . ((semantic-list "(0)" 4043 . 4046)))
+          ("GICV3_SGI_PPI_GROUP1_NON_SECURE" . ((semantic-list "(2)" 8737 . 8740)))
+          ("GICV3_SGI_TARGET_CPU6" . ((semantic-list "(0x0040)" 13361 . 13369)))
+          ("GICV3_SGI_TARGET_CPU11" . ((semantic-list "(0x0800)" 13596 . 13604)))
+          ("GICV3_SGI_ID1" . ((semantic-list "(0x1 << 24)" 13882 . 13893)))
+          ("GICV3_SGI_ID14" . ((semantic-list "(0xE << 24)" 14532 . 14543)))
+          ("GICV3_ITS_CQUEUE_VALID" . ((semantic-list "((uint64_t)1 << 63)" 16885 . 16904)))
+          ("GICV3_ITS_TABLE_INNER_SHAREABLE" . ((semantic-list "(0x1 << 10)" 20968 . 20979)))
+          ("GICV3_DCTLR_ARE_S_ENABLE" . ((semantic-list "(1 << 4)" 1388 . 1396)))
+          ("GICV3_SGI_TARGET_CPU7" . ((semantic-list "(0x0080)" 13408 . 13416)))
+          ("GICV3_SGI_TARGET_CPU12" . ((semantic-list "(0x1000)" 13643 . 13651)))
+          ("GICV3_SGI_ID2" . ((semantic-list "(0x2 << 24)" 13932 . 13943)))
+          ("GICV3_SGI_ID15" . ((semantic-list "(0xF << 24)" 14582 . 14593)))
+          ("GICV3_LPI_OUTER_SHARED" . ((semantic-list "(0x2 << 10)" 2565 . 2576)))
+          ("GICV3_SPI_GROUP1_SECURE" . ((semantic-list "(1)" 7514 . 7517)))
+          ("GICV3_SGI_TARGET_CPU8" . ((semantic-list "(0x0100)" 13455 . 13463)))
+          ("GICV3_SGI_TARGET_CPU13" . ((semantic-list "(0x2000)" 13690 . 13698)))
+          ("GICV3_SGI_ID3" . ((semantic-list "(0x3 << 24)" 13982 . 13993)))
+          ("GICV3_ITS_TABLE_PAGE_VALID" . ((semantic-list "((uint64_t)1 << 63)" 20619 . 20638)))
+          ("GICV3_SGI_PPI_GROUP0" . ((semantic-list "(0)" 8647 . 8650)))
+          ("GICV3_SRE_DISABLE_IRQ_BYPASS" . ((semantic-list "(1 << 2)" 9512 . 9520)))
+          ("GICV3_SGI_TARGET_CPU9" . ((semantic-list "(0x0200)" 13502 . 13510)))
+          ("GICV3_SGI_TARGET_CPU14" . ((semantic-list "(0x4000)" 13737 . 13745)))
+          ("GICV3_SGI_ID4" . ((semantic-list "(0x4 << 24)" 14032 . 14043)))
+          ("GICV3_ITS_TABLE_PAGE_INVALID" . ((semantic-list "(0)" 20685 . 20688)))
+          ("GICV3_ITS_TABLE_OUTER_SHAREABLE" . ((semantic-list "(0x2 << 10)" 21026 . 21037)))
+          ("GICV3_DCTLR_ARE_NS_ENABLE" . ((semantic-list "(1 << 5)" 1292 . 1300)))
+          ("GICV3_DCTLR_ARE_NS_DISABLE" . ((semantic-list "(0)" 1342 . 1345)))
+          ("GICV3_ROUTE_MODE_COORDINATE" . ((semantic-list "(0)" 5517 . 5520)))
+          ("GICV3_PENDING_IS_CLEAR" . ((semantic-list "(0)" 7254 . 7257)))
+          ("GICV3_SGI_ROUTING_LIST" . ((semantic-list "(0)" 13036 . 13039)))
+          ("GICV3_SGI_TARGET_CPU15" . ((semantic-list "(0x8000)" 13784 . 13792)))
+          ("GICV3_SGI_ID5" . ((semantic-list "(0x5 << 24)" 14082 . 14093)))
+          ("GICV3_ITS_TABLE_TYPE_UNIMPLEMENTED" . ((semantic-list "(0x0)" 19694 . 19699)))
+          ("GICV3_ITS_TABLE_TYPE_VIRTUAL" . ((semantic-list "(0x2)" 19792 . 19797)))
+          ("GICV3_ITS_TABLE_PAGE_DEVICE_nGnRnE" . ((semantic-list "(0)" 20843 . 20846)))
+          ("GICV3_DCTLR_ARE_S_DISABLE" . ((semantic-list "(0)" 1438 . 1441)))
+          ("GICV3_LPI_ENABLE" . ((semantic-list "(1)" 3998 . 4001)))
+          ("GICV3_SRE_ENABLE" . ((semantic-list "(1)" 9423 . 9426)))
+          ("GICV3_SGI_AFF1_SHIFT" . ((semantic-list "(16)" 12944 . 12948)))
+          ("GICV3_SGI_ID6" . ((semantic-list "(0x6 << 24)" 14132 . 14143)))
+          ("GICV3_ITS_TABLE_TYPE_COLLECTION" . ((semantic-list "(0x4)" 19841 . 19846)))
+          ("__gicv3_h")
+          ("GICV3_LPI_NON_SHARED" . ((semantic-list "(0)" 2609 . 2612)))
+          ("GICV3_CONFIG_LEVEL" . ((semantic-list "(0)" 6624 . 6627)))
+          ("GICV3_SGI_AFF2_SHIFT" . ((semantic-list "(32)" 12901 . 12905)))
+          ("GICV3_SGI_ID7" . ((semantic-list "(0x7 << 24)" 14182 . 14193)))
+          ("GICV3_ITS_CQUEUE_INVALID" . ((semantic-list "(0)" 16945 . 16948)))
+          ("GICV3_LPI_DEVICE_nGnRnE" . ((semantic-list "(0)" 2705 . 2708)))
+          ("GICV3_SGI_AFF3_SHIFT" . ((semantic-list "(48)" 12858 . 12862)))
+          ("GICV3_SGI_TARGET_CPU0" . ((semantic-list "(0x0001)" 13079 . 13087)))
+          ("GICV3_SGI_ID8" . ((semantic-list "(0x8 << 24)" 14232 . 14243)))
+          ("GICV3_ITS_TABLE_TYPE_DEVICE" . ((semantic-list "(0x1)" 19743 . 19748)))
+          ("GICV3_ITS_TABLE_PAGE_DIRECT" . ((semantic-list "(0)" 20736 . 20739)))
+          ("GICV3_ITS_PTA_ID" . ((semantic-list "(0)" 21361 . 21364)))
+          ("GICV3_LPI_NORMAL_WBWA" . ((semantic-list "((0x5 << 56) | (0x5 << 7))" 2646 . 2672)))
+          ("GICV3_ROUTE_MODE_ANY" . ((semantic-list "(0x80000000)" 5463 . 5475)))
+          ("GICV3_SPI_GROUP1_NON_SECURE" . ((semantic-list "(2)" 7559 . 7562)))
+          ("GICV3_SGI_PPI_GROUP1_SECURE" . ((semantic-list "(1)" 8692 . 8695)))
+          ("GICV3_SGI_TARGET_CPU1" . ((semantic-list "(0x0002)" 13126 . 13134)))
+          ("GICV3_SGI_ID9" . ((semantic-list "(0x9 << 24)" 14282 . 14293)))
+          ("GICV3_SGI_NO_NS_ACCESS" . ((semantic-list "(0)" 15075 . 15078)))
+          ("GICV3_ITS_TABLE_PAGE_SIZE_4K" . ((semantic-list "(0x0)" 19891 . 19896)))
+          ("GICV3_ITS_TABLE_PAGE_SIZE_16K" . ((semantic-list "(0x1)" 19940 . 19945)))
+          ("GICV3_ITS_TABLE_PAGE_SIZE_64K" . ((semantic-list "(0x2)" 19989 . 19994)))
+          ("GICV3_SGI_ROUTING_ALL" . ((semantic-list "(1 << 40)" 12988 . 12997)))
+          ("GICV3_SGI_TARGET_CPU2" . ((semantic-list "(0x0004)" 13173 . 13181)))
+          ("GICV3_SGI_ID10" . ((semantic-list "(0xA << 24)" 14332 . 14343)))
+          ("GICV3_ITS_TABLE_PAGE_NORM_WBWA" . ((semantic-list "((0x5 << 59) | (0x5 << 53))" 20893 . 20920)))
+          ("GICV3_DCTLR_DISABLE_SECURITY" . ((semantic-list "(1 << 6)" 1196 . 1204)))
+          ("GICV3_DCTLR_ENABLE_SECURITY" . ((semantic-list "(0)" 1246 . 1249)))
+          ("GICV3_SPI_GROUP0" . ((semantic-list "(0)" 7469 . 7472)))
+          ("GICV3_SRE_DISABLE_FIQ_BYPASS" . ((semantic-list "(1 << 1)" 9465 . 9473)))
+          ("GICV3_SGI_TARGET_CPU3" . ((semantic-list "(0x0008)" 13220 . 13228)))
+          ("GICV3_SGI_ID11" . ((semantic-list "(0xB << 24)" 14382 . 14393)))
+          ("GICV3_CONFIG_EDGE" . ((semantic-list "(2)" 6669 . 6672)))
+          ("GICV3_SGI_TARGET_CPU4" . ((semantic-list "(0x0010)" 13267 . 13275)))
+          ("GICV3_SGI_ID12" . ((semantic-list "(0xC << 24)" 14432 . 14443)))
+          ("GICV3_SGI_NS_ACCESS_GROUP0" . ((semantic-list "(0x1)" 15117 . 15122)))
+          ("GICV3_ITS_TABLE_NON_SHAREABLE" . ((semantic-list "(0)" 21084 . 21087)))
+          ("GICV3_ITS_PTA_ADDRESS" . ((semantic-list "(1)" 21314 . 21317)))
+          ("GICV3_LPI_INNER_SHARED" . ((semantic-list "(0x1 << 10)" 2521 . 2532)))
+          ("GICV3_PENDING_IS_SET" . ((semantic-list "(1)" 7209 . 7212)))
+          ("GICV3_SRE_LOWER_EL_ACCESS" . ((semantic-list "(1 << 3)" 9559 . 9567)))
+          ("GICV3_SGI_TARGET_CPU5" . ((semantic-list "(0x0020)" 13314 . 13322)))
+          ("GICV3_SGI_TARGET_CPU10" . ((semantic-list "(0x0400)" 13549 . 13557)))
+          ("GICV3_SGI_ID0" . ((semantic-list "(0x0 << 24)" 13832 . 13843)))
+          ("GICV3_SGI_ID13" . ((semantic-list "(0xD << 24)" 14482 . 14493)))
+          ("GICV3_SGI_NS_ACCESS_GROUP1" . ((semantic-list "(0x2)" 15161 . 15166)))
+          ("GICV3_ITS_TABLE_PAGE_INDIRECT" . ((semantic-list "(1 << 62)" 20786 . 20795)))
+          )
+)
+    (semanticdb-table "dummymaster.h"
+      :file "dummymaster.h"
+      :fsize 1558
+      :lastmodtime '(22472 40193 0 0))
+    (semanticdb-table "armv8_aarch64_gicv3.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [193 211])
+            ("stdlib.h" include (:system-flag t) nil [212 231])
+            ("string.h" include (:system-flag t) nil [232 251])
+            ("armv8_aarch64_gicv3.h" include nil nil [252 284])
+            ("__dsb" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("scope" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [405 420]))                  
+                :type "void")
+                nil [387 421])
+            ("GICv3_dist_if" type
+               (:members 
+                  ( ("GICD_CTLR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [454 482])
+                    ("GICD_TYPER" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [545 580])
+                    ("GICD_IIDR" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [648 682])
+                    ("padding0" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [765 798])
+                    ("GICD_STATUSR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [844 875])
+                    ("padding1" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [912 948])
+                    ("IMP_DEF" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [991 1020])
+                    ("GICD_SETSPI_NSR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1093 1127])
+                    ("padding2" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1221 1254])
+                    ("GICD_CLRSPI_NSR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1299 1333])
+                    ("padding3" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1429 1462])
+                    ("GICD_SETSPI_SR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1507 1540])
+                    ("padding4" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1631 1664])
+                    ("GICD_CLRSPI_SR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1709 1742])
+                    ("padding5" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1836 1872])
+                    ("GICD_SEIR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1915 1943])
+                    ("padding6" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2058 2094])
+                    ("GICD_IGROUPR" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2137 2172])
+                    ("GICD_ISENABLER" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2262 2299])
+                    ("GICD_ICENABLER" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2361 2398])
+                    ("GICD_ISPENDR" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2462 2497])
+                    ("GICD_ICPENDR" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2562 2597])
+                    ("GICD_ISACTIVER" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2664 2701])
+                    ("GICD_ICACTIVER" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2762 2799])
+                    ("GICD_IPRIORITYR" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2863 2903])
+                    ("GICD_ITARGETSR" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2960 2998])
+                    ("GICD_ICFGR" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3066 3099])
+                    ("GICD_IGRPMODR" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3168 3204])
+                    ("padding7" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3236 3273])
+                    ("GICD_NSACR" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3314 3347])
+                    ("GICD_SGIR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3418 3446])
+                    ("padding8" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3519 3555])
+                    ("GICD_CPENDSGIR" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3598 3634])
+                    ("GICD_SPENDSGIR" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3670 3706])
+                    ("padding9" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3737 3774])
+                    ("padding10" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3809 3849])
+                    ("GICD_IROUTER" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3888 3925]))                  
+                :type "struct")
+                nil [423 3983])
+            ("GICv3_rdist_if" type
+               (:members 
+                  ( ("padding1" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4011 4048])
+                    ("GICR_IGROUPR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4088 4119])
+                    ("padding2" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4205 4242])
+                    ("GICR_ISENABLER" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4282 4315])
+                    ("padding3" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4374 4411])
+                    ("GICR_ICENABLER" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4451 4484])
+                    ("padding4" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4545 4582])
+                    ("GICR_ISPENDR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4622 4653])
+                    ("padding5" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4715 4752])
+                    ("GICR_ICPENDR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4792 4823])
+                    ("padding6" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4887 4924])
+                    ("GICR_ISACTIVER" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4964 4997])
+                    ("padding7" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5055 5092])
+                    ("GICR_ICACTIVER" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5132 5165])
+                    ("padding8" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5225 5262])
+                    ("GICR_IPRIORITYR" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5302 5340])
+                    ("padding9" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5392 5430])
+                    ("GICR_ICFGR" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5469 5501])
+                    ("padding10" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5564 5602])
+                    ("GICR_GRPMODR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5639 5670])
+                    ("padding11" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5705 5743])
+                    ("GICR_NSACR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5781 5810]))                  
+                :type "struct")
+                nil [3985 5877])
+            ("GICv3_rdist_ext_if" type
+               (:members 
+                  ( ("GICR_MISCR" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5975 6010])
+                    ("padding1" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6040 6073])
+                    ("GICR_IERRVR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6117 6147])
+                    ("padding2" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6176 6209])
+                    ("GICR_SGIDR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6253 6282]))                  
+                :type "struct")
+                nil [5879 6312])
+            ("GICv3_rdist_lpis_if" type
+               (:members 
+                  ( ("GICR_CTLR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6352 6380])
+                    ("GICR_IIDR" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6444 6478])
+                    ("GICR_TYPER" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6561 6596])
+                    ("GICR_STATUSR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6635 6666])
+                    ("GICR_WAKER" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6706 6735])
+                    ("padding0" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6771 6807])
+                    ("GICR_FCTLR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6848 6877])
+                    ("GICR_PWRR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6913 6941])
+                    ("GICR_CLASS" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6978 7007])
+                    ("padding1" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7037 7073])
+                    ("GICR_SETLPIR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7114 7145])
+                    ("GICR_CLRLPIR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7181 7212])
+                    ("padding2" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7242 7278])
+                    ("GICR_SEIR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7319 7347])
+                    ("padding3" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7432 7465])
+                    ("GICR_PROPBASER" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7509 7542])
+                    ("GICR_PENDBASER" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7580 7613])
+                    ("padding4" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7645 7681])
+                    ("GICR_INVLPIR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7722 7753])
+                    ("padding5" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7787 7823])
+                    ("GICR_INVALLR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7864 7895])
+                    ("padding6" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7929 7965])
+                    ("GICR_SYNCR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8006 8035])
+                    ("padding7" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8071 8107])
+                    ("padding8" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8142 8179])
+                    ("GICR_MOVLPIR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8219 8250])
+                    ("padding9" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8326 8362])
+                    ("GICR_MOVALLR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8403 8434])
+                    ("padding10" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8468 8505]))                  
+                :type "struct")
+                nil [6315 8581])
+            ("GICv3_rdist_lpis_ext_if" type
+               (:members 
+                  ( ("GICR_PIDR4" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8694 8729])
+                    ("GICR_PIDR5" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8759 8794])
+                    ("GICR_PIDR6" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8824 8859])
+                    ("GICR_PIDR7" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8889 8924])
+                    ("GICR_PIDR0" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8954 8989])
+                    ("GICR_PIDR1" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9019 9054])
+                    ("GICR_PIDR2" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9084 9119])
+                    ("GICR_PIDR3" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9149 9184]))                  
+                :type "struct")
+                nil [8583 9219])
+            ("GICv3_its_ctlr_if" type
+               (:members 
+                  ( ("GITS_CTLR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9277 9305])
+                    ("GITS_IIDR" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9359 9393])
+                    ("GITS_TYPER" variable
+                       (:typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9462 9497])
+                    ("padding1" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9533 9569])
+                    ("GITS_IMPDEF" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9610 9643])
+                    ("padding2" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9689 9726])
+                    ("GITS_CBASER" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9766 9796])
+                    ("GITS_CWRITER" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9837 9868])
+                    ("GITS_CREADR" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9908 9938])
+                    ("padding3" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9973 10009])
+                    ("padding4" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10044 10081])
+                    ("GITS_BASER" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10121 10153]))                  
+                :type "struct")
+                nil [9242 10182])
+            ("GICv3_its_int_if" type
+               (:members 
+                  ( ("padding1" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10239 10276])
+                    ("GITS_TRANSLATER" variable
+                       (:typemodifiers ("volatile")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10316 10350]))                  
+                :type "struct")
+                nil [10211 10381])
+            ("gic_dist" variable
+               (:pointer 1
+                :type ("GICv3_dist_if" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [10547 10584])
+            ("gic_rdist" variable
+               (:pointer 1
+                :type ("GICv3_rdist_if" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [10585 10623])
+            ("gic_rdist_ext" variable
+               (:pointer 1
+                :type ("GICv3_rdist_ext_if" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [10624 10665])
+            ("gic_lpis" variable
+               (:pointer 1
+                :type ("GICv3_rdist_lpis_if" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [10666 10703])
+            ("gic_lpis_ext" variable
+               (:pointer 1
+                :type ("GICv3_rdist_lpis_ext_if" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [10704 10749])
+            ("gic_its" variable
+               (:pointer 1
+                :type ("GICv3_its_ctlr_if" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [10750 10786])
+            ("gic_its_ints" variable
+               (:pointer 1
+                :type ("GICv3_its_int_if" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [10787 10828])
+            ("macros.h" include nil nil [10831 10850])
+            ("mem_addr" variable (:type ("uint32_t" type (:type "class") nil nil)) nil [10852 10870])
+            ("mem" variable
+               (:dereference 1
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [10871 10898])
+            ("setDistributorBaseAddr" function
+               (:arguments 
+                  ( ("addr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11011 11022]))                  
+                :type "void")
+                nil [10983 11078])
+            ("setRedistributorBaseAddr" function
+               (:arguments 
+                  ( ("RD_base" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11297 11311]))                  
+                :type "void")
+                nil [11267 11582])
+            ("setITSBaseAddress" function
+               (:arguments 
+                  ( ("ITS_base" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11682 11697]))                  
+                :type "void")
+                nil [11659 11831])
+            ("enableGIC" function
+               (:arguments 
+                  ( ("security" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12312 12330])
+                    ("ARE_S" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12331 12346])
+                    ("ARE_NS" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12347 12363]))                  
+                :type "void")
+                nil [12297 12682])
+            ("disableGIC" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12748 12753]))                  
+                :type "void")
+                nil [12732 12794])
+            ("writeRegister" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12863 12868]))                  
+                :type "void")
+                nil [12844 18907])
+            ("debugReadRegister" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18968 18973]))                  
+                :type "void")
+                nil [18945 18981])
+            ("wakeUpRedist" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19157 19162]))                  
+                :type "void")
+                nil [19139 19532])
+            ("setLPIConfigTableAddr" function
+               (:arguments 
+                  ( ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19929 19943])
+                    ("attributes" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19944 19964])
+                    ("IDbits" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19965 19981]))                  
+                :type "void")
+                nil [19902 20774])
+            ("setLPIPendingTableAddr" function
+               (:arguments 
+                  ( ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21157 21171])
+                    ("attributes" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21172 21192])
+                    ("IDbits" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21193 21209]))                  
+                :type "void")
+                nil [21129 21896])
+            ("enableLPIs" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21972 21977]))                  
+                :type "void")
+                nil [21956 22058])
+            ("disableLPIs" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [22136 22141]))                  
+                :type "void")
+                nil [22119 22229])
+            ("configureLPI" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22457 22469])
+                    ("enable" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22470 22486])
+                    ("priority" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22487 22505]))                  
+                :type "void")
+                nil [22439 23456])
+            ("sendLPI" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23592 23604]))                  
+                :type "void")
+                nil [23579 23659])
+            ("clearLPI" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23798 23810]))                  
+                :type "void")
+                nil [23784 23865])
+            ("enableSPI" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24123 24135]))                  
+                :type "void")
+                nil [24108 24530])
+            ("disableSPI" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24630 24642]))                  
+                :type "void")
+                nil [24614 25037])
+            ("setSPIPriority" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25249 25261])
+                    ("priority" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25262 25280]))                  
+                :type "void")
+                nil [25229 25438])
+            ("getSPIPriority" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25570 25582]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [25546 25727])
+            ("GICV3_ROUTE_AFF3_SHIFT" variable (:constant-flag t) nil [25828 25850])
+            ("GICV3_ROUTE_AFF2_SHIFT" variable (:constant-flag t) nil [25874 25896])
+            ("GICV3_ROUTE_AFF1_SHIFT" variable (:constant-flag t) nil [25920 25942])
+            ("GICV3_ROUTE_AFF0_SHIFT" variable (:constant-flag t) nil [25965 25987])
+            ("setSPIRoute" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26242 26254])
+                    ("mode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26255 26269])
+                    ("aff3" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26270 26284])
+                    ("aff2" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26285 26299])
+                    ("aff1" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26300 26314])
+                    ("aff0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26315 26329]))                  
+                :type "void")
+                nil [26225 26784])
+            ("getSPIRoute" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26896 26908]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [26875 27065])
+            ("setSPITarget" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27243 27255])
+                    ("target" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27256 27272]))                  
+                :type "void")
+                nil [27225 28138])
+            ("getSPITarget" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28270 28282]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [28248 28886])
+            ("configureInt" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29132 29144])
+                    ("conf" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29145 29159]))                  
+                :type "void")
+                nil [29114 29943])
+            ("setSPIPending" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30128 30140]))                  
+                :type "void")
+                nil [30109 30496])
+            ("clearSPIPending" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30623 30635]))                  
+                :type "void")
+                nil [30602 30991])
+            ("getSPIPending" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31132 31144]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [31109 31673])
+            ("setSPISecurity" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31893 31905])
+                    ("security" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [31906 31924]))                  
+                :type "void")
+                nil [31873 32797])
+            ("enablePrivateID" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33083 33095]))                  
+                :type "void")
+                nil [33062 33328])
+            ("disablePrivateID" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33448 33460]))                  
+                :type "void")
+                nil [33426 33694])
+            ("setPrivateIDPriority" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33910 33922])
+                    ("priority" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33923 33941]))                  
+                :type "void")
+                nil [33884 34166])
+            ("getPrivateIntPriority" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34300 34312]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [34269 34446])
+            ("setPrivateIntPending" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34634 34646]))                  
+                :type "void")
+                nil [34608 34874])
+            ("clearPrivateIntPending" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35004 35016]))                  
+                :type "void")
+                nil [34976 35244])
+            ("getPrivateIntPending" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35388 35400]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [35358 35801])
+            ("setPrivateIDSecurity" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36019 36031])
+                    ("security" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [36032 36050]))                  
+                :type "void")
+                nil [35993 36874])
+            ("configNSAccessSGI" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37160 37172])
+                    ("access" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [37173 37189]))                  
+                :type "void")
+                nil [37137 37684])
+            ("sendMsgNS" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37986 37998])
+                    ("gicd_alias" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [37999 38016]))                  
+                :type "void")
+                nil [37971 38247])
+            ("sendMsgS" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38374 38386])
+                    ("gicd_alias" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [38387 38404]))                  
+                :type "void")
+                nil [38360 38634])
+            ("clearMsgNS" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38817 38829])
+                    ("gicd_alias" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [38830 38847]))                  
+                :type "void")
+                nil [38801 39079])
+            ("clearMsgS" function
+               (:arguments 
+                  ( ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39193 39205])
+                    ("gicd_alias" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [39206 39223]))                  
+                :type "void")
+                nil [39178 39453])
+            ("initITSCommandQueue" function
+               (:arguments 
+                  ( ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40022 40036])
+                    ("attributes" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40037 40057])
+                    ("num_pages" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40058 40077]))                  
+                :type "void")
+                nil [39997 40819])
+            ("COMMAND_SIZE" variable (:constant-flag t) nil [40830 40842])
+            ("itsAddCommand" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("command" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41061 41078]))                  
+                :type "void")
+                nil [41035 42428])
+            ("itsMAPD" function
+               (:arguments 
+                  ( ("device_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42814 42833])
+                    ("table" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42834 42849])
+                    ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42850 42864]))                  
+                :type "void")
+                nil [42801 43816])
+            ("itsMAPC" function
+               (:arguments 
+                  ( ("target" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44012 44028])
+                    ("collection" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44029 44049]))                  
+                :type "void")
+                nil [43999 44645])
+            ("itsMAPI" function
+               (:arguments 
+                  ( ("device_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44679 44698])
+                    ("event_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44699 44717])
+                    ("cid" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44718 44731]))                  
+                :type "void")
+                nil [44666 45474])
+            ("itsMAPTI" function
+               (:arguments 
+                  ( ("device_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45747 45766])
+                    ("event_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45767 45785])
+                    ("intid" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45786 45801])
+                    ("cid" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45802 45815]))                  
+                :type "void")
+                nil [45733 46750])
+            ("itsINVALL" function
+               (:arguments 
+                  ( ("cid" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46857 46870]))                  
+                :type "void")
+                nil [46842 47201])
+            ("itsINV" function
+               (:arguments 
+                  ( ("device_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47325 47344])
+                    ("event_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47345 47363]))                  
+                :type "void")
+                nil [47313 48018])
+            ("itsSYNC" function
+               (:arguments 
+                  ( ("target" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48176 48192]))                  
+                :type "void")
+                nil [48163 48653])
+            ("itsINT" function
+               (:arguments 
+                  ( ("device_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48811 48830])
+                    ("event_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48831 48849]))                  
+                :type "void")
+                nil [48799 49504])
+            ("getITSTableType" function
+               (:arguments 
+                  ( ("index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49903 49918])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49919 49934])
+                    ("entry_size" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49935 49956]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [49878 50209])
+            ("setITSTableAddr" function
+               (:arguments 
+                  ( ("index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50726 50741])
+                    ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50742 50756])
+                    ("attributes" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50757 50777])
+                    ("page_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50778 50797])
+                    ("num_pages" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50798 50817]))                  
+                :type "void")
+                nil [50705 51727])
+            ("getITSPTA" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [51813 51818]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [51794 51866])
+            ("enableITS" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [51917 51922]))                  
+                :type "void")
+                nil [51902 51962])
+            ("disableITS" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [52016 52021]))                  
+                :type "void")
+                nil [52000 52061]))          
+      :file "armv8_aarch64_gicv3.c"
+      :pointmax 52223
+      :fsize 53864
+      :lastmodtime '(22505 23512 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GICV3_ROUTE_AFF0_SHIFT" . ((semantic-list "(0)" 25998 . 26001)))
+          ("GICV3_ROUTE_AFF1_SHIFT" . ((semantic-list "(8)" 25953 . 25956)))
+          ("GICV3_ROUTE_AFF2_SHIFT" . ((semantic-list "(16)" 25907 . 25911)))
+          ("COMMAND_SIZE" . ((semantic-list "(32)" 40844 . 40848)))
+          ("GICV3_ROUTE_AFF3_SHIFT" . ((semantic-list "(32)" 25861 . 25865)))
+          )
+)
+    (semanticdb-table "macros.h"
+      :major-mode 'c-mode
+      :tags nil
+      :file "macros.h"
+      :pointmax 657
+      :fsize 656
+      :lastmodtime '(22505 23512 0 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!primecells!PL690!Register!Applications!Primes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

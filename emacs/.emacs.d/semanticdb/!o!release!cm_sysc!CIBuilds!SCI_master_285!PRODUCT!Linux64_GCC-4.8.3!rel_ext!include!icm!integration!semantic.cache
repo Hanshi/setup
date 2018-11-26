@@ -1,0 +1,125 @@
+;; Object integration/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "integration/"
+  :tables
+  (list
+    (semanticdb-table "icm_scx_control.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("icm_scx_control_h" variable (:constant-flag t) nil [408 425])
+            ("iostream" include (:system-flag t) nil [427 446])
+            ("scx/scx.h" include (:system-flag t) nil [447 467])
+            ("icm/api/icm_api.h" include nil nil [469 497])
+            ("icm/api/icm_control.h" include nil nil [498 530])
+            ("icm/api/icm_error.h" include nil nil [531 561])
+            ("icm/api/icm_types.h" include nil nil [562 592])
+            ("icm/integration/icm_scx_control_callback.h" include nil nil [594 647])
+            ("icm/integration/icm_scx_error.h" include nil nil [648 690])
+            ("icm_scx" type
+               (:members 
+                  ( ("icm_scx_control" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [927 934])
+                            ("api_control" variable
+                               (:pointer 1
+                                :type ("icm_api_control_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [937 968])
+                            ("icm_scx_control" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("icm_in" variable (:type ("icm_model_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1148 1167]))                                  
+                                :type ("icm_scx_control" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1132 1369])
+                            ("icm_scx_control" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1372 1393])
+                            ("exit_halt" function (:type "bool") (reparse-symbol classsubparts) [1670 2095])
+                            ("enter_halt" function (:type "bool") (reparse-symbol classsubparts) [2383 2781])
+                            ("set_program_breakpoint" function
+                               (:arguments 
+                                  ( ("space" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2966 2981])
+                                    ("addr" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2982 3003]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2938 3334])
+                            ("clear_program_breakpoint" function
+                               (:arguments 
+                                  ( ("space" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3538 3553])
+                                    ("addr" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3554 3575]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3508 3910])
+                            ("request_step" function
+                               (:arguments 
+                                  ( ("count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4236 4251]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4218 4648])
+                            ("instr_count" function
+                               (:arguments 
+                                  ( ("instruction_count" variable
+                                       (:reference 1
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4832 4860]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4815 5266])
+                            ("cycle_count" function
+                               (:arguments 
+                                  ( ("cycle_count" variable
+                                       (:reference 1
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5514 5536])
+                                    ("system_cycles" variable (:type "bool") (reparse-symbol arg-sub-list) [5537 5556]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5497 5897])
+                            ("set_control_callback" function
+                               (:arguments 
+                                  ( ("client_context" variable
+                                       (:pointer 1
+                                        :type ("icm_scx_control_callback_if" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6081 6125]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6055 7716])
+                            ("set_execution_state" function
+                               (:arguments 
+                                  ( ("stay_halted_flag" variable (:type "bool") (reparse-symbol arg-sub-list) [7745 7767]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7720 8170])
+                            ("is_debuggable" function (:type "bool") (reparse-symbol classsubparts) [8336 8776])
+                            ("private" label nil (reparse-symbol classsubparts) [8778 8786])
+                            ("icm" variable (:type ("icm_model_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8789 8805])
+                            ("icm_err" variable (:type ("icm_error_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8858 8878])
+                            ("api_err" variable
+                               (:pointer 1
+                                :type ("icm_api_error_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8881 8906]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [903 8909]))                  
+                :type "namespace")
+                nil [692 8911]))          
+      :file "icm_scx_control.h"
+      :pointmax 8931
+      :fsize 8930
+      :lastmodtime '(23457 14308 802082 703000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("icm_scx_control_h")
+          )
+)
+    (semanticdb-table "icm_scx_control_callback.h"
+      :file "icm_scx_control_callback.h"
+      :fsize 6104
+      :lastmodtime '(23457 14308 803082 693000))
+    (semanticdb-table "icm_scx_error.h"
+      :file "icm_scx_error.h"
+      :fsize 2292
+      :lastmodtime '(23457 14308 803082 693000)))
+  :file "!o!release!cm_sysc!CIBuilds!SCI_master_285!PRODUCT!Linux64_GCC-4.8.3!rel_ext!include!icm!integration!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

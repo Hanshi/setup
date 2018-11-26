@@ -1,0 +1,2491 @@
+;; Object gcc483/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gcc483/"
+  :tables
+  (list
+    (semanticdb-table "mx.Prometheus_Prometheus_cpu0_CADI.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_Prometheus_Prometheus_cpu0_CADI_h_" variable (:constant-flag t) nil [511 546])
+            ("carbon/CarbonAbstractRegister.h" include nil nil [548 590])
+            ("iostream" include (:system-flag t) nil [711 730])
+            ("string" include (:system-flag t) nil [731 748])
+            ("cassert" include (:system-flag t) nil [749 767])
+            ("carbon/carbon_capi.h" include nil nil [787 818])
+            ("carbon/CarbonCADITypes.h" include nil nil [819 854])
+            ("eslapi/CADI.h" include nil nil [872 896])
+            ("eslapi/CADIDisassembler.h" include nil nil [897 933])
+            ("common/MKCADIBase.h" include nil nil [934 964])
+            ("cpus/CarbonObjectLoaderInterface.h" include nil nil [983 1028])
+            ("Prometheus_Prometheus_cpu0" type
+               (:prototype t
+                :type "class")
+                nil [1156 1189])
+            ("ARMCADIDisassembler" type
+               (:parent "CARBON_MKLIB_NAMESPACE"
+                :prototype t
+                :type "class")
+                nil [1190 1240])
+            ("Prometheus_Prometheus_cpu0_CADI" type
+               (:superclasses 
+                  ( ("CARBON_MKLIB_NAMESPACE::MKCADIBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1513 1520])
+                    ("public" label nil (reparse-symbol classsubparts) [1521 1528])
+                    ("public" label nil (reparse-symbol classsubparts) [1529 1536])
+                    ("Prometheus_Prometheus_cpu0_Registers" type
+                       (:members 
+                          ( ("eRegNum_Group_AArch64_Core_DebugReg_CurrentEL" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1583 1629])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_DAIF" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1632 1673])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_SPSR_abt" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1676 1721])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_SPSR_fiq" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1724 1769])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_SPSR_irq" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1772 1817])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_SPSR_und" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1820 1865])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_SPSel" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1868 1910])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1913 1952])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1955 1994])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1997 2036])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2039 2078])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X4" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2081 2120])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X5" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2123 2162])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X6" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2165 2204])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X7" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2207 2246])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X8" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2249 2288])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X9" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2291 2330])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X10" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2333 2373])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X11" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2376 2416])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X12" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2419 2459])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X13" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2462 2502])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X14" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2505 2545])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X15" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2548 2588])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X16" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2591 2631])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X17" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2634 2674])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X18" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2677 2717])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X19" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2720 2760])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X20" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2763 2803])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X21" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2806 2846])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X22" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2849 2889])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X23" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2892 2932])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X24" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2935 2975])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X25" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2978 3018])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X26" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3021 3061])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X27" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3064 3104])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X28" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3107 3147])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X29" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3150 3190])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_X30" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3193 3233])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_PC" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3236 3275])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_SP_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3278 3321])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_SP_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3324 3367])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_SP_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3370 3413])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_SP_EL3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3416 3459])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_SP" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3462 3501])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_ELR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3504 3548])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_ELR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3551 3595])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_ELR_EL3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3598 3642])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_ELR_zero" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3645 3690])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_ELR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3693 3733])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_CPSR_nodbg" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3736 3783])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_DSPSR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3786 3828])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_CPSR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3831 3872])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_SPSR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3875 3920])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_SPSR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3923 3968])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_SPSR_EL3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3971 4016])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_SPSR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4019 4060])
+                            ("eRegNum_Group_AArch64_Core_DebugReg_PC_MEMSPACE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4063 4111])
+                            ("eRegNum_Group_AArch64_System_DebugReg_AFSR0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4114 4162])
+                            ("eRegNum_Group_AArch64_System_DebugReg_AFSR0_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4165 4213])
+                            ("eRegNum_Group_AArch64_System_DebugReg_AFSR0_EL3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4216 4264])
+                            ("eRegNum_Group_AArch64_System_DebugReg_AFSR1_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4267 4315])
+                            ("eRegNum_Group_AArch64_System_DebugReg_AFSR1_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4318 4366])
+                            ("eRegNum_Group_AArch64_System_DebugReg_AFSR1_EL3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4369 4417])
+                            ("eRegNum_Group_AArch64_System_DebugReg_AMAIR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4420 4468])
+                            ("eRegNum_Group_AArch64_System_DebugReg_CNTKCTL_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4471 4521])
+                            ("eRegNum_Group_AArch64_System_DebugReg_CNTVOFF_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4524 4574])
+                            ("eRegNum_Group_AArch64_System_DebugReg_CONTEXTIDR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4577 4630])
+                            ("eRegNum_Group_AArch64_System_DebugReg_CONTEXTIDR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4633 4686])
+                            ("eRegNum_Group_AArch64_System_DebugReg_CPACR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4689 4737])
+                            ("eRegNum_Group_AArch64_System_DebugReg_DACR32_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4740 4789])
+                            ("eRegNum_Group_AArch64_System_DebugReg_DCZID_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4792 4840])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ESR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4843 4889])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ESR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4892 4938])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ESR_EL3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4941 4987])
+                            ("eRegNum_Group_AArch64_System_DebugReg_FAR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4990 5036])
+                            ("eRegNum_Group_AArch64_System_DebugReg_FAR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5039 5085])
+                            ("eRegNum_Group_AArch64_System_DebugReg_FAR_EL3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5088 5134])
+                            ("eRegNum_Group_AArch64_System_DebugReg_HACR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5137 5184])
+                            ("eRegNum_Group_AArch64_System_DebugReg_HPFAR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5187 5235])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_AA64MMFR2_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5238 5293])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ISR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5296 5342])
+                            ("eRegNum_Group_AArch64_System_DebugReg_MAIR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5345 5392])
+                            ("eRegNum_Group_AArch64_System_DebugReg_MAIR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5395 5442])
+                            ("eRegNum_Group_AArch64_System_DebugReg_MAIR_EL3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5445 5492])
+                            ("eRegNum_Group_AArch64_System_DebugReg_PAR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5495 5541])
+                            ("eRegNum_Group_AArch64_System_DebugReg_RMR_EL3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5544 5590])
+                            ("eRegNum_Group_AArch64_System_DebugReg_RVBAR_EL3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5593 5641])
+                            ("eRegNum_Group_AArch64_System_DebugReg_TPIDRRO_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5644 5694])
+                            ("eRegNum_Group_AArch64_System_DebugReg_TPIDR_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5697 5745])
+                            ("eRegNum_Group_AArch64_System_DebugReg_TPIDR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5748 5796])
+                            ("eRegNum_Group_AArch64_System_DebugReg_TPIDR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5799 5847])
+                            ("eRegNum_Group_AArch64_System_DebugReg_TPIDR_EL3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5850 5898])
+                            ("eRegNum_Group_AArch64_System_DebugReg_VBAR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5901 5948])
+                            ("eRegNum_Group_AArch64_System_DebugReg_VBAR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5951 5998])
+                            ("eRegNum_Group_AArch64_System_DebugReg_VBAR_EL3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6001 6048])
+                            ("eRegNum_Group_AArch64_System_DebugReg_VMPIDR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6051 6100])
+                            ("eRegNum_Group_AArch64_System_DebugReg_VPIDR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6103 6151])
+                            ("eRegNum_Group_AArch64_System_DebugReg_TTBR0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6154 6202])
+                            ("eRegNum_Group_AArch64_System_DebugReg_TTBR1_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6205 6253])
+                            ("eRegNum_Group_AArch64_System_DebugReg_MIDR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6256 6303])
+                            ("eRegNum_Group_AArch64_System_DebugReg_CTR_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6306 6352])
+                            ("eRegNum_Group_AArch64_System_DebugReg_MPIDR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6355 6403])
+                            ("eRegNum_Group_AArch64_System_DebugReg_REVIDR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6406 6455])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_PFR0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6458 6508])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_PFR1_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6511 6561])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_DFR0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6564 6614])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_AFR0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6617 6667])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_MMFR0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6670 6721])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_MMFR1_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6724 6775])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_MMFR2_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6778 6829])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_MMFR3_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6832 6883])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_MMFR4_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6886 6937])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_ISAR0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6940 6991])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_ISAR1_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6994 7045])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_ISAR2_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7048 7099])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_ISAR3_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7102 7153])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_ISAR4_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7156 7207])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_ISAR5_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7210 7261])
+                            ("eRegNum_Group_AArch64_System_DebugReg_MVFR0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7264 7312])
+                            ("eRegNum_Group_AArch64_System_DebugReg_MVFR1_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7315 7363])
+                            ("eRegNum_Group_AArch64_System_DebugReg_MVFR2_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7366 7414])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_AA64PFR0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7417 7471])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_AA64PFR1_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7474 7528])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_AA64DFR0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7531 7585])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_AA64DFR1_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7588 7642])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_AA64AFR0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7645 7699])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_AA64AFR1_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7702 7756])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_AA64ISAR0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7759 7814])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_AA64ISAR1_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7817 7872])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_AA64MMFR0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7875 7930])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ID_AA64MMFR1_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7933 7988])
+                            ("eRegNum_Group_AArch64_System_DebugReg_CCSIDR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7991 8040])
+                            ("eRegNum_Group_AArch64_System_DebugReg_CLIDR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8043 8091])
+                            ("eRegNum_Group_AArch64_System_DebugReg_AIDR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8094 8141])
+                            ("eRegNum_Group_AArch64_System_DebugReg_CSSELR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8144 8193])
+                            ("eRegNum_Group_AArch64_System_DebugReg_TCR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8196 8242])
+                            ("eRegNum_Group_AArch64_System_DebugReg_TTBR0_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8245 8293])
+                            ("eRegNum_Group_AArch64_System_DebugReg_TCR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8296 8342])
+                            ("eRegNum_Group_AArch64_System_DebugReg_TTBR0_EL3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8345 8393])
+                            ("eRegNum_Group_AArch64_System_DebugReg_TCR_EL3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8396 8442])
+                            ("eRegNum_Group_AArch64_System_DebugReg_VTCR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8445 8492])
+                            ("eRegNum_Group_AArch64_System_DebugReg_HCR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8495 8541])
+                            ("eRegNum_Group_AArch64_System_DebugReg_VTTBR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8544 8592])
+                            ("eRegNum_Group_AArch64_System_DebugReg_SCTLR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8595 8643])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ACTLR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8646 8694])
+                            ("eRegNum_Group_AArch64_System_DebugReg_SCTLR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8697 8745])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ACTLR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8748 8796])
+                            ("eRegNum_Group_AArch64_System_DebugReg_SCTLR_EL3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8799 8847])
+                            ("eRegNum_Group_AArch64_System_DebugReg_ACTLR_EL3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8850 8898])
+                            ("eRegNum_Group_AArch64_System_DebugReg_SCR_EL3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8901 8947])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMCEID0_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8950 8998])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMCEID1_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9001 9049])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMCR_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9052 9097])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMCNTENSET_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9100 9151])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMCNTENCLR_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9154 9205])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMOVSSET_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9208 9257])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMOVSCLR_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9260 9309])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMSELR_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9312 9359])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMCCNTR_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9362 9410])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMEVTYPER0_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9413 9464])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMEVTYPER1_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9467 9518])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMEVTYPER2_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9521 9572])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMEVTYPER3_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9575 9626])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMEVTYPER4_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9629 9680])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMEVTYPER5_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9683 9734])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMCCFILTR_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9737 9787])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMXEVTYPER_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9790 9841])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMEVCNTR0_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9844 9894])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMEVCNTR1_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9897 9947])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMEVCNTR2_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9950 10000])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMEVCNTR3_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10003 10053])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMEVCNTR4_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10056 10106])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMEVCNTR5_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10109 10159])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMXEVCNTR_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10162 10212])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMUSERENR_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10215 10265])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMINTENSET_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10268 10319])
+                            ("eRegNum_Group_AArch64_PERF_DebugReg_PMINTENCLR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10322 10373])
+                            ("eRegNum_Group_AArch64_RAS_regs_DebugReg_DISR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10376 10425])
+                            ("eRegNum_Group_AArch64_RAS_regs_DebugReg_VDISR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10428 10478])
+                            ("eRegNum_Group_AArch64_RAS_regs_DebugReg_VSESR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10481 10531])
+                            ("eRegNum_Group_Cluster_AArch64_DebugReg_CLUSTERACPSID_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10534 10591])
+                            ("eRegNum_Group_Cluster_AArch64_DebugReg_CLUSTERACTLR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10594 10650])
+                            ("eRegNum_Group_Cluster_AArch64_DebugReg_CLUSTERBUSQOS_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10653 10710])
+                            ("eRegNum_Group_Cluster_AArch64_DebugReg_CLUSTERCFR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10713 10767])
+                            ("eRegNum_Group_Cluster_AArch64_DebugReg_CLUSTERIDR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10770 10824])
+                            ("eRegNum_Group_Cluster_AArch64_DebugReg_CLUSTERL3HIT_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10827 10883])
+                            ("eRegNum_Group_Cluster_AArch64_DebugReg_CLUSTERL3MISS_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10886 10943])
+                            ("eRegNum_Group_Cluster_AArch64_DebugReg_CLUSTERPARTCR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10946 11003])
+                            ("eRegNum_Group_Cluster_AArch64_DebugReg_CLUSTERPWRCTLR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11006 11064])
+                            ("eRegNum_Group_Cluster_AArch64_DebugReg_CLUSTERPWRDN_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11067 11123])
+                            ("eRegNum_Group_Cluster_AArch64_DebugReg_CLUSTERPWRSTAT_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11126 11184])
+                            ("eRegNum_Group_Cluster_AArch64_DebugReg_CLUSTERREVIDR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11187 11244])
+                            ("eRegNum_Group_Cluster_AArch64_DebugReg_CLUSTERSTASHSID_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11247 11306])
+                            ("eRegNum_Group_Cluster_AArch64_DebugReg_CLUSTERTHREADSID_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11309 11369])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_SPSR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11372 11413])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11416 11455])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11458 11497])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11500 11539])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11542 11581])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R4" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11584 11623])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R5" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11626 11665])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R6" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11668 11707])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R7" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11710 11749])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R8" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11752 11791])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R9" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11794 11833])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R10" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11836 11876])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R11" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11879 11919])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R12" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11922 11962])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R13" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11965 12005])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R14" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12008 12048])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R8_fiq" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12051 12094])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R9_fiq" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12097 12140])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R10_fiq" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12143 12187])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R11_fiq" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12190 12234])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R12_fiq" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12237 12281])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R13_fiq" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12284 12328])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R14_fiq" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12331 12375])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R8_usr" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12378 12421])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R9_usr" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12424 12467])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R10_usr" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12470 12514])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R11_usr" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12517 12561])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R12_usr" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12564 12608])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R13_usr" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12611 12655])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R14_usr" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12658 12702])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R13_irq" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12705 12749])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R14_irq" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12752 12796])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R13_svc" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12799 12843])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R14_svc" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12846 12890])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R13_und" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12893 12937])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R14_und" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12940 12984])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R13_abt" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12987 13031])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R14_abt" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13034 13078])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R13_mon" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13081 13125])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R14_mon" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13128 13172])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R13_hyp" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13175 13219])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_R15" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13222 13262])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_DSPSR32" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13265 13309])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_CPSR32" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13312 13355])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_CPSR_mode" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13358 13404])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_SPSR_svc" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13407 13452])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_SPSR_irq" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13455 13500])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_SPSR_fiq" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13503 13548])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_SPSR_und" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13551 13596])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_SPSR_abt" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13599 13644])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_SPSR_mon" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13647 13692])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_SPSR_hyp" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13695 13740])
+                            ("eRegNum_Group_AArch32_Core_DebugReg_SPSR32" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13743 13786])
+                            ("eRegNum_Group_AArch32_VFP_NEON_DebugReg_FPSID" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13789 13835])
+                            ("eRegNum_Group_AArch32_VFP_NEON_DebugReg_MVFR0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13838 13884])
+                            ("eRegNum_Group_AArch32_VFP_NEON_DebugReg_MVFR1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13887 13933])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_ADFSR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13936 13988])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_AIFSR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [13991 14043])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_CONTEXTIDR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [14046 14103])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_CSSELR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [14106 14159])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_DACR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [14162 14213])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_DFAR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [14216 14267])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_DFSR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [14270 14321])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_ICC_CTLR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [14324 14379])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_ICC_SRE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [14382 14436])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_IFAR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [14439 14490])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_IFSR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [14493 14544])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_MVBAR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [14547 14597])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_NMRR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [14600 14651])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_PAR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [14654 14704])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_PRRR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [14707 14758])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_SCR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [14761 14809])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_SDER" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [14812 14861])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_TPIDRPRW" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [14864 14919])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_TPIDRURO" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [14922 14977])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_TPIDRURW" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [14980 15035])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_TTBCR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [15038 15090])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_VBAR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [15093 15144])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_SCTLR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [15147 15199])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_ACTLR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [15202 15254])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_TTBR0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [15257 15309])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_TTBR1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [15312 15364])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_TTBR0_64" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [15367 15422])
+                            ("eRegNum_Group_AArch32_Secure_World_DebugReg_S_TTBR1_64" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [15425 15480])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_ADFSR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [15483 15535])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_AIFSR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [15538 15590])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_CONTEXTIDR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [15593 15650])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_CSSELR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [15653 15706])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_DACR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [15709 15760])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_DFAR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [15763 15814])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_DFSR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [15817 15868])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_ICC_CTLR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [15871 15926])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_ICC_SRE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [15929 15983])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_IFAR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [15986 16037])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_IFSR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [16040 16091])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_NMRR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [16094 16145])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_PAR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [16148 16198])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_PRRR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [16201 16252])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_TPIDRPRW" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [16255 16310])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_TPIDRURO" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [16313 16368])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_TPIDRURW" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [16371 16426])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_TTBCR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [16429 16481])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_VBAR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [16484 16535])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_SCTLR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [16538 16590])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_ACTLR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [16593 16645])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_TTBR0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [16648 16700])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_TTBR1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [16703 16755])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_TTBR0_64" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [16758 16813])
+                            ("eRegNum_Group_AArch32_Normal_World_DebugReg_N_TTBR1_64" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [16816 16871])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_CSSELR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [16874 16915])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_MIDR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [16918 16957])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_CTR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [16960 16998])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_TCMTR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17001 17041])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_TLBTR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17044 17084])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_MPIDR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17087 17127])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_REVIDR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17130 17171])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_ID_PFR0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17174 17216])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_ID_PFR1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17219 17261])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_ID_DFR0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17264 17306])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_ID_AFR0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17309 17351])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_ID_MMFR0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17354 17397])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_ID_MMFR1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17400 17443])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_ID_MMFR2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17446 17489])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_ID_MMFR3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17492 17535])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_ID_MMFR4" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17538 17581])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_ID_ISAR0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17584 17627])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_ID_ISAR1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17630 17673])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_ID_ISAR2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17676 17719])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_ID_ISAR3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17722 17765])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_ID_ISAR4" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17768 17811])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_ID_ISAR5" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17814 17857])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_CCSIDR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17860 17901])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_CLIDR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17904 17944])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_AIDR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17947 17986])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_JIDR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [17989 18028])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_JOSCR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18031 18071])
+                            ("eRegNum_Group_AArch32_ID_DebugReg_JMCR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18074 18113])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_ACTLR2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18116 18162])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_CNTFRQ" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18165 18211])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_CNTKCTL" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18214 18261])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_CNTVOFF" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18264 18311])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_CNTV_CVAL" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18314 18363])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_CPACR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18366 18411])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_FCSEIDR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18414 18461])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_HADFSR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18464 18510])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_HAIFSR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18513 18559])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_HDCR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18562 18606])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_HDFAR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18609 18654])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_HIFAR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18657 18702])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_HMAIR0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18705 18751])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_HMAIR1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18754 18800])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_HPFAR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18803 18848])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_HSR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18851 18894])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_HTPIDR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18897 18943])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_HVBAR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18946 18991])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_ISR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [18994 19037])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_NSACR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19040 19085])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_RVBAR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19088 19133])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_VPIDR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19136 19181])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_ADFSR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19184 19229])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_AIFSR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19232 19277])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_CONTEXTIDR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19280 19330])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_DACR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19333 19377])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_DFSR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19380 19424])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_NMRR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19427 19471])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_PRRR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19474 19518])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_TPIDRPRW" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19521 19569])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_TPIDRURO" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19572 19620])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_TPIDRURW" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19623 19671])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_TTBCR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19674 19719])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_VBAR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19722 19766])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_SCR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19769 19812])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_SCTLR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19815 19860])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_ACTLR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19863 19908])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_HSCTLR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19911 19957])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_HACTLR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [19960 20006])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_TTBR0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20009 20054])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_TTBR0_64" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20057 20105])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_TTBR1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20108 20153])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_TTBR1_64" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20156 20204])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_HTCR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20207 20251])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_HTTBR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20254 20299])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_VTCR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20302 20346])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_HCR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20349 20392])
+                            ("eRegNum_Group_AArch32_Control_DebugReg_VTTBR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20395 20440])
+                            ("eRegNum_Group_AArch32_VA_to_PA_DebugReg_PAR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20443 20487])
+                            ("eRegNum_Group_AArch32_PERF_DebugReg_PMCEID0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20490 20534])
+                            ("eRegNum_Group_AArch32_PERF_DebugReg_PMCEID1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20537 20581])
+                            ("eRegNum_Group_AArch32_PERF_DebugReg_PMCEID2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20584 20628])
+                            ("eRegNum_Group_AArch32_PERF_DebugReg_PMCEID3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20631 20675])
+                            ("eRegNum_Group_AArch32_PERF_DebugReg_PMCNTENCLR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20678 20725])
+                            ("eRegNum_Group_AArch32_PERF_DebugReg_PMCNTENSET" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20728 20775])
+                            ("eRegNum_Group_AArch32_PERF_DebugReg_PMCR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20778 20819])
+                            ("eRegNum_Group_AArch32_PERF_DebugReg_PMINTENCLR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20822 20869])
+                            ("eRegNum_Group_AArch32_PERF_DebugReg_PMINTENSET" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20872 20919])
+                            ("eRegNum_Group_AArch32_PERF_DebugReg_PMOVSR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20922 20965])
+                            ("eRegNum_Group_AArch32_PERF_DebugReg_PMOVSSET" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [20968 21013])
+                            ("eRegNum_Group_AArch32_PERF_DebugReg_PMSELR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [21016 21059])
+                            ("eRegNum_Group_AArch32_PERF_DebugReg_PMUSERENR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [21062 21108])
+                            ("eRegNum_Group_Cluster_AArch32_DebugReg_CLUSTERACPSID" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [21111 21164])
+                            ("eRegNum_Group_Cluster_AArch32_DebugReg_CLUSTERACTLR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [21167 21219])
+                            ("eRegNum_Group_Cluster_AArch32_DebugReg_CLUSTERBUSQOS" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [21222 21275])
+                            ("eRegNum_Group_Cluster_AArch32_DebugReg_CLUSTERCFR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [21278 21328])
+                            ("eRegNum_Group_Cluster_AArch32_DebugReg_CLUSTERIDR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [21331 21381])
+                            ("eRegNum_Group_Cluster_AArch32_DebugReg_CLUSTERL3HIT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [21384 21436])
+                            ("eRegNum_Group_Cluster_AArch32_DebugReg_CLUSTERL3MISS" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [21439 21492])
+                            ("eRegNum_Group_Cluster_AArch32_DebugReg_CLUSTERPARTCR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [21495 21548])
+                            ("eRegNum_Group_Cluster_AArch32_DebugReg_CLUSTERPWRCTLR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [21551 21605])
+                            ("eRegNum_Group_Cluster_AArch32_DebugReg_CLUSTERPWRDN" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [21608 21660])
+                            ("eRegNum_Group_Cluster_AArch32_DebugReg_CLUSTERPWRSTAT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [21663 21717])
+                            ("eRegNum_Group_Cluster_AArch32_DebugReg_CLUSTERREVIDR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [21720 21773])
+                            ("eRegNum_Group_Cluster_AArch32_DebugReg_CLUSTERSTASHSID" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [21776 21831])
+                            ("eRegNum_Group_Cluster_AArch32_DebugReg_CLUSTERTHREADSID" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [21834 21890])
+                            ("eRegNum_Group_Cluster_AArch32_PMU_regs_DebugReg_CLUSTERPMCCNTR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [21893 21956])
+                            ("eRegNum_Group_Cluster_AArch32_PMU_regs_DebugReg_CLUSTERPMCEID0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [21959 22022])
+                            ("eRegNum_Group_Cluster_AArch32_PMU_regs_DebugReg_CLUSTERPMCEID1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [22025 22088])
+                            ("eRegNum_Group_Cluster_AArch32_PMU_regs_DebugReg_CLUSTERPMCNTENSET" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [22091 22157])
+                            ("eRegNum_Group_Cluster_AArch32_PMU_regs_DebugReg_CLUSTERPMCR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [22160 22220])
+                            ("eRegNum_Group_Cluster_AArch32_PMU_regs_DebugReg_CLUSTERPMOVSSET" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [22223 22287])
+                            ("eRegNum_Group_Cluster_AArch32_PMU_regs_DebugReg_CLUSTERPMXEVCNTR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [22290 22355])
+                            ("eRegNum_Group_Cluster_AArch32_PMU_regs_DebugReg_CLUSTERPMXEVTYPER" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [22358 22424])
+                            ("eRegNum_Group_Cluster_AArch32_PMU_regs_DebugReg_PMEVCNTR0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [22427 22485])
+                            ("eRegNum_Group_Cluster_AArch32_PMU_regs_DebugReg_PMEVCNTR1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [22488 22546])
+                            ("eRegNum_Group_Cluster_AArch32_PMU_regs_DebugReg_PMEVCNTR2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [22549 22607])
+                            ("eRegNum_Group_Cluster_AArch32_PMU_regs_DebugReg_PMEVCNTR3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [22610 22668])
+                            ("eRegNum_Group_Cluster_AArch32_PMU_regs_DebugReg_PMEVCNTR4" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [22671 22729])
+                            ("eRegNum_Group_Cluster_AArch32_PMU_regs_DebugReg_PMEVCNTR5" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [22732 22790])
+                            ("eRegNum_Group_Cluster_AArch32_PMU_regs_DebugReg_CLUSTERPMMDCR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [22793 22855])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMCCNTR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [22858 22925])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMCEID0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [22928 22995])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMCEID1_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [22998 23065])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMCNTENSET_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [23068 23138])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMCR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [23141 23205])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMMDCR_EL3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [23208 23274])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMXEVCNTR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [23277 23346])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMXEVTYPER_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [23349 23419])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_PMEVCNTR0_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [23422 23484])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_PMEVCNTR1_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [23487 23549])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_PMEVCNTR2_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [23552 23614])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_PMEVCNTR3_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [23617 23679])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_PMEVCNTR4_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [23682 23744])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_PMEVCNTR5_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [23747 23809])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMCR_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [23812 23876])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMCNTENSET_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [23879 23949])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMCNTENCLR_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [23952 24022])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMOVSR_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [24025 24091])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMSELR_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [24094 24160])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMCEID0_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [24163 24230])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMCEID1_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [24233 24300])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMCCNTR_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [24303 24370])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMINTENSET_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [24373 24443])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMINTENCLR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [24446 24516])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMOVSSET_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [24519 24587])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMXEVCNTR_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [24590 24659])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMXEVTYPER_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [24662 24732])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMEVCNTR0_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [24735 24804])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMEVTYPER0_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [24807 24877])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMEVCNTR1_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [24880 24949])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMEVTYPER1_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [24952 25022])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMEVCNTR2_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25025 25094])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMEVTYPER2_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25097 25167])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMEVCNTR3_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25170 25239])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMEVTYPER3_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25242 25312])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMEVCNTR4_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25315 25384])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMEVTYPER4_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25387 25457])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMEVCNTR5_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25460 25529])
+                            ("eRegNum_Group_Cluster_AArch64_PMU_regs_DebugReg_CLUSTERPMEVTYPER5_EL0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25532 25602])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH32_registers__System_Registers__DebugReg_ICC_AP0R0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25605 25707])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH32_registers__System_Registers__DebugReg_ICC_BPR0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25710 25811])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH32_registers__System_Registers__DebugReg_ICC_HPPIR0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25814 25917])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH32_registers__System_Registers__DebugReg_ICC_HPPIR1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25920 26023])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH32_registers__System_Registers__DebugReg_ICC_IAR0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [26026 26127])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH32_registers__System_Registers__DebugReg_ICC_IAR1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [26130 26231])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH32_registers__System_Registers__DebugReg_ICC_IGRPEN0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [26234 26338])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH32_registers__System_Registers__DebugReg_ICC_MCTLR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [26341 26443])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH32_registers__System_Registers__DebugReg_ICC_MGRPEN1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [26446 26550])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH32_registers__System_Registers__DebugReg_ICC_PMR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [26553 26653])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH32_registers__System_Registers__DebugReg_ICC_CTLR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [26656 26757])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH32_registers__System_Registers__DebugReg_ICC_SRE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [26760 26860])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICC_BPR0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [26863 26968])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_N_ICC_CTLR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [26971 27078])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_S_ICC_CTLR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [27081 27188])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICC_CTLR_EL3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [27191 27296])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICC_HPPIR0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [27299 27406])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICC_HPPIR1_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [27409 27516])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICC_IAR0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [27519 27624])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICC_IAR1_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [27627 27732])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICC_IGRPEN0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [27735 27843])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICC_IGRPEN1_EL3" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [27846 27954])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICC_PMR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [27957 28061])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_N_ICC_SRE_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [28064 28170])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_S_ICC_SRE_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [28173 28279])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICC_SRE_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [28282 28386])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICV_BPR0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [28389 28494])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICV_BPR1_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [28497 28602])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICV_CTLR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [28605 28710])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICV_HPPIR0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [28713 28820])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICV_HPPIR1_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [28823 28930])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICV_IAR0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [28933 29038])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICV_IAR1_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [29041 29146])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICV_IGRPEN0_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [29149 29257])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICV_PMR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [29260 29364])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICV_RPR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [29367 29471])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICC_CTLR_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [29474 29579])
+                            ("eRegNum_Group_GICv3_CPU_Interface_CPU_Virtual_AARCH64_registers__System_Registers__DebugReg_ICC_SRE_EL1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [29582 29686])
+                            ("eRegNum_Group_GICv3_CPU_Interface_Hypervisor_AARCH32_registers__System_Registers__DebugReg_ICV_BPR0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [29689 29789])
+                            ("eRegNum_Group_GICv3_CPU_Interface_Hypervisor_AARCH32_registers__System_Registers__DebugReg_ICV_BPR1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [29792 29892])
+                            ("eRegNum_Group_GICv3_CPU_Interface_Hypervisor_AARCH32_registers__System_Registers__DebugReg_ICV_CTLR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [29895 29995])
+                            ("eRegNum_Group_GICv3_CPU_Interface_Hypervisor_AARCH32_registers__System_Registers__DebugReg_ICV_HPPIR0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [29998 30100])
+                            ("eRegNum_Group_GICv3_CPU_Interface_Hypervisor_AARCH32_registers__System_Registers__DebugReg_ICV_HPPIR1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [30103 30205])
+                            ("eRegNum_Group_GICv3_CPU_Interface_Hypervisor_AARCH32_registers__System_Registers__DebugReg_ICV_IAR0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [30208 30308])
+                            ("eRegNum_Group_GICv3_CPU_Interface_Hypervisor_AARCH32_registers__System_Registers__DebugReg_ICV_IAR1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [30311 30411])
+                            ("eRegNum_Group_GICv3_CPU_Interface_Hypervisor_AARCH32_registers__System_Registers__DebugReg_ICV_IGRPEN0" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [30414 30517])
+                            ("eRegNum_Group_GICv3_CPU_Interface_Hypervisor_AARCH32_registers__System_Registers__DebugReg_ICV_IGRPEN1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [30520 30623])
+                            ("eRegNum_Group_GICv3_CPU_Interface_Hypervisor_AARCH32_registers__System_Registers__DebugReg_ICV_PMR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [30626 30725])
+                            ("eRegNum_Group_GICv3_CPU_Interface_Hypervisor_AARCH32_registers__System_Registers__DebugReg_ICV_RPR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [30728 30827])
+                            ("eRegNum_Group_GICv3_CPU_Interface_Hypervisor_AARCH64_registers__System_Registers__DebugReg_ICH_AP0R0_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [30830 30935])
+                            ("eRegNum_Group_GICv3_CPU_Interface_Hypervisor_AARCH64_registers__System_Registers__DebugReg_ICH_AP1R0_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [30938 31043])
+                            ("eRegNum_Group_GICv3_CPU_Interface_Hypervisor_AARCH64_registers__System_Registers__DebugReg_ICH_EISR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31046 31150])
+                            ("eRegNum_Group_GICv3_CPU_Interface_Hypervisor_AARCH64_registers__System_Registers__DebugReg_ICH_HCR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31153 31256])
+                            ("eRegNum_Group_GICv3_CPU_Interface_Hypervisor_AARCH64_registers__System_Registers__DebugReg_ICH_LR0_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31259 31362])
+                            ("eRegNum_Group_GICv3_CPU_Interface_Hypervisor_AARCH64_registers__System_Registers__DebugReg_ICH_LR1_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31365 31468])
+                            ("eRegNum_Group_GICv3_CPU_Interface_Hypervisor_AARCH64_registers__System_Registers__DebugReg_ICH_MISR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31471 31575])
+                            ("eRegNum_Group_GICv3_CPU_Interface_Hypervisor_AARCH64_registers__System_Registers__DebugReg_ICH_VMCR_EL2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31578 31682])
+                            ("eRegNum_Group_Internal_State_DebugReg_EL3_REGISTER_WIDTH" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31685 31742])
+                            ("eNumRegs_Prometheus_Prometheus_cpu0_Registers" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31745 31792]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [1537 31793])
+                    ("Prometheus_Prometheus_cpu0_Memories" type
+                       (:members 
+                          ( ("eMemNum_secure" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31840 31855])
+                            ("eMemNum_normal" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31858 31873])
+                            ("eMemNum_mem" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31876 31888])
+                            ("eNumMems_Prometheus_Prometheus_cpu0_Memories" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31891 31937]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [31795 31938])
+                    ("Prometheus_Prometheus_cpu0_CADI" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("c" variable
+                               (:pointer 1
+                                :type ("Prometheus_Prometheus_cpu0" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31972 32002]))                          
+                        :type ("Prometheus_Prometheus_cpu0_CADI" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [31940 32003])
+                    ("Prometheus_Prometheus_cpu0_CADI" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [32005 32040])
+                    ("reset" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [32042 32055])
+                    ("CADIRegGetGroups" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("groupIndex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32096 32116])
+                            ("desiredNumOfRegGroups" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32117 32148])
+                            ("actualNumOfRegGroups" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32149 32180])
+                            ("grp" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIRegGroup_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32181 32209]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [32057 32210])
+                    ("CADIRegGetMap" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("groupID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32247 32264])
+                            ("regIndex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32265 32283])
+                            ("registerSlots" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32284 32307])
+                            ("registerCount" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32308 32332])
+                            ("reg" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIRegInfo_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32333 32360]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [32212 32361])
+                    ("CADIRegWrite" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("regCount" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32397 32415])
+                            ("reg" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIReg_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32416 32439])
+                            ("numRegsWritten" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32440 32465])
+                            ("doSideEffects" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32466 32488]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [32363 32489])
+                    ("CADIRegRead" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("regCount" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32524 32542])
+                            ("reg" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIReg_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32543 32566])
+                            ("numRegsRead" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32567 32589])
+                            ("doSideEffects" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32590 32612]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [32491 32613])
+                    ("CADIMemGetSpaces" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("spaceIndex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32653 32673])
+                            ("memSpaceSlots" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32674 32697])
+                            ("memSpaceCount" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32698 32722])
+                            ("memSpace" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIMemSpaceInfo_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32723 32760]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [32615 32761])
+                    ("CADIMemGetBlocks" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("memorySpace" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32801 32822])
+                            ("blockIndex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32823 32843])
+                            ("memBlockSlots" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32844 32867])
+                            ("memBlockCount" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32868 32892])
+                            ("memBlock" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIMemBlockInfo_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32893 32930]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [32763 32931])
+                    ("CADIMemWrite" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("startAddress" variable (:type ("eslapi::CADIAddrComplete_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32967 33007])
+                            ("unitsToWrite" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33008 33030])
+                            ("unitSizeInBytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33031 33056])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33057 33077])
+                            ("actualNumOfUnitsWritten" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33078 33112])
+                            ("doSideEffects" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33113 33135]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [32933 33136])
+                    ("CADIMemRead" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("startAddress" variable (:type ("eslapi::CADIAddrComplete_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33171 33211])
+                            ("unitsToRead" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33212 33233])
+                            ("unitSizeInBytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33234 33259])
+                            ("data" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33260 33274])
+                            ("actualNumOfUnitsRead" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33275 33306])
+                            ("doSideEffects" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33307 33329]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [33138 33330])
+                    ("CADIGetPC" function
+                       (:prototype-flag t
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [33332 33353])
+                    ("CADIGetDisassembler" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("eslapi::CADIDisassembler" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [33355 33403])
+                    ("putPacket" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("memorySpaceId" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33420 33447])
+                            ("address" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33448 33469])
+                            ("packet" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("CarbonUInt8" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33470 33496])
+                            ("mauBytes" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33497 33519]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [33405 33520])
+                    ("loadFile" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [33536 33557]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [33522 33558])
+                    ("CADIXfaceBypass" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("commandLength" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33597 33620])
+                            ("command" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [33621 33642])
+                            ("maxResponseLength" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33643 33670])
+                            ("response" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [33671 33687]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [33560 33688])
+                    ("CADIGetCommitedPCs" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("startIndex" variable (:type "int") (reparse-symbol arg-sub-list) [33738 33753])
+                            ("desiredCount" variable (:type "int") (reparse-symbol arg-sub-list) [33754 33771])
+                            ("actualCount" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [33772 33789])
+                            ("pcs" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33790 33807]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [33690 33809])
+                    ("CADIGetTargetInfo" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("targetInfo" variable
+                               (:pointer 1
+                                :type ("CADITargetInfo_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33858 33887]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [33811 33888])
+                    ("carbonDebugRegs" variable
+                       (:pointer 2
+                        :type ("CarbonDebugRegister" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [33890 33929])
+                    ("carbonMems" variable
+                       (:pointer 2
+                        :type ("CarbonDebugMemory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [33931 33963])
+                    ("private" label nil (reparse-symbol classsubparts) [33967 33975])
+                    ("carbonDataBuffer" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [33976 34008])
+                    ("target" variable
+                       (:pointer 1
+                        :type ("Prometheus_Prometheus_cpu0" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [34010 34046])
+                    ("mCarbonObj" variable
+                       (:pointer 1
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [34048 34077])
+                    ("mMxSimAPI" variable
+                       (:pointer 1
+                        :type ("eslapi::MxSimAPI" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [34079 34108])
+                    ("regInfo" variable
+                       (:pointer 1
+                        :type ("eslapi::CADIRegInfo_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [34110 34142])
+                    ("regGroup" variable
+                       (:pointer 1
+                        :type ("eslapi::CADIRegGroup_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [34144 34178])
+                    ("memSpaceInfo" variable
+                       (:pointer 1
+                        :type ("eslapi::CADIMemSpaceInfo_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [34180 34222])
+                    ("memBlockInfo" variable
+                       (:pointer 2
+                        :type ("eslapi::CADIMemBlockInfo_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [34224 34267])
+                    ("disassembler" variable
+                       (:pointer 1
+                        :type ("CARBON_MKLIB_NAMESPACE::ARMCADIDisassembler" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [34269 34328])
+                    ("loaderInterface" variable
+                       (:pointer 1
+                        :type ("CarbonObjectLoaderInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [34330 34376])
+                    ("sectionInfo" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :type ("CarbonObjectLoaderSectionInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [34378 34431])
+                    ("addressSpaceInfo" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :type ("CarbonObjectLoaderAddressSpaceInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [34433 34496])
+                    ("memoryConfInfo" variable
+                       (:typemodifiers ("static")
+                        :type ("CarbonObjectLoaderMemoryConfInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [34498 34554]))                  
+                :type "class")
+                nil [1322 34666])
+            ("Prometheus_Prometheus_cpu0_CADI_ObjectLoaderInterface" type
+               (:superclasses 
+                  ( ("CarbonObjectLoaderInterface" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [34766 34773])
+                    ("Prometheus_Prometheus_cpu0_CADI_ObjectLoaderInterface" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("owner" variable
+                               (:pointer 1
+                                :type ("Prometheus_Prometheus_cpu0_CADI" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34831 34870])
+                            ("info" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("CarbonObjectLoaderMemoryConfInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34871 34916]))                          
+                        :type ("Prometheus_Prometheus_cpu0_CADI_ObjectLoaderInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [34776 34971])
+                    ("putPacket" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("memorySpaceId" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34989 35016])
+                            ("address" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35017 35038])
+                            ("packet" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("CarbonUInt8" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35039 35065])
+                            ("mauBytes" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35066 35088]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [34974 35089])
+                    ("message" function
+                       (:arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35105 35128]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [35092 35195])
+                    ("private" label nil (reparse-symbol classsubparts) [35196 35204])
+                    ("owner" variable
+                       (:pointer 1
+                        :type ("Prometheus_Prometheus_cpu0_CADI" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [35206 35245]))                  
+                :type "class")
+                nil [34668 35248]))          
+      :file "mx.Prometheus_Prometheus_cpu0_CADI.h"
+      :pointmax 35258
+      :fsize 35257
+      :lastmodtime '(23008 59997 418124 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_Prometheus_Prometheus_cpu0_CADI_h_")
+          )
+))
+  :file "!o!mkwork!xialia01!MKPRJ!mk!mkhome!modelbuild!models!builddir!FCM!workarea!sdAndSystemC!ip!Prometheus_1CPU_basic!gcc483!linux!SoCDesigner!gcc483!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,104 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "ArchRestoreHandlerIF.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ArchRestoreHandlerIF_H" variable (:constant-flag t) nil [480 502])
+            ("eslapi/CAInterface.h" include nil nil [504 535])
+            ("eslapi/CASIModuleIF.h" include nil nil [536 568])
+            ("eslapi/CASIModule.h" include nil nil [569 599])
+            ("eslapi/CASISaveRestoreArch.h" include nil nil [600 639])
+            ("eslapi/CADI.h" include nil nil [640 664])
+            ("eslapi/CADIFactory.h" include nil nil [665 696])
+            ("string" include (:system-flag t) nil [698 715])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [716 736])
+            ("xmlNodePtr" type
+               (:typedef ("_xmlNode" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [738 774])
+            ("Carbon" type
+               (:members 
+                  ( ("ArchRestoreHandlerIF" type
+                       (:members 
+                          ( ("RestoreArchStream" variable (:type ("WEXP" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [955 1741])
+                            ("ArchRestoreHandlerIF" type
+                               (:superclasses 
+                                  ( ("eslapi::CAInterface" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1832 1839])
+                                    ("restore" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("tag" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1862 1880])
+                                            ("stream" variable
+                                               (:reference 1
+                                                :type ("RestoreArchStream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1880 1906]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1842 1911])
+                                    ("ArchRestoreHandlerIF" function
+                                       (:destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1914 1948])
+                                    ("public" label nil (reparse-symbol classsubparts) [2024 2031])
+                                    ("IFNAME" function
+                                       (:typemodifiers ("static")
+                                        :type ("eslapi::if_name_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2034 2110])
+                                    ("IFREVISION" function
+                                       (:typemodifiers ("static")
+                                        :type ("eslapi::if_rev_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2113 2171])
+                                    ("ObtainInterface" function
+                                       (:pointer 1
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("ifName" variable (:type ("eslapi::if_name_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2218 2246])
+                                            ("minRev" variable (:type ("eslapi::if_rev_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2251 2279])
+                                            ("actualRev" variable
+                                               (:pointer 1
+                                                :type ("eslapi::if_rev_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2284 2315]))                                          
+                                        :type ("CAInterface" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2175 2340]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1774 2343]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [921 2346]))                  
+                :type "namespace")
+                nil [902 2383]))          
+      :file "ArchRestoreHandlerIF.h"
+      :pointmax 2412
+      :fsize 2411
+      :lastmodtime '(23003 18138 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ArchRestoreHandlerIF_H")
+          )
+))
+  :file "!o!release!boston-warehouse!SoC_Designer!master!157!PRODUCT!Linux64_GCC-4.8.3!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

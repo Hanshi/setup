@@ -1,0 +1,41 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("LINUX_DIR" variable (:default-value (".")) nil [87 101])
+            ("PACKAGE_LIB_DIR" variable (:default-value ("./lib")) nil [391 415])
+            ("COMP_NAME" variable (:default-value ("$(subst lib,,$(basename $(basename $(notdir $(wildcard $(PACKAGE_LIB_DIR)/lib*.icm.so)))))")) nil [518 621])
+            ("clean" function nil nil [622 651])
+            ("gen_code" function nil nil [652 662])
+            ("NUM_BIG_CORES" variable (:default-value ("1")) nil [699 717])
+            ("NUM_LITTLE_CORES" variable (:default-value ("0")) nil [717 738])
+            ("Makefile.internal" include nil nil [757 783])
+            ("CXX" variable (:default-value ("g++")) nil [846 854])
+            ("CXXFLAGS" variable (:default-value ("-fPIC" "-g" "-DCARBON_DUMP_VCD=0" "-std=c++11" "-I$(SYSTEMC_INC)" "-I$(CARBON_HOME)/include" "$(CM_SYSC_CXXFLAGS)" "-I." "-I$(LINUX_DIR)" "-DNUM_LITTLE_CORES=$(NUM_LITTLE_CORES)" "-DNUM_BIG_CORES=$(NUM_BIG_CORES)")) nil [855 1127])
+            ("OBJS" variable (:default-value ("lib$(COMP_NAME).systemc.o")) nil [1129 1164])
+            ("Makefile.tlm" include nil nil [1166 1187])
+            ("all" function (:arguments ("lib$(COMP_NAME).systemc.so" "lib$(COMP_NAME).systemc.a")) nil [1188 1246])
+            ("lib" function (:arguments ("$(OBJS)")) nil [1247 1300])
+            ("lib" function (:arguments ("$(OBJS)")) nil [1301 1665])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp")) nil [1666 1753])
+            ("lib" function (:arguments ("gen_code")) nil [1754 1792]))          
+      :file "Makefile"
+      :pointmax 1793
+      :fsize 1792
+      :lastmodtime '(23511 24884 8417 0)
+      :unmatched-syntax '((shell-command 1165 . 1165) (bol 1164 . 1164) (symbol 814 . 843) (semantic-list 800 . 814) (punctuation 799 . 800) (symbol 790 . 798) (bol 790 . 790) (symbol 449 . 457) (semantic-list 432 . 449) (punctuation 431 . 432) (punctuation 429 . 430) (punctuation 428 . 429) (symbol 415 . 427) (bol 415 . 415) (semantic-list 328 . 384) (punctuation 327 . 328) (bol 323 . 323) (symbol 259 . 282) (semantic-list 245 . 259) (punctuation 244 . 245) (punctuation 242 . 243) (punctuation 241 . 242) (symbol 229 . 240) (bol 229 . 229) (symbol 220 . 228) (semantic-list 206 . 220) (punctuation 205 . 206) (punctuation 203 . 204) (punctuation 202 . 203) (symbol 190 . 201) (bol 190 . 190) (symbol 180 . 189) (semantic-list 157 . 180) (punctuation 156 . 157) (symbol 117 . 156) (punctuation 115 . 116) (punctuation 114 . 115) (symbol 101 . 113) (bol 101 . 101)))
+    (semanticdb-table "Makefile.internal"
+      :file "Makefile.internal"
+      :fsize 3687
+      :lastmodtime '(23511 24884 9422 0))
+    (semanticdb-table "Makefile.tlm"
+      :file "Makefile.tlm"
+      :fsize 684
+      :lastmodtime '(23511 24884 25420 0)))
+  :file "!o!work!hanlei01!MK_real_trunk!modelbuild!models!builddir!FCM!workarea!SystemC!ip!Deimos_1CPU_basic_TARMAC!gcc483!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

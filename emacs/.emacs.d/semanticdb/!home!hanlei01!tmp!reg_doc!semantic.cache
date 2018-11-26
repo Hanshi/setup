@@ -1,0 +1,49 @@
+;; Object reg_doc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "reg_doc/"
+  :tables
+  (list
+    (semanticdb-table "regInfo.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [1 10])
+            ("sys" include nil nil [11 21])
+            ("getopt" include nil nil [22 35])
+            ("xml.etree.ElementTree" include nil nil [36 70])
+            ("xml.dom" include nil nil [71 98])
+            ("GenerateInfo" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [175 203])
+                            ("self" variable nil (reparse-symbol indented_block_body) [212 236]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [138 142])
+                            ("sourceFile" variable nil (reparse-symbol function_parameters) [144 154])
+                            ("destFile" variable nil (reparse-symbol function_parameters) [156 164]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [125 237])
+                    ("printRegInfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [273 277]))                          )
+                        (reparse-symbol indented_block_body) [256 2668])
+                    ("printParamInfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2692 2696]))                          )
+                        (reparse-symbol indented_block_body) [2673 3182]))                  
+                :type "class")
+                nil [101 3182])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [3193 3197]))              ) nil [3184 4200])
+            ("if" code nil nil [4201 4251]))          
+      :file "regInfo.py"
+      :pointmax 4251
+      :fsize 4250
+      :lastmodtime '(23083 8840 100203 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!tmp!reg_doc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

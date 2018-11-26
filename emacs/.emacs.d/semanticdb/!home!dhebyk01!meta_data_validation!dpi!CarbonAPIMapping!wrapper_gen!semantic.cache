@@ -1,0 +1,70 @@
+;; Object wrapper_gen/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "wrapper_gen/"
+  :tables
+  (list
+    (semanticdb-table "wrapper_gen.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [77 114])
+            ("xml.etree.ElementTree" include nil nil [115 150])
+            ("sys" include nil nil [151 161])
+            ("os" include nil nil [162 171])
+            ("fnmatch" include nil nil [172 186])
+            ("operator" include nil nil [187 220])
+            ("carbon_home" variable nil nil [222 261])
+            ("if" code nil nil [262 662])
+            ("sys" code nil nil [662 692])
+            ("cm_sysc_template_dir, filename" code nil nil [694 767])
+            ("cm_sysc_template_dir" code nil nil [768 826])
+            ("options" variable nil nil [828 842])
+            ("parse_command_line" function nil nil [845 1273])
+            ("NetNames" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1328 1345])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1354 1388])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1397 1438])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1447 1487])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1496 1537]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1308 1312])
+                            ("real" variable nil (reparse-symbol function_parameters) [1313 1317]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1295 1538])
+                    ("real_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1557 1561]))                          )
+                        (reparse-symbol indented_block_body) [1543 1590])
+                    ("flat_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1617 1621]))                          )
+                        (reparse-symbol indented_block_body) [1603 1650])
+                    ("just_net_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1673 1677]))                          )
+                        (reparse-symbol indented_block_body) [1655 1705]))                  
+                :type "class")
+                nil [1275 1705])
+            ("render_code" function (:arguments 
+              ( ("nets" variable nil (reparse-symbol function_parameters) [1722 1726])
+                ("wires" variable nil (reparse-symbol function_parameters) [1727 1732]))              ) nil [1706 2381])
+            ("populate_nets" function (:arguments 
+              ( ("nets" variable nil (reparse-symbol function_parameters) [2536 2540])
+                ("wires" variable nil (reparse-symbol function_parameters) [2541 2546])
+                ("net_list_file" variable nil (reparse-symbol function_parameters) [2547 2560]))              ) nil [2518 3015])
+            ("main" function nil nil [3016 3245])
+            ("if" code nil nil [3250 3313]))          
+      :file "wrapper_gen.py"
+      :pointmax 3313
+      :fsize 3312
+      :lastmodtime '(23385 58214 6803 0)
+      :unmatched-syntax nil))
+  :file "!home!dhebyk01!meta_data_validation!dpi!CarbonAPIMapping!wrapper_gen!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

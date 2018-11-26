@@ -1,0 +1,18 @@
+;; Object Deimos_DSM_1CPU_basic_TARMAC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Deimos_DSM_1CPU_basic_TARMAC/"
+  :tables
+  (list
+    (semanticdb-table "convert_log.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [1 11])
+            ("segments" variable nil nil [41 74]))          
+      :file "convert_log.py"
+      :pointmax 168
+      :fsize 167
+      :lastmodtime '(23520 40005 664021 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!real_trunk!test_result_deimos!gcc483!test!cpus!Deimos!DSM!Deimos_DSM_1CPU_basic_TARMAC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

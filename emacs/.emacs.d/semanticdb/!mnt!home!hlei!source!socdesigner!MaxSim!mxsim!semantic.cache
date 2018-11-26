@@ -1,0 +1,411 @@
+;; Object mxsim/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mxsim/"
+  :tables
+  (list
+    (semanticdb-table "SchedulerClock.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [557 575])
+            ("SchedulerClock.h" include nil nil [576 603])
+            ("CASISchedulerCache.h" include nil nil [604 635])
+            ("MxVCDTracer.h" include nil nil [636 660])
+            ("MxTracer.h" include nil nil [691 712])
+            ("MxBreakPoint.h" include nil nil [720 745])
+            ("MxSchedulerAccess.h" include nil nil [746 776])
+            ("MxPrivateTypes.h" include nil nil [777 804])
+            ("MxSimWrapper.h" include nil nil [805 830])
+            ("mxsim_internal.h" include nil nil [831 858])
+            ("MxSimAdapter.h" include nil nil [859 884])
+            ("MxMessageException.h" include nil nil [885 916])
+            ("MxFrontEndAPI.h" include nil nil [918 944])
+            ("Private.h" include nil nil [946 966])
+            ("MxSimAPI.h" include nil nil [968 989])
+            ("CASIDependencyGraph.h" include nil nil [990 1022])
+            ("CADIAccess.h" include nil nil [1024 1047])
+            ("systemc.h" include nil nil [1054 1074])
+            ("sysc/kernel/sc_process.h" include nil nil [1076 1111])
+            ("sysc/kernel/sc_runnable.h" include nil nil [1112 1148])
+            ("sysc/kernel/sc_runnable_int.h" include nil nil [1149 1189])
+            ("utils.h" include nil nil [1191 1209])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1210 1230])
+            ("COMMUNICATE_MESSAGE_CODE" function
+               (:parent "SchedulerClock"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("i" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [1307 1328]))                  
+                :type "void")
+                nil [1254 1560])
+            ("UPDATE_MESSAGE_CODE" function
+               (:parent "SchedulerClock"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("i" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [1610 1631]))                  
+                :type "void")
+                nil [1562 1848])
+            ("REVERSE_COMMUNICATE_VAR_DECCODE" function
+               (:parent "SchedulerClock"
+                :typemodifiers ("inline")
+                :type "void")
+                nil [1915 2041])
+            ("REVERSE_COMMUNICATE_PRECODE" function
+               (:parent "SchedulerClock"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("i" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [2099 2115]))                  
+                :type "bool")
+                nil [2043 2750])
+            ("REVERSE_COMMUNICATE_POSTCODE" function
+               (:parent "SchedulerClock"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("i" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [2809 2825]))                  
+                :type "void")
+                nil [2752 3081])
+            ("REVERSE_UPDATE_VAR_DECCODE" function
+               (:parent "SchedulerClock"
+                :typemodifiers ("inline")
+                :type "void")
+                nil [3083 3193])
+            ("REVERSE_UPDATE_PRECODE" function
+               (:parent "SchedulerClock"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("i" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [3246 3262]))                  
+                :type "bool")
+                nil [3195 3847])
+            ("REVERSE_UPDATE_POSTCODE" function
+               (:parent "SchedulerClock"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("i" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [3901 3917]))                  
+                :type "void")
+                nil [3849 4153])
+            ("END_CYCLE" variable (:constant-flag t) nil [4230 4239])
+            ("COMMUNICATE_OPTIMIZED_CODE" function
+               (:parent "SchedulerClock"
+                :typemodifiers ("inline")
+                :type "void")
+                nil [4294 5398])
+            ("COMMUNICATE_NORMAL_CODE" function
+               (:parent "SchedulerClock"
+                :typemodifiers ("inline")
+                :type "void")
+                nil [5400 5941])
+            ("UPDATE_OPTIMIZED_CODE" function
+               (:parent "SchedulerClock"
+                :typemodifiers ("inline")
+                :type "void")
+                nil [5943 6891])
+            ("UPDATE_NORMAL_CODE" function
+               (:parent "SchedulerClock"
+                :typemodifiers ("inline")
+                :type "void")
+                nil [6894 7250])
+            ("breakCycleIfTest" variable
+               (:typemodifiers ("extern")
+                :constant-flag t
+                :default-value "0x00001000"
+                :type "int")
+                nil [7252 7299])
+            ("exitRequestIfTest" variable
+               (:typemodifiers ("extern")
+                :constant-flag t
+                :default-value "0x00000020"
+                :type "int")
+                nil [7300 7348])
+            ("eslapi" using (:type ("eslapi" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [7350 7373])
+            ("setSimWrapper" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("MxSimWrapper" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7399 7415]))                  
+                :type "void")
+                nil [7380 7416])
+            ("theWrapper" variable
+               (:pointer 1
+                :default-value "0"
+                :type ("MxSimWrapper" type (:type "class") nil nil))
+                nil [7417 7447])
+            ("getSimWrapper" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7478 7483]))                  
+                :type ("MxSimWrapper" type (:type "class") nil nil))
+                nil [7449 7508])
+            ("setSimWrapper" function
+               (:arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("MxSimWrapper" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7529 7545]))                  
+                :type "void")
+                nil [7510 7565])
+            ("s_inRun" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "0"
+                :type "bool")
+                nil [7599 7625])
+            ("setInRun" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("inRun" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [7646 7659]))                  
+                :type "void")
+                nil [7631 7660])
+            ("setInRun" function
+               (:arguments 
+                  ( ("inRun" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [7676 7689]))                  
+                :type "void")
+                nil [7661 7712])
+            ("eslapi" type
+               (:members 
+                  ( ("global_index" variable
+                       (:default-value "0"
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7733 7759])
+                    ("GetLastComponentInCommunicate" function
+                       (:pointer 1
+                        :parent "SchedulerClock"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7821 7826]))                          
+                        :type ("CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7761 7990])
+                    ("GetLastComponentInUpdate" function
+                       (:pointer 1
+                        :parent "SchedulerClock"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8047 8052]))                          
+                        :type ("CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7992 8206])
+                    ("CallRequiredCommunicate" function
+                       (:parent "SchedulerClock"
+                        :arguments 
+                          ( ("i" variable (:type "long") (reparse-symbol arg-sub-list) [8253 8260]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [8208 8465])
+                    ("CallRequiredUpdate" function
+                       (:parent "SchedulerClock"
+                        :arguments 
+                          ( ("i" variable (:type "long") (reparse-symbol arg-sub-list) [8507 8514]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [8467 8716])
+                    ("displayCallingMessage" function
+                       (:parent "SchedulerClock"
+                        :arguments 
+                          ( ("theDelegate" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CASIDelegate" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8761 8793]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8718 10149])
+                    ("reset" function
+                       (:parent "SchedulerClock"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10178 10183]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10151 10344])
+                    ("interruptCycle" function
+                       (:parent "SchedulerClock"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10383 10388]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10347 10778])
+                    ("SchedulerClock" function
+                       (:constructor-flag t
+                        :parent "SchedulerClock"
+                        :arguments 
+                          ( ("c" variable
+                               (:pointer 1
+                                :type ("CASIModule" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10812 10826])
+                            ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10827 10843]))                          
+                        :type ("SchedulerClock" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10781 11479])
+                    ("SchedulerClock" function
+                       (:destructor-flag t
+                        :parent "SchedulerClock"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11481 11518])
+                    ("update" function
+                       (:parent "SchedulerClock"
+                        :typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11520 11774])
+                    ("communicate" function
+                       (:parent "SchedulerClock"
+                        :typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11776 12046])
+                    ("runBatchIndefinitely" function
+                       (:parent "SchedulerClock"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12048 13121])
+                    ("runBatchIndefinitelyEventDriven" function
+                       (:parent "SchedulerClock"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [13177 20967])
+                    ("runBatchNumCycles" function
+                       (:parent "SchedulerClock"
+                        :arguments 
+                          ( ("cycles" variable (:type "int") (reparse-symbol arg-sub-list) [21048 21059]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [21009 22604])
+                    ("runBatchNumCyclesEventDriven" function
+                       (:parent "SchedulerClock"
+                        :arguments 
+                          ( ("j" variable (:type "int") (reparse-symbol arg-sub-list) [22709 22715])
+                            ("cycles" variable (:type "int") (reparse-symbol arg-sub-list) [22716 22727]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22659 29958])
+                    ("run" function
+                       (:parent "SchedulerClock"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [29999 33138])
+                    ("runEventDriven" function
+                       (:parent "SchedulerClock"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [33193 41575])
+                    ("step" function
+                       (:parent "SchedulerClock"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [41617 42184])
+                    ("getName" function
+                       (:parent "SchedulerClock"
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [42187 42250])
+                    ("getProperty" function
+                       (:parent "SchedulerClock"
+                        :arguments 
+                          ( ("type" variable (:type ("eslapi::CASIPropertyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42287 42317]))                          
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [42252 42334])
+                    ("setNextPermuteOrder" function
+                       (:parent "SchedulerClock"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [42336 45101])
+                    ("saveData" function
+                       (:parent "SchedulerClock"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("CASIODataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [45134 45157]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [45103 45176])
+                    ("restoreData" function
+                       (:parent "SchedulerClock"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("CASIIDataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [45212 45235]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [45178 45254])
+                    ("call_updates_1" function
+                       (:parent "SchedulerClock"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [46821 47101])
+                    ("call_updates_2" function
+                       (:parent "SchedulerClock"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [47103 48041])
+                    ("call_communicates" function
+                       (:parent "SchedulerClock"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [48043 48729]))                  
+                :type "namespace")
+                nil [7714 48732]))          
+      :file "SchedulerClock.cpp"
+      :pointmax 48756
+      :fsize 48755
+      :lastmodtime '(22413 16817 643571 0)
+      :unmatched-syntax '((symbol 7626 . 7630) (symbol 7375 . 7379))
+      :lexical-table 
+        '(("END_CYCLE" . ((symbol "0xffffffffffffffffLL" 4240 . 4260) (punctuation ";" 4260 . 4261)))
+          )
+)
+    (semanticdb-table "SchedulerClock.h"
+      :file "SchedulerClock.h"
+      :fsize 3851
+      :lastmodtime '(22413 16817 655567 0))
+    (semanticdb-table "MxVCDTracer.h"
+      :file "MxVCDTracer.h"
+      :fsize 13740
+      :lastmodtime '(22246 65462 638414 0))
+    (semanticdb-table "MxTracer.h"
+      :file "MxTracer.h"
+      :fsize 23858
+      :lastmodtime '(22246 65462 621419 0))
+    (semanticdb-table "MxBreakPoint.h"
+      :file "MxBreakPoint.h"
+      :fsize 19865
+      :lastmodtime '(22413 16817 600570 0))
+    (semanticdb-table "MxSchedulerAccess.h"
+      :file "MxSchedulerAccess.h"
+      :fsize 1644
+      :lastmodtime '(22246 65462 588419 0))
+    (semanticdb-table "MxMessageException.h"
+      :file "MxMessageException.h"
+      :fsize 2379
+      :lastmodtime '(22246 65462 527425 0))
+    (semanticdb-table "Private.h"
+      :file "Private.h"
+      :fsize 7533
+      :lastmodtime '(22246 65462 643446 0))
+    (semanticdb-table "MxSimAPI.h"
+      :file "MxSimAPI.h"
+      :fsize 10142
+      :lastmodtime '(22246 65462 608415 0))
+    (semanticdb-table "CASIDependencyGraph.h"
+      :file "CASIDependencyGraph.h"
+      :fsize 6743
+      :lastmodtime '(22246 65462 225429 0))
+    (semanticdb-table "CADIAccess.h"
+      :file "CADIAccess.h"
+      :fsize 2052
+      :lastmodtime '(22246 65462 211430 0))
+    (semanticdb-table "utils.h"
+      :file "utils.h"
+      :fsize 2961
+      :lastmodtime '(22413 16817 668578 0)))
+  :file "!mnt!home!hlei!source!socdesigner!MaxSim!mxsim!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

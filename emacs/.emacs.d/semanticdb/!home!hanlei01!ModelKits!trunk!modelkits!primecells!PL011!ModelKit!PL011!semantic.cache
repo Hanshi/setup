@@ -1,0 +1,54 @@
+;; Object PL011/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "PL011/"
+  :tables
+  (list
+    (semanticdb-table "compile.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "compile.js"
+      :pointmax 567
+      :fsize 566
+      :lastmodtime '(19276 49839 0 0)
+      :unmatched-syntax '((VARIABLE 543 . 554) (PAREN_BLOCK 563 . 565) (IF 463 . 465) (PAREN_BLOCK 466 . 495) (PAREN_BLOCK 167 . 176)))
+    (semanticdb-table "PL011_postcompile.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("createComponent" function (:arguments 
+              ( ("srcCcfgFile" variable nil (reparse-symbol FormalParameterList) [211 222]))              ) nil [186 1081])
+            ("retainFiles" function nil nil [1161 2057])
+            ("createSoCDesignerComponent" function nil nil [2059 3243])
+            ("copyComponent" function (:arguments 
+              ( ("cfgFunctions" variable nil (reparse-symbol FormalParameterList) [3268 3280])
+                ("ccfgSrc" variable nil (reparse-symbol FormalParameterList) [3282 3289]))              ) nil [3245 3713])
+            ("copyComponentProperties" function (:arguments 
+              ( ("ccfg" variable nil (reparse-symbol FormalParameterList) [3748 3752])
+                ("ccfgSrc" variable nil (reparse-symbol FormalParameterList) [3754 3761]))              ) nil [3715 3910])
+            ("copyRegisters" function (:arguments 
+              ( ("ccfg" variable nil (reparse-symbol FormalParameterList) [3935 3939])
+                ("ccfgSrc" variable nil (reparse-symbol FormalParameterList) [3941 3948]))              ) nil [3912 4980])
+            ("copyCustomCode" function (:arguments 
+              ( ("parent" variable nil (reparse-symbol FormalParameterList) [5077 5083])
+                ("parentSrc" variable nil (reparse-symbol FormalParameterList) [5085 5094]))              ) nil [5053 5282])
+            ("addToComponent" function (:arguments 
+              ( ("cfgFunctions" variable nil (reparse-symbol FormalParameterList) [5308 5320]))              ) nil [5284 5478])
+            ("addTransactors" function (:arguments 
+              ( ("cfgFunctions" variable nil (reparse-symbol FormalParameterList) [5504 5516]))              ) nil [5480 6233])
+            ("addESLPorts" function (:arguments 
+              ( ("cfgFunctions" variable nil (reparse-symbol FormalParameterList) [6256 6268]))              ) nil [6235 7323])
+            ("addClocksAndResets" function (:arguments 
+              ( ("cfgFunctions" variable nil (reparse-symbol FormalParameterList) [7353 7365]))              ) nil [7325 7776])
+            ("addParameters" function (:arguments 
+              ( ("cfgFunctions" variable nil (reparse-symbol FormalParameterList) [7801 7813]))              ) nil [7778 9566])
+            ("addMisc" function (:arguments 
+              ( ("cfgFunctions" variable nil (reparse-symbol FormalParameterList) [9585 9597]))              ) nil [9568 10599])
+            ("addFastModelConfig" function (:arguments 
+              ( ("cfgFunctions" variable nil (reparse-symbol FormalParameterList) [10629 10641]))              ) nil [10601 15830]))          
+      :file "PL011_postcompile.js"
+      :pointmax 16164
+      :fsize 16163
+      :lastmodtime '(22759 59611 416589 0)
+      :unmatched-syntax '((ELSE 16103 . 16107) (IF 15995 . 15997) (PAREN_BLOCK 15998 . 16020) (VAR 15913 . 15916) (PAREN_BLOCK 15947 . 15993) (VARIABLE 117 . 124) (PAREN_BLOCK 124 . 183) (PAREN_BLOCK 62 . 115))))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!primecells!PL011!ModelKit!PL011!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,328 @@
+;; Object FCM/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "FCM/"
+  :tables
+  (list
+    (semanticdb-table "CarbonProfile.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("common/CarbonComponentHelper.h" include nil nil [674 715])
+            ("cpus/FCM/CarbonProfile.h" include nil nil [716 751])
+            ("carbon/carbon_capi.h" include nil nil [752 783])
+            ("assert.h" include (:system-flag t) nil [784 803])
+            ("iostream" include (:system-flag t) nil [804 823])
+            ("sstream" include (:system-flag t) nil [824 842])
+            ("common/carbon_mkversion.h" include nil nil [843 879])
+            ("algorithm" include (:system-flag t) nil [880 900])
+            ("CARBON_MKLIB_NAMESPACE" using (:type ("CARBON_MKLIB_NAMESPACE" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [903 942])
+            ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYFCM" using (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYFCM" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [943 1002])
+            ("arraySize" variable (:constant-flag t) nil [1012 1021])
+            ("sReplaceCorePathTemplate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("templateStr" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1473 1503])
+                    ("corePath" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1504 1525]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1429 1823])
+            ("sReplaceSCUPathTemplate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("templateStr" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2026 2056])
+                    ("scuPath" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2057 2077]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1983 2373])
+            ("sReplaceLDSTPathTemplate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("templateStr" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2418 2448])
+                    ("ldn_st" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2449 2465]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [2374 2808])
+            ("sReplaceLOADSTOREPathTemplate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("templateStr" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2858 2888])
+                    ("ldn_st" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2889 2905]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [2809 3258])
+            ("sReplaceSECNSCPathTemplate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("templateStr" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3305 3335])
+                    ("sec_nsc" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3336 3353]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [3259 3699])
+            ("sSCUStreams" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  { \"SCU\",       sSCUEventInfo,        arraySize(sSCUEventInfo,        EventInfo)}
+}"
+                :type ("Streams" type (:type "class") nil nil))
+                nil [3724 3842])
+            ("sAnankeStreams" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  { \"Instructions\",       sAnankeInstructionEventInfo,        arraySize(sAnankeInstructionEventInfo,        EventInfo)},
+  { \"Pipeline\",           sAnankePipelineEventInfo,           arraySize(sAnankePipelineEventInfo,           EventInfo)},
+  { \"I-Cache\",            sAnankeICacheEventInfo,             arraySize(sAnankeICacheEventInfo,             EventInfo)},
+  { \"D-Cache\",            sAnankeDCacheEventInfo,             arraySize(sAnankeDCacheEventInfo,             EventInfo)},
+  { \"L2-Cache\",           sAnankeL2CacheEventInfo,            arraySize(sAnankeL2CacheEventInfo,            EventInfo)},
+  { \"L3-Cache\",           sAnankeL3CacheEventInfo,            arraySize(sAnankeL3CacheEventInfo,            EventInfo)},
+  { \"Memory\",             sAnankeMemoryEventInfo,             arraySize(sAnankeMemoryEventInfo,             EventInfo)},
+  { \"Bus\",                sAnankeBusEventInfo,                arraySize(sAnankeBusEventInfo,                EventInfo)},
+  { \"Microarchitecture\",  sAnankeMicroarchitectureEventInfo,  arraySize(sAnankeMicroarchitectureEventInfo,  EventInfo)},
+  { \"Cycle\",              sAnankeCycleEventInfo,              arraySize(sAnankeCycleEventInfo,              EventInfo)}
+}"
+                :type ("Streams" type (:type "class") nil nil))
+                nil [3862 5109])
+            ("sPrometheusStreams" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  { \"Instructions\",       sPrometheusInstructionEventInfo,            arraySize(sPrometheusInstructionEventInfo,            EventInfo)},
+  { \"Pipeline\",           sPrometheusPipelineEventInfo,               arraySize(sPrometheusPipelineEventInfo,               EventInfo)},
+  { \"I-Cache\",            sPrometheusICacheEventInfo,                 arraySize(sPrometheusICacheEventInfo,                 EventInfo)},
+  { \"D-Cache\",            sPrometheusDCacheEventInfo,                 arraySize(sPrometheusDCacheEventInfo,                 EventInfo)},
+  { \"L2-Cache\",           sPrometheusL2CacheEventInfo,                arraySize(sPrometheusL2CacheEventInfo,                EventInfo)},
+  { \"L3-Cache\",           sPrometheusL3CacheEventInfo,                arraySize(sPrometheusL3CacheEventInfo,                EventInfo)},
+  { \"Memory\",             sPrometheusMemoryEventInfo,                 arraySize(sPrometheusMemoryEventInfo,                 EventInfo)},
+  { \"Bus\",                sPrometheusBusEventInfo,                    arraySize(sPrometheusBusEventInfo,                    EventInfo)},
+  { \"Microarchitecture\",  sPrometheusMicroarchitectureEventInfo,      arraySize(sPrometheusMicroarchitectureEventInfo,      EventInfo)},
+  { \"MMU\",                sPrometheusMmuEventInfo,                    arraySize(sPrometheusMmuEventInfo,                    EventInfo)},
+  { \"Cycle\",              sPrometheusCycleEventInfo,                  arraySize(sPrometheusCycleEventInfo,                  EventInfo)}
+}"
+                :type ("Streams" type (:type "class") nil nil))
+                nil [5133 6681])
+            ("CarbonProfile" function
+               (:constructor-flag t
+                :parent "CarbonProfile"
+                :arguments 
+                  ( ("_compHelper" variable
+                       (:pointer 1
+                        :type ("CarbonComponentHelperIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6733 6770])
+                    ("comp" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIModule" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6771 6796])
+                    ("totalNumCores" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6797 6824])
+                    ("littleCoreType" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6825 6852])
+                    ("littleCoreNum" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6853 6880])
+                    ("bigCoreType" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6881 6905])
+                    ("bigCoreNum" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6906 6931]))                  
+                :type ("CarbonProfile" type (:type "class") nil nil))
+                nil [6704 7675])
+            ("CarbonProfile" function
+               (:constructor-flag t
+                :parent "CarbonProfile"
+                :arguments 
+                  ( ("littleCoreType" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7844 7871])
+                    ("littleCoreNum" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7872 7899])
+                    ("bigCoreType" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7900 7924])
+                    ("bigCoreNum" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7925 7950]))                  
+                :type ("CarbonProfile" type (:type "class") nil nil))
+                nil [7815 9590])
+            ("CarbonProfile" function
+               (:destructor-flag t
+                :parent "CarbonProfile"
+                :type "void")
+                nil [9592 9859])
+            ("buildSystemCPMUCode" function
+               (:parent "CarbonProfile"
+                :arguments 
+                  ( ("coreType" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10110 10131])
+                    ("coreStart" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10132 10155])
+                    ("coreStop" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10156 10178])
+                    ("numStreams" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10179 10203])
+                    ("numEnables" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10204 10228]))                  
+                :type "void")
+                nil [10070 31139])
+            ("buildStreams" function
+               (:parent "CarbonProfile"
+                :type "void")
+                nil [31142 33906])
+            ("buildSCUStreams" function
+               (:parent "CarbonProfile"
+                :type "void")
+                nil [34029 36148])
+            ("buildCoreStreams" function
+               (:parent "CarbonProfile"
+                :arguments 
+                  ( ("core" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36187 36205])
+                    ("isLittle" variable (:type "bool") (reparse-symbol arg-sub-list) [36206 36220]))                  
+                :type "void")
+                nil [36150 38481])
+            ("init" function
+               (:parent "CarbonProfile"
+                :type "void")
+                nil [38484 40704])
+            ("buildEventRTLPaths" function
+               (:parent "CarbonProfile"
+                :arguments 
+                  ( ("numStreams" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40754 40778])
+                    ("corePath" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40779 40800])
+                    ("obj" variable
+                       (:pointer 1
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40801 40821]))                  
+                :type ("CarbonUInt32" type (:type "class") nil nil))
+                nil [40707 43716])
+            ("update" function
+               (:parent "CarbonProfile"
+                :type "void")
+                nil [43720 50630])
+            ("updateStreams" function
+               (:parent "CarbonProfile"
+                :arguments 
+                  ( ("numStreams" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50666 50690])
+                    ("obj" variable
+                       (:pointer 1
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50691 50711]))                  
+                :type "bool")
+                nil [50632 55213])
+            ("updateEnables" function
+               (:parent "CarbonProfile"
+                :arguments 
+                  ( ("core" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55249 55267])
+                    ("enabledStreamDetected" variable (:type "bool") (reparse-symbol arg-sub-list) [55268 55295])
+                    ("numEnableSignals" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55296 55326])
+                    ("profileEnableSignal" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [55327 55366])
+                    ("corePath" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55367 55388])
+                    ("obj" variable
+                       (:pointer 1
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55389 55409]))                  
+                :type "void")
+                nil [55215 57009])
+            ("CAPIGetProfilingStreams" function
+               (:parent "CarbonProfile"
+                :arguments 
+                  ( ("desiredNrStreams" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57071 57097])
+                    ("actualNrStreams" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57137 57163])
+                    ("streams" variable
+                       (:pointer 1
+                        :type ("eslapi::CAPIStreamInfo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57203 57237])
+                    ("streamIndex" variable (:type "int") (reparse-symbol arg-sub-list) [57277 57293]))                  
+                :type ("eslapi::CAPIReturn_t" type (:type "class") nil nil))
+                nil [57011 57828])
+            ("findNet" function
+               (:pointer 1
+                :parent "CarbonProfile"
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57867 57887])
+                    ("netName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [57888 57908]))                  
+                :type ("CarbonNetID" type (:type "class") nil nil))
+                nil [57831 58116])
+            ("isPrometheusConfig" function
+               (:parent "CarbonProfile"
+                :arguments 
+                  ( ("numBigCores" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58159 58184])
+                    ("bigCoreType" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [58185 58209]))                  
+                :type "bool")
+                nil [58119 58416])
+            ("getPrometheusCorePath" function
+               (:parent "CarbonProfile"
+                :arguments 
+                  ( ("coreNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58538 58555]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [58488 58766])
+            ("isAnankeConfig" function
+               (:parent "CarbonProfile"
+                :arguments 
+                  ( ("numLittleCores" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58804 58832])
+                    ("littleCoreType" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [58833 58860]))                  
+                :type "bool")
+                nil [58768 59068])
+            ("getAnankeCorePath" function
+               (:parent "CarbonProfile"
+                :arguments 
+                  ( ("coreNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59174 59191]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [59128 59472])
+            ("getSCUPath" function
+               (:parent "CarbonProfile"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [59474 59885]))          
+      :file "CarbonProfile.cpp"
+      :pointmax 59889
+      :fsize 59889
+      :lastmodtime '(23026 6170 0 0)
+      :unmatched-syntax '((string 655 . 672) (symbol 647 . 654) (symbol 636 . 646) (symbol 632 . 635) (symbol 625 . 631) (punctuation 624 . 625))
+      :lexical-table 
+        '(("arraySize" (spp-arg-list ("arrayP" "arrayT") 1021 . 1036) . 
+              ((SIZEOF "sizeof" 1037 . 1043) (semantic-list "(arrayP)" 1043 . 1051) (punctuation "/" 1051 . 1052) (SIZEOF "sizeof" 1052 . 1058) (semantic-list "(arrayT)" 1058 . 1066)))
+          )
+))
+  :file "!home!hanlei01!ModelKits!A55_Drop!modelkits!src!cpus!FCM!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

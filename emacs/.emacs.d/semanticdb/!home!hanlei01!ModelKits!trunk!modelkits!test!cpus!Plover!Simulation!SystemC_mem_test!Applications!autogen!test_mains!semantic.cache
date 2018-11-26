@@ -1,0 +1,52 @@
+;; Object test_mains/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test_mains/"
+  :tables
+  (list
+    (semanticdb-table "autotest_test1.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("testbase" variable
+               (:pointer 1
+                :default-value "(unsigned char *)0x00200000"
+                :type "unsigned char")
+                nil [64 118])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [130 139])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [140 152]))                  
+                :type "int")
+                nil [120 1182]))          
+      :file "autotest_test1.c"
+      :pointmax 1183
+      :fsize 1150
+      :lastmodtime '(23401 59557 0 0)
+      :unmatched-syntax '((symbol 1183 . 1184)))
+    (semanticdb-table "autotest_test3.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("testbase" variable
+               (:pointer 1
+                :default-value "(unsigned char *)0x500000"
+                :type "unsigned char")
+                nil [1 53])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [65 74])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [75 87]))                  
+                :type "int")
+                nil [55 1200]))          
+      :file "autotest_test3.c"
+      :pointmax 1201
+      :fsize 1200
+      :lastmodtime '(23413 54979 880041 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!Plover!Simulation!SystemC_mem_test!Applications!autogen!test_mains!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

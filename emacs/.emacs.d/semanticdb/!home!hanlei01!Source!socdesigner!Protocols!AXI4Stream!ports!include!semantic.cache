@@ -1,0 +1,84 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "AXI4Stream_Master_Port.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("AXI4STREAM_MASTER_PORT__H" variable (:constant-flag t) nil [364 389])
+            ("AXI4StreamPortIF.h" include nil nil [391 420])
+            ("ProtocolUtils.h" include nil nil [421 447])
+            ("casiaxi4stream" type
+               (:members 
+                  ( ("AXI4Stream_Sender_PortBase" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [477 510])
+                    ("AXI4Stream_Receiver_PortBase" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [511 546])
+                    ("AXI4StreamPortIF" variable (:type "int") (reparse-symbol namespacesubparts) [817 3939]))                  
+                :type "namespace")
+                nil [449 3941]))          
+      :file "AXI4Stream_Master_Port.h"
+      :pointmax 4013
+      :fsize 4012
+      :lastmodtime '(22617 57218 779911 0)
+      :unmatched-syntax '((PUBLIC 810 . 816) (punctuation 808 . 809) (symbol 785 . 808) (PUBLIC 778 . 784) (punctuation 776 . 777) (symbol 753 . 775) (symbol 743 . 752) (CLASS 737 . 742))
+      :lexical-table 
+        '(("AXI4STREAM_MASTER_PORT__H")
+          )
+)
+    (semanticdb-table "AXI4StreamPortIF.h"
+      :file "AXI4StreamPortIF.h"
+      :fsize 1699
+      :lastmodtime '(22617 57218 772911 0))
+    (semanticdb-table "AXI4Stream_Sender_Port.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_AXI4STREAM_SENDER_PORT_H_" variable (:constant-flag t) nil [370 396])
+            ("AXI4Stream_Sender_PortBase.h" include nil nil [398 437])
+            ("casiaxi4stream" type
+               (:members 
+                  ( ("AXI4Stream_Sender_PortBase" variable (:type "int") (reparse-symbol namespacesubparts) [506 1326]))                  
+                :type "namespace")
+                nil [439 1329]))          
+      :file "AXI4Stream_Sender_Port.h"
+      :pointmax 1361
+      :fsize 1360
+      :lastmodtime '(22617 57218 786907 0)
+      :unmatched-syntax '((PUBLIC 499 . 505) (punctuation 497 . 498) (symbol 483 . 496) (symbol 473 . 482) (CLASS 467 . 472))
+      :lexical-table 
+        '(("_AXI4STREAM_SENDER_PORT_H_")
+          )
+)
+    (semanticdb-table "AXI4Stream_Sender_PortBase.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_AXI4STREAM_SENDER_PORTBASE_H_" variable (:constant-flag t) nil [374 404])
+            ("vector" include (:system-flag t) nil [406 423])
+            ("AXI4Stream_Channel_Port.h" include nil nil [424 460])
+            ("AXI4StreamPortIF.h" include nil nil [461 490])
+            ("casiaxi4stream" type
+               (:members 
+                  ( ("AXI4Stream_Channel_Port" variable (:type "int") (reparse-symbol namespacesubparts) [611 1311]))                  
+                :type "namespace")
+                nil [492 1313]))          
+      :file "AXI4Stream_Sender_PortBase.h"
+      :pointmax 1351
+      :fsize 1350
+      :lastmodtime '(22617 57218 788905 0)
+      :unmatched-syntax '((PUBLIC 604 . 610) (punctuation 600 . 601) (punctuation 599 . 600) (symbol 582 . 599) (punctuation 581 . 582) (symbol 574 . 581) (PUBLIC 567 . 573) (punctuation 563 . 564) (symbol 536 . 562) (symbol 526 . 535) (CLASS 520 . 525))
+      :lexical-table 
+        '(("_AXI4STREAM_SENDER_PORTBASE_H_")
+          )
+)
+    (semanticdb-table "AXI4Stream_Channel_Port.h"
+      :file "AXI4Stream_Channel_Port.h"
+      :fsize 1374
+      :lastmodtime '(22617 57218 777906 0)))
+  :file "!home!hanlei01!Source!socdesigner!Protocols!AXI4Stream!ports!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

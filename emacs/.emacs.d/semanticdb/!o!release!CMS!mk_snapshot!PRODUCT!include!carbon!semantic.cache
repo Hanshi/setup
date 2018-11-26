@@ -1,0 +1,492 @@
+;; Object carbon/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "carbon/"
+  :tables
+  (list
+    (semanticdb-table "CarbonCADITypes.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_CarbonCADITypes_h_" variable (:constant-flag t) nil [744 763])
+            ("carbon/carbon_shelltypes.h" include nil nil [765 802])
+            ("carbon/carbon_capi.h" include nil nil [803 834])
+            ("eslapi/CADI.h" include nil nil [835 859])
+            ("string" include (:system-flag t) nil [861 878])
+            ("vector" include (:system-flag t) nil [879 896])
+            ("rightShift_u32" function
+               (:prototype-flag t
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [932 951])
+                    ("numWords" variable (:type "int") (reparse-symbol arg-sub-list) [952 965])
+                    ("shift" variable (:type "int") (reparse-symbol arg-sub-list) [966 976]))                  
+                :type "void")
+                nil [898 977])
+            ("SimpleRegInfo_t" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1063 1093])
+                    ("bitsWide" variable (:type "unsigned int") (reparse-symbol classsubparts) [1149 1183])
+                    ("display" variable (:type ("eslapi::CADIRegDisplay_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1219 1252])
+                    ("description" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1314 1351]))                  
+                :type "struct")
+                nil [1036 1354])
+            ("GroupInfo_t" type
+               (:members 
+                  ( ("description" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1435 1453])
+                    ("start" variable (:type "int") (reparse-symbol classsubparts) [1456 1468])
+                    ("end" variable (:type "int") (reparse-symbol classsubparts) [1538 1548]))                  
+                :type "struct")
+                nil [1412 1589])
+            ("MemSpaceInfo_t" type
+               (:members 
+                  ( ("memSpaceName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1673 1714])
+                    ("bitsPerMau" variable (:type "unsigned int") (reparse-symbol classsubparts) [1717 1756])
+                    ("maxAddress" variable (:type ("eslapi::CADIAddrSimple_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1759 1798])
+                    ("isProgramMemory" variable (:type "int") (reparse-symbol classsubparts) [1801 1845])
+                    ("cyclesToAccess" variable (:type "unsigned int") (reparse-symbol classsubparts) [1848 1891])
+                    ("readWrite" variable (:type ("eslapi::CADIMemReadWrite_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1894 1932])
+                    ("description" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1935 1975]))                  
+                :type "struct")
+                nil [1647 1978])
+            ("CarbonDebugRegister" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2048 2055])
+                    ("CarbonDebugRegister" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("obj" variable
+                               (:pointer 1
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2078 2098]))                          
+                        :type ("CarbonDebugRegister" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2058 2114])
+                    ("CarbonDebugRegister" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2119 2153])
+                    ("reset" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2157 2182])
+                    ("read" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("buf" variable
+                               (:pointer 1
+                                :type ("CarbonUInt32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2203 2221]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2185 2226])
+                    ("write" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("buf" variable
+                               (:pointer 1
+                                :type ("CarbonUInt32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2248 2266]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2229 2271])
+                    ("readOffset" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("buf" variable
+                               (:pointer 1
+                                :type ("CarbonUInt32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2298 2316])
+                            ("offset" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2317 2337])
+                            ("shift" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2338 2357])
+                            ("mask" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2358 2376]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2274 2381])
+                    ("writeOffset" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("buf" variable
+                               (:pointer 1
+                                :type ("CarbonUInt32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2409 2427])
+                            ("offset" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2428 2448])
+                            ("shift" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2449 2468])
+                            ("mask" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2469 2487]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2384 2492])
+                    ("protected" label nil (reparse-symbol classsubparts) [2494 2504])
+                    ("mObj" variable
+                       (:pointer 1
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2553 2575]))                  
+                :type "class")
+                nil [2020 2578])
+            ("CarbonDebugMemoryBlock" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2656 2663])
+                    ("CarbonDebugMemoryBlock" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2707 2724])
+                            ("base" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2725 2739])
+                            ("size" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2740 2754])
+                            ("access" variable (:type ("eslapi::CADIMemReadWrite_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2755 2789]))                          
+                        :type ("CarbonDebugMemoryBlock" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2684 2870])
+                    ("CarbonDebugMemoryBlock" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2874 2912])
+                    ("memWrite" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("startAddress" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2966 2988])
+                            ("unitsToWrite" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2989 3011])
+                            ("unitSizeInBytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3012 3037])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3038 3058])
+                            ("actualNumOfUnitsWritten" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3059 3093])
+                            ("doSideEffects" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3094 3116]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2944 3119])
+                    ("memRead" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("startAddress" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3143 3165])
+                            ("unitsToRead" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3166 3187])
+                            ("unitSizeInBytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3188 3213])
+                            ("data" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3214 3228])
+                            ("actualNumOfUnitsRead" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3229 3260])
+                            ("doSideEffects" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3261 3283]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3122 3286])
+                    ("getWarmCacheIF" function
+                       (:pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("eslapi::CAInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3290 3352])
+                    ("getArchRestoreHandlerIF" function
+                       (:pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("eslapi::CAInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3355 3426])
+                    ("decode" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("startAddr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3542 3561])
+                            ("requestedUnits" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3562 3586])
+                            ("unitSizeInBytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3587 3612])
+                            ("actualUnits" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3613 3635]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3522 4490])
+                    ("name" function
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [4505 4563])
+                    ("base" function (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4586 4637])
+                    ("size" function (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4652 4699])
+                    ("access" function (:type ("eslapi::CADIMemReadWrite_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4723 4792])
+                    ("private" label nil (reparse-symbol classsubparts) [4796 4804])
+                    ("mName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4807 4840])
+                    ("mBaseAddr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4843 4880])
+                    ("mSize" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4896 4929])
+                    ("mAccess" variable (:type ("eslapi::CADIMemReadWrite_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4949 4984]))                  
+                :type "class")
+                nil [2625 4987])
+            ("CarbonDebugMemory" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [5048 5055])
+                    ("CarbonDebugMemory" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [5079 5281])
+                    ("memWrite" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("startAddress" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5373 5395])
+                            ("unitsToWrite" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5396 5418])
+                            ("unitSizeInBytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5419 5444])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5445 5465])
+                            ("actualNumOfUnitsWritten" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5466 5500])
+                            ("doSideEffects" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5501 5523]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5351 5526])
+                    ("memRead" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("startAddress" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5550 5572])
+                            ("unitsToRead" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5573 5594])
+                            ("unitSizeInBytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5595 5620])
+                            ("data" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5621 5635])
+                            ("actualNumOfUnitsRead" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5636 5667])
+                            ("doSideEffects" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5668 5690]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5529 5693])
+                    ("getWarmCacheIF" function
+                       (:pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("eslapi::CAInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5699 5885])
+                    ("getArchRestoreHandlerIF" function
+                       (:pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("eslapi::CAInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5889 6093])
+                    ("numBlocks" function (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6134 6189])
+                    ("blockName" function
+                       (:pointer 1
+                        :constant-flag t
+                        :arguments 
+                          ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [6241 6251]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [6219 6294])
+                    ("blockStart" function
+                       (:arguments 
+                          ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [6353 6363]))                          
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6333 6412])
+                    ("blockEnd" function
+                       (:arguments 
+                          ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [6467 6477]))                          
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6449 6554])
+                    ("blockSize" function
+                       (:arguments 
+                          ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [6603 6613]))                          
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6584 6662])
+                    ("blockAccess" function
+                       (:arguments 
+                          ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [6705 6715]))                          
+                        :type ("eslapi::CADIMemReadWrite_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6666 6766])
+                    ("Readmemh" function
+                       (:arguments 
+                          ( ("memoryObject" variable
+                               (:pointer 1
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6792 6821])
+                            ("rtlMemPath" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6822 6845])
+                            ("filename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6846 6867]))                          
+                        :type ("CarbonStatus" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6770 7060])
+                    ("Readmemb" function
+                       (:arguments 
+                          ( ("memoryObject" variable
+                               (:pointer 1
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7086 7115])
+                            ("rtlMemPath" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [7116 7139])
+                            ("filename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [7140 7161]))                          
+                        :type ("CarbonStatus" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7064 7354])
+                    ("protected" label nil (reparse-symbol classsubparts) [7357 7367])
+                    ("mBlocks" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("CarbonDebugMemoryBlock" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [7370 7415]))                  
+                :type "class")
+                nil [5022 7418])
+            ("memcpy32to8" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7674 7688])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7689 7713])
+                    ("bytes" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7714 7733]))                  
+                :type "void")
+                nil [7643 7765])
+            ("memcpy8to32" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8039 8058])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8059 8078])
+                    ("bytes" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8079 8098]))                  
+                :type "void")
+                nil [8008 8130])
+            ("leftShift_u32" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8251 8270])
+                    ("numWords" variable (:type "int") (reparse-symbol arg-sub-list) [8271 8284])
+                    ("shift" variable (:type "int") (reparse-symbol arg-sub-list) [8285 8295]))                  
+                :type "void")
+                nil [8218 9126])
+            ("rightShift_u32" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9248 9267])
+                    ("numWords" variable (:type "int") (reparse-symbol arg-sub-list) [9268 9281])
+                    ("shift" variable (:type "int") (reparse-symbol arg-sub-list) [9282 9292]))                  
+                :type "void")
+                nil [9214 10127])
+            ("createMask_u32" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10237 10256])
+                    ("numWords" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10257 10279])
+                    ("width" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10280 10299])
+                    ("shift" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10300 10319]))                  
+                :type "void")
+                nil [10203 10918])
+            ("CarbonInternalMemMapEntry" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [11105 11112])
+                    ("CarbonInternalMemMapEntry" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("numRegions" variable (:type "int") (reparse-symbol arg-sub-list) [11141 11156]))                          
+                        :type ("CarbonInternalMemMapEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11115 11315])
+                    ("CarbonInternalMemMapEntry" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [11318 11415])
+                    ("isHit" function
+                       (:arguments 
+                          ( ("addr" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11483 11501]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [11472 11665])
+                    ("getNumRegions" function (:type "int") (reparse-symbol classsubparts) [11669 11717])
+                    ("start" variable
+                       (:pointer 1
+                        :type ("CarbonUInt64" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11723 11743])
+                    ("size" variable
+                       (:pointer 1
+                        :type ("CarbonUInt64" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11746 11765])
+                    ("name" variable
+                       (:pointer 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11768 11786])
+                    ("private" label nil (reparse-symbol classsubparts) [11787 11795])
+                    ("mNumRegions" variable (:type "int") (reparse-symbol classsubparts) [11798 11814]))                  
+                :type "class")
+                nil [11071 11817]))          
+      :file "CarbonCADITypes.h"
+      :pointmax 11827
+      :fsize 11826
+      :lastmodtime '(23031 41346 53165 0)
+      :unmatched-syntax '((punctuation 2153 . 2154) (punctuation 2114 . 2115))
+      :lexical-table 
+        '(("_CarbonCADITypes_h_")
+          )
+)
+    (semanticdb-table "carbon_shelltypes.h"
+      :file "carbon_shelltypes.h"
+      :fsize 42164
+      :lastmodtime '(23031 41346 258166 0))
+    (semanticdb-table "carbon_capi.h"
+      :file "carbon_capi.h"
+      :fsize 120455
+      :lastmodtime '(23031 41346 196167 0)))
+  :file "!o!release!CMS!mk_snapshot!PRODUCT!include!carbon!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

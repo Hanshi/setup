@@ -1,0 +1,43 @@
+;; Object Systems/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Systems/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [801 820])
+            ("time.h" include (:system-flag t) nil [821 838])
+            ("CORTEXA53_2CPU_AXI3Imp.h" include nil nil [840 875])
+            ("GIC500Imp.h" include nil nil [876 898])
+            ("NIC400Imp.h" include nil nil [899 921])
+            ("BP140Imp.h" include nil nil [922 943])
+            ("BP140_TrickBoxImp.h" include nil nil [944 974])
+            ("scx_signal_sizer.h" include nil nil [975 1004])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1954 1978])
+            ("SC_MODULE" function
+               (:arguments 
+                  ( ("" variable (:type ("Counter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1990 1998]))                  
+                :type "int")
+                nil [1980 2229])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2244 2253])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2254 2267]))                  
+                :type "int")
+                nil [2232 50316]))          
+      :file "system_test.cpp"
+      :pointmax 50317
+      :fsize 50316
+      :lastmodtime '(22820 11857 268651 0)
+      :unmatched-syntax '((punctuation 2229 . 2230))))
+  :file "!home!todvan01!dev!workspaces!gic500_ws!A53-MP2_NIC-400_GIC500-SysC.snapshot2!Systems!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

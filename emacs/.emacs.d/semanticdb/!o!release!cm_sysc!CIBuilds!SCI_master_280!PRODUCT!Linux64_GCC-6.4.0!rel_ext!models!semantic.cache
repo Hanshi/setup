@@ -1,0 +1,89 @@
+;; Object models/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "models/"
+  :tables
+  (list
+    (semanticdb-table "ElfLoader.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("elf.h" include (:system-flag t) nil [874 890])
+            ("cassert" include (:system-flag t) nil [898 916])
+            ("zlib.h" include (:system-flag t) nil [917 934])
+            ("cstring" include (:system-flag t) nil [935 953])
+            ("cstdio" include (:system-flag t) nil [954 971])
+            ("cstdlib" include (:system-flag t) nil [972 990])
+            ("stdexcept" include (:system-flag t) nil [991 1011])
+            ("RAMBlock.h" include nil nil [1012 1033])
+            ("ElfLoader.h" include nil nil [1034 1056])
+            ("ARM" type
+               (:members 
+                  ( ("Models" type
+                       (:members 
+                          ( ("ElfLoaderLoadData" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("filedata" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1125 1146])
+                                    ("ram_block" variable
+                                       (:pointer 1
+                                        :type ("RAMBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1147 1167])
+                                    ("fPTR" variable
+                                       (:pointer 1
+                                        :type ("f_dbg_write_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1168 1188]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1094 4128])
+                            ("ElfLoaderLoad" function
+                               (:arguments 
+                                  ( ("filename" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [4150 4171])
+                                    ("ram_block" variable
+                                       (:pointer 1
+                                        :type ("RAMBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4172 4192])
+                                    ("fPTR" variable
+                                       (:pointer 1
+                                        :type ("f_dbg_write_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4193 4213]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [4130 5645])
+                            ("UBD_ElfLoaderLoad" function
+                               (:arguments 
+                                  ( ("filename" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5672 5693])
+                                    ("fptr" variable
+                                       (:pointer 1
+                                        :type ("f_dbg_write_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5694 5714]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [5648 5766]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1074 5769]))                  
+                :type "namespace")
+                nil [1058 5772]))          
+      :file "ElfLoader.cpp"
+      :pointmax 5774
+      :fsize 5773
+      :lastmodtime '(23447 57740 88295 777000)
+      :unmatched-syntax '((punctuation 5772 . 5773) (punctuation 5769 . 5770)))
+    (semanticdb-table "RAMBlock.h"
+      :file "RAMBlock.h"
+      :fsize 1347
+      :lastmodtime '(23447 57740 96295 741000))
+    (semanticdb-table "ElfLoader.h"
+      :file "ElfLoader.h"
+      :fsize 1251
+      :lastmodtime '(23447 57740 91295 764000)))
+  :file "!o!release!cm_sysc!CIBuilds!SCI_master_280!PRODUCT!Linux64_GCC-6.4.0!rel_ext!models!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

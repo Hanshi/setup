@@ -1,0 +1,668 @@
+;; Object mk_pkg/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mk_pkg/"
+  :tables
+  (list
+    (semanticdb-table "modelbuilder.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "modelbuilder.py"
+      :pointmax 131219
+      :fsize 128872
+      :lastmodtime '(23449 19427 690089 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "build_dsm.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [134 148])
+            ("sys" include nil nil [149 159])
+            ("argparse" include nil nil [160 175])
+            ("subprocess" include nil nil [176 193])
+            ("os" include nil nil [194 203])
+            ("shutil" include nil nil [204 217])
+            ("xml.etree.cElementTree" include nil nil [218 253])
+            ("DSM_package" include nil nil [254 289])
+            ("DSM_utils" include nil nil [290 306])
+            ("ERROR_CARBON_HOME_UNDEFINED" variable nil nil [483 515])
+            ("ERROR_CARBON_MK_HOME_UNDEFINED" variable nil nil [516 551])
+            ("ERROR_MISSING_MKNAME" variable nil nil [552 577])
+            ("ERROR_UNSUPPORTED_MKNAME" variable nil nil [578 607])
+            ("ERROR_NONEXISTING_PATH" variable nil nil [653 680])
+            ("CM_SYSC_PACKAGE" variable nil nil [754 827])
+            ("ICM_LOC" variable nil nil [828 876])
+            ("GCC_LOC" variable nil nil [878 970])
+            ("PYTHON2_LOC" variable nil nil [971 1016])
+            ("PYTHON2_PATH" code nil nil [1017 1063])
+            ("PYTHON2_LIB" code nil nil [1064 1100])
+            ("PYTHON3_PATH" variable nil nil [1101 1163])
+            ("IUS_PATH" variable nil nil [1164 1224])
+            ("DSM_PKG_DIR" variable nil nil [1225 1252])
+            ("BuildDsmException" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1337 1355])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1364 1386]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1308 1312])
+                            ("msg" variable nil (reparse-symbol function_parameters) [1314 1317])
+                            ("retcode" variable nil (reparse-symbol function_parameters) [1319 1326]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1295 1387])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1403 1407]))                          )
+                        (reparse-symbol indented_block_body) [1391 1444]))                  
+                :type "class")
+                nil [1255 1444])
+            ("updateEnvVar" function (:arguments 
+              ( ("my_env" variable nil (reparse-symbol function_parameters) [1632 1638])
+                ("env_var" variable nil (reparse-symbol function_parameters) [1640 1647])
+                ("value_prefix" variable nil (reparse-symbol function_parameters) [1649 1661]))              ) nil [1615 1815])
+            ("get_carbon_mk_home" function nil nil [1817 2224])
+            ("getMKNameFromAnswers" function (:arguments 
+              ( ("answersFileName" variable nil (reparse-symbol function_parameters) [2468 2483]))              ) nil [2443 3143])
+            ("getNumCoresFromAnswers" function (:arguments 
+              ( ("answersFileName" variable nil (reparse-symbol function_parameters) [3488 3503]))              ) nil [3461 4056])
+            ("determineLicenseStr" function (:arguments 
+              ( ("mkName" variable nil (reparse-symbol function_parameters) [4415 4421]))              ) nil [4391 4865])
+            ("determineIPXACT_filename" function (:arguments 
+              ( ("mkName" variable nil (reparse-symbol function_parameters) [4943 4949])
+                ("compName" variable nil (reparse-symbol function_parameters) [4951 4959]))              ) nil [4914 5437])
+            ("determineIPXACT_DEBUG_BLOCK_filename" function (:arguments 
+              ( ("mkName" variable nil (reparse-symbol function_parameters) [5527 5533]))              ) nil [5486 5908])
+            ("determineExectionTb_path" function (:arguments 
+              ( ("mkName" variable nil (reparse-symbol function_parameters) [5938 5944]))              ) nil [5909 6307])
+            ("gen_CompiledModel_FCM" function (:arguments 
+              ( ("mkName" variable nil (reparse-symbol function_parameters) [6859 6865])
+                ("compName" variable nil (reparse-symbol function_parameters) [6867 6875])
+                ("answers_file" variable nil (reparse-symbol function_parameters) [6877 6889])
+                ("num_cores" variable nil (reparse-symbol function_parameters) [6891 6900])
+                ("cm_compile_loc" variable nil (reparse-symbol function_parameters) [6902 6916])
+                ("testdir" variable nil (reparse-symbol function_parameters) [6918 6925])
+                ("license_str" variable nil (reparse-symbol function_parameters) [6927 6938])
+                ("cbuild_cache_loc" variable nil (reparse-symbol function_parameters) [6940 6956])
+                ("no_render" variable nil (reparse-symbol function_parameters) [6958 6967]))              ) nil [6833 8228])
+            ("gen_ICM_wrapper" function (:arguments 
+              ( ("compName" variable nil (reparse-symbol function_parameters) [8377 8385])
+                ("IPName" variable nil (reparse-symbol function_parameters) [8387 8393])
+                ("tarmac_prefix" variable nil (reparse-symbol function_parameters) [8395 8408])
+                ("dbgblk_name" variable nil (reparse-symbol function_parameters) [8410 8421]))              ) nil [8357 12936])
+            ("get_carbon_path" function nil nil [12938 13233])
+            ("gen_SystemC_PinLevel" function (:arguments 
+              ( ("IPName" variable nil (reparse-symbol function_parameters) [13261 13267])
+                ("compname" variable nil (reparse-symbol function_parameters) [13269 13277])
+                ("IPXACT_filename" variable nil (reparse-symbol function_parameters) [13279 13294])
+                ("num_cores" variable nil (reparse-symbol function_parameters) [13296 13305])
+                ("gen_tarmac" variable nil (reparse-symbol function_parameters) [13307 13317]))              ) nil [13236 16613])
+            ("run_inst_test" function (:arguments 
+              ( ("compName" variable nil (reparse-symbol function_parameters) [16770 16778])
+                ("sim" variable nil (reparse-symbol function_parameters) [16780 16783]))              ) nil [16752 18568])
+            ("run_exectb" function (:arguments 
+              ( ("mkName" variable nil (reparse-symbol function_parameters) [18695 18701])
+                ("answers_file" variable nil (reparse-symbol function_parameters) [18703 18715])
+                ("sim" variable nil (reparse-symbol function_parameters) [18717 18720]))              ) nil [18680 20221])
+            ("run_ius_kite" function nil nil [20223 21589])
+            ("CmdLineOptions" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [21691 21730])
+                            ("self" code nil (reparse-symbol indented_block_body) [21739 21883])
+                            ("self" code nil (reparse-symbol indented_block_body) [21892 22030])
+                            ("self" code nil (reparse-symbol indented_block_body) [22039 22175])
+                            ("self" code nil (reparse-symbol indented_block_body) [22184 22299])
+                            ("self" code nil (reparse-symbol indented_block_body) [22308 22431])
+                            ("self" code nil (reparse-symbol indented_block_body) [22440 22645])
+                            ("self" code nil (reparse-symbol indented_block_body) [22654 22771])
+                            ("self" code nil (reparse-symbol indented_block_body) [22780 22927])
+                            ("self" code nil (reparse-symbol indented_block_body) [22936 23023])
+                            ("self" code nil (reparse-symbol indented_block_body) [23148 23236])
+                            ("self" code nil (reparse-symbol indented_block_body) [23374 23513])
+                            ("self" code nil (reparse-symbol indented_block_body) [23522 23621])
+                            ("self" code nil (reparse-symbol indented_block_body) [23665 23769])
+                            ("self" code nil (reparse-symbol indented_block_body) [23937 24056])
+                            ("self" code nil (reparse-symbol indented_block_body) [24216 24316])
+                            ("self" code nil (reparse-symbol indented_block_body) [24420 24522])
+                            ("self" variable nil (reparse-symbol indented_block_body) [24628 24673]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21670 21674])
+                            ("argv" variable nil (reparse-symbol function_parameters) [21676 21680]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [21657 24674])
+                    ("CheckPath" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24693 24697])
+                            ("cmd_option" variable nil (reparse-symbol function_parameters) [24699 24709]))                          )
+                        (reparse-symbol indented_block_body) [24679 25022])
+                    ("getAnswersFile" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25120 25124]))                          )
+                        (reparse-symbol indented_block_body) [25101 25210])
+                    ("getIPXACT_filename" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25238 25242]))                          )
+                        (reparse-symbol indented_block_body) [25215 25365])
+                    ("getExecTb_path" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25389 25393]))                          )
+                        (reparse-symbol indented_block_body) [25370 25519])
+                    ("getSim" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25535 25539]))                          )
+                        (reparse-symbol indented_block_body) [25524 25660])
+                    ("getRunTest" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25680 25684]))                          )
+                        (reparse-symbol indented_block_body) [25665 25882])
+                    ("getRunExecTb" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25904 25908]))                          )
+                        (reparse-symbol indented_block_body) [25887 26114])
+                    ("getSkipCMCompilation" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26144 26148]))                          )
+                        (reparse-symbol indented_block_body) [26119 26291])
+                    ("getNoDbgBlk" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26312 26316]))                          )
+                        (reparse-symbol indented_block_body) [26296 26438])
+                    ("getTestdir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26458 26462]))                          )
+                        (reparse-symbol indented_block_body) [26443 26629])
+                    ("getBuilddir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26650 26654]))                          )
+                        (reparse-symbol indented_block_body) [26634 26824])
+                    ("getCMCompileLocation" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26854 26858]))                          )
+                        (reparse-symbol indented_block_body) [26829 27410])
+                    ("getLicenseStr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27433 27437]))                          )
+                        (reparse-symbol indented_block_body) [27415 27645])
+                    ("getCbuildCacheWrapperLoc" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27679 27683]))                          )
+                        (reparse-symbol indented_block_body) [27650 27995])
+                    ("getNoRender" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28016 28020]))                          )
+                        (reparse-symbol indented_block_body) [28000 28152])
+                    ("getKiteMode" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28173 28177]))                          )
+                        (reparse-symbol indented_block_body) [28157 28311])
+                    ("getMarvinMode" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28342 28346]))                          )
+                        (reparse-symbol indented_block_body) [28324 28484]))                  
+                :type "class")
+                nil [21630 28484])
+            ("gen_tb" function (:arguments 
+              ( ("compName" variable nil (reparse-symbol function_parameters) [28668 28676]))              ) nil [28657 29122])
+            ("if" code nil nil [29175 37536]))          
+      :file "build_dsm.py"
+      :pointmax 37537
+      :fsize 37536
+      :lastmodtime '(23449 19427 653096 0)
+      :unmatched-syntax '((INDENT_BLOCK 37475 . 37536) (NEWLINE 37474 . 37475) (COLON 37473 . 37474) (TRY 29207 . 29210) (AS 37469 . 37471)))
+    (semanticdb-table "DSM_package.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [134 148])
+            ("sys" include nil nil [149 159])
+            ("argparse" include nil nil [160 175])
+            ("subprocess" include nil nil [176 193])
+            ("os" include nil nil [194 203])
+            ("shutil" include nil nil [204 217])
+            ("distutils.dir_util" include nil nil [218 258])
+            ("DSM_PKG_DIR" variable nil nil [261 288])
+            ("DEBUG_BLOCK_TOPLEVEL_NAME" variable nil nil [289 338])
+            ("ICM_LOC" variable nil nil [404 452])
+            ("Helios_TARMAC_INST" variable nil nil [453 567])
+            ("CM_SYSC_PACKAGE" variable nil nil [568 641])
+            ("CM_SYSC_HEADER" code nil nil [642 716])
+            ("CM_SYSC_HEADER2" code nil nil [717 802])
+            ("CM_SYSC_HEADER3" code nil nil [803 886])
+            ("CM_SYSC_HEADER4" code nil nil [887 974])
+            ("Helios_TARMAC_LIB" code nil nil [977 1057])
+            ("Helios_TARMAC_USAGE_FILE" code nil nil [1058 1126])
+            ("Helios_TARMAC_USAGE_MT_FILE" code nil nil [1127 1213])
+            ("Helios_TARMAC_FORMAT_FILE" code nil nil [1214 1284])
+            ("Deimos_TARMAC_INST" variable nil nil [1287 1401])
+            ("Deimos_TARMAC_LIB" code nil nil [1403 1483])
+            ("Deimos_TARMAC_USAGE_FILE" code nil nil [1484 1552])
+            ("Deimos_TARMAC_FORMAT_FILE" code nil nil [1553 1623])
+            ("CARBON_HOME_UNDEFINED" variable nil nil [1659 1685])
+            ("CARBON_MK_HOME_UNDEFINED" variable nil nil [1686 1715])
+            ("PACKAGE_COPY_ERROR" variable nil nil [1716 1739])
+            ("ERROR_NONEXISTING_PATH" variable nil nil [1740 1767])
+            ("ERROR_UNSUPPORTED_IP" variable nil nil [1768 1793])
+            ("PackageException" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1876 1894])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1903 1925]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1847 1851])
+                            ("msg" variable nil (reparse-symbol function_parameters) [1853 1856])
+                            ("retcode" variable nil (reparse-symbol function_parameters) [1858 1865]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1834 1926])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1942 1946]))                          )
+                        (reparse-symbol indented_block_body) [1930 1983]))                  
+                :type "class")
+                nil [1795 1983])
+            ("get_carbon_mk_home" function nil nil [2069 2503])
+            ("get_carbon_path" function nil nil [2588 2910])
+            ("package_DSM" function (:arguments 
+              ( ("IPName" variable nil (reparse-symbol function_parameters) [3114 3120])
+                ("answers_file" variable nil (reparse-symbol function_parameters) [3122 3134]))              ) nil [3098 9902])
+            ("CmdLineOptions" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [9622 9661])
+                            ("self" code nil (reparse-symbol indented_block_body) [9670 9814])
+                            ("self" code nil (reparse-symbol indented_block_body) [9823 9924])
+                            ("self" code nil (reparse-symbol indented_block_body) [9933 10080])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10089 10134]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9985 9989])
+                            ("argv" variable nil (reparse-symbol function_parameters) [9991 9995]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9972 10519])
+                    ("CheckPath" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10538 10542])
+                            ("cmd_option" variable nil (reparse-symbol function_parameters) [10544 10554]))                          )
+                        (reparse-symbol indented_block_body) [10524 10866])
+                    ("getAnswersFile" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10964 10968]))                          )
+                        (reparse-symbol indented_block_body) [10945 11054])
+                    ("getIPName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11073 11077]))                          )
+                        (reparse-symbol indented_block_body) [11059 11119])
+                    ("getNoDbgBlk" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11140 11144]))                          )
+                        (reparse-symbol indented_block_body) [11124 11266]))                  
+                :type "class")
+                nil [9945 11266])
+            ("if" code nil nil [11309 11874]))          
+      :file "DSM_package.py"
+      :pointmax 11875
+      :fsize 12737
+      :lastmodtime '(23449 19427 601097 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "cm_compile.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [323 337])
+            ("sys" include nil nil [338 348])
+            ("argparse" include nil nil [349 364])
+            ("subprocess" include nil nil [365 382])
+            ("os.path" include nil nil [383 397])
+            ("shutil" include nil nil [398 411])
+            ("distutils.dir_util" include nil nil [412 437])
+            ("Answers2Yaml" include nil nil [438 506])
+            ("DSM_utils" include nil nil [507 523])
+            ("ERROR_UNSUPPORTED_MKNAME" variable nil nil [525 554])
+            ("ERROR_BAD_PATH" variable nil nil [555 575])
+            ("CM_COMPILE_CHECK_PATH" variable nil nil [625 683])
+            ("PYTHON2_PATH" variable nil nil [684 742])
+            ("PYTHON3_PATH" variable nil nil [743 803])
+            ("PYTHON2_LIB" variable nil nil [804 851])
+            ("PERL5_BIN" variable nil nil [852 908])
+            ("BadPathException" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1279 1297]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1257 1261])
+                            ("value" variable nil (reparse-symbol function_parameters) [1263 1268]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1244 1298])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1314 1318]))                          )
+                        (reparse-symbol indented_block_body) [1302 1353]))                  
+                :type "class")
+                nil [1205 1353])
+            ("BuildDsmException" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1436 1454])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1463 1485]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1407 1411])
+                            ("msg" variable nil (reparse-symbol function_parameters) [1413 1416])
+                            ("retcode" variable nil (reparse-symbol function_parameters) [1418 1425]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1394 1486])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1502 1506]))                          )
+                        (reparse-symbol indented_block_body) [1490 1543]))                  
+                :type "class")
+                nil [1354 1543])
+            ("CmdLineOptions" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1882 1921])
+                            ("self" code nil (reparse-symbol indented_block_body) [1930 2074])
+                            ("self" code nil (reparse-symbol indented_block_body) [2083 2219])
+                            ("self" code nil (reparse-symbol indented_block_body) [2410 2568])
+                            ("self" code nil (reparse-symbol indented_block_body) [2577 2709])
+                            ("self" code nil (reparse-symbol indented_block_body) [2718 2867])
+                            ("self" code nil (reparse-symbol indented_block_body) [2876 3323])
+                            ("self" code nil (reparse-symbol indented_block_body) [3332 3540])
+                            ("self" code nil (reparse-symbol indented_block_body) [3550 3789])
+                            ("self" code nil (reparse-symbol indented_block_body) [3799 3931])
+                            ("self" code nil (reparse-symbol indented_block_body) [3940 4043])
+                            ("self" code nil (reparse-symbol indented_block_body) [4087 4206])
+                            ("self" code nil (reparse-symbol indented_block_body) [4367 4466])
+                            ("self" code nil (reparse-symbol indented_block_body) [4510 4610])
+                            ("self" code nil (reparse-symbol indented_block_body) [4714 4816])
+                            ("self" code nil (reparse-symbol indented_block_body) [4922 5069])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5078 5123])
+                            ("self" code nil (reparse-symbol indented_block_body) [5186 5207]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1625 1629])
+                            ("argv" variable nil (reparse-symbol function_parameters) [1631 1635]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1612 5208])
+                    ("checkArguments" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5232 5236]))                          )
+                        (reparse-symbol indented_block_body) [5213 5788])
+                    ("CheckPath" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5807 5811])
+                            ("cmd_option" variable nil (reparse-symbol function_parameters) [5813 5823]))                          )
+                        (reparse-symbol indented_block_body) [5793 6111])
+                    ("getAnswersFile" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6135 6139]))                          )
+                        (reparse-symbol indented_block_body) [6116 6185])
+                    ("getNumCores" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6206 6210]))                          )
+                        (reparse-symbol indented_block_body) [6190 6253])
+                    ("getIPName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6272 6276]))                          )
+                        (reparse-symbol indented_block_body) [6258 6317])
+                    ("getInstallDir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6340 6344]))                          )
+                        (reparse-symbol indented_block_body) [6322 6389])
+                    ("getY" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6403 6407]))                          )
+                        (reparse-symbol indented_block_body) [6394 6552])
+                    ("getTestCfgFile" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6576 6580]))                          )
+                        (reparse-symbol indented_block_body) [6557 6626])
+                    ("getTestVCFile" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6649 6653]))                          )
+                        (reparse-symbol indented_block_body) [6631 6698])
+                    ("getQuick" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6716 6720]))                          )
+                        (reparse-symbol indented_block_body) [6703 6760])
+                    ("getLicenseStr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6783 6787]))                          )
+                        (reparse-symbol indented_block_body) [6765 6957])
+                    ("getCompName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7032 7036]))                          )
+                        (reparse-symbol indented_block_body) [7016 7200])
+                    ("getCbuildCacheWrapperLoc" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7236 7240]))                          )
+                        (reparse-symbol indented_block_body) [7207 7504])
+                    ("getNoRender" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7525 7529]))                          )
+                        (reparse-symbol indented_block_body) [7509 7661])
+                    ("getKiteMode" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7682 7686]))                          )
+                        (reparse-symbol indented_block_body) [7666 7820])
+                    ("getMarvinMode" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7851 7855]))                          )
+                        (reparse-symbol indented_block_body) [7833 7993])
+                    ("getNoDbgBlk" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8022 8026]))                          )
+                        (reparse-symbol indented_block_body) [8006 8148]))                  
+                :type "class")
+                nil [1585 8148])
+            ("getIpxactFilesListFCM" function (:arguments 
+              ( ("ipName" variable nil (reparse-symbol function_parameters) [8220 8226])
+                ("compName" variable nil (reparse-symbol function_parameters) [8228 8236])
+                ("coreName" variable nil (reparse-symbol function_parameters) [8238 8246])
+                ("numCores" variable nil (reparse-symbol function_parameters) [8248 8256]))              ) nil [8194 9084])
+            ("determineIPXACT_DEBUG_BLOCK_filename" function (:arguments 
+              ( ("mkName" variable nil (reparse-symbol function_parameters) [9126 9132]))              ) nil [9085 9632])
+            ("if" code nil nil [9633 20397]))          
+      :file "cm_compile.py"
+      :pointmax 20398
+      :fsize 20397
+      :lastmodtime '(23449 19427 675089 0)
+      :unmatched-syntax '((INDENT_BLOCK 20329 . 20397) (NEWLINE 20328 . 20329) (COLON 20327 . 20328) (AS 20323 . 20325) (EXCEPT 20293 . 20299) (INDENT_BLOCK 20226 . 20289) (NEWLINE 20225 . 20226) (COLON 20224 . 20225) (TRY 9718 . 9721) (AS 20220 . 20222)))
+    (semanticdb-table "Answers2Yaml.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [120 130])
+            ("argparse" include nil nil [131 146])
+            ("xml.etree.cElementTree" include nil nil [147 182])
+            ("logging" include nil nil [183 197])
+            ("ERROR_CONFIGURATION" variable nil nil [199 224])
+            ("ConfigurationException" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [306 324]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [284 288])
+                            ("value" variable nil (reparse-symbol function_parameters) [290 295]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [271 325])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [341 345]))                          )
+                        (reparse-symbol indented_block_body) [329 380]))                  
+                :type "class")
+                nil [226 380])
+            ("CalcNumCpus" function (:arguments 
+              ( ("answersFileName" variable nil (reparse-symbol function_parameters) [431 446]))              ) nil [415 1590])
+            ("convertAnswers2YamlCorinth" function (:arguments 
+              ( ("answersFileName" variable nil (reparse-symbol function_parameters) [1700 1715])
+                ("corinthYamlName" variable nil (reparse-symbol function_parameters) [1717 1732])
+                ("coreYamlName" variable nil (reparse-symbol function_parameters) [1734 1746])
+                ("ipName" variable nil (reparse-symbol function_parameters) [1748 1754]))              ) nil [1669 6097])
+            ("convertAnswers2YamlPrometheus" function (:arguments 
+              ( ("answersFileName" variable nil (reparse-symbol function_parameters) [6212 6227])
+                ("corinthYamlName" variable nil (reparse-symbol function_parameters) [6229 6244])
+                ("coreYamlName" variable nil (reparse-symbol function_parameters) [6246 6258])
+                ("ipName" variable nil (reparse-symbol function_parameters) [6260 6266]))              ) nil [6178 7366])
+            ("convertAnswers2YamlDeimos" function (:arguments 
+              ( ("answersFileName" variable nil (reparse-symbol function_parameters) [7477 7492])
+                ("corinthYamlName" variable nil (reparse-symbol function_parameters) [7494 7509])
+                ("coreYamlName" variable nil (reparse-symbol function_parameters) [7511 7523])
+                ("ipName" variable nil (reparse-symbol function_parameters) [7525 7531]))              ) nil [7447 12051])
+            ("convertAnswers2YamlHelios" function (:arguments 
+              ( ("answersFileName" variable nil (reparse-symbol function_parameters) [12163 12178])
+                ("corinthYamlName" variable nil (reparse-symbol function_parameters) [12180 12195])
+                ("coreYamlName" variable nil (reparse-symbol function_parameters) [12197 12209])
+                ("ipName" variable nil (reparse-symbol function_parameters) [12211 12217]))              ) nil [12133 15802])
+            ("CmdLineOptions" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [15905 15944])
+                            ("self" code nil (reparse-symbol indented_block_body) [15953 16110])
+                            ("self" code nil (reparse-symbol indented_block_body) [16119 16266])
+                            ("self" code nil (reparse-symbol indented_block_body) [16275 16434])
+                            ("self" code nil (reparse-symbol indented_block_body) [16443 16574])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16583 16628]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15884 15888])
+                            ("argv" variable nil (reparse-symbol function_parameters) [15890 15894]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [15871 16629])
+                    ("getAnswersFile" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16653 16657]))                          )
+                        (reparse-symbol indented_block_body) [16634 16703])
+                    ("getCorinthYamlOutput" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16733 16737]))                          )
+                        (reparse-symbol indented_block_body) [16708 16789])
+                    ("getCoreYamlOutput" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16816 16820]))                          )
+                        (reparse-symbol indented_block_body) [16794 16869])
+                    ("getIPName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16888 16892]))                          )
+                        (reparse-symbol indented_block_body) [16874 16933]))                  
+                :type "class")
+                nil [15844 16933])
+            ("if" code nil nil [16934 18163]))          
+      :file "Answers2Yaml.py"
+      :pointmax 18164
+      :fsize 18849
+      :lastmodtime '(23449 19427 544089 0)
+      :unmatched-syntax '((INDENT_BLOCK 18093 . 18163) (NEWLINE 18092 . 18093) (COLON 18091 . 18092) (TRY 16965 . 16968) (AS 18087 . 18089)))
+    (semanticdb-table "DSM_TB_SCRIPT_gen.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [122 136])
+            ("sys" include nil nil [137 147])
+            ("argparse" include nil nil [148 163])
+            ("os" include nil nil [164 173])
+            ("stat" include nil nil [174 185])
+            ("CmdLineOptions" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [288 327])
+                            ("self" code nil (reparse-symbol indented_block_body) [336 470])
+                            ("self" code nil (reparse-symbol indented_block_body) [479 633])
+                            ("self" code nil (reparse-symbol indented_block_body) [642 801])
+                            ("self" variable nil (reparse-symbol indented_block_body) [810 855]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [267 271])
+                            ("argv" variable nil (reparse-symbol function_parameters) [273 277]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [254 856])
+                    ("getIPName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [875 879]))                          )
+                        (reparse-symbol indented_block_body) [861 920])
+                    ("getTestbenchDir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [945 949]))                          )
+                        (reparse-symbol indented_block_body) [925 997])
+                    ("getTarmacFilename" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1024 1028]))                          )
+                        (reparse-symbol indented_block_body) [1002 1173]))                  
+                :type "class")
+                nil [227 1173])
+            ("if" code nil nil [1218 6715]))          
+      :file "DSM_TB_SCRIPT_gen.py"
+      :pointmax 6717
+      :fsize 6756
+      :lastmodtime '(23422 46530 324902 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "DSM_utils.py"
+      :file "DSM_utils.py"
+      :fsize 1364
+      :lastmodtime '(23428 1291 0 0)))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!Scripts!mk_pkg!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

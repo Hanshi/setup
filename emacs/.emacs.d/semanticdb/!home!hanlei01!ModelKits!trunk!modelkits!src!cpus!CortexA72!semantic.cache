@@ -1,0 +1,461 @@
+;; Object CortexA72/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "CortexA72/"
+  :tables
+  (list
+    (semanticdb-table "CarbonMemSystem.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [576 593])
+            ("sstream" include (:system-flag t) nil [594 612])
+            ("assert.h" include (:system-flag t) nil [613 632])
+            ("CARBONMEM_OVERRIDES" variable (:constant-flag t) nil [670 689])
+            ("carbon/carbon_capi.h" include nil nil [697 728])
+            ("carbon/CarbonCADITypes.h" include nil nil [729 764])
+            ("carbon/carbon_dbapi.h" include nil nil [765 797])
+            ("common/CarbonComponentHelper.h" include nil nil [799 840])
+            ("cpus/CortexA72/CarbonMemSystem.h" include nil nil [841 884])
+            ("cpus/CortexA72/CarbonMMUAccess.h" include nil nil [885 928])
+            ("common/carbon_mkversion.h" include nil nil [970 1006])
+            ("eslapi/CADI.h" include nil nil [1008 1032])
+            ("eslapi" using (:type ("eslapi" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1034 1057])
+            ("Carbon::ArchRestoreHandlerIF" using (:type ("Carbon::ArchRestoreHandlerIF" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1058 1103])
+            ("CARBON_MKLIB_NAMESPACE" using (:type ("CARBON_MKLIB_NAMESPACE" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1105 1144])
+            ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYCORTEXA72" using (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYCORTEXA72" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1145 1210])
+            ("CarbonMemSystem" function
+               (:constructor-flag t
+                :parent "CarbonMemSystem"
+                :arguments 
+                  ( ("trustZone" variable (:type ("CARBON_MKLIB_NAMESPACE::CarbonTrustZone::TrustZone" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1245 1306])
+                    ("cpuNum" variable (:type "int") (reparse-symbol arg-sub-list) [1307 1318])
+                    ("compHelper" variable
+                       (:pointer 1
+                        :type ("CarbonComponentHelperIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1353 1389])
+                    ("cadi" variable
+                       (:pointer 1
+                        :type ("eslapi::CADI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1390 1409])
+                    ("memSystemIdx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1410 1436]))                  
+                :type ("CarbonMemSystem" type (:type "class") nil nil))
+                nil [1212 1930])
+            ("CarbonMemSystem" function
+               (:destructor-flag t
+                :parent "CarbonMemSystem"
+                :type "void")
+                nil [1934 1974])
+            ("set_total_num_cpu" function
+               (:parent "CarbonMemSystem"
+                :type "void")
+                nil [1976 2222])
+            ("setupL1Nets" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("cpuNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2522 2538]))                  
+                :type "void")
+                nil [2488 3828])
+            ("setupL2Nets" function
+               (:parent "CarbonMemSystem"
+                :type "void")
+                nil [3923 5578])
+            ("read" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("va" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5645 5657])
+                    ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5658 5670])
+                    ("bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5671 5686])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5687 5700]))                  
+                :type "bool")
+                nil [5618 7521])
+            ("readinternal" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("va" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7565 7577])
+                    ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7578 7590])
+                    ("bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7591 7606])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7607 7620]))                  
+                :type "bool")
+                nil [7530 9019])
+            ("write" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("va" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9090 9102])
+                    ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9103 9115])
+                    ("bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9116 9131])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9132 9151]))                  
+                :type "bool")
+                nil [9062 10342])
+            ("writeinternal" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("va" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10409 10421])
+                    ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10422 10434])
+                    ("bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10435 10450])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10451 10470]))                  
+                :type "bool")
+                nil [10373 11415])
+            ("accessL1CacheData" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("isWrite" variable (:type "bool") (reparse-symbol arg-sub-list) [11498 11511])
+                    ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11512 11524])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11525 11539])
+                    ("profiling" variable (:type "bool") (reparse-symbol arg-sub-list) [11540 11555])
+                    ("cpu" variable (:type "int") (reparse-symbol arg-sub-list) [11556 11564])
+                    ("isDirty" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [11565 11579]))                  
+                :type "bool")
+                nil [11458 13897])
+            ("accessL2CacheData" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("isWrite" variable (:type "bool") (reparse-symbol arg-sub-list) [13984 13997])
+                    ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13998 14010])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14011 14025])
+                    ("profiling" variable (:type "bool") (reparse-symbol arg-sub-list) [14026 14041])
+                    ("isDirty" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [14042 14056]))                  
+                :type "bool")
+                nil [13944 17073])
+            ("cacheHitL2" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("way" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17153 17166])
+                    ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17167 17179])
+                    ("tagBank" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17180 17197])
+                    ("tagMask" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17198 17215])
+                    ("tagAddr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17252 17269])
+                    ("isDirty" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [17270 17284]))                  
+                :type "bool")
+                nil [17120 18737])
+            ("cacheHitL1" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("way" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18811 18824])
+                    ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18825 18837])
+                    ("cpu" variable (:type "int") (reparse-symbol arg-sub-list) [18838 18846])
+                    ("isDirty" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [18847 18861]))                  
+                :type "bool")
+                nil [18778 20577])
+            ("setCacheData" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("va" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20652 20664])
+                    ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20665 20677])
+                    ("data" variable (:type ("CarbonUInt8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20678 20695])
+                    ("profiling" variable (:type "bool") (reparse-symbol arg-sub-list) [20696 20711]))                  
+                :type "bool")
+                nil [20617 21065])
+            ("restore" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21199 21223])
+                    ("stream" variable
+                       (:reference 1
+                        :type ("RestoreArchStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21224 21250]))                  
+                :type "int")
+                nil [21170 24495])
+            ("restoreL2Cache" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24889 24901])
+                    ("tag" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24902 24915])
+                    ("way" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24916 24929])
+                    ("shareability" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24930 24951])
+                    ("dirty" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24952 24966])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24967 24981])
+                    ("validate" variable (:type "bool") (reparse-symbol arg-sub-list) [24982 24996]))                  
+                :type "void")
+                nil [24852 31021])
+            ("setMMUSystem" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("mmu" variable
+                       (:pointer 1
+                        :type ("CarbonMMUAccess" type
+                             (:prototype t
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31101 31128]))                  
+                :type "void")
+                nil [31066 31158])
+            ("findNet" function
+               (:pointer 1
+                :parent "CarbonMemSystem"
+                :arguments 
+                  ( ("netPath" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31200 31227]))                  
+                :type ("CarbonNetID" type (:type "class") nil nil))
+                nil [31162 31505])
+            ("findMemory" function
+               (:pointer 1
+                :parent "CarbonMemSystem"
+                :arguments 
+                  ( ("memPath" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31553 31580]))                  
+                :type ("CarbonMemoryID" type (:type "class") nil nil))
+                nil [31509 31867]))          
+      :file "CarbonMemSystem.cpp"
+      :pointmax 31869
+      :fsize 31868
+      :lastmodtime '(22170 63621 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CARBONMEM_OVERRIDES")
+          )
+)
+    (semanticdb-table "PCStateMachine.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sstream" include (:system-flag t) nil [515 533])
+            ("common/CarbonComponentHelper.h" include nil nil [534 575])
+            ("cpus/CortexA72/PCStateMachine.h" include nil nil [576 618])
+            ("common/PCTraceReporter.h" include nil nil [619 654])
+            ("carbon/carbon_dbapi.h" include nil nil [655 687])
+            ("CARBON_MKLIB_NAMESPACE" using (:type ("CARBON_MKLIB_NAMESPACE" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [690 729])
+            ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYCORTEXA72" using (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYCORTEXA72" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [730 795])
+            ("PCStateMachine" function
+               (:constructor-flag t
+                :parent "PCStateMachine"
+                :arguments 
+                  ( ("coreNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [828 845])
+                    ("compHelper" variable
+                       (:pointer 1
+                        :type ("CarbonComponentHelper" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [877 911])
+                    ("semiHost" variable
+                       (:pointer 1
+                        :type ("CarbonSemiHostMasterPort" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [943 978])
+                    ("semiHostCallback" variable
+                       (:pointer 1
+                        :type ("SemihostingCallback" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1010 1048]))                  
+                :type ("PCStateMachine" type (:type "class") nil nil))
+                nil [797 7965])
+            ("PCStateMachine" function
+               (:destructor-flag t
+                :parent "PCStateMachine"
+                :type "void")
+                nil [7967 8004])
+            ("getDebugHaltInstructions" function
+               (:parent "PCStateMachine"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("CARBON_MKLIB_NAMESPACE::PCStateMachineBase::DebugInstruction" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [8006 9044])
+            ("getDebugPCDepositInstructions" function
+               (:parent "PCStateMachine"
+                :type ("CARBON_MKLIB_NAMESPACE::PCStateMachineBase::DebugInstruction" type (:type "class") nil nil))
+                nil [9049 10072])
+            ("getTBit" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [10075 10216])
+            ("isAArch32" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [10326 10537])
+            ("depositHaltRequest" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("val" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10580 10597]))                  
+                :type "void")
+                nil [10540 10907])
+            ("putBreakOnSVCException" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [10953 10965]))                  
+                :type "void")
+                nil [10909 11712])
+            ("depositInstruction" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("instr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DebugInstruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11754 11784]))                  
+                :type "void")
+                nil [11714 12455])
+            ("depositRestart" function
+               (:parent "PCStateMachine"
+                :type "void")
+                nil [12457 13006])
+            ("enableStall" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("match" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13041 13060])
+                    ("doStep" variable (:type "bool") (reparse-symbol arg-sub-list) [13061 13073]))                  
+                :type "void")
+                nil [13008 15729])
+            ("readRTLValues" function
+               (:parent "PCStateMachine"
+                :type "void")
+                nil [15731 18635])
+            ("updateCommittedPCs" function
+               (:parent "PCStateMachine"
+                :type "void")
+                nil [18638 25843])
+            ("saveDebugScratchRegisters" function
+               (:parent "PCStateMachine"
+                :type "void")
+                nil [25845 25998])
+            ("restoreDebugScratchRegisters" function
+               (:parent "PCStateMachine"
+                :type "void")
+                nil [26000 26601])
+            ("isStalled" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [26603 26955])
+            ("isInstructionComplete" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [26957 28196])
+            ("isRestarted" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [28198 30412])
+            ("correctAddressMatch" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("addressMatch" variable (:type "bool") (reparse-symbol arg-sub-list) [30924 30942])
+                    ("bpAddrToCheck" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30943 30970]))                  
+                :type "bool")
+                nil [30883 32825])
+            ("findNet" function
+               (:pointer 1
+                :parent "PCStateMachine"
+                :arguments 
+                  ( ("netName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32864 32884]))                  
+                :type ("CarbonNetID" type (:type "class") nil nil))
+                nil [32827 33164])
+            ("findCpuNet" function
+               (:pointer 1
+                :parent "PCStateMachine"
+                :arguments 
+                  ( ("netName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33206 33226]))                  
+                :type ("CarbonNetID" type (:type "class") nil nil))
+                nil [33166 33441])
+            ("carbonExamine64" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("pcNetLo" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33488 33510])
+                    ("pcNetHi" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33511 33533]))                  
+                :type ("CarbonUInt64" type (:type "class") nil nil))
+                nil [33443 33850])
+            ("carbonDeposit64" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("pcNetLo" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33889 33911])
+                    ("pcNetHi" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33912 33934])
+                    ("depositValue" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33935 33961]))                  
+                :type "void")
+                nil [33852 34301])
+            ("carbonForce64" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("pcNetLo" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34338 34360])
+                    ("pcNetHi" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34360 34382])
+                    ("depositValue" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34384 34410]))                  
+                :type "void")
+                nil [34303 34812]))          
+      :file "PCStateMachine.cpp"
+      :pointmax 34814
+      :fsize 34813
+      :lastmodtime '(21990 8472 0 0)
+      :unmatched-syntax '((punctuation 10072 . 10073) (punctuation 9044 . 9045))))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!src!cpus!CortexA72!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

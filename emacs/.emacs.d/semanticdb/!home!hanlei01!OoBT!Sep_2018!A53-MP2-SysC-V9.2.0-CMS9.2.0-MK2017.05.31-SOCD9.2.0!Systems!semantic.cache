@@ -1,0 +1,38 @@
+;; Object Systems/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Systems/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/RAMBlock.h" include nil nil [831 859])
+            ("models/SimpleBus.h" include nil nil [860 889])
+            ("models/BasicUART.h" include nil nil [890 919])
+            ("models/ElfLoader.h" include nil nil [920 949])
+            ("CORTEXA53_2CPU_AXI3Imp.h" include nil nil [950 985])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [986 1032])
+            ("iostream" include (:system-flag t) nil [1034 1053])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1055 1079])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1094 1103])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1104 1117]))                  
+                :type "int")
+                nil [1082 3849]))          
+      :file "system_test.cpp"
+      :pointmax 3850
+      :fsize 3849
+      :lastmodtime '(23449 42081 993292 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!OoBT!Sep_2018!A53-MP2-SysC-V9.2.0-CMS9.2.0-MK2017.05.31-SOCD9.2.0!Systems!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,60 @@
+;; Object SystemC_PMU/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC_PMU/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [846 875])
+            ("models/RAMBlock.h" include nil nil [876 904])
+            ("models/SimpleBus.h" include nil nil [905 934])
+            ("models/BasicUART.h" include nil nil [935 964])
+            ("models/ElfLoader.h" include nil nil [965 994])
+            ("libCortexM7.tlm.h" include nil nil [995 1023])
+            ("feature_runner.h" include nil nil [1024 1051])
+            ("tlm_utils/simple_target_socket.h" include (:system-flag t) nil [1052 1095])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [1096 1142])
+            ("iostream" include (:system-flag t) nil [1144 1163])
+            ("scx/scx.h" include (:system-flag t) nil [1165 1185])
+            ("scx_simcontroller.cpp" include (:system-flag t) nil [1186 1218])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1219 1255])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1256 1289])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1291 1315])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1329 1338])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1339 1352]))                  
+                :type "int")
+                nil [1317 3588]))          
+      :file "system_test.cpp"
+      :pointmax 3589
+      :fsize 3588
+      :lastmodtime '(23163 4582 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++" "-O2" "-DSC_INCLUDE_DYNAMIC_PROCESSES" "-Wall" "-Wextra" "-Werror" "-Wno-unused-parameter" "-std=c++11")) nil [90 190])
+            ("M7_DIR" variable (:default-value ("./MODELS/CortexM7/M7_1FPU_16DCache_16ICache/gcc/SystemC")) nil [310 375])
+            ("FEATURE_RUNNER_DIR" variable (:default-value ("../../../../Common/TestGenerator/PMUTest/")) nil [375 438])
+            ("CM_SYSC_HOME" variable (:default-value ("$(CM_SYSC_PACKAGE)/rel_ext")) nil [438 480])
+            ("$(CM_SYSC_HOME)/makefiles/cm_sysc_common.mak" include nil nil [481 534])
+            ("system_test" function (:arguments ("system_test.o" "$(M7_DIR)/libCortexM7.tlm.a" "$(M7_DIR)/lib/libCortexM7.a" "$(FM_LIB)")) nil [535 1089])
+            ("system_test.o" function (:arguments ("system_test.cpp")) nil [1090 1442])
+            ("clean" function nil nil [1443 1474]))          
+      :file "Makefile"
+      :pointmax 1476
+      :fsize 1475
+      :lastmodtime '(23163 4582 0 0)
+      :unmatched-syntax '((symbol 296 . 309) (semantic-list 282 . 296) (punctuation 281 . 282) (punctuation 279 . 280) (punctuation 278 . 279) (symbol 266 . 277) (bol 266 . 266) (symbol 256 . 265) (semantic-list 242 . 256) (punctuation 241 . 242) (punctuation 239 . 240) (punctuation 238 . 239) (symbol 226 . 237) (bol 226 . 226))))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!CortexM7!Simulation!SystemC_PMU!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

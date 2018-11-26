@@ -1,0 +1,1098 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "littleCore_pmu.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("LITTLECORE_PMU_H" variable (:constant-flag t) nil [97 113])
+            ("littleCore_pmu" type
+               (:superclasses 
+                  ( ("scx_wrapper_feature" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [167 175])
+                    ("pmu_0x08_INST_RETIRED_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [178 225])
+                    ("pmu_0x09_EXC_TAKEN_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [227 271])
+                    ("pmu_0x0A_EXC_RETURN_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [273 318])
+                    ("pmu_0x0B_CID_WRITE_RETIRED_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [320 372])
+                    ("pmu_0x06_LD_RETIRED_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [374 419])
+                    ("pmu_0x07_ST_RETIRED_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [421 466])
+                    ("pmu_0x0C_PC_WRITE_RETIRED_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [468 519])
+                    ("pmu_0x0D_BR_IMMED_RETIRED_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [521 572])
+                    ("pmu_0x0E_BR_RETURN_RETIRED_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [574 626])
+                    ("pmu_0x0F_UNALIGNED_LDST_RETIRED_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [628 685])
+                    ("pmu_0x10_BR_MIS_PRED_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [687 733])
+                    ("pmu_0x12_BR_PRED_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [735 777])
+                    ("pmu_0x1B_INST_SPEC_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [779 823])
+                    ("pmu_0x21_BR_RETIRED_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [825 870])
+                    ("pmu_0x22_BR_MIS_PRED_RETIRED_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [872 926])
+                    ("pmu_0x23_STALL_FRONTEND_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [928 977])
+                    ("pmu_0x24_STALL_BACKEND_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [979 1027])
+                    ("pmu_0x70_LD_SPEC_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1029 1071])
+                    ("pmu_0x71_ST_SPEC_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1073 1115])
+                    ("pmu_0x72_LDST_SPEC_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1117 1161])
+                    ("pmu_0x73_DP_SPEC_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1163 1205])
+                    ("pmu_0x74_ASE_SPEC_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1207 1250])
+                    ("pmu_0x75_VFP_SPEC_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1252 1295])
+                    ("pmu_0x76_PC_SPEC_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1297 1339])
+                    ("pmu_0x77_CRYPTO_SPEC_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1341 1387])
+                    ("pmu_0x78_BR_IMMED_SPEC_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1389 1437])
+                    ("pmu_0x79_BR_RETURN_SPEC_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1439 1488])
+                    ("pmu_0x7A_BR_INDIRECT_SPEC_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1490 1541])
+                    ("pmu_0xC9_BR_COND_PRED_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1543 1590])
+                    ("pmu_0xCA_BR_INDIRECT_MIS_PRED_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1592 1647])
+                    ("pmu_0xCB_BR_INDIRECT_ADDR_MIS_PRED_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1649 1709])
+                    ("pmu_0xCC_BR_COND_MIS_PRED_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1711 1762])
+                    ("pmu_0xCD_BR_INDIRECT_ADDR_PRED_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1764 1820])
+                    ("pmu_0xCE_BR_RETURN_ADDR_PRED_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1822 1876])
+                    ("pmu_0xCF_BR_RETURN_ADDR_MIS_PRED_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1878 1936])
+                    ("pmu_0x01_L1I_CACHE_REFILL_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1938 1989])
+                    ("pmu_0x02_L1I_TLB_REFILL_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1991 2040])
+                    ("pmu_0x14_L1I_CACHE_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2042 2086])
+                    ("pmu_0x03_L1D_CACHE_REFILL_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2088 2139])
+                    ("pmu_0x04_L1D_CACHE_ACCESS_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2141 2192])
+                    ("pmu_0x05_L1D_TLB_REFILL_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2194 2243])
+                    ("pmu_0x15_L1D_CACHE_WB_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2245 2292])
+                    ("pmu_0x40_L1D_CACHE_RD_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2294 2341])
+                    ("pmu_0x41_L1D_CACHE_WR_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2343 2390])
+                    ("pmu_0x42_L1D_CACHE_REFILL_RD_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2392 2446])
+                    ("pmu_0x43_L1D_CACHE_REFILL_WR_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2448 2502])
+                    ("pmu_0x44_L1D_CACHE_REFILL_INNER_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2504 2561])
+                    ("pmu_0x45_L1D_CACHE_REFILL_OUTER_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2563 2620])
+                    ("pmu_0xC2_L1D_CACHE_REFILL_PREFETCH_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2622 2682])
+                    ("pmu_0xC4_L1D_WS_MODE_ENTRY_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2684 2736])
+                    ("pmu_0xC5_L1D_WS_MODE_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2738 2784])
+                    ("pmu_0xC1_L2D_CACHE_REFILL_PREFETCH_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2786 2846])
+                    ("pmu_0x16_L2D_CACHE_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2848 2892])
+                    ("pmu_0x17_L2D_CACHE_REFILL_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2894 2945])
+                    ("pmu_0x18_L2D_CACHE_WB_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2947 2994])
+                    ("pmu_0x20_L2D_CACHE_ALLOCATE_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2996 3049])
+                    ("pmu_0x2D_L2D_TLB_REFILL_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3051 3100])
+                    ("pmu_0x2F_L2D_TLB_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3102 3144])
+                    ("pmu_0x50_L2D_CACHE_RD_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3146 3193])
+                    ("pmu_0x51_L2D_CACHE_WR_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3195 3242])
+                    ("pmu_0x52_L2D_CACHE_REFILL_RD_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3244 3298])
+                    ("pmu_0x53_L2D_CACHE_REFILL_WR_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3300 3354])
+                    ("pmu_0xC3_L2D_WS_MODE_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3356 3402])
+                    ("pmu_0x29_L3D_CACHE_ALLOCATE_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3404 3457])
+                    ("pmu_0x2A_L3D_CACHE_REFILL_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3459 3510])
+                    ("pmu_0x2B_L3D_CACHE_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3512 3556])
+                    ("pmu_0xA0_L3D_CACHE_RD_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3558 3605])
+                    ("pmu_0xA2_L3D_CACHE_REFILL_RD_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3607 3661])
+                    ("pmu_0xC0_L3D_CACHE_REFILL_PREFETCH_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3663 3723])
+                    ("pmu_0xC7_L3D_WS_MODE_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3725 3771])
+                    ("pmu_0x13_MEM_ACCESS_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3773 3818])
+                    ("pmu_0x1A_MEMORY_ERROR_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3820 3867])
+                    ("pmu_0xC6_PREDECODE_ERROR_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3869 3919])
+                    ("pmu_0xD0_L2D_LLWALK_TLB_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3921 3970])
+                    ("pmu_0xD1_L2D_LLWALK_TLB_REFILL_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3972 4028])
+                    ("pmu_0xD4_L2D_S2_TLB_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4030 4075])
+                    ("pmu_0xD5_L2D_S2_TLB_REFILL_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4077 4129])
+                    ("pmu_0x1C_TTBR_WRITE_RETIRED_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4131 4184])
+                    ("pmu_0x25_L1D_TLB_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4186 4228])
+                    ("pmu_0x26_L11_TLB_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4230 4272])
+                    ("pmu_0x34_DTLB_WALK_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4274 4318])
+                    ("pmu_0x35_ITLB_WALK_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4320 4364])
+                    ("pmu_0x36_LL_CACHE_RD_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4366 4412])
+                    ("pmu_0x37_LL_CACHE_MISS_RD_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4414 4465])
+                    ("pmu_0x38_REMOTE_ACCESS_RD_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4467 4518])
+                    ("pmu_0x66_MEM_ACCESS_RD_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4520 4568])
+                    ("pmu_0x67_MEM_ACCESS_WR_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4570 4618])
+                    ("pmu_0x19_BUS_ACCESS_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4620 4665])
+                    ("pmu_0x1D_BUS_CYCLES_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4667 4712])
+                    ("pmu_0x60_BUS_ACCESS_LD_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4714 4762])
+                    ("pmu_0x61_BUS_ACCESS_ST_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4764 4812])
+                    ("pmu_0x1E_CHAIN_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4814 4854])
+                    ("pmu_0xC6_PREDECODE_ERR_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4856 4904])
+                    ("pmu_0xE1_STALL_FRONTEND_CACHE_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4906 4961])
+                    ("pmu_0xE2_STALL_FRONTEND_TLB_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4963 5016])
+                    ("pmu_0xE3_STALL_FRONTEND_PDERR_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5018 5073])
+                    ("pmu_0xE4_STALL_BACKEND_ILOCK_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5075 5129])
+                    ("pmu_0xE5_STALL_BACKEND_ILOCK_AGU_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5131 5189])
+                    ("pmu_0xE6_STALL_BACKEND_ILOCK_FPU_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5191 5249])
+                    ("pmu_0xE7_STALL_BACKEND_LD_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5251 5302])
+                    ("pmu_0xE8_STALL_BACKEND_ST_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5304 5355])
+                    ("pmu_0xE9_STALL_BACKEND_LD_CACHE_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5357 5414])
+                    ("pmu_0xEA_STALL_BACKEND_LD_TLB_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5416 5471])
+                    ("pmu_0x11_CPU_CYCLES_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5473 5518])
+                    ("pmu_0x86_EXC_IRQ_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5520 5562])
+                    ("pmu_0x87_EXC_FIQ_Ananke0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5564 5606])
+                    ("mCarbonNet_enable_clkEnableAnanke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5608 5661])
+                    ("mCarbonNet_enable_0_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5663 5709])
+                    ("mCarbonNet_enable_1_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5711 5757])
+                    ("mCarbonNet_enable_2_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5759 5805])
+                    ("mCarbonNet_enable_3_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5807 5853])
+                    ("mCarbonNet_enable_4_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5855 5901])
+                    ("mCarbonNet_enable_5_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5903 5949])
+                    ("mCarbonNet_enable_6_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5951 5997])
+                    ("mCarbonNet_enable_7_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5999 6045])
+                    ("mCarbonNet_pmu_0x08_INST_RETIRED_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6047 6106])
+                    ("mCarbonNet_pmu_0x09_EXC_TAKEN_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6108 6164])
+                    ("mCarbonNet_pmu_0x0A_EXC_RETURN_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6166 6223])
+                    ("mCarbonNet_pmu_0x0B_CID_WRITE_RETIRED_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6225 6289])
+                    ("mCarbonNet_pmu_0x06_LD_RETIRED_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6291 6348])
+                    ("mCarbonNet_pmu_0x07_ST_RETIRED_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6350 6407])
+                    ("mCarbonNet_pmu_0x0C_PC_WRITE_RETIRED_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6409 6472])
+                    ("mCarbonNet_pmu_0x0D_BR_IMMED_RETIRED_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6474 6537])
+                    ("mCarbonNet_pmu_0x0E_BR_RETURN_RETIRED_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6539 6603])
+                    ("mCarbonNet_pmu_0x0F_UNALIGNED_LDST_RETIRED_ld_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6605 6677])
+                    ("mCarbonNet_pmu_0x0F_UNALIGNED_LDST_RETIRED_st_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6679 6751])
+                    ("mCarbonNet_pmu_0x10_BR_MIS_PRED_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6753 6811])
+                    ("mCarbonNet_pmu_0x12_BR_PRED_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6813 6867])
+                    ("mCarbonNet_pmu_0x1B_INST_SPEC_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6869 6925])
+                    ("mCarbonNet_pmu_0x21_BR_RETIRED_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6927 6984])
+                    ("mCarbonNet_pmu_0x22_BR_MIS_PRED_RETIRED_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6986 7052])
+                    ("mCarbonNet_pmu_0x23_STALL_FRONTEND_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7054 7115])
+                    ("mCarbonNet_pmu_0x24_STALL_BACKEND_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7117 7177])
+                    ("mCarbonNet_pmu_0x70_LD_SPEC_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7179 7233])
+                    ("mCarbonNet_pmu_0x71_ST_SPEC_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7235 7289])
+                    ("mCarbonNet_pmu_0x72_LDST_SPEC_ld_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7291 7350])
+                    ("mCarbonNet_pmu_0x72_LDST_SPEC_st_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7352 7411])
+                    ("mCarbonNet_pmu_0x73_DP_SPEC_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7413 7467])
+                    ("mCarbonNet_pmu_0x74_ASE_SPEC_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7469 7524])
+                    ("mCarbonNet_pmu_0x75_VFP_SPEC_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7526 7581])
+                    ("mCarbonNet_pmu_0x76_PC_SPEC_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7583 7637])
+                    ("mCarbonNet_pmu_0x77_CRYPTO_SPEC_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7639 7697])
+                    ("mCarbonNet_pmu_0x78_BR_IMMED_SPEC_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7699 7759])
+                    ("mCarbonNet_pmu_0x79_BR_RETURN_SPEC_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7761 7822])
+                    ("mCarbonNet_pmu_0x7A_BR_INDIRECT_SPEC_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7824 7887])
+                    ("mCarbonNet_pmu_0xC9_BR_COND_PRED_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7889 7948])
+                    ("mCarbonNet_pmu_0xCA_BR_INDIRECT_MIS_PRED_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7950 8017])
+                    ("mCarbonNet_pmu_0xCB_BR_INDIRECT_ADDR_MIS_PRED_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8019 8091])
+                    ("mCarbonNet_pmu_0xCC_BR_COND_MIS_PRED_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8093 8156])
+                    ("mCarbonNet_pmu_0xCD_BR_INDIRECT_ADDR_PRED_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8158 8226])
+                    ("mCarbonNet_pmu_0xCE_BR_RETURN_ADDR_PRED_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8228 8294])
+                    ("mCarbonNet_pmu_0xCF_BR_RETURN_ADDR_MIS_PRED_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8296 8366])
+                    ("mCarbonNet_pmu_0x01_L1I_CACHE_REFILL_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8368 8431])
+                    ("mCarbonNet_pmu_0x02_L1I_TLB_REFILL_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8433 8494])
+                    ("mCarbonNet_pmu_0x14_L1I_CACHE_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8496 8552])
+                    ("mCarbonNet_pmu_0x03_L1D_CACHE_REFILL_ld_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8554 8620])
+                    ("mCarbonNet_pmu_0x03_L1D_CACHE_REFILL_st_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8622 8688])
+                    ("mCarbonNet_pmu_0x04_L1D_CACHE_ACCESS_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8690 8753])
+                    ("mCarbonNet_pmu_0x05_L1D_TLB_REFILL_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8755 8816])
+                    ("mCarbonNet_pmu_0x15_L1D_CACHE_WB_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8818 8877])
+                    ("mCarbonNet_pmu_0x40_L1D_CACHE_RD_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8879 8938])
+                    ("mCarbonNet_pmu_0x41_L1D_CACHE_WR_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8940 8999])
+                    ("mCarbonNet_pmu_0x42_L1D_CACHE_REFILL_RD_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9001 9067])
+                    ("mCarbonNet_pmu_0x43_L1D_CACHE_REFILL_WR_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9069 9135])
+                    ("mCarbonNet_pmu_0x44_L1D_CACHE_REFILL_INNER_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9137 9206])
+                    ("mCarbonNet_pmu_0x45_L1D_CACHE_REFILL_OUTER_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9208 9277])
+                    ("mCarbonNet_pmu_0xC2_L1D_CACHE_REFILL_PREFETCH_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9279 9351])
+                    ("mCarbonNet_pmu_0xC4_L1D_WS_MODE_ENTRY_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9353 9417])
+                    ("mCarbonNet_pmu_0xC5_L1D_WS_MODE_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9419 9477])
+                    ("mCarbonNet_pmu_0xC1_L2D_CACHE_REFILL_PREFETCH_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9479 9551])
+                    ("mCarbonNet_pmu_0x16_L2D_CACHE_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9553 9609])
+                    ("mCarbonNet_pmu_0x17_L2D_CACHE_REFILL_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9611 9674])
+                    ("mCarbonNet_pmu_0x18_L2D_CACHE_WB_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9676 9735])
+                    ("mCarbonNet_pmu_0x20_L2D_CACHE_ALLOCATE_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9737 9802])
+                    ("mCarbonNet_pmu_0x2D_L2D_TLB_REFILL_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9804 9865])
+                    ("mCarbonNet_pmu_0x2F_L2D_TLB_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9867 9921])
+                    ("mCarbonNet_pmu_0x50_L2D_CACHE_RD_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9923 9982])
+                    ("mCarbonNet_pmu_0x51_L2D_CACHE_WR_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9984 10043])
+                    ("mCarbonNet_pmu_0x52_L2D_CACHE_REFILL_RD_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10045 10111])
+                    ("mCarbonNet_pmu_0x53_L2D_CACHE_REFILL_WR_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10113 10179])
+                    ("mCarbonNet_pmu_0xC3_L2D_WS_MODE_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10181 10239])
+                    ("mCarbonNet_pmu_0x29_L3D_CACHE_ALLOCATE_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10241 10306])
+                    ("mCarbonNet_pmu_0x2A_L3D_CACHE_REFILL_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10308 10371])
+                    ("mCarbonNet_pmu_0x2B_L3D_CACHE_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10373 10429])
+                    ("mCarbonNet_pmu_0xA0_L3D_CACHE_RD_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10431 10490])
+                    ("mCarbonNet_pmu_0xA2_L3D_CACHE_REFILL_RD_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10492 10558])
+                    ("mCarbonNet_pmu_0xC0_L3D_CACHE_REFILL_PREFETCH_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10560 10632])
+                    ("mCarbonNet_pmu_0xC7_L3D_WS_MODE_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10634 10692])
+                    ("mCarbonNet_pmu_0x13_MEM_ACCESS_ld_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10694 10754])
+                    ("mCarbonNet_pmu_0x13_MEM_ACCESS_st_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10756 10816])
+                    ("mCarbonNet_pmu_0x1A_MEMORY_ERROR_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10818 10877])
+                    ("mCarbonNet_pmu_0xC6_PREDECODE_ERROR_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10879 10941])
+                    ("mCarbonNet_pmu_0xD0_L2D_LLWALK_TLB_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10943 11004])
+                    ("mCarbonNet_pmu_0xD1_L2D_LLWALK_TLB_REFILL_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11006 11074])
+                    ("mCarbonNet_pmu_0xD4_L2D_S2_TLB_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11076 11133])
+                    ("mCarbonNet_pmu_0xD5_L2D_S2_TLB_REFILL_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11135 11199])
+                    ("mCarbonNet_pmu_0x1C_TTBR_WRITE_RETIRED_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11201 11266])
+                    ("mCarbonNet_pmu_0x25_L1D_TLB_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11268 11322])
+                    ("mCarbonNet_pmu_0x26_L11_TLB_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11324 11378])
+                    ("mCarbonNet_pmu_0x34_DTLB_WALK_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11380 11436])
+                    ("mCarbonNet_pmu_0x35_ITLB_WALK_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11438 11494])
+                    ("mCarbonNet_pmu_0x36_LL_CACHE_RD_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11496 11554])
+                    ("mCarbonNet_pmu_0x37_LL_CACHE_MISS_RD_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11556 11619])
+                    ("mCarbonNet_pmu_0x38_REMOTE_ACCESS_RD_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11621 11684])
+                    ("mCarbonNet_pmu_0x66_MEM_ACCESS_RD_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11686 11746])
+                    ("mCarbonNet_pmu_0x67_MEM_ACCESS_WR_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11748 11808])
+                    ("mCarbonNet_pmu_0x19_BUS_ACCESS_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11810 11867])
+                    ("mCarbonNet_pmu_0x1D_BUS_CYCLES_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11869 11926])
+                    ("mCarbonNet_pmu_0x60_BUS_ACCESS_LD_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11928 11988])
+                    ("mCarbonNet_pmu_0x61_BUS_ACCESS_ST_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11990 12050])
+                    ("mCarbonNet_pmu_0x1E_CHAIN_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12052 12104])
+                    ("mCarbonNet_pmu_0xC6_PREDECODE_ERR_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12106 12166])
+                    ("mCarbonNet_pmu_0xE1_STALL_FRONTEND_CACHE_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12168 12235])
+                    ("mCarbonNet_pmu_0xE2_STALL_FRONTEND_TLB_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12237 12302])
+                    ("mCarbonNet_pmu_0xE3_STALL_FRONTEND_PDERR_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12304 12371])
+                    ("mCarbonNet_pmu_0xE4_STALL_BACKEND_ILOCK_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12373 12439])
+                    ("mCarbonNet_pmu_0xE5_STALL_BACKEND_ILOCK_AGU_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12441 12511])
+                    ("mCarbonNet_pmu_0xE6_STALL_BACKEND_ILOCK_FPU_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12513 12583])
+                    ("mCarbonNet_pmu_0xE7_STALL_BACKEND_LD_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12585 12648])
+                    ("mCarbonNet_pmu_0xE8_STALL_BACKEND_ST_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12650 12713])
+                    ("mCarbonNet_pmu_0xE9_STALL_BACKEND_LD_CACHE_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12715 12784])
+                    ("mCarbonNet_pmu_0xEA_STALL_BACKEND_LD_TLB_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12786 12853])
+                    ("mCarbonNet_pmu_0x11_CPU_CYCLES_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12855 12912])
+                    ("mCarbonNet_pmu_0x86_EXC_IRQ_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12914 12968])
+                    ("mCarbonNet_pmu_0x87_EXC_FIQ_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12970 13024])
+                    ("mCarbonNet_pmu_SYSCACKM0_Ananke0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13026 13077])
+                    ("mSYSCACKM0_toggle_Ananke0" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13079 13118])
+                    ("mLastUpdateTime_Ananke0" variable (:type ("CarbonTime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13120 13155])
+                    ("mCurrentUpdateTime_Ananke0" variable (:type ("CarbonTime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13157 13195])
+                    ("public" label nil (reparse-symbol classsubparts) [13199 13206])
+                    ("littleCore_pmu" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("num_cpus" variable (:type "int") (reparse-symbol arg-sub-list) [13224 13237])
+                            ("carbonModelHandle" variable
+                               (:pointer 1
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13238 13272])
+                            ("target" variable
+                               (:reference 1
+                                :type ("scx::scx_debug_target_if" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13272 13305]))                          
+                        :type ("littleCore_pmu" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13209 13509])
+                    ("littleCore_pmu" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [13513 13535])
+                    ("update" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [13539 34600])
+                    ("enable" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [34604 55902])
+                    ("disable" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [55906 55992])
+                    ("end_of_simulation" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [55996 56047])
+                    ("run" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [56051 64888])
+                    ("reset_counts" function (:type "void") (reparse-symbol classsubparts) [64893 68971]))                  
+                :type "class")
+                nil [114 68975]))          
+      :file "littleCore_pmu.h"
+      :pointmax 68983
+      :fsize 68982
+      :lastmodtime '(23016 19813 981505 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LITTLECORE_PMU_H")
+          )
+))
+  :file "!o!work!bosqa!IMK!arm!Models!FCM!mainline!SystemC!ip!Ananke_1CPU_AHmax_TARMAC!gcc483!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

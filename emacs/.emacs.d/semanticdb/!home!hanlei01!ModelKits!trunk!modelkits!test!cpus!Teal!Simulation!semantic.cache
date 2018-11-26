@@ -1,0 +1,459 @@
+;; Object Simulation/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Simulation/"
+  :tables
+  (list
+    (semanticdb-table "functions.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("Memory" variable (:constant-flag t) nil [40 46])
+            ("SECURE" variable (:constant-flag t) nil [57 63])
+            ("NSHYP" variable (:constant-flag t) nil [74 79])
+            ("NORMAL" variable (:constant-flag t) nil [91 97])
+            ("PC" variable (:type "int") nil [101 108])
+            ("instr" variable (:type "int") nil [109 119])
+            ("mem" variable (:type "int") nil [120 176])
+            ("mem0" variable (:type "int") nil [120 176])
+            ("mem1" variable (:type "int") nil [120 176])
+            ("mem2" variable (:type "int") nil [120 176])
+            ("mem3" variable (:type "int") nil [120 176])
+            ("mem4" variable (:type "int") nil [120 176])
+            ("mem5" variable (:type "int") nil [120 176])
+            ("mem6" variable (:type "int") nil [120 176])
+            ("mem7" variable (:type "int") nil [120 176])
+            ("i" variable (:type "int") nil [177 183])
+            ("bptId" variable (:type "int") nil [184 194])
+            ("attempt" variable (:type "int") nil [195 207])
+            ("FAIL" variable
+               (:default-value "0"
+                :type "int")
+                nil [209 222])
+            ("WORD" variable
+               (:default-value "1"
+                :type "int")
+                nil [223 236])
+            ("UPPER_HALF" variable
+               (:default-value "2"
+                :type "int")
+                nil [237 256])
+            ("LOWER_HALF" variable
+               (:default-value "3"
+                :type "int")
+                nil [257 276])
+            ("BYTE0" variable
+               (:default-value "4"
+                :type "int")
+                nil [277 291])
+            ("BYTE1" variable
+               (:default-value "5"
+                :type "int")
+                nil [292 306])
+            ("BYTE2" variable
+               (:default-value "6"
+                :type "int")
+                nil [307 321])
+            ("BYTE3" variable
+               (:default-value "7"
+                :type "int")
+                nil [322 336])
+            ("expected" variable (:type "int") nil [338 351])
+            ("pc" variable (:type "int") nil [352 359])
+            ("nextPC" variable (:type "int") nil [360 371])
+            ("instrCount" variable
+               (:default-value "0"
+                :type "int")
+                nil [372 391])
+            ("regVal" variable (:type "int") nil [393 404])
+            ("regTestCount" variable
+               (:default-value "0"
+                :type "int")
+                nil [405 424])
+            ("regTestFailed" variable
+               (:default-value "0"
+                :type "int")
+                nil [425 445])
+            ("r0Val" variable (:type "int") nil [446 456])
+            ("fpVal" variable (:type "int") nil [457 467])
+            ("result" variable (:type "int") nil [468 479])
+            ("reg0" variable (:type "int") nil [480 507])
+            ("reg1" variable (:type "int") nil [480 507])
+            ("reg2" variable (:type "int") nil [480 507])
+            ("reg3" variable (:type "int") nil [480 507])
+            ("memTestFailed" variable
+               (:default-value "0"
+                :type "int")
+                nil [509 529])
+            ("memTestCount" variable
+               (:default-value "0"
+                :type "int")
+                nil [530 549])
+            ("runToErrorCount" variable
+               (:default-value "0"
+                :type "int")
+                nil [551 573])
+            ("READ_WORD" variable (:constant-flag t) nil [646 655])
+            ("READ_WORD64" variable (:constant-flag t) nil [984 995])
+            ("READ_BYTE" variable (:constant-flag t) nil [1576 1585])
+            ("READ_HALFWORD" variable (:constant-flag t) nil [1709 1722])
+            ("BE_READ_WORD" variable (:constant-flag t) nil [1922 1934])
+            ("WRITE_WORD" variable (:constant-flag t) nil [2261 2271])
+            ("BE_WRITE_WORD" variable (:constant-flag t) nil [2670 2683])
+            ("STEP" variable (:constant-flag t) nil [3047 3051])
+            ("RUNTO" variable (:constant-flag t) nil [3533 3538])
+            ("RUNTODEBUG" variable (:constant-flag t) nil [4364 4374])
+            ("SET_APPLICATION" variable (:constant-flag t) nil [4966 4981])
+            ("paramTempValue" variable (:type ("string" type (:type "class") nil nil)) nil [5305 5327])
+            ("SET_PARAMETER" variable (:constant-flag t) nil [5336 5349])
+            ("checkedResult" variable (:type "int") nil [5622 5640])
+            ("checkedReadBack" variable (:type "int") nil [5641 5661])
+            ("CHECKED_MEM_WRITE" variable (:constant-flag t) nil [5670 5687])
+            ("WriteRegTempValue" variable (:type "int") nil [6191 6213])
+            ("WRITE_REGISTER" variable (:constant-flag t) nil [6222 6236])
+            ("WRITE_PC" variable (:constant-flag t) nil [6924 6932])
+            ("WAVE_FORMAT" variable (:constant-flag t) nil [7148 7159])
+            ("WAVE_FILENAME" variable (:constant-flag t) nil [7522 7535])
+            ("ALIGN_WAVES" variable (:constant-flag t) nil [7671 7682])
+            ("DUMP_WAVES" variable (:constant-flag t) nil [7957 7967])
+            ("VERBOSE_MESSAGES" variable (:constant-flag t) nil [8337 8353])
+            ("DEBUG_ON" variable (:constant-flag t) nil [8760 8768])
+            ("ENABLE_MEMORY_PROFILING" variable (:constant-flag t) nil [9115 9138])
+            ("DISABLE_MEMORY_PROFILING" variable (:constant-flag t) nil [9260 9284])
+            ("DUMP_REG" variable (:constant-flag t) nil [9400 9408])
+            ("DUMP_REG4" variable (:constant-flag t) nil [9521 9530])
+            ("DUMP_CORE_STATE" variable (:constant-flag t) nil [9847 9862])
+            ("DEPOSIT_REG" variable (:constant-flag t) nil [11036 11047])
+            ("CHECK_REGISTER_MASKED_VALUE" variable (:constant-flag t) nil [11154 11181])
+            ("DREG" variable (:constant-flag t) nil [11626 11630])
+            ("DISPLAY_REGISTER_VALUE" variable (:constant-flag t) nil [11677 11699])
+            ("CHECK_REGISTER_VALUE" variable (:constant-flag t) nil [11855 11875])
+            ("CHECK_REGISTER_VALUE_CNTR" variable (:constant-flag t) nil [12432 12457])
+            ("CHECK_REGISTER_SUMMARY" variable (:constant-flag t) nil [13073 13095])
+            ("CHECK_MEMORY_SUMMARY" variable (:constant-flag t) nil [13378 13398])
+            ("CHECK_REGISTER_MEM_VALUE" variable (:constant-flag t) nil [13793 13817])
+            ("CHECK_REGISTER_REG_VALUE" variable (:constant-flag t) nil [14085 14109])
+            ("CHECK_REGISTER_REG_MASKED_VALUE" variable (:constant-flag t) nil [14288 14319])
+            ("CHECK_REGISTER_REG_VALUE_CNTR" variable (:constant-flag t) nil [14522 14551])
+            ("CHECK_REGISTER_REG_VALUE2" variable (:constant-flag t) nil [14749 14774])
+            ("CHECK_REGISTER_REG_VALUE2_CNTR" variable (:constant-flag t) nil [15036 15066])
+            ("CHECK_RESULT" variable (:constant-flag t) nil [15272 15284])
+            ("RUNCYCLES" variable (:constant-flag t) nil [16420 16429])
+            ("BE_CHECK_RESULT" variable (:constant-flag t) nil [16724 16739])
+            ("CHECK_BREAKPOINT" variable (:constant-flag t) nil [17751 17767])
+            ("READ_REGISTER" variable (:constant-flag t) nil [17933 17946])
+            ("CHECK_REGISTER_GOLD" variable (:constant-flag t) nil [18057 18076])
+            ("CHECK_REGISTER" variable (:constant-flag t) nil [18443 18457])
+            ("CHECK_FP_REGISTER" variable (:constant-flag t) nil [18817 18834])
+            ("CHECK_RO_REGISTER" variable (:constant-flag t) nil [19236 19253])
+            ("CHECK_RW_REGISTER" variable (:constant-flag t) nil [19317 19334])
+            ("addBreakpoint" variable (:constant-flag t) nil [19604 19617])
+            ("CHECK_MEMORY_VALUE" variable (:constant-flag t) nil [19788 19806])
+            ("CHECK_REGISTER_CADI_WRITE" variable (:constant-flag t) nil [20573 20598])
+            ("P2V_dump" variable (:constant-flag t) nil [20965 20973])
+            ("PhyReg_dump" variable (:constant-flag t) nil [24244 24255]))          
+      :file "functions.h"
+      :pointmax 30286
+      :fsize 30285
+      :lastmodtime '(22915 28670 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("READ_HALFWORD" (spp-arg-list ("addr") 1722 . 1728) . 
+              ((symbol "mem0" 1733 . 1737) (punctuation "=" 1738 . 1739) (symbol "CADIMemRead" 1740 . 1751) (semantic-list "(CORE, MEMSPACE, addr)" 1751 . 1773) (punctuation ";" 1773 . 1774) (symbol "mem1" 1779 . 1783) (punctuation "=" 1784 . 1785) (symbol "CADIMemRead" 1786 . 1797) (semantic-list "(CORE, MEMSPACE, addr+1)" 1797 . 1821) (punctuation ";" 1821 . 1822) (symbol "mem" 1827 . 1830) (punctuation "=" 1831 . 1832) (semantic-list "(mem1 << 8)" 1833 . 1844) (punctuation "|" 1845 . 1846) (symbol "mem0" 1847 . 1851) (punctuation ";" 1851 . 1852)))
+          ("WRITE_WORD" (spp-arg-list ("addr" "mem") 2271 . 2282) . 
+              ((symbol "mem0" 2290 . 2294) (punctuation "=" 2295 . 2296) (semantic-list "(mem >> 0)" 2297 . 2307) (punctuation "&" 2309 . 2310) (number "0xFF" 2311 . 2315) (punctuation ";" 2315 . 2316) (symbol "mem1" 2321 . 2325) (punctuation "=" 2326 . 2327) (semantic-list "(mem >> 8)" 2328 . 2338) (punctuation "&" 2340 . 2341) (number "0xFF" 2342 . 2346) (punctuation ";" 2346 . 2347) (symbol "mem2" 2352 . 2356) (punctuation "=" 2357 . 2358) (semantic-list "(mem >> 16)" 2359 . 2370) (punctuation "&" 2371 . 2372) (number "0xFF" 2373 . 2377) (punctuation ";" 2377 . 2378) (symbol "mem3" 2383 . 2387) (punctuation "=" 2388 . 2389) (semantic-list "(mem >> 24)" 2390 . 2401) (punctuation "&" 2402 . 2403) (number "0xFF" 2404 . 2408) (punctuation ";" 2408 . 2409) (symbol "CADIMemWrite" 2414 . 2426) (semantic-list "(CORE, MEMSPACE, addr+0, mem0)" 2426 . 2456) (punctuation ";" 2456 . 2457) (symbol "CADIMemWrite" 2462 . 2474) (semantic-list "(CORE, MEMSPACE, addr+1, mem1)" 2474 . 2504) (punctuation ";" 2504 . 2505) (symbol "CADIMemWrite" 2510 . 2522) (semantic-list "(CORE, MEMSPACE, addr+2, mem2)" 2522 . 2552) (punctuation ";" 2552 . 2553) (symbol "CADIMemWrite" 2558 . 2570) (semantic-list "(CORE, MEMSPACE, addr+3, mem3)" 2570 . 2600) (punctuation ";" 2600 . 2601)))
+          ("SET_PARAMETER" (spp-arg-list ("component" "parameterName" "value") 5349 . 5382) . 
+              ((symbol "setParameter" 5387 . 5399) (semantic-list "(component, parameterName, value)" 5399 . 5432) (punctuation ";" 5432 . 5433) (symbol "paramTempValue" 5438 . 5452) (punctuation "=" 5453 . 5454) (symbol "getParameter" 5455 . 5467) (semantic-list "(component, parameterName)" 5467 . 5493) (punctuation ";" 5493 . 5494) (IF "if" 5499 . 5501) (semantic-list "(paramTempValue != value)" 5501 . 5526) (semantic-list "{ \\
+    message(\"WARNING\", \"Failed to set parameter %s.%s\", component, parameterName); \\
+  }" 5527 . 5619)))
+          ("WRITE_PC" (spp-arg-list ("component" "pcValue") 6932 . 6952) . 
+              ((symbol "WRITE_REGISTER" 6957 . 6971) (semantic-list "(component, \"R15\", pcValue)" 6971 . 6998) (punctuation ";" 6998 . 6999) (symbol "PC" 7004 . 7006) (punctuation "=" 7007 . 7008) (symbol "pcValue" 7009 . 7016) (punctuation ";" 7016 . 7017)))
+          ("WAVE_FILENAME" (spp-arg-list ("name") 7535 . 7541) . 
+              ((symbol "message" 7548 . 7555) (semantic-list "(\"INFO\", \"Setting dump format file to %s\", name)" 7555 . 7603) (punctuation ";" 7603 . 7604) (symbol "SET_PARAMETER" 7611 . 7624) (semantic-list "(COMPONENT, \"Waveform File\", name)" 7624 . 7658) (punctuation ";" 7658 . 7659)))
+          ("CHECK_REGISTER_MASKED_VALUE" (spp-arg-list ("reg" "value" "mask") 11181 . 11199) . 
+              ((symbol "regVal" 11204 . 11210) (punctuation "=" 11211 . 11212) (symbol "CADIRegRead" 11213 . 11224) (semantic-list "(CORE, reg)" 11224 . 11235) (punctuation "&" 11236 . 11237) (symbol "mask" 11238 . 11242) (punctuation ";" 11242 . 11243) (symbol "regTestCount" 11248 . 11260) (punctuation "=" 11261 . 11262) (symbol "regTestCount" 11263 . 11275) (punctuation "+" 11276 . 11277) (number "1" 11278 . 11279) (punctuation ";" 11279 . 11280) (IF "if" 11285 . 11287) (semantic-list "(regVal == value)" 11288 . 11305) (semantic-list "{ \\
+    message(\"INFO\", \"%dns, PASS: Register check %s: 0x%x @%d\", getTime(\"ns\"), reg, regVal, getCycleCount()); \\
+  }" 11306 . 11424) (ELSE "else" 11425 . 11429) (semantic-list "{ \\
+    message(\"ERROR\", \"%dns, FAILED: Register check %s: 0x%x, expected: 0x%x @%d\", getTime(\"ns\"), reg, regVal, value, getCycleCount()); \\
+    regTestFailed = regTestFailed + 1; \\
+  }" 11430 . 11615)))
+          ("CHECK_REGISTER_VALUE" (spp-arg-list ("reg" "value") 11875 . 11887) . 
+              ((symbol "regVal" 11892 . 11898) (punctuation "=" 11899 . 11900) (symbol "CADIRegRead" 11901 . 11912) (semantic-list "(CORE, reg)" 11912 . 11923) (punctuation ";" 11923 . 11924) (symbol "regTestCount" 11929 . 11941) (punctuation "=" 11942 . 11943) (symbol "regTestCount" 11944 . 11956) (punctuation "+" 11957 . 11958) (number "1" 11959 . 11960) (punctuation ";" 11960 . 11961) (IF "if" 11966 . 11968) (semantic-list "(regVal == value)" 11969 . 11986) (semantic-list "{ \\
+    message(\"INFO\", \"%dns, PASS: Register check %s: 0x%x @%d\", getTime(\"ns\"), reg, regVal, getCycleCount()); \\
+  }" 11987 . 12105) (ELSE "else" 12106 . 12110) (semantic-list "{ \\
+    message(\"ERROR\", \"%dns, FAILED: Register check %s: 0x%x, expected: 0x%x @%d\", getTime(\"ns\"), reg, regVal, value, getCycleCount()); \\
+    regTestFailed = regTestFailed + 1; \\
+  }" 12111 . 12296)))
+          ("CHECK_MEMORY_SUMMARY" (spp-arg-list nil 13398 . 13400) . 
+              ((IF "if" 13405 . 13407) (semantic-list "((memTestFailed == 0) && (memTestCount > 0))" 13408 . 13452) (semantic-list "{ \\
+    message(\"INFO\", \"%dns, PASSED: Memory check: %d tests\", getTime(\"ns\"), memTestCount); \\
+  }" 13453 . 13552) (ELSE "else" 13553 . 13557) (semantic-list "{ \\
+    message(\"ERROR\", \"%dns, FAILED: Memory check: %d out of %d tests FAILED\", getTime(\"ns\"), memTestFailed, memTestCount); \\
+  }" 13558 . 13690)))
+          ("CHECK_REGISTER_REG_VALUE_CNTR" (spp-arg-list ("reg" "expReg" "diff") 14551 . 14570) . 
+              ((symbol "expected" 14579 . 14587) (punctuation "=" 14588 . 14589) (symbol "CADIRegRead" 14590 . 14601) (semantic-list "(CORE, expReg)" 14601 . 14615) (punctuation ";" 14615 . 14616) (symbol "CHECK_REGISTER_VALUE_CNTR" 14621 . 14646) (semantic-list "(reg, expected, diff)" 14646 . 14667) (punctuation ";" 14667 . 14668)))
+          ("addBreakpoint" (spp-arg-list ("bp") 19617 . 19621) . 
+              ((symbol "result" 19626 . 19632) (punctuation "=" 19633 . 19634) (symbol "bpAdd" 19635 . 19640) (semantic-list "(CORE, bp)" 19640 . 19650) (punctuation ";" 19650 . 19651) (symbol "message" 19656 . 19663) (semantic-list "(\"INFO\", \"bpAdd at 0x%x result = %d\", bp, result)" 19663 . 19712) (punctuation ";" 19712 . 19713)))
+          ("READ_BYTE" (spp-arg-list ("addr") 1585 . 1591) . 
+              ((symbol "mem" 1596 . 1599) (punctuation "=" 1600 . 1601) (symbol "CADIMemRead" 1602 . 1613) (semantic-list "(CORE, MEMSPACE, addr)" 1613 . 1635) (punctuation ";" 1635 . 1636)))
+          ("RUNTODEBUG" (spp-arg-list ("maxAttempts") 4374 . 4387) . 
+              ((symbol "attempt" 4392 . 4399) (punctuation "=" 4400 . 4401) (number "0" 4402 . 4403) (punctuation ";" 4403 . 4404) (WHILE "while" 4409 . 4414) (semantic-list "((attempt < maxAttempts) && getDebugState(CORE) == 0)" 4414 . 4467) (semantic-list "{ \\
+    runToDebuggablePoint(CORE); \\
+    attempt++; \\
+  }" 4468 . 4526) (IF "if" 4531 . 4533) (semantic-list "(getDebugState(CORE) != 0)" 4534 . 4560) (semantic-list "{ \\
+    message(\"INFO\", \"Reached debug point after %d attempts\", attempt); \\
+  }" 4561 . 4641) (ELSE "else" 4642 . 4646) (semantic-list "{ \\
+    message(\"ERROR\", \"Failed to get to debug point after %d attempts\", attempt); \\
+  }" 4647 . 4737)))
+          ("DUMP_CORE_STATE" (spp-arg-list ("header") 9862 . 9870) . 
+              ((symbol "message" 9875 . 9882) (semantic-list "(\"INFO\", header)" 9882 . 9898) (punctuation ";" 9898 . 9899) (symbol "reg0" 9904 . 9908) (punctuation "=" 9909 . 9910) (symbol "CADIRegRead" 9911 . 9922) (semantic-list "(CORE, \"R0\")" 9922 . 9934) (punctuation ";" 9934 . 9935) (symbol "reg1" 9938 . 9942) (punctuation "=" 9943 . 9944) (symbol "CADIRegRead" 9945 . 9956) (semantic-list "(CORE, \"R8\")" 9956 . 9968) (punctuation ";" 9968 . 9969) (symbol "message" 9974 . 9981) (semantic-list "(\"INFO\", \"R0    %#.8x       R8     %#.8x\", reg0, reg1)" 9981 . 10035) (punctuation ";" 10035 . 10036) (symbol "reg0" 10041 . 10045) (punctuation "=" 10046 . 10047) (symbol "CADIRegRead" 10048 . 10059) (semantic-list "(CORE, \"R1\")" 10059 . 10071) (punctuation ";" 10071 . 10072) (symbol "reg1" 10075 . 10079) (punctuation "=" 10080 . 10081) (symbol "CADIRegRead" 10082 . 10093) (semantic-list "(CORE, \"R9\")" 10093 . 10105) (punctuation ";" 10105 . 10106) (symbol "message" 10111 . 10118) (semantic-list "(\"INFO\", \"R1    %#.8x       R9     %#.8x\", reg0, reg1)" 10118 . 10172) (punctuation ";" 10172 . 10173) (symbol "reg0" 10178 . 10182) (punctuation "=" 10183 . 10184) (symbol "CADIRegRead" 10185 . 10196) (semantic-list "(CORE, \"R2\")" 10196 . 10208) (punctuation ";" 10208 . 10209) (symbol "reg1" 10212 . 10216) (punctuation "=" 10217 . 10218) (symbol "CADIRegRead" 10219 . 10230) (semantic-list "(CORE, \"R10\")" 10230 . 10243) (punctuation ";" 10243 . 10244) (symbol "message" 10249 . 10256) (semantic-list "(\"INFO\", \"R2    %#.8x       R10    %#.8x\", reg0, reg1)" 10256 . 10310) (punctuation ";" 10310 . 10311) (symbol "reg0" 10316 . 10320) (punctuation "=" 10321 . 10322) (symbol "CADIRegRead" 10323 . 10334) (semantic-list "(CORE, \"R3\")" 10334 . 10346) (punctuation ";" 10346 . 10347) (symbol "reg1" 10350 . 10354) (punctuation "=" 10355 . 10356) (symbol "CADIRegRead" 10357 . 10368) (semantic-list "(CORE, \"R11\")" 10368 . 10381) (punctuation ";" 10381 . 10382) (symbol "message" 10387 . 10394) (semantic-list "(\"INFO\", \"R3    %#.8x       R11    %#.8x\", reg0, reg1)" 10394 . 10448) (punctuation ";" 10448 . 10449) (symbol "reg0" 10454 . 10458) (punctuation "=" 10459 . 10460) (symbol "CADIRegRead" 10461 . 10472) (semantic-list "(CORE, \"R4\")" 10472 . 10484) (punctuation ";" 10484 . 10485) (symbol "reg1" 10488 . 10492) (punctuation "=" 10493 . 10494) (symbol "CADIRegRead" 10495 . 10506) (semantic-list "(CORE, \"R12\")" 10506 . 10519) (punctuation ";" 10519 . 10520) (symbol "message" 10525 . 10532) (semantic-list "(\"INFO\", \"R4    %#.8x       R12    %#.8x\", reg0, reg1)" 10532 . 10586) (punctuation ";" 10586 . 10587) (symbol "reg0" 10592 . 10596) (punctuation "=" 10597 . 10598) (symbol "CADIRegRead" 10599 . 10610) (semantic-list "(CORE, \"R5\")" 10610 . 10622) (punctuation ";" 10622 . 10623) (symbol "reg1" 10626 . 10630) (punctuation "=" 10631 . 10632) (symbol "CADIRegRead" 10633 . 10644) (semantic-list "(CORE, \"R13\")" 10644 . 10657) (punctuation ";" 10657 . 10658) (symbol "message" 10663 . 10670) (semantic-list "(\"INFO\", \"R5    %#.8x       R13    %#.8x\", reg0, reg1)" 10670 . 10724) (punctuation ";" 10724 . 10725) (symbol "reg0" 10730 . 10734) (punctuation "=" 10735 . 10736) (symbol "CADIRegRead" 10737 . 10748) (semantic-list "(CORE, \"R6\")" 10748 . 10760) (punctuation ";" 10760 . 10761) (symbol "reg1" 10764 . 10768) (punctuation "=" 10769 . 10770) (symbol "CADIRegRead" 10771 . 10782) (semantic-list "(CORE, \"R14\")" 10782 . 10795) (punctuation ";" 10795 . 10796) (symbol "message" 10801 . 10808) (semantic-list "(\"INFO\", \"R6    %#.8x       R14    %#.8x\", reg0, reg1)" 10808 . 10862) (punctuation ";" 10862 . 10863) (symbol "reg0" 10868 . 10872) (punctuation "=" 10873 . 10874) (symbol "CADIRegRead" 10875 . 10886) (semantic-list "(CORE, \"R7\")" 10886 . 10898) (punctuation ";" 10898 . 10899) (symbol "reg1" 10902 . 10906) (punctuation "=" 10907 . 10908) (symbol "CADIRegRead" 10909 . 10920) (semantic-list "(CORE, \"R15\")" 10920 . 10933) (punctuation ";" 10933 . 10934) (symbol "message" 10939 . 10946) (semantic-list "(\"INFO\", \"R7    %#.8x       R15    %#.8x\", reg0, reg1)" 10946 . 11000) (punctuation ";" 11000 . 11001)))
+          ("CHECK_REGISTER_REG_VALUE2" (spp-arg-list ("reg" "expReg0" "expReg1") 14774 . 14797) . 
+              ((symbol "expected" 14802 . 14810) (punctuation "=" 14811 . 14812) (symbol "CADIRegRead" 14813 . 14824) (semantic-list "(CORE, expReg0)" 14824 . 14839) (punctuation ";" 14839 . 14840) (symbol "expected" 14845 . 14853) (punctuation "=" 14854 . 14855) (semantic-list "(CADIRegRead(CORE, expReg1) << 32)" 14856 . 14890) (punctuation "|" 14891 . 14892) (symbol "expected" 14893 . 14901) (punctuation ";" 14901 . 14902) (symbol "CHECK_REGISTER_VALUE" 14907 . 14927) (semantic-list "(reg, expected)" 14927 . 14942) (punctuation ";" 14942 . 14943)))
+          ("READ_REGISTER" (spp-arg-list ("regName") 17946 . 17955) . 
+              ((symbol "regVal" 17960 . 17966) (punctuation "=" 17967 . 17968) (symbol "CADIRegRead" 17969 . 17980) (semantic-list "(CORE, regName)" 17980 . 17995) (punctuation ";" 17995 . 17996) (symbol "message" 18001 . 18008) (semantic-list "(\"INFO\", \"%s = 0x%x\", regName, regVal)" 18008 . 18046) (punctuation ";" 18046 . 18047)))
+          ("BE_READ_WORD" (spp-arg-list ("addr") 1934 . 1940) . 
+              ((symbol "mem0" 1945 . 1949) (punctuation "=" 1950 . 1951) (symbol "CADIMemRead" 1952 . 1963) (semantic-list "(CORE, MEMSPACE, addr)" 1963 . 1985) (punctuation ";" 1985 . 1986) (symbol "mem1" 1991 . 1995) (punctuation "=" 1996 . 1997) (symbol "CADIMemRead" 1998 . 2009) (semantic-list "(CORE, MEMSPACE, addr+1)" 2009 . 2033) (punctuation ";" 2033 . 2034) (symbol "mem2" 2039 . 2043) (punctuation "=" 2044 . 2045) (symbol "CADIMemRead" 2046 . 2057) (semantic-list "(CORE, MEMSPACE, addr+2)" 2057 . 2081) (punctuation ";" 2081 . 2082) (symbol "mem3" 2087 . 2091) (punctuation "=" 2092 . 2093) (symbol "CADIMemRead" 2094 . 2105) (semantic-list "(CORE, MEMSPACE, addr+3)" 2105 . 2129) (punctuation ";" 2129 . 2130) (symbol "mem" 2135 . 2138) (punctuation "=" 2139 . 2140) (semantic-list "(mem0 << 24)" 2141 . 2153) (punctuation "|" 2154 . 2155) (semantic-list "(mem1 << 16)" 2156 . 2168) (punctuation "|" 2169 . 2170) (semantic-list "(mem2 << 8)" 2171 . 2182) (punctuation "|" 2183 . 2184) (symbol "mem3" 2185 . 2189) (punctuation ";" 2189 . 2190)))
+          ("ENABLE_MEMORY_PROFILING" . 
+              ((symbol "setParameter" 9143 . 9155) (semantic-list "(COMPONENT, \"Enable L1 Memory System Profiling\", \"true\")" 9155 . 9211) (punctuation ";" 9211 . 9212)))
+          ("CHECK_REGISTER_SUMMARY" (spp-arg-list nil 13095 . 13097) . 
+              ((IF "if" 13102 . 13104) (semantic-list "(regTestFailed == 0)" 13105 . 13125) (semantic-list "{ \\
+    message(\"INFO\", \"PASSED: Register check: %d tests\", regTestCount); \\
+  }" 13126 . 13206) (ELSE "else" 13207 . 13211) (semantic-list "{ \\
+    message(\"ERROR\", \"FAILED: Register check: %d out of %d tests FAILED\", regTestFailed, regTestCount); \\
+  }" 13212 . 13325)))
+          ("BE_CHECK_RESULT" (spp-arg-list ("register" "address" "size") 16739 . 16764) . 
+              ((symbol "expected" 16770 . 16778) (punctuation "=" 16779 . 16780) (symbol "CADIRegRead" 16781 . 16792) (semantic-list "(CORE, register)" 16792 . 16808) (punctuation ";" 16808 . 16809) (symbol "pc" 16815 . 16817) (punctuation "=" 16818 . 16819) (symbol "CADIRegRead" 16820 . 16831) (semantic-list "(CORE, \"R15\")" 16831 . 16844) (punctuation ";" 16844 . 16845) (symbol "BE_READ_WORD" 16851 . 16863) (semantic-list "(address)" 16863 . 16872) (punctuation ";" 16872 . 16873) (IF "if" 16879 . 16881) (semantic-list "(size == WORD)" 16882 . 16896) (semantic-list "{ \\
+     expected &= 0xFFFFFFFF; \\
+   }" 16902 . 16941) (ELSE "else" 16947 . 16951) (IF "if" 16952 . 16954) (semantic-list "(size == UPPER_HALF)" 16955 . 16975) (semantic-list "{ \\
+     expected &= 0xFFFF0000; \\
+   }" 16981 . 17020) (ELSE "else" 17026 . 17030) (IF "if" 17031 . 17033) (semantic-list "(size == LOWER_HALF)" 17034 . 17054) (semantic-list "{ \\
+     expected &= 0xFFFF; \\
+   }" 17060 . 17095) (ELSE "else" 17101 . 17105) (IF "if" 17106 . 17108) (semantic-list "(size == BYTE0)" 17109 . 17124) (semantic-list "{ \\
+     expected &= 0xFF; \\
+   }" 17130 . 17163) (ELSE "else" 17169 . 17173) (IF "if" 17174 . 17176) (semantic-list "(size == BYTE1)" 17177 . 17192) (semantic-list "{ \\
+     expected &= 0xFF00; \\
+   }" 17198 . 17233) (ELSE "else" 17239 . 17243) (IF "if" 17244 . 17246) (semantic-list "(size == BYTE2)" 17247 . 17262) (semantic-list "{ \\
+     expected &= 0xFF0000; \\
+   }" 17268 . 17305) (ELSE "else" 17311 . 17315) (IF "if" 17316 . 17318) (semantic-list "(size == BYTE3)" 17319 . 17334) (semantic-list "{ \\
+     expected &= 0xFF000000; \\
+   }" 17340 . 17379) (IF "if" 17385 . 17387) (semantic-list "(expected == mem)" 17388 . 17405) (semantic-list "{ \\
+     message(\"INFO\", \"PASS: Memory check of 0x%x - expected 0x%x, got 0x%x at PC 0x%x, Cycle %d\", address, expected, mem, pc, getCycleCount()); \\
+   }" 17406 . 17560) (ELSE "else" 17566 . 17570) (semantic-list "{ \\
+     message(\"ERROR\", \"FAIL: Memory check of 0x%x - expected 0x%x, got 0x%x at PC 0x%x, Cycle %d\", address, expected, mem, pc, getCycleCount()); \\
+     FAIL++; \\
+   }" 17571 . 17741)))
+          ("CHECK_REGISTER_CADI_WRITE" (spp-arg-list ("reg") 20598 . 20603) . 
+              ((symbol "expected" 20608 . 20616) (punctuation "=" 20617 . 20618) (symbol "CADIRegRead" 20619 . 20630) (semantic-list "(CORE, reg)" 20630 . 20641) (punctuation ";" 20641 . 20642) (symbol "CADIRegWrite" 20647 . 20659) (semantic-list "(CORE,reg,0x0)" 20659 . 20673) (punctuation ";" 20673 . 20674) (IF "if" 20679 . 20681) (semantic-list "(CADIRegRead(CORE,reg) == expected)" 20682 . 20717) (semantic-list "{ \\
+    message(\"ERROR\", \"%dns, FAILED: Register %s value not changed @%d\", getTime(\"ns\"), reg, getCycleCount()); \\
+    regTestFailed = regTestFailed + 1; \\
+  }" 20718 . 20878) (symbol "CADIRegWrite" 20883 . 20895) (semantic-list "(CORE,reg,expected)" 20895 . 20914) (punctuation ";" 20914 . 20915) (symbol "CHECK_REGISTER_VALUE" 20920 . 20940) (semantic-list "(reg,expected)" 20940 . 20954) (punctuation ";" 20954 . 20955)))
+          ("READ_WORD" (spp-arg-list ("addr") 655 . 661) . 
+              ((symbol "mem0" 666 . 670) (punctuation "=" 671 . 672) (symbol "CADIMemRead" 673 . 684) (semantic-list "(CORE, MEMSPACE, addr)" 684 . 706) (punctuation ";" 706 . 707) (symbol "mem1" 712 . 716) (punctuation "=" 717 . 718) (symbol "CADIMemRead" 719 . 730) (semantic-list "(CORE, MEMSPACE, addr+1)" 730 . 754) (punctuation ";" 754 . 755) (symbol "mem2" 760 . 764) (punctuation "=" 765 . 766) (symbol "CADIMemRead" 767 . 778) (semantic-list "(CORE, MEMSPACE, addr+2)" 778 . 802) (punctuation ";" 802 . 803) (symbol "mem3" 808 . 812) (punctuation "=" 813 . 814) (symbol "CADIMemRead" 815 . 826) (semantic-list "(CORE, MEMSPACE, addr+3)" 826 . 850) (punctuation ";" 850 . 851) (symbol "mem" 856 . 859) (punctuation "=" 860 . 861) (semantic-list "(mem3 << 24)" 862 . 874) (punctuation "|" 875 . 876) (semantic-list "(mem2 << 16)" 877 . 889) (punctuation "|" 890 . 891) (semantic-list "(mem1 << 8)" 892 . 903) (punctuation "|" 904 . 905) (symbol "mem0" 906 . 910) (punctuation ";" 910 . 911)))
+          ("DISPLAY_REGISTER_VALUE" (spp-arg-list ("reg") 11699 . 11704) . 
+              ((symbol "regVal" 11709 . 11715) (punctuation "=" 11716 . 11717) (symbol "CADIRegRead" 11718 . 11729) (semantic-list "(CORE, reg)" 11729 . 11740) (punctuation ";" 11740 . 11741) (symbol "message" 11746 . 11753) (semantic-list "(\"INFO\", \"%dns, Register value %s: 0x%x @%d\", getTime(\"ns\"), reg, regVal, getCycleCount())" 11753 . 11843) (punctuation ";" 11843 . 11844)))
+          ("CHECK_RESULT" (spp-arg-list ("register" "address" "size") 15284 . 15309) . 
+              ((symbol "expected" 15315 . 15323) (punctuation "=" 15324 . 15325) (symbol "CADIRegRead" 15326 . 15337) (semantic-list "(CORE, register)" 15337 . 15353) (punctuation ";" 15353 . 15354) (symbol "pc" 15360 . 15362) (punctuation "=" 15363 . 15364) (symbol "CADIRegRead" 15365 . 15376) (semantic-list "(CORE, \"R15\")" 15376 . 15389) (punctuation ";" 15389 . 15390) (symbol "READ_WORD" 15396 . 15405) (semantic-list "(address)" 15405 . 15414) (punctuation ";" 15414 . 15415) (IF "if" 15421 . 15423) (semantic-list "(size == WORD)" 15424 . 15438) (semantic-list "{ \\
+     expected &= 0xFFFFFFFF; \\
+   }" 15444 . 15483) (ELSE "else" 15489 . 15493) (IF "if" 15494 . 15496) (semantic-list "(size == UPPER_HALF)" 15497 . 15517) (semantic-list "{ \\
+     expected &= 0xFFFF0000; \\
+   }" 15523 . 15562) (ELSE "else" 15568 . 15572) (IF "if" 15573 . 15575) (semantic-list "(size == LOWER_HALF)" 15576 . 15596) (semantic-list "{ \\
+     expected &= 0xFFFF; \\
+   }" 15602 . 15637) (ELSE "else" 15643 . 15647) (IF "if" 15648 . 15650) (semantic-list "(size == BYTE0)" 15651 . 15666) (semantic-list "{ \\
+     expected &= 0xFF; \\
+   }" 15672 . 15705) (ELSE "else" 15711 . 15715) (IF "if" 15716 . 15718) (semantic-list "(size == BYTE1)" 15719 . 15734) (semantic-list "{ \\
+     expected &= 0xFF00; \\
+   }" 15740 . 15775) (ELSE "else" 15781 . 15785) (IF "if" 15786 . 15788) (semantic-list "(size == BYTE2)" 15789 . 15804) (semantic-list "{ \\
+     expected &= 0xFF0000; \\
+   }" 15810 . 15847) (ELSE "else" 15853 . 15857) (IF "if" 15858 . 15860) (semantic-list "(size == BYTE3)" 15861 . 15876) (semantic-list "{ \\
+     expected &= 0xFF000000; \\
+   }" 15882 . 15921) (IF "if" 15927 . 15929) (semantic-list "(expected == mem)" 15930 . 15947) (semantic-list "{ \\
+     message(\"INFO\", \"PASS: Memory check of 0x%x - expected 0x%x, got 0x%x at PC 0x%x, Cycle %d\", address, expected, mem, pc, getCycleCount()); \\
+   }" 15948 . 16102) (ELSE "else" 16108 . 16112) (semantic-list "{ \\
+     message(\"ERROR\", \"FAIL: Memory check of 0x%x - expected 0x%x, got 0x%x at PC 0x%x, Cycle %d\", address, expected, mem, pc, getCycleCount()); \\
+     FAIL++; \\
+   }" 16113 . 16283)))
+          ("CHECK_RW_REGISTER" (spp-arg-list ("regName" "newValue") 19334 . 19353) . 
+              ((symbol "message" 19358 . 19365) (semantic-list "(\"INFO\", \"\\nInitial read of %s\", regName)" 19365 . 19406) (punctuation ";" 19406 . 19407) (symbol "CHECK_REGISTER" 19412 . 19426) (semantic-list "(regName)" 19426 . 19435) (punctuation ";" 19435 . 19436) (symbol "message" 19441 . 19448) (semantic-list "(\"INFO\", \"Writting 0x%x\", newValue)" 19448 . 19483) (punctuation ";" 19483 . 19484) (symbol "CADIRegWrite" 19489 . 19501) (semantic-list "(CORE, regName, newValue)" 19501 . 19526) (punctuation ";" 19526 . 19527) (symbol "step" 19532 . 19536) (semantic-list "(1000)" 19536 . 19542) (punctuation ";" 19542 . 19543) (symbol "message" 19548 . 19555) (semantic-list "(\"INFO\", \"Final read of %s\", regName)" 19555 . 19592) (punctuation ";" 19592 . 19593)))
+          ("P2V_dump" . 
+              ((symbol "message" 20976 . 20983) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 0  %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P0\"))" 20983 . 21080) (punctuation ";" 21080 . 21081) (symbol "message" 21084 . 21091) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 1  %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P1\"))" 21091 . 21188) (punctuation ";" 21188 . 21189) (symbol "message" 21192 . 21199) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 2  %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P2\"))" 21199 . 21296) (punctuation ";" 21296 . 21297) (symbol "message" 21300 . 21307) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 3  %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P3\"))" 21307 . 21404) (punctuation ";" 21404 . 21405) (symbol "message" 21408 . 21415) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 4  %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P4\"))" 21415 . 21512) (punctuation ";" 21512 . 21513) (symbol "message" 21516 . 21523) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 5  %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P5\"))" 21523 . 21620) (punctuation ";" 21620 . 21621) (symbol "message" 21624 . 21631) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 6  %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P6\"))" 21631 . 21728) (punctuation ";" 21728 . 21729) (symbol "message" 21732 . 21739) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 7  %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P7\"))" 21739 . 21836) (punctuation ";" 21836 . 21837) (symbol "message" 21840 . 21847) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 8  %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P8\"))" 21847 . 21944) (punctuation ";" 21944 . 21945) (symbol "message" 21948 . 21955) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 9  %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P9\"))" 21955 . 22052) (punctuation ";" 22052 . 22053) (symbol "message" 22056 . 22063) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 10 %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P10\"))" 22063 . 22161) (punctuation ";" 22161 . 22162) (symbol "message" 22165 . 22172) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 11 %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P11\"))" 22172 . 22270) (punctuation ";" 22270 . 22271) (symbol "message" 22274 . 22281) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 12 %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P12\"))" 22281 . 22379) (punctuation ";" 22379 . 22380) (symbol "message" 22383 . 22390) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 13 %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P13\"))" 22390 . 22488) (punctuation ";" 22488 . 22489) (symbol "message" 22492 . 22499) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 14 %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P14\"))" 22499 . 22597) (punctuation ";" 22597 . 22598) (symbol "message" 22601 . 22608) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 16 %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P16\"))" 22608 . 22706) (punctuation ";" 22706 . 22707) (symbol "message" 22710 . 22717) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 17 %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P17\"))" 22717 . 22815) (punctuation ";" 22815 . 22816) (symbol "message" 22819 . 22826) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 18 %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P18\"))" 22826 . 22924) (punctuation ";" 22924 . 22925) (symbol "message" 22928 . 22935) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 19 %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P19\"))" 22935 . 23033) (punctuation ";" 23033 . 23034) (symbol "message" 23037 . 23044) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 20 %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P20\"))" 23044 . 23142) (punctuation ";" 23142 . 23143) (symbol "message" 23146 . 23153) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 21 %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P21\"))" 23153 . 23251) (punctuation ";" 23251 . 23252) (symbol "message" 23255 . 23262) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 22 %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P22\"))" 23262 . 23360) (punctuation ";" 23360 . 23361) (symbol "message" 23364 . 23371) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 23 %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P23\"))" 23371 . 23469) (punctuation ";" 23469 . 23470) (symbol "message" 23473 . 23480) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 24 %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P24\"))" 23480 . 23578) (punctuation ";" 23578 . 23579) (symbol "message" 23582 . 23589) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 25 %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P25\"))" 23589 . 23687) (punctuation ";" 23687 . 23688) (symbol "message" 23691 . 23698) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 26 %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P26\"))" 23698 . 23796) (punctuation ";" 23796 . 23797) (symbol "message" 23800 . 23807) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 27 %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P27\"))" 23807 . 23905) (punctuation ";" 23905 . 23906) (symbol "message" 23909 . 23916) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 28 %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P28\"))" 23916 . 24014) (punctuation ";" 24014 . 24015) (symbol "message" 24018 . 24025) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 29 %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P29\"))" 24025 . 24123) (punctuation ";" 24123 . 24124) (symbol "message" 24127 . 24134) (semantic-list "(\"INFO\", \"%dns, p2v mapping Register 30 %d \", getTime(\"ns\"), CADIRegRead(CORE, \"P2V_mapping_P30\"))" 24134 . 24232) (punctuation ";" 24232 . 24233)))
+          ("CHECK_REGISTER_MEM_VALUE" (spp-arg-list ("reg" "addr" "size") 13817 . 13834) . 
+              ((symbol "READ_WORD" 13839 . 13848) (semantic-list "(addr)" 13848 . 13854) (punctuation ";" 13854 . 13855) (symbol "expected" 13860 . 13868) (punctuation "=" 13869 . 13870) (symbol "mem" 13871 . 13874) (punctuation ";" 13874 . 13875) (IF "if" 13880 . 13882) (semantic-list "(size == 8)" 13883 . 13894) (semantic-list "{ \\
+    READ_WORD(addr+4); \\
+    expected = expected | (mem << 32); \\
+  }" 13895 . 13968) (symbol "CHECK_REGISTER_VALUE" 13973 . 13993) (semantic-list "(reg, expected)" 13993 . 14008) (punctuation ";" 14008 . 14009)))
+          ("CHECK_REGISTER_REG_VALUE" (spp-arg-list ("reg" "expReg") 14109 . 14122) . 
+              ((symbol "expected" 14127 . 14135) (punctuation "=" 14136 . 14137) (symbol "CADIRegRead" 14138 . 14149) (semantic-list "(CORE, expReg)" 14149 . 14163) (punctuation ";" 14163 . 14164) (symbol "CHECK_REGISTER_VALUE" 14169 . 14189) (semantic-list "(reg, expected)" 14189 . 14204) (punctuation ";" 14204 . 14205)))
+          ("CHECKED_MEM_WRITE" (spp-arg-list ("component" "memspace" "addr" "memValue") 5687 . 5724) . 
+              ((symbol "checkedResult" 5729 . 5742) (punctuation "=" 5743 . 5744) (symbol "CADIMemWrite" 5745 . 5757) (semantic-list "(component, memspace, addr, memValue)" 5757 . 5794) (punctuation ";" 5794 . 5795) (IF "if" 5800 . 5802) (semantic-list "(checkedResult == -1)" 5802 . 5823) (semantic-list "{ \\
+    message(\"FATAL\", \"Failed to write memory %s.%s [%x] = %x\", component, memspace, addr, memValue); \\
+  }" 5824 . 5934) (symbol "checkedReadBack" 5939 . 5954) (punctuation "=" 5955 . 5956) (symbol "CADIMemRead" 5957 . 5968) (semantic-list "(component, memspace, addr)" 5968 . 5995) (punctuation ";" 5995 . 5996) (IF "if" 6001 . 6003) (semantic-list "(checkedReadBack != memValue)" 6003 . 6032) (semantic-list "{\\
+    message(\"FATAL\", \"Failed to write memory %s.%s [%x] did not take Wrote: %x Read: %x\", component, memspace, addr, memValue, checkedReadBack); \\
+  }" 6033 . 6186)))
+          ("WRITE_REGISTER" (spp-arg-list ("component" "registerName" "registerValue") 6236 . 6276) . 
+              ((INT "int" 6281 . 6284) (symbol "wrRegResult" 6285 . 6296) (punctuation "=" 6297 . 6298) (symbol "CADIRegWrite" 6299 . 6311) (semantic-list "(component, registerName, registerValue)" 6311 . 6351) (punctuation ";" 6351 . 6352) (IF "if" 6357 . 6359) (semantic-list "(wrRegResult == -1)" 6359 . 6378) (semantic-list "{ \\
+    message(\"FATAL\", \"Failed to set register %s.%s\", component, registerName); \\
+  }" 6379 . 6467) (symbol "WriteRegTempValue" 6472 . 6489) (punctuation "=" 6490 . 6491) (symbol "CADIRegRead" 6492 . 6503) (semantic-list "(component, registerName)" 6503 . 6528) (punctuation ";" 6528 . 6529) (IF "if" 6534 . 6536) (semantic-list "(WriteRegTempValue != registerValue)" 6536 . 6572) (semantic-list "{ \\
+    message(\"FATAL\", \"Register check mismatched for write to %s.%s - Wrote 0x%x Read 0x%x\", component, registerName, registerValue, WriteRegTempValue); \\
+  }" 6573 . 6734)))
+          ("DUMP_REG4" (spp-arg-list ("name0" "name1" "name2" "name3") 9530 . 9558) . 
+              ((symbol "reg0" 9563 . 9567) (punctuation "=" 9568 . 9569) (symbol "CADIRegRead" 9570 . 9581) (semantic-list "(CORE, name0)" 9581 . 9594) (punctuation ";" 9594 . 9595) (symbol "reg1" 9600 . 9604) (punctuation "=" 9605 . 9606) (symbol "CADIRegRead" 9607 . 9618) (semantic-list "(CORE, name1)" 9618 . 9631) (punctuation ";" 9631 . 9632) (symbol "reg2" 9637 . 9641) (punctuation "=" 9642 . 9643) (symbol "CADIRegRead" 9644 . 9655) (semantic-list "(CORE, name2)" 9655 . 9668) (punctuation ";" 9668 . 9669) (symbol "reg3" 9674 . 9678) (punctuation "=" 9679 . 9680) (symbol "CADIRegRead" 9681 . 9692) (semantic-list "(CORE, name3)" 9692 . 9705) (punctuation ";" 9705 . 9706) (symbol "message" 9711 . 9718) (semantic-list "(\"INFO\", \"%s = 0x%x, %s = 0x%x, %s = 0x%x, %s = 0x%x\", \\
+          name0, reg0, name1, reg1, name2, reg2, name3, reg3)" 9718 . 9836) (punctuation ";" 9836 . 9837)))
+          ("DEPOSIT_REG" (spp-arg-list ("name" "value") 11047 . 11060) . 
+              ((symbol "CADIRegWrite" 11065 . 11077) (semantic-list "(CORE, name, value)" 11077 . 11096) (punctuation ";" 11096 . 11097)))
+          ("DREG" (spp-arg-list ("reg") 11630 . 11635) . 
+              ((symbol "DISPLAY_REGISTER_VALUE" 11639 . 11661) (semantic-list "(reg)" 11661 . 11666) (punctuation ";" 11666 . 11667)))
+          ("RUNCYCLES" (spp-arg-list ("cycles") 16429 . 16437) . 
+              ((symbol "i" 16442 . 16443) (punctuation "=" 16444 . 16445) (number "0" 16446 . 16447) (punctuation ";" 16447 . 16448) (WHILE "while" 16453 . 16458) (semantic-list "(i < cycles)" 16459 . 16471) (semantic-list "{ \\
+    step(1); \\
+    nextPC = CADIRegRead(CORE, \"R15\"); \\
+    if ((nextPC != -1) && (PC != nextPC)) { \\
+      PC = nextPC; \\
+      message(\"INFO\", \"A7 Step: %d: PC=0x%x \", getCycleCount(), PC); \\
+      ++instrCount; \\
+    } \\
+    ++i; \\
+  }" 16472 . 16714)))
+          ("Memory" . ((number "0" 47 . 48)))
+          ("ALIGN_WAVES" (spp-arg-list ("alignOn") 7682 . 7691) . 
+              ((IF "if" 7696 . 7698) (semantic-list "(alignOn)" 7698 . 7707) (semantic-list "{ \\
+    message(\"Turning on waveform alignment\"); \\
+    SET_PARAMETER(COMPONENT, \"Align Waveforms\", \"true\"); \\
+  }" 7708 . 7822) (ELSE "else" 7823 . 7827) (semantic-list "{ \\
+    message(\"Turning off waveform alignment\"); \\
+    SET_PARAMETER(COMPONENT, \"Align Waveforms\", \"false\"); \\
+  }" 7828 . 7944)))
+          ("DUMP_REG" (spp-arg-list ("name") 9408 . 9414) . 
+              ((symbol "READ_REG" 9419 . 9427) (semantic-list "(name)" 9427 . 9433) (punctuation ";" 9433 . 9434) (symbol "message" 9439 . 9446) (semantic-list "(\"INFO\", \"%s = 0x%x\", name, reg)" 9446 . 9478) (punctuation ";" 9478 . 9479)))
+          ("CHECK_MEMORY_VALUE" (spp-arg-list ("reg" "addr" "size") 19806 . 19823) . 
+              ((symbol "expected" 19828 . 19836) (punctuation "=" 19837 . 19838) (symbol "CADIRegRead" 19839 . 19850) (semantic-list "(CORE, reg)" 19850 . 19861) (punctuation ";" 19861 . 19862) (IF "if" 19867 . 19869) (semantic-list "(size == 8)" 19870 . 19881) (semantic-list "{ \\
+    READ_WORD64(addr); \\
+  }" 19882 . 19914) (ELSE "else" 19915 . 19919) (IF "if" 19920 . 19922) (semantic-list "(size == 4)" 19923 . 19934) (semantic-list "{ \\
+    READ_WORD(addr); \\
+  }" 19935 . 19965) (ELSE "else" 19966 . 19970) (IF "if" 19971 . 19973) (semantic-list "(size == 2)" 19974 . 19985) (semantic-list "{ \\
+    READ_HALFWORD(addr); \\
+    expected = expected & 0xFFFF; \\
+  }" 19986 . 20056) (ELSE "else" 20057 . 20061) (IF "if" 20062 . 20064) (semantic-list "(size == 1)" 20065 . 20076) (semantic-list "{ \\
+    READ_BYTE(addr); \\
+    expected = expected & 0xFF; \\
+  }" 20077 . 20141) (ELSE "else" 20142 . 20146) (semantic-list "{ \\
+    mem = 0xbad0bad1; \\
+    expected = 0; \\
+  }" 20147 . 20198) (IF "if" 20203 . 20205) (semantic-list "(expected == mem)" 20206 . 20223) (semantic-list "{ \\
+    message(\"INFO\", \"%dns, PASS: Memory check 0x%x: 0x%x\", getTime(\"ns\"), addr, mem); \\
+  }" 20224 . 20319) (ELSE "else" 20320 . 20324) (semantic-list "{ \\
+    message(\"ERROR\", \"%dns, FAILED: Memory check 0x%x: 0x%x, expected: 0x%x\", getTime(\"ns\"), addr, mem, expected); \\
+    memTestFailed = memTestFailed + 1; \\
+  }" 20325 . 20490) (symbol "memTestCount" 20495 . 20507) (punctuation "=" 20508 . 20509) (symbol "memTestCount" 20510 . 20522) (punctuation "+" 20523 . 20524) (number "1" 20525 . 20526) (punctuation ";" 20526 . 20527)))
+          ("READ_WORD64" (spp-arg-list ("addr") 995 . 1001) . 
+              ((symbol "mem0" 1006 . 1010) (punctuation "=" 1011 . 1012) (symbol "CADIMemRead" 1013 . 1024) (semantic-list "(CORE, MEMSPACE, addr)" 1024 . 1046) (punctuation ";" 1046 . 1047) (symbol "mem1" 1052 . 1056) (punctuation "=" 1057 . 1058) (symbol "CADIMemRead" 1059 . 1070) (semantic-list "(CORE, MEMSPACE, addr+1)" 1070 . 1094) (punctuation ";" 1094 . 1095) (symbol "mem2" 1100 . 1104) (punctuation "=" 1105 . 1106) (symbol "CADIMemRead" 1107 . 1118) (semantic-list "(CORE, MEMSPACE, addr+2)" 1118 . 1142) (punctuation ";" 1142 . 1143) (symbol "mem3" 1148 . 1152) (punctuation "=" 1153 . 1154) (symbol "CADIMemRead" 1155 . 1166) (semantic-list "(CORE, MEMSPACE, addr+3)" 1166 . 1190) (punctuation ";" 1190 . 1191) (symbol "mem4" 1196 . 1200) (punctuation "=" 1201 . 1202) (symbol "CADIMemRead" 1203 . 1214) (semantic-list "(CORE, MEMSPACE, addr+4)" 1214 . 1238) (punctuation ";" 1238 . 1239) (symbol "mem5" 1244 . 1248) (punctuation "=" 1249 . 1250) (symbol "CADIMemRead" 1251 . 1262) (semantic-list "(CORE, MEMSPACE, addr+5)" 1262 . 1286) (punctuation ";" 1286 . 1287) (symbol "mem6" 1292 . 1296) (punctuation "=" 1297 . 1298) (symbol "CADIMemRead" 1299 . 1310) (semantic-list "(CORE, MEMSPACE, addr+6)" 1310 . 1334) (punctuation ";" 1334 . 1335) (symbol "mem7" 1340 . 1344) (punctuation "=" 1345 . 1346) (symbol "CADIMemRead" 1347 . 1358) (semantic-list "(CORE, MEMSPACE, addr+7)" 1358 . 1382) (punctuation ";" 1382 . 1383) (symbol "mem" 1388 . 1391) (punctuation "=" 1392 . 1393) (semantic-list "(mem7 << 56)" 1394 . 1406) (punctuation "|" 1407 . 1408) (semantic-list "(mem6 << 48)" 1409 . 1421) (punctuation "|" 1422 . 1423) (semantic-list "(mem5 << 40)" 1424 . 1436) (punctuation "|" 1437 . 1438) (semantic-list "(mem4 << 32)" 1439 . 1451) (punctuation "|" 1452 . 1453) (semantic-list "(mem3 << 24)" 1454 . 1466) (punctuation "|" 1467 . 1468) (semantic-list "(mem2 << 16)" 1469 . 1481) (punctuation "|" 1482 . 1483) (semantic-list "(mem1 << 8)" 1484 . 1495) (punctuation "|" 1496 . 1497) (symbol "mem0" 1498 . 1502) (punctuation ";" 1502 . 1503)))
+          ("CHECK_REGISTER_VALUE_CNTR" (spp-arg-list ("reg" "value" "diff") 12457 . 12475) . 
+              ((symbol "regVal" 12481 . 12487) (punctuation "=" 12488 . 12489) (symbol "CADIRegRead" 12490 . 12501) (semantic-list "(CORE, reg)" 12501 . 12512) (punctuation ";" 12512 . 12513) (symbol "regTestCount" 12518 . 12530) (punctuation "=" 12531 . 12532) (symbol "regTestCount" 12533 . 12545) (punctuation "+" 12546 . 12547) (number "1" 12548 . 12549) (punctuation ";" 12549 . 12550) (symbol "message" 12555 . 12562) (semantic-list "(\"INFO\", \"diff = %d, regVal = %d, value = %d\\n\", diff, regVal, value)" 12562 . 12631) (punctuation ";" 12631 . 12632) (IF "if" 12637 . 12639) (semantic-list "((regVal != 0) && \\
+      (((diff > 0) && (regVal >= value) && (regVal < (value + diff))) || \\
+       ((diff < 0) && (regVal <= value) && (regVal > (value + diff)))))" 12640 . 12806) (semantic-list "{ \\
+    message(\"INFO\", \"PASS: Register check %s\", reg); \\
+  }" 12807 . 12869) (ELSE "else" 12870 . 12874) (semantic-list "{ \\
+    message(\"ERROR\", \"FAILED: Register check %s: 0x%x, expected: 0x%x\", reg, regVal, value); \\
+    regTestFailed = regTestFailed + 1; \\
+  }" 12875 . 13018)))
+          ("CHECK_REGISTER_REG_MASKED_VALUE" (spp-arg-list ("reg" "expReg" "mask") 14319 . 14338) . 
+              ((symbol "expected" 14343 . 14351) (punctuation "=" 14352 . 14353) (symbol "CADIRegRead" 14354 . 14365) (semantic-list "(CORE, expReg)" 14365 . 14379) (punctuation ";" 14379 . 14380) (symbol "CHECK_REGISTER_MASKED_VALUE" 14385 . 14412) (semantic-list "(reg, expected, mask)" 14412 . 14433) (punctuation ";" 14433 . 14434)))
+          ("CHECK_BREAKPOINT" (spp-arg-list ("bp") 17767 . 17771) . 
+              ((symbol "step" 17776 . 17780) (semantic-list "(10000)" 17780 . 17787) (punctuation ";" 17787 . 17788) (symbol "pc" 17793 . 17795) (punctuation "=" 17796 . 17797) (symbol "CADIRegRead" 17798 . 17809) (semantic-list "(CORE, \"R15\")" 17809 . 17822) (punctuation ";" 17822 . 17823) (IF "if" 17828 . 17830) (semantic-list "(pc != bp)" 17831 . 17841) (semantic-list "{ \\
+    message(\"ERROR\", \"At pc 0x%x, not at breakpoint 0x%x\", pc, bp);	\\
+  }" 17846 . 17923)))
+          ("CHECK_REGISTER_GOLD" (spp-arg-list ("regName" "goldValue") 18076 . 18096) . 
+              ((symbol "regVal" 18101 . 18107) (punctuation "=" 18108 . 18109) (symbol "CADIRegRead" 18110 . 18121) (semantic-list "(CORE, regName)" 18121 . 18136) (punctuation ";" 18136 . 18137) (IF "if" 18142 . 18144) (semantic-list "(regVal == goldValue)" 18145 . 18166) (semantic-list "{ \\
+      message(\"INFO\", \"PASS: %s actual value 0x%x, expected value 0x%x\", regName, regVal, goldValue); \\
+    }" 18173 . 18286) (ELSE "else" 18291 . 18295) (semantic-list "{ \\
+      message(\"INFO\", \"FAIL: %s actual value 0x%x, expected value 0x%x\", regName, regVal, goldValue); \\
+      FAIL++; \\
+    }" 18302 . 18431)))
+          ("SECURE" . ((number "0" 64 . 65)))
+          ("STEP" (spp-arg-list ("count") 3051 . 3058) . 
+              ((symbol "message" 3063 . 3070) (semantic-list "(\"INFO\", \"Run %d instruction steps\", count)" 3070 . 3113) (punctuation ";" 3113 . 3114) (symbol "bptId" 3119 . 3124) (punctuation "=" 3125 . 3126) (symbol "bpAddReg" 3127 . 3135) (semantic-list "(CORE, \"R15\")" 3135 . 3148) (punctuation ";" 3148 . 3149) (symbol "setParameter" 3154 . 3166) (semantic-list "(CORE, \"Single Step\", \"true\")" 3166 . 3195) (punctuation ";" 3195 . 3196) (FOR "for" 3201 . 3204) (semantic-list "(i = 0; i < count; ++i)" 3205 . 3228) (semantic-list "{ \\
+    step(2000); \\
+    PC = CADIRegRead(CORE, \"R15\"); \\
+    READ_WORD(PC); \\
+    message(\"INFO\", \"Step: PC = %#.8x: Mem = %#.8x\", PC, mem); \\
+  }" 3229 . 3377) (symbol "setParameter" 3382 . 3394) (semantic-list "(CORE, \"Single Step\", \"false\")" 3394 . 3424) (punctuation ";" 3424 . 3425) (symbol "bpRemove" 3430 . 3438) (semantic-list "(bptId)" 3438 . 3445) (punctuation ";" 3445 . 3446)))
+          ("WAVE_FORMAT" (spp-arg-list ("format") 7159 . 7167) . 
+              ((IF "if" 7172 . 7174) (semantic-list "(format == \"VCD\" || format == \"FSDB\")" 7174 . 7211) (semantic-list "{ \\
+    message(\"INFO\", \"Setting dump format to %s\", format); \\
+    SET_PARAMETER(COMPONENT, \"Waveform Format\", format); \\
+  }" 7216 . 7342) (ELSE "else" 7343 . 7347) (semantic-list "{ \\
+    message(\"WARNING\", \"Ignoring unknown wave format '%s'\", format); \\
+  }" 7348 . 7426)))
+          ("DISABLE_MEMORY_PROFILING" . 
+              ((symbol "setParameter" 9289 . 9301) (semantic-list "(COMPONENT, \"Enable L1 Memory System Profiling\", \"false\")" 9301 . 9358) (punctuation ";" 9358 . 9359)))
+          ("CHECK_RO_REGISTER" (spp-arg-list ("regName") 19253 . 19262) . 
+              ((symbol "CHECK_REGISTER" 19267 . 19281) (semantic-list "(regName)" 19281 . 19290) (punctuation ";" 19290 . 19291) (symbol "step" 19296 . 19300) (semantic-list "(1000)" 19300 . 19306) (punctuation ";" 19306 . 19307)))
+          ("PhyReg_dump" . 
+              ((symbol "message" 24258 . 24265) (semantic-list "(\"INFO\", \"%dns, Phys register Register 0 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R0\"))" 24265 . 24360) (punctuation ";" 24360 . 24361) (symbol "message" 24364 . 24371) (semantic-list "(\"INFO\", \"%dns, Phys register Register 1 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R1\"))" 24371 . 24466) (punctuation ";" 24466 . 24467) (symbol "message" 24470 . 24477) (semantic-list "(\"INFO\", \"%dns, Phys register Register 2 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R2\"))" 24477 . 24572) (punctuation ";" 24572 . 24573) (symbol "message" 24576 . 24583) (semantic-list "(\"INFO\", \"%dns, Phys register Register 3 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R3\"))" 24583 . 24678) (punctuation ";" 24678 . 24679) (symbol "message" 24682 . 24689) (semantic-list "(\"INFO\", \"%dns, Phys register Register 4 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R4\"))" 24689 . 24784) (punctuation ";" 24784 . 24785) (symbol "message" 24788 . 24795) (semantic-list "(\"INFO\", \"%dns, Phys register Register 5 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R5\"))" 24795 . 24890) (punctuation ";" 24890 . 24891) (symbol "message" 24894 . 24901) (semantic-list "(\"INFO\", \"%dns, Phys register Register 6 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R6\"))" 24901 . 24996) (punctuation ";" 24996 . 24997) (symbol "message" 25000 . 25007) (semantic-list "(\"INFO\", \"%dns, Phys register Register 7 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R7\"))" 25007 . 25102) (punctuation ";" 25102 . 25103) (symbol "message" 25106 . 25113) (semantic-list "(\"INFO\", \"%dns, Phys register Register 8 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R8\"))" 25113 . 25208) (punctuation ";" 25208 . 25209) (symbol "message" 25212 . 25219) (semantic-list "(\"INFO\", \"%dns, Phys register Register 9 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R9\"))" 25219 . 25314) (punctuation ";" 25314 . 25315) (symbol "message" 25318 . 25325) (semantic-list "(\"INFO\", \"%dns, Phys register Register 10 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R10\"))" 25325 . 25422) (punctuation ";" 25422 . 25423) (symbol "message" 25426 . 25433) (semantic-list "(\"INFO\", \"%dns, Phys register Register 11 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R11\"))" 25433 . 25530) (punctuation ";" 25530 . 25531) (symbol "message" 25534 . 25541) (semantic-list "(\"INFO\", \"%dns, Phys register Register 12 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R12\"))" 25541 . 25638) (punctuation ";" 25638 . 25639) (symbol "message" 25642 . 25649) (semantic-list "(\"INFO\", \"%dns, Phys register Register 13 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R13\"))" 25649 . 25746) (punctuation ";" 25746 . 25747) (symbol "message" 25750 . 25757) (semantic-list "(\"INFO\", \"%dns, Phys register Register 14 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R14\"))" 25757 . 25854) (punctuation ";" 25854 . 25855) (symbol "message" 25858 . 25865) (semantic-list "(\"INFO\", \"%dns, Phys register Register 15 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R15\"))" 25865 . 25962) (punctuation ";" 25962 . 25963) (symbol "message" 25966 . 25973) (semantic-list "(\"INFO\", \"%dns, Phys register Register 16 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R16\"))" 25973 . 26070) (punctuation ";" 26070 . 26071) (symbol "message" 26074 . 26081) (semantic-list "(\"INFO\", \"%dns, Phys register Register 17 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R17\"))" 26081 . 26178) (punctuation ";" 26178 . 26179) (symbol "message" 26182 . 26189) (semantic-list "(\"INFO\", \"%dns, Phys register Register 18 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R18\"))" 26189 . 26286) (punctuation ";" 26286 . 26287) (symbol "message" 26290 . 26297) (semantic-list "(\"INFO\", \"%dns, Phys register Register 19 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R19\"))" 26297 . 26394) (punctuation ";" 26394 . 26395) (symbol "message" 26398 . 26405) (semantic-list "(\"INFO\", \"%dns, Phys register Register 20 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R20\"))" 26405 . 26502) (punctuation ";" 26502 . 26503) (symbol "message" 26506 . 26513) (semantic-list "(\"INFO\", \"%dns, Phys register Register 21 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R21\"))" 26513 . 26610) (punctuation ";" 26610 . 26611) (symbol "message" 26614 . 26621) (semantic-list "(\"INFO\", \"%dns, Phys register Register 22 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R22\"))" 26621 . 26718) (punctuation ";" 26718 . 26719) (symbol "message" 26722 . 26729) (semantic-list "(\"INFO\", \"%dns, Phys register Register 23 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R23\"))" 26729 . 26826) (punctuation ";" 26826 . 26827) (symbol "message" 26830 . 26837) (semantic-list "(\"INFO\", \"%dns, Phys register Register 24 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R24\"))" 26837 . 26934) (punctuation ";" 26934 . 26935) (symbol "message" 26938 . 26945) (semantic-list "(\"INFO\", \"%dns, Phys register Register 25 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R25\"))" 26945 . 27042) (punctuation ";" 27042 . 27043) (symbol "message" 27046 . 27053) (semantic-list "(\"INFO\", \"%dns, Phys register Register 26 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R26\"))" 27053 . 27150) (punctuation ";" 27150 . 27151) (symbol "message" 27154 . 27161) (semantic-list "(\"INFO\", \"%dns, Phys register Register 27 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R27\"))" 27161 . 27258) (punctuation ";" 27258 . 27259) (symbol "message" 27262 . 27269) (semantic-list "(\"INFO\", \"%dns, Phys register Register 28 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R28\"))" 27269 . 27366) (punctuation ";" 27366 . 27367) (symbol "message" 27370 . 27377) (semantic-list "(\"INFO\", \"%dns, Phys register Register 29 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R29\"))" 27377 . 27474) (punctuation ";" 27474 . 27475) (symbol "message" 27478 . 27485) (semantic-list "(\"INFO\", \"%dns, Phys register Register 30 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R30\"))" 27485 . 27582) (punctuation ";" 27582 . 27583) (symbol "message" 27586 . 27593) (semantic-list "(\"INFO\", \"%dns, Phys register Register 31 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R31\"))" 27593 . 27690) (punctuation ";" 27690 . 27691) (symbol "message" 27694 . 27701) (semantic-list "(\"INFO\", \"%dns, Phys register Register 32 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R32\"))" 27701 . 27798) (punctuation ";" 27798 . 27799) (symbol "message" 27802 . 27809) (semantic-list "(\"INFO\", \"%dns, Phys register Register 33 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R33\"))" 27809 . 27906) (punctuation ";" 27906 . 27907) (symbol "message" 27910 . 27917) (semantic-list "(\"INFO\", \"%dns, Phys register Register 34 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R34\"))" 27917 . 28014) (punctuation ";" 28014 . 28015) (symbol "message" 28018 . 28025) (semantic-list "(\"INFO\", \"%dns, Phys register Register 35 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R35\"))" 28025 . 28122) (punctuation ";" 28122 . 28123) (symbol "message" 28126 . 28133) (semantic-list "(\"INFO\", \"%dns, Phys register Register 36 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R36\"))" 28133 . 28230) (punctuation ";" 28230 . 28231) (symbol "message" 28234 . 28241) (semantic-list "(\"INFO\", \"%dns, Phys register Register 37 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R37\"))" 28241 . 28338) (punctuation ";" 28338 . 28339) (symbol "message" 28342 . 28349) (semantic-list "(\"INFO\", \"%dns, Phys register Register 38 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R38\"))" 28349 . 28446) (punctuation ";" 28446 . 28447) (symbol "message" 28450 . 28457) (semantic-list "(\"INFO\", \"%dns, Phys register Register 39 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R39\"))" 28457 . 28554) (punctuation ";" 28554 . 28555) (symbol "message" 28558 . 28565) (semantic-list "(\"INFO\", \"%dns, Phys register Register 40 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R40\"))" 28565 . 28662) (punctuation ";" 28662 . 28663) (symbol "message" 28666 . 28673) (semantic-list "(\"INFO\", \"%dns, Phys register Register 41 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R41\"))" 28673 . 28770) (punctuation ";" 28770 . 28771) (symbol "message" 28774 . 28781) (semantic-list "(\"INFO\", \"%dns, Phys register Register 42 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R42\"))" 28781 . 28878) (punctuation ";" 28878 . 28879) (symbol "message" 28882 . 28889) (semantic-list "(\"INFO\", \"%dns, Phys register Register 43 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R43\"))" 28889 . 28986) (punctuation ";" 28986 . 28987) (symbol "message" 28990 . 28997) (semantic-list "(\"INFO\", \"%dns, Phys register Register 44 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R44\"))" 28997 . 29094) (punctuation ";" 29094 . 29095) (symbol "message" 29098 . 29105) (semantic-list "(\"INFO\", \"%dns, Phys register Register 45 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R45\"))" 29105 . 29202) (punctuation ";" 29202 . 29203) (symbol "message" 29206 . 29213) (semantic-list "(\"INFO\", \"%dns, Phys register Register 46 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R46\"))" 29213 . 29310) (punctuation ";" 29310 . 29311) (symbol "message" 29314 . 29321) (semantic-list "(\"INFO\", \"%dns, Phys register Register 47 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R47\"))" 29321 . 29418) (punctuation ";" 29418 . 29419) (symbol "message" 29422 . 29429) (semantic-list "(\"INFO\", \"%dns, Phys register Register 48 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R48\"))" 29429 . 29526) (punctuation ";" 29526 . 29527) (symbol "message" 29530 . 29537) (semantic-list "(\"INFO\", \"%dns, Phys register Register 49 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R49\"))" 29537 . 29634) (punctuation ";" 29634 . 29635) (symbol "message" 29638 . 29645) (semantic-list "(\"INFO\", \"%dns, Phys register Register 50 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R50\"))" 29645 . 29742) (punctuation ";" 29742 . 29743) (symbol "message" 29746 . 29753) (semantic-list "(\"INFO\", \"%dns, Phys register Register 51 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R51\"))" 29753 . 29850) (punctuation ";" 29850 . 29851) (symbol "message" 29854 . 29861) (semantic-list "(\"INFO\", \"%dns, Phys register Register 52 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R52\"))" 29861 . 29958) (punctuation ";" 29958 . 29959) (symbol "message" 29962 . 29969) (semantic-list "(\"INFO\", \"%dns, Phys register Register 53 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R53\"))" 29969 . 30066) (punctuation ";" 30066 . 30067) (symbol "message" 30070 . 30077) (semantic-list "(\"INFO\", \"%dns, Phys register Register 54 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R54\"))" 30077 . 30174) (punctuation ";" 30174 . 30175) (symbol "message" 30178 . 30185) (semantic-list "(\"INFO\", \"%dns, Phys register Register 55 %x \", getTime(\"ns\"), CADIRegRead(CORE, \"Physical_R55\"))" 30185 . 30282) (punctuation ";" 30282 . 30283)))
+          ("NORMAL" . ((number "2" 98 . 99)))
+          ("DUMP_WAVES" (spp-arg-list ("dumpOn") 7967 . 7975) . 
+              ((IF "if" 7980 . 7982) (semantic-list "(dumpOn)" 7983 . 7991) (semantic-list "{ \\
+    message(\"Enabling Waveform Dump\"); \\
+    setParameter(COMPONENT, \"Dump Waveforms\", \"true\"); \\
+  }" 7992 . 8097) (ELSE "else" 8098 . 8102) (semantic-list "{ \\
+    message(\"Disabling Waveform Dump\"); \\
+    setParameter(COMPONENT, \"Dump Waveforms\", \"false\"); \\
+  }" 8103 . 8210)))
+          ("VERBOSE_MESSAGES" (spp-arg-list ("verbose") 8353 . 8362) . 
+              ((IF "if" 8367 . 8369) (semantic-list "(verbose)" 8370 . 8379) (semantic-list "{ \\
+    message(\"Enabling Carbon Verbose\"); \\
+    setParameter(COMPONENT, \"Enable Debug Messages\", \"true\"); \\
+  }" 8380 . 8493) (ELSE "else" 8494 . 8498) (semantic-list "{ \\
+    message(\"Enabling Carbon Verbose\"); \\
+    setParameter(COMPONENT, \"Enable Debug Messages\", \"false\"); \\
+  }" 8499 . 8613)))
+          ("BE_WRITE_WORD" (spp-arg-list ("addr" "mem") 2683 . 2694) . 
+              ((symbol "mem3" 2702 . 2706) (punctuation "=" 2707 . 2708) (semantic-list "(mem >> 0)" 2709 . 2719) (punctuation "&" 2721 . 2722) (number "0xFF" 2723 . 2727) (punctuation ";" 2727 . 2728) (symbol "mem2" 2733 . 2737) (punctuation "=" 2738 . 2739) (semantic-list "(mem >> 8)" 2740 . 2750) (punctuation "&" 2752 . 2753) (number "0xFF" 2754 . 2758) (punctuation ";" 2758 . 2759) (symbol "mem1" 2764 . 2768) (punctuation "=" 2769 . 2770) (semantic-list "(mem >> 16)" 2771 . 2782) (punctuation "&" 2783 . 2784) (number "0xFF" 2785 . 2789) (punctuation ";" 2789 . 2790) (symbol "mem0" 2795 . 2799) (punctuation "=" 2800 . 2801) (semantic-list "(mem >> 24)" 2802 . 2813) (punctuation "&" 2814 . 2815) (number "0xFF" 2816 . 2820) (punctuation ";" 2820 . 2821) (symbol "CADIMemWrite" 2826 . 2838) (semantic-list "(CORE, MEMSPACE, addr+0, mem3)" 2838 . 2868) (punctuation ";" 2868 . 2869) (symbol "CADIMemWrite" 2874 . 2886) (semantic-list "(CORE, MEMSPACE, addr+1, mem2)" 2886 . 2916) (punctuation ";" 2916 . 2917) (symbol "CADIMemWrite" 2922 . 2934) (semantic-list "(CORE, MEMSPACE, addr+2, mem1)" 2934 . 2964) (punctuation ";" 2964 . 2965) (symbol "CADIMemWrite" 2970 . 2982) (semantic-list "(CORE, MEMSPACE, addr+3, mem0)" 2982 . 3012) (punctuation ";" 3012 . 3013)))
+          ("DEBUG_ON" (spp-arg-list ("verbose" "waves") 8768 . 8784) . 
+              ((IF "if" 8794 . 8796) (semantic-list "(waves)" 8797 . 8804) (semantic-list "{ \\
+    message(\"Enabling Waveform Dump\"); \\
+    setParameter(COMPONENT, \"Dump Waveforms\", \"true\"); \\
+  }" 8805 . 8910) (IF "if" 8915 . 8917) (semantic-list "(verbose)" 8918 . 8927) (semantic-list "{ \\
+    message(\"Enabling Carbon Verbose\"); \\
+    setParameter(COMPONENT, \"Enable Debug Messages\", \"true\"); \\
+    resetSystem(\"HARD\"); \\
+  }" 8928 . 9068)))
+          ("CHECK_REGISTER" (spp-arg-list ("regName") 18457 . 18466) . 
+              ((symbol "r0Val" 18471 . 18476) (punctuation "=" 18477 . 18478) (symbol "CADIRegRead" 18479 . 18490) (semantic-list "(CORE, \"R0\")" 18490 . 18502) (punctuation ";" 18502 . 18503) (symbol "regVal" 18508 . 18514) (punctuation "=" 18515 . 18516) (symbol "CADIRegRead" 18517 . 18528) (semantic-list "(CORE, regName)" 18528 . 18543) (punctuation ";" 18543 . 18544) (IF "if" 18549 . 18551) (semantic-list "(regVal == r0Val)" 18552 . 18569) (semantic-list "{ \\
+      message(\"INFO\", \"PASS: %s value 0x%x, R0 value 0x%x\", regName, regVal, r0Val); \\
+    }" 18576 . 18672) (ELSE "else" 18677 . 18681) (semantic-list "{ \\
+      message(\"INFO\", \"\\n***FAIL: %s value 0x%x, R0 value 0x%x\\n\", regName, regVal, r0Val); \\
+      FAIL++; \\
+    }" 18688 . 18807)))
+          ("CHECK_REGISTER_REG_VALUE2_CNTR" (spp-arg-list ("reg" "expReg0" "expReg1" "diff") 15066 . 15095) . 
+              ((symbol "expected" 15106 . 15114) (punctuation "=" 15115 . 15116) (symbol "CADIRegRead" 15117 . 15128) (semantic-list "(CORE, expReg0)" 15128 . 15143) (punctuation ";" 15143 . 15144) (symbol "expected" 15149 . 15157) (punctuation "=" 15158 . 15159) (semantic-list "((CADIRegRead(CORE, expReg1) << 32) | expected)" 15160 . 15207) (punctuation ";" 15207 . 15208) (symbol "CHECK_REGISTER_VALUE_CNTR" 15215 . 15240) (semantic-list "(reg, expected, diff)" 15240 . 15261) (punctuation ";" 15261 . 15262)))
+          ("NSHYP" . ((number "1" 81 . 82)))
+          ("RUNTO" (spp-arg-list ("targetPC" "maxAttempts") 3538 . 3562) . 
+              ((symbol "message" 3571 . 3578) (semantic-list "(\"INFO\", \"Running till 0x%x\", targetPC)" 3578 . 3617) (punctuation ";" 3617 . 3618) (symbol "bptId" 3623 . 3628) (punctuation "=" 3629 . 3630) (symbol "bpAdd" 3631 . 3636) (semantic-list "(CORE, targetPC)" 3636 . 3652) (punctuation ";" 3652 . 3653) (symbol "attempt" 3665 . 3672) (punctuation "=" 3673 . 3674) (number "0" 3675 . 3676) (punctuation ";" 3676 . 3677) (symbol "PC" 3682 . 3684) (punctuation "=" 3685 . 3686) (symbol "CADIRegRead" 3687 . 3698) (semantic-list "(CORE, \"R15\")" 3698 . 3711) (punctuation "+" 3712 . 3713) (number "1" 3714 . 3715) (punctuation ";" 3715 . 3716) (WHILE "while" 3721 . 3726) (semantic-list "((attempt < maxAttempts) && (PC != targetPC))" 3727 . 3772) (semantic-list "{ \\
+    step(2000); \\
+    PC = CADIRegRead(CORE, \"R15\"); \\
+    attempt++; \\
+  }" 3773 . 3852) (symbol "bpRemove" 3857 . 3865) (semantic-list "(bptId)" 3865 . 3872) (punctuation ";" 3872 . 3873) (IF "if" 3878 . 3880) (semantic-list "(PC == targetPC)" 3881 . 3897) (semantic-list "{ \\
+    message(\"INFO\", \"Reached 0x%x\\n\", targetPC); \\
+  }" 3898 . 3956) (ELSE "else" 3957 . 3961) (semantic-list "{ \\
+    runToErrorCount++;\\
+    message(\"ERROR\", \"Failed to reach breakpoint at 0x%x, PC = 0x%x\", \\
+            targetPC, PC); \\
+    if (PC == 0xffffffffffffffff) \\
+    { \\
+       runToDebuggablePoint(CORE); \\
+       PC = CADIRegRead(CORE, \"R15\" ); \\
+       message(\"INFO\", \"PC IN THE WEEDS AT PC:  actual %08x\", PC); \\
+    } \\
+  }" 3962 . 4293)))
+          ("SET_APPLICATION" (spp-arg-list ("component" "file") 4981 . 4998) . 
+              ((symbol "setAppFile" 5003 . 5013) (semantic-list "(component, file)" 5013 . 5030) (punctuation ";" 5030 . 5031) (symbol "message" 5036 . 5043) (semantic-list "(\"INFO\", \"Setting applications %s for component %s\", component, file)" 5043 . 5112) (punctuation ";" 5112 . 5113)))
+          ("CHECK_FP_REGISTER" (spp-arg-list ("regName" "fpName") 18834 . 18851) . 
+              ((symbol "fpVal" 18856 . 18861) (punctuation "=" 18862 . 18863) (symbol "CADIRegRead" 18864 . 18875) (semantic-list "(CORE, fpName)" 18875 . 18889) (punctuation ";" 18889 . 18890) (symbol "regVal" 18895 . 18901) (punctuation "=" 18902 . 18903) (symbol "CADIRegRead" 18904 . 18915) (semantic-list "(CORE, regName)" 18915 . 18930) (punctuation ";" 18930 . 18931) (IF "if" 18936 . 18938) (semantic-list "(regVal == fpVal)" 18939 . 18956) (semantic-list "{ \\
+      message(\"INFO\", \"PASS: %s value 0x%x, %s value 0x%x\", regName, regVal, fpName, fpVal); \\
+    }" 18963 . 19067) (ELSE "else" 19072 . 19076) (semantic-list "{ \\
+      message(\"INFO\", \"\\n***FAIL: %s value 0x%x, %s value 0x%x\\n\", regName, regVal, fpName, fpVal); \\
+      FAIL++; \\
+    }" 19083 . 19210) (symbol "step" 19215 . 19219) (semantic-list "(1000)" 19219 . 19225) (punctuation ";" 19225 . 19226)))
+          )
+))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!Teal!Simulation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

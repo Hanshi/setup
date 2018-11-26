@@ -1,0 +1,20 @@
+;; Object Register/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Register/"
+  :tables
+  (list
+    (semanticdb-table "breakpoints.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("debugReadRegister" variable
+               (:default-value "0x000009f4"
+                :type "int")
+                nil [2 37]))          
+      :file "breakpoints.h"
+      :pointmax 38
+      :fsize 36
+      :lastmodtime '(22492 14278 677869 0)
+      :unmatched-syntax nil))
+  :file "!home!hlei!modelkit!testresult_beeton!test!primecells!PL690!Register!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

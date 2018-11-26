@@ -1,0 +1,375 @@
+;; Object Prometheus/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Prometheus/"
+  :tables
+  (list
+    (semanticdb-table "PCStateMachine.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__PC_STATE_MACHINE_PROMETHEUS_H__" variable (:constant-flag t) nil [566 599])
+            ("cpus/PCStateMachineBase.h" include nil nil [601 637])
+            ("list" include (:system-flag t) nil [638 653])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("CARBONMKLIBRARYPROMETHEUS" type
+                       (:members 
+                          ( ("VirtualRegs" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [729 747])
+                            ("PCStateMachine" type
+                               (:superclasses 
+                                  ( ("PCStateMachineBase" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [800 807])
+                                    ("PCStateMachine" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("coreNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [825 842])
+                                            ("compHelper" variable
+                                               (:pointer 1
+                                                :type ("CarbonComponentHelper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [860 894])
+                                            ("semiHost" variable
+                                               (:pointer 1
+                                                :type ("CarbonSemiHostMasterPort" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [912 947])
+                                            ("semiHostCallback" variable
+                                               (:pointer 1
+                                                :type ("SemihostingCallback" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [965 1003]))                                          
+                                        :type ("PCStateMachine" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [810 1004])
+                                    ("PCStateMachine" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1007 1033])
+                                    ("protected" label nil (reparse-symbol classsubparts) [1035 1045])
+                                    ("getDebugHaltInstructions" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("DebugInstruction" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [1092 1158])
+                                    ("getDebugPCDepositInstructions" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("DebugInstruction" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1209 1267])
+                                    ("getTBit" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1308 1337])
+                                    ("isAArch32" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1398 1429])
+                                    ("depositHaltRequest" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("val" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1508 1525]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1476 1526])
+                                    ("putBreakOnSVCException" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [1632 1644]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1596 1645])
+                                    ("depositInstruction" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("instr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("DebugInstruction" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1722 1752]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1690 1753])
+                                    ("depositRestart" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1802 1832])
+                                    ("enableStall" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("match" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2324 2343])
+                                            ("doStep" variable (:type "bool") (reparse-symbol arg-sub-list) [2344 2356]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2299 2357])
+                                    ("readRTLValues" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2510 2539])
+                                    ("updateCommittedPCs" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2590 2624])
+                                    ("saveDebugScratchRegisters" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2700 2741])
+                                    ("restoreDebugScratchRegisters" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2818 2868])
+                                    ("isStalled" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3239 3270])
+                                    ("isInstructionComplete" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3332 3375])
+                                    ("isRestarted" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3549 3582])
+                                    ("correctAddressMatch" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("addressMatch" variable (:type "bool") (reparse-symbol arg-sub-list) [3672 3690])
+                                            ("bpAddrToCheck" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3691 3718]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3639 3719])
+                                    ("private" label nil (reparse-symbol classsubparts) [3722 3730])
+                                    ("mVirtRegs" variable
+                                       (:pointer 1
+                                        :type ("VirtualRegs" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3736 3759])
+                                    ("mCPUNum" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3763 3784])
+                                    ("mIsStep" variable (:type "bool") (reparse-symbol classsubparts) [3787 3800])
+                                    ("mAlast" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3803 3823])
+                                    ("mACurrent" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3826 3849])
+                                    ("mNewMatch" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3852 3875])
+                                    ("mState" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3878 3898])
+                                    ("mPrevDebugState" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3901 3930])
+                                    ("mCurrentDebugState" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3933 3965])
+                                    ("mRecordDebugState" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3968 3999])
+                                    ("mReportPipelinePC" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4002 4033])
+                                    ("mLastBPAddr" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4036 4061])
+                                    ("mDebugEnd" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4064 4087])
+                                    ("mLastMatchIgnore" variable (:type "bool") (reparse-symbol classsubparts) [4090 4112])
+                                    ("findNet" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :arguments 
+                                          ( ("netName" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [4215 4235]))                                          
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4194 4236])
+                                    ("findCpuNet" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :arguments 
+                                          ( ("netName" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [4263 4283]))                                          
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4239 4284])
+                                    ("carbonDeposit64" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("pcNetLo" variable
+                                               (:pointer 1
+                                                :type ("CarbonNetID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4308 4330])
+                                            ("pcNetHi" variable
+                                               (:pointer 1
+                                                :type ("CarbonNetID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4331 4353])
+                                            ("depositValue" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4354 4380]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4287 4381])
+                                    ("carbonForce64" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("pcNetLo" variable
+                                               (:pointer 1
+                                                :type ("CarbonNetID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4403 4425])
+                                            ("pcNetHi" variable
+                                               (:pointer 1
+                                                :type ("CarbonNetID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4425 4447])
+                                            ("depositValue" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4449 4475]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4384 4476])
+                                    ("carbonExamine64" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("pcNetlo" variable
+                                               (:pointer 1
+                                                :type ("CarbonNetID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4508 4530])
+                                            ("pcNetHi" variable
+                                               (:pointer 1
+                                                :type ("CarbonNetID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4531 4553]))                                          
+                                        :type ("CarbonUInt64" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4479 4554])
+                                    ("mHaltReqHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4559 4585])
+                                    ("mDbgStateHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4588 4615])
+                                    ("mDbgdscrHaltedHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4618 4650])
+                                    ("mDbgackHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4653 4678])
+                                    ("mRestartReqHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4681 4710])
+                                    ("mDbgdscrRestartedHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4713 4748])
+                                    ("mCoreExitDebugStateHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4751 4788])
+                                    ("mInstrHasCompletedHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4791 4827])
+                                    ("mIssueItrInstrHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4830 4862])
+                                    ("mItrValidHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4865 4892])
+                                    ("mExcInstrPCHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4896 4925])
+                                    ("mBmI0InstrPCHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4928 4958])
+                                    ("mSSHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4962 4983])
+                                    ("mSSKdeHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4986 5010])
+                                    ("mSSEnHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5013 5036])
+                                    ("mInstrComplHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5040 5069])
+                                    ("mEditrHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5072 5096])
+                                    ("mDspsrHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5100 5125])
+                                    ("mCurrentModeHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5128 5159])
+                                    ("mDeI0StateHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5162 5191])
+                                    ("mDscrMDEHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5195 5221])
+                                    ("mDscrHDEHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5224 5250])
+                                    ("mDscrHDEsyncHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5253 5283])
+                                    ("mDbgOSlkHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5287 5313])
+                                    ("mDbgExceptEnHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5316 5346])
+                                    ("mDp0PcHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5350 5374])
+                                    ("mBrkptEnHndl" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5378 5404])
+                                    ("mBreakpointMatch" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5407 5437])
+                                    ("mNextBPMatch" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5441 5467])
+                                    ("mCurrentBPMatch" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5470 5499])
+                                    ("mInstrCompLast" variable
+                                       (:typemodifiers ("mutable")
+                                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5503 5539]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [749 5545]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [690 5548]))                  
+                :type "namespace")
+                nil [655 5549]))          
+      :file "PCStateMachine.h"
+      :pointmax 5598
+      :fsize 5597
+      :lastmodtime '(22749 10067 475075 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__PC_STATE_MACHINE_PROMETHEUS_H__")
+          )
+))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!src!include!cpus!Prometheus!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

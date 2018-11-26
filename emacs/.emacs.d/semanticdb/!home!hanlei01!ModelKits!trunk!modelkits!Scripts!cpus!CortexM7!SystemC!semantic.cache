@@ -1,0 +1,166 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("LINUX_DIR" variable (:default-value (".")) nil [1 15])
+            ("PACKAGE_LIB_DIR" variable (:default-value ("./lib")) nil [66 90])
+            ("COMP_NAME" variable (:default-value ("$(subst lib,,$(basename $(notdir $(wildcard $(PACKAGE_LIB_DIR)/lib*.a))))")) nil [188 274])
+            ("clean" function nil nil [275 300])
+            ("gen_code" function nil nil [301 311])
+            ("NUM_CPUS" variable (:default-value ("1")) nil [312 323])
+            ("Makefile.internal" include nil nil [342 368])
+            ("UNIVENT_TARMAC" variable (:default-value ("-DUNIVENT_TARMAC=1")) nil [430 464])
+            ("CXX" variable (:default-value ("g++")) nil [465 473])
+            ("CXXFLAGS" variable (:default-value ("-fPIC" "-g" "-DCARBON_DUMP_VCD=0" "-std=c++11" "-I$(SYSTEMC_HOME)/include" "-I$(CARBON_HOME)/include" "$(CM_SYSC_CXXFLAGS)" "-I." "-I$(LINUX_DIR)" "$(UNIVENT_TARMAC)" "-DNUM_CPUS=$(NUM_CPUS)")) nil [473 706])
+            ("ENABLE_PMU" variable (:default-value ("-DENABLE_PMU=1")) nil [707 733])
+            ("OBJS" variable (:default-value ("$(COMP_NAME)Imp.o" "lib$(COMP_NAME).systemc.o" "univent_tarmac.o")) nil [735 814])
+            ("all" function (:arguments ("lib$(COMP_NAME).so" "univent_tarmac.o")) nil [815 856])
+            ("lib" function (:arguments ("$(OBJS)")) nil [858 1255])
+            ("$(COMP_NAME)" function (:arguments ("gen_code")) nil [1256 1286])
+            ("univent_tarmac.cpp" function (:arguments ("gen_code")) nil [1287 1316])
+            ("$(COMP_NAME)" function (:arguments ("$(COMP_NAME)Imp.cpp")) nil [1318 1404])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp" "gen_code")) nil [1405 1515])
+            ("univent_tarmac.o" function (:arguments ("univent_tarmac.cpp" "gen_code")) nil [1516 1594]))          
+      :file "Makefile"
+      :pointmax 1595
+      :fsize 1440
+      :lastmodtime '(23027 33266 326340 0)
+      :unmatched-syntax '((symbol 399 . 428) (semantic-list 385 . 399) (punctuation 384 . 385) (symbol 375 . 383) (bol 375 . 375) (symbol 124 . 132) (semantic-list 107 . 124) (punctuation 106 . 107) (punctuation 104 . 105) (punctuation 103 . 104) (symbol 90 . 102) (bol 90 . 90) (symbol 32 . 65) (punctuation 29 . 30) (punctuation 28 . 29) (symbol 15 . 27) (bol 15 . 15)))
+    (semanticdb-table "Makefile.internal"
+      :file "Makefile.internal"
+      :fsize 2663
+      :lastmodtime '(23053 62352 550792 0))
+    (semanticdb-table "CortexM7_pmu.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("CORTEXM7_PMU_H" variable (:constant-flag t) nil [95 109])
+            ("CortexM7_pmu" type
+               (:superclasses 
+                  ( ("scx_wrapper_feature" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [162 170])
+                    ("cpicnt_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 265])
+                    ("exccnt_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 265])
+                    ("sleepcnt_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 265])
+                    ("lsucnt_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 265])
+                    ("foldcnt_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 265])
+                    ("evts_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 265])
+                    ("net_trcena_0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [268 299])
+                    ("net_cpicnt_0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [302 333])
+                    ("net_exccnt_0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [336 367])
+                    ("net_sleepcnt_0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [370 403])
+                    ("net_lsucnt_0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [406 437])
+                    ("net_foldcnt_0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [440 472])
+                    ("net_evts_0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [475 504])
+                    ("public" label nil (reparse-symbol classsubparts) [512 519])
+                    ("CortexM7_pmu" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("num_cpus" variable (:type "int") (reparse-symbol arg-sub-list) [538 551])
+                            ("carbonModelHandle" variable
+                               (:pointer 1
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [552 586])
+                            ("target" variable
+                               (:reference 1
+                                :type ("scx::scx_debug_target_if" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [586 619]))                          
+                        :type ("CortexM7_pmu" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [525 778])
+                    ("CortexM7_pmu" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [784 807])
+                    ("update" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [814 1242])
+                    ("end_of_simulation" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1246 1367])
+                    ("enable" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1373 2765])
+                    ("run" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2823 2840]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2806 3254])
+                    ("disable" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3258 3344])
+                    ("reset_counts" function (:type "void") (reparse-symbol classsubparts) [3350 3463]))                  
+                :type "class")
+                nil [111 3466]))          
+      :file "CortexM7_pmu.h"
+      :pointmax 3475
+      :fsize 3474
+      :lastmodtime '(23142 2194 887038 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CORTEXM7_PMU_H")
+          )
+))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!Scripts!cpus!CortexM7!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

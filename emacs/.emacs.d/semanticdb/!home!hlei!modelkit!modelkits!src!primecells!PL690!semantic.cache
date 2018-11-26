@@ -1,0 +1,532 @@
+;; Object PL690/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "PL690/"
+  :tables
+  (list
+    (semanticdb-table "GICDFlagRegisters.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sstream" include (:system-flag t) nil [511 529])
+            ("string" include (:system-flag t) nil [530 547])
+            ("vector" include (:system-flag t) nil [548 565])
+            ("cmath" include (:system-flag t) nil [566 582])
+            ("eslapi/CADICommon.h" include (:system-flag t) nil [583 613])
+            ("carbon/carbon_capi.h" include nil nil [614 645])
+            ("carbon/carbon_dbapi.h" include nil nil [646 678])
+            ("common/carbon_mkversion.h" include nil nil [680 716])
+            ("common/CarbonComponentHelper.h" include nil nil [717 758])
+            ("primecells/PL690/GICDFlagRegisters.h" include nil nil [759 806])
+            ("common/CarbonStreamIntf.h" include nil nil [808 844])
+            ("CARBON_MKLIB_NAMESPACE" using (:type ("CARBON_MKLIB_NAMESPACE" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [849 888])
+            ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYGICBEETON" using (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYGICBEETON" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [889 954])
+            ("GICDFlagRegisters" function
+               (:constructor-flag t
+                :parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("compHelper" variable
+                       (:pointer 1
+                        :type ("CARBON_MKLIB_NAMESPACE::CarbonComponentHelper" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [994 1052]))                  
+                :type ("GICDFlagRegisters" type (:type "class") nil nil))
+                nil [957 1350])
+            ("readIGroupR" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1408 1426])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1427 1446]))                  
+                :type "void")
+                nil [1372 2308])
+            ("readIGroupModR" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2349 2367])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2368 2387]))                  
+                :type "void")
+                nil [2310 3415])
+            ("readISPENDR" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3453 3471])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3472 3491]))                  
+                :type "void")
+                nil [3417 4693])
+            ("readISACTIVER" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4733 4751])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4752 4771]))                  
+                :type "void")
+                nil [4695 5698])
+            ("readISEnableR" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5738 5756])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5757 5776]))                  
+                :type "void")
+                nil [5700 7134])
+            ("readIPRIORITYR" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7175 7193])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7194 7213]))                  
+                :type "void")
+                nil [7136 8426])
+            ("readITARGETSR" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8466 8484])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8485 8504]))                  
+                :type "void")
+                nil [8428 9983])
+            ("readIROUTER" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10021 10039])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10040 10059]))                  
+                :type "void")
+                nil [9985 12962])
+            ("writeIGroupR" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13001 13025])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13026 13045]))                  
+                :type "bool")
+                nil [12964 13239])
+            ("writeIGroupModR" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13281 13305])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13306 13325]))                  
+                :type "bool")
+                nil [13241 13528])
+            ("writeISEnableR" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13569 13593])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13594 13613]))                  
+                :type "bool")
+                nil [13530 13808])
+            ("writeISPENDR" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13847 13865])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13866 13885]))                  
+                :type "bool")
+                nil [13810 14083])
+            ("writeISACTIVER" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14124 14142])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14143 14162]))                  
+                :type "bool")
+                nil [14085 14361])
+            ("writeIPRIORITYR" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14403 14421])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14422 14441]))                  
+                :type "bool")
+                nil [14363 14638])
+            ("writeITARGETSR" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14679 14697])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14698 14717]))                  
+                :type "bool")
+                nil [14640 14898])
+            ("writeIROUTER" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14937 14955])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14956 14975]))                  
+                :type "bool")
+                nil [14900 15171])
+            ("setGICDPath" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15210 15227]))                  
+                :type "void")
+                nil [15173 15252])
+            ("setCPUNum" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("num" variable (:type "int") (reparse-symbol arg-sub-list) [15289 15297]))                  
+                :type "void")
+                nil [15254 15317])
+            ("setAFFWidth0" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [15357 15367]))                  
+                :type "void")
+                nil [15319 15392])
+            ("setAFFWidth1" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [15432 15442]))                  
+                :type "void")
+                nil [15394 15467])
+            ("setAFFWidth2" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [15507 15517]))                  
+                :type "void")
+                nil [15469 15542])
+            ("setAFFWidth3" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [15582 15592]))                  
+                :type "void")
+                nil [15544 15617])
+            ("setSPIBlocks" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [15656 15662]))                  
+                :type "void")
+                nil [15619 15684])
+            ("setSPIRamWidth" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [15725 15731]))                  
+                :type "void")
+                nil [15686 15755])
+            ("setSPIRamDepth" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [15796 15802]))                  
+                :type "void")
+                nil [15757 15826])
+            ("setRoutingWidth" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [15868 15874]))                  
+                :type "void")
+                nil [15828 15899])
+            ("s_ds" function
+               (:parent "GICDFlagRegisters"
+                :type ("CarbonUInt32" type (:type "class") nil nil))
+                nil [15901 16196])
+            ("getAXIS_GICD_NSECURE_INT" function
+               (:parent "GICDFlagRegisters"
+                :type ("CarbonUInt32" type (:type "class") nil nil))
+                nil [16198 16537])
+            ("getGICD_ARE_S" function
+               (:parent "GICDFlagRegisters"
+                :type ("CarbonUInt32" type (:type "class") nil nil))
+                nil [16539 16840])
+            ("getSPI_WB_ARE" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [16888 16899]))                  
+                :type ("CarbonUInt32" type (:type "class") nil nil))
+                nil [16842 17207])
+            ("getGICD_DS" function
+               (:parent "GICDFlagRegisters"
+                :type ("CarbonUInt32" type (:type "class") nil nil))
+                nil [17209 17495])
+            ("getRD_SEC_NSACR1_OK" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("bit" variable (:type "int") (reparse-symbol arg-sub-list) [17549 17557]))                  
+                :type ("CarbonUInt32" type (:type "class") nil nil))
+                nil [17497 17877])
+            ("getRD_SEC_NSACR2_OK" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("bit" variable (:type "int") (reparse-symbol arg-sub-list) [17931 17939]))                  
+                :type ("CarbonUInt32" type (:type "class") nil nil))
+                nil [17879 18259])
+            ("getRD_SEC_NSACR3_OK" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("bit" variable (:type "int") (reparse-symbol arg-sub-list) [18313 18321]))                  
+                :type ("CarbonUInt32" type (:type "class") nil nil))
+                nil [18261 18641])
+            ("getAFF_VALID" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [18688 18698]))                  
+                :type ("CarbonUInt32" type (:type "class") nil nil))
+                nil [18643 19019])
+            ("findMemRegHandler" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19065 19084]))                  
+                :type "void")
+                nil [19022 19692])
+            ("setBufferHandler" function
+               (:parent "GICDFlagRegisters"
+                :type "void")
+                nil [19694 20367])
+            ("isCached" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20403 20422])
+                    ("bit" variable (:type "int") (reparse-symbol arg-sub-list) [20423 20431])
+                    ("pos" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [20432 20441]))                  
+                :type "bool")
+                nil [20370 21033])
+            ("isCached8bit" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21072 21091])
+                    ("bit" variable (:type "int") (reparse-symbol arg-sub-list) [21092 21100])
+                    ("pos" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [21101 21110]))                  
+                :type "bool")
+                nil [21035 21702])
+            ("findMemRegHandler8bit" function
+               (:parent "GICDFlagRegisters"
+                :arguments 
+                  ( ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21751 21770]))                  
+                :type "void")
+                nil [21704 22819]))          
+      :file "GICDFlagRegisters.cpp"
+      :pointmax 22820
+      :fsize 22819
+      :lastmodtime '(22501 64715 44072 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "GICRFlagRegisters.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sstream" include (:system-flag t) nil [516 534])
+            ("string" include (:system-flag t) nil [535 552])
+            ("vector" include (:system-flag t) nil [553 570])
+            ("eslapi/CADICommon.h" include (:system-flag t) nil [571 601])
+            ("carbon/carbon_capi.h" include nil nil [602 633])
+            ("carbon/carbon_dbapi.h" include nil nil [634 666])
+            ("common/carbon_mkversion.h" include nil nil [668 704])
+            ("common/CarbonComponentHelper.h" include nil nil [705 746])
+            ("primecells/PL690/GICRFlagRegisters.h" include nil nil [747 794])
+            ("common/CarbonStreamIntf.h" include nil nil [796 832])
+            ("CARBON_MKLIB_NAMESPACE" using (:type ("CARBON_MKLIB_NAMESPACE" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [837 876])
+            ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYGICBEETON" using (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYGICBEETON" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [877 942])
+            ("GICRFlagRegisters" function
+               (:constructor-flag t
+                :parent "GICRFlagRegisters"
+                :arguments 
+                  ( ("compHelper" variable
+                       (:pointer 1
+                        :type ("CARBON_MKLIB_NAMESPACE::CarbonComponentHelper" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [982 1040]))                  
+                :type ("GICRFlagRegisters" type (:type "class") nil nil))
+                nil [945 1423])
+            ("readIGroupR" function
+               (:parent "GICRFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1481 1499])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1500 1519]))                  
+                :type "void")
+                nil [1445 3197])
+            ("readIGrpmodR" function
+               (:parent "GICRFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3236 3254])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3255 3274]))                  
+                :type "void")
+                nil [3199 4151])
+            ("readISEnableR" function
+               (:parent "GICRFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4191 4209])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4210 4229]))                  
+                :type "void")
+                nil [4153 5090])
+            ("readICEnableR" function
+               (:parent "GICRFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5130 5148])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5149 5168]))                  
+                :type "void")
+                nil [5092 6028])
+            ("readISPendR" function
+               (:parent "GICRFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6066 6084])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6085 6104]))                  
+                :type "void")
+                nil [6030 6961])
+            ("readICPendR" function
+               (:parent "GICRFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6998 7016])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7017 7036]))                  
+                :type "void")
+                nil [6962 7898])
+            ("writeIGroupR" function
+               (:parent "GICRFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7938 7962])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7963 7982]))                  
+                :type "bool")
+                nil [7901 8311])
+            ("writeISEnableR" function
+               (:parent "GICRFlagRegisters"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8352 8376])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8377 8396]))                  
+                :type "bool")
+                nil [8313 8725])
+            ("setGICRPath" function
+               (:parent "GICRFlagRegisters"
+                :arguments 
+                  ( ("path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8764 8781])
+                    ("num_ppi_blocks" variable (:type "int") (reparse-symbol arg-sub-list) [8782 8801])
+                    ("num_cpus_per_ppi_block" variable (:type "int") (reparse-symbol arg-sub-list) [8802 8829])
+                    ("num_ppis_per_cpu" variable (:type "int") (reparse-symbol arg-sub-list) [8830 8851])
+                    ("sgi_ram_depth" variable (:type "int") (reparse-symbol arg-sub-list) [8852 8870])
+                    ("sgi_ram_width" variable (:type "int") (reparse-symbol arg-sub-list) [8871 8889]))                  
+                :type "void")
+                nil [8727 10980])
+            ("setGICDPath" function
+               (:parent "GICRFlagRegisters"
+                :arguments 
+                  ( ("path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11018 11035]))                  
+                :type "void")
+                nil [10981 11060])
+            ("s_ds" function
+               (:parent "GICRFlagRegisters"
+                :type ("CarbonUInt32" type (:type "class") nil nil))
+                nil [11063 11358])
+            ("findSGIMemRegHandler" function
+               (:parent "GICRFlagRegisters"
+                :arguments 
+                  ( ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11407 11426]))                  
+                :type "void")
+                nil [11361 11430])
+            ("findPPSGIMemRegHandler" function
+               (:parent "GICRFlagRegisters"
+                :arguments 
+                  ( ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11479 11498]))                  
+                :type "void")
+                nil [11431 11502])
+            ("setBufferHandler" function
+               (:parent "GICRFlagRegisters"
+                :type "void")
+                nil [11504 11623])
+            ("isCached" function
+               (:parent "GICRFlagRegisters"
+                :arguments 
+                  ( ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11659 11678])
+                    ("bit" variable (:type "int") (reparse-symbol arg-sub-list) [11679 11687])
+                    ("pos" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11688 11697]))                  
+                :type "bool")
+                nil [11626 11814])
+            ("extractPerPPIBufs" function
+               (:parent "GICRFlagRegisters"
+                :arguments 
+                  ( ("extractBufs" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11859 11886])
+                    ("bufs" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11887 11907]))                  
+                :type "void")
+                nil [11817 13147]))          
+      :file "GICRFlagRegisters.cpp"
+      :pointmax 13148
+      :fsize 13147
+      :lastmodtime '(22503 63136 259987 0)
+      :unmatched-syntax nil)
+)
+  :file "!home!hlei!modelkit!modelkits!src!primecells!PL690!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

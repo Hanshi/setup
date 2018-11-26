@@ -1,0 +1,36 @@
+;; Object makefiles/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "makefiles/"
+  :tables
+  (list
+    (semanticdb-table "icm_common.mak"
+      :major-mode 'makefile-mode
+      :tags 
+        '( ("ICM_SO" variable (:default-value ("lib$(COMP_NAME).icm.so")) nil [756 788])
+            ("ICM_CXX" variable (:default-value ("g++")) nil [789 801])
+            ("ICM_CXXFLAGS" variable (:default-value ("-O3" "-fPIC" "-g" "-std=c++11" "-Wall" "-Werror" "-fvisibility=hidden" "-fvisibility-inlines-hidden" "-I$(CARBON_HOME)/include" "-I." "-I$(ICM_PACKAGE)/external/include" "-I$(ICM_PACKAGE)/internal/include")) nil [802 1066])
+            ("ICM_USER_CXX_FLAGS" variable (:default-value ("-I$(CARBON_MK_HOME)/include" "-DMODEL_EXPORTS" "-I$(LINUX_DIR)")) nil [1067 1148])
+            ("ICM_USER_LINK_FLAGS" variable (:default-value ("-L$(CARBON_MK_HOME)/lib/Linux" "-L$(LINUX_DIR)" "-L$(ICM_PACKAGE)/internal/lib/Linux-x86_64-GCC-4.8.3" "-licm_impl" "-lmodelkit_icm-4.8.3" "-licm_impl" "-pthread" "-lz" "-lcurses")) nil [1349 1535])
+            ("ICM_CXXFLAGS" variable (:default-value ("$(ICM_USER_CXX_FLAGS)")) nil [1536 1577])
+            ("ICM_LDFLAGS" variable (:default-value ("-L$(LINUX_DIR)" "-l$(COMP_NAME)")) nil [1577 1627])
+            ("ICM_LDFLAGS" variable (:default-value ("$(ICM_USER_LINK_FLAGS)")) nil [1628 1667])
+            ("ICM_BUILD" variable (:default-value ("./icm_build")) nil [1668 1695])
+            ("ICM_PACKAGE_SOURCES" variable (:default-value ("$(ICM_BUILD)/$(COMP_NAME)_icm.cpp")) nil [1695 1751])
+            ("ICM_PACKAGE_OBJECTS" variable (:default-value ("$(patsubst %.cpp,%.o,$(ICM_PACKAGE_SOURCES))")) nil [1751 1818])
+            ("ICM_META_OBJ" variable (:default-value ("$(ICM_BUILD)/meta_data.o")) nil [1865 1905])
+            ("GEN_ICM_CPP" variable (:default-value ("$(ICM_BUILD)/$(COMP_NAME)_icm.cpp")) nil [1954 2002])
+            ("GEN_ICM_H" variable (:default-value ("$(COMP_NAME)_icm.h")) nil [2002 2033])
+            ("$(ICM_SO)" function (:arguments ("create_icm_cpp" "create_icm_h" "$(ICM_PACKAGE_OBJECTS)" "$(ICM_META_OBJ)" "create_icm_runtime")) nil [2034 2448])
+            ("%.o" function (:arguments ("%.cpp")) nil [2449 2501])
+            ("$(ICM_META_OBJ)" function (:arguments ("$(ICM_META_SRC)")) nil [2502 2817])
+            ("create_icm_cpp" function nil nil [2818 4917])
+            ("create_icm_h" function nil nil [4918 5744])
+            ("create_icm_runtime" function nil nil [5745 5924]))          
+      :file "icm_common.mak"
+      :pointmax 5925
+      :fsize 5924
+      :lastmodtime '(22986 26808 0 0)
+      :unmatched-syntax '((symbol 1850 . 1864) (semantic-list 1839 . 1850) (punctuation 1838 . 1839) (symbol 1835 . 1838) (punctuation 1833 . 1834) (punctuation 1832 . 1833) (symbol 1819 . 1831) (bol 1819 . 1819) (symbol 749 . 754) (punctuation 747 . 748) (punctuation 746 . 747) (symbol 730 . 745) (bol 730 . 730) (symbol 721 . 729) (punctuation 719 . 720) (punctuation 718 . 719) (symbol 708 . 717) (bol 708 . 708))))
+  :file "!o!release!icm!master!111!Release!internal!makefiles!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,2294 @@
+;; Object kernel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "kernel/"
+  :tables
+  (list
+    (semanticdb-table "sc_module.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cassert" include (:system-flag t) nil [1224 1242])
+            ("math.h" include (:system-flag t) nil [1243 1260])
+            ("stddef.h" include (:system-flag t) nil [1261 1280])
+            ("stdio.h" include (:system-flag t) nil [1281 1299])
+            ("sysc/kernel/sc_event.h" include nil nil [1301 1334])
+            ("sysc/kernel/sc_kernel_ids.h" include nil nil [1335 1373])
+            ("sysc/kernel/sc_module.h" include nil nil [1374 1408])
+            ("sysc/kernel/sc_module_registry.h" include nil nil [1409 1452])
+            ("sysc/kernel/sc_name_gen.h" include nil nil [1453 1489])
+            ("sysc/kernel/sc_object_manager.h" include nil nil [1490 1532])
+            ("sysc/kernel/sc_process.h" include nil nil [1533 1568])
+            ("sysc/kernel/sc_process_handle.h" include nil nil [1569 1611])
+            ("sysc/kernel/sc_simcontext.h" include nil nil [1612 1650])
+            ("sysc/kernel/sc_simcontext_int.h" include nil nil [1651 1693])
+            ("sysc/kernel/sc_object_int.h" include nil nil [1694 1732])
+            ("sysc/kernel/sc_reset.h" include nil nil [1733 1766])
+            ("sysc/communication/sc_communication_ids.h" include nil nil [1767 1819])
+            ("sysc/communication/sc_interface.h" include nil nil [1820 1864])
+            ("sysc/communication/sc_port.h" include nil nil [1865 1904])
+            ("sysc/communication/sc_signal.h" include nil nil [1905 1946])
+            ("sysc/communication/sc_signal_ports.h" include nil nil [1947 1994])
+            ("sysc/utils/sc_utils_ids.h" include nil nil [1995 2031])
+            ("sysc/utils/sc_iostream.h" include nil nil [2032 2067])
+            ("sc_mx_utils.h" include nil nil [2069 2093])
+            ("sc_core" type
+               (:members 
+                  ( ("sc_module_dynalloc_list" variable (:type ("SC_MX_WEXP" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2385 2633])
+                    ("sc_module_dynalloc_list" function
+                       (:destructor-flag t
+                        :parent "sc_module_dynalloc_list"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3080 3282])
+                    ("sc_module_dynalloc" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("module_" variable
+                               (:pointer 1
+                                :type ("sc_module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3397 3417]))                          
+                        :type ("sc_module" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3366 3525])
+                    ("sc_bind_proxy" function
+                       (:constructor-flag t
+                        :parent "sc_bind_proxy"
+                        :type ("sc_bind_proxy" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3826 3885])
+                    ("sc_bind_proxy" function
+                       (:constructor-flag t
+                        :parent "sc_bind_proxy"
+                        :arguments 
+                          ( ("iface_" variable
+                               (:reference 1
+                                :type ("sc_interface" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3917 3939]))                          
+                        :type ("sc_bind_proxy" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3887 3974])
+                    ("sc_bind_proxy" function
+                       (:constructor-flag t
+                        :parent "sc_bind_proxy"
+                        :arguments 
+                          ( ("port_" variable
+                               (:reference 1
+                                :type ("sc_port_base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4006 4027]))                          
+                        :type ("sc_bind_proxy" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3976 4061])
+                    ("SC_BIND_PROXY_NIL" variable
+                       (:constant-flag t
+                        :type ("sc_bind_proxy" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4064 4102])
+                    ("sc_module_init" function
+                       (:parent "sc_module"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4335 4634])
+                    ("sc_mx_bypass_sc_module" function
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [4651 4915])
+                    ("sc_module" function
+                       (:constructor-flag t
+                        :parent "sc_module"
+                        :type ("sc_module" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5714 6788])
+                    ("sc_module" function
+                       (:constructor-flag t
+                        :parent "sc_module"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_module_name" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6812 6835]))                          
+                        :type ("sc_module" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6790 8016])
+                    ("sc_module" function
+                       (:constructor-flag t
+                        :parent "sc_module"
+                        :arguments 
+                          ( ("nm" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [8214 8230]))                          
+                        :type ("sc_module" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8192 8670])
+                    ("sc_module" function
+                       (:constructor-flag t
+                        :parent "sc_module"
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8694 8716]))                          
+                        :type ("sc_module" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8672 9046])
+                    ("sc_module" function
+                       (:destructor-flag t
+                        :parent "sc_module"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9124 9471])
+                    ("get_child_objects" function
+                       (:parent "sc_module"
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("sc_object" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [9482 9575])
+                    ("async_reset_signal_is" function
+                       (:parent "sc_module"
+                        :arguments 
+                          ( ("port" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_in" type
+                                     (:template-specifier 
+                                        ( ("bool" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9665 9689])
+                            ("level" variable (:type "bool") (reparse-symbol arg-sub-list) [9690 9702]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9626 9753])
+                    ("async_reset_signal_is" function
+                       (:parent "sc_module"
+                        :arguments 
+                          ( ("port" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_inout" type
+                                     (:template-specifier 
+                                        ( ("bool" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9794 9821])
+                            ("level" variable (:type "bool") (reparse-symbol arg-sub-list) [9822 9834]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9755 9885])
+                    ("async_reset_signal_is" function
+                       (:parent "sc_module"
+                        :arguments 
+                          ( ("port" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_out" type
+                                     (:template-specifier 
+                                        ( ("bool" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9926 9951])
+                            ("level" variable (:type "bool") (reparse-symbol arg-sub-list) [9952 9964]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9887 10015])
+                    ("async_reset_signal_is" function
+                       (:parent "sc_module"
+                        :arguments 
+                          ( ("iface" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_signal_in_if" type
+                                     (:template-specifier 
+                                        ( ("bool" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10055 10090])
+                            ("level" variable (:type "bool") (reparse-symbol arg-sub-list) [10091 10102]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10017 10154])
+                    ("end_module" function
+                       (:parent "sc_module"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10156 10607])
+                    ("dont_initialize" function
+                       (:parent "sc_module"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10670 10818])
+                    ("reset_signal_is" function
+                       (:parent "sc_module"
+                        :arguments 
+                          ( ("port" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_in" type
+                                     (:template-specifier 
+                                        ( ("bool" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10901 10925])
+                            ("level" variable (:type "bool") (reparse-symbol arg-sub-list) [10926 10938]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10868 10990])
+                    ("reset_signal_is" function
+                       (:parent "sc_module"
+                        :arguments 
+                          ( ("port" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_inout" type
+                                     (:template-specifier 
+                                        ( ("bool" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11025 11052])
+                            ("level" variable (:type "bool") (reparse-symbol arg-sub-list) [11053 11065]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10992 11117])
+                    ("reset_signal_is" function
+                       (:parent "sc_module"
+                        :arguments 
+                          ( ("port" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_out" type
+                                     (:template-specifier 
+                                        ( ("bool" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11152 11177])
+                            ("level" variable (:type "bool") (reparse-symbol arg-sub-list) [11178 11190]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11119 11242])
+                    ("reset_signal_is" function
+                       (:parent "sc_module"
+                        :arguments 
+                          ( ("iface" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_signal_in_if" type
+                                     (:template-specifier 
+                                        ( ("bool" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11277 11312])
+                            ("level" variable (:type "bool") (reparse-symbol arg-sub-list) [11313 11325]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11244 11378])
+                    ("gen_unique_name" function
+                       (:pointer 1
+                        :parent "sc_module"
+                        :constant-flag t
+                        :arguments 
+                          ( ("basename_" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [11479 11501])
+                            ("preserve_first" variable (:type "bool") (reparse-symbol arg-sub-list) [11502 11523]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [11439 11596])
+                    ("before_end_of_elaboration" function
+                       (:parent "sc_module"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11632 11678])
+                    ("construction_done" function
+                       (:parent "sc_module"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11879 11984])
+                    ("end_of_elaboration" function
+                       (:parent "sc_module"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12043 12082])
+                    ("elaboration_done" function
+                       (:parent "sc_module"
+                        :arguments 
+                          ( ("error_" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [12311 12325]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12277 12641])
+                    ("start_of_simulation" function
+                       (:parent "sc_module"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12700 12740])
+                    ("start_simulation" function
+                       (:parent "sc_module"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12742 12840])
+                    ("end_of_simulation" function
+                       (:parent "sc_module"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12898 12936])
+                    ("simulation_done" function
+                       (:parent "sc_module"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12938 13033])
+                    ("set_stack_size" function
+                       (:parent "sc_module"
+                        :arguments 
+                          ( ("size" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13067 13085]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [13035 13465])
+                    ("append_port" function
+                       (:parent "sc_module"
+                        :arguments 
+                          ( ("port_" variable
+                               (:pointer 1
+                                :type ("sc_port_base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13496 13517]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [13468 13611])
+                    ("sc_warn_arrow_arrow_bind" function
+                       (:typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [13645 13931])
+                    ("<<" function
+                       (:operator-flag t
+                        :parent "sc_module"
+                        :arguments 
+                          ( ("interface_" variable
+                               (:reference 1
+                                :type ("sc_interface" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13969 13995]))                          
+                        :type ("sc_module" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13933 14082])
+                    ("<<" function
+                       (:operator-flag t
+                        :parent "sc_module"
+                        :arguments 
+                          ( ("port_" variable
+                               (:reference 1
+                                :type ("sc_port_base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14120 14141]))                          
+                        :type ("sc_module" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14084 14223])
+                    ("positional_bind" function
+                       (:parent "sc_module"
+                        :arguments 
+                          ( ("interface_" variable
+                               (:reference 1
+                                :type ("sc_interface" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14259 14285]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14226 15101])
+                    ("positional_bind" function
+                       (:parent "sc_module"
+                        :arguments 
+                          ( ("port_" variable
+                               (:reference 1
+                                :type ("sc_port_base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15136 15157]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [15103 15972])
+                    ("TRY_BIND" variable (:constant-flag t) (reparse-symbol namespacesubparts) [15983 15991])
+                    ("()" function
+                       (:operator-flag t
+                        :parent "sc_module"
+                        :arguments 
+                          ( ("p001" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16573 16599])
+                            ("p002" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16604 16630])
+                            ("p003" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16635 16661])
+                            ("p004" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16666 16692])
+                            ("p005" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16697 16723])
+                            ("p006" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16728 16754])
+                            ("p007" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16759 16785])
+                            ("p008" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16790 16816])
+                            ("p009" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16821 16847])
+                            ("p010" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16852 16878])
+                            ("p011" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16883 16909])
+                            ("p012" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16914 16940])
+                            ("p013" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16945 16971])
+                            ("p014" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16976 17002])
+                            ("p015" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17007 17033])
+                            ("p016" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17038 17064])
+                            ("p017" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17069 17095])
+                            ("p018" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17100 17126])
+                            ("p019" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17131 17157])
+                            ("p020" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17162 17188])
+                            ("p021" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17193 17219])
+                            ("p022" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17224 17250])
+                            ("p023" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17255 17281])
+                            ("p024" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17286 17312])
+                            ("p025" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17317 17343])
+                            ("p026" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17348 17374])
+                            ("p027" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17379 17405])
+                            ("p028" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17410 17436])
+                            ("p029" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17441 17467])
+                            ("p030" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17472 17498])
+                            ("p031" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17503 17529])
+                            ("p032" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17534 17560])
+                            ("p033" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17565 17591])
+                            ("p034" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17596 17622])
+                            ("p035" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17627 17653])
+                            ("p036" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17658 17684])
+                            ("p037" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17689 17715])
+                            ("p038" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17720 17746])
+                            ("p039" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17751 17777])
+                            ("p040" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17782 17808])
+                            ("p041" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17813 17839])
+                            ("p042" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17844 17870])
+                            ("p043" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17875 17901])
+                            ("p044" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17906 17932])
+                            ("p045" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17937 17963])
+                            ("p046" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17968 17994])
+                            ("p047" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17999 18025])
+                            ("p048" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18030 18056])
+                            ("p049" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18061 18087])
+                            ("p050" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18092 18118])
+                            ("p051" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18123 18149])
+                            ("p052" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18154 18180])
+                            ("p053" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18185 18211])
+                            ("p054" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18216 18242])
+                            ("p055" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18247 18273])
+                            ("p056" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18278 18304])
+                            ("p057" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18309 18335])
+                            ("p058" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18340 18366])
+                            ("p059" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18371 18397])
+                            ("p060" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18402 18428])
+                            ("p061" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18433 18459])
+                            ("p062" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18464 18490])
+                            ("p063" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18495 18521])
+                            ("p064" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_bind_proxy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18526 18553]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [16543 20213]))                  
+                :type "namespace")
+                nil [2094 20216]))          
+      :file "sc_module.cpp"
+      :pointmax 25508
+      :fsize 25507
+      :lastmodtime '(22246 65468 485205 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TRY_BIND" (spp-arg-list ("p") 15991 . 15996) . 
+              ((IF "if" 16059 . 16061) (semantic-list "( (p).iface != 0 )" 16061 . 16079) (semantic-list "{                                                    \\
+        positional_bind( *(p).iface );                                        \\
+    }" 16080 . 16220) (ELSE "else" 16221 . 16225) (IF "if" 16226 . 16228) (semantic-list "( (p).port != 0 )" 16228 . 16245) (semantic-list "{                                              \\
+        positional_bind( *(p).port );                                         \\
+    }" 16246 . 16380) (ELSE "else" 16381 . 16385) (semantic-list "{                                                                  \\
+        return;                                                               \\
+    }" 16386 . 16540)))
+          )
+)
+    (semanticdb-table "sc_event.h"
+      :file "sc_event.h"
+      :fsize 21155
+      :lastmodtime '(22246 65468 433200 0))
+    (semanticdb-table "sc_kernel_ids.h"
+      :file "sc_kernel_ids.h"
+      :fsize 14110
+      :lastmodtime '(22246 65468 472196 0))
+    (semanticdb-table "sc_module.h"
+      :file "sc_module.h"
+      :fsize 22581
+      :lastmodtime '(22246 65468 488210 0))
+    (semanticdb-table "sc_module_registry.h"
+      :file "sc_module_registry.h"
+      :fsize 3543
+      :lastmodtime '(22246 65468 497203 0))
+    (semanticdb-table "sc_name_gen.h"
+      :file "sc_name_gen.h"
+      :fsize 2747
+      :lastmodtime '(22246 65468 502195 0))
+    (semanticdb-table "sc_object_manager.h"
+      :file "sc_object_manager.h"
+      :fsize 4512
+      :lastmodtime '(22246 65468 529195 0))
+    (semanticdb-table "sc_process.h"
+      :file "sc_process.h"
+      :fsize 32591
+      :lastmodtime '(22246 65468 539202 0))
+    (semanticdb-table "sc_process_handle.h"
+      :file "sc_process_handle.h"
+      :fsize 20881
+      :lastmodtime '(22246 65468 542194 0))
+    (semanticdb-table "sc_simcontext.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("SC_SIMCONTEXT_H" variable (:constant-flag t) nil [1293 1308])
+            ("sysc/kernel/sc_windll.h" include nil nil [1310 1344])
+            ("sysc/kernel/sc_cmnhdr.h" include nil nil [1345 1379])
+            ("sysc/kernel/sc_process.h" include nil nil [1380 1415])
+            ("sysc/kernel/sc_status.h" include nil nil [1416 1450])
+            ("sysc/kernel/sc_time.h" include nil nil [1451 1483])
+            ("sysc/utils/sc_hash.h" include nil nil [1484 1515])
+            ("sysc/utils/sc_pq.h" include nil nil [1516 1545])
+            ("eslapi" type
+               (:members 
+                  ( ("SchedulerClock" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1612 1633])
+                    ("Scheduler" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1634 1650])
+                    ("CASI_Advance_Sim" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("sc_dt::uint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1685 1699]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1662 1700]))                  
+                :type "namespace")
+                nil [1593 1702])
+            ("sc_core" type
+               (:members 
+                  ( ("sc_cor" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1750 1763])
+                    ("sc_cor_pkg" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1764 1781])
+                    ("sc_event" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1782 1797])
+                    ("sc_event_timed" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1798 1819])
+                    ("sc_export_registry" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1820 1845])
+                    ("sc_module" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1846 1862])
+                    ("sc_module_name" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1863 1884])
+                    ("sc_module_registry" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1885 1910])
+                    ("sc_name_gen" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1911 1929])
+                    ("sc_object" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1930 1946])
+                    ("sc_object_manager" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1947 1971])
+                    ("sc_phase_callback_registry" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1972 2005])
+                    ("sc_process_handle" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2006 2030])
+                    ("sc_port_registry" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2031 2054])
+                    ("sc_prim_channel_registry" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2055 2086])
+                    ("sc_process_table" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2087 2110])
+                    ("sc_signal_bool_deval" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2111 2138])
+                    ("sc_trace_file" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2139 2159])
+                    ("sc_runnable" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2160 2178])
+                    ("sc_process_host" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2179 2201])
+                    ("sc_method_process" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2202 2226])
+                    ("sc_cthread_process" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2227 2252])
+                    ("sc_thread_process" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2253 2277])
+                    ("sc_plist" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2300 2315])
+                    ("sc_process_list" type
+                       (:typedef ("sc_plist" type
+                             (:template-specifier 
+                                ( ("sc_process_b" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2316 2366])
+                    ("sc_curr_proc_info" variable (:type ("SC_MX_WEXP" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol namespacesubparts) [2368 2544])
+                    ("sc_curr_proc_handle" type
+                       (:typedef ("sc_curr_proc_info" type (:type "class") nil nil)
+                        :pointer 1
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2546 2599])
+                    ("sc_stop_mode" type
+                       (:members 
+                          ( ("SC_STOP_FINISH_DELTA" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2652 2673])
+                            ("SC_STOP_IMMEDIATE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2678 2697]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [2601 2698])
+                    ("sc_set_stop_mode" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("mode" variable (:type ("sc_stop_mode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2740 2759]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2717 2760])
+                    ("sc_get_stop_mode" function
+                       (:prototype-flag t
+                        :type ("sc_stop_mode" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2779 2811])
+                    ("sc_starvation_policy" type
+                       (:members 
+                          ( ("SC_EXIT_ON_STARVATION" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2846 2868])
+                            ("SC_RUN_TO_TIME" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2873 2889]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [2813 2890])
+                    ("sc_start" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2909 2925])
+                    ("sc_start" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("duration" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_time" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2959 2983])
+                            ("p" variable
+                               (:default-value "SC_RUN_TO_TIME"
+                                :type ("sc_starvation_policy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2985 3022]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2944 3025])
+                    ("sc_start" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("duration" variable (:type "double") (reparse-symbol arg-sub-list) [3113 3129]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3098 3130])
+                    ("sc_start" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("duration" variable (:type "int") (reparse-symbol arg-sub-list) [3155 3168])
+                            ("unit" variable (:type ("sc_time_unit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3169 3187])
+                            ("p" variable
+                               (:default-value "SC_RUN_TO_TIME"
+                                :type ("sc_starvation_policy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3211 3248]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3133 3401])
+                    ("sc_start" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("duration" variable (:type "double") (reparse-symbol arg-sub-list) [3425 3441])
+                            ("unit" variable (:type ("sc_time_unit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3442 3460])
+                            ("p" variable
+                               (:default-value "SC_RUN_TO_TIME"
+                                :type ("sc_starvation_policy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3484 3521]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3403 3670])
+                    ("sc_stop" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3690 3705])
+                    ("sc_delta_count" function
+                       (:prototype-flag t
+                        :type ("sc_dt::uint64" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3751 3782])
+                    ("sc_get_top_level_events" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("simc_p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("sc_simcontext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3853 3883]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("sc_event" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [3794 3884])
+                    ("sc_get_top_level_objects" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("simc_p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("sc_simcontext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3957 3987]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("sc_object" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [3896 3988])
+                    ("sc_is_running" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("simc_p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("sc_simcontext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4023 4052]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [4000 4053])
+                    ("sc_pause" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4065 4084])
+                    ("sc_end_of_simulation_invoked" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [4096 4135])
+                    ("sc_start" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_time" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4165 4180])
+                            ("" variable (:type ("sc_starvation_policy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4181 4203]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4147 4204])
+                    ("sc_start_of_simulation_invoked" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [4216 4257])
+                    ("sc_set_time_resolution" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [4301 4308])
+                            ("" variable (:type ("sc_time_unit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4309 4323]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4269 4324])
+                    ("sc_get_time_resolution" function
+                       (:prototype-flag t
+                        :type ("sc_time" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4336 4369])
+                    ("sc_set_default_time_unit" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [4415 4422])
+                            ("" variable (:type ("sc_time_unit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4423 4437]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4381 4438])
+                    ("sc_get_default_time_unit" function
+                       (:prototype-flag t
+                        :type ("sc_time" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4450 4485])
+                    ("sc_pending_activity_at_current_time" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("sc_simcontext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4542 4564]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [4497 4565])
+                    ("sc_pending_activity_at_future_time" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("sc_simcontext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4621 4643]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [4577 4644])
+                    ("sc_time_to_pending_activity" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("sc_simcontext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4693 4715]))                          
+                        :type ("sc_time" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4656 4716])
+                    ("sc_invoke_method" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [4718 4742])
+                    ("sc_simcontext" variable (:type ("SC_MX_WEXP" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [4963 14463])
+                    ("sc_curr_simcontext" variable
+                       (:pointer 1
+                        :type ("sc_simcontext" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14587 14621])
+                    ("sc_default_global_context" variable
+                       (:pointer 1
+                        :type ("sc_simcontext" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14640 14681])
+                    ("sc_get_curr_simcontext" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :type ("sc_simcontext" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14694 14928])
+                    ("sc_get_status" function
+                       (:typemodifiers ("inline")
+                        :type ("sc_status" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14999 15086])
+                    ("elaboration_done" function
+                       (:parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [15170 15256])
+                    ("get_status" function
+                       (:parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :type ("sc_status" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [15259 15456])
+                    ("sim_status" function
+                       (:parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [15458 15648])
+                    ("get_object_manager" function
+                       (:pointer 1
+                        :parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :type ("sc_object_manager" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [15651 15745])
+                    ("get_module_registry" function
+                       (:pointer 1
+                        :parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :type ("sc_module_registry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [15747 15844])
+                    ("get_port_registry" function
+                       (:pointer 1
+                        :parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :type ("sc_port_registry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [15846 15937])
+                    ("get_export_registry" function
+                       (:pointer 1
+                        :parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :type ("sc_export_registry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [15939 16036])
+                    ("get_prim_channel_registry" function
+                       (:pointer 1
+                        :parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :type ("sc_prim_channel_registry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [16038 16153])
+                    ("get_curr_proc_info" function
+                       (:parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :type ("sc_curr_proc_handle" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [16156 16252])
+                    ("next_proc_id" function
+                       (:parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [16255 16333])
+                    ("max_time" function
+                       (:parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("sc_time" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [16336 16531])
+                    ("change_stamp" function
+                       (:parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :type ("sc_dt::uint64" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [16533 16620])
+                    ("time_stamp" function
+                       (:parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("sc_time" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [16622 16705])
+                    ("event_occurred" function
+                       (:parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("last_change_stamp" variable (:type ("sc_dt::uint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16751 16783]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [16708 16841])
+                    ("evaluation_phase" function
+                       (:parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [16843 16982])
+                    ("update_phase" function
+                       (:parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [16984 17081])
+                    ("notify_phase" function
+                       (:parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [17083 17180])
+                    ("set_error" function
+                       (:parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("err" variable
+                               (:pointer 1
+                                :type ("sc_report" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17220 17236]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [17182 17279])
+                    ("get_error" function
+                       (:parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [17282 17352])
+                    ("add_delta_event" function
+                       (:parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :type ("sc_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17397 17410]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [17354 17498])
+                    ("add_timed_event" function
+                       (:parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("et" variable
+                               (:pointer 1
+                                :type ("sc_event_timed" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17561 17581]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [17517 17619])
+                    ("get_current_writer" function
+                       (:pointer 1
+                        :parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :type ("sc_object" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [17628 17721])
+                    ("write_check" function
+                       (:parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [17723 17800])
+                    ("sc_process_handle" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [17883 17907])
+                    ("sc_get_current_process_handle" function
+                       (:prototype-flag t
+                        :type ("sc_process_handle" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [17919 17969])
+                    ("sc_get_current_object" function
+                       (:pointer 1
+                        :type ("sc_object" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [18209 18299])
+                    ("sc_get_current_process_b" function
+                       (:pointer 1
+                        :type ("sc_process_b" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [18319 18438])
+                    ("sc_get_curr_process_handle" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("sc_process_b" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [18505 18548])
+                    ("sc_get_curr_process_kind" function (:type ("sc_curr_proc_kind" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [18569 18682])
+                    ("sc_get_simulator_status" function (:type "int") (reparse-symbol namespacesubparts) [18703 18787])
+                    ("sc_gen_unique_name" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :constant-flag t
+                        :arguments 
+                          ( ("basename_" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [18886 18908])
+                            ("preserve_first" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [18909 18936]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [18854 18939])
+                    ("sc_set_random_seed" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("seed_" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [19060 19080]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [19035 19081])
+                    ("sc_is_stop" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [19101 19119])
+                    ("sc_initialize" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [19138 19159])
+                    ("sc_max_time" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("sc_time" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [19179 19208])
+                    ("sc_time_stamp" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("sc_time" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [19257 19288])
+                    ("sc_simulation_time" function
+                       (:prototype-flag t
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [19336 19364])
+                    ("sc_get_top_level_events" function
+                       (:constant-flag t
+                        :arguments 
+                          ( ("simc_p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "sc_get_curr_simcontext()"
+                                :type ("sc_simcontext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19486 19540]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("sc_event" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [19427 19581])
+                    ("sc_get_top_level_objects" function
+                       (:constant-flag t
+                        :arguments 
+                          ( ("simc_p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "sc_get_curr_simcontext()"
+                                :type ("sc_simcontext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19662 19716]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("sc_object" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [19601 19758])
+                    ("sc_find_event" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [19803 19821]))                          
+                        :type ("sc_event" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [19778 19822])
+                    ("sc_find_object" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [19869 19887]))                          
+                        :type ("sc_object" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [19842 19888])
+                    ("sc_delta_count" function (:type ("sc_dt::uint64" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [19908 19994])
+                    ("sc_is_running" function
+                       (:arguments 
+                          ( ("simc_p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "sc_get_curr_simcontext()"
+                                :type ("sc_simcontext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20035 20089]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [20015 20135])
+                    ("sc_start" function
+                       (:arguments 
+                          ( ("duration" variable (:type "double") (reparse-symbol arg-sub-list) [20215 20231])
+                            ("time_unit" variable (:type ("sc_time_unit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20232 20255]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [20201 20446])
+                    ("sc_is_unwinding" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [20459 20482])
+                    ("sc_pause" function (:type "void") (reparse-symbol namespacesubparts) [20502 20568])
+                    ("sc_pending_activity_at_current_time" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("simc_p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "sc_get_curr_simcontext()"
+                                :type ("sc_simcontext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20703 20757]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [20651 20816])
+                    ("sc_pending_activity_at_future_time" function
+                       (:arguments 
+                          ( ("simc_p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "sc_get_curr_simcontext()"
+                                :type ("sc_simcontext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20949 21003]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [20905 21067])
+                    ("sc_pending_activity" function
+                       (:arguments 
+                          ( ("simc_p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "sc_get_curr_simcontext()"
+                                :type ("sc_simcontext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21203 21257]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [21174 21373])
+                    ("sc_time_to_pending_activity" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("simc_p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "sc_get_curr_simcontext()"
+                                :type ("sc_simcontext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21426 21480]))                          
+                        :type ("sc_time" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [21386 21483])
+                    ("sc_end_of_simulation_invoked" function (:type "bool") (reparse-symbol namespacesubparts) [21504 21608])
+                    ("sc_hierarchical_name_exists" function
+                       (:arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [21662 21680]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [21628 21740])
+                    ("sc_start_of_simulation_invoked" function (:type "bool") (reparse-symbol namespacesubparts) [21760 21869])
+                    ("sc_allow_process_control_corners" variable (:type "bool") (reparse-symbol namespacesubparts) [22079 22117])
+                    ("set_time_stamp" function
+                       (:parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("val" variable (:type ("sc_time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22250 22262]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22208 22287]))                  
+                :type "namespace")
+                nil [1704 22292]))          
+      :file "sc_simcontext.h"
+      :pointmax 29095
+      :fsize 29094
+      :lastmodtime '(22413 16818 137568 0)
+      :unmatched-syntax '((symbol 22068 . 22078) (EXTERN 22061 . 22067) (symbol 21749 . 21759) (INLINE 21742 . 21748) (symbol 21617 . 21627) (INLINE 21610 . 21616) (symbol 21493 . 21503) (INLINE 21486 . 21492) (symbol 21375 . 21385) (symbol 21163 . 21173) (INLINE 21156 . 21162) (symbol 20894 . 20904) (INLINE 20887 . 20893) (symbol 20491 . 20501) (INLINE 20484 . 20490) (symbol 20448 . 20458) (symbol 20190 . 20200) (INLINE 20183 . 20189) (symbol 20004 . 20014) (INLINE 19996 . 20002) (symbol 19897 . 19907) (INLINE 19890 . 19896) (symbol 19831 . 19841) (EXTERN 19824 . 19830) (symbol 19767 . 19777) (EXTERN 19760 . 19766) (symbol 19590 . 19600) (INLINE 19583 . 19589) (symbol 19416 . 19426) (INLINE 19409 . 19415) (symbol 19325 . 19335) (EXTERN 19318 . 19324) (symbol 19246 . 19256) (EXTERN 19239 . 19245) (symbol 19168 . 19178) (EXTERN 19161 . 19167) (symbol 19127 . 19137) (EXTERN 19120 . 19126) (symbol 19090 . 19100) (EXTERN 19083 . 19089) (symbol 19024 . 19034) (EXTERN 19017 . 19023) (symbol 18843 . 18853) (EXTERN 18836 . 18842) (symbol 18692 . 18702) (INLINE 18685 . 18691) (symbol 18558 . 18568) (INLINE 18550 . 18556) (symbol 18494 . 18504) (EXTERN 18487 . 18493) (symbol 18308 . 18318) (INLINE 18301 . 18307) (symbol 18198 . 18208) (INLINE 18191 . 18197) (symbol 17908 . 17918) (symbol 14683 . 14693) (symbol 14629 . 14639) (EXTERN 14622 . 14628) (symbol 14576 . 14586) (EXTERN 14569 . 14575) (symbol 4645 . 4655) (symbol 4566 . 4576) (symbol 4486 . 4496) (symbol 4439 . 4449) (symbol 4370 . 4380) (symbol 4325 . 4335) (symbol 4258 . 4268) (symbol 4205 . 4215) (symbol 4136 . 4146) (symbol 4085 . 4095) (symbol 4054 . 4064) (symbol 3989 . 3999) (symbol 3885 . 3895) (symbol 3783 . 3793) (symbol 3740 . 3750) (symbol 3679 . 3689) (EXTERN 3672 . 3678) (symbol 3087 . 3097) (EXTERN 3080 . 3086) (symbol 2933 . 2943) (EXTERN 2926 . 2932) (symbol 2898 . 2908) (EXTERN 2891 . 2897) (symbol 2768 . 2778) (EXTERN 2761 . 2767) (symbol 2706 . 2716) (EXTERN 2699 . 2705) (punctuation 2298 . 2299) (TYPENAME 2289 . 2297) (punctuation 2287 . 2288) (TEMPLATE 2279 . 2287) (symbol 1651 . 1661) (symbol 14683 . 14693) (symbol 14629 . 14639) (EXTERN 14622 . 14628) (symbol 14576 . 14586) (EXTERN 14569 . 14575) (symbol 4645 . 4655) (symbol 4566 . 4576) (symbol 4486 . 4496) (symbol 4439 . 4449) (symbol 4370 . 4380) (symbol 4325 . 4335) (symbol 4258 . 4268) (symbol 4205 . 4215) (symbol 4136 . 4146) (symbol 4085 . 4095) (symbol 4054 . 4064) (symbol 3989 . 3999) (symbol 3885 . 3895) (symbol 3783 . 3793) (symbol 3740 . 3750) (symbol 3679 . 3689) (EXTERN 3672 . 3678) (symbol 3087 . 3097) (EXTERN 3080 . 3086) (symbol 2933 . 2943) (EXTERN 2926 . 2932) (symbol 2898 . 2908) (EXTERN 2891 . 2897) (symbol 2768 . 2778) (EXTERN 2761 . 2767) (symbol 2706 . 2716) (EXTERN 2699 . 2705) (punctuation 2298 . 2299) (TYPENAME 2289 . 2297) (punctuation 2287 . 2288) (TEMPLATE 2279 . 2287) (symbol 1651 . 1661))
+      :lexical-table 
+        '(("SC_SIMCONTEXT_H")
+          )
+)
+    (semanticdb-table "sc_simcontext_int.h"
+      :file "sc_simcontext_int.h"
+      :fsize 11695
+      :lastmodtime '(22246 65468 573196 0))
+    (semanticdb-table "sc_object_int.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("SC_OBJECT_INT_H_INCLUDED_" variable (:constant-flag t) nil [1287 1312])
+            ("sysc/kernel/sc_object.h" include nil nil [1314 1348])
+            ("sysc/kernel/sc_module.h" include nil nil [1349 1383])
+            ("sysc/kernel/sc_simcontext_int.h" include nil nil [1384 1426])
+            ("sysc/kernel/sc_phase_callback_registry.h" include nil nil [1427 1478])
+            ("sc_core" type
+               (:members 
+                  ( ("sc_object::hierarchy_scope" variable (:type ("SC_MX_WEXP" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1501 1857])
+                    ("hierarchy_scope" function
+                       (:constructor-flag t
+                        :parent "sc_object::hierarchy_scope"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("obj" variable
+                               (:pointer 1
+                                :type ("sc_object" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1912 1928]))                          
+                        :type ("hierarchy_scope" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1860 2172])
+                    ("hierarchy_scope" function
+                       (:constructor-flag t
+                        :parent "sc_object::hierarchy_scope"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("mod" variable
+                               (:pointer 1
+                                :type ("sc_module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2227 2243]))                          
+                        :type ("hierarchy_scope" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2175 2334])
+                    ("hierarchy_scope" function
+                       (:destructor-flag t
+                        :parent "sc_object::hierarchy_scope"
+                        :typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2337 2458])
+                    ("do_simulation_phase_callback" function
+                       (:parent "sc_object"
+                        :typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2537 2627]))                  
+                :type "namespace")
+                nil [1480 2706]))          
+      :file "sc_object_int.h"
+      :pointmax 2773
+      :fsize 2772
+      :lastmodtime '(22246 65468 525197 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SC_OBJECT_INT_H_INCLUDED_")
+          )
+)
+    (semanticdb-table "sc_reset.h"
+      :file "sc_reset.h"
+      :fsize 6027
+      :lastmodtime '(22246 65468 547193 0))
+    (semanticdb-table "sc_simcontext.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("algorithm" include (:system-flag t) nil [1306 1326])
+            ("SC_DISABLE_API_VERSION_CHECK" variable (:constant-flag t) nil [1336 1364])
+            ("sysc/kernel/sc_cor_fiber.h" include nil nil [1403 1440])
+            ("sysc/kernel/sc_cor_pthread.h" include nil nil [1441 1480])
+            ("sysc/kernel/sc_cor_qt.h" include nil nil [1481 1515])
+            ("sysc/kernel/sc_event.h" include nil nil [1516 1549])
+            ("sysc/kernel/sc_kernel_ids.h" include nil nil [1550 1588])
+            ("sysc/kernel/sc_module.h" include nil nil [1589 1623])
+            ("sysc/kernel/sc_module_registry.h" include nil nil [1624 1667])
+            ("sysc/kernel/sc_name_gen.h" include nil nil [1668 1704])
+            ("sysc/kernel/sc_object_manager.h" include nil nil [1705 1747])
+            ("sysc/kernel/sc_cthread_process.h" include nil nil [1748 1791])
+            ("sysc/kernel/sc_method_process.h" include nil nil [1792 1834])
+            ("sysc/kernel/sc_thread_process.h" include nil nil [1835 1877])
+            ("sysc/kernel/sc_process_handle.h" include nil nil [1878 1920])
+            ("sysc/kernel/sc_simcontext.h" include nil nil [1921 1959])
+            ("sysc/kernel/sc_simcontext_int.h" include nil nil [1960 2002])
+            ("sysc/kernel/sc_reset.h" include nil nil [2003 2036])
+            ("sysc/kernel/sc_ver.h" include nil nil [2037 2068])
+            ("sysc/kernel/sc_boost.h" include nil nil [2069 2102])
+            ("sysc/kernel/sc_spawn.h" include nil nil [2103 2136])
+            ("sysc/kernel/sc_phase_callback_registry.h" include nil nil [2137 2188])
+            ("sysc/communication/sc_port.h" include nil nil [2189 2228])
+            ("sysc/communication/sc_export.h" include nil nil [2229 2270])
+            ("sysc/communication/sc_prim_channel.h" include nil nil [2271 2318])
+            ("sysc/tracing/sc_trace.h" include nil nil [2319 2353])
+            ("sysc/utils/sc_mempool.h" include nil nil [2354 2388])
+            ("sysc/utils/sc_list.h" include nil nil [2389 2420])
+            ("sysc/utils/sc_utils_ids.h" include nil nil [2421 2457])
+            ("Scheduler.h" include nil nil [2474 2496])
+            ("SchedulerClock.h" include nil nil [2497 2524])
+            ("MxSchedulerAccess.h" include nil nil [2525 2555])
+            ("SchedulerClock.h" include nil nil [2556 2583])
+            ("MxOutput.h" include nil nil [2584 2605])
+            ("MxSimAPI.h" include nil nil [2606 2627])
+            ("DEBUG_MSG" variable (:constant-flag t) nil [3303 3312])
+            ("SC_DO_PHASE_CALLBACK_" variable (:constant-flag t) nil [3452 3473])
+            ("SC_SIMCONTEXT_TRACING_" variable (:constant-flag t) nil [3734 3756])
+            ("sc_core" type
+               (:members 
+                  ( ("stop_mode" variable
+                       (:default-value "SC_STOP_FINISH_DELTA"
+                        :type ("sc_stop_mode" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3789 3835])
+                    ("mxmessage" variable (:constant-flag t) (reparse-symbol namespacesubparts) [4125 4134])
+                    ("mxsim_internal.h" include (:inside-ns t) (reparse-symbol namespacesubparts) [4173 4200])
+                    ("sc_process_table" variable (:type ("SC_MX_WEXP" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [4202 4718])
+                    ("sc_process_table" function
+                       (:constructor-flag t
+                        :parent "sc_process_table"
+                        :type ("sc_process_table" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4802 4872])
+                    ("sc_process_table" function
+                       (:destructor-flag t
+                        :parent "sc_process_table"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4874 6480])
+                    ("method_q_head" function
+                       (:parent "sc_process_table"
+                        :typemodifiers ("inline")
+                        :type ("sc_method_handle" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6482 6567])
+                    ("push_front" function
+                       (:parent "sc_process_table"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("handle_" variable (:type ("sc_method_handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6611 6637]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6569 6708])
+                    ("push_front" function
+                       (:parent "sc_process_table"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("handle_" variable (:type ("sc_thread_handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6752 6778]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6710 6849])
+                    ("remove" function
+                       (:parent "sc_process_table"
+                        :arguments 
+                          ( ("handle_" variable (:type ("sc_method_handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6894 6920]))                          
+                        :type ("sc_method_handle" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6851 7322])
+                    ("remove" function
+                       (:parent "sc_process_table"
+                        :arguments 
+                          ( ("handle_" variable (:type ("sc_thread_handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7367 7393]))                          
+                        :type ("sc_thread_handle" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7324 7795])
+                    ("thread_q_head" function
+                       (:parent "sc_process_table"
+                        :typemodifiers ("inline")
+                        :type ("sc_thread_handle" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7797 7882])
+                    ("sc_notify_time_compare" function
+                       (:arguments 
+                          ( ("p1" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [7912 7927])
+                            ("p2" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [7928 7944]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [7884 8290])
+                    ("SC_MODULE" function
+                       (:arguments 
+                          ( ("" variable (:type ("sc_invoke_method" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8596 8613]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [8586 10889])
+                    ("init" function
+                       (:parent "sc_simcontext"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11110 12706])
+                    ("deleteSpawn" function
+                       (:parent "sc_simcontext"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12751 12885])
+                    ("clean" function
+                       (:parent "sc_simcontext"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12888 14502])
+                    ("sc_simcontext" function
+                       (:constructor-flag t
+                        :parent "sc_simcontext"
+                        :type ("sc_simcontext" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14505 15459])
+                    ("sc_simcontext" function
+                       (:destructor-flag t
+                        :parent "sc_simcontext"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [15461 15509])
+                    ("active_object" function
+                       (:pointer 1
+                        :parent "sc_simcontext"
+                        :type ("sc_object" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [15970 16226])
+                    ("crunch" function
+                       (:parent "sc_simcontext"
+                        :arguments 
+                          ( ("once" variable (:type "bool") (reparse-symbol arg-sub-list) [17592 17603]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [17564 20861])
+                    ("cycle" function
+                       (:parent "sc_simcontext"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_time" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20897 20914]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [20863 21494])
+                    ("elaborate" function
+                       (:parent "sc_simcontext"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [21496 23387])
+                    ("prepare_to_simulate" function
+                       (:parent "sc_simcontext"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [23389 27233])
+                    ("initial_crunch" function
+                       (:parent "sc_simcontext"
+                        :arguments 
+                          ( ("no_crunch" variable (:type "bool") (reparse-symbol arg-sub-list) [27271 27287]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [27235 27653])
+                    ("initialize" function
+                       (:parent "sc_simcontext"
+                        :arguments 
+                          ( ("no_crunch" variable (:type "bool") (reparse-symbol arg-sub-list) [27687 27703]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [27655 27854])
+                    ("simulate" function
+                       (:parent "sc_simcontext"
+                        :arguments 
+                          ( ("duration" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_time" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [28752 28777]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [28722 31900])
+                    ("do_sc_stop_action" function
+                       (:parent "sc_simcontext"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31902 32443])
+                    ("mark_to_collect_process" function
+                       (:parent "sc_simcontext"
+                        :arguments 
+                          ( ("zombie" variable
+                               (:pointer 1
+                                :type ("sc_process_b" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32490 32512]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [32445 32556])
+                    ("stop" function
+                       (:parent "sc_simcontext"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [33444 34036])
+                    ("is_stop" function
+                       (:parent "sc_simcontext"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [34053 34112])
+                    ("reset" function
+                       (:parent "sc_simcontext"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [34114 34170])
+                    ("sc_mx_reset" function
+                       (:parent "sc_simcontext"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [34233 41332])
+                    ("end" function
+                       (:parent "sc_simcontext"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [41334 41699])
+                    ("hierarchy_push" function
+                       (:parent "sc_simcontext"
+                        :arguments 
+                          ( ("mod" variable
+                               (:pointer 1
+                                :type ("sc_module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [41737 41753]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [41701 41802])
+                    ("hierarchy_pop" function
+                       (:pointer 1
+                        :parent "sc_simcontext"
+                        :type ("sc_module" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [41804 42946])
+                    ("hierarchy_curr" function
+                       (:pointer 1
+                        :parent "sc_simcontext"
+                        :type ("sc_module" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [42948 44228])
+                    ("first_object" function
+                       (:pointer 1
+                        :parent "sc_simcontext"
+                        :type ("sc_object" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [44234 44323])
+                    ("next_object" function
+                       (:pointer 1
+                        :parent "sc_simcontext"
+                        :type ("sc_object" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [44325 44412])
+                    ("find_object" function
+                       (:pointer 1
+                        :parent "sc_simcontext"
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [44453 44471]))                          
+                        :type ("sc_object" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [44414 44771])
+                    ("gen_unique_name" function
+                       (:pointer 1
+                        :parent "sc_simcontext"
+                        :constant-flag t
+                        :arguments 
+                          ( ("basename_" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [44876 44898])
+                            ("preserve_first" variable (:type "bool") (reparse-symbol arg-sub-list) [44899 44920]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [44832 44993])
+                    ("create_cthread_process" function
+                       (:parent "sc_simcontext"
+                        :arguments 
+                          ( ("name_p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [45059 45078])
+                            ("free_host" variable (:type "bool") (reparse-symbol arg-sub-list) [45079 45094])
+                            ("method_p" variable (:type ("SC_ENTRY_FUNC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45095 45118])
+                            ("host_p" variable
+                               (:pointer 1
+                                :type ("sc_process_host" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [45132 45156])
+                            ("opt_p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("sc_spawn_options" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [45157 45188]))                          
+                        :type ("sc_process_handle" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [44996 45604])
+                    ("create_method_process" function
+                       (:parent "sc_simcontext"
+                        :arguments 
+                          ( ("name_p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [45669 45688])
+                            ("free_host" variable (:type "bool") (reparse-symbol arg-sub-list) [45689 45704])
+                            ("method_p" variable (:type ("SC_ENTRY_FUNC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45705 45728])
+                            ("host_p" variable
+                               (:pointer 1
+                                :type ("sc_process_host" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [45742 45766])
+                            ("opt_p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("sc_spawn_options" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [45767 45798]))                          
+                        :type ("sc_process_handle" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [45607 47157])
+                    ("create_thread_process" function
+                       (:parent "sc_simcontext"
+                        :arguments 
+                          ( ("name_p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [47222 47241])
+                            ("free_host" variable (:type "bool") (reparse-symbol arg-sub-list) [47242 47257])
+                            ("method_p" variable (:type ("SC_ENTRY_FUNC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47258 47281])
+                            ("host_p" variable
+                               (:pointer 1
+                                :type ("sc_process_host" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [47295 47319])
+                            ("opt_p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("sc_spawn_options" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [47320 47351]))                          
+                        :type ("sc_process_handle" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [47160 48748])
+                    ("add_trace_file" function
+                       (:parent "sc_simcontext"
+                        :arguments 
+                          ( ("tf" variable
+                               (:pointer 1
+                                :type ("sc_trace_file" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [48786 48805]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [48750 48877])
+                    ("remove_trace_file" function
+                       (:parent "sc_simcontext"
+                        :arguments 
+                          ( ("tf" variable
+                               (:pointer 1
+                                :type ("sc_trace_file" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [48918 48937]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [48879 49100])
+                    ("next_cor" function
+                       (:pointer 1
+                        :parent "sc_simcontext"
+                        :type ("sc_cor" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [49102 49443])
+                    ("get_child_objects" function
+                       (:parent "sc_simcontext"
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("sc_object" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [49453 49830])
+                    ("add_child_event" function
+                       (:parent "sc_simcontext"
+                        :arguments 
+                          ( ("event_" variable
+                               (:pointer 1
+                                :type ("sc_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [49869 49887]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [49832 49980])
+                    ("add_child_object" function
+                       (:parent "sc_simcontext"
+                        :arguments 
+                          ( ("object_" variable
+                               (:pointer 1
+                                :type ("sc_object" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [50020 50040]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [49982 50135])
+                    ("remove_child_event" function
+                       (:parent "sc_simcontext"
+                        :arguments 
+                          ( ("event_" variable
+                               (:pointer 1
+                                :type ("sc_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [50177 50195]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [50137 50469])
+                    ("remove_child_object" function
+                       (:parent "sc_simcontext"
+                        :arguments 
+                          ( ("object_" variable
+                               (:pointer 1
+                                :type ("sc_object" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [50512 50532]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [50471 50813])
+                    ("delta_count" function
+                       (:parent "sc_simcontext"
+                        :type ("sc_dt::uint64" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [50815 51120])
+                    ("is_running" function
+                       (:parent "sc_simcontext"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [51122 51418])
+                    ("next_time" function
+                       (:parent "sc_simcontext"
+                        :arguments 
+                          ( ("result" variable
+                               (:reference 1
+                                :type ("sc_time" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [51956 51973]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [51925 52209])
+                    ("remove_delta_event" function
+                       (:parent "sc_simcontext"
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :type ("sc_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [52847 52860]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [52807 53215])
+                    ("preempt_with" function
+                       (:parent "sc_simcontext"
+                        :arguments 
+                          ( ("method_h" variable (:type ("sc_method_handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54045 54072]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [54010 56305])
+                    ("requeue_current_process" function
+                       (:parent "sc_simcontext"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [56789 57013])
+                    ("suspend_current_process" function
+                       (:parent "sc_simcontext"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [57403 57619])
+                    ("trace_cycle" function
+                       (:parent "sc_simcontext"
+                        :arguments 
+                          ( ("delta_cycle" variable (:type "bool") (reparse-symbol arg-sub-list) [57654 57672]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [57621 57890])
+                    ("sc_curr_simcontext" variable
+                       (:pointer 1
+                        :default-value "0"
+                        :type ("sc_simcontext" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [58114 58152])
+                    ("sc_default_global_context" variable
+                       (:pointer 1
+                        :default-value "0"
+                        :type ("sc_simcontext" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [58154 58199])
+                    ("sc_gen_unique_name" function
+                       (:pointer 1
+                        :constant-flag t
+                        :arguments 
+                          ( ("basename_" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [58759 58781])
+                            ("preserve_first" variable (:type "bool") (reparse-symbol arg-sub-list) [58782 58803]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [58727 59264])
+                    ("sc_get_current_process_handle" function (:type ("sc_process_handle" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [59634 59809])
+                    ("sc_get_curr_process_handle" function
+                       (:pointer 1
+                        :type ("sc_process_b" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [59858 60201])
+                    ("pending_activity_at_current_time" function
+                       (:parent "sc_simcontext"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [60284 60521])
+                    ("sc_time_to_pending_activity" function
+                       (:arguments 
+                          ( ("simc_p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("sc_simcontext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [60594 60623]))                          
+                        :type ("sc_time" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [60557 61105])
+                    ("sc_set_random_seed" function
+                       (:arguments 
+                          ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [61219 61233]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [61194 61338])
+                    ("sc_start" function
+                       (:arguments 
+                          ( ("duration" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_time" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [61757 61781])
+                            ("p" variable (:type ("sc_starvation_policy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61782 61806]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [61742 64590])
+                    ("sc_start" function (:type "void") (reparse-symbol namespacesubparts) [64592 64699])
+                    ("sc_start" function
+                       (:arguments 
+                          ( ("duration" variable (:type "double") (reparse-symbol arg-sub-list) [64780 64796]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [64766 65272])
+                    ("sc_stop" function (:type "void") (reparse-symbol namespacesubparts) [65275 65331])
+                    ("sc_is_stop" function (:type "bool") (reparse-symbol namespacesubparts) [65359 65428])
+                    ("sc_initialize" function (:type "void") (reparse-symbol namespacesubparts) [65509 65820])
+                    ("sc_cycle" function
+                       (:arguments 
+                          ( ("duration" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_time" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [65927 65952]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [65912 66400])
+                    ("sc_find_event" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [66438 66456]))                          
+                        :type ("sc_event" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [66413 66539])
+                    ("sc_find_object" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [66579 66597]))                          
+                        :type ("sc_object" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [66552 66681])
+                    ("sc_max_time" function
+                       (:constant-flag t
+                        :type ("sc_time" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [66695 66776])
+                    ("sc_time_stamp" function
+                       (:constant-flag t
+                        :type ("sc_time" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [66789 67652])
+                    ("sc_simulation_time" function (:type "double") (reparse-symbol namespacesubparts) [67665 68012])
+                    ("sc_defunct_process_function" function
+                       (:arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("sc_module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [68059 68071]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [68025 68294])
+                    ("sc_set_stop_mode" function
+                       (:arguments 
+                          ( ("mode" variable (:type ("sc_stop_mode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68642 68660]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [68620 68989])
+                    ("sc_get_stop_mode" function (:type ("sc_stop_mode" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [68991 69048])
+                    ("sc_is_unwinding" function (:type "bool") (reparse-symbol namespacesubparts) [69050 69136])
+                    ("sc_allow_process_control_corners" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [70894 70940])
+                    ("print_status_expression" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [73729 73746])
+                            ("s" variable (:type ("sc_status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73747 73760]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [73683 73761])
+                    ("<<" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [73838 73855])
+                            ("s" variable (:type ("sc_status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73856 73869]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [73810 74849])
+                    ("print_status_expression" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [74968 74985])
+                            ("s" variable (:type ("sc_status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74986 74999]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [74922 75602]))                  
+                :type "namespace")
+                nil [3768 75605]))          
+      :file "sc_simcontext.cpp"
+      :pointmax 86554
+      :fsize 86553
+      :lastmodtime '(22413 16818 134563 0)
+      :unmatched-syntax '((symbol 68609 . 68619) (symbol 68014 . 68024) (symbol 67654 . 67664) (symbol 66778 . 66788) (symbol 66684 . 66694) (symbol 66541 . 66551) (symbol 66402 . 66412) (symbol 65901 . 65911) (symbol 65348 . 65358) (symbol 64755 . 64765) (symbol 61731 . 61741) (symbol 61183 . 61193) (punctuation 49452 . 49453) (punctuation 49451 . 49452) (CONST 49445 . 49450) (punctuation 10889 . 10890))
+      :lexical-table 
+        '(("SC_DO_PHASE_CALLBACK_" (spp-arg-list ("Kind") 3473 . 3481) . ((semantic-list "((void)0)" 3488 . 3497)))
+          ("SC_DISABLE_API_VERSION_CHECK")
+          ("DEBUG_MSG" (spp-arg-list ("NAME" "P" "MSG") 3312 . 3324))
+          ("mxmessage" . 
+              ((symbol "eslapi" 4135 . 4141) (punctuation ":" 4141 . 4142) (punctuation ":" 4142 . 4143) (symbol "getOutputListener" 4143 . 4160) (semantic-list "()" 4160 . 4162) (punctuation "-" 4162 . 4163) (punctuation ">" 4163 . 4164) (symbol "message" 4164 . 4171)))
+          ("SC_SIMCONTEXT_TRACING_" . ((number "1" 3758 . 3759)))
+          )
+)
+    (semanticdb-table "sc_cor_fiber.h"
+      :file "sc_cor_fiber.h"
+      :fsize 4780
+      :lastmodtime '(22246 65468 407203 0))
+    (semanticdb-table "sc_cor_pthread.h"
+      :file "sc_cor_pthread.h"
+      :fsize 4788
+      :lastmodtime '(22246 65468 412198 0))
+    (semanticdb-table "sc_cor_qt.h"
+      :file "sc_cor_qt.h"
+      :fsize 4299
+      :lastmodtime '(22246 65468 416199 0))
+    (semanticdb-table "sc_cthread_process.h"
+      :file "sc_cthread_process.h"
+      :fsize 4678
+      :lastmodtime '(22246 65468 421201 0))
+    (semanticdb-table "sc_method_process.h"
+      :file "sc_method_process.h"
+      :fsize 15449
+      :lastmodtime '(22246 65468 482205 0))
+    (semanticdb-table "sc_thread_process.h"
+      :file "sc_thread_process.h"
+      :fsize 21357
+      :lastmodtime '(22413 16818 140560 0))
+    (semanticdb-table "sc_ver.h"
+      :file "sc_ver.h"
+      :fsize 6374
+      :lastmodtime '(22246 65468 604196 0))
+    (semanticdb-table "sc_boost.h"
+      :file "sc_boost.h"
+      :fsize 3400
+      :lastmodtime '(22246 65468 397206 0))
+    (semanticdb-table "sc_spawn.h"
+      :file "sc_spawn.h"
+      :fsize 12129
+      :lastmodtime '(22246 65468 575218 0))
+    (semanticdb-table "sc_phase_callback_registry.h"
+      :file "sc_phase_callback_registry.h"
+      :fsize 7431
+      :lastmodtime '(22246 65468 533196 0))
+    (semanticdb-table "sc_module_registry.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sysc/kernel/sc_kernel_ids.h" include nil nil [1266 1304])
+            ("sysc/kernel/sc_module.h" include nil nil [1305 1339])
+            ("sysc/kernel/sc_module_registry.h" include nil nil [1340 1383])
+            ("sysc/kernel/sc_simcontext.h" include nil nil [1384 1422])
+            ("sc_core" type
+               (:members 
+                  ( ("insert" function
+                       (:parent "sc_module_registry"
+                        :arguments 
+                          ( ("module_" variable
+                               (:reference 1
+                                :type ("sc_module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1730 1750]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1697 2252])
+                    ("remove" function
+                       (:parent "sc_module_registry"
+                        :arguments 
+                          ( ("module_" variable
+                               (:reference 1
+                                :type ("sc_module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2287 2307]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2254 2956])
+                    ("sc_module_registry" function
+                       (:constructor-flag t
+                        :parent "sc_module_registry"
+                        :arguments 
+                          ( ("simc_" variable
+                               (:reference 1
+                                :type ("sc_simcontext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3015 3037]))                          
+                        :type ("sc_module_registry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2975 3100])
+                    ("sc_module_registry" function
+                       (:destructor-flag t
+                        :parent "sc_module_registry"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3118 3162])
+                    ("construction_done" function
+                       (:parent "sc_module_registry"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3201 3502])
+                    ("elaboration_done" function
+                       (:parent "sc_module_registry"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3540 3703])
+                    ("start_simulation" function
+                       (:parent "sc_module_registry"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3741 3873])
+                    ("simulation_done" function
+                       (:parent "sc_module_registry"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3908 4038]))                  
+                :type "namespace")
+                nil [1424 4041]))          
+      :file "sc_module_registry.cpp"
+      :pointmax 5298
+      :fsize 5297
+      :lastmodtime '(22246 65468 495199 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "sc_object.h"
+      :file "sc_object.h"
+      :fsize 7729
+      :lastmodtime '(22246 65468 507194 0))
+    (semanticdb-table "sc_windll.h"
+      :file "sc_windll.h"
+      :fsize 871
+      :lastmodtime '(22246 65468 614197 0))
+    (semanticdb-table "sc_cmnhdr.h"
+      :file "sc_cmnhdr.h"
+      :fsize 4684
+      :lastmodtime '(22413 16818 102553 0))
+    (semanticdb-table "sc_status.h"
+      :file "sc_status.h"
+      :fsize 3132
+      :lastmodtime '(22246 65468 590194 0))
+    (semanticdb-table "sc_time.h"
+      :file "sc_time.h"
+      :fsize 9553
+      :lastmodtime '(22246 65468 599203 0)))
+  :file "!mnt!home!hlei!source!socdesigner!MaxSim!systemc!sysc!kernel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

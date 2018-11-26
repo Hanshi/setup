@@ -1,0 +1,183 @@
+;; Object c_libraries/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "c_libraries/"
+  :tables
+  (list
+    (semanticdb-table "retarget.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1074 1092])
+            ("stdlib.h" include (:system-flag t) nil [1093 1112])
+            ("string.h" include (:system-flag t) nil [1113 1132])
+            ("output_tube.h" include (:system-flag t) nil [1133 1157])
+            ("heap_base" variable
+               (:typemodifiers ("extern")
+                :type "unsigned int")
+                nil [1159 1189])
+            ("heap_limit" variable
+               (:typemodifiers ("extern")
+                :type "unsigned int")
+                nil [1190 1221])
+            ("rt_heap.h" include (:system-flag t) nil [2906 2928])
+            ("time.h" include (:system-flag t) nil [2929 2948])
+            ("output_tube.h" include (:system-flag t) nil [2949 2975])
+            ("__user_setup_stackheap" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3022 3027]))                  
+                :type "unsigned int")
+                nil [2979 3028])
+            ("__stdin_name" variable
+               (:dereference 1
+                :constant-flag t
+                :default-value "\"stdin\""
+                :type "char")
+                nil [3031 3068])
+            ("__stdout_name" variable
+               (:dereference 1
+                :constant-flag t
+                :default-value "\"stdout\""
+                :type "char")
+                nil [3071 3109])
+            ("__stderr_name" variable
+               (:dereference 1
+                :constant-flag t
+                :default-value "\"stderr\""
+                :type "char")
+                nil [3112 3150])
+            ("_sys_open" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3168 3186])
+                    ("openmode" variable (:type "int") (reparse-symbol arg-sub-list) [3187 3200]))                  
+                :type "int")
+                nil [3154 3214])
+            ("_sys_close" function
+               (:arguments 
+                  ( ("fh" variable (:type "int") (reparse-symbol arg-sub-list) [3232 3239]))                  
+                :type "int")
+                nil [3217 3253])
+            ("_sys_write" function
+               (:arguments 
+                  ( ("fh" variable (:type "int") (reparse-symbol arg-sub-list) [3271 3278])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [3279 3305])
+                    ("len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3306 3319])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [3320 3329]))                  
+                :type "int")
+                nil [3256 3343])
+            ("_sys_seek" function
+               (:arguments 
+                  ( ("fh" variable (:type "int") (reparse-symbol arg-sub-list) [3360 3367])
+                    ("pos" variable (:type "long") (reparse-symbol arg-sub-list) [3368 3377]))                  
+                :type "int")
+                nil [3346 3391])
+            ("_sys_istty" function
+               (:arguments 
+                  ( ("fh" variable (:type "int") (reparse-symbol arg-sub-list) [3409 3416]))                  
+                :type "int")
+                nil [3394 3430])
+            ("_sys_flen" function
+               (:arguments 
+                  ( ("fh" variable (:type "int") (reparse-symbol arg-sub-list) [3448 3455]))                  
+                :type "long")
+                nil [3433 3469])
+            ("clock" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3487 3492]))                  
+                :type ("clock_t" type (:type "class") nil nil))
+                nil [3473 3506])
+            ("_clock_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3526 3531]))                  
+                :type "void")
+                nil [3509 3542])
+            ("time" function
+               (:arguments 
+                  ( ("tt" variable
+                       (:pointer 1
+                        :type ("time_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3557 3568]))                  
+                :type ("time_t" type (:type "class") nil nil))
+                nil [3545 3584])
+            ("fputc" function
+               (:arguments 
+                  ( ("ch" variable (:type "int") (reparse-symbol arg-sub-list) [3598 3605])
+                    ("stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3606 3619]))                  
+                :type "int")
+                nil [3588 3763])
+            ("_sys_exit" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [3782 3788]))                  
+                :type "void")
+                nil [3767 3831])
+            ("_ttywrch" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [3856 3862]))                  
+                :type "void")
+                nil [3835 3892])
+            ("_sys_command_string" function
+               (:pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("cmd" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3929 3939])
+                    ("l" variable (:type "int") (reparse-symbol arg-sub-list) [3940 3946]))                  
+                :type "char")
+                nil [3896 3985])
+            ("__rt_heap_extend" function
+               (:arguments 
+                  ( ("size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4013 4027])
+                    ("block" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4028 4041]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [3989 4139])
+            ("init_libc" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4158 4163]))                  
+                :type "void")
+                nil [4143 4243])
+            ("main" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4268 4277])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4278 4290]))                  
+                :type "int")
+                nil [4252 4291])
+            ("_exit" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [4411 4417]))                  
+                :type "void")
+                nil [4400 4524])
+            ("_arm_start" function (:type "int") nil [4526 4588]))          
+      :file "retarget.c"
+      :pointmax 4589
+      :fsize 4588
+      :lastmodtime '(23321 36366 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "output_tube.h"
+      :file "output_tube.h"
+      :fsize 1542
+      :lastmodtime '(23321 36366 0 0)))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!Plover!Simulation!SystemC_mem_test!Applications!shared!c_libraries!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

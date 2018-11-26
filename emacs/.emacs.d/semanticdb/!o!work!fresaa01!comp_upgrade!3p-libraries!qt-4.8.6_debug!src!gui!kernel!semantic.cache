@@ -1,0 +1,16 @@
+;; Object kernel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "kernel/"
+  :tables
+  (list
+    (semanticdb-table "qwidget.cpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "qwidget.cpp"
+      :pointmax 401267
+      :fsize 401266
+      :lastmodtime '(22936 8738 162426 0)
+      :unmatched-syntax nil))
+  :file "!o!work!fresaa01!comp_upgrade!3p-libraries!qt-4.8.6_debug!src!gui!kernel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

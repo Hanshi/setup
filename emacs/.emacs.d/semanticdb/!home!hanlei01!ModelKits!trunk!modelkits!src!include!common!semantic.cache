@@ -1,0 +1,503 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables
+  (list
+    (semanticdb-table "CarbonComponentHelper.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_CarbonComponentHelper_" variable (:constant-flag t) nil [574 597])
+            ("carbon/carbon_shelltypes.h" include nil nil [599 636])
+            ("common/carbon_mkversion.h" include nil nil [637 673])
+            ("common/CarbonComponentHelperIF.h" include nil nil [674 717])
+            ("iostream" include (:system-flag t) nil [719 738])
+            ("string" include (:system-flag t) nil [739 756])
+            ("vector" include (:system-flag t) nil [757 774])
+            ("eslapi" type
+               (:members 
+                  ( ("CADI" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [821 832])
+                    ("CADIBptDescription_t" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [859 886]))                  
+                :type "namespace")
+                nil [800 888])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("CarbonProfileIntf" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [954 978])
+                    ("PCTraceReporter" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [981 1003])
+                    ("CarbonComponentHelper" type
+                       (:superclasses 
+                          ( ("CarbonComponentHelperIF" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1231 1238])
+                            ("MsgSeverity" type
+                               (:members 
+                                  ( ("eMsgInfo" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1315 1324])
+                                    ("eMsgWarning" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1331 1343])
+                                    ("eMsgError" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1350 1360])
+                                    ("eMsgFatal" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1367 1377])
+                                    ("eMsgConsoleOutput" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1384 1402])
+                                    ("eMsgLAST" variable
+                                       (:constant-flag t
+                                        :default-value (1418 1435)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1409 1435]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1290 1442])
+                            ("CompFlags" type
+                               (:members 
+                                  ( ("eFlagDisableL1MemorySystem" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1520 1547])
+                                    ("eFlagL1MemorySystemProfiling" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1554 1583])
+                                    ("eFlagL1MemorySystemVerboseProfiling" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1590 1626])
+                                    ("eFlagEnablePCTrace" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1633 1652])
+                                    ("eFlagVerbose" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1659 1672])
+                                    ("eFlagLAST" variable
+                                       (:constant-flag t
+                                        :default-value (1689 1701)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1679 1701]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1497 1708])
+                            ("version" function (:type "int") (reparse-symbol classsubparts) [1836 1869])
+                            ("getCarbonObject" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1916 1962])
+                            ("message" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("severity" variable (:type ("MsgSeverity" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2015 2036])
+                                    ("fmt" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2037 2053])
+                                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2054 2058]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1994 2063])
+                            ("getFlag" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("flag" variable (:type ("CompFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2134 2149]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2113 2154])
+                            ("getConsoleOStream" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2199 2245])
+                            ("getConsoleIStream" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2287 2333])
+                            ("getCADI" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :type ("eslapi::CADI" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2386 2422])
+                            ("getProfileIntf" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :type ("CarbonProfileIntf" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2478 2526])
+                            ("getPCTraceReporter" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :type ("PCTraceReporter" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2596 2646])
+                            ("getProperty" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("property" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2909 2930]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [2877 2935])
+                            ("setBreakpoint" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("adress" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2993 3009])
+                                    ("breakpoint_type" variable (:type "int") (reparse-symbol arg-sub-list) [3010 3030]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2966 3035])
+                            ("clearBreakpoint" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("adress" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3097 3113])
+                                    ("breakpoint_type" variable (:type "int") (reparse-symbol arg-sub-list) [3114 3134]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3068 3139])
+                            ("getBreakpoints" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("eslapi::CADIBptDescription_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [3186 3257])
+                            ("CarbonComponentHelper" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [3263 3298]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1166 3308]))                  
+                :type "namespace")
+                nil [890 3310]))          
+      :file "CarbonComponentHelper.h"
+      :pointmax 3359
+      :fsize 3358
+      :lastmodtime '(22838 56883 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_CarbonComponentHelper_")
+          )
+)
+    (semanticdb-table "carbon_mkversion.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__carbon_mkversion__" variable (:constant-flag t) nil [545 565])
+            ("CARBON_MKLIB_NAMESPACE" variable (:constant-flag t) nil [575 597]))          
+      :file "carbon_mkversion.h"
+      :pointmax 618
+      :fsize 617
+      :lastmodtime '(19967 45251 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CARBON_MKLIB_NAMESPACE" . ((symbol "mklib_3_2_1" 598 . 609)))
+          ("__carbon_mkversion__")
+          )
+)
+    (semanticdb-table "CarbonComponentHelperIF.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_CarbonComponentHelperIF_" variable (:constant-flag t) nil [571 596])
+            ("CarbonComponentHelperIF" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [630 637])
+                    ("version" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [640 670]))                  
+                :type "class")
+                nil [598 673]))          
+      :file "CarbonComponentHelperIF.h"
+      :pointmax 682
+      :fsize 681
+      :lastmodtime '(18950 52148 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_CarbonComponentHelperIF_")
+          )
+)
+    (semanticdb-table "SDCarbonComponentHelper.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_SDCARBONCOMPONENTHELPER_H_" variable (:constant-flag t) nil [642 669])
+            ("maxsim.h" include nil nil [671 690])
+            ("carbon/carbon_capi.h" include nil nil [692 723])
+            ("common/CarbonComponentHelper.h" include nil nil [725 766])
+            ("cpus/MaxSimStreams.h" include nil nil [768 799])
+            ("common/carbon_mkversion.h" include nil nil [800 836])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("CarbonSoCDProfileIntf" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [875 903])
+                    ("SoCDPCTraceReporter" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [904 930])
+                    ("SDCarbonComponentHelper" type
+                       (:superclasses 
+                          ( ("CarbonComponentHelper" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [994 1001])
+                            ("SDCarbonComponentHelper" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("comp" variable
+                                       (:pointer 1
+                                        :type ("sc_mx_module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1046 1065])
+                                    ("core" variable
+                                       (:pointer 1
+                                        :type ("sc_mx_module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1066 1085])
+                                    ("obj" variable
+                                       (:pointer 1
+                                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1113 1133]))                                  
+                                :type ("SDCarbonComponentHelper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1022 1134])
+                            ("getCarbonObject" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1177 1219])
+                            ("message" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("severity" variable (:type ("MsgSeverity" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1268 1289])
+                                    ("fmt" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1290 1306])
+                                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1307 1311]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1247 1312])
+                            ("getFlag" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("flag" variable (:type ("CompFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1379 1394]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1358 1395])
+                            ("getConsoleOStream" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1436 1478])
+                            ("getConsoleIStream" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1516 1558])
+                            ("getCADI" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :type ("eslapi::CADI" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1607 1639])
+                            ("getProfileIntf" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :type ("CarbonProfileIntf" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1691 1735])
+                            ("getPCTraceReporter" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :type ("PCTraceReporter" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1801 1847])
+                            ("getProperty" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("property" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1914 1935]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [1882 1936])
+                            ("setBreakpoint" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("adress" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1990 2006])
+                                    ("breakpoint_type" variable (:type "int") (reparse-symbol arg-sub-list) [2007 2027]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1963 2028])
+                            ("clearBreakpoint" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("adress" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2088 2104])
+                                    ("breakpoint_type" variable (:type "int") (reparse-symbol arg-sub-list) [2105 2125]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2059 2126])
+                            ("getBreakpoints" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("eslapi::CADIBptDescription_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2171 2238])
+                            ("private" label nil (reparse-symbol classsubparts) [2244 2252])
+                            ("mComp" variable
+                               (:pointer 1
+                                :type ("sc_mx_module" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2286 2306])
+                            ("mCore" variable
+                               (:pointer 1
+                                :type ("sc_mx_module" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2394 2414])
+                            ("mCarbonObj" variable
+                               (:pointer 1
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2449 2476])
+                            ("mCoutStreambuf" variable (:type ("MaxSimStreamBuffer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2510 2544])
+                            ("mCoutStream" variable (:type ("std::ostream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2592 2617])
+                            ("mCinStreambuf" variable (:type ("MaxSimStreamIBuffer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2650 2684])
+                            ("mCinStream" variable (:type ("std::istream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2732 2756])
+                            ("mProfileIntf" variable
+                               (:pointer 1
+                                :type ("CarbonSoCDProfileIntf" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2784 2820])
+                            ("mPCTraceReporter" variable
+                               (:pointer 1
+                                :type ("SoCDPCTraceReporter" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2876 2914])
+                            ("mPropValue" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2972 2995]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [932 2999]))                  
+                :type "namespace")
+                nil [838 3065]))          
+      :file "SDCarbonComponentHelper.h"
+      :pointmax 3135
+      :fsize 3134
+      :lastmodtime '(22838 56883 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_SDCARBONCOMPONENTHELPER_H_")
+          )
+)
+    (semanticdb-table "ICMComponentHelper.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("common/CarbonComponentHelper.h" include nil nil [364 405])
+            ("common/carbon_mkversion.h" include nil nil [406 442])
+            ("carbon/carbon_shelltypes.h" include nil nil [444 481])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("ICMComponentHelper" type
+                       (:superclasses 
+                          ( ("CarbonComponentHelper" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [678 685])
+                            ("ICMComponentHelper" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("obj" variable
+                                       (:pointer 1
+                                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [725 745]))                                  
+                                :type ("ICMComponentHelper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [706 746])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [837 846])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [939 948])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [1031 1040])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [1123 1132])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [1212 1221])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [1302 1311])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [1407 1416])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [1528 1537])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [1626 1635])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [1727 1736])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [1834 1843])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [1955 1964])
+                            ("ICMComponentHelper" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1969 2001])
+                            ("private" label nil (reparse-symbol classsubparts) [2004 2012])
+                            ("m_cycle_model" variable
+                               (:pointer 1
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2015 2045])
+                            ("null_ostream" variable (:type ("std::ostream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2104 2130])
+                            ("null_istream" variable (:type ("std::istream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2133 2159]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [621 2963]))                  
+                :type "namespace")
+                nil [520 3029]))          
+      :file "ICMComponentHelper.h"
+      :pointmax 3061
+      :fsize 3060
+      :lastmodtime '(23378 7843 260844 0)
+      :unmatched-syntax '((semantic-list 1952 . 1954) (symbol 1938 . 1952) (punctuation 1936 . 1937) (symbol 1916 . 1936) (punctuation 1915 . 1916) (punctuation 1914 . 1915) (symbol 1908 . 1914) (punctuation 1907 . 1908) (symbol 1901 . 1907) (punctuation 1900 . 1901) (punctuation 1899 . 1900) (symbol 1896 . 1899) (VIRTUAL 1888 . 1895) (semantic-list 1795 . 1833) (symbol 1780 . 1795) (VOID 1775 . 1779) (VIRTUAL 1767 . 1774) (semantic-list 1688 . 1726) (symbol 1675 . 1688) (VOID 1670 . 1674) (VIRTUAL 1662 . 1669) (semantic-list 1603 . 1625) (symbol 1592 . 1603) (punctuation 1590 . 1591) (CHAR 1586 . 1590) (CONST 1580 . 1585) (VIRTUAL 1572 . 1579) (semantic-list 1525 . 1527) (symbol 1507 . 1525) (punctuation 1505 . 1506) (symbol 1490 . 1505) (VIRTUAL 1482 . 1489) (semantic-list 1404 . 1406) (symbol 1390 . 1404) (punctuation 1388 . 1389) (symbol 1371 . 1388) (VIRTUAL 1363 . 1370) (semantic-list 1299 . 1301) (symbol 1292 . 1299) (punctuation 1290 . 1291) (symbol 1286 . 1290) (punctuation 1285 . 1286) (punctuation 1284 . 1285) (symbol 1278 . 1284) (VIRTUAL 1270 . 1277) (semantic-list 1209 . 1211) (symbol 1192 . 1209) (punctuation 1190 . 1191) (symbol 1183 . 1190) (punctuation 1182 . 1183) (punctuation 1181 . 1182) (symbol 1178 . 1181) (VIRTUAL 1170 . 1177) (semantic-list 1120 . 1122) (symbol 1103 . 1120) (punctuation 1101 . 1102) (symbol 1094 . 1101) (punctuation 1093 . 1094) (punctuation 1092 . 1093) (symbol 1089 . 1092) (VIRTUAL 1081 . 1088) (semantic-list 1014 . 1030) (symbol 1007 . 1014) (BOOL 1002 . 1006) (VIRTUAL 994 . 1001) (semantic-list 894 . 938) (symbol 887 . 894) (VOID 882 . 886) (VIRTUAL 874 . 881) (semantic-list 834 . 836) (symbol 819 . 834) (punctuation 817 . 818) (symbol 803 . 817) (VIRTUAL 795 . 802) (symbol 358 . 362) (symbol 351 . 357) (punctuation 350 . 351))))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!src!include!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,77 @@
+;; Object arm_Coding Sample Report_Jim Xie/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "arm_Coding Sample Report_Jim Xie/"
+  :tables
+  (list
+    (semanticdb-table "code sample.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [1 18])
+            ("algorithm" include (:system-flag t) nil [46 66])
+            ("deque" include (:system-flag t) nil [67 83])
+            ("math.h" include (:system-flag t) nil [84 101])
+            ("stdlib.h" include (:system-flag t) nil [102 121])
+            ("time.h" include (:system-flag t) nil [122 139])
+            ("stack" include (:system-flag t) nil [140 156])
+            ("set" include (:system-flag t) nil [184 198])
+            ("queue" include (:system-flag t) nil [199 215])
+            ("map" include (:system-flag t) nil [216 230])
+            ("stdio.h" include (:system-flag t) nil [231 249])
+            ("list" include (:system-flag t) nil [250 265])
+            ("sstream" include (:system-flag t) nil [266 284])
+            ("cmath" include (:system-flag t) nil [285 301])
+            ("pthread.h" include (:system-flag t) nil [302 322])
+            ("iostream" include (:system-flag t) nil [323 342])
+            ("vector" include (:system-flag t) nil [343 360])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [361 381])
+            ("Simulator" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [3280 3288])
+                    ("n" variable (:type "int") (reparse-symbol classsubparts) [3293 3304])
+                    ("len" variable (:type "int") (reparse-symbol classsubparts) [3293 3304])
+                    ("belt" variable (:type ("list" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3309 3324])
+                    ("workerPos" variable (:type "int") (reparse-symbol classsubparts) [3400 3410])
+                    ("worker1" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3415 3444])
+                    ("worker2" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3415 3444])
+                    ("product" variable (:type "int") (reparse-symbol classsubparts) [3449 3485])
+                    ("remainingA" variable (:type "int") (reparse-symbol classsubparts) [3449 3485])
+                    ("remainingB" variable (:type "int") (reparse-symbol classsubparts) [3449 3485])
+                    ("public" label nil (reparse-symbol classsubparts) [3486 3493])
+                    ("Simulator" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("time" variable (:type "int") (reparse-symbol arg-sub-list) [3508 3517])
+                            ("length" variable (:type "int") (reparse-symbol arg-sub-list) [3518 3529]))                          
+                        :type ("Simulator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3498 3884])
+                    ("run" function (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3964 6433]))                  
+                :type "class")
+                nil [3262 6436])
+            ("main" function (:type "int") nil [6441 6603]))          
+      :file "code sample.cpp"
+      :pointmax 6604
+      :fsize 6858
+      :lastmodtime '(23225 23310 556132 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!Downloads!arm_Coding Sample Report_Jim Xie!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,51 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables
+  (list
+    (semanticdb-table "trickbox_defs.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("TRICKBOX_DEFS_H" variable (:constant-flag t) nil [33 48])
+            ("stdint.h" include (:system-flag t) nil [49 68])
+            ("TRICKBOX_SPACE_BASE" variable (:constant-flag t) nil [78 97])
+            ("operations" type
+               (:members 
+                  ( ("read_and_check" variable
+                       (:constant-flag t
+                        :default-value (147 148)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [130 148])
+                    ("write_no_check" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [152 168]))                  
+                :type "enum")
+                nil [110 169])
+            ("OPERATION_INDEX" variable (:constant-flag t) nil [179 194])
+            ("DATA_INDEX" variable (:constant-flag t) nil [207 217])
+            ("MAX_DATA_LENGTH" variable (:constant-flag t) nil [271 286])
+            ("DATA_LENGTH_INDEX" variable (:constant-flag t) nil [301 318])
+            ("ADDRESS_INDEX" variable (:constant-flag t) nil [358 371])
+            ("WAITING_INDEX" variable (:constant-flag t) nil [419 432])
+            ("TRICKBOX_SPACE_LENGTH" variable (:constant-flag t) nil [476 497]))          
+      :file "trickbox_defs.h"
+      :pointmax 570
+      :fsize 569
+      :lastmodtime '(23404 20892 451328 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DATA_INDEX" . ((semantic-list "(OPERATION_INDEX + sizeof(enum operations))" 218 . 261)))
+          ("TRICKBOX_DEFS_H")
+          ("DATA_LENGTH_INDEX" . ((semantic-list "(DATA_INDEX + MAX_DATA_LENGTH)" 319 . 349)))
+          ("WAITING_INDEX" . ((semantic-list "(ADDRESS_INDEX + sizeof(uint32_t))" 433 . 467)))
+          ("TRICKBOX_SPACE_LENGTH" . ((semantic-list "(WAITING_INDEX + sizeof(uint32_t))" 498 . 532)))
+          ("TRICKBOX_SPACE_BASE" . ((number "0xF0000000" 98 . 108)))
+          ("MAX_DATA_LENGTH" . ((number "0x100" 287 . 292)))
+          ("ADDRESS_INDEX" . ((semantic-list "(DATA_LENGTH_INDEX + sizeof(uint32_t))" 372 . 410)))
+          ("OPERATION_INDEX" . ((number "0x0" 195 . 198)))
+          )
+))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!Plover!Simulation!SystemC_mem_test!Applications!autogen!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

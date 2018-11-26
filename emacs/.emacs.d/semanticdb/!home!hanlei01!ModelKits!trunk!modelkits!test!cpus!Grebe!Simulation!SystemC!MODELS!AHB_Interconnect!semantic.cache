@@ -1,0 +1,28 @@
+;; Object AHB_Interconnect/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AHB_Interconnect/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("LINUX_DIR" variable (:default-value (".")) nil [1 15])
+            ("PACKAGE_LIB_DIR" variable (:default-value ("./lib")) nil [65 89])
+            ("COMP_NAME" variable (:default-value ("$(subst lib,,$(basename $(notdir $(wildcard $(PACKAGE_LIB_DIR)/lib*.a))))")) nil [144 230])
+            ("MODEL_NAME" variable (:default-value ("AHB_Interconnect")) nil [230 260])
+            ("clean" function nil nil [261 286])
+            ("gen_code" function nil nil [287 297])
+            ("CXX" variable (:default-value ("g++")) nil [299 307])
+            ("CXXFLAGS" variable (:default-value ("-fPIC" "-g" "-DCARBON_DUMP_VCD=0" "-std=c++11" "-I$(SYSTEMC_HOME)/include" "-I$(CARBON_HOME)/include" "-I." "-I$(LINUX_DIR)")) nil [308 471])
+            ("OBJS" variable (:default-value ("lib$(COMP_NAME).systemc.o")) nil [471 510])
+            ("all" function (:arguments ("lib$(COMP_NAME).so")) nil [513 538])
+            ("lib" function (:arguments ("$(OBJS)")) nil [539 937])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp" "gen_code")) nil [939 1035]))          
+      :file "Makefile"
+      :pointmax 1036
+      :fsize 1035
+      :lastmodtime '(22756 5034 0 0)
+      :unmatched-syntax '((symbol 31 . 64) (punctuation 29 . 30) (punctuation 28 . 29) (symbol 15 . 27) (bol 15 . 15))))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!Grebe!Simulation!SystemC!MODELS!AHB_Interconnect!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

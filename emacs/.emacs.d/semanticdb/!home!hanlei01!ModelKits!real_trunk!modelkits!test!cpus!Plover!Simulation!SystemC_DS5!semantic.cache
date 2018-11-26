@@ -1,0 +1,44 @@
+;; Object SystemC_DS5/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC_DS5/"
+  :tables
+  (list
+    (semanticdb-table "system_test_TEMPLATE.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/SimpleFlash.h" include nil nil [831 862])
+            ("models/SimpleFlashImp.h" include nil nil [863 897])
+            ("models/RAMBlock.h" include nil nil [898 926])
+            ("models/SimpleBus.h" include nil nil [927 956])
+            ("models/BasicUART.h" include nil nil [957 986])
+            ("models/ElfLoader.h" include nil nil [987 1016])
+            ("libPlover.tlm.h" include nil nil [1017 1043])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [1044 1090])
+            ("iostream" include (:system-flag t) nil [1092 1111])
+            ("scx/scx.h" include (:system-flag t) nil [1113 1133])
+            ("scx_simcontroller.cpp" include (:system-flag t) nil [1134 1166])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1167 1203])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1204 1237])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1239 1263])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1277 1286])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1287 1300]))                  
+                :type "int")
+                nil [1265 3075]))          
+      :file "system_test_TEMPLATE.cpp"
+      :pointmax 3076
+      :fsize 3075
+      :lastmodtime '(23336 12581 0 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!real_trunk!modelkits!test!cpus!Plover!Simulation!SystemC_DS5!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

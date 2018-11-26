@@ -1,0 +1,125 @@
+;; Object interview/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "interview/"
+  :tables
+  (list
+    (semanticdb-table "FinalCode.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [199 218])
+            ("stdio.h" include (:system-flag t) nil [219 237])
+            ("stdlib.h" include (:system-flag t) nil [238 257])
+            ("strings.h" include (:system-flag t) nil [258 278])
+            ("sys/time.h" include (:system-flag t) nil [279 300])
+            ("A" variable (:constant-flag t) nil [403 404])
+            ("B" variable (:constant-flag t) nil [429 430])
+            ("P" variable (:constant-flag t) nil [455 456])
+            ("NOTHING" variable (:constant-flag t) nil [488 495])
+            ("assembly_time" variable
+               (:default-value "0"
+                :type "int")
+                nil [592 612])
+            ("INPUT_SLOT" variable (:constant-flag t) nil [701 711])
+            ("out_slot" variable
+               (:default-value "0"
+                :type "int")
+                nil [900 916])
+            ("iterations" variable
+               (:default-value "0"
+                :type "int")
+                nil [965 982])
+            ("belt" variable
+               (:pointer 1
+                :type "int")
+                nil [998 1008])
+            ("num_workers" variable (:type "int") nil [1057 1073])
+            ("getRandomNumber" function
+               (:prototype-flag t
+                :type "float")
+                nil [1131 1155])
+            ("worker" type
+               (:members 
+                  ( ("pos" variable (:type "unsigned int") (reparse-symbol classsubparts) [1435 1452])
+                    ("l_hand" variable (:type "int") (reparse-symbol classsubparts) [1457 1476])
+                    ("r_hand" variable (:type "int") (reparse-symbol classsubparts) [1457 1476])
+                    ("buildTimeLeft" variable (:type "unsigned int") (reparse-symbol classsubparts) [1481 1508])
+                    ("public" label nil (reparse-symbol classsubparts) [1513 1520])
+                    ("setpos" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [1537 1543]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1525 1544])
+                    ("assemble" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("belt" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1563 1573]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1549 1574]))                  
+                :type "class")
+                nil [1413 1577])
+            ("setpos" function
+               (:parent "worker"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [1599 1605]))                  
+                :type "void")
+                nil [1579 1623])
+            ("assemble" function
+               (:parent "worker"
+                :arguments 
+                  ( ("belt" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2207 2217]))                  
+                :type "void")
+                nil [2185 3360])
+            ("placeNewItem" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("belt" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3379 3389]))                  
+                :type "void")
+                nil [3361 3390])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3400 3409])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3410 3422]))                  
+                :type "int")
+                nil [3391 5247])
+            ("ONE_THIRD" variable (:constant-flag t) nil [5256 5265])
+            ("TWO_THIRDS" variable (:constant-flag t) nil [5288 5298])
+            ("placeNewItem" function
+               (:arguments 
+                  ( ("belt" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5386 5397]))                  
+                :type "void")
+                nil [5366 5635])
+            ("getRandomNumber" function (:type "float") nil [5690 6032]))          
+      :file "FinalCode.cc"
+      :pointmax 6033
+      :fsize 6240
+      :lastmodtime '(23217 13716 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("A" . ((number "1" 405 . 406)))
+          ("B" . ((number "2" 431 . 432)))
+          ("P" . ((number "3" 457 . 458)))
+          ("INPUT_SLOT" . ((number "0" 712 . 713)))
+          ("ONE_THIRD" . ((semantic-list "( 1.0 / 3.0 )" 5266 . 5279)))
+          ("TWO_THIRDS" . ((semantic-list "( 2.0 / 3.0 )" 5299 . 5312)))
+          ("NOTHING" . ((number "0" 496 . 497)))
+          )
+))
+  :file "!home!hanlei01!tmp!interview!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

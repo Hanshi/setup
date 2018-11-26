@@ -1,0 +1,160 @@
+;; Object FMGenIF/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "FMGenIF/"
+  :tables
+  (list
+    (semanticdb-table "r7_save_arch_handler.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("peerapi/ArchSaveHandlerIF.h" include nil nil [1 39])
+            ("eslapi/CAInterface.h" include nil nil [40 71])
+            ("eslapi/CASIModuleIF.h" include nil nil [72 104])
+            ("eslapi/CASIModule.h" include nil nil [105 135])
+            ("eslapi/CASISaveRestoreArch.h" include nil nil [136 175])
+            ("eslapi/CADI.h" include nil nil [176 200])
+            ("eslapi/CADIFactory.h" include nil nil [201 232])
+            ("sstream" include (:system-flag t) nil [235 253])
+            ("eslapi" using (:type ("eslapi" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [255 278])
+            ("Carbon::ArchSaveHandlerIF" using (:type ("Carbon::ArchSaveHandlerIF" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [279 321])
+            ("WEXP_HANDLER" variable (:constant-flag t) nil [393 405])
+            ("R7_save_handler" type
+               (:superclasses 
+                  ( ("ArchSaveHandlerDefault" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [541 548])
+                    ("save" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("module" variable
+                               (:pointer 1
+                                :type ("CASIModuleIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [568 589])
+                            ("stream" variable
+                               (:reference 1
+                                :type ("SaveArchStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [589 612]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [551 2265])
+                    ("tag" function
+                       (:typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2271 2332])
+                    ("saveParameters" function
+                       (:arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :type ("SaveArchStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2356 2379])
+                            ("cpuName" variable
+                               (:reference 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2380 2396])
+                            ("debugFlag" variable (:type "bool") (reparse-symbol arg-sub-list) [2397 2412])
+                            ("numMPUReg" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2413 2433]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2335 3062])
+                    ("saveRegs" function
+                       (:arguments 
+                          ( ("regMap" variable
+                               (:pointer 1
+                                :type ("eslapi::CASIRegMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3080 3107])
+                            ("stream" variable
+                               (:reference 1
+                                :type ("SaveArchStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3108 3131])
+                            ("cpuName" variable
+                               (:reference 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3132 3148])
+                            ("debugFlag" variable (:type "bool") (reparse-symbol arg-sub-list) [3149 3164])
+                            ("numMPUReg" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3165 3184]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3066 8825])
+                    ("saveTCM" function
+                       (:arguments 
+                          ( ("regMap" variable
+                               (:pointer 1
+                                :type ("eslapi::CASIRegMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8844 8871])
+                            ("stream" variable
+                               (:reference 1
+                                :type ("SaveArchStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8871 8894])
+                            ("cpuName" variable
+                               (:reference 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8895 8911])
+                            ("tcmr" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIReg_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8912 8936])
+                            ("debugFlag" variable (:type "bool") (reparse-symbol arg-sub-list) [8937 8952])
+                            ("tcmName" variable
+                               (:reference 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8953 8969]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8831 12755])
+                    ("findRegister" function
+                       (:arguments 
+                          ( ("reg_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12779 12807])
+                            ("" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIReg_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12807 12826])
+                            ("" variable (:type ("reg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12827 12831])
+                            ("reg_width" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12832 12852])
+                            ("compName" variable
+                               (:reference 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12853 12870]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12761 14729]))                  
+                :type "class")
+                nil [473 14733])
+            ("R7_save_createHandler" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("ArchSaveHandlerIF" type (:type "class") nil nil)
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [14762 14840]))          
+      :file "r7_save_arch_handler.cpp"
+      :pointmax 14844
+      :fsize 14843
+      :lastmodtime '(22426 988 682517 0)
+      :unmatched-syntax '((punctuation 14842 . 14843) (punctuation 12825 . 12826))
+      :lexical-table 
+        '(("WEXP_HANDLER")
+          )
+)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CC" variable (:default-value ("${MAXSIM_HOME}/deps/gcc/4.7.2-binutil-2.25/bin/g++")) nil [1 57])
+            ("rm" variable (:default-value ("rm" "-rf")) nil [58 70])
+            ("all" function (:arguments ("r7_save_arch_handler.cpp")) nil [71 378])
+            ("clean" function nil nil [379 402]))          
+      :file "Makefile"
+      :pointmax 402
+      :fsize 401
+      :lastmodtime '(21979 32860 0 0)
+      :unmatched-syntax '((shell-command 388 . 401) (bol 387 . 387))))
+  :file "!home!hlei!modelkit!modelkits!Scripts!cpus!CortexR7!FMGenIF!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

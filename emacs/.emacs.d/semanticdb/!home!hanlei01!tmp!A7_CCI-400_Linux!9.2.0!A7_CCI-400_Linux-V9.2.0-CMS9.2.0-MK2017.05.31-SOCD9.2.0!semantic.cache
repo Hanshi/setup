@@ -1,0 +1,23 @@
+;; Object A7_CCI-400_Linux-V9.2.0-CMS9.2.0-MK2017.05.31-SOCD9.2.0/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "A7_CCI-400_Linux-V9.2.0-CMS9.2.0-MK2017.05.31-SOCD9.2.0/"
+  :tables
+  (list
+    (semanticdb-table "bp_gen.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [1 11])
+            ("symbol_table" variable nil nil [12 33])
+            ("lines" variable nil nil [34 113])
+            ("for" code nil nil [114 206])
+            ("trace_lines" variable nil nil [248 292])
+            ("for" code nil nil [293 419]))          
+      :file "bp_gen.py"
+      :pointmax 456
+      :fsize 190
+      :lastmodtime '(22823 21545 868224 0)
+      :unmatched-syntax '((FOR 293 . 296) ($EOI 459 . 459)))
+)
+  :file "!home!hanlei01!tmp!A7_CCI-400_Linux!9.2.0!A7_CCI-400_Linux-V9.2.0-CMS9.2.0-MK2017.05.31-SOCD9.2.0!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

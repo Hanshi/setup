@@ -1,0 +1,288 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "cm_sysc_utils.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_CM_SYSC_UTIL_H_" variable (:constant-flag t) nil [833 849])
+            ("sc_len" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("t" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [883 887]))                  )
+                nil [850 910])
+            ("sc_len" function
+               (:type "int"
+                :arguments 
+                  ( ("d" variable (:type "bool") (reparse-symbol arg-sub-list) [942 949]))                  
+                :typemodifiers ("inline"))
+                nil [912 963])
+            ("getLength" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1001 1006]))                  )
+                nil [965 1084])
+            ("my_to_int" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1122 1126])
+                    ("last" variable (:type "int") (reparse-symbol arg-sub-list) [1127 1136])
+                    ("first" variable (:type "int") (reparse-symbol arg-sub-list) [1137 1147]))                  )
+                nil [1086 1189])
+            ("my_to_int" function
+               (:type "int"
+                :arguments 
+                  ( ("x" variable (:type "bool") (reparse-symbol arg-sub-list) [1224 1231])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1232 1236])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1237 1241]))                  
+                :typemodifiers ("inline"))
+                nil [1191 1260])
+            ("my_write" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1298 1303])
+                    ("last" variable (:type "int") (reparse-symbol arg-sub-list) [1304 1313])
+                    ("first" variable (:type "int") (reparse-symbol arg-sub-list) [1314 1324])
+                    ("val" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1325 1337]))                  )
+                nil [1262 1369])
+            ("my_write" function
+               (:type "void"
+                :arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [1404 1412])
+                    ("last" variable (:type "int") (reparse-symbol arg-sub-list) [1413 1422])
+                    ("first" variable (:type "int") (reparse-symbol arg-sub-list) [1423 1433])
+                    ("val" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1434 1446]))                  
+                :typemodifiers ("inline"))
+                nil [1371 1459])
+            ("ScOutToSignal" type
+               (:template 
+                  ( ("portType" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1560 1567])
+                    ("signalType" variable (:type "int") (reparse-symbol classsubparts) [1618 1629])
+                    ("ScOutToSignal" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("p" variable
+                               (:pointer 1
+                                :type ("portType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1646 1658])
+                            ("s" variable
+                               (:pointer 1
+                                :type ("signalType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1659 1673]))                          
+                        :type ("ScOutToSignal" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1632 1786])
+                    ("get_ptr" function
+                       (:arguments 
+                          ( ("value" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1803 1818]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1790 2148])
+                    ("set_ptr" function
+                       (:arguments 
+                          ( ("xx" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2165 2177]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2152 2180])
+                    ("ScOutToSignal" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2184 2202])
+                    ("private" label nil (reparse-symbol classsubparts) [2205 2213])
+                    ("port" variable
+                       (:pointer 1
+                        :type ("portType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2216 2231])
+                    ("signal" variable
+                       (:pointer 1
+                        :type ("signalType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2234 2253]))                  
+                :superclasses 
+                  ( ("ARM::Models::SignalLevel::SignalAccess" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [1461 2256])
+            ("SignalToScIn" type
+               (:template 
+                  ( ("portType" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2356 2363])
+                    ("signalType" variable (:type "int") (reparse-symbol classsubparts) [2414 2425])
+                    ("SignalToScIn" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("p" variable
+                               (:pointer 1
+                                :type ("portType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2442 2454])
+                            ("s" variable
+                               (:pointer 1
+                                :type ("signalType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2455 2469]))                          
+                        :type ("SignalToScIn" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2429 2582])
+                    ("set_ptr" function
+                       (:arguments 
+                          ( ("value" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2599 2614]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2586 2936])
+                    ("SignalToScIn" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2940 2958])
+                    ("get_ptr" function
+                       (:arguments 
+                          ( ("value" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2975 2990]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2962 2999])
+                    ("private" label nil (reparse-symbol classsubparts) [3001 3009])
+                    ("port" variable
+                       (:pointer 1
+                        :type ("portType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3012 3027])
+                    ("signal" variable
+                       (:pointer 1
+                        :type ("signalType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3030 3049]))                  
+                :superclasses 
+                  ( ("ARM::Models::SignalLevel::SignalAccess" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [2258 3052])
+            ("ScOutToPort" type
+               (:template 
+                  ( ("portType" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3210 3217])
+                    ("ScOutToPort" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("p" variable
+                               (:pointer 1
+                                :type ("portType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3232 3244]))                          
+                        :type ("ScOutToPort" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3220 3321])
+                    ("ScOutToPort" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3324 3340])
+                    ("get_ptr" function
+                       (:arguments 
+                          ( ("value" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3358 3373]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3345 3461])
+                    ("set_ptr" function
+                       (:arguments 
+                          ( ("value" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3478 3493]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3465 3966])
+                    ("private" label nil (reparse-symbol classsubparts) [3968 3976])
+                    ("port" variable
+                       (:pointer 1
+                        :type ("portType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3979 3994]))                  
+                :superclasses 
+                  ( ("ARM::Models::SignalLevel::SignalAccess" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [3113 3997])
+            ("PortToScIn" type
+               (:template 
+                  ( ("portType" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4154 4161])
+                    ("PortToScIn" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("p" variable
+                               (:pointer 1
+                                :type ("portType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4175 4187]))                          
+                        :type ("PortToScIn" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4164 4264])
+                    ("PortToScIn" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4267 4283])
+                    ("set_ptr" function
+                       (:arguments 
+                          ( ("value" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4300 4315]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4287 4399])
+                    ("get_ptr" function
+                       (:arguments 
+                          ( ("value" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4416 4431]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4403 4881])
+                    ("private" label nil (reparse-symbol classsubparts) [4883 4891])
+                    ("port" variable
+                       (:pointer 1
+                        :type ("portType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4894 4909]))                  
+                :superclasses 
+                  ( ("ARM::Models::SignalLevel::SignalAccess" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [4058 4912]))          
+      :file "cm_sysc_utils.h"
+      :pointmax 4920
+      :fsize 4919
+      :lastmodtime '(23484 65274 357920 0)
+      :unmatched-syntax '((punctuation 3340 . 3341) (punctuation 2412 . 2413) (symbol 2403 . 2412) (punctuation 2402 . 2403) (punctuation 2401 . 2402) (symbol 2393 . 2401) (TYPENAME 2384 . 2392) (punctuation 2383 . 2384) (symbol 2374 . 2383) (TYPEDEF 2366 . 2373) (punctuation 2202 . 2203) (punctuation 1616 . 1617) (symbol 1607 . 1616) (punctuation 1606 . 1607) (punctuation 1605 . 1606) (symbol 1597 . 1605) (TYPENAME 1588 . 1596) (punctuation 1587 . 1588) (symbol 1578 . 1587) (TYPEDEF 1570 . 1577))
+      :lexical-table 
+        '(("_CM_SYSC_UTIL_H_")
+          )
+))
+  :file "!o!work!hanlei01!MK_real_trunk!modelbuild!models!CortexM7!workarea!SystemC!ip!M7_1FPU_16DCache_16ICache!gcc483!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

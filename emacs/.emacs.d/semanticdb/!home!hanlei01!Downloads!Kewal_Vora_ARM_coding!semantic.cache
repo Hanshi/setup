@@ -1,0 +1,73 @@
+;; Object Kewal_Vora_ARM_coding/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Kewal_Vora_ARM_coding/"
+  :tables
+  (list
+    (semanticdb-table "Kewal_Vora_ARM_coding.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+@file: Kewal_Vora_ARM_coding.py
+@author: Kewal Vora
+@date: 04/12/18
+\"\"\"" code nil nil [1 76])
+            ("random" include nil nil [78 104])
+            ("worker" variable nil nil [340 441])
+            ("worker_timings" variable nil nil [537 575])
+            ("randomComponent" function (:documentation "
+    Generates random components out of '', 'A' or 'B'
+    Args:
+        None
+    Returns:
+        random component
+    ") nil [578 824])
+            ("conveyor" function
+               (:documentation "
+    Maintains the status of the coveyor belt
+    Gives the components on the belt, products that were produced and
+    number of component A and B that were left
+    Args:
+        belt: list of components on the belt
+        product_count: current product count
+        compA: current component A count
+        compB: current component B count
+    Returns:
+        updated values
+    "
+                :arguments 
+                  ( ("belt" variable nil (reparse-symbol function_parameters) [839 843])
+                    ("product_count" variable nil (reparse-symbol function_parameters) [845 858])
+                    ("compA" variable nil (reparse-symbol function_parameters) [860 865])
+                    ("compB" variable nil (reparse-symbol function_parameters) [867 872]))                  )
+                nil [826 1505])
+            ("make_product" function
+               (:documentation "
+    If the workers have both the products and the time required to make the 
+    product is satisfied, it will make the product and put it in workers' hand
+    "
+                :arguments 
+                  ( ("time" variable nil (reparse-symbol function_parameters) [1524 1528]))                  )
+                nil [1507 2031])
+            ("can_woker_handle" function
+               (:documentation "
+    The worker only has two hands, this fucntion checks if worker on either side 
+    of the belt can handle the product
+    time maintains the current time of the worker
+    "
+                :arguments 
+                  ( ("slot" variable nil (reparse-symbol function_parameters) [2054 2058])
+                    ("each_slot" variable nil (reparse-symbol function_parameters) [2060 2069])
+                    ("each_side_worker" variable nil (reparse-symbol function_parameters) [2071 2087])
+                    ("time" variable nil (reparse-symbol function_parameters) [2089 2093])
+                    ("belt" variable nil (reparse-symbol function_parameters) [2095 2099]))                  )
+                nil [2033 3684])
+            ("main" function nil nil [3690 4722])
+            ("if" code nil nil [4723 4760]))          
+      :file "Kewal_Vora_ARM_coding.py"
+      :pointmax 4760
+      :fsize 4901
+      :lastmodtime '(23248 9470 0 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!Downloads!Kewal_Vora_ARM_coding!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

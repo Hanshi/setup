@@ -1,0 +1,844 @@
+;; Object kernel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "kernel/"
+  :tables
+  (list
+    (semanticdb-table "qeventloop.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("qeventloop.h" include nil nil [759 782])
+            ("qabstracteventdispatcher.h" include nil nil [784 821])
+            ("qcoreapplication.h" include nil nil [822 851])
+            ("qelapsedtimer.h" include nil nil [852 878])
+            ("qobject_p.h" include nil nil [880 902])
+            ("private/qthread_p.h" include (:system-flag t) nil [903 933])
+            ("QEventLoopPrivate" type
+               (:superclasses 
+                  ( ("QObjectPrivate" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1038 1045])
+                    ("QEventLoopPrivate" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("QEventLoopPrivate" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1050 1136])
+                    ("exit" variable (:type "bool") (reparse-symbol classsubparts) [1141 1159])
+                    ("inExec" variable (:type "bool") (reparse-symbol classsubparts) [1141 1159])
+                    ("returnCode" variable (:type "int") (reparse-symbol classsubparts) [1164 1179]))                  
+                :type "class")
+                nil [955 1182])
+            ("QEventLoop" function
+               (:constructor-flag t
+                :parent "QEventLoop"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2724 2740]))                  
+                :type ("QEventLoop" type (:type "class") nil nil))
+                nil [2701 3039])
+            ("QEventLoop" function
+               (:destructor-flag t
+                :parent "QEventLoop"
+                :type "void")
+                nil [3084 3113])
+            ("processEvents" function
+               (:parent "QEventLoop"
+                :arguments 
+                  ( ("flags" variable (:type ("ProcessEventsFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3665 3690]))                  
+                :type "bool")
+                nil [3634 3948])
+            ("exec" function
+               (:parent "QEventLoop"
+                :arguments 
+                  ( ("flags" variable (:type ("ProcessEventsFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4920 4945]))                  
+                :type "int")
+                nil [4899 6851])
+            ("processEvents" function
+               (:parent "QEventLoop"
+                :arguments 
+                  ( ("flags" variable (:type ("ProcessEventsFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7501 7526])
+                    ("maxTime" variable (:type "int") (reparse-symbol arg-sub-list) [7527 7539]))                  
+                :type "void")
+                nil [7470 8004])
+            ("exit" function
+               (:parent "QEventLoop"
+                :arguments 
+                  ( ("returnCode" variable (:type "int") (reparse-symbol arg-sub-list) [8530 8545]))                  
+                :type "void")
+                nil [8508 8729])
+            ("isRunning" function
+               (:parent "QEventLoop"
+                :type "bool")
+                nil [8939 9025])
+            ("wakeUp" function
+               (:parent "QEventLoop"
+                :type "void")
+                nil [9107 9260])
+            ("quit" function
+               (:parent "QEventLoop"
+                :type "void")
+                nil [9376 9412]))          
+      :file "qeventloop.cpp"
+      :pointmax 9431
+      :fsize 9430
+      :lastmodtime '(22936 8718 321404 0)
+      :unmatched-syntax '((symbol 9414 . 9430) (semantic-list 1025 . 1037) (symbol 1009 . 1025) (symbol 935 . 953)))
+    (semanticdb-table "qeventloop.h"
+      :file "qeventloop.h"
+      :fsize 1995
+      :lastmodtime '(22936 8718 325404 0))
+    (semanticdb-table "qabstracteventdispatcher.h"
+      :file "qabstracteventdispatcher.h"
+      :fsize 2520
+      :lastmodtime '(22936 8718 113405 0))
+    (semanticdb-table "qcoreapplication.h"
+      :file "qcoreapplication.h"
+      :fsize 9271
+      :lastmodtime '(22936 8718 186404 0))
+    (semanticdb-table "qobject_p.h"
+      :file "qobject_p.h"
+      :fsize 10428
+      :lastmodtime '(22936 8718 443406 0))
+    (semanticdb-table "qcoreapplication.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("qcoreapplication.h" include nil nil [759 788])
+            ("qcoreapplication_p.h" include nil nil [789 820])
+            ("qabstracteventdispatcher.h" include nil nil [822 859])
+            ("qcoreevent.h" include nil nil [860 883])
+            ("qeventloop.h" include nil nil [884 907])
+            ("qcorecmdlineargs_p.h" include nil nil [908 939])
+            ("qdatastream.h" include (:system-flag t) nil [940 964])
+            ("qdebug.h" include (:system-flag t) nil [965 984])
+            ("qdir.h" include (:system-flag t) nil [985 1002])
+            ("qfile.h" include (:system-flag t) nil [1003 1021])
+            ("qfileinfo.h" include (:system-flag t) nil [1022 1044])
+            ("qhash.h" include (:system-flag t) nil [1045 1063])
+            ("private/qprocess_p.h" include (:system-flag t) nil [1064 1095])
+            ("qtextcodec.h" include (:system-flag t) nil [1096 1119])
+            ("qthread.h" include (:system-flag t) nil [1120 1140])
+            ("qthreadpool.h" include (:system-flag t) nil [1141 1165])
+            ("qthreadstorage.h" include (:system-flag t) nil [1166 1193])
+            ("private/qthread_p.h" include (:system-flag t) nil [1194 1224])
+            ("qelapsedtimer.h" include (:system-flag t) nil [1225 1251])
+            ("qlibraryinfo.h" include (:system-flag t) nil [1252 1277])
+            ("qvarlengtharray.h" include (:system-flag t) nil [1278 1306])
+            ("private/qfactoryloader_p.h" include (:system-flag t) nil [1307 1344])
+            ("private/qfunctions_p.h" include (:system-flag t) nil [1345 1378])
+            ("private/qlocale_p.h" include (:system-flag t) nil [1379 1409])
+            ("private/qmutexpool_p.h" include (:system-flag t) nil [1410 1443])
+            ("stdlib.h" include (:system-flag t) nil [2095 2114])
+            ("QMutexUnlocker" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2431 2438])
+                    ("QMutexUnlocker" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("m" variable
+                               (:pointer 1
+                                :type ("QMutex" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2474 2484]))                          
+                        :type ("QMutexUnlocker" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2459 2509])
+                    ("QMutexUnlocker" function
+                       (:destructor-flag t
+                        :typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2514 2552])
+                    ("unlock" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2557 2614])
+                    ("private" label nil (reparse-symbol classsubparts) [2616 2624])
+                    ("mtx" variable
+                       (:pointer 1
+                        :type ("QMutex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2665 2677]))                  
+                :type "class")
+                nil [2408 2680])
+            ("QCoreApplicationPrivate::app_compile_version" variable
+               (:default-value "0x040000"
+                :type "int")
+                nil [4473 4533])
+            ("appName" function
+               (:parent "QCoreApplicationPrivate"
+                :type ("QString" type (:type "class") nil nil))
+                nil [5017 5463])
+            ("checkInstance" function
+               (:parent "QCoreApplicationPrivate"
+                :arguments 
+                  ( ("function" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5516 5537]))                  
+                :type "bool")
+                nil [5472 5709])
+            ("Q_GLOBAL_STATIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5727 5735])
+                    ("" variable (:type ("qmljs_debug_arguments" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5736 5758]))                  
+                :type "int")
+                nil [5711 5759])
+            ("processCommandLineArguments" function
+               (:parent "QCoreApplicationPrivate"
+                :type "void")
+                nil [5761 6453])
+            ("qt_signal_spy_callback_set" variable
+               (:default-value "{ 0, 0, 0, 0 }"
+                :type ("Q_CORE_EXPORT" type (:type "class") nil nil))
+                nil [6507 6565])
+            ("qt_register_signal_spy_callbacks" function
+               (:arguments 
+                  ( ("callback_set" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QSignalSpyCallbackSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6605 6647]))                  
+                :type "void")
+                nil [6567 6698])
+            ("qt_startup_hook" function (:type ("Q_CORE_EXPORT" type (:type "class") nil nil)) nil [6716 6751])
+            ("QVFuncList" type
+               (:typedef ("QList" type
+                     (:template-specifier 
+                        ( ("QtCleanUpFunction" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [6753 6797])
+            ("qAddPostRoutine" function
+               (:arguments 
+                  ( ("p" variable (:type ("QtCleanUpFunction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6859 6879]))                  
+                :type "void")
+                nil [6838 6972])
+            ("qRemovePostRoutine" function
+               (:arguments 
+                  ( ("p" variable (:type ("QtCleanUpFunction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6998 7018]))                  
+                :type "void")
+                nil [6974 7113])
+            ("qt_call_post_routines" function (:type ("Q_CORE_EXPORT" type (:type "class") nil nil)) nil [7120 7524])
+            ("QCoreApplicationPrivate::is_app_running" variable
+               (:default-value "false"
+                :type "bool")
+                nil [7555 7608])
+            ("QCoreApplicationPrivate::is_app_closing" variable
+               (:default-value "false"
+                :type "bool")
+                nil [7638 7691])
+            ("qt_locale_initialized" variable
+               (:default-value "false"
+                :type "bool")
+                nil [7795 7830])
+            ("trolltechConf" function
+               (:pointer 1
+                :parent "QCoreApplicationPrivate"
+                :type ("QSettings" type (:type "class") nil nil))
+                nil [8797 8886])
+            ("qGlobalPostedEventsCount" function (:type ("uint" type (:type "class") nil nil)) nil [8902 9097])
+            ("qt_set_current_thread_to_main_thread" function (:type "void") nil [9100 9218])
+            ("QCoreApplication::self" variable
+               (:pointer 1
+                :default-value "0"
+                :type ("QCoreApplication" type (:type "class") nil nil))
+                nil [9222 9267])
+            ("QCoreApplicationPrivate::eventDispatcher" variable
+               (:pointer 1
+                :default-value "0"
+                :type ("QAbstractEventDispatcher" type (:type "class") nil nil))
+                nil [9268 9339])
+            ("QCoreApplicationPrivate::attribs" variable (:type ("uint" type (:type "class") nil nil)) nil [9340 9378])
+            ("QCoreApplicationData" type
+               (:members 
+                  ( ("QCoreApplicationData" function
+                       (:constructor-flag t
+                        :type ("QCoreApplicationData" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [9480 9565])
+                    ("QCoreApplicationData" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [9570 9981])
+                    ("orgName" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11196 11236])
+                    ("orgDomain" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11196 11236])
+                    ("application" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11196 11236])
+                    ("applicationVersion" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11241 11268])
+                    ("app_libpaths" variable
+                       (:pointer 1
+                        :type ("QStringList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11296 11322]))                  
+                :type "struct")
+                nil [9446 11333])
+            ("QCoreApplicationPrivate" function
+               (:constructor-flag t
+                :parent "QCoreApplicationPrivate"
+                :arguments 
+                  ( ("aargc" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11436 11447])
+                    ("aargv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11448 11461])
+                    ("flags" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11462 11473]))                  
+                :type ("QCoreApplicationPrivate" type (:type "class") nil nil))
+                nil [11387 12898])
+            ("QCoreApplicationPrivate" function
+               (:destructor-flag t
+                :parent "QCoreApplicationPrivate"
+                :type "void")
+                nil [12900 13714])
+            ("createEventDispatcher" function
+               (:parent "QCoreApplicationPrivate"
+                :type "void")
+                nil [13716 14399])
+            ("QCoreApplicationPrivate::theMainThread" variable
+               (:pointer 1
+                :default-value "0"
+                :type ("QThread" type (:type "class") nil nil))
+                nil [14401 14453])
+            ("mainThread" function
+               (:pointer 1
+                :parent "QCoreApplicationPrivate"
+                :type ("QThread" type (:type "class") nil nil))
+                nil [14454 14564])
+            ("checkReceiverThread" function
+               (:parent "QCoreApplicationPrivate"
+                :arguments 
+                  ( ("receiver" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14679 14697]))                  
+                :type "void")
+                nil [14629 15421])
+            ("appendApplicationPathToLibraryPaths" function
+               (:parent "QCoreApplicationPrivate"
+                :type "void")
+                nil [15631 16578])
+            ("qmljsDebugArguments" function
+               (:parent "QCoreApplicationPrivate"
+                :type ("QString" type (:type "class") nil nil))
+                nil [16580 16675])
+            ("qAppName" function (:type ("QString" type (:type "class") nil nil)) nil [16677 16848])
+            ("QCoreApplication" function
+               (:constructor-flag t
+                :parent "QCoreApplication"
+                :arguments 
+                  ( ("p" variable
+                       (:reference 1
+                        :type ("QCoreApplicationPrivate" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20298 20325]))                  
+                :type ("QCoreApplication" type (:type "class") nil nil))
+                nil [20263 20471])
+            ("flush" function
+               (:parent "QCoreApplication"
+                :type "void")
+                nil [20849 20982])
+            ("QCoreApplication" function
+               (:constructor-flag t
+                :parent "QCoreApplication"
+                :arguments 
+                  ( ("argc" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [21628 21638])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21639 21651]))                  
+                :type ("QCoreApplication" type (:type "class") nil nil))
+                nil [21593 22172])
+            ("QCoreApplication" function
+               (:constructor-flag t
+                :parent "QCoreApplication"
+                :arguments 
+                  ( ("argc" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [22209 22219])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22220 22232])
+                    ("_internal" variable (:type "int") (reparse-symbol arg-sub-list) [22233 22247]))                  
+                :type ("QCoreApplication" type (:type "class") nil nil))
+                nil [22174 22750])
+            ("init" function
+               (:parent "QCoreApplication"
+                :type "void")
+                nil [22805 25411])
+            ("QCoreApplication" function
+               (:destructor-flag t
+                :parent "QCoreApplication"
+                :type "void")
+                nil [25686 26627])
+            ("setAttribute" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("attribute" variable (:type ("Qt::ApplicationAttribute" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27153 27188])
+                    ("on" variable (:type "bool") (reparse-symbol arg-sub-list) [27189 27197]))                  
+                :type "void")
+                nil [27117 27992])
+            ("testAttribute" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("attribute" variable (:type ("Qt::ApplicationAttribute" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28137 28172]))                  
+                :type "bool")
+                nil [28100 28238])
+            ("notifyInternal" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("receiver" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28428 28446])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("QEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28447 28461]))                  
+                :type "bool")
+                nil [28390 29761])
+            ("notify" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("receiver" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31571 31589])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("QEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31590 31604]))                  
+                :type "bool")
+                nil [31541 32087])
+            ("sendThroughApplicationEventFilters" function
+               (:parent "QCoreApplicationPrivate"
+                :arguments 
+                  ( ("receiver" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32154 32172])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("QEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32173 32187]))                  
+                :type "bool")
+                nil [32089 32814])
+            ("sendThroughObjectEventFilters" function
+               (:parent "QCoreApplicationPrivate"
+                :arguments 
+                  ( ("receiver" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32876 32894])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("QEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32895 32909]))                  
+                :type "bool")
+                nil [32816 33498])
+            ("notify_helper" function
+               (:parent "QCoreApplicationPrivate"
+                :arguments 
+                  ( ("receiver" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33599 33617])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("QEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33618 33633]))                  
+                :type "bool")
+                nil [33555 33943])
+            ("startingUp" function
+               (:parent "QCoreApplication"
+                :type "bool")
+                nil [34067 34159])
+            ("closingDown" function
+               (:parent "QCoreApplication"
+                :type "bool")
+                nil [34279 34371])
+            ("processEvents" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("flags" variable (:type ("QEventLoop::ProcessEventsFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35330 35367]))                  
+                :type "void")
+                nil [35293 35633])
+            ("processEvents" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("flags" variable (:type ("QEventLoop::ProcessEventsFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36129 36166])
+                    ("maxtime" variable (:type "int") (reparse-symbol arg-sub-list) [36167 36179]))                  
+                :type "void")
+                nil [36092 36720])
+            ("exec" function
+               (:parent "QCoreApplication"
+                :type "int")
+                nil [38147 39130])
+            ("exit" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("returnCode" variable (:type "int") (reparse-symbol arg-sub-list) [39726 39741]))                  
+                :type "void")
+                nil [39698 40009])
+            ("postEvent" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("receiver" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41540 41558])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("QEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41559 41573]))                  
+                :type "void")
+                nil [41507 41634])
+            ("postEvent" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("receiver" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42658 42676])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("QEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42677 42691])
+                    ("priority" variable (:type "int") (reparse-symbol arg-sub-list) [42692 42705]))                  
+                :type "void")
+                nil [42625 44554])
+            ("compressEvent" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("QEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44715 44729])
+                    ("receiver" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44730 44748])
+                    ("postedEvents" variable
+                       (:pointer 1
+                        :type ("QPostEventList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44749 44778]))                  
+                :type "bool")
+                nil [44678 46025])
+            ("sendPostedEvents" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("receiver" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46786 46804])
+                    ("event_type" variable (:type "int") (reparse-symbol arg-sub-list) [46805 46820]))                  
+                :type "void")
+                nil [46746 46948])
+            ("sendPostedEvents" function
+               (:parent "QCoreApplicationPrivate"
+                :arguments 
+                  ( ("receiver" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46997 47015])
+                    ("event_type" variable (:type "int") (reparse-symbol arg-sub-list) [47016 47031])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("QThreadData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47079 47097]))                  
+                :type "void")
+                nil [46950 52169])
+            ("removePostedEvents" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("receiver" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52531 52549]))                  
+                :type "void")
+                nil [52489 52590])
+            ("removePostedEvents" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("receiver" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53214 53232])
+                    ("eventType" variable (:type "int") (reparse-symbol arg-sub-list) [53233 53247]))                  
+                :type "void")
+                nil [53172 55148])
+            ("removePostedEvent" function
+               (:parent "QCoreApplicationPrivate"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("QEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55399 55414]))                  
+                :type "void")
+                nil [55351 56459])
+            ("event" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("QEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56504 56514]))                  
+                :type "bool")
+                nil [56475 56628])
+            ("quit" function
+               (:parent "QCoreApplication"
+                :type "void")
+                nil [57556 57602])
+            ("installTranslator" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("translationFile" variable
+                       (:pointer 1
+                        :type ("QTranslator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59274 59303]))                  
+                :type "void")
+                nil [59233 59708])
+            ("removeTranslator" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("translationFile" variable
+                       (:pointer 1
+                        :type ("QTranslator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59999 60028]))                  
+                :type "void")
+                nil [59959 60382])
+            ("translate" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [60453 60473])
+                    ("sourceText" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [60474 60497])
+                    ("disambiguation" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [60534 60561])
+                    ("encoding" variable (:type ("Encoding" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60562 60580]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [60417 60657])
+            ("replacePercentN" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60687 60703])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [60704 60710]))                  
+                :type "void")
+                nil [60659 61377])
+            ("translate" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [63087 63107])
+                    ("sourceText" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [63108 63131])
+                    ("disambiguation" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [63168 63195])
+                    ("encoding" variable (:type ("Encoding" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63196 63214])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [63215 63221]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [63051 64171])
+            ("qtTrId" function
+               (:arguments 
+                  ( ("id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [64213 64228])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [64229 64235]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [64198 64323])
+            ("isTranslatorInstalled" function
+               (:parent "QCoreApplicationPrivate"
+                :arguments 
+                  ( ("translator" variable
+                       (:pointer 1
+                        :type ("QTranslator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64377 64401]))                  
+                :type "bool")
+                nil [64325 64521])
+            ("applicationDirPath" function
+               (:parent "QCoreApplication"
+                :type ("QString" type (:type "class") nil nil))
+                nil [65596 67098])
+            ("applicationFilePath" function
+               (:parent "QCoreApplication"
+                :type ("QString" type (:type "class") nil nil))
+                nil [67690 72384])
+            ("applicationPid" function
+               (:parent "QCoreApplication"
+                :type ("qint64" type (:type "class") nil nil))
+                nil [72465 72710])
+            ("argc" function
+               (:parent "QCoreApplication"
+                :type "int")
+                nil [72770 72970])
+            ("argv" function
+               (:pointer 2
+                :parent "QCoreApplication"
+                :type "char")
+                nil [73024 73227])
+            ("arguments" function
+               (:parent "QCoreApplication"
+                :type ("QStringList" type (:type "class") nil nil))
+                nil [74913 76676])
+            ("setOrganizationName" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("orgName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77417 77440]))                  
+                :type "void")
+                nil [77374 77482])
+            ("organizationName" function
+               (:parent "QCoreApplication"
+                :type ("QString" type (:type "class") nil nil))
+                nil [77484 77632])
+            ("setOrganizationDomain" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("orgDomain" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78296 78321]))                  
+                :type "void")
+                nil [78251 78367])
+            ("organizationDomain" function
+               (:parent "QCoreApplication"
+                :type ("QString" type (:type "class") nil nil))
+                nil [78369 78456])
+            ("setApplicationName" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("application" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78959 78986]))                  
+                :type "void")
+                nil [78917 79036])
+            ("applicationName" function
+               (:parent "QCoreApplication"
+                :type ("QString" type (:type "class") nil nil))
+                nil [79038 79366])
+            ("setApplicationVersion" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("version" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [79698 79721]))                  
+                :type "void")
+                nil [79653 79774])
+            ("applicationVersion" function
+               (:parent "QCoreApplication"
+                :type ("QString" type (:type "class") nil nil))
+                nil [79776 79937])
+            ("libraryPaths" function
+               (:parent "QCoreApplication"
+                :type ("QStringList" type (:type "class") nil nil))
+                nil [82076 83883])
+            ("setLibraryPaths" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("paths" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QStringList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [84373 84398]))                  
+                :type "void")
+                nil [84334 84639])
+            ("addLibraryPath" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [85345 85365]))                  
+                :type "void")
+                nil [85307 85815])
+            ("removeLibraryPath" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86048 86068]))                  
+                :type "void")
+                nil [86007 86380])
+            ("setEventFilter" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("filter" variable (:type ("QCoreApplication::EventFilter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89641 89678]))                  
+                :type ("QCoreApplication::EventFilter" type (:type "class") nil nil))
+                nil [89578 89792])
+            ("filterEvent" function
+               (:parent "QCoreApplication"
+                :arguments 
+                  ( ("message" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [90117 90131])
+                    ("result" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [90132 90145]))                  
+                :type "bool")
+                nil [90082 90401])
+            ("hasPendingEvents" function
+               (:parent "QCoreApplication"
+                :type "bool")
+                nil [90645 90871]))          
+      :file "qcoreapplication.cpp"
+      :pointmax 95980
+      :fsize 95979
+      :lastmodtime '(22936 8718 182408 0)
+      :unmatched-syntax '((symbol 95963 . 95979) (semantic-list 81063 . 81110) (symbol 81038 . 81063) (semantic-list 81090 . 81109) (semantic-list 11350 . 11385) (symbol 11335 . 11350) (symbol 8888 . 8901) (semantic-list 8711 . 8795) (symbol 8686 . 8711) (semantic-list 8744 . 8794) (symbol 7781 . 7794) (VOID 7115 . 7119) (semantic-list 6813 . 6836) (symbol 6798 . 6813) (VOID 6711 . 6715) (symbol 6485 . 6506) (semantic-list 2643 . 2659) (symbol 2629 . 2643) (EXPLICIT 2450 . 2458) (INLINE 2443 . 2449) (symbol 2388 . 2406)))
+    (semanticdb-table "qcoreapplication_p.h"
+      :file "qcoreapplication_p.h"
+      :fsize 3797
+      :lastmodtime '(22936 8718 193407 0))
+    (semanticdb-table "qcoreevent.h"
+      :file "qcoreevent.h"
+      :fsize 15218
+      :lastmodtime '(22936 8718 217406 0))
+    (semanticdb-table "qcorecmdlineargs_p.h"
+      :file "qcorecmdlineargs_p.h"
+      :fsize 4314
+      :lastmodtime '(22936 8718 209404 0)))
+  :file "!o!work!fresaa01!comp_upgrade!3p-libraries!qt-4.8.6_debug!src!corelib!kernel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

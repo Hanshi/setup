@@ -1,0 +1,16 @@
+;; Object fm_generated_scx/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "fm_generated_scx/"
+  :tables
+  (list
+    (semanticdb-table "scx_simcontroller.cpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "scx_simcontroller.cpp"
+      :pointmax 11847
+      :fsize 11846
+      :lastmodtime '(22413 16816 822596 0)
+      :unmatched-syntax nil))
+  :file "!mnt!home!hlei!source!socdesigner!FastModels!src!comp!fm_current_version!fm_generated_scx!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

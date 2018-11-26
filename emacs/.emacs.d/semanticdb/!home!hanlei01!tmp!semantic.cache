@@ -1,0 +1,26 @@
+;; Object tmp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tmp/"
+  :tables
+  (list
+    (semanticdb-table "makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("target" function nil nil [1 104]))          
+      :file "makefile"
+      :pointmax 104
+      :fsize 103
+      :lastmodtime '(23337 10575 983943 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "shutil_cp.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("shutil" include nil nil [25 38]))          
+      :file "shutil_cp.py"
+      :pointmax 227
+      :fsize 226
+      :lastmodtime '(23397 51147 853642 0)
+      :unmatched-syntax '((INDENT_BLOCK 166 . 212) (COLON 164 . 165) (TRY 73 . 76) (AS 160 . 162) (INDENT_BLOCK 166 . 212) (COLON 164 . 165) (TRY 73 . 76) (AS 160 . 162))))
+  :file "!home!hanlei01!tmp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

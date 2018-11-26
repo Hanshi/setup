@@ -1,0 +1,216 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "AXI4Stream_Master_Port.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("AXI4Stream_Master_Port.h" include nil nil [443 478])
+            ("AXI4Stream_Slave_Port.h" include nil nil [479 513])
+            ("AXI4Stream_Sender_Port.h" include nil nil [514 549])
+            ("AXI4Stream_Receiver_Port.h" include nil nil [550 587])
+            ("AXI4Stream_TLM.h" include nil nil [588 615])
+            ("AXI4StreamTransactionInfo.h" include nil nil [616 654])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [656 676])
+            ("casiaxi4stream" using (:type ("casiaxi4stream" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [677 708])
+            ("AXI4Stream_Master_Port::mProtocolUtils" variable (:type ("ProtocolUtils" type (:type "class") nil nil)) nil [710 763])
+            ("AXI4Stream_Master_Port" function
+               (:constructor-flag t
+                :parent "AXI4Stream_Master_Port"
+                :arguments 
+                  ( ("o" variable
+                       (:pointer 1
+                        :type ("CASIModule" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [812 826])
+                    ("n" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [827 841]))                  
+                :type ("AXI4Stream_Master_Port" type (:type "class") nil nil))
+                nil [765 1325])
+            ("AXI4Stream_Master_Port" function
+               (:destructor-flag t
+                :parent "AXI4Stream_Master_Port"
+                :type "void")
+                nil [1327 1400])
+            ("connect" function
+               (:parent "AXI4Stream_Master_Port"
+                :arguments 
+                  ( ("iface" variable
+                       (:pointer 1
+                        :type ("CASITransactionIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1439 1464]))                  
+                :type "void")
+                nil [1402 3880])
+            ("disconnect" function
+               (:parent "AXI4Stream_Master_Port"
+                :arguments 
+                  ( ("iface" variable
+                       (:pointer 1
+                        :type ("CASITransactionIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3922 3947]))                  
+                :type "void")
+                nil [3882 4070])
+            ("init" function
+               (:parent "AXI4Stream_Master_Port"
+                :arguments 
+                  ( ("dataWidth" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4107 4126])
+                    ("protocolID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4127 4147])
+                    ("protocolName" variable
+                       (:constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4148 4174]))                  
+                :type "void")
+                nil [4073 4705])
+            ("reset" function
+               (:parent "AXI4Stream_Master_Port"
+                :type "void")
+                nil [4707 4769])
+            ("setT" function
+               (:parent "AXI4Stream_Master_Port"
+                :arguments 
+                  ( ("valid" variable (:type "bool") (reparse-symbol arg-sub-list) [4806 4817])
+                    ("id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4818 4830])
+                    ("strb" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4831 4845])
+                    ("strb1" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4846 4861])
+                    ("strb2" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4862 4877])
+                    ("strb3" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4878 4893])
+                    ("last" variable (:type "bool") (reparse-symbol arg-sub-list) [4894 4904])
+                    ("user" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4905 4919]))                  
+                :type "void")
+                nil [4772 5566])
+            ("setTData" function
+               (:parent "AXI4Stream_Master_Port"
+                :arguments 
+                  ( ("data" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5608 5622])
+                    ("idx" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5623 5635]))                  
+                :type "void")
+                nil [5570 5757])
+            ("setSig" function
+               (:parent "AXI4Stream_Master_Port"
+                :arguments 
+                  ( ("sigIdx" variable (:type ("AXI4STREAM_SIGNAL_IDX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5795 5824])
+                    ("val" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5825 5838]))                  
+                :type "bool")
+                nil [5759 6081])
+            ("getSig" function
+               (:parent "AXI4Stream_Master_Port"
+                :arguments 
+                  ( ("sigIdx" variable (:type ("AXI4STREAM_SIGNAL_IDX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6123 6152]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [6083 6278])
+            ("clear" function
+               (:parent "AXI4Stream_Master_Port"
+                :type "void")
+                nil [6280 6357])
+            ("sendDrive" function
+               (:parent "AXI4Stream_Master_Port"
+                :type "void")
+                nil [6359 6483])
+            ("saveData" function
+               (:parent "AXI4Stream_Master_Port"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("eslapi::CASIODataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6523 6551]))                  
+                :type "bool")
+                nil [6485 6619])
+            ("restoreData" function
+               (:parent "AXI4Stream_Master_Port"
+                :arguments 
+                  ( ("is" variable
+                       (:reference 1
+                        :type ("eslapi::CASIIDataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6662 6690]))                  
+                :type "bool")
+                nil [6621 6761]))          
+      :file "AXI4Stream_Master_Port.cpp"
+      :pointmax 6764
+      :fsize 6763
+      :lastmodtime '(22617 57218 809903 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "AXI4Stream_Sender_PortBase.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("AXI4Stream_Sender_PortBase.h" include nil nil [1 40])
+            ("AXI4Stream_TLM.h" include nil nil [41 68])
+            ("AXI4StreamPortIF.h" include nil nil [69 98])
+            ("AXI4StreamTransactionInfo.h" include nil nil [99 137])
+            ("iostream" include (:system-flag t) nil [138 157])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [159 179])
+            ("casiaxi4stream" using (:type ("casiaxi4stream" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [180 211])
+            ("AXI4Stream_Sender_PortBase" function
+               (:constructor-flag t
+                :parent "AXI4Stream_Sender_PortBase"
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("AXI4StreamPortIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [268 288])
+                    ("o" variable
+                       (:pointer 1
+                        :type ("CASIModule" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [289 303])
+                    ("n" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [304 318])
+                    ("chan" variable (:type ("AXI4STREAM_CHANNEL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [319 343]))                  
+                :type ("AXI4Stream_Sender_PortBase" type (:type "class") nil nil))
+                nil [213 502])
+            ("driveTransaction" function
+               (:parent "AXI4Stream_Sender_PortBase"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("CASITransactionInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [555 576]))                  
+                :type "void")
+                nil [505 1067])
+            ("reset" function
+               (:parent "AXI4Stream_Sender_PortBase"
+                :type "void")
+                nil [1069 1276])
+            ("connect" function
+               (:parent "AXI4Stream_Sender_PortBase"
+                :arguments 
+                  ( ("iface" variable
+                       (:pointer 1
+                        :type ("CASITransactionIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1319 1344]))                  
+                :type "void")
+                nil [1278 1416])
+            ("saveData" function
+               (:parent "AXI4Stream_Sender_PortBase"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("eslapi::CASIODataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1460 1488]))                  
+                :type "bool")
+                nil [1418 1872])
+            ("restoreData" function
+               (:parent "AXI4Stream_Sender_PortBase"
+                :arguments 
+                  ( ("is" variable
+                       (:reference 1
+                        :type ("eslapi::CASIIDataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1919 1947]))                  
+                :type "bool")
+                nil [1874 2365]))          
+      :file "AXI4Stream_Sender_PortBase.cpp"
+      :pointmax 2366
+      :fsize 2365
+      :lastmodtime '(22617 57218 818904 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!Source!socdesigner!Protocols!AXI4Stream!ports!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,80 @@
+;; Object Register/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Register/"
+  :tables
+  (list
+    (semanticdb-table "example_reg_test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("cnt" variable nil nil [1 8])
+            ("print" code nil nil [9 98])
+            ("cnt" variable nil nil [99 107])
+            ("print" code nil nil [108 198])
+            ("cnt" variable nil nil [199 207])
+            ("print" code nil nil [208 297])
+            ("cnt" variable nil nil [298 306])
+            ("for" code nil nil [307 960])
+            ("for" code nil nil [1247 1398])
+            ("for" code nil nil [1399 3488]))          
+      :file "example_reg_test.py"
+      :pointmax 3488
+      :fsize 3487
+      :lastmodtime '(22505 23512 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "1chip_2ppib_16cpu_reg_test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("cnt" variable nil nil [1 8])
+            ("print" code nil nil [9 98])
+            ("cnt" variable nil nil [99 107])
+            ("print" code nil nil [108 198])
+            ("cnt" variable nil nil [199 207])
+            ("print" code nil nil [208 297])
+            ("cnt" variable nil nil [298 306])
+            ("for" code nil nil [307 959])
+            ("for" code nil nil [1245 1395])
+            ("for" code nil nil [1396 3486]))          
+      :file "1chip_2ppib_16cpu_reg_test.py"
+      :pointmax 3486
+      :fsize 3485
+      :lastmodtime '(22505 23512 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "1chip_1ppib_8cpu_12ppis_reg_test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("cnt" variable nil nil [1 8])
+            ("print" code nil nil [9 98])
+            ("cnt" variable nil nil [99 107])
+            ("print" code nil nil [108 198])
+            ("cnt" variable nil nil [199 207])
+            ("print" code nil nil [208 297])
+            ("cnt" variable nil nil [298 306])
+            ("for" code nil nil [307 959])
+            ("for" code nil nil [1245 1396])
+            ("for" code nil nil [1397 3486]))          
+      :file "1chip_1ppib_8cpu_12ppis_reg_test.py"
+      :pointmax 3486
+      :fsize 3485
+      :lastmodtime '(22505 23512 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "1chip_4ppib_2cpu_reg_test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("cnt" variable nil nil [1 8])
+            ("print" code nil nil [9 98])
+            ("cnt" variable nil nil [99 107])
+            ("print" code nil nil [108 198])
+            ("cnt" variable nil nil [199 207])
+            ("print" code nil nil [208 297])
+            ("cnt" variable nil nil [298 306])
+            ("for" code nil nil [307 959])
+            ("for" code nil nil [1245 1395])
+            ("for" code nil nil [1396 3485]))          
+      :file "1chip_4ppib_2cpu_reg_test.py"
+      :pointmax 3485
+      :fsize 3484
+      :lastmodtime '(22505 23512 0 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!primecells!PL690!Register!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

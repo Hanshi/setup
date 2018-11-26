@@ -1,0 +1,1199 @@
+;; Object MaxSimIDE/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "MaxSimIDE/"
+  :tables
+  (list
+    (semanticdb-table "DesignerComponent.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MainWindow.hpp" include nil nil [563 588])
+            ("WarningPushQT.hpp" include nil nil [590 618])
+            ("qfileinfo.h" include (:system-flag t) nil [619 641])
+            ("qpainter.h" include (:system-flag t) nil [642 663])
+            ("QPixmap" include (:system-flag t) nil [683 701])
+            ("Q3PointArray" include (:system-flag t) nil [702 725])
+            ("WarningPopQT.hpp" include nil nil [727 754])
+            ("Private.h" include nil nil [793 813])
+            ("eslapi/CASIPortIF.h" include nil nil [814 844])
+            ("MxMessageException.h" include nil nil [845 876])
+            ("MxFactoryRegistry.h" include nil nil [877 907])
+            ("eslapi/CASISaveRestore.h" include nil nil [908 943])
+            ("MxPrivateTypes.h" include nil nil [944 971])
+            ("MxComponentHelper.h" include nil nil [972 1002])
+            ("Common.h" include nil nil [1003 1022])
+            ("eslapi" using (:type ("eslapi" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1024 1047])
+            ("DesignerComponent.hpp" include nil nil [1049 1081])
+            ("DesignerObject.hpp" include nil nil [1082 1111])
+            ("ComponentBus.xpm" include nil nil [1138 1165])
+            ("ComponentCore.xpm" include nil nil [1166 1194])
+            ("ComponentClockDivider.xpm" include nil nil [1195 1231])
+            ("ComponentMemory.xpm" include nil nil [1232 1262])
+            ("ComponentMisc.xpm" include nil nil [1263 1291])
+            ("ComponentSystem.xpm" include nil nil [1292 1322])
+            ("ComponentNotAvailable.xpm" include nil nil [1323 1359])
+            ("ComponentCore" variable
+               (:pointer 2
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "const_cast< const char** >( ComponentCorePixmap )"
+                :type "char")
+                nil [1361 1447])
+            ("ComponentClockDivider" variable
+               (:pointer 2
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "const_cast< const char** >( ComponentClockDividerPixmap )"
+                :type "char")
+                nil [1448 1550])
+            ("ComponentMemory" variable
+               (:pointer 2
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "const_cast< const char** >( ComponentMemoryPixmap )"
+                :type "char")
+                nil [1729 1819])
+            ("ComponentMisc" variable
+               (:pointer 2
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "const_cast< const char** >( ComponentMiscPixmap )"
+                :type "char")
+                nil [1820 1906])
+            ("ComponentSystem" variable
+               (:pointer 2
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "const_cast< const char** >( ComponentSystemPixmap )"
+                :type "char")
+                nil [1907 1997])
+            ("sc_mx_utils.h" include nil nil [2012 2036])
+            ("OUTSIDE" variable (:constant-flag t) nil [2048 2055])
+            ("DesignerComponent::iDEFAULT_WIDTH" variable
+               (:constant-flag t
+                :default-value "171"
+                :type "int")
+                nil [2923 2978])
+            ("DesignerComponent::iDEFAULT_HEIGHT" variable
+               (:constant-flag t
+                :default-value "121"
+                :type "int")
+                nil [2979 3035])
+            ("DesignerComponent::iDEFAULT_MIN_WIDTH" variable
+               (:constant-flag t
+                :default-value "21"
+                :type "int")
+                nil [3037 3094])
+            ("DesignerComponent::iDEFAULT_MIN_HEIGHT" variable
+               (:constant-flag t
+                :default-value "21"
+                :type "int")
+                nil [3095 3153])
+            ("DesignerComponent::iDEFAULT_SEPARATOR" variable
+               (:constant-flag t
+                :default-value "21"
+                :type "int")
+                nil [3191 3248])
+            ("DesignerComponent::iDEFAULT_LINE_WIDTH" variable
+               (:constant-flag t
+                :default-value "1"
+                :type "int")
+                nil [3299 3356])
+            ("DesignerComponent::iCONTROL_POINT_SIZE" variable
+               (:constant-flag t
+                :default-value "5"
+                :type "int")
+                nil [3415 3472])
+            ("DesignerComponent::iCONTROL_DIAMOND_SIZE" variable
+               (:constant-flag t
+                :default-value "3"
+                :type "int")
+                nil [3473 3531])
+            ("DesignerComponent::uDEFAULT_COLOR" variable
+               (:constant-flag t
+                :default-value "uBLACK"
+                :type ("QColor" type (:type "class") nil nil))
+                nil [3588 3648])
+            ("DesignerComponent::uDEFAULT_FILL_COLOR" variable
+               (:constant-flag t
+                :default-value "uVERY_LIGHT_GRAY"
+                :type ("QColor" type (:type "class") nil nil))
+                nil [3649 3723])
+            ("DesignerComponent::uDEFAULT_CONTROL_POINT_COLOR" variable
+               (:constant-flag t
+                :default-value "uGREEN"
+                :type ("QColor" type (:type "class") nil nil))
+                nil [3724 3795])
+            ("DesignerComponent::bAutoArrangePorts" variable
+               (:default-value "true"
+                :type "bool")
+                nil [3844 3898])
+            ("DesignerComponent::bAutoArrangeBottom" variable
+               (:default-value "true"
+                :type "bool")
+                nil [3899 3954])
+            ("DesignerComponent::bAutoArrangeGrid" variable
+               (:default-value "true"
+                :type "bool")
+                nil [3955 4009])
+            ("DesignerComponent::bAutoArrangeSpace" variable
+               (:default-value "true"
+                :type "bool")
+                nil [4010 4064])
+            ("DesignerComponent::bShowComponentTitle" variable
+               (:default-value "true"
+                :type "bool")
+                nil [4130 4186])
+            ("DesignerComponent::bShowComponentName" variable
+               (:default-value "true"
+                :type "bool")
+                nil [4187 4242])
+            ("DesignerComponent::bShowComponentType" variable
+               (:default-value "true"
+                :type "bool")
+                nil [4243 4298])
+            ("DesignerComponent::bShowComponentLogo" variable
+               (:default-value "true"
+                :type "bool")
+                nil [4299 4354])
+            ("DesignerComponent::uNameFont" variable (:type ("QFont" type (:type "class") nil nil)) nil [5109 5146])
+            ("DesignerComponent::uTypeFont" variable (:type ("QFont" type (:type "class") nil nil)) nil [5147 5184])
+            ("DesignerComponent::iNameFontSize" variable (:type "int") nil [5185 5225])
+            ("DesignerComponent::iTypeFontSize" variable (:type "int") nil [5226 5266])
+            ("MxDesignerComponent" function
+               (:constructor-flag t
+                :parent "MxDesignerComponent"
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5709 5725])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5726 5745])
+                    ("puC" variable
+                       (:pointer 1
+                        :type ("CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5746 5764]))                  
+                :type ("MxDesignerComponent" type (:type "class") nil nil))
+                nil [5668 6417])
+            ("MxDesignerComponent" function
+               (:constructor-flag t
+                :parent "MxDesignerComponent"
+                :arguments 
+                  ( ("comp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DesignerComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6462 6492])
+                    ("obj" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MxDesignerComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6493 6525]))                  
+                :type ("MxDesignerComponent" type (:type "class") nil nil))
+                nil [6420 6547])
+            ("setParameter" function
+               (:parent "MxDesignerComponent"
+                :arguments 
+                  ( ("key" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6588 6606])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6607 6627])
+                    ("twin" variable (:type "bool") (reparse-symbol arg-sub-list) [6628 6638]))                  
+                :type "void")
+                nil [6549 7655])
+            ("syncTwinComponent" function
+               (:parent "MxDesignerComponent"
+                :type "bool")
+                nil [7657 8909])
+            ("SetPortList" function
+               (:parent "MxDesignerComponent"
+                :arguments 
+                  ( ("puPortList" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CASIPortMapIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8950 8983]))                  
+                :type "void")
+                nil [8911 9341])
+            ("SetParameterList" function
+               (:parent "MxDesignerComponent"
+                :arguments 
+                  ( ("pluParameterList" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CASIParameterMapIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9389 9433]))                  
+                :type "void")
+                nil [9345 9639])
+            ("GetTwinComponent" function
+               (:pointer 1
+                :parent "MxDesignerComponent"
+                :type ("CASIModuleIF" type (:type "class") nil nil))
+                nil [9643 9729])
+            ("SetTwinComponent" function
+               (:parent "MxDesignerComponent"
+                :arguments 
+                  ( ("pu" variable
+                       (:pointer 1
+                        :type ("CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9777 9795]))                  
+                :type "void")
+                nil [9733 9823])
+            ("ComponentType" function
+               (:parent "MxDesignerComponent"
+                :type ("string" type (:type "class") nil nil))
+                nil [9827 9910])
+            ("setProperty" function
+               (:parent "MxDesignerComponent"
+                :arguments 
+                  ( ("property" variable (:type ("eslapi::CASIPropertyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9952 9986])
+                    ("str" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9987 10005]))                  
+                :type "void")
+                nil [9914 10043])
+            ("getProperty" function
+               (:parent "MxDesignerComponent"
+                :arguments 
+                  ( ("property" variable (:type ("eslapi::CASIPropertyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10087 10121]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [10047 10163])
+            ("SetInstanceNameTwinComponent" function
+               (:arguments 
+                  ( ("comp" variable
+                       (:pointer 1
+                        :type ("MxDesignerComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10202 10228])
+                    ("str" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10229 10247]))                  
+                :type "void")
+                nil [10168 10528])
+            ("DesignerComponent" function
+               (:constructor-flag t
+                :parent "DesignerComponent"
+                :arguments 
+                  ( ("strName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10976 10998])
+                    ("strModel" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11037 11060])
+                    ("iCoordinateOffsetX" variable (:type "int") (reparse-symbol arg-sub-list) [11099 11122])
+                    ("iCoordinateOffsetY" variable (:type "int") (reparse-symbol arg-sub-list) [11161 11184])
+                    ("puMainWindow" variable
+                       (:pointer 1
+                        :type ("MainWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11223 11248])
+                    ("puMaxSimComponent" variable
+                       (:pointer 1
+                        :type ("CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11287 11319])
+                    ("puDirectParent" variable
+                       (:pointer 1
+                        :type ("DesignerObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11358 11389])
+                    ("bDeleteMx" variable (:type "bool") (reparse-symbol arg-sub-list) [11428 11443])
+                    ("setTwin" variable (:type "bool") (reparse-symbol arg-sub-list) [11482 11495]))                  
+                :type ("DesignerComponent" type (:type "class") nil nil))
+                nil [10938 14339])
+            ("DesignerComponent" function
+               (:constructor-flag t
+                :parent "DesignerComponent"
+                :arguments 
+                  ( ("strName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14455 14477])
+                    ("strModel" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14516 14539])
+                    ("iCoordinateOffsetX" variable (:type "int") (reparse-symbol arg-sub-list) [14578 14601])
+                    ("iCoordinateOffsetY" variable (:type "int") (reparse-symbol arg-sub-list) [14640 14663])
+                    ("puMainWindow" variable
+                       (:pointer 1
+                        :type ("MainWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14702 14727])
+                    ("puFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14766 14780]))                  
+                :type ("DesignerComponent" type (:type "class") nil nil))
+                nil [14417 16816])
+            ("DesignerComponent" function
+               (:constructor-flag t
+                :parent "DesignerComponent"
+                :arguments 
+                  ( ("puDesingerComponent" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DesignerComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16932 16977])
+                    ("puMaxSimComponent" variable
+                       (:pointer 1
+                        :type ("CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17016 17048])
+                    ("strName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17049 17072]))                  
+                :type ("DesignerComponent" type (:type "class") nil nil))
+                nil [16894 20726])
+            ("lastObject_setInstanceName" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("DesignerComponent" type (:type "class") nil nil))
+                nil [20804 20857])
+            ("lastName_setInstanceName" variable (:type ("string" type (:type "class") nil nil)) nil [20858 20890])
+            ("DesignerComponent" function
+               (:constructor-flag t
+                :parent "DesignerComponent"
+                :arguments 
+                  ( ("obj" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DesignerComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20930 20959])
+                    ("instanceName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20960 20981]))                  
+                :type ("DesignerComponent" type (:type "class") nil nil))
+                nil [20892 24880])
+            ("=" function
+               (:operator-flag t
+                :parent "DesignerComponent"
+                :arguments 
+                  ( ("obj" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DesignerComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25008 25038]))                  
+                :type ("DesignerComponent" type (:type "class") nil nil))
+                nil [24958 28447])
+            ("DesignerComponent" function
+               (:destructor-flag t
+                :parent "DesignerComponent"
+                :type "void")
+                nil [28525 29093])
+            ("Draw" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("puPainter" variable
+                       (:pointer 1
+                        :type ("QPainter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29427 29447])
+                    ("bDrawColored" variable (:type "bool") (reparse-symbol arg-sub-list) [29448 29467]))                  
+                :type "void")
+                nil [29397 56790])
+            ("DrawPorts" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("puPainter" variable
+                       (:pointer 1
+                        :type ("QPainter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57128 57148])
+                    ("bDrawColored" variable (:type "bool") (reparse-symbol arg-sub-list) [57149 57167])
+                    ("bClock" variable (:type "bool") (reparse-symbol arg-sub-list) [57203 57215])
+                    ("bSignal" variable (:type "bool") (reparse-symbol arg-sub-list) [57216 57229])
+                    ("bTransaction" variable (:type "bool") (reparse-symbol arg-sub-list) [57230 57248])
+                    ("bSCGeneric" variable (:type "bool") (reparse-symbol arg-sub-list) [57249 57266]))                  
+                :type "void")
+                nil [57093 58940])
+            ("DrawInformation" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("puPainter" variable
+                       (:pointer 1
+                        :type ("QPainter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59250 59270])
+                    ("bDrawColored" variable (:type "bool") (reparse-symbol arg-sub-list) [59271 59290]))                  
+                :type "void")
+                nil [59209 62231])
+            ("CursorOver" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("iX" variable (:type "int") (reparse-symbol arg-sub-list) [62580 62587])
+                    ("iY" variable (:type "int") (reparse-symbol arg-sub-list) [62588 62596]))                  
+                :type ("CursorObject" type (:type "class") nil nil))
+                nil [62536 65724])
+            ("CursorOver" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("puObject" variable
+                       (:pointer 1
+                        :type ("DesignerObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65854 65879])
+                    ("iDeltaX" variable (:type "int") (reparse-symbol arg-sub-list) [65884 65896])
+                    ("iDeltaY" variable (:type "int") (reparse-symbol arg-sub-list) [65897 65909])
+                    ("bFlag" variable (:type "bool") (reparse-symbol arg-sub-list) [65914 65926]))                  
+                :type ("list" type
+                     (:template-specifier 
+                        ( ("CursorObject" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [65802 66944])
+            ("CursorEntering" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("bLightIt" variable (:type "bool") (reparse-symbol arg-sub-list) [67308 67323]))                  
+                :type "bool")
+                nil [67268 67343])
+            ("CursorLeaving" function
+               (:parent "DesignerComponent"
+                :type "bool")
+                nil [67345 67659])
+            ("LowlightPorts" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("uType" variable (:type ("PortTypes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67998 68014])
+                    ("bInput" variable (:type "bool") (reparse-symbol arg-sub-list) [68015 68028]))                  
+                :type "void")
+                nil [67959 68618])
+            ("UpdateZoom" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [68967 68974]))                  
+                :type "void")
+                nil [68931 69362])
+            ("SetSizeAndPosition" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("iX" variable (:type "int") (reparse-symbol arg-sub-list) [69797 69804])
+                    ("iY" variable (:type "int") (reparse-symbol arg-sub-list) [69805 69812])
+                    ("iW" variable (:type "int") (reparse-symbol arg-sub-list) [69813 69820])
+                    ("iH" variable (:type "int") (reparse-symbol arg-sub-list) [69821 69829]))                  
+                :type "void")
+                nil [69753 71298])
+            ("SetSize" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("iW" variable (:type "int") (reparse-symbol arg-sub-list) [71682 71689])
+                    ("iH" variable (:type "int") (reparse-symbol arg-sub-list) [71690 71698]))                  
+                :type "void")
+                nil [71649 73065])
+            ("SetComponentSize" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("iW" variable (:type "int") (reparse-symbol arg-sub-list) [73534 73541])
+                    ("iH" variable (:type "int") (reparse-symbol arg-sub-list) [73542 73549])
+                    ("iSeparatorHeight" variable (:type "int") (reparse-symbol arg-sub-list) [73550 73572]))                  
+                :type "void")
+                nil [73492 74892])
+            ("SetSeparatorHeight" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("iSeparatorHeight" variable (:type "int") (reparse-symbol arg-sub-list) [75014 75036]))                  
+                :type "void")
+                nil [74970 75665])
+            ("SaveSize" function
+               (:parent "DesignerComponent"
+                :type "void")
+                nil [76048 76307])
+            ("RestoreSize" function
+               (:parent "DesignerComponent"
+                :type "void")
+                nil [76385 76690])
+            ("RecalcMinimumSize" function
+               (:parent "DesignerComponent"
+                :type "void")
+                nil [77059 82338])
+            ("Port" function
+               (:pointer 1
+                :parent "DesignerComponent"
+                :constant-flag t
+                :arguments 
+                  ( ("strPortName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82696 82723]))                  
+                :type ("DesignerPort" type (:type "class") nil nil))
+                nil [82651 82969])
+            ("GetPort" function
+               (:pointer 1
+                :parent "DesignerComponent"
+                :arguments 
+                  ( ("strPortName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83089 83116]))                  
+                :type ("DesignerPort" type (:type "class") nil nil))
+                nil [83047 83350])
+            ("UpdateSeparator" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("bZoomed" variable (:type "bool") (reparse-symbol arg-sub-list) [83692 83706]))                  
+                :type "void")
+                nil [83651 85757])
+            ("CreatePorts" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("luHDLMasterPorts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("MxHDLPortInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [86172 86220])
+                    ("luHDLSlavePorts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("MxHDLPortInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [86258 86306]))                  
+                :type "void")
+                nil [86135 87457])
+            ("CreatePorts" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("strPortName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87960 87987])
+                    ("portInterface" variable (:type "int") (reparse-symbol arg-sub-list) [87988 88009]))                  
+                :type "void")
+                nil [87923 90480])
+            ("SavePortPositions" function
+               (:parent "DesignerComponent"
+                :type "void")
+                nil [90853 91546])
+            ("SavePortPositions" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("plpuNewDo" variable
+                       (:pointer 1
+                        :type ("list" type
+                             (:template-specifier 
+                                ( ("UnDo" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [91667 91693]))                  
+                :type "void")
+                nil [91624 92819])
+            ("RestorePortPositions" function
+               (:parent "DesignerComponent"
+                :type "void")
+                nil [92897 93558])
+            ("SetInstanceName" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("str" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94307 94326]))                  
+                :type "void")
+                nil [94266 94677])
+            ("SetDrawState" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("u" variable (:type ("DrawingState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95010 95026]))                  
+                :type "void")
+                nil [94972 95231])
+            ("SetSelected" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("b" variable (:type "bool") (reparse-symbol arg-sub-list) [95632 95640]))                  
+                :type "void")
+                nil [95595 96114])
+            ("SetHighlight" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("b" variable (:type "bool") (reparse-symbol arg-sub-list) [96461 96469]))                  
+                :type "bool")
+                nil [96423 96693])
+            ("SetupPorts" function
+               (:parent "DesignerComponent"
+                :type "void")
+                nil [97492 104061])
+            ("SetupPorts" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("lpuPortsList" variable
+                       (:reference 1
+                        :type ("list" type
+                             (:template-specifier 
+                                ( ("DesignerPort" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [104175 104212]))                  
+                :type "void")
+                nil [104139 106008])
+            ("SetupPorts" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("plpuPorts" variable
+                       (:pointer 1
+                        :type ("list" type
+                             (:template-specifier 
+                                ( ("DesignerPort" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [106122 106155])
+                    ("iSpace" variable (:type "int") (reparse-symbol arg-sub-list) [106156 106168]))                  
+                :type "void")
+                nil [106086 107261])
+            ("SetupPortsSpaced" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("plpuPorts" variable
+                       (:pointer 1
+                        :type ("list" type
+                             (:template-specifier 
+                                ( ("DesignerPort" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [107381 107414])
+                    ("iSpace" variable (:type "int") (reparse-symbol arg-sub-list) [107415 107427]))                  
+                :type "void")
+                nil [107339 107979])
+            ("AutoArrangePorts" function
+               (:parent "DesignerComponent"
+                :type "void")
+                nil [108231 113801])
+            ("SetupLogo" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("strDLL" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114137 114159]))                  
+                :type "void")
+                nil [114102 114403])
+            ("SetupLogo" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("bHasSubComponents" variable (:type "bool") (reparse-symbol arg-sub-list) [114516 114540]))                  
+                :type "void")
+                nil [114481 114660])
+            ("FindLogo" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("strModelName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [114771 114791])
+                    ("strDLL" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [114792 114806])
+                    ("logoExtension" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [114808 114829]))                  
+                :type "bool")
+                nil [114738 115844])
+            ("SetupLogo" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("bHasSubComponents" variable (:type "bool") (reparse-symbol arg-sub-list) [115881 115904])
+                    ("strDLL" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [115905 115927]))                  
+                :type "void")
+                nil [115846 119503])
+            ("SetupMxComponent" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("puMxComp" variable
+                       (:pointer 1
+                        :type ("MxDesignerComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119623 119653])
+                    ("bDeleteMx" variable (:type "bool") (reparse-symbol arg-sub-list) [119654 119670]))                  
+                :type "void")
+                nil [119581 129348])
+            ("SetupMxComponent" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("puMxComp" variable
+                       (:pointer 1
+                        :type ("MxDesignerComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [129468 129498])
+                    ("instanceName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [129499 129520]))                  
+                :type "void")
+                nil [129426 132830])
+            ("SetupMxComponent" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("puMxComp" variable
+                       (:pointer 1
+                        :type ("MxDesignerComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [132950 132980])
+                    ("puMxComponentIF" variable
+                       (:pointer 1
+                        :type ("CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [132981 133012]))                  
+                :type "void")
+                nil [132908 135998])
+            ("SetupSubComponents" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("puMxDesignerComponent" variable
+                       (:pointer 1
+                        :type ("MxDesignerComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136120 136163])
+                    ("puMxComponentIF" variable
+                       (:pointer 1
+                        :type ("CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136168 136199]))                  
+                :type "void")
+                nil [136076 139288])
+            ("SetupExtPort" function
+               (:parent "MxDesignerComponent"
+                :arguments 
+                  ( ("puBase" variable
+                       (:pointer 1
+                        :type ("CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [139330 139352]))                  
+                :type "void")
+                nil [139290 141067])
+            ("SetupColor" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("puMainWindow" variable
+                       (:pointer 1
+                        :type ("MainWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [141375 141401]))                  
+                :type "void")
+                nil [141339 141517])
+            ("g_WriteBinaryString" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("strString" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [141731 141755])
+                    ("puFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [141756 141770]))                  
+                :type "void")
+                nil [141698 141771])
+            ("g_GetBinaryString" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("puFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [141805 141819]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [141772 141820])
+            ("Write" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("puFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [141929 141943]))                  
+                :type "void")
+                nil [141898 145413])
+            ("WriteSubComponents" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("puComponent" variable
+                       (:pointer 1
+                        :type ("CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [145535 145561])
+                    ("puFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [145562 145576]))                  
+                :type "void")
+                nil [145491 147107])
+            ("SetupMxComponent" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("puFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147339 147353]))                  
+                :type "void")
+                nil [147297 153598])
+            ("ReadSubComponents" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("puParentComponent" variable
+                       (:pointer 1
+                        :type ("MxDesignerComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [153719 153758])
+                    ("puFile" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [153759 153773]))                  
+                :type "void")
+                nil [153676 156798])
+            ("SetCompEnabled" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("b" variable (:type "bool") (reparse-symbol arg-sub-list) [157222 157231]))                  
+                :type "void")
+                nil [157182 158007])
+            ("IsScPrimChannel" function
+               (:parent "DesignerComponent"
+                :type "bool")
+                nil [158069 158148])
+            ("ClientX" function
+               (:parent "DesignerComponent"
+                :type "int")
+                nil [158164 158231])
+            ("ClientY" function
+               (:parent "DesignerComponent"
+                :type "int")
+                nil [158235 158436])
+            ("ClientWidth" function
+               (:parent "DesignerComponent"
+                :type "int")
+                nil [158440 158507])
+            ("ClientHeight" function
+               (:parent "DesignerComponent"
+                :type "int")
+                nil [158511 158711])
+            ("SetShowTitle" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("b" variable (:type "bool") (reparse-symbol arg-sub-list) [158753 158761]))                  
+                :type "void")
+                nil [158715 158865])
+            ("SetShowName" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("b" variable (:type "bool") (reparse-symbol arg-sub-list) [158906 158914]))                  
+                :type "void")
+                nil [158869 158935])
+            ("SetShowType" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("b" variable (:type "bool") (reparse-symbol arg-sub-list) [158976 158984]))                  
+                :type "void")
+                nil [158939 159005])
+            ("SetShowLogo" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("b" variable (:type "bool") (reparse-symbol arg-sub-list) [159046 159054]))                  
+                :type "void")
+                nil [159009 159157])
+            ("FindTwinComponent" function
+               (:pointer 1
+                :parent "DesignerComponent"
+                :arguments 
+                  ( ("strAlternateNameInstanceName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [159703 159739]))                  
+                :type ("CASIModuleIF" type (:type "class") nil nil))
+                nil [159652 161640])
+            ("RemoveTwinComponentFromTree" function
+               (:parent "DesignerComponent"
+                :type "void")
+                nil [161644 162096])
+            ("CreateTwinComponent" function
+               (:pointer 1
+                :parent "DesignerComponent"
+                :type ("CASIModuleIF" type (:type "class") nil nil))
+                nil [162100 162173])
+            ("NewCopy" function
+               (:pointer 1
+                :parent "DesignerComponent"
+                :type ("DesignerObject" type (:type "class") nil nil))
+                nil [162176 162274])
+            ("GeneralType" function
+               (:parent "DesignerComponent"
+                :type ("DesignerObject::GeneralTypes" type (:type "class") nil nil))
+                nil [162278 162375])
+            ("ModelName" function
+               (:parent "DesignerComponent"
+                :type ("string" type (:type "class") nil nil))
+                nil [162382 162455])
+            ("SetModelName" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("str" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [162497 162516]))                  
+                :type "void")
+                nil [162459 162542])
+            ("Version" function
+               (:parent "DesignerComponent"
+                :type ("string" type (:type "class") nil nil))
+                nil [162546 162615])
+            ("Variant" function
+               (:parent "DesignerComponent"
+                :type ("string" type (:type "class") nil nil))
+                nil [162619 162688])
+            ("IPProvider" function
+               (:parent "DesignerComponent"
+                :type ("string" type (:type "class") nil nil))
+                nil [162691 162766])
+            ("MaxSimComponent" function
+               (:pointer 1
+                :parent "DesignerComponent"
+                :constant-flag t
+                :type ("CASIModuleIF" type (:type "class") nil nil))
+                nil [162770 162871])
+            ("GetMaxSimComponent" function
+               (:pointer 1
+                :parent "DesignerComponent"
+                :type ("CASIModuleIF" type (:type "class") nil nil))
+                nil [162875 162967])
+            ("MaxSimDesignerComponent" function
+               (:pointer 1
+                :parent "DesignerComponent"
+                :constant-flag t
+                :type ("MxDesignerComponent" type (:type "class") nil nil))
+                nil [162971 163087])
+            ("GetMaxSimDesignerComponent" function
+               (:pointer 1
+                :parent "DesignerComponent"
+                :type ("MxDesignerComponent" type (:type "class") nil nil))
+                nil [163091 163204])
+            ("SimComponent" function
+               (:pointer 1
+                :parent "DesignerComponent"
+                :type ("CASIModuleIF" type (:type "class") nil nil))
+                nil [163208 163289])
+            ("SetSimComponent" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("pu" variable
+                       (:pointer 1
+                        :type ("CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [163334 163352]))                  
+                :type "void")
+                nil [163293 163381])
+            ("DefaultParameters" function
+               (:pointer 1
+                :parent "DesignerComponent"
+                :constant-flag t
+                :type ("CASIParameterMap" type (:type "class") nil nil))
+                nil [163385 163491])
+            ("GetDefaultParameters" function
+               (:pointer 1
+                :parent "DesignerComponent"
+                :type ("CASIParameterMap" type (:type "class") nil nil))
+                nil [163495 163592])
+            ("GetDefaultParsedParameters" function
+               (:pointer 1
+                :parent "DesignerComponent"
+                :type ("CASIParameterMap" type (:type "class") nil nil))
+                nil [163594 163703])
+            ("Ports" function
+               (:pointer 1
+                :parent "DesignerComponent"
+                :constant-flag t
+                :type ("list" type
+                     (:template-specifier 
+                        ( ("DesignerPort" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [163705 163793])
+            ("GetPorts" function
+               (:pointer 1
+                :parent "DesignerComponent"
+                :type ("list" type
+                     (:template-specifier 
+                        ( ("DesignerPort" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [163796 163875])
+            ("getProperty" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("property" variable (:type ("eslapi::CASIPropertyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [163916 163950]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [163878 164015])
+            ("ShowTitle" function
+               (:parent "DesignerComponent"
+                :type "bool")
+                nil [164019 164088])
+            ("ShowName" function
+               (:parent "DesignerComponent"
+                :type "bool")
+                nil [164092 164159])
+            ("ShowType" function
+               (:parent "DesignerComponent"
+                :type "bool")
+                nil [164163 164230])
+            ("ShowLogo" function
+               (:parent "DesignerComponent"
+                :type "bool")
+                nil [164234 164301])
+            ("SHeight" function
+               (:parent "DesignerComponent"
+                :type "int")
+                nil [164305 164371])
+            ("OldSHeight" function
+               (:parent "DesignerComponent"
+                :type "int")
+                nil [164375 164447])
+            ("InputClock" function
+               (:pointer 1
+                :parent "DesignerComponent"
+                :constant-flag t
+                :type ("DesignerPort" type (:type "class") nil nil))
+                nil [164451 164532])
+            ("IsHDLWrapper" function
+               (:parent "DesignerComponent"
+                :type "bool")
+                nil [164536 164609])
+            ("hasFixedMemoryMap" function
+               (:parent "DesignerComponent"
+                :type "bool")
+                nil [164611 164693])
+            ("LockVersionVariant" function
+               (:parent "DesignerComponent"
+                :type "bool")
+                nil [164696 164783])
+            ("SetLockVersionVariant" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("b" variable (:type "bool") (reparse-symbol arg-sub-list) [164833 164841]))                  
+                :type "void")
+                nil [164786 164872])
+            ("CompEnabled" function
+               (:parent "DesignerComponent"
+                :type "bool")
+                nil [164875 164948])
+            ("CompEnabled_ValueChanged" function
+               (:parent "DesignerComponent"
+                :type "bool")
+                nil [164952 165045])
+            ("SetLogo" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("uPixmap" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QPixmap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [165082 165106]))                  
+                :type "void")
+                nil [165049 165129])
+            ("GetSupportSaveRestore" function
+               (:parent "DesignerComponent"
+                :type "bool")
+                nil [165133 165213])
+            ("SetSupportSaveRestore" function
+               (:parent "DesignerComponent"
+                :arguments 
+                  ( ("support" variable (:type "bool") (reparse-symbol arg-sub-list) [165262 165275]))                  
+                :type "void")
+                nil [165216 165311])
+            ("IsCarbonizedComponent" function
+               (:parent "DesignerComponent"
+                :type "bool")
+                nil [165313 165404])
+            ("ObtainInterface" function
+               (:pointer 1
+                :parent "MxDesignerInterface"
+                :arguments 
+                  ( ("ifName" variable (:type ("if_name_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [165538 165558])
+                    ("minRev" variable (:type ("if_rev_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [165561 165581])
+                    ("actualRev" variable
+                       (:pointer 1
+                        :type ("if_rev_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [165584 165607]))                  
+                :type ("CAInterface" type (:type "class") nil nil))
+                nil [165484 165623])
+            ("getName" function
+               (:parent "MxDesignerInterface"
+                :type ("string" type (:type "class") nil nil))
+                nil [165625 165689])
+            ("getType" function
+               (:parent "MxDesignerInterface"
+                :type ("eslapi::CASIInterfaceType" type (:type "class") nil nil))
+                nil [165693 165774])
+            ("getPortInstanceName" function
+               (:parent "MxDesignerInterface"
+                :type ("string" type (:type "class") nil nil))
+                nil [165778 165862])
+            ("setPortInstanceName" function
+               (:parent "MxDesignerInterface"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [165912 165931]))                  
+                :type "void")
+                nil [165866 165963])
+            ("setCASIOwner" function
+               (:parent "MxDesignerInterface"
+                :arguments 
+                  ( ("pu" variable
+                       (:pointer 1
+                        :type ("CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [166006 166023]))                  
+                :type "void")
+                nil [165967 166045])
+            ("getCASIOwner" function
+               (:pointer 1
+                :parent "MxDesignerInterface"
+                :type ("CASIModuleIF" type (:type "class") nil nil))
+                nil [166049 166125])
+            ("enablePort" function
+               (:parent "MxDesignerInterface"
+                :arguments 
+                  ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [166166 166178]))                  
+                :type "void")
+                nil [166129 166205])
+            ("isPortEnabled" function
+               (:parent "MxDesignerInterface"
+                :constant-flag t
+                :type "bool")
+                nil [166209 166284]))          
+      :file "DesignerComponent.cpp"
+      :pointmax 166286
+      :fsize 166285
+      :lastmodtime '(22246 65455 578688 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("OUTSIDE" . ((number "1" 2057 . 2058)))
+          )
+)
+    (semanticdb-table "MainWindow.hpp"
+      :file "MainWindow.hpp"
+      :fsize 148877
+      :lastmodtime '(22413 16817 308587 0))
+    (semanticdb-table "WarningPushQT.hpp"
+      :file "WarningPushQT.hpp"
+      :fsize 1566
+      :lastmodtime '(22246 65457 900603 0))
+    (semanticdb-table "WarningPopQT.hpp"
+      :file "WarningPopQT.hpp"
+      :fsize 925
+      :lastmodtime '(22246 65457 890599 0))
+    (semanticdb-table "DesignerComponent.hpp"
+      :file "DesignerComponent.hpp"
+      :fsize 18832
+      :lastmodtime '(22246 65455 582676 0))
+    (semanticdb-table "DesignerObject.hpp"
+      :file "DesignerObject.hpp"
+      :fsize 13701
+      :lastmodtime '(22246 65455 697679 0)))
+  :file "!mnt!home!hlei!source!socdesigner!MaxSim!MaxSimIDE!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

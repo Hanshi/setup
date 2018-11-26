@@ -1,0 +1,38 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("LINUX_DIR" variable (:default-value (".")) nil [1 15])
+            ("PACKAGE_LIB_DIR" variable (:default-value ("./lib")) nil [66 90])
+            ("COMP_NAME" variable (:default-value ("$(subst lib,,$(basename $(notdir $(wildcard $(PACKAGE_LIB_DIR)/lib*.a))))")) nil [188 274])
+            ("clean" function nil nil [275 303])
+            ("gen_code" function nil nil [304 314])
+            ("NUM_CPUS" variable (:default-value ("$(shell grep NUM_CPUS ./$(COMP_NAME).xmlAnswers)")) nil [391 451])
+            ("NUM_CPUS" variable (:default-value ("4")) nil [489 500])
+            ("NUM_CPUS" variable (:default-value ("3")) nil [544 555])
+            ("NUM_CPUS" variable (:default-value ("2")) nil [599 610])
+            ("NUM_CPUS" variable (:default-value ("1")) nil [615 626])
+            ("Makefile.internal" include nil nil [663 689])
+            ("CXX" variable (:default-value ("g++")) nil [751 759])
+            ("CXXFLAGS" variable (:default-value ("-fPIC" "-g" "-DCARBON_DUMP_VCD=0" "-std=c++11" "-I$(SYSTEMC_HOME)/include" "-I$(CARBON_HOME)/include" "$(CM_SYSC_CXXFLAGS)" "-I." "-I$(LINUX_DIR)" "-DNUM_CPUS=$(NUM_CPUS)")) nil [760 974])
+            ("OBJS" variable (:default-value ("lib$(COMP_NAME).systemc.o" "lib$(COMP_NAME).tlm.o" "univent_tarmac.o")) nil [974 1057])
+            ("all" function (:arguments ("lib$(COMP_NAME).tlm.a" "lib$(COMP_NAME).tlm.so")) nil [1058 1109])
+            ("lib" function (:arguments ("$(OBJS)")) nil [1110 1161])
+            ("lib" function (:arguments ("$(OBJS)")) nil [1161 1548])
+            ("lib" function (:arguments ("gen_code")) nil [1548 1586])
+            ("univent_tarmac.cpp" function (:arguments ("gen_code")) nil [1587 1616])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp")) nil [1617 1705])
+            ("lib" function (:arguments ("lib$(COMP_NAME).tlm.cpp")) nil [1706 1786])
+            ("univent_tarmac.o" function (:arguments ("univent_tarmac.cpp" "gen_code")) nil [1787 1865]))          
+      :file "Makefile"
+      :pointmax 1865
+      :fsize 1864
+      :lastmodtime '(22877 17855 530862 0)
+      :unmatched-syntax '((shell-command 1834 . 1864) (bol 1833 . 1833) (symbol 720 . 749) (semantic-list 706 . 720) (punctuation 705 . 706) (symbol 696 . 704) (bol 696 . 696) (ELSE 555 . 559) (bol 555 . 555) (ELSE 500 . 504) (bol 500 . 500) (symbol 124 . 132) (semantic-list 107 . 124) (punctuation 106 . 107) (punctuation 104 . 105) (punctuation 103 . 104) (symbol 90 . 102) (bol 90 . 90) (symbol 32 . 65) (punctuation 29 . 30) (punctuation 28 . 29) (symbol 15 . 27) (bol 15 . 15))))
+  :file "!o!mkwork!hanlei01!MK_trunk!modelbuild!models!Kite!workarea!SystemC!ip!Kite_2CPU_Example!gcc483!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

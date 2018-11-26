@@ -1,0 +1,182 @@
+;; Object FMGenIF/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "FMGenIF/"
+  :tables
+  (list
+    (semanticdb-table "a53_save_arch_handler.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("peerapi/ArchSaveHandlerIF.h" include nil nil [1 39])
+            ("eslapi/CAInterface.h" include nil nil [40 71])
+            ("eslapi/CASIModuleIF.h" include nil nil [72 104])
+            ("eslapi/CASIModule.h" include nil nil [105 135])
+            ("eslapi/CASISaveRestoreArch.h" include nil nil [136 175])
+            ("eslapi/CADI.h" include nil nil [176 200])
+            ("eslapi/CADIFactory.h" include nil nil [201 232])
+            ("sstream" include (:system-flag t) nil [234 252])
+            ("eslapi" using (:type ("eslapi" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [254 277])
+            ("Carbon::ArchSaveHandlerIF" using (:type ("Carbon::ArchSaveHandlerIF" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [278 320])
+            ("WEXP_HANDLER" variable (:constant-flag t) nil [392 404])
+            ("A53_l2cache_handler" type
+               (:superclasses 
+                  ( ("ArchSaveHandlerDefault" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [485 492])
+                    ("save" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("module" variable
+                               (:pointer 1
+                                :type ("CASIModuleIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [512 533])
+                            ("stream" variable
+                               (:reference 1
+                                :type ("SaveArchStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [533 556]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [495 1971])
+                    ("tag" function
+                       (:typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1977 2033])
+                    ("saveCache" function
+                       (:arguments 
+                          ( ("regMap" variable
+                               (:pointer 1
+                                :type ("eslapi::CASIRegMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2054 2081])
+                            ("stream" variable
+                               (:reference 1
+                                :type ("SaveArchStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2081 2104])
+                            ("cpuName" variable
+                               (:reference 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2105 2121])
+                            ("dccvac" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIReg_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2122 2148])
+                            ("debugFlag" variable (:type "bool") (reparse-symbol arg-sub-list) [2149 2164])
+                            ("cacheName" variable
+                               (:reference 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2165 2183]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2039 8358])
+                    ("restore_disable_MMU" function
+                       (:arguments 
+                          ( ("cpuName" variable
+                               (:reference 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8390 8406])
+                            ("restoreMMU" variable (:type "bool") (reparse-symbol arg-sub-list) [8407 8423]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8365 9952])
+                    ("findRegister" function
+                       (:arguments 
+                          ( ("reg_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9976 10004])
+                            ("" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIReg_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10004 10023])
+                            ("" variable (:type ("reg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10024 10028])
+                            ("reg_width" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10029 10049])
+                            ("compName" variable
+                               (:reference 1
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10050 10067]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9958 11926])
+                    ("private" label nil (reparse-symbol classsubparts) [11928 11936])
+                    ("mSCTLR_EL3Val" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11939 11964])
+                    ("mSCTLR_EL2Val" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11967 11992])
+                    ("mSCTLR_EL1Val" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11995 12020]))                  
+                :type "class")
+                nil [413 12024])
+            ("A53_l1dcache_handler" type
+               (:superclasses 
+                  ( ("A53_l2cache_handler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [12098 12105])
+                    ("save" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("module" variable
+                               (:pointer 1
+                                :type ("CASIModuleIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12125 12146])
+                            ("stream" variable
+                               (:reference 1
+                                :type ("SaveArchStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12146 12169]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [12108 13328])
+                    ("tag" function
+                       (:typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13334 13391]))                  
+                :type "class")
+                nil [12028 13394])
+            ("A53_l2cache_createHandler" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("ArchSaveHandlerIF" type (:type "class") nil nil)
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [13525 13611])
+            ("A53_l1dcache_createHandler" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("ArchSaveHandlerIF" type (:type "class") nil nil)
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [13422 13510]))          
+      :file "a53_save_arch_handler.cpp"
+      :pointmax 13615
+      :fsize 13614
+      :lastmodtime '(22591 62 731371 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("WEXP_HANDLER")
+          )
+)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CC" variable (:default-value ("${MAXSIM_HOME}/deps/gcc/4.7.2-binutil-2.25/bin/g++")) nil [1 57])
+            ("rm" variable (:default-value ("rm" "-rf")) nil [58 70])
+            ("all" function (:arguments ("a53_save_arch_handler.cpp")) nil [71 386])
+            ("clean" function nil nil [387 410]))          
+      :file "Makefile"
+      :pointmax 410
+      :fsize 409
+      :lastmodtime '(22591 62 917360 0)
+      :unmatched-syntax '((shell-command 396 . 409) (bol 395 . 395))))
+  :file "!o!mkwork!hlei!mk_2016_02_26!modelbuild!models!builddir!CortexA53!workarea!sd!ip!A53_4CPU_FPU_8KL1_512KL2_Skyros!gcc!FMGenIF!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

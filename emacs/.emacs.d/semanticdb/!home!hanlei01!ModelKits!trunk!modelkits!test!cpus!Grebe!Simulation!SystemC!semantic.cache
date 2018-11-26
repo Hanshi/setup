@@ -1,0 +1,34 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++" "-O2" "-DSC_INCLUDE_DYNAMIC_PROCESSES" "-Wall" "-Wextra" "-Werror" "-Wno-unused-parameter" "-Wno-unused-but-set-variable" "-std=c++11" "-DUNIVENT_TARMAC=1" "-DCM_SYSC_IO_UNIVENT_TARMAC=1")) nil [87 263])
+            ("GREBE_DIR" variable (:default-value ("./MODELS/Grebe/Grebe_4MPU/gcc/SystemC/lib")) nil [382 436])
+            ("GREBE_LIB" variable (:default-value ("./MODELS/Grebe/Grebe_4MPU/gcc/SystemC")) nil [436 486])
+            ("BUS_DIR" variable (:default-value ("./MODELS/AHB_Interconnect/lib")) nil [486 526])
+            ("BUS_LIB" variable (:default-value ("./MODELS/AHB_Interconnect")) nil [526 562])
+            ("SRAM_BRIDGE_DIR" variable (:default-value ("./MODELS/AHB_SRAM_Bridge/lib")) nil [562 609])
+            ("SRAM_BRIDGE_LIB" variable (:default-value ("./MODELS/AHB_SRAM_Bridge")) nil [609 652])
+            ("SRAM_DIR" variable (:default-value ("./MODELS/SRAM/lib")) nil [652 681])
+            ("SRAM_LIB" variable (:default-value ("./MODELS/SRAM")) nil [681 706])
+            ("SRAM1_DIR" variable (:default-value ("./MODELS/SRAM1/lib")) nil [706 737])
+            ("SRAM1_LIB" variable (:default-value ("./MODELS/SRAM1")) nil [737 764])
+            ("DEFAULT_SLAVE_DIR" variable (:default-value ("./MODELS/AHB_Default_Slave/lib")) nil [764 815])
+            ("DEFAULT_SLAVE_LIB" variable (:default-value ("./MODELS/AHB_Default_Slave")) nil [815 862])
+            ("CM_SYSC_HOME" variable (:default-value ("$(CM_SYSC_PACKAGE)/rel_ext")) nil [863 905])
+            ("$(CM_SYSC_HOME)/makefiles/cm_sysc_common.mak" include nil nil [906 959])
+            ("system_test" function (:arguments ("system_test.o" "$(GREBE_LIB)/libGrebe.systemc.a" "$(FM_LIB)")) nil [960 2253])
+            ("system_test.o" function (:arguments ("system_test.cpp")) nil [2254 2534])
+            ("clean" function nil nil [2535 2566]))          
+      :file "Makefile"
+      :pointmax 2568
+      :fsize 2567
+      :lastmodtime '(23027 33315 952362 0)
+      :unmatched-syntax '((symbol 368 . 381) (semantic-list 354 . 368) (punctuation 353 . 354) (punctuation 351 . 352) (punctuation 350 . 351) (symbol 338 . 349) (bol 338 . 338) (symbol 328 . 337) (semantic-list 314 . 328) (punctuation 313 . 314) (punctuation 311 . 312) (punctuation 310 . 311) (symbol 298 . 309) (bol 298 . 298))))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!Grebe!Simulation!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,22 @@
+;; Object elf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "elf/"
+  :tables
+  (list
+    (semanticdb-table "breakpoints.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("init_regs" variable
+               (:default-value "0x0000018c"
+                :type "int")
+                nil [1 28])
+            ("init_neon_regs" variable
+               (:default-value "0x000001c8"
+                :type "int")
+                nil [29 61]))          
+      :file "breakpoints.h"
+      :pointmax 62
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!test_result_Kite_bp!gcc483!test!cpus!Kite!Applications!dhrystone!dhrystone!armcc!elf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

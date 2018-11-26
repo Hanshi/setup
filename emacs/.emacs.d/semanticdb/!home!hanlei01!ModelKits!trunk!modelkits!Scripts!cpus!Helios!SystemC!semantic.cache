@@ -1,0 +1,42 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("LINUX_DIR" variable (:default-value (".")) nil [1 15])
+            ("PACKAGE_LIB_DIR" variable (:default-value ("./lib")) nil [66 90])
+            ("CM_SYSC_PACKAGE" variable (:default-value ("/o/release/cm_sysc/1.9.0/PRODUCT/Linux64_GCC-4.8.3")) nil [147 216])
+            ("COMP_NAME" variable (:default-value ("$(subst lib,,$(basename $(notdir $(wildcard $(PACKAGE_LIB_DIR)/lib*.a))))")) nil [314 400])
+            ("clean" function nil nil [401 426])
+            ("gen_code" function nil nil [427 437])
+            ("NUM_CPUS" variable (:default-value ("$(shell grep NUM_LITTLE_CORES ./$(COMP_NAME).xmlAnswers)")) nil [516 584])
+            ("NUM_CPUS" variable (:default-value ("8")) nil [638 649])
+            ("NUM_CPUS" variable (:default-value ("4")) nil [709 720])
+            ("NUM_CPUS" variable (:default-value ("2")) nil [780 791])
+            ("NUM_CPUS" variable (:default-value ("1")) nil [796 807])
+            ("MASTER_PROTOCOL" variable (:default-value ("$(shell grep BUS_INTERFACE ./$(COMP_NAME).xmlAnswers)")) nil [827 899])
+            ("TARMAC_PRESENT" variable (:default-value ("$(shell grep \\\"TARMAC\\\" ./$(COMP_NAME).xmlAnswers )")) nil [899 968])
+            ("Makefile.internal" include nil nil [987 1013])
+            ("CXX" variable (:default-value ("g++")) nil [1075 1083])
+            ("CXXFLAGS" variable (:default-value ("-fPIC" "-g" "-DCARBON_DUMP_VCD=0" "-std=c++11" "-I$(SYSTEMC_HOME)/include" "-I$(CARBON_HOME)/include" "$(CM_SYSC_CXXFLAGS)" "-I." "-I$(LINUX_DIR)" "-DGENERATE_SLAVE_PORTS=1" "-DNUM_CPUS=$(NUM_CPUS)")) nil [1084 1326])
+            ("OBJS" variable (:default-value ("$(COMP_NAME)Imp.o" "lib$(COMP_NAME).systemc.o")) nil [1327 1388])
+            ("all" function (:arguments ("lib$(COMP_NAME).so")) nil [1389 1413])
+            ("lib" function (:arguments ("$(OBJS)")) nil [1414 1811])
+            ("$(COMP_NAME)" function (:arguments ("gen_code")) nil [1812 1842])
+            ("$(COMP_NAME)" function (:arguments ("$(COMP_NAME)Imp.cpp")) nil [1843 1929])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp" "gen_code")) nil [1930 2040]))          
+      :file "Makefile"
+      :pointmax 2041
+      :fsize 2040
+      :lastmodtime '(22804 51092 254962 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile.internal"
+      :file "Makefile.internal"
+      :fsize 2411
+      :lastmodtime '(22778 21949 658903 0)))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!Scripts!cpus!Helios!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

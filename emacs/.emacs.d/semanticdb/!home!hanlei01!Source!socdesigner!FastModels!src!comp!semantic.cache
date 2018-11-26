@@ -1,0 +1,588 @@
+;; Object comp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "comp/"
+  :tables
+  (list
+    (semanticdb-table "FMSubcomp.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FMSubcomp.h" include nil nil [454 476])
+            ("FMCompImpl.h" include nil nil [477 500])
+            ("FMCompRegisters.h" include nil nil [501 529])
+            ("MxPrivateTypes.h" include nil nil [530 557])
+            ("FMCompTrace.h" include nil nil [558 582])
+            ("MxSaveRestoreUtility.h" include nil nil [583 616])
+            ("sstream" include (:system-flag t) nil [617 635])
+            ("vector" include (:system-flag t) nil [636 653])
+            ("stdexcept" include (:system-flag t) nil [654 674])
+            ("__STDC_FORMAT_MACROS" variable (:constant-flag t) nil [683 703])
+            ("inttypes.h" include (:system-flag t) nil [704 725])
+            ("Carbon::ArchSaveHandlerIF" using (:type ("Carbon::ArchSaveHandlerIF" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [728 770])
+            ("MMUDisable" type
+               (:parent "FMSubcomponent"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [876 883])
+                    ("MMUDisable" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("subcomp" variable
+                               (:pointer 1
+                                :type ("FMSubcomponent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [897 921])
+                            ("sctlr" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIReg_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [935 960]))                          
+                        :type ("MMUDisable" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [886 1495])
+                    ("MMUDisable" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1499 1756])
+                    ("private" label nil (reparse-symbol classsubparts) [1758 1766])
+                    ("mSubcomp" variable
+                       (:pointer 1
+                        :type ("FMSubcomponent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1769 1794])
+                    ("mSCTLRReg" variable
+                       (:pointer 1
+                        :type ("eslapi::CADIReg_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1797 1826])
+                    ("mSCTLRVal" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1868 1889])
+                    ("mModified" variable (:type "bool") (reparse-symbol classsubparts) [1930 1945]))                  
+                :type "class")
+                nil [841 1991])
+            ("RegReadWrite" type
+               (:parent "FMSubcomponent"
+                :superclasses 
+                  ( ("eslapi::CASISaveRestoreArchDefaultCallback" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2245 2252])
+                    ("RegReadWrite" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("cadi" variable
+                               (:pointer 1
+                                :type ("eslapi::CADI" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2268 2287]))                          
+                        :type ("RegReadWrite" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2255 2385])
+                    ("RegReadWrite" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2389 2415])
+                    ("readRegister" function
+                       (:arguments 
+                          ( ("regInfo" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIRegInfo_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2437 2468])
+                            ("nbytes" variable
+                               (:reference 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2489 2506])
+                            ("" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2527 2536])
+                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2537 2543]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2419 2644])
+                    ("writeRegister" function
+                       (:arguments 
+                          ( ("regInfo" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIRegInfo_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2667 2698])
+                            ("nbytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2707 2723])
+                            ("" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2731 2740])
+                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2741 2747]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2648 2849]))                  
+                :type "class")
+                nil [2156 2853])
+            ("createName" function
+               (:arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2878 2907])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sc_module_name" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2907 2934]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [2855 3120])
+            ("FMSubcomponent" function
+               (:constructor-flag t
+                :parent "FMSubcomponent"
+                :arguments 
+                  ( ("compImpl" variable
+                       (:pointer 1
+                        :type ("FMCompImpl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3153 3174])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3206 3235])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sc_module_name" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3267 3294])
+                    ("origCompName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3326 3358])
+                    ("origCompFullName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3390 3426])
+                    ("executesSoftware" variable (:type "bool") (reparse-symbol arg-sub-list) [3458 3480])
+                    ("loadsApplication" variable (:type "bool") (reparse-symbol arg-sub-list) [3512 3534]))                  
+                :type ("FMSubcomponent" type (:type "class") nil nil))
+                nil [3122 3921])
+            ("FMSubcomponent" function
+               (:destructor-flag t
+                :parent "FMSubcomponent"
+                :type "void")
+                nil [3923 4413])
+            ("getProperty" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("property" variable (:type ("eslapi::CASIPropertyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4455 4489]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [4415 5528])
+            ("setParameter" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("key" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5564 5587])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5588 5613]))                  
+                :type "void")
+                nil [5530 5774])
+            ("putCADI" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("cadi" variable
+                       (:pointer 1
+                        :type ("eslapi::CADI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5805 5824]))                  
+                :type "void")
+                nil [5776 5844])
+            ("init" function
+               (:parent "FMSubcomponent"
+                :type "void")
+                nil [5846 5877])
+            ("getParameter" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("key" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5920 5943]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [5879 6367])
+            ("ObtainInterface" function
+               (:pointer 1
+                :parent "FMSubcomponent"
+                :arguments 
+                  ( ("ifName" variable (:type ("eslapi::if_name_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6422 6447])
+                    ("minRev" variable (:type ("eslapi::if_rev_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6452 6476])
+                    ("actualRev" variable
+                       (:pointer 1
+                        :type ("eslapi::if_rev_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6481 6509]))                  
+                :type ("eslapi::CAInterface" type (:type "class") nil nil))
+                nil [6369 6993])
+            ("addIgnoreRegister" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("group" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7063 7088])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7089 7113]))                  
+                :type "void")
+                nil [7024 7202])
+            ("addRemapRegister" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("group" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7242 7267])
+                    ("oldName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7306 7333])
+                    ("newName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7372 7399])
+                    ("newSize" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7438 7465]))                  
+                :type "void")
+                nil [7204 7637])
+            ("addGroupRemapRegister" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("oldGroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7682 7710])
+                    ("newGroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7715 7743])
+                    ("oldName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7748 7775])
+                    ("newName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7780 7807])
+                    ("newSize" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7812 7839]))                  
+                :type "void")
+                nil [7639 7966])
+            ("addFullGroupRemapRegister" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("oldGroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8015 8043])
+                    ("newGroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8044 8072]))                  
+                :type "void")
+                nil [7968 8340])
+            ("addVirtualRegister" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("group" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8382 8407])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8448 8472])
+                    ("width" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8513 8538])
+                    ("address" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8579 8606]))                  
+                :type "void")
+                nil [8342 8721])
+            ("addSnoopedMemory" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("mem" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("FMSubcomponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8761 8787])
+                    ("baseAddress" variable (:type ("fmAddress_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8788 8812]))                  
+                :type "void")
+                nil [8723 8969])
+            ("putUpstreamCPU" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("cpu" variable
+                       (:pointer 1
+                        :type ("FMSubcomponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9007 9027]))                  
+                :type "void")
+                nil [8971 9053])
+            ("recordMemAccess" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("mem" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("FMSubcomponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9092 9118])
+                    ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9119 9133]))                  
+                :type "void")
+                nil [9055 10305])
+            ("writeMemorySaveState" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("mem" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("FMSubcomponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10349 10375])
+                    ("action" variable
+                       (:pointer 1
+                        :type ("eslapi::CASISaveRestoreArchActionIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10376 10420]))                  
+                :type "bool")
+                nil [10307 13393])
+            ("saveCache" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("regMap" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIRegMap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13521 13548]))                  
+                :type "bool")
+                nil [13490 14333])
+            ("saveCache" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14367 14384])
+                    ("regMap" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIRegMap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14385 14412])
+                    ("file_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14413 14435]))                  
+                :type "bool")
+                nil [14335 18816])
+            ("saveRegisters" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("regMap" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIRegMap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18854 18881])
+                    ("action" variable
+                       (:pointer 1
+                        :type ("eslapi::CASISaveRestoreArchActionIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18917 18961]))                  
+                :type "bool")
+                nil [18819 22475])
+            ("restoreRegisters" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("regMap" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIRegMap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22515 22542])
+                    ("regValueMap" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIRegValueMap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22581 22618]))                  
+                :type "bool")
+                nil [22477 22765])
+            ("saveMemory" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("eslapi::CASISaveRestoreArchActionIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22799 22843]))                  
+                :type "bool")
+                nil [22767 23056])
+            ("restoreMemory" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("memoryValueMap" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIMemoryValueMap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23093 23136]))                  
+                :type "bool")
+                nil [23058 23283])
+            ("saveWithHandlers" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("node" variable (:type ("xmlNodePtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23323 23340]))                  
+                :type "bool")
+                nil [23285 23869])
+            ("restoreWithHandlers" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("node" variable (:type ("xmlNodePtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23913 23929]))                  
+                :type "bool")
+                nil [23871 24076])
+            ("message" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24107 24130])
+                    ("type" variable (:type ("eslapi::CASIMessageType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24131 24160]))                  
+                :type "void")
+                nil [24078 24258])
+            ("saveStreamType" function
+               (:parent "FMSubcomponent"
+                :type ("eslapi::CASISaveRestoreStreamType" type (:type "class") nil nil))
+                nil [24260 24407])
+            ("saveDataArch" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("CASIODataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24443 24465]))                  
+                :type "bool")
+                nil [24409 25635])
+            ("saveDataBinary" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("CASIODataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25673 25695]))                  
+                :type "bool")
+                nil [25637 25848])
+            ("restoreDataBinary" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("CASIIDataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25889 25911]))                  
+                :type "bool")
+                nil [25850 26058])
+            ("restoreDataArch" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("CASIIDataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26097 26119]))                  
+                :type "bool")
+                nil [26060 26266])
+            ("lookupSaveMemSpace" function
+               (:parent "FMSubcomponent"
+                :type ("eslapi::CADIMemSpace_t" type (:type "class") nil nil))
+                nil [26268 27117])
+            ("findRegister" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("reg_name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27153 27181])
+                    ("" variable
+                       (:pointer 1
+                        :type ("eslapi::CADIReg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27181 27200])
+                    ("" variable (:type ("reg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27201 27205])
+                    ("reg_width" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27206 27226]))                  
+                :type "void")
+                nil [27119 28969])
+            ("flushCache" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("pageaddr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29003 29021])
+                    ("pagesize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29049 29067])
+                    ("dccmvac" variable
+                       (:pointer 1
+                        :type ("eslapi::CADIReg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29095 29122])
+                    ("dccmvac_width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29150 29173])
+                    ("cache_line_width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29201 29227]))                  
+                :type "void")
+                nil [28971 30047])
+            ("bytearray2value" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("cnt" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30091 30104])
+                    ("array" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30105 30120]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [30050 30271])
+            ("addMxScriptEntry" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30312 30320])
+                    ("start_address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30321 30344])
+                    ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30345 30361])
+                    ("bytearray" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30362 30381]))                  
+                :type "void")
+                nil [30273 30821])
+            ("getHasDCache" function
+               (:parent "FMSubcomponent"
+                :type "bool")
+                nil [30823 31993]))          
+      :file "FMSubcomp.cpp"
+      :pointmax 31994
+      :fsize 31997
+      :lastmodtime '(22617 57192 418894 0)
+      :unmatched-syntax '((punctuation 27199 . 27200) (punctuation 2739 . 2740) (punctuation 2535 . 2536))
+      :lexical-table 
+        '(("__STDC_FORMAT_MACROS")
+          )
+))
+  :file "!home!hanlei01!Source!socdesigner!FastModels!src!comp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

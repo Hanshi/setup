@@ -1,0 +1,42 @@
+;; Object Marvin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Marvin/"
+  :tables
+  (list
+    (semanticdb-table "ICM_MarvinModel.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cpus/Marvin/ICM_MarvinModel.h" include nil nil [52 92])
+            ("iostream" include (:system-flag t) nil [94 113])
+            ("sstream" include (:system-flag t) nil [114 132])
+            ("ICM_MarvinModel" function
+               (:constructor-flag t
+                :parent "ICM_MarvinModel"
+                :arguments 
+                  ( ("cycle_model" variable
+                       (:pointer 1
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [167 195]))                  
+                :type ("ICM_MarvinModel" type (:type "class") nil nil))
+                nil [134 333])
+            ("create_child_model" function
+               (:parent "ICM_MarvinModel"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("icm_impl::ICMModel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [407 434]))                  
+                :type ("std::unique_ptr" type
+                     (:template-specifier 
+                        ( ("icm_impl::ICMModel" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [335 534]))          
+      :file "ICM_MarvinModel.cpp"
+      :pointmax 537
+      :fsize 536
+      :lastmodtime '(23387 27309 173625 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!src!cpus!Marvin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

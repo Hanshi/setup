@@ -1,0 +1,70 @@
+;; Object dsm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dsm/"
+  :tables
+  (list
+    (semanticdb-table "Kite.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Kite.h" include nil nil [867 884])
+            ("start_of_simulation" function
+               (:parent "Kite"
+                :type "void")
+                nil [993 1200])
+            ("end_of_simulation" function
+               (:parent "Kite"
+                :type "void")
+                nil [1202 1403])
+            ("end_of_elaboration" function
+               (:parent "Kite"
+                :type "void")
+                nil [1405 39130])
+            ("carbon_write_outputs" function
+               (:parent "Kite"
+                :type "void")
+                nil [39132 59129])
+            ("getSimTime" function
+               (:parent "Kite"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [59156 59178]))                  
+                :type "double")
+                nil [59132 59244]))          
+      :file "Kite.cpp"
+      :pointmax 59245
+      :fsize 59244
+      :lastmodtime '(22926 12735 551495 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Kite.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_Kite_h_" variable (:constant-flag t) nil [891 899])
+            ("__CARBON_SYS_INCLUDE_H__" variable (:constant-flag t) nil [908 932])
+            ("cctype" include (:system-flag t) nil [1061 1078])
+            ("systemc.h" include nil nil [1081 1101])
+            ("carbon/carbon_sc_multiwrite_signal.h" include nil nil [1102 1149])
+            ("libKite.h" include nil nil [1150 1170])
+            ("SC_MODULE" function
+               (:arguments 
+                  ( ("" variable (:type ("Kite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1535 1540]))                  
+                :type "int")
+                nil [1525 180444]))          
+      :file "Kite.h"
+      :pointmax 180469
+      :fsize 180468
+      :lastmodtime '(22926 12735 599506 0)
+      :unmatched-syntax '((punctuation 180444 . 180445))
+      :lexical-table 
+        '(("_Kite_h_")
+          ("__CARBON_SYS_INCLUDE_H__")
+          )
+)
+    (semanticdb-table "libKite.h"
+      :file "libKite.h"
+      :fsize 620
+      :lastmodtime '(22926 12735 622511 0)))
+  :file "!o!mkwork!hanlei01!MK_trunk!modelbuild!models!Kite!workarea!DSM!ip!Kite_1CPU!gcc483!dsm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

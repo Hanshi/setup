@@ -1,0 +1,135 @@
+;; Object ipfs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ipfs/"
+  :tables
+  (list
+    (semanticdb-table "factory.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [1159 1178])
+            ("ipfs.std_lib" include nil nil [1180 1206])
+            ("ipfs.globals" include nil nil [1207 1233])
+            ("Factory" type
+               (:superclasses ("object")
+                :members 
+                  ( ("type_map" variable nil (reparse-symbol indented_block_body) [1262 1275])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [1476 1494]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1465 1469]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1452 1495])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1678 1682])
+                            ("type_id" variable nil (reparse-symbol function_parameters) [1684 1691])
+                            ("args" variable nil (reparse-symbol function_parameters) [1693 1698]))                          )
+                        (reparse-symbol indented_block_body) [1670 1754])
+                    ("get_cached" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1953 1957])
+                            ("type_id" variable nil (reparse-symbol function_parameters) [1959 1966])
+                            ("args" variable nil (reparse-symbol function_parameters) [1968 1973]))                          )
+                        (reparse-symbol indented_block_body) [1938 2028])
+                    ("_load_types" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2226 2230]))                          )
+                        (reparse-symbol indented_block_body) [2210 2914])
+                    ("_get_instance" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3203 3207])
+                            ("type_id" variable nil (reparse-symbol function_parameters) [3209 3216])
+                            ("use_cache" variable nil (reparse-symbol function_parameters) [3218 3227])
+                            ("args" variable nil (reparse-symbol function_parameters) [3229 3234]))                          )
+                        (reparse-symbol indented_block_body) [3185 4119]))                  
+                :type "class")
+                nil [1235 4119])
+            ("in_path" code nil nil [2292 2321]))          
+      :file "factory.py"
+      :pointmax 4201
+      :fsize 4200
+      :lastmodtime '(22344 35352 345578 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "std_lib.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [1287 1331])
+            ("os" include nil nil [1332 1404])
+            ("re" include nil nil [1405 1459])
+            ("time" include nil nil [1460 1495])
+            ("types" include nil nil [1496 1524])
+            ("optparse" include nil nil [1525 1572])
+            ("random" include nil nil [1573 1599])
+            ("traceback" include nil nil [1600 1621])
+            ("sys" include nil nil [1600 1621])
+            ("ipfs.globals" include nil nil [1659 1685])
+            ("display_banner" function nil nil [2160 3335])
+            ("display_terminator" function nil nil [3651 4470])
+            ("grammar" function (:arguments 
+              ( ("msg_text" variable nil (reparse-symbol function_parameters) [4877 4885]))              ) nil [4864 5273])
+            ("reformat" function (:arguments 
+              ( ("msg_text" variable nil (reparse-symbol function_parameters) [5679 5687])
+                ("width" variable nil (reparse-symbol function_parameters) [5689 5694]))              ) nil [5665 7168])
+            ("message" function (:arguments 
+              ( ("msg_code" variable nil (reparse-symbol function_parameters) [7577 7585])
+                ("msg_text" variable nil (reparse-symbol function_parameters) [7587 7595]))              ) nil [7564 9257])
+            ("open_file" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [9594 9602])
+                ("mode" variable nil (reparse-symbol function_parameters) [9604 9608]))              ) nil [9579 9823])
+            ("exc_reason" function nil nil [10139 10277])
+            ("form_path" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [10609 10613]))              ) nil [10594 10646])
+            ("path_truncate" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [11018 11022])
+                ("levels" variable nil (reparse-symbol function_parameters) [11024 11030]))              ) nil [10999 11137])
+            ("service_fn_exists" function (:arguments 
+              ( ("fn_name" variable nil (reparse-symbol function_parameters) [11484 11491])
+                ("service" variable nil (reparse-symbol function_parameters) [11493 11500]))              ) nil [11461 11594])
+            ("list_difference" function (:arguments 
+              ( ("list_a" variable nil (reparse-symbol function_parameters) [11974 11980])
+                ("list_b" variable nil (reparse-symbol function_parameters) [11982 11988]))              ) nil [11953 12094])
+            ("list_similarity" function (:arguments 
+              ( ("list_a" variable nil (reparse-symbol function_parameters) [12467 12473])
+                ("list_b" variable nil (reparse-symbol function_parameters) [12475 12481]))              ) nil [12446 12583])
+            ("query_status" function (:arguments 
+              ( ("info" variable nil (reparse-symbol function_parameters) [12908 12912]))              ) nil [12890 12928])
+            ("update_status" function (:arguments 
+              ( ("info" variable nil (reparse-symbol function_parameters) [13256 13260]))              ) nil [13237 13271])
+            ("check_timing" function (:arguments 
+              ( ("file" variable nil (reparse-symbol function_parameters) [13723 13727])
+                ("deps" variable nil (reparse-symbol function_parameters) [13729 13733]))              ) nil [13705 14142])
+            ("get_bin_path" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [14478 14486]))              ) nil [14461 14717])
+            ("grab_file_lock" function (:arguments 
+              ( ("lock_dir" variable nil (reparse-symbol function_parameters) [15012 15020])
+                ("lock_name" variable nil (reparse-symbol function_parameters) [15022 15031]))              ) nil [14993 17202])
+            ("build_grab_file_lock" function (:arguments 
+              ( ("lock_dir" variable nil (reparse-symbol function_parameters) [17507 17515])
+                ("lock_name" variable nil (reparse-symbol function_parameters) [17517 17526])
+                ("runlimit_adjust" variable nil (reparse-symbol function_parameters) [17528 17543])
+                ("runlimit_value" variable nil (reparse-symbol function_parameters) [17553 17567])
+                ("runlimit_buffer" variable nil (reparse-symbol function_parameters) [17574 17589]))              ) nil [17482 21575])
+            ("release_file_lock" function (:arguments 
+              ( ("lock_dir" variable nil (reparse-symbol function_parameters) [21921 21929])
+                ("lock_name" variable nil (reparse-symbol function_parameters) [21931 21940]))              ) nil [21899 22542])
+            ("build_release_file_lock" function (:arguments 
+              ( ("lock_dir" variable nil (reparse-symbol function_parameters) [22900 22908])
+                ("lock_name" variable nil (reparse-symbol function_parameters) [22910 22919]))              ) nil [22872 23665]))          
+      :file "std_lib.py"
+      :pointmax 23745
+      :fsize 23744
+      :lastmodtime '(22344 35352 335605 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "globals.py"
+      :file "globals.py"
+      :fsize 1065
+      :lastmodtime '(22344 35352 348607 0)))
+  :file "!home!hlei!GIC_Beeton!beeton_gic!giccfg_templates!logical!shared!tools!lib!ae!ipfs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

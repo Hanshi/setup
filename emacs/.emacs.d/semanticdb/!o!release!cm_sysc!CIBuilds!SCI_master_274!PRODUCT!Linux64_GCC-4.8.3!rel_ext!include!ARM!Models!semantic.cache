@@ -1,0 +1,417 @@
+;; Object Models/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Models/"
+  :tables
+  (list
+    (semanticdb-table "SCAXI4.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ARM_MODELS_SCAXI4_H" variable (:constant-flag t) nil [100 119])
+            ("ARM/TLM/arm_axi4.h" include (:system-flag t) nil [179 208])
+            ("SLAXI4.h" include nil nil [210 229])
+            ("ARM" type
+               (:members 
+                  ( ("Models" type
+                       (:members 
+                          ( ("SCAXI4" type
+                               (:members 
+                                  ( ("exception_to_sc_report" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("msg_type" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [396 417])
+                                            ("except" variable
+                                               (:reference 1
+                                                :type ("std::exception" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [418 441]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [361 1000])
+                                    ("ARM_CATCH_TO_SC_REPORT_FATAL" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1077 1105])
+                                    ("ErrorHandler" type
+                                       (:superclasses 
+                                          ( ("SignalLevel::ErrorHandler" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1401 1408])
+                                            ("error" function
+                                               (:arguments 
+                                                  ( ("message" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1424 1451])
+                                                    ("context" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :default-value "\"\""
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1452 1483]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1413 1769]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1345 1772])
+                                    ("TLMTieOffInterface" type
+                                       (:template 
+                                          ( ("ProtocolType" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1937 1944])
+                                            ("Payload" type
+                                               (:typedef ("ProtocolType::tlm_payload_type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1949 2005])
+                                            ("Phase" type
+                                               (:typedef ("ProtocolType::tlm_phase_type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2010 2062])
+                                            ("tie_off_error" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("function" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type "char")
+                                                        (reparse-symbol arg-sub-list) [2094 2115]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2068 2269])
+                                            ("zero_time_exception" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("function" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2307 2335]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2275 2480])
+                                            ("nb_transport_fw" function
+                                               (:arguments 
+                                                  ( ("trans" variable
+                                                       (:reference 1
+                                                        :type ("Payload" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2521 2536])
+                                                    ("phase" variable
+                                                       (:reference 1
+                                                        :type ("Phase" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2537 2550])
+                                                    ("delay" variable
+                                                       (:reference 1
+                                                        :type ("sc_core::sc_time" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2559 2583]))                                                  
+                                                :type ("tlm::tlm_sync_enum" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2486 2651])
+                                            ("nb_transport_bw" function
+                                               (:arguments 
+                                                  ( ("trans" variable
+                                                       (:reference 1
+                                                        :type ("Payload" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2692 2707])
+                                                    ("phase" variable
+                                                       (:reference 1
+                                                        :type ("Phase" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2708 2721])
+                                                    ("delay" variable
+                                                       (:reference 1
+                                                        :type ("sc_core::sc_time" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2730 2754]))                                                  
+                                                :type ("tlm::tlm_sync_enum" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2657 2822])
+                                            ("b_transport" function
+                                               (:arguments 
+                                                  ( ("trans" variable
+                                                       (:reference 1
+                                                        :type ("Payload" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2845 2860])
+                                                    ("delay" variable
+                                                       (:reference 1
+                                                        :type ("sc_core::sc_time" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2861 2885]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2828 2923])
+                                            ("get_direct_mem_ptr" function
+                                               (:arguments 
+                                                  ( ("trans" variable
+                                                       (:reference 1
+                                                        :type ("Payload" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2953 2968])
+                                                    ("dmi_data" variable
+                                                       (:reference 1
+                                                        :type ("tlm::tlm_dmi" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2969 2992]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2929 3051])
+                                            ("invalidate_direct_mem_ptr" function
+                                               (:arguments 
+                                                  ( ("start_range" variable (:type ("sc_dt::uint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3088 3114])
+                                                    ("end_range" variable (:type ("sc_dt::uint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3115 3139]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3057 3191])
+                                            ("transport_dbg" function
+                                               (:arguments 
+                                                  ( ("trans" variable
+                                                       (:reference 1
+                                                        :type ("Payload" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3224 3239]))                                                  
+                                                :type "unsigned int")
+                                                (reparse-symbol classsubparts) [3197 3289]))                                          
+                                        :superclasses 
+                                          ( ("tlm::tlm_fw_transport_if" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil)
+                                            ("tlm::tlm_bw_transport_if" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1774 3292])
+                                    ("AXI4Master" type
+                                       (:superclasses 
+                                          ( ("SignalLevel::AXI4Master::AXI4FwInterface" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil)
+                                            ("TLMTieOffInterface" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [3484 3491])
+                                            ("SCPortType" type
+                                               (:typedef ("TLM::BaseMasterSocket" type
+                                                     (:template-specifier 
+                                                        ( ("AXI4::ProtocolType" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3496 3557])
+                                            ("protected" label nil (reparse-symbol classsubparts) [3559 3569])
+                                            ("TieOffInterface" type
+                                               (:typedef ("TLMTieOffInterface" type
+                                                     (:template-specifier 
+                                                        ( ("AXI4::ProtocolType" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3574 3637])
+                                            ("Payload" type
+                                               (:typedef ("AXI4::ProtocolType::tlm_payload_type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3643 3696])
+                                            ("Phase" type
+                                               (:typedef ("AXI4::ProtocolType::tlm_phase_type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3701 3750])
+                                            ("error_handler" variable (:type ("ErrorHandler" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3756 3783])
+                                            ("parent" variable
+                                               (:pointer 1
+                                                :type ("TLM::BaseMasterSocket" type
+                                                     (:template-specifier 
+                                                        ( ("AXI4::ProtocolType" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [3789 3839])
+                                            ("child" variable (:type ("SignalLevel::AXI4Master" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3844 3874])
+                                            ("nb_transport_bw" function
+                                               (:arguments 
+                                                  ( ("trans" variable
+                                                       (:reference 1
+                                                        :type ("Payload" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3933 3948])
+                                                    ("phase" variable
+                                                       (:reference 1
+                                                        :type ("Phase" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3949 3962])
+                                                    ("delay" variable
+                                                       (:reference 1
+                                                        :type ("sc_core::sc_time" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3971 3995]))                                                  
+                                                :type ("tlm::tlm_sync_enum" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3898 4362])
+                                            ("fw" function
+                                               (:arguments 
+                                                  ( ("payload" variable
+                                                       (:reference 1
+                                                        :type ("Payload" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4366 4383])
+                                                    ("phase" variable
+                                                       (:reference 1
+                                                        :type ("Phase" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4384 4397]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [4358 4775])
+                                            ("public" label nil (reparse-symbol classsubparts) [4769 4776])
+                                            ("AXI4Master" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("name" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4792 4816])
+                                                    ("protocol" variable (:type ("TLM::Protocol" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4817 4840]))                                                  
+                                                :type ("AXI4Master" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4781 4933])
+                                            ("set_signal_interface" function
+                                               (:arguments 
+                                                  ( ("signal_interface" variable
+                                                       (:reference 1
+                                                        :type ("SignalLevel::AXI4MasterInterface" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5019 5070]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4993 5124])
+                                            ("posedge" function (:type "void") (reparse-symbol classsubparts) [5129 5164])
+                                            ("negedge" function (:type "void") (reparse-symbol classsubparts) [5169 5204])
+                                            ("bind_to_systemc_parent" function
+                                               (:arguments 
+                                                  ( ("parent_" variable
+                                                       (:reference 1
+                                                        :type ("TLM::BaseMasterSocket" type
+                                                             (:template-specifier 
+                                                                ( ("AXI4::ProtocolType" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [5287 5338]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5259 5406]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [3360 5409])
+                                    ("AXI4Slave" type
+                                       (:superclasses 
+                                          ( ("SignalLevel::AXI4Slave::AXI4BwInterface" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil)
+                                            ("TLMTieOffInterface" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [5597 5604])
+                                            ("SCPortType" type
+                                               (:typedef ("TLM::BaseSlaveSocket" type
+                                                     (:template-specifier 
+                                                        ( ("AXI4::ProtocolType" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5609 5669])
+                                            ("protected" label nil (reparse-symbol classsubparts) [5671 5681])
+                                            ("TieOffInterface" type
+                                               (:typedef ("TLMTieOffInterface" type
+                                                     (:template-specifier 
+                                                        ( ("AXI4::ProtocolType" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5686 5749])
+                                            ("Payload" type
+                                               (:typedef ("AXI4::ProtocolType::tlm_payload_type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5755 5808])
+                                            ("Phase" type
+                                               (:typedef ("AXI4::ProtocolType::tlm_phase_type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5813 5862])
+                                            ("error_handler" variable (:type ("ErrorHandler" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5868 5895])
+                                            ("parent" variable
+                                               (:pointer 1
+                                                :type ("TLM::BaseSlaveSocket" type
+                                                     (:template-specifier 
+                                                        ( ("AXI4::ProtocolType" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [5901 5950])
+                                            ("child" variable (:type ("SignalLevel::AXI4Slave" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5955 5984])
+                                            ("nb_transport_fw" function
+                                               (:arguments 
+                                                  ( ("trans" variable
+                                                       (:reference 1
+                                                        :type ("Payload" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6043 6058])
+                                                    ("phase" variable
+                                                       (:reference 1
+                                                        :type ("Phase" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6059 6072])
+                                                    ("delay" variable
+                                                       (:reference 1
+                                                        :type ("sc_core::sc_time" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6081 6105]))                                                  
+                                                :type ("tlm::tlm_sync_enum" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6008 6432])
+                                            ("bw" function
+                                               (:arguments 
+                                                  ( ("payload" variable
+                                                       (:reference 1
+                                                        :type ("Payload" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6436 6453])
+                                                    ("phase" variable
+                                                       (:reference 1
+                                                        :type ("Phase" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6454 6467]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [6428 6844])
+                                            ("public" label nil (reparse-symbol classsubparts) [6838 6845])
+                                            ("AXI4Slave" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("name" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6860 6884])
+                                                    ("protocol" variable (:type ("TLM::Protocol" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6885 6908]))                                                  
+                                                :type ("AXI4Slave" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6850 7001])
+                                            ("set_signal_interface" function
+                                               (:arguments 
+                                                  ( ("signal_interface" variable
+                                                       (:reference 1
+                                                        :type ("SignalLevel::AXI4SlaveInterface" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7086 7136]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7060 7200])
+                                            ("posedge" function (:type "void") (reparse-symbol classsubparts) [7205 7240])
+                                            ("negedge" function (:type "void") (reparse-symbol classsubparts) [7245 7280])
+                                            ("bind_to_systemc_parent" function
+                                               (:arguments 
+                                                  ( ("parent_" variable
+                                                       (:reference 1
+                                                        :type ("TLM::BaseSlaveSocket" type
+                                                             (:template-specifier 
+                                                                ( ("AXI4::ProtocolType" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [7362 7412]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7334 7480]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [5475 7483]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [266 7486]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [247 7488]))                  
+                :type "namespace")
+                nil [231 7490]))          
+      :file "SCAXI4.h"
+      :pointmax 7522
+      :fsize 7521
+      :lastmodtime '(23430 59389 313330 622000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ARM_MODELS_SCAXI4_H")
+          ("ARM_CATCH_TO_SC_REPORT_FATAL" (spp-arg-list ("MODEL") 1105 . 1112) . 
+              ((CATCH "catch" 1119 . 1124) (semantic-list "(std::exception& except)" 1125 . 1149) (semantic-list "{ \\
+        static const char* msg_type = \"/ARM/Models/\" MODEL; \\
+        exception_to_sc_report(msg_type, except); \\
+        throw; /* This makes function return checks happy. */ \\
+    }" 1156 . 1343)))
+          )
+))
+  :file "!o!release!cm_sysc!CIBuilds!SCI_master_274!PRODUCT!Linux64_GCC-4.8.3!rel_ext!include!ARM!Models!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

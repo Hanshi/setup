@@ -1,0 +1,62 @@
+;; Object Helios/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Helios/"
+  :tables
+  (list
+    (semanticdb-table "ICM_HeliosModel.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("common/cpp14.h" include nil nil [52 77])
+            ("cpus/Helios/ICM_HeliosModel.h" include nil nil [78 118])
+            ("icm/api/icm_registers.h" include nil nil [119 153])
+            ("iostream" include (:system-flag t) nil [155 174])
+            ("ICM_HeliosModel" function
+               (:constructor-flag t
+                :parent "ICM_HeliosModel"
+                :arguments 
+                  ( ("cycle_model" variable
+                       (:pointer 1
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [209 237]))                  
+                :type ("ICM_HeliosModel" type (:type "class") nil nil))
+                nil [176 374])
+            ("create_child_model" function
+               (:parent "ICM_HeliosModel"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("icm_impl::ICMModel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [448 475]))                  
+                :type ("std::unique_ptr" type
+                     (:template-specifier 
+                        ( ("icm_impl::ICMModel" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [376 612])
+            ("create_debug_controller" function
+               (:parent "ICM_HeliosModel"
+                :arguments 
+                  ( ("component_name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [785 819])
+                    ("hdl_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [904 932]))                  
+                :type ("std::unique_ptr" type
+                     (:template-specifier 
+                        ( ("icm_impl::DebugController" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [701 1114]))          
+      :file "ICM_HeliosModel.cpp"
+      :pointmax 1116
+      :fsize 1115
+      :lastmodtime '(23088 1499 930953 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!src!cpus!Helios!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

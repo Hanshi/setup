@@ -1,0 +1,29 @@
+;; Object Breakpoints/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Breakpoints/"
+  :tables
+  (list
+    (semanticdb-table "breakpoints.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("elf" variable (:type "int") nil [48 52])
+            ("init_regs" variable
+               (:default-value "0x0000018c"
+                :type "int")
+                nil [53 80])
+            ("init_neon_regs" variable
+               (:default-value "0x000001c8"
+                :type "int")
+                nil [81 113])
+            ("test" variable
+               (:default-value "0x00000310"
+                :type "int")
+                nil [114 136]))          
+      :file "breakpoints.h"
+      :pointmax 137
+      :fsize 136
+      :lastmodtime '(22980 7707 692767 0)
+      :unmatched-syntax '((punctuation 47 . 48) (symbol 43 . 47) (punctuation 42 . 43) (symbol 39 . 42) (punctuation 38 . 39) (symbol 33 . 38) (punctuation 32 . 33) (symbol 23 . 32) (punctuation 22 . 23) (symbol 13 . 22) (punctuation 11 . 12) (punctuation 9 . 10) (symbol 5 . 9) (INT 1 . 4))))
+  :file "!home!hanlei01!ModelKits!trunk!test_result_Kite_bp!gcc483!test!cpus!Kite!Simulation!Breakpoints!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

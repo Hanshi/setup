@@ -1,0 +1,66 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++" "-g" "-O0" "-DSC_INCLUDE_DYNAMIC_PROCESSES" "-Wall" "-Wextra" "-Werror" "-Wno-unused-parameter" "-DGENERATE_SLAVE_PORTS=1" "-std=c++11")) nil [88 214])
+            ("SYSTEMC_INC" variable (:default-value ("$(SYSTEMC_HOME)/include/")) nil [249 288])
+            ("SYSTEMC_LIB" variable (:default-value ("$(SYSTEMC_HOME)/lib-linux64/")) nil [288 331])
+            ("CCI500_DIR" variable (:default-value ("./MODELS/PL422/$(MODEL_CONFIG)/gcc/SystemC")) nil [331 387])
+            ("$(CM_SYSC_HOME)/makefiles/cm_sysc_common.mak" include nil nil [431 484])
+            ("system_test" function (:arguments ("system_test.o" "CCI500ResetImp.o")) nil [485 801])
+            ("CCI500ResetImp.o" function (:arguments ("$(CCI500_DIR)/CCI500ResetImp.cpp")) nil [804 987])
+            ("system_test.o" function (:arguments ("system_test.cpp")) nil [988 1151])
+            ("clean" function nil nil [1153 1184]))          
+      :file "Makefile"
+      :pointmax 1186
+      :fsize 1185
+      :lastmodtime '(22793 9975 482881 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("models/Memory.h" include nil nil [22 48])
+            ("models/TrafficGenerator.h" include nil nil [49 85])
+            ("models/Monitor.h" include nil nil [86 113])
+            ("CCI500Imp.h" include nil nil [114 136])
+            ("ARM::AXI4" using (:type ("ARM::AXI4" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [137 163])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1790 1814])
+            ("ARM::Models" using (:type ("ARM::Models" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1815 1843])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1857 1866])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1867 1880]))                  
+                :type "int")
+                nil [1845 6563]))          
+      :file "system_test.cpp"
+      :pointmax 6564
+      :fsize 6563
+      :lastmodtime '(22796 54265 510925 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PAYLOAD_SIZE" . ((symbol "SIZE_16" 3760 . 3767)))
+          ("BURST_TYPE" . ((symbol "BURST_INCR" 3728 . 3738)))
+          ("PAYLOAD_LEN" . ((number "3" 3707 . 3708)))
+          )
+))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!primecells!PL422!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

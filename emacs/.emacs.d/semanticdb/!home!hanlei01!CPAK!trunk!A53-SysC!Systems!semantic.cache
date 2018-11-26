@@ -1,0 +1,74 @@
+;; Object Systems/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Systems/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/RAMBlock.h" include nil nil [831 859])
+            ("models/SimpleBus.h" include nil nil [860 889])
+            ("models/BasicUART.h" include nil nil [890 919])
+            ("models/ElfLoader.h" include nil nil [920 949])
+            ("libCORTEXA53_32KL1_128KL2_FPU_Axi3.tlm.h" include nil nil [950 1001])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [1002 1048])
+            ("../perf_common.h" include nil nil [1049 1076])
+            ("iostream" include (:system-flag t) nil [1078 1097])
+            ("scx/scx.h" include (:system-flag t) nil [1098 1118])
+            ("scx/scx_signal_sizer.h" include (:system-flag t) nil [1119 1152])
+            ("scx_simcontroller.cpp" include (:system-flag t) nil [1153 1185])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1186 1222])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1223 1256])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1258 1282])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1298 1307])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1308 1321]))                  
+                :type "int")
+                nil [1286 4553]))          
+      :file "system_test.cpp"
+      :pointmax 4554
+      :fsize 4553
+      :lastmodtime '(23285 59534 13485 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("SystemCMisc2_DIR" variable (:default-value ("../MODELS/SystemCMisc/gcc483")) nil [1 47])
+            ("MODELS" variable (:default-value ("A53_1CPU_32KL1_128KL2_FPU_AXI3")) nil [47 85])
+            ("CONNECTION" variable (:default-value ("tlm")) nil [85 100])
+            ("A53_1CPU_32KL1_128KL2_FPU_AXI3_DIR" variable (:default-value ("../MODELS/CortexA53_1CPU/$(CM_PLATFORM)/SystemC")) nil [100 183])
+            ("LDFLAGS" variable (:default-value ("../MODELS/CortexA53_1CPU/gcc483/SystemC/univentUtil/lib/ca53_tarmac_dpi.so")) nil [183 266])
+            ("CXX" variable (:default-value ("g++" "-DSC_INCLUDE_DYNAMIC_PROCESSES" "-Wall" "-Wextra" "-Werror" "-Wno-return-type" "-Wno-format-contains-nul" "-Wno-unused-parameter" "-Wno-unused-variable" "-Wno-unused-function" "-Wno-reorder" "-std=c++11" "-DNUM_CPUS=$(NUM_CPUS)")) nil [630 844])
+            ("CM_SYSC_HOME" variable (:default-value ("../MODELS/SystemCMisc/$(CM_PLATFORM)")) nil [925 975])
+            ("TARMAC_DECODE_BIN" variable (:default-value ("$(wildcard $(subst lib,bin,$(dir $(filter %_tarmac_dpi.so,$(LDFLAGS))))*_tarmac_decode)")) nil [996 1103])
+            ("$(1)" function (:arguments ("=.icm")) nil [1126 1145])
+            ("$(1)" function (:arguments ("=icm_runtime")) nil [1145 1172])
+            ("CFLAGS" variable (:default-value ("-I." "-I$(SYSTEMC_INC)" "-I$(CARBON_HOME)/include" "$(CM_SYSC_CXXFLAGS)")) nil [2151 2247])
+            ("LDFLAGS" variable (:default-value ("$(FM_LIB)" "-L$(CARBON_HOME)/Linux64/lib/gcc/shared" "-lcarbon5" "-L$(SYSTEMC_LIB)" "-lsystemc" "-lpthread" "-ldl" "-lz")) nil [2248 2394])
+            ("MODEL_OBJS" variable (:default-value ("$(patsubst %.cpp,%.o,$(MODEL_SRCS))")) nil [2473 2520])
+            (".PHONY" function (:arguments ("all" "clean" "system" "run")) nil [2936 2965])
+            ("all" function (:arguments ("system")) nil [2966 2978])
+            ("system" function (:arguments ("system_test")) nil [2979 2999])
+            ("check-runtime-env" function nil nil [3000 3019])
+            ("run" function (:arguments ("system")) nil [3319 3414])
+            ("system_test" function (:arguments ("system_test.o" "$(MODEL_OBJS)")) nil [3415 3487])
+            ("system_test.o" function (:arguments ("system_test.cpp")) nil [3488 3565])
+            ("%.o" function (:arguments ("%.cpp")) nil [3566 3623])
+            ("clean" function nil nil [3624 3691]))          
+      :file "Makefile"
+      :pointmax 3692
+      :fsize 3691
+      :lastmodtime '(23275 22029 852681 0)
+      :unmatched-syntax '((shell-command 3050 . 3311) (bol 3049 . 3049) (ENDIF 2882 . 2887) (bol 2882 . 2882) (shell-command 2870 . 2881) (bol 2869 . 2869) (symbol 2833 . 2848) (punctuation 2832 . 2833) (punctuation 2831 . 2832) (symbol 2825 . 2831) (bol 2825 . 2825) (symbol 2823 . 2824) (punctuation 2822 . 2823) (punctuation 2821 . 2822) (symbol 2816 . 2821) (bol 2816 . 2816) (symbol 2814 . 2815) (punctuation 2813 . 2814) (punctuation 2812 . 2813) (symbol 2804 . 2812) (bol 2804 . 2804) (punctuation 2795 . 2796) (symbol 2779 . 2795) (bol 2775 . 2775) (semantic-list 2764 . 2769) (punctuation 2763 . 2764) (symbol 2760 . 2763) (punctuation 2759 . 2760) (symbol 2743 . 2759) (bol 2739 . 2739) (semantic-list 2438 . 2466) (punctuation 2437 . 2438) (punctuation 2436 . 2437) (punctuation 2435 . 2436) (symbol 2425 . 2435) (bol 2421 . 2421) (symbol 2120 . 2149) (semantic-list 2106 . 2120) (punctuation 2105 . 2106) (symbol 2096 . 2104) (bol 2096 . 2096) (semantic-list 2029 . 2094) (punctuation 2028 . 2029) (bol 2028 . 2028) (symbol 2021 . 2026) (bol 2021 . 2021) (symbol 2012 . 2020) (semantic-list 2002 . 2012) (punctuation 2001 . 2002) (punctuation 2000 . 2001) (symbol 1998 . 2000) (semantic-list 1987 . 1997) (punctuation 1986 . 1987) (punctuation 1985 . 1986) (symbol 1983 . 1985) (punctuation 1981 . 1982) (punctuation 1980 . 1981) (symbol 1974 . 1980) (bol 1972 . 1972) (semantic-list 1950 . 1971) (punctuation 1949 . 1950) (punctuation 1948 . 1949) (semantic-list 1909 . 1947) (punctuation 1908 . 1909) (punctuation 1907 . 1908) (symbol 1902 . 1906) (semantic-list 1892 . 1902) (punctuation 1891 . 1892) (punctuation 1890 . 1891) (symbol 1888 . 1890) (punctuation 1886 . 1887) (punctuation 1885 . 1886) (symbol 1878 . 1885) (bol 1876 . 1876) (semantic-list 1839 . 1875) (punctuation 1838 . 1839) (punctuation 1837 . 1838) (punctuation 1835 . 1836) (punctuation 1834 . 1835) (symbol 1824 . 1834) (bol 1822 . 1822) (ENDIF 1816 . 1821) (bol 1814 . 1814) (semantic-list 1796 . 1813) (punctuation 1795 . 1796) (punctuation 1794 . 1795) (punctuation 1793 . 1794) (punctuation 1792 . 1793) (symbol 1785 . 1792) (bol 1781 . 1781) (semantic-list 1727 . 1780) (punctuation 1726 . 1727) (punctuation 1725 . 1726) (punctuation 1723 . 1724) (punctuation 1722 . 1723) (symbol 1712 . 1722) (bol 1708 . 1708) (semantic-list 1653 . 1707) (punctuation 1652 . 1653) (punctuation 1651 . 1652) (punctuation 1649 . 1650) (punctuation 1648 . 1649) (symbol 1638 . 1648) (bol 1634 . 1634) (semantic-list 1613 . 1633) (IFEQ 1608 . 1612) (bol 1606 . 1606) (semantic-list 1548 . 1605) (punctuation 1547 . 1548) (punctuation 1546 . 1547) (punctuation 1544 . 1545) (punctuation 1543 . 1544) (symbol 1533 . 1543) (bol 1531 . 1531) (ENDIF 1523 . 1528) (bol 1521 . 1521) (punctuation 1519 . 1520) (punctuation 1518 . 1519) (symbol 1509 . 1518) (semantic-list 1506 . 1509) (punctuation 1505 . 1506) (bol 1501 . 1501) (punctuation 1499 . 1500) (punctuation 1498 . 1499) (symbol 1490 . 1498) (semantic-list 1487 . 1490) (punctuation 1486 . 1487) (bol 1482 . 1482) (semantic-list 1395 . 1481) (punctuation 1394 . 1395) (punctuation 1393 . 1394) (punctuation 1392 . 1393) (punctuation 1391 . 1392) (symbol 1381 . 1391) (semantic-list 1378 . 1381) (punctuation 1377 . 1378) (bol 1373 . 1373) (bol 1324 . 1324) (semantic-list 1302 . 1323) (IFEQ 1297 . 1301) (bol 1295 . 1295) (semantic-list 1192 . 1294) (punctuation 1191 . 1192) (punctuation 1190 . 1191) (punctuation 1189 . 1190) (punctuation 1188 . 1189) (symbol 1178 . 1188) (semantic-list 1175 . 1178) (punctuation 1174 . 1175) (bol 1172 . 1172) (symbol 1111 . 1125) (symbol 1104 . 1110) (bol 1104 . 1104) (symbol 988 . 994) (punctuation 987 . 988) (punctuation 986 . 987) (symbol 975 . 986) (bol 975 . 975) (symbol 911 . 924) (semantic-list 897 . 911) (punctuation 896 . 897) (punctuation 895 . 896) (punctuation 894 . 895) (symbol 883 . 894) (bol 883 . 883) (symbol 873 . 882) (semantic-list 859 . 873) (punctuation 858 . 859) (punctuation 857 . 858) (punctuation 856 . 857) (symbol 845 . 856) (bol 845 . 845))))
+  :file "!home!hanlei01!CPAK!trunk!A53-SysC!Systems!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

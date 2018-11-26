@@ -1,0 +1,16 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "createSysCMakefiles.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "createSysCMakefiles.py"
+      :pointmax 20702
+      :fsize 20701
+      :lastmodtime '(23479 53777 529260 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!real_trunk!modelkits!Scripts!cpus!FCM!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

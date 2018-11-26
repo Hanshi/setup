@@ -1,0 +1,788 @@
+;; Object peerapi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "peerapi/"
+  :tables
+  (list
+    (semanticdb-table "MxSaveRestoreArch.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("eslapi/CASISaveRestoreArch.h" include nil nil [454 493])
+            ("MxComponentCompatibility.h" include nil nil [559 596])
+            ("MxSaveRestoreArchXML.h" include nil nil [619 652])
+            ("CADI.h" include nil nil [653 670])
+            ("SaveRestoreMemory.h" include nil nil [671 701])
+            ("MxPrivateTypes.h" include nil nil [702 729])
+            ("MxSaveRestoreTrace.h" include nil nil [730 761])
+            ("set" include (:system-flag t) nil [763 777])
+            ("sstream" include (:system-flag t) nil [778 796])
+            ("Carbon::SoCDSaveRestore" using (:type ("Carbon::SoCDSaveRestore" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [798 838])
+            ("eslapi" type
+               (:members 
+                  ( ("CASISaveRestoreArch" function
+                       (:constructor-flag t
+                        :parent "CASISaveRestoreArch"
+                        :type ("CASISaveRestoreArch" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [860 927])
+                    ("saveData" function
+                       (:parent "CASISaveRestoreArch"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("CASIODataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [965 987]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [930 1306])
+                    ("saveDataArch" function
+                       (:parent "CASISaveRestoreArch"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("CASIODataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1348 1370]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1309 2005])
+                    ("restoreData" function
+                       (:parent "CASISaveRestoreArch"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("CASIIDataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2046 2068]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2008 2638])
+                    ("restoreDataArch" function
+                       (:parent "CASISaveRestoreArch"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("CASIIDataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2683 2705]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2641 3170])
+                    ("saveRegister" function
+                       (:parent "CASISaveRestoreArch"
+                        :arguments 
+                          ( ("group_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3212 3235])
+                            ("reg_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3270 3291])
+                            ("nbytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3326 3342])
+                            ("value" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3377 3398]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3173 3505])
+                    ("saveMemoryRange" function
+                       (:parent "CASISaveRestoreArch"
+                        :arguments 
+                          ( ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3550 3564])
+                            ("nbytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3602 3618])
+                            ("value" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3656 3677]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3508 3771])
+                    ("CASISaveRestoreArchDefaultCallback" function
+                       (:constructor-flag t
+                        :parent "CASISaveRestoreArchDefaultCallback"
+                        :arguments 
+                          ( ("cadi" variable
+                               (:pointer 1
+                                :type ("CADI" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3845 3856])
+                            ("ranges" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::list" type
+                                     (:template-specifier 
+                                        ( ("CASIMemoryRange" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3861 3902]))                          
+                        :type ("CASISaveRestoreArchDefaultCallback" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3774 4017])
+                    ("CASISaveRestoreArchDefaultCallback" function
+                       (:destructor-flag t
+                        :parent "CASISaveRestoreArchDefaultCallback"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4020 4130])
+                    ("saveRegisters" function
+                       (:parent "CASISaveRestoreArchDefaultCallback"
+                        :arguments 
+                          ( ("regmap" variable
+                               (:pointer 1
+                                :type ("CASIRegMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4188 4207])
+                            ("action" variable
+                               (:pointer 1
+                                :type ("CASISaveRestoreArchActionIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4212 4248]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [4133 4881])
+                    ("readRegister" function
+                       (:parent "CASISaveRestoreArchDefaultCallback"
+                        :arguments 
+                          ( ("regInfo" variable
+                               (:pointer 1
+                                :type ("CADIRegInfo_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4938 4961])
+                            ("nbytes" variable
+                               (:reference 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4966 4983])
+                            ("" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4988 4997])
+                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4998 5004]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [4884 6849])
+                    ("saveMemory" function
+                       (:parent "CASISaveRestoreArchDefaultCallback"
+                        :arguments 
+                          ( ("action" variable
+                               (:pointer 1
+                                :type ("CASISaveRestoreArchActionIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6904 6940]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [6852 7395])
+                    ("readMemoryRange" function
+                       (:parent "CASISaveRestoreArchDefaultCallback"
+                        :arguments 
+                          ( ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7455 7469])
+                            ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7474 7488])
+                            ("" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7493 7502])
+                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7503 7509]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [7398 9118])
+                    ("restoreRegisters" function
+                       (:parent "CASISaveRestoreArchDefaultCallback"
+                        :arguments 
+                          ( ("regMap" variable
+                               (:pointer 1
+                                :type ("CASIRegMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9179 9198])
+                            ("regValueMap" variable
+                               (:pointer 1
+                                :type ("CASIRegValueMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9203 9232]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [9121 10152])
+                    ("writeRegister" function
+                       (:parent "CASISaveRestoreArchDefaultCallback"
+                        :arguments 
+                          ( ("regInfo" variable
+                               (:pointer 1
+                                :type ("CADIRegInfo_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10210 10233])
+                            ("nbytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10238 10254])
+                            ("value" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10259 10280]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [10155 11610])
+                    ("restoreMemory" function
+                       (:parent "CASISaveRestoreArchDefaultCallback"
+                        :arguments 
+                          ( ("memoryValueMap" variable
+                               (:pointer 1
+                                :type ("CASIMemoryValueMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11668 11703]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [11613 12132])
+                    ("writeMemoryRange" function
+                       (:parent "CASISaveRestoreArchDefaultCallback"
+                        :arguments 
+                          ( ("address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12193 12210])
+                            ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12215 12229])
+                            ("value" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12234 12255]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [12135 13846])
+                    ("message" function
+                       (:parent "CASISaveRestoreArchDefaultCallback"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13898 13917])
+                            ("" variable (:type ("CASIMessageType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13918 13934]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [13849 13938]))                  
+                :type "namespace")
+                nil [840 13942]))          
+      :file "MxSaveRestoreArch.cpp"
+      :pointmax 13968
+      :fsize 13967
+      :lastmodtime '(22823 13596 290129 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "MxComponentCompatibility.h"
+      :file "MxComponentCompatibility.h"
+      :fsize 908
+      :lastmodtime '(22617 57201 574894 0))
+    (semanticdb-table "MxSaveRestoreArchXML.h"
+      :file "MxSaveRestoreArchXML.h"
+      :fsize 4197
+      :lastmodtime '(22617 57201 708894 0))
+    (semanticdb-table "SaveRestoreMemory.h"
+      :file "SaveRestoreMemory.h"
+      :fsize 3462
+      :lastmodtime '(22617 57201 769894 0))
+    (semanticdb-table "MxSaveRestoreTrace.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__MX_SAVE_RESTORE_TRACE_H__" variable (:constant-flag t) nil [1041 1068])
+            ("string" include (:system-flag t) nil [1070 1087])
+            ("iostream" include (:system-flag t) nil [1088 1107])
+            ("fstream" include (:system-flag t) nil [1108 1126])
+            ("hostconf/xstdint.h" include nil nil [1127 1156])
+            ("MxSaveRestoreTrace" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1185 1192])
+                    ("chkptDump_Enabled" function
+                       (:typemodifiers ("inline" "static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1563 1640])
+                    ("chkptDump_Active" function
+                       (:typemodifiers ("inline" "static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1643 1743])
+                    ("chkptDump_deActivate" function
+                       (:typemodifiers ("inline" "static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1746 1836])
+                    ("chkptDump_reActivate" function
+                       (:typemodifiers ("inline" "static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1839 1928])
+                    ("chkptDump_hasMem" function
+                       (:typemodifiers ("inline" "static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1931 2013])
+                    ("chkptDump_Write" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2162 2171]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2134 2172])
+                    ("chkptDump_Write" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2203 2212]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2175 2213])
+                    ("chkptDump_Write" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [2244 2250]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2216 2251])
+                    ("chkptDump_Write" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [2282 2289]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2254 2290])
+                    ("chkptDump_Write" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2321 2333]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2293 2334])
+                    ("chkptDump_WriteArchXML" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("c" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2522 2536])
+                            ("len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2537 2550]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2487 2551])
+                    ("memory_Dump" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2579 2593])
+                            ("nbytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2594 2610])
+                            ("value" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2611 2632]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2555 2633])
+                    ("chkptDump_Start" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("chkptname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2787 2809]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2759 2810])
+                    ("chkptDump_Finish" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2855 2886])
+                    ("restoreLog_Enabled" function
+                       (:typemodifiers ("inline" "static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3111 3190])
+                    ("restoreLog" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3216 3237]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3193 3238])
+                    ("restoreLog_Start" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3241 3272])
+                    ("restoreLog_Finish" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3275 3307])
+                    ("MxSaveRestoreTrace" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("MxSaveRestoreTrace" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3374 3395])
+                    ("MxSaveRestoreTrace" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3398 3420])
+                    ("private" label nil (reparse-symbol classsubparts) [3422 3430])
+                    ("enableT" type
+                       (:members 
+                          ( ("chkptDump" variable (:type "bool") (reparse-symbol classsubparts) [3582 3597])
+                            ("chkptActive" variable (:type "bool") (reparse-symbol classsubparts) [3648 3665])
+                            ("chkptDumpHasMem" variable (:type "bool") (reparse-symbol classsubparts) [3708 3729])
+                            ("restoreLog" variable (:type "bool") (reparse-symbol classsubparts) [3780 3796])
+                            ("enableT" function
+                               (:constructor-flag t
+                                :type ("enableT" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [3833 3937]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [3559 3942])
+                    ("init" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("enableT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3962 3977]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3945 3978])
+                    ("sEnables" variable
+                       (:typemodifiers ("static")
+                        :type ("enableT" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3982 4006])
+                    ("sChkptDump" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("std::ofstream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4009 4042])
+                    ("sRestoreLog" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("std::ofstream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4045 4079])
+                    ("sMemDump" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("std::ofstream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4082 4113]))                  
+                :type "class")
+                nil [1158 4116]))          
+      :file "MxSaveRestoreTrace.h"
+      :pointmax 4126
+      :fsize 4125
+      :lastmodtime '(22617 57201 730898 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__MX_SAVE_RESTORE_TRACE_H__")
+          )
+)
+    (semanticdb-table "MxSaveRestore.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("eslapi/CASISaveRestore.h" include nil nil [582 617])
+            ("sys/types.h" include (:system-flag t) nil [619 641])
+            ("sys/stat.h" include (:system-flag t) nil [642 663])
+            ("stdarg.h" include (:system-flag t) nil [664 683])
+            ("stdio.h" include (:system-flag t) nil [684 702])
+            ("string" include (:system-flag t) nil [703 720])
+            ("vector" include (:system-flag t) nil [721 738])
+            ("sstream" include (:system-flag t) nil [739 757])
+            ("cstdlib" include (:system-flag t) nil [758 776])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [777 797])
+            ("MxComponentCompatibility.h" include nil nil [863 900])
+            ("MxSaveRestoreArchXML.h" include nil nil [923 956])
+            ("MxSaveRestoreTrace.h" include nil nil [957 988])
+            ("eslapi" type
+               (:members 
+                  ( ("ObtainInterface" function
+                       (:pointer 1
+                        :parent "CASISaveRestore"
+                        :arguments 
+                          ( ("ifName" variable (:type ("if_name_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1125 1145])
+                            ("minRev" variable (:type ("if_rev_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1146 1166])
+                            ("actualRev" variable
+                               (:pointer 1
+                                :type ("if_rev_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1167 1190]))                          
+                        :type ("CAInterface" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1078 1388])
+                    ("initStream" function
+                       (:parent "CASISaveRestore"
+                        :arguments 
+                          ( ("component" variable
+                               (:pointer 1
+                                :type ("CASIModule" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1424 1447]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1390 1480])
+                    ("verifyComponentStart" function
+                       (:arguments 
+                          ( ("component" variable
+                               (:pointer 1
+                                :type ("CASIModuleIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1509 1533])
+                            ("data" variable
+                               (:reference 1
+                                :type ("CASIIDataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1534 1556]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1483 1867])
+                    ("verifyComponentEnd" function
+                       (:arguments 
+                          ( ("component" variable
+                               (:pointer 1
+                                :type ("CASIModuleIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1894 1918])
+                            ("data" variable
+                               (:reference 1
+                                :type ("CASIIDataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1919 1941]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1870 2748])
+                    ("restore" function
+                       (:parent "CASISaveRestore"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("CASIIDataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2781 2804]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2750 5928])
+                    ("save" function
+                       (:parent "CASISaveRestore"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("CASIODataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5958 5981]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [5930 7894])
+                    ("startDataChunk" function
+                       (:parent "CASISaveRestore"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("CASIODataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7934 7957]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7896 8142])
+                    ("endDataChunk" function
+                       (:parent "CASISaveRestore"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("CASIODataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8180 8203]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8144 8384])
+                    ("useableDataChunk" function
+                       (:parent "CASISaveRestore"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("CASIIDataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8426 8449]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [8386 8906])
+                    ("verifyEnd" function
+                       (:parent "CASISaveRestore"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("CASIIDataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8941 8964]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [8908 9426]))                  
+                :type "namespace")
+                nil [990 9429]))          
+      :file "MxSaveRestore.cpp"
+      :pointmax 9456
+      :fsize 9449
+      :lastmodtime '(22823 13578 456107 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "MXCFile.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MXCFile.h" include nil nil [446 466])
+            ("eslapi/CASIModuleIF.h" include nil nil [467 499])
+            ("../peerapi/MxSaveRestoreUtility.h" include nil nil [500 544])
+            ("MxLicenseAPI.h" include nil nil [545 570])
+            ("libxml/parser.h" include nil nil [571 597])
+            ("libxml/tree.h" include nil nil [598 622])
+            ("sstream" include (:system-flag t) nil [623 641])
+            ("iostream" include (:system-flag t) nil [642 661])
+            ("fstream" include (:system-flag t) nil [662 680])
+            ("CADITypes.h" include nil nil [682 704])
+            ("CASIGlobal.h" include nil nil [705 728])
+            ("MxPrivateTypes.h" include nil nil [729 756])
+            ("MxSaveRestoreTrace.h" include nil nil [757 788])
+            ("MxScriptAPI.h" include nil nil [789 813])
+            ("WarmCacheIF.h" include nil nil [814 838])
+            ("MxSaveRestoreArchXML.h" include nil nil [839 872])
+            ("Carbon::WarmCache" using (:type ("Carbon::WarmCache" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [874 908])
+            ("POCO_NO_UNWINDOWS" variable (:constant-flag t) nil [918 935])
+            ("Poco/Path.h" include nil nil [936 958])
+            ("Poco/Zip/Decompress.h" include nil nil [959 991])
+            ("Poco/Zip/Compress.h" include nil nil [992 1022])
+            ("Poco/Zip/ZipCommon.h" include nil nil [1023 1054])
+            ("Poco/File.h" include nil nil [1055 1077])
+            ("boost/filesystem.hpp" include (:system-flag t) nil [1078 1109])
+            ("ADD_TO_ZIPFILE" variable (:constant-flag t) nil [1119 1133])
+            ("MXCFile" function
+               (:constructor-flag t
+                :parent "MXCFile"
+                :arguments 
+                  ( ("messenger" variable
+                       (:pointer 1
+                        :type ("eslapi::MxOutputListener" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1486 1522]))                  
+                :type ("MXCFile" type (:type "class") nil nil))
+                nil [1469 1552])
+            ("MXCFile" function
+               (:destructor-flag t
+                :parent "MXCFile"
+                :type "void")
+                nil [1555 1578])
+            ("warmCache" function
+               (:parent "MXCFile"
+                :arguments 
+                  ( ("cacheFileName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1604 1632]))                  
+                :type "void")
+                nil [1580 5618])
+            ("cacheWarming" function
+               (:parent "MXCFile"
+                :arguments 
+                  ( ("checkPoint" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5648 5674]))                  
+                :type "bool")
+                nil [5620 6256])
+            ("restoreFile" function
+               (:parent "MXCFile"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6284 6305])
+                    ("top" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6306 6332]))                  
+                :type "bool")
+                nil [6258 12880])
+            ("restoreConstructStreamRecurse" function
+               (:parent "MXCFile"
+                :arguments 
+                  ( ("component" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12927 12959])
+                    ("data" variable
+                       (:reference 1
+                        :type ("eslapi::CASIODataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12964 12994])
+                    ("compXMLMap" variable
+                       (:reference 1
+                        :type ("StringStreamMap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12999 13027]))                  
+                :type "bool")
+                nil [12883 14859])
+            ("restoreConstructStream" function
+               (:parent "MXCFile"
+                :arguments 
+                  ( ("component" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14899 14931])
+                    ("type" variable (:type ("eslapi::CASISaveRestoreStreamType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14969 15008])
+                    ("data" variable
+                       (:reference 1
+                        :type ("eslapi::CASIODataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15046 15076])
+                    ("comp_node" variable (:type ("xmlNodePtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15114 15135]))                  
+                :type "bool")
+                nil [14862 16593])
+            ("saveCache" function
+               (:parent "MXCFile"
+                :arguments 
+                  ( ("component" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16691 16723]))                  
+                :type "void")
+                nil [16667 17349])
+            ("saveFile" function
+               (:parent "MXCFile"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17374 17395])
+                    ("top" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17396 17422]))                  
+                :type "bool")
+                nil [17351 21402])
+            ("saveAllComponents" function
+               (:parent "MXCFile"
+                :arguments 
+                  ( ("top" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21437 21463])
+                    ("parent" variable (:type ("xmlNodePtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21464 21482])
+                    ("contentType" variable
+                       (:pointer 1
+                        :type ("ContentType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21483 21508]))                  
+                :type "bool")
+                nil [21405 22875])
+            ("saveComponentRecurse" function
+               (:parent "MXCFile"
+                :arguments 
+                  ( ("component" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22913 22945])
+                    ("data" variable
+                       (:reference 1
+                        :type ("eslapi::CASIIDataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22981 23011])
+                    ("parent_node" variable (:type ("xmlNodePtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23047 23070])
+                    ("contentType" variable
+                       (:pointer 1
+                        :type ("ContentType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23106 23131]))                  
+                :type "bool")
+                nil [22878 26259])
+            ("getInstanceID" function
+               (:parent "MXCFile"
+                :arguments 
+                  ( ("component" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26297 26329])
+                    ("checkFastModel" variable (:type "bool") (reparse-symbol arg-sub-list) [26330 26350]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [26262 27000]))          
+      :file "MXCFile.cpp"
+      :pointmax 27001
+      :fsize 27000
+      :lastmodtime '(22617 57201 554895 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ADD_TO_ZIPFILE" (spp-arg-list ("z" "f") 1133 . 1138) . ((semantic-list "{ \\
+    Poco::File pf(f); \\
+    if (pf.exists()) \\
+    { \\
+      Poco::Path pp(f); \\
+      z.addFile(f,pp.getFileName(),Poco::Zip::ZipCommon::CM_STORE,Poco::Zip::ZipCommon::CL_NORMAL); \\
+    } \\
+  }" 1143 . 1341)))
+          ("POCO_NO_UNWINDOWS")
+          )
+)
+    (semanticdb-table "MXCFile.h"
+      :file "MXCFile.h"
+      :fsize 4866
+      :lastmodtime '(22617 57201 557895 0))
+    (semanticdb-table "MxSaveRestoreUtility.h"
+      :file "MxSaveRestoreUtility.h"
+      :fsize 2787
+      :lastmodtime '(22617 57201 735895 0))
+    (semanticdb-table "WarmCacheIF.h"
+      :file "WarmCacheIF.h"
+      :fsize 1351
+      :lastmodtime '(22617 57201 783896 0)))
+  :file "!home!hanlei01!Source!socdesigner!MaxSim!peerapi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

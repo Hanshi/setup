@@ -1,0 +1,31 @@
+;; Object Applications/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Applications/"
+  :tables
+  (list
+
+    (semanticdb-table "makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("AS" variable (:default-value ("armasm")) nil [1323 1335])
+            ("CC" variable (:default-value ("armcc")) nil [1335 1346])
+            ("LD" variable (:default-value ("armlink")) nil [1346 1359])
+            ("all" function (:arguments ("$(TESTNAME).hs" "$(TESTNAME).disass")) nil [1423 1462])
+            ("$(TESTNAME)" function nil nil [1491 1581])
+            ("$(ASMOBJS)" function (:arguments ("%.o:" "%.s")) nil [1582 1647])
+            ("$(COBJS)" function (:arguments ("%.o:" "%.c")) nil [1648 1714])
+            ("$(TESTNAME)" function (:arguments ("$(ASMOBJS)" "$(COBJS)")) nil [1715 1828])
+            ("$(TESTNAME)" function (:arguments ("$(ASMOBJS)" "$(COBJS)")) nil [1715 1828])
+            ("$(TESTNAME)" function (:arguments ("$(TESTNAME).elf")) nil [1829 1888])
+            ("$(TESTNAME)" function (:arguments ("$(TESTNAME).elf")) nil [1889 1952])
+            ("image36.hex" function (:arguments ("$(TESTNAME).elf")) nil [1953 2009])
+            ("image68.hex" function (:arguments ("$(TESTNAME).elf" "$(TESTNAME).disass")) nil [2010 2085])
+            ("clean" function nil nil [2086 2224]))          
+      :file "makefile"
+      :pointmax 2225
+      :fsize 2224
+      :lastmodtime '(22981 1665 0 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!Kite!Applications!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

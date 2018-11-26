@@ -1,0 +1,114 @@
+;; Object SystemC_PMU/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC_PMU/"
+  :tables
+  (list
+    (semanticdb-table "pmu_control.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("PMU_TEST_CONTROL_DWT_H" variable (:constant-flag t) nil [786 808])
+            ("stdio.h" include (:system-flag t) nil [810 828])
+            ("UART_TUBE" variable (:constant-flag t) nil [838 847])
+            ("PMU_TEST_START" variable (:constant-flag t) nil [898 912])
+            ("PMU_TEST_FINISH" variable (:constant-flag t) nil [941 956])
+            ("DWTBASE" variable (:constant-flag t) nil [984 991])
+            ("DEMCR" variable (:constant-flag t) nil [1011 1016])
+            ("DWTCTRL" variable (:constant-flag t) nil [1063 1070])
+            ("CPICNT" variable (:constant-flag t) nil [1114 1120])
+            ("EXCCNT" variable (:constant-flag t) nil [1167 1173])
+            ("SLEEPCNT" variable (:constant-flag t) nil [1220 1228])
+            ("LSUCNT" variable (:constant-flag t) nil [1275 1281])
+            ("FOLDCNT" variable (:constant-flag t) nil [1328 1335])
+            ("TRCENA_BIT" variable (:constant-flag t) nil [1383 1393])
+            ("CPICNT_EN" variable (:constant-flag t) nil [1452 1461])
+            ("EXCCNT_EN" variable (:constant-flag t) nil [1482 1491])
+            ("SLEEPCNT_EN" variable (:constant-flag t) nil [1512 1523])
+            ("LSUCNT_EN" variable (:constant-flag t) nil [1544 1553])
+            ("FOLDCNT_EN" variable (:constant-flag t) nil [1574 1584])
+            ("PMU_TABLE_SIZE" variable
+               (:constant-flag t
+                :default-value "5"
+                :type "unsigned int")
+                nil [1598 1632])
+            ("DWT_NAMES" variable
+               (:pointer 1
+                :dereference 1
+                :constant-flag t
+                :default-value "{
+        \"id: 0xe0001008 name: CPICNT tolerance: 7\" ,
+        \"id: 0xe000100c name: EXCCNT tolerance: 5\" ,
+        \"id: 0xe0001010 name: SLEEPCNT tolerance: 5\" ,
+        \"id: 0xe0001014 name: LSUCNT tolerance: 5\" ,
+        \"id: 0xe0001018 name: FOLDCNT tolerance: 5\" 
+    }"
+                :type "char")
+                nil [1633 1941])
+            ("PMU_init" function (:type "void") nil [1969 2012])
+            ("PMU_Read_Reg" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [2196 2202]))                  
+                :type "unsigned int")
+                nil [2170 2500])
+            ("PMU_Reset" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2572 2577]))                  
+                :type "unsigned int")
+                nil [2549 2755])
+            ("PMU_Stop" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2811 2816]))                  
+                :type "unsigned int")
+                nil [2789 3009])
+            ("PMU_Metric" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [3093 3099]))                  
+                :type "char")
+                nil [3069 3128])
+            ("StartCounters" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3198 3203]))                  
+                :type "void")
+                nil [3179 3585])
+            ("PrintPMURegisters" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3652 3657]))                  
+                :type "void")
+                nil [3629 4065])
+            ("StopCounters" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4159 4164]))                  
+                :type "void")
+                nil [4141 4417]))          
+      :file "pmu_control.h"
+      :pointmax 4425
+      :fsize 4424
+      :lastmodtime '(23304 11045 145032 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CPICNT_EN" . ((semantic-list "(1UL << 17)" 1462 . 1473)))
+          ("UART_TUBE" . ((punctuation "*" 848 . 849) (semantic-list "((volatile unsigned char *) 0xa8000000)" 849 . 888)))
+          ("DEMCR" . ((semantic-list "(*((volatile unsigned *) 0xE000EDFC))" 1017 . 1054)))
+          ("EXCCNT" . ((semantic-list "(*((volatile unsigned *) 0xe000100c))" 1174 . 1211)))
+          ("LSUCNT" . ((semantic-list "(*((volatile unsigned *) 0xe0001014))" 1282 . 1319)))
+          ("CPICNT" . ((semantic-list "(*((volatile unsigned *) 0xe0001008))" 1121 . 1158)))
+          ("TRCENA_BIT" . ((number "0x01000000" 1394 . 1404)))
+          ("DWTBASE" . ((number "0xe0001000" 992 . 1002)))
+          ("SLEEPCNT_EN" . ((semantic-list "(1UL << 19)" 1524 . 1535)))
+          ("FOLDCNT_EN" . ((semantic-list "(1UL << 21)" 1585 . 1596)))
+          ("SLEEPCNT" . ((semantic-list "(*((volatile unsigned *) 0xe0001010))" 1229 . 1266)))
+          ("FOLDCNT" . ((semantic-list "(*((volatile unsigned *) 0xe0001018))" 1336 . 1373)))
+          ("PMU_TEST_CONTROL_DWT_H")
+          ("PMU_TEST_START" . 
+              ((symbol "StartCounters" 916 . 929) (semantic-list "()" 929 . 931) (punctuation ";" 931 . 932)))
+          ("EXCCNT_EN" . ((semantic-list "(1UL << 18)" 1492 . 1503)))
+          ("PMU_TEST_FINISH" . 
+              ((symbol "StopCounters" 959 . 971) (semantic-list "()" 971 . 973) (punctuation ";" 973 . 974)))
+          ("LSUCNT_EN" . ((semantic-list "(1UL << 20)" 1554 . 1565)))
+          ("DWTCTRL" . ((semantic-list "(*((volatile unsigned *) DWTBASE))" 1071 . 1105)))
+          )
+))
+  :file "!o!work!natgom01!sandbox2!test!gcc483!test!cpus!CortexM7!Simulation!SystemC_PMU!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

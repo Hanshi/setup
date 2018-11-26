@@ -1,0 +1,794 @@
+;; Object AXI4Stream_S2T/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AXI4Stream_S2T/"
+  :tables
+  (list
+    (semanticdb-table "AXI4Stream_S2T.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("AXI4STREAM_S2T_H" variable (:constant-flag t) nil [34 50])
+            ("maxsimCompatibility.h" include nil nil [52 84])
+            ("AXI4StreamTransactionInfo.h" include nil nil [85 123])
+            ("xactors/arm/include/carbon_arm_adaptor.h" include nil nil [124 175])
+            ("map" include (:system-flag t) nil [177 191])
+            ("AXI4Stream_TLM.h" include nil nil [193 220])
+            ("ProtocolUtils.h" include nil nil [221 247])
+            ("CarbonSignalMasterPort" variable (:constant-flag t) nil [257 279])
+            ("CarbonXtorAdaptorToVhmPort" type
+               (:prototype t
+                :type "class")
+                nil [307 340])
+            ("carbon_arm_adaptor.h" include nil nil [341 372])
+            ("stdarg.h" include (:system-flag t) nil [374 393])
+            ("CarbonAdaptorBase.h" include nil nil [394 424])
+            ("ADAPTOR_BASE" variable (:constant-flag t) nil [433 445])
+            ("AXI4Stream_SS" type
+               (:prototype t
+                :type "class")
+                nil [507 527])
+            ("AXI4Stream_TM" type
+               (:prototype t
+                :type "class")
+                nil [528 548])
+            ("AXI4Stream_SM" type
+               (:typedef ("CarbonXtorAdaptorToVhmPort" type (:type "class") nil nil)
+                :type "typedef")
+                nil [550 595])
+            ("AXI4Stream_S2T" type
+               (:superclasses 
+                  ( ("CarbonAdaptorBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("AXI4Stream_TM" friend nil (reparse-symbol classsubparts) [683 709])
+                    ("public" label nil (reparse-symbol classsubparts) [712 719])
+                    ("axi4stream_tm" variable
+                       (:pointer 1
+                        :type ("AXI4Stream_TM" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [775 804])
+                    ("SIGNAL_SLAVE_DECL" variable (:constant-flag t) (reparse-symbol classsubparts) [814 831])
+                    ("tvalid_SSlave" variable
+                       (:pointer 1
+                        :type ("AXI4Stream_SS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [876 902])
+                    ("tstrb_SSlave" variable
+                       (:pointer 1
+                        :type ("AXI4Stream_SS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [905 931])
+                    ("tstrb1_SSlave" variable
+                       (:pointer 1
+                        :type ("AXI4Stream_SS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [934 961])
+                    ("tstrb2_SSlave" variable
+                       (:pointer 1
+                        :type ("AXI4Stream_SS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [964 991])
+                    ("tstrb3_SSlave" variable
+                       (:pointer 1
+                        :type ("AXI4Stream_SS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [994 1021])
+                    ("tkeep_SSlave" variable
+                       (:pointer 1
+                        :type ("AXI4Stream_SS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1024 1050])
+                    ("tlast_SSlave" variable
+                       (:pointer 1
+                        :type ("AXI4Stream_SS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1053 1079])
+                    ("tid_SSlave" variable
+                       (:pointer 1
+                        :type ("AXI4Stream_SS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1082 1108])
+                    ("tdest_SSlave" variable
+                       (:pointer 1
+                        :type ("AXI4Stream_SS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1111 1137])
+                    ("tuser_SSlave" variable
+                       (:pointer 1
+                        :type ("AXI4Stream_SS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1140 1166])
+                    ("tdata_SSlave" variable
+                       (:pointer 1
+                        :type ("AXI4Stream_SS" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1169 1195])
+                    ("SIGNAL_MASTER_DECL" variable (:constant-flag t) (reparse-symbol classsubparts) [1206 1224])
+                    ("tready_SMaster" variable
+                       (:pointer 1
+                        :type ("AXI4Stream_SM" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1270 1298])
+                    ("AXI4Stream_S2T" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("carbonComp" variable
+                               (:pointer 1
+                                :type ("sc_mx_module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1347 1372])
+                            ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1373 1392])
+                            ("compVersion" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1404 1430])
+                            ("carbonObj" variable
+                               (:pointer 2
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1442 1469])
+                            ("portFactory" variable
+                               (:pointer 1
+                                :type ("CarbonPortFactory" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1481 1512])
+                            ("combFunc" variable
+                               (:pointer 1
+                                :type ("CarbonCombFunction" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1524 1553]))                          
+                        :type ("AXI4Stream_S2T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1332 1554])
+                    ("AXI4Stream_S2T" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1557 1583])
+                    ("getName" function
+                       (:prototype-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1622 1639])
+                    ("setPortWidth" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1660 1677])
+                            ("bitWidth" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1678 1696]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1642 1697])
+                    ("setParameter" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1718 1737])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1738 1758]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1700 1759])
+                    ("getProperty" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("property" variable (:type ("eslapi::CASIPropertyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1782 1817]))                          
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1762 1818])
+                    ("init" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1821 1833])
+                    ("terminate" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1836 1853])
+                    ("update" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1856 1870])
+                    ("reset" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("level" variable (:type ("eslapi::CASIResetLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1884 1913])
+                            ("filelist" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("CASIFileMapIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1914 1944]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1873 1945])
+                    ("getOwner" function
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CASIModule" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1948 2002])
+                    ("getNumRegions" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2006 2026])
+                    ("getAddressRegions" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("start" variable
+                               (:pointer 1
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2052 2068])
+                            ("size" variable
+                               (:pointer 1
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2069 2084])
+                            ("name" variable
+                               (:pointer 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2085 2103]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2029 2104])
+                    ("sendDrive" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2108 2133])
+                    ("sendTDrive" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2136 2162])
+                    ("sendNotify" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2165 2191])
+                    ("forwardValid" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2195 2215])
+                    ("forwardReady" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2218 2238])
+                    ("saveData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("eslapi::CASIODataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2256 2284]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2242 2285])
+                    ("restoreData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("is" variable
+                               (:reference 1
+                                :type ("eslapi::CASIIDataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2305 2333]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2288 2334])
+                    ("tChanged" variable (:type "bool") (reparse-symbol classsubparts) [2338 2352])
+                    ("p_Data_Width" variable (:type "int") (reparse-symbol classsubparts) [2386 2403])
+                    ("p_User_Width" variable (:type "int") (reparse-symbol classsubparts) [2406 2423])
+                    ("p_useCosimConfig" variable (:type "bool") (reparse-symbol classsubparts) [2426 2448])
+                    ("private" label nil (reparse-symbol classsubparts) [2450 2458])
+                    ("initComplete" variable (:type "bool") (reparse-symbol classsubparts) [2461 2479])
+                    ("p_enableDbgMsg" variable (:type "bool") (reparse-symbol classsubparts) [2482 2502])
+                    ("owner" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CASIModule" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2506 2530])
+                    ("mProtocolUtil" variable (:type ("ProtocolUtils" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2533 2561])
+                    ("mCombFunc" variable
+                       (:pointer 1
+                        :type ("CarbonCombFunction" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2564 2594]))                  
+                :type "class")
+                nil [597 2597]))          
+      :file "AXI4Stream_S2T.h"
+      :pointmax 2606
+      :fsize 2605
+      :lastmodtime '(22617 57219 103905 0)
+      :unmatched-syntax '((punctuation 709 . 710))
+      :lexical-table 
+        '(("CarbonSignalMasterPort" . ((symbol "CarbonXtorAdaptorToVhmPort" 280 . 306)))
+          ("SIGNAL_MASTER_DECL" (spp-arg-list ("SIG") 1224 . 1229) . 
+              ((symbol "AXI4Stream_SM" 1236 . 1249) (punctuation "*" 1249 . 1250) (spp-symbol-merge ((symbol "SIG" 1251 . 1254) (symbol "_SMaster" 1258 . 1266)) 1251 . 1266)))
+          ("AXI4STREAM_S2T_H")
+          ("SIGNAL_SLAVE_DECL" (spp-arg-list ("SIG") 831 . 836) . 
+              ((symbol "AXI4Stream_SS" 843 . 856) (punctuation "*" 856 . 857) (spp-symbol-merge ((symbol "SIG" 858 . 861) (symbol "_SSlave" 865 . 872)) 858 . 872)))
+          ("ADAPTOR_BASE" . ((symbol "CarbonAdaptorBase" 446 . 463)))
+          )
+)
+    (semanticdb-table "AXI4Stream_TM.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("AXI4STREAM_TM_H" variable (:constant-flag t) nil [487 502])
+            ("maxsimCompatibility.h" include nil nil [504 536])
+            ("AXI4Stream_Master_Port.h" include nil nil [537 572])
+            ("AXI4Stream_Slave_Port.h" include nil nil [607 641])
+            ("xactors/arm/include/carbon_arm_adaptor.h" include nil nil [643 694])
+            ("AXI4Stream_S2T" type
+               (:prototype t
+                :type "class")
+                nil [696 717])
+            ("AXI4Stream_TM" type
+               (:superclasses 
+                  ( ("casiaxi4stream::AXI4Stream_Master_Port" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [789 797])
+                    ("owner" variable
+                       (:pointer 1
+                        :type ("AXI4Stream_S2T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [800 822])
+                    ("owner_module" variable
+                       (:pointer 1
+                        :type ("CASIModule" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [825 850])
+                    ("public" label nil (reparse-symbol classsubparts) [852 859])
+                    ("AXI4Stream_TM" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("owner" variable
+                               (:pointer 1
+                                :type ("CASIModule" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [876 894])
+                            ("xtor" variable
+                               (:pointer 1
+                                :type ("AXI4Stream_S2T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [895 916])
+                            ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [917 934]))                          
+                        :type ("AXI4Stream_TM" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [862 935])
+                    ("AXI4Stream_TM" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [938 965])
+                    ("reset" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [969 982])
+                    ("notifyEventCB_T" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [986 1017])
+                    ("saveData" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("eslapi::CASIODataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1043 1071]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1021 1072])
+                    ("restoreData" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("is" variable
+                               (:reference 1
+                                :type ("eslapi::CASIIDataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1100 1128]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1075 1129])
+                    ("lastTReady" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1133 1153]))                  
+                :type "class")
+                nil [719 1157]))          
+      :file "AXI4Stream_TM.h"
+      :pointmax 1167
+      :fsize 1166
+      :lastmodtime '(22617 57219 107905 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("AXI4STREAM_TM_H")
+          )
+)
+    (semanticdb-table "AXI4Stream_S2T.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("AXI4Stream_S2T.h" include nil nil [20 47])
+            ("AXI4Stream_SS.h" include nil nil [48 74])
+            ("AXI4Stream_SSData.h" include nil nil [75 105])
+            ("AXI4Stream_Signal_Sender_Port.h" include nil nil [106 148])
+            ("AXI4Stream_Sender_Port.h" include nil nil [149 184])
+            ("AXI4Stream_Receiver_Port.h" include nil nil [185 222])
+            ("AXI4StreamTransactionInfo.h" include nil nil [223 261])
+            ("AXI4Stream_TM.h" include nil nil [262 288])
+            ("map" include (:system-flag t) nil [290 304])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [305 325])
+            ("eslapi::CASI_MSG_INFO" using (:type ("eslapi::CASI_MSG_INFO" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [326 354])
+            ("eslapi::CASI_MSG_WARNING" using (:type ("eslapi::CASI_MSG_WARNING" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [355 386])
+            ("eslapi::CASI_MSG_ERROR" using (:type ("eslapi::CASI_MSG_ERROR" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [387 416])
+            ("eslapi::CASI_MSG_DEBUG" using (:type ("eslapi::CASI_MSG_DEBUG" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [417 446])
+            ("REGISTER_SMASTER" variable (:constant-flag t) nil [456 472])
+            ("REGISTER_SSLAVE" variable (:constant-flag t) nil [594 609])
+            ("REGISTER_SSLAVEDATA" variable (:constant-flag t) nil [865 884])
+            ("AXI4Stream_S2T" function
+               (:constructor-flag t
+                :parent "AXI4Stream_S2T"
+                :arguments 
+                  ( ("carbonComp" variable
+                       (:pointer 1
+                        :type ("sc_mx_module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1169 1194])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1195 1214])
+                    ("compVersion" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1234 1260])
+                    ("carbonObj" variable
+                       (:pointer 2
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1280 1307])
+                    ("portFactory" variable
+                       (:pointer 1
+                        :type ("CarbonPortFactory" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1327 1358])
+                    ("combFunc" variable
+                       (:pointer 1
+                        :type ("CarbonCombFunction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1378 1407]))                  
+                :type ("AXI4Stream_S2T" type (:type "class") nil nil))
+                nil [1138 3163])
+            ("AXI4Stream_S2T" function
+               (:destructor-flag t
+                :parent "AXI4Stream_S2T"
+                :type "void")
+                nil [3165 3658])
+            ("sendDrive" function
+               (:parent "AXI4Stream_S2T"
+                :type "void")
+                nil [3660 3726])
+            ("sendTDrive" function
+               (:parent "AXI4Stream_S2T"
+                :type "void")
+                nil [3728 3817])
+            ("sendNotify" function
+               (:parent "AXI4Stream_S2T"
+                :type "void")
+                nil [3819 3857])
+            ("forwardValid" function
+               (:parent "AXI4Stream_S2T"
+                :type "void")
+                nil [3860 4158])
+            ("forwardReady" function
+               (:parent "AXI4Stream_S2T"
+                :type "void")
+                nil [4160 4200])
+            ("init" function
+               (:parent "AXI4Stream_S2T"
+                :type "void")
+                nil [4203 4663])
+            ("update" function
+               (:parent "AXI4Stream_S2T"
+                :type "void")
+                nil [4665 4698])
+            ("reset" function
+               (:parent "AXI4Stream_S2T"
+                :arguments 
+                  ( ("level" variable (:type ("eslapi::CASIResetLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4727 4756])
+                    ("filelist" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CASIFileMapIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4757 4787]))                  
+                :type "void")
+                nil [4700 5019])
+            ("terminate" function
+               (:parent "AXI4Stream_S2T"
+                :type "void")
+                nil [5022 5058])
+            ("setPortWidth" function
+               (:parent "AXI4Stream_S2T"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5094 5111])
+                    ("bitWidth" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5112 5130]))                  
+                :type "void")
+                nil [5060 5205])
+            ("setParameter" function
+               (:parent "AXI4Stream_S2T"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5243 5262])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5263 5284]))                  
+                :type "void")
+                nil [5208 6365])
+            ("getProperty" function
+               (:parent "AXI4Stream_S2T"
+                :arguments 
+                  ( ("property" variable (:type ("eslapi::CASIPropertyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6403 6438]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [6367 7199])
+            ("getName" function
+               (:parent "AXI4Stream_S2T"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7232 7237]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [7201 7268])
+            ("saveData" function
+               (:parent "AXI4Stream_S2T"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("eslapi::CASIODataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7300 7328]))                  
+                :type "bool")
+                nil [7270 7370])
+            ("restoreData" function
+               (:parent "AXI4Stream_S2T"
+                :arguments 
+                  ( ("is" variable
+                       (:reference 1
+                        :type ("eslapi::CASIIDataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7405 7433]))                  
+                :type "bool")
+                nil [7372 7478]))          
+      :file "AXI4Stream_S2T.cpp"
+      :pointmax 7481
+      :fsize 7480
+      :lastmodtime '(22617 57219 100937 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("REGISTER_SSLAVEDATA" (spp-arg-list ("slave" "port" "idx" "portname" "flag") 884 . 918) . ((semantic-list "{ \\
+    slave ## _SSlave = new AXI4Stream_SSData(carbonComp, casiaxi4stream::axi4StreamChannelSignals[idx].maxBitWidth, port, idx, flag); \\
+	registerPort(dynamic_cast<CASIPortIF*>(slave ## _SSlave), portname); \\
+}" 921 . 1134)))
+          ("REGISTER_SMASTER" (spp-arg-list ("master" "portname") 472 . 490) . 
+              ((spp-symbol-merge ((symbol "master" 494 . 500) (symbol "_SMaster" 504 . 512)) 494 . 512) (punctuation "=" 513 . 514) (symbol "portFactory" 515 . 526) (semantic-list "(mCarbonComponent, name.c_str(), portname, mpCarbonObject)" 526 . 584)))
+          ("REGISTER_SSLAVE" (spp-arg-list ("slave" "port" "idx" "portname" "flag") 609 . 643) . ((semantic-list "{ \\
+    slave ## _SSlave = new AXI4Stream_SS(carbonComp, casiaxi4stream::axi4StreamChannelSignals[idx].maxBitWidth, port, idx, flag); \\
+	registerPort(dynamic_cast<CASIPortIF*>(slave ## _SSlave), portname); \\
+}" 646 . 855)))
+          )
+)
+    (semanticdb-table "CarbonAXI4Stream_S2T.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CarbonAXI4Stream_S2T.h" include nil nil [2 35])
+            ("CARBON" variable (:constant-flag t) nil [45 51])
+            ("MxAXIPort.h" include nil nil [54 76])
+            ("AXI4Stream_S2T.h" include nil nil [77 104])
+            ("AXI4Stream_TM.h" include nil nil [105 131])
+            ("AXI4Stream_SS.h" include nil nil [132 158])
+            ("AXI4Stream_TS.h" include nil nil [159 185])
+            ("AXI4Stream_T2S.h" include nil nil [186 213])
+            ("AXI4StreamXtorEvents.h" include nil nil [214 247])
+            ("CarbonFDA.h" include nil nil [249 271])
+            ("CarbonAXI4Stream_S2T" function
+               (:constructor-flag t
+                :parent "CarbonAXI4Stream_S2T"
+                :arguments 
+                  ( ("carbonComp" variable
+                       (:pointer 1
+                        :type ("sc_mx_module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [316 341])
+                    ("xtorName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [373 394])
+                    ("carbonObj" variable
+                       (:pointer 2
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [426 453])
+                    ("portFactory" variable
+                       (:pointer 1
+                        :type ("CarbonPortFactory" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [485 516])
+                    ("combFunc" variable
+                       (:pointer 1
+                        :type ("CarbonCombFunction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [548 577]))                  
+                :type ("CarbonAXI4Stream_S2T" type (:type "class") nil nil))
+                nil [273 826])
+            ("carbonGetPort" function
+               (:pointer 1
+                :parent "CarbonAXI4Stream_S2T"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [884 901]))                  
+                :type ("sc_mx_signal_slave" type (:type "class") nil nil))
+                nil [828 1398])
+            ("CarbonAXI4Stream_S2T" function
+               (:destructor-flag t
+                :parent "CarbonAXI4Stream_S2T"
+                :type "void")
+                nil [1400 1515])
+            ("forwardValid" function
+               (:parent "CarbonAXI4Stream_S2T"
+                :type "void")
+                nil [1517 1614])
+            ("forwardReady" function
+               (:parent "CarbonAXI4Stream_S2T"
+                :type "void")
+                nil [1615 1712])
+            ("sendDrive" function
+               (:parent "CarbonAXI4Stream_S2T"
+                :type "void")
+                nil [1714 1805])
+            ("sendTDrive" function
+               (:parent "CarbonAXI4Stream_S2T"
+                :type "void")
+                nil [1807 1900])
+            ("sendNotify" function
+               (:parent "CarbonAXI4Stream_S2T"
+                :type "void")
+                nil [1902 1995])
+            ("update" function
+               (:parent "CarbonAXI4Stream_S2T"
+                :type "void")
+                nil [1997 2082])
+            ("init" function
+               (:parent "CarbonAXI4Stream_S2T"
+                :type "void")
+                nil [2084 2165])
+            ("terminate" function
+               (:parent "CarbonAXI4Stream_S2T"
+                :type "void")
+                nil [2167 2258])
+            ("reset" function
+               (:parent "CarbonAXI4Stream_S2T"
+                :arguments 
+                  ( ("level" variable (:type ("MxResetLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2293 2312])
+                    ("filelist" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("MxFileMapIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2313 2341]))                  
+                :type "void")
+                nil [2260 2461])
+            ("setParameter" function
+               (:parent "CarbonAXI4Stream_S2T"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2504 2523])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2524 2544]))                  
+                :type "void")
+                nil [2464 2611])
+            ("getTmPort" function
+               (:pointer 1
+                :parent "CarbonAXI4Stream_S2T"
+                :type ("CASIPortIF" type (:type "class") nil nil))
+                nil [2614 2721])
+            ("carbonSetPortWidth" function
+               (:parent "CarbonAXI4Stream_S2T"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2770 2787])
+                    ("bitWidth" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2788 2806]))                  
+                :type "void")
+                nil [2724 2876])
+            ("saveData" function
+               (:parent "CarbonAXI4Stream_S2T"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("eslapi::CASIODataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2914 2942]))                  
+                :type "bool")
+                nil [2878 3003])
+            ("restoreData" function
+               (:parent "CarbonAXI4Stream_S2T"
+                :arguments 
+                  ( ("is" variable
+                       (:reference 1
+                        :type ("eslapi::CASIIDataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3044 3072]))                  
+                :type "bool")
+                nil [3005 3136]))          
+      :file "CarbonAXI4Stream_S2T.cpp"
+      :pointmax 3137
+      :fsize 3136
+      :lastmodtime '(22617 57219 109906 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CARBON" . ((number "1" 52 . 53)))
+          )
+)
+    (semanticdb-table "CarbonAXI4Stream_S2T.h"
+      :file "CarbonAXI4Stream_S2T.h"
+      :fsize 1340
+      :lastmodtime '(22617 57219 111904 0))
+    (semanticdb-table "AXI4Stream_TM.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("AXI4Stream_Sender_Port.h" include nil nil [523 558])
+            ("AXI4Stream_Receiver_Port.h" include nil nil [559 596])
+            ("AXI4Stream_TM.h" include nil nil [597 623])
+            ("AXI4Stream_S2T.h" include nil nil [624 651])
+            ("AXI4Stream_TM" function
+               (:constructor-flag t
+                :parent "AXI4Stream_TM"
+                :arguments 
+                  ( ("_owner" variable
+                       (:pointer 1
+                        :type ("CASIModule" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [683 702])
+                    ("xtor" variable
+                       (:pointer 1
+                        :type ("AXI4Stream_S2T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [703 724])
+                    ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [725 742]))                  
+                :type ("AXI4Stream_TM" type (:type "class") nil nil))
+                nil [654 922])
+            ("reset" function
+               (:parent "AXI4Stream_TM"
+                :type "void")
+                nil [924 1018])
+            ("notifyEventCB_T" function
+               (:parent "AXI4Stream_TM"
+                :type "void")
+                nil [1020 1384])
+            ("saveData" function
+               (:parent "AXI4Stream_TM"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("eslapi::CASIODataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1416 1444]))                  
+                :type "bool")
+                nil [1387 1574])
+            ("restoreData" function
+               (:parent "AXI4Stream_TM"
+                :arguments 
+                  ( ("is" variable
+                       (:reference 1
+                        :type ("eslapi::CASIIDataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1608 1636]))                  
+                :type "bool")
+                nil [1576 1772]))          
+      :file "AXI4Stream_TM.cpp"
+      :pointmax 1774
+      :fsize 1773
+      :lastmodtime '(22617 57219 105905 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!Source!socdesigner!Protocols!AXI4Stream!xactors!AXI4Stream!AXI4Stream_S2T!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,66 @@
+;; Object gen/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gen/"
+  :tables
+  (list
+    (semanticdb-table "scx_evs_FM_r7.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("scx/scx.h" include (:system-flag t) nil [155 175])
+            ("scx_evs_FM_r7.h" include nil nil [177 203])
+            ("FM_r7_NMS" type
+               (:members 
+                  ( ("FM_r7_GetFactory" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("extern")
+                        :type ("sg::ComponentFactory" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [244 293])
+                    ("scx_evs_FM_r7" function
+                       (:constructor-flag t
+                        :parent "scx_evs_FM_r7"
+                        :arguments 
+                          ( ("name_" variable (:type ("sc_core::sc_module_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [748 778]))                          
+                        :type ("scx_evs_FM_r7" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [719 1157])
+                    ("scx_evs_FM_r7" function
+                       (:destructor-flag t
+                        :parent "scx_evs_FM_r7"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1181 1271])
+                    ("kind" function
+                       (:pointer 1
+                        :parent "scx_evs_FM_r7"
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [1390 1462])
+                    ("before_end_of_elaboration" function
+                       (:parent "scx_evs_FM_r7"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1539 1867])
+                    ("end_of_elaboration" function
+                       (:parent "scx_evs_FM_r7"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1936 2025])
+                    ("start_of_simulation" function
+                       (:parent "scx_evs_FM_r7"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2094 2185])
+                    ("end_of_simulation" function
+                       (:parent "scx_evs_FM_r7"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2253 2340]))                  
+                :type "namespace")
+                nil [207 2557]))          
+      :file "scx_evs_FM_r7.cpp"
+      :pointmax 2605
+      :fsize 2604
+      :lastmodtime '(22423 54059 642621 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "scx_evs_FM_r7.h"
+      :file "scx_evs_FM_r7.h"
+      :fsize 1620
+      :lastmodtime '(22423 54059 620611 0)))
+  :file "!home!hlei!tmp!R7!Linux64-Release!gen!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

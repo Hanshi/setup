@@ -1,0 +1,96 @@
+;; Object scx/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scx/"
+  :tables
+  (list
+    (semanticdb-table "scx_signal_sizer.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("SCX_SIGNAL_SIZER_H" variable (:constant-flag t) nil [285 303])
+            ("systemc" include (:system-flag t) nil [305 323])
+            ("scx" type
+               (:members 
+                  ( ("scx_signal_sizer" type
+                       (:superclasses 
+                          ( ("sc_core::sc_module" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1588 1595])
+                            ("SC_HAS_PROCESS" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("scx_signal_sizer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1615 1632]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [1600 1633])
+                            ("scx_signal_sizer" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("nm" variable
+                                       (:default-value "sc_core::sc_gen_unique_name(\"scx_signal_sizer\")"
+                                        :type ("sc_core::sc_module_name" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1814 1890]))                                  
+                                :type ("scx_signal_sizer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1797 2136])
+                            ("scx_signal_sizer" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2141 2180])
+                            ("kind" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [2247 2326])
+                            ("print" function
+                               (:arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :default-value "std"
+                                        :type ("std::ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2534 2557])
+                                    ("" variable (:type ("cout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2559 2564]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2519 2680])
+                            ("dump" function
+                               (:arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :default-value "std"
+                                        :type ("std::ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2887 2910])
+                                    ("" variable (:type ("cout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2912 2917]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2873 3030])
+                            ("private" label nil (reparse-symbol classsubparts) [3464 3472])
+                            ("m_signal_in" variable (:type ("sc_core::sc_signal" type
+                                 (:template-specifier 
+                                    ( ("IN" type nil nil nil)
+                                      ("WRITER_POLICY" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3477 3527])
+                            ("m_signal_out" variable (:type ("sc_core::sc_signal" type
+                                 (:template-specifier 
+                                    ( ("OUT" type nil nil nil)
+                                      ("WRITER_POLICY" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3532 3584])
+                            ("update" function (:type "void") (reparse-symbol classsubparts) [3589 3663]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1536 3666]))                  
+                :type "namespace")
+                nil [364 3669]))          
+      :file "scx_signal_sizer.h"
+      :pointmax 3735
+      :fsize 3734
+      :lastmodtime '(22812 35843 913423 0)
+      :unmatched-syntax '((semantic-list 3425 . 3463) (semantic-list 3422 . 3424) (punctuation 3420 . 3421) (punctuation 3418 . 3419) (symbol 3415 . 3418) (punctuation 3414 . 3415) (symbol 3396 . 3414) (punctuation 3395 . 3396) (punctuation 3394 . 3395) (symbol 3387 . 3394) (OPERATOR 3378 . 3386) (semantic-list 3208 . 3245) (semantic-list 3205 . 3207) (punctuation 3203 . 3204) (punctuation 3201 . 3202) (symbol 3199 . 3201) (punctuation 3198 . 3199) (symbol 3180 . 3198) (punctuation 3179 . 3180) (punctuation 3178 . 3179) (symbol 3171 . 3178) (OPERATOR 3162 . 3170) (punctuation 2911 . 2912) (punctuation 2910 . 2911) (punctuation 2558 . 2559) (punctuation 2557 . 2558) (EXPLICIT 1784 . 1792) (punctuation 1534 . 1535) (symbol 1521 . 1534) (punctuation 1520 . 1521) (punctuation 1519 . 1520) (symbol 1512 . 1519) (punctuation 1510 . 1511) (symbol 1496 . 1509) (symbol 1479 . 1495) (punctuation 1478 . 1479) (punctuation 1477 . 1478) (symbol 1470 . 1477) (punctuation 1468 . 1469) (symbol 1465 . 1468) (TYPENAME 1456 . 1464) (punctuation 1454 . 1455) (symbol 1452 . 1454) (TYPENAME 1443 . 1451) (punctuation 1442 . 1443) (TEMPLATE 1434 . 1442))
+      :lexical-table 
+        '(("SCX_SIGNAL_SIZER_H")
+          )
+))
+  :file "!o!release!cm_sysc!CIBuilds!master_26!PRODUCT!Linux64_GCC-4.8.3!rel_ext!include!ARM!scx!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,29 @@
+;; Object icm_build/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "icm_build/"
+  :tables
+  (list
+    (semanticdb-table "Kite_icm.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("icm_impl/exceptions.h" include nil nil [107 139])
+            ("Kite_icm.h" include nil nil [140 161])
+            ("libKite.h" include nil nil [162 182])
+            ("cpus/Kite/ICM_KiteModel.h" include nil nil [183 219])
+            ("iostream" include (:system-flag t) nil [220 239])
+            ("_binary_meta_data_start" variable (:type "char") nil [252 281])
+            ("_binary_meta_data_end" variable (:type "char") nil [293 320])
+            ("create_Kite_icm" function (:type ("icm_model_t" type (:type "class") nil nil)) nil [324 1127])
+            ("destroy_Kite_icm" function
+               (:arguments 
+                  ( ("model" variable (:type ("icm_model_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1151 1169]))                  
+                :type "void")
+                nil [1129 1549]))          
+      :file "Kite_icm.cpp"
+      :pointmax 1550
+      :fsize 1549
+      :lastmodtime '(23151 21589 291502 0)
+      :unmatched-syntax nil))
+  :file "!o!work!hanlei01!MK_trunk!modelbuild!models!builddir!Kite!workarea!SystemC!ip!Kite_1CPU!gcc483!SystemC!icm_build!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

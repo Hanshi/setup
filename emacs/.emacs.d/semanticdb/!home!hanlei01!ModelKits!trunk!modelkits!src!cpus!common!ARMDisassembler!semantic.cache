@@ -1,0 +1,93 @@
+;; Object ARMDisassembler/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ARMDisassembler/"
+  :tables
+  (list
+    (semanticdb-table "CycleModelDisassemblerDefines.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("CM_DISASSEMBLER_NAMESPACE" variable (:constant-flag t) nil [213 238])
+            ("CM_DISASSEMBLER_0_0_2" type
+               (:members 
+                  ( ("target_arch_e" type
+                       (:members 
+                          ( ("ARM" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [331 335])
+                            ("AARCH64" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [340 348])
+                            ("THUMB" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [353 362]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [303 363])
+                    ("target_arch_version_e" type
+                       (:members 
+                          ( ("ARCH_VERSION_V6_M" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [491 509])
+                            ("ARCH_VERSION_V7_A" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [543 561])
+                            ("ARCH_VERSION_V7_M" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [595 613])
+                            ("ARCH_VERSION_V7_R" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [647 665])
+                            ("ARCH_VERSION_V8_A" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [699 717])
+                            ("ARCH_VERSION_V8_M" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [751 769])
+                            ("ARCH_VERSION_V8_R" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [803 821])
+                            ("ARCH_VERSION_V8_1A" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [855 874])
+                            ("ARCH_VERSION_V8_2A" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [907 958]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [367 959])
+                    ("target_arch_features_e" type
+                       (:members 
+                          ( ("ARCH_FEATURE_DB" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1092 1108])
+                            ("ARCH_FEATURE_FULLFP16" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1187 1282]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [963 1283]))                  
+                :type "namespace")
+                nil [262 1285]))          
+      :file "CycleModelDisassemblerDefines.h"
+      :pointmax 1287
+      :fsize 1286
+      :lastmodtime '(23256 44362 830985 0)
+      :unmatched-syntax '((symbol 200 . 204) (symbol 193 . 199) (punctuation 192 . 193))
+      :lexical-table 
+        '(("CM_DISASSEMBLER_NAMESPACE" . ((symbol "CM_DISASSEMBLER_0_0_2" 239 . 260)))
+          )
+))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!src!cpus!common!ARMDisassembler!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

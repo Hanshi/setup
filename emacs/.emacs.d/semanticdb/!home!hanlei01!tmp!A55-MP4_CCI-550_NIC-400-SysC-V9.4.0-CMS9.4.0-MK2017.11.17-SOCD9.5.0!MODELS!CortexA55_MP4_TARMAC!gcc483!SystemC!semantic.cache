@@ -1,0 +1,869 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "libDynamIQ_Cluster.systemc.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cassert" include (:system-flag t) nil [64 82])
+            ("libDynamIQ_Cluster.systemc.h" include nil nil [85 124])
+            ("sCycleModelMessage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [277 288])
+                    ("sev" variable (:type ("CarbonMsgSeverity" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [289 311])
+                    ("msg" variable (:type "int") (reparse-symbol arg-sub-list) [312 320])
+                    ("text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [321 338])
+                    ("len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [339 356]))                  
+                :type ("eCarbonMsgCBStatus" type (:type "class") nil nil))
+                nil [232 1122])
+            ("sCycleModelSuppressMessage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1230 1241])
+                    ("sev" variable (:type ("CarbonMsgSeverity" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1242 1264])
+                    ("msg" variable (:type "int") (reparse-symbol arg-sub-list) [1265 1273])
+                    ("text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1274 1291])
+                    ("len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1292 1309]))                  
+                :type ("eCarbonMsgCBStatus" type (:type "class") nil nil))
+                nil [1177 1406])
+            ("littleCore_tarmac.h" include nil nil [1408 1438])
+            ("SCU_pmu.h" include nil nil [1439 1459])
+            ("littleCore_pmu.h" include nil nil [1460 1487])
+            ("scx_dump_waveforms.h" include nil nil [1488 1519])
+            ("DynamIQ_Cluster" function
+               (:constructor-flag t
+                :parent "DynamIQ_Cluster"
+                :arguments 
+                  ( ("inst_name" variable (:type ("sc_module_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1570 1595])
+                    ("initialize" variable (:type "bool") (reparse-symbol arg-sub-list) [1595 1611])
+                    ("dumpWaves" variable (:type "bool") (reparse-symbol arg-sub-list) [1611 1626])
+                    ("waveType" variable (:type ("CarbonWaveFileType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1626 1654]))                  
+                :type ("DynamIQ_Cluster" type (:type "class") nil nil))
+                nil [1537 47009])
+            ("DynamIQ_Cluster" function
+               (:destructor-flag t
+                :parent "DynamIQ_Cluster"
+                :type "void")
+                nil [47025 47336])
+            ("carbon_input_change_CORECLK" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [47377 47855])
+            ("carbon_input_change_SCLK" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [47856 48322])
+            ("carbon_input_change_PCLK" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [48323 48789])
+            ("carbon_input_change_ATCLK" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [48790 49260])
+            ("carbon_input_change_GICCLK" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [49261 49735])
+            ("carbon_input_change_PERIPHCLK" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [49736 50222])
+            ("carbon_input_change_nCPUPORESET" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [50223 50717])
+            ("carbon_input_change_nCORERESET" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [50718 51208])
+            ("carbon_input_change_nPRESET" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [51209 51687])
+            ("carbon_input_change_nSPORESET" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [51688 52174])
+            ("carbon_input_change_nSRESET" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [52175 52653])
+            ("carbon_input_change_nATRESET" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [52654 53136])
+            ("carbon_input_change_nGICRESET" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [53137 53623])
+            ("carbon_input_change_nPERIPHRESET" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [53624 54122])
+            ("carbon_input_change_nMBISTRESET" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [54123 54617])
+            ("carbon_input_change_CFGEND" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [54618 55092])
+            ("carbon_input_change_VINITHI" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [55093 55571])
+            ("carbon_input_change_CFGTE" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [55572 56042])
+            ("carbon_input_change_CLUSTERIDAFF2" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [56043 56551])
+            ("carbon_input_change_CLUSTERIDAFF3" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [56552 57060])
+            ("carbon_input_change_AA64nAA32" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [57061 57547])
+            ("carbon_input_change_RVBARADDR0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [57548 58046])
+            ("carbon_input_change_CRYPTODISABLE" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [58047 58549])
+            ("carbon_input_change_nFIQ" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [58550 59016])
+            ("carbon_input_change_nIRQ" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [59017 59483])
+            ("carbon_input_change_nVFIQ" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [59484 59954])
+            ("carbon_input_change_nVIRQ" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [59955 60425])
+            ("carbon_input_change_GICCDISABLE" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [60426 60920])
+            ("carbon_input_change_IRITWAKEUP" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [60921 61411])
+            ("carbon_input_change_IRITVALID" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [61412 61898])
+            ("carbon_input_change_IRITDATA" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [61899 62389])
+            ("carbon_input_change_IRITLAST" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [62390 62872])
+            ("carbon_input_change_IRITDEST" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [62873 63361])
+            ("carbon_input_change_ICCTREADY" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [63362 63848])
+            ("carbon_input_change_CNTVALUEB" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [63849 64343])
+            ("carbon_input_change_CNTCLKEN" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [64344 64826])
+            ("carbon_input_change_EVENTIREQ" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [64827 65313])
+            ("carbon_input_change_EVENTOACK" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [65314 65800])
+            ("carbon_input_change_COREPREQ0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [65801 66287])
+            ("carbon_input_change_COREPSTATE0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [66288 66788])
+            ("carbon_input_change_CLUSTERPREQ" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [66789 67283])
+            ("carbon_input_change_CLUSTERPSTATE" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [67284 67792])
+            ("carbon_input_change_SCLKQREQn" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [67793 68279])
+            ("carbon_input_change_PCLKQREQn" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [68280 68766])
+            ("carbon_input_change_ATCLKQREQn" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [68767 69257])
+            ("carbon_input_change_GICCLKQREQn" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [69258 69752])
+            ("carbon_input_change_BROADCASTCACHEMAINT" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [69753 70279])
+            ("carbon_input_change_BROADCASTCACHEMAINTPOU" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [70280 70818])
+            ("carbon_input_change_BROADCASTPERSIST" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [70819 71333])
+            ("carbon_input_change_BROADCASTOUTER" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [71334 71840])
+            ("carbon_input_change_ACLKENM" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [71841 72319])
+            ("carbon_input_change_ACWAKEUPM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [72320 72810])
+            ("carbon_input_change_SYSCOACKM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [72811 73301])
+            ("carbon_input_change_AWREADYM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [73302 73788])
+            ("carbon_input_change_WREADYM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [73789 74271])
+            ("carbon_input_change_BVALIDM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [74272 74754])
+            ("carbon_input_change_BIDM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [74755 75231])
+            ("carbon_input_change_BRESPM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [75232 75716])
+            ("carbon_input_change_ARREADYM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [75717 76203])
+            ("carbon_input_change_RVALIDM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [76204 76686])
+            ("carbon_input_change_RIDM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [76687 77163])
+            ("carbon_input_change_RDATAM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [77164 77655])
+            ("carbon_input_change_RRESPM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [77656 78140])
+            ("carbon_input_change_RLASTM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [78141 78619])
+            ("carbon_input_change_ACVALIDM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [78620 79106])
+            ("carbon_input_change_ACADDRM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [79107 79597])
+            ("carbon_input_change_ACVMIDEXTM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [79598 80098])
+            ("carbon_input_change_ACPROTM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [80099 80587])
+            ("carbon_input_change_ACSNOOPM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [80588 81080])
+            ("carbon_input_change_CRREADYM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [81081 81567])
+            ("carbon_input_change_CDREADYM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [81568 82054])
+            ("carbon_input_change_PREADYCD" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [82055 82537])
+            ("carbon_input_change_PSLVERRCD" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [82538 83024])
+            ("carbon_input_change_PSELDC" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [83025 83499])
+            ("carbon_input_change_PADDRDC" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [83500 83986])
+            ("carbon_input_change_PENABLEDC" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [83987 84473])
+            ("carbon_input_change_PWRITEDC" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [84474 84956])
+            ("carbon_input_change_PWDATADC" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [84957 85447])
+            ("carbon_input_change_PWAKEUPDC" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [85448 85934])
+            ("carbon_input_change_DBGEN" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [85935 86405])
+            ("carbon_input_change_NIDEN" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [86406 86876])
+            ("carbon_input_change_SPIDEN" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [86877 87351])
+            ("carbon_input_change_SPNIDEN" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [87352 87830])
+            ("carbon_input_change_DBGCONNECTED" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [87831 88329])
+            ("carbon_input_change_PMUSNAPSHOTREQ" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [88330 88836])
+            ("carbon_input_change_ATREADYM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [88837 89323])
+            ("carbon_input_change_AFVALIDM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [89324 89810])
+            ("carbon_input_change_SYNCREQM0" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [89811 90297])
+            ("carbon_input_change_TSVALUEB" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [90298 90788])
+            ("carbon_input_change_TSCLKEN" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [90789 91267])
+            ("carbon_input_change_DFTCGEN" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [91268 91746])
+            ("carbon_input_change_DFTRSTDISABLE" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [91747 92255])
+            ("carbon_input_change_DFTRAMHOLD" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [92256 92746])
+            ("carbon_input_change_DFTMCPHOLD" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [92747 93237])
+            ("carbon_input_change_DFTCORECLKDISABLE" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [93238 93756])
+            ("carbon_input_change_MBISTREQ" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [93757 94239])
+            ("carbon_write_outputs" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [94242 94597])
+            ("outputs_written_event" function
+               (:parent "DynamIQ_Cluster"
+                :constant-flag t
+                :type ("sc_core::sc_event" type (:type "class") nil nil))
+                nil [94687 94962])
+            ("start_of_simulation" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [94964 95193])
+            ("end_of_simulation" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [95195 95420])
+            ("before_end_of_elaboration" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [95422 95675])
+            ("end_of_elaboration" function
+               (:parent "DynamIQ_Cluster"
+                :type "void")
+                nil [95677 103486])
+            ("format_message" function
+               (:pointer 1
+                :parent "DynamIQ_Cluster"
+                :constant-flag t
+                :arguments 
+                  ( ("text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [103532 103549])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [103549 103566]))                  
+                :type "char")
+                nil [103488 103795])
+            ("find_feature" function
+               (:pointer 1
+                :parent "DynamIQ_Cluster"
+                :arguments 
+                  ( ("feature_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [103848 103873]))                  
+                :type ("scx_wrapper_feature" type (:type "class") nil nil))
+                nil [103797 104100])
+            ("run_feature" function
+               (:parent "DynamIQ_Cluster"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [104136 104153])
+                    ("os" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104153 104170]))                  
+                :type "void")
+                nil [104102 104264])
+            ("enable_feature" function
+               (:parent "DynamIQ_Cluster"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [104303 104320]))                  
+                :type "void")
+                nil [104266 104417])
+            ("disable_feature" function
+               (:parent "DynamIQ_Cluster"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [104457 104474]))                  
+                :type "void")
+                nil [104419 104570])
+            ("is_feature_enabled" function
+               (:parent "DynamIQ_Cluster"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [104613 104630]))                  
+                :type "bool")
+                nil [104572 104751])
+            ("debug_param_get" function
+               (:parent "DynamIQ_Cluster"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104809 104834])
+                    ("value" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104834 104854]))                  
+                :type "bool")
+                nil [104771 105296])
+            ("debug_param_set" function
+               (:parent "DynamIQ_Cluster"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105336 105361])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105361 105387]))                  
+                :type "bool")
+                nil [105298 105925]))          
+      :file "libDynamIQ_Cluster.systemc.cpp"
+      :pointmax 105927
+      :unmatched-syntax nil)
+    (semanticdb-table "libDynamIQ_Cluster.systemc.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("DynamIQ_Cluster_COMP_H" variable (:constant-flag t) nil [102 124])
+            ("cctype" include (:system-flag t) nil [250 267])
+            ("systemc.h" include nil nil [270 290])
+            ("carbon/carbon_sc_multiwrite_signal.h" include nil nil [291 338])
+            ("libDynamIQ_Cluster.h" include nil nil [339 370])
+            ("ARM_CM_SC_MSG_ID" variable (:constant-flag t) nil [405 421])
+            ("scx/scx.h" include (:system-flag t) nil [439 459])
+            ("scx/scx_wrapper_feature.h" include nil nil [460 496])
+            ("scx::scx_debug_params_if" variable
+               (:typemodifiers ("virtual")
+                :type "int")
+                nil [576 27726]))          
+      :file "libDynamIQ_Cluster.systemc.h"
+      :pointmax 27734
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ARM_CM_SC_MSG_ID" . ((string "\"ARM_CM\"" 422 . 430)))
+          ("DynamIQ_Cluster_COMP_H")
+          )
+)
+    (semanticdb-table "littleCore_tarmac.h"
+      :file "littleCore_tarmac.h"
+      :fsize 1145
+      :lastmodtime '(23097 34055 460767 0))
+    (semanticdb-table "SCU_pmu.h"
+      :file "SCU_pmu.h"
+      :fsize 45601
+      :lastmodtime '(23097 34055 661766 0))
+    (semanticdb-table "littleCore_pmu.h"
+      :file "littleCore_pmu.h"
+      :fsize 71564
+      :lastmodtime '(23097 34055 676773 0))
+
+    (semanticdb-table "DynamIQ_ClusterResetModule.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("DynamIQ_Cluster_RESET_MODULE_H" variable (:constant-flag t) nil [127 157])
+            ("ARM" type
+               (:members 
+                  ( ("Models" type
+                       (:members 
+                          ( ("Cycle" type
+                               (:members 
+                                  ( ("ModelDynamIQ_Cluster" type
+                                       (:members 
+                                          ( ("DynamIQ_ClusterResetModule" type
+                                               (:superclasses 
+                                                  ( ("sc_core::sc_module" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :members 
+                                                  ( ("SC_HAS_PROCESS" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("" variable (:type ("DynamIQ_ClusterResetModule" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [324 351]))                                                          
+                                                        :type "int")
+                                                        (reparse-symbol classsubparts) [309 352])
+                                                    ("public" label nil (reparse-symbol classsubparts) [353 360])
+                                                    ("clk" variable (:type ("sc_core::sc_in_clk" type (:type "class") nil nil)) (reparse-symbol classsubparts) [363 386])
+                                                    ("ACLKENM" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [415 437])
+                                                    ("CNTCLKEN" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [440 463])
+                                                    ("CRYPTODISABLE" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [466 494])
+                                                    ("IRITWAKEUP" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [497 522])
+                                                    ("EVENTIREQ" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [525 549])
+                                                    ("EVENTOACK" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [552 576])
+                                                    ("COREPREQ0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [579 603])
+                                                    ("CLUSTERPREQ" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [606 632])
+                                                    ("ACWAKEUPM0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [635 660])
+                                                    ("SYSCOACKM0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [663 688])
+                                                    ("ACVMIDEXTM0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [691 723])
+                                                    ("PREADYCD" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [726 749])
+                                                    ("PSLVERRCD" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [752 776])
+                                                    ("PSELDC" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [779 800])
+                                                    ("PADDRDC" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [803 832])
+                                                    ("PENABLEDC" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [835 859])
+                                                    ("PWRITEDC" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [862 885])
+                                                    ("PWDATADC" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [888 918])
+                                                    ("PWAKEUPDC" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [921 945])
+                                                    ("DBGCONNECTED" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [948 975])
+                                                    ("PMUSNAPSHOTREQ" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [978 1007])
+                                                    ("ATREADYM0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1010 1034])
+                                                    ("AFVALIDM0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1037 1061])
+                                                    ("SYNCREQM0" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1064 1088])
+                                                    ("TSVALUEB" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("sc_uint" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1091 1121])
+                                                    ("TSCLKEN" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1124 1146])
+                                                    ("nATRESET" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1149 1172])
+                                                    ("nCORERESET" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1175 1200])
+                                                    ("nCPUPORESET" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1203 1229])
+                                                    ("nGICRESET" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1232 1256])
+                                                    ("nPERIPHRESET" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1259 1286])
+                                                    ("nPRESET" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1289 1311])
+                                                    ("nSPORESET" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1314 1338])
+                                                    ("nSRESET" variable (:type ("sc_out" type
+                                                         (:template-specifier 
+                                                            ( ("bool" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [1341 1363])
+                                                    ("DynamIQ_ClusterResetModule" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("name" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("sc_core::sc_module_name" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1397 1433]))                                                          
+                                                        :type ("DynamIQ_ClusterResetModule" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1370 2532])
+                                                    ("reset" function (:type "void") (reparse-symbol classsubparts) [2536 3874]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [244 3877]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [211 3879]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [193 3881]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [174 3883]))                  
+                :type "namespace")
+                nil [158 3885]))          
+      :file "DynamIQ_ClusterResetModule.h"
+      :pointmax 3893
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DynamIQ_Cluster_RESET_MODULE_H")
+          )
+)
+    (semanticdb-table "libCORTEXA55.systemc.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("libCORTEXA55_SYSTEMC_H" variable (:constant-flag t) nil [103 125])
+            ("cctype" include (:system-flag t) nil [250 267])
+            ("systemc.h" include nil nil [270 290])
+            ("carbon/carbon_sc_multiwrite_signal.h" include nil nil [291 338])
+            ("libCORTEXA55.h" include nil nil [339 364])
+            ("ARM_CM_SC_MSG_ID" variable (:constant-flag t) nil [399 415])
+            ("scx/scx.h" include (:system-flag t) nil [433 453])
+            ("scx/scx_wrapper_feature.h" include nil nil [454 490])
+            ("scx::scx_debug_params_if" variable
+               (:typemodifiers ("virtual")
+                :type "int")
+                nil [564 27547]))          
+      :file "libCORTEXA55.systemc.h"
+      :pointmax 27555
+      :fsize 27554
+      :lastmodtime '(23097 34056 153769 0)
+      :unmatched-syntax '((PUBLIC 557 . 563) (punctuation 555 . 556) (symbol 533 . 548) (punctuation 532 . 533) (punctuation 531 . 532) (symbol 528 . 531) (PUBLIC 521 . 527) (punctuation 519 . 520) (semantic-list 501 . 512) (symbol 492 . 501))
+      :lexical-table 
+        '(("libCORTEXA55_SYSTEMC_H")
+          ("ARM_CM_SC_MSG_ID" . ((string "\"ARM_CM\"" 416 . 424)))
+          )
+)
+    (semanticdb-table "libCORTEXA55.h"
+      :file "libCORTEXA55.h"
+      :fsize 462
+      :lastmodtime '(23097 34055 689766 0)))
+  :file "!home!hanlei01!tmp!A55-MP4_CCI-550_NIC-400-SysC-V9.4.0-CMS9.4.0-MK2017.11.17-SOCD9.5.0!MODELS!CortexA55_MP4_TARMAC!gcc483!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

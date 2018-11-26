@@ -1,0 +1,1121 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("LINUX_DIR" variable (:default-value (".")) nil [1 15])
+            ("PACKAGE_LIB_DIR" variable (:default-value ("./lib")) nil [67 91])
+            ("COMP_NAME" variable (:default-value ("$(subst lib,,$(basename $(notdir $(wildcard $(PACKAGE_LIB_DIR)/lib*.a))))")) nil [189 275])
+            ("clean" function nil nil [276 301])
+            ("gen_code" function nil nil [302 312])
+            ("NUM_CPUS" variable (:default-value ("$(shell grep NUM_CPUS ./$(COMP_NAME).xmlAnswers)")) nil [391 451])
+            ("NUM_CPUS" variable (:default-value ("4")) nil [505 516])
+            ("NUM_CPUS" variable (:default-value ("3")) nil [576 587])
+            ("NUM_CPUS" variable (:default-value ("2")) nil [647 658])
+            ("NUM_CPUS" variable (:default-value ("1")) nil [663 674])
+            ("MASTER_PROTOCOL" variable (:default-value ("$(shell grep BUS_INTERFACE ./$(COMP_NAME).xmlAnswers)")) nil [693 765])
+            ("Makefile.internal" include nil nil [784 810])
+            ("UNIVENT_TARMAC" variable (:default-value ("-DUNIVENT_TARMAC=1")) nil [872 906])
+            ("CXX" variable (:default-value ("g++")) nil [907 915])
+            ("CXXFLAGS" variable (:default-value ("-fPIC" "-g" "-DCARBON_DUMP_VCD=0" "-std=c++11" "-I$(SYSTEMC_HOME)/include" "-I$(CARBON_HOME)/include" "$(CM_SYSC_CXXFLAGS)" "-I." "-I$(LINUX_DIR)" "$(UNIVENT_TARMAC)" "-DNUM_CPUS=$(NUM_CPUS)")) nil [916 1156])
+            ("ENABLE_PMU" variable (:default-value ("-DENABLE_PMU=1")) nil [1156 1182])
+            ("DISABLE_PMU" variable (:default-value ("-DENABLE_PMU=0")) nil [1183 1210])
+            ("OBJS" variable (:default-value ("$(COMP_NAME)Imp.o" "lib$(COMP_NAME).systemc.o" "univent_tarmac.o")) nil [1211 1291])
+            ("OBJS_noPMU" variable (:default-value ("$(COMP_NAME)Imp_noPMU.o" "lib$(COMP_NAME)_noPMU.systemc.o" "univent_tarmac.o")) nil [1292 1390])
+            ("all" function (:arguments ("lib$(COMP_NAME)_noPMU.so" "lib$(COMP_NAME).so" "univent_tarmac.o")) nil [1391 1457])
+            ("lib" function (:arguments ("$(OBJS_noPMU)")) nil [1458 1878])
+            ("lib" function (:arguments ("$(OBJS)")) nil [1879 2276])
+            ("$(COMP_NAME)" function (:arguments ("gen_code")) nil [2277 2307])
+            ("univent_tarmac.cpp" function (:arguments ("gen_code")) nil [2308 2337])
+            ("$(COMP_NAME)" function (:arguments ("$(COMP_NAME)Imp.cpp")) nil [2338 2424])
+            ("$(COMP_NAME)" function (:arguments ("$(COMP_NAME)Imp.cpp")) nil [2425 2518])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp" "gen_code")) nil [2519 2629])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp" "gen_code")) nil [2630 2747])
+            ("univent_tarmac.o" function (:arguments ("univent_tarmac.cpp" "gen_code")) nil [2748 2826]))          
+      :file "Makefile"
+      :pointmax 2827
+      :fsize 1568
+      :lastmodtime '(22912 45962 686168 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile.internal"
+      :file "Makefile.internal"
+      :fsize 3178
+      :lastmodtime '(22966 38929 159278 0))
+    (semanticdb-table "CortexA53_pmu.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("CORTEXA53_PMU_H" variable (:constant-flag t) nil [96 111])
+            ("CortexA53_pmu" type
+               (:superclasses 
+                  ( ("scx_wrapper_feature" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [163 171])
+                    ("inst_ret_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("ld_ret_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("st_ret_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("pc_ret_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("br_imm_ret_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("br_mis_pred_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("unaligned_ldst_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("br_pred_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("mem_acc_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("l1i_cache_acc_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("l1i_cache_refill_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("l1i_cache_tlb_refill_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("l1d_cache_acc_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("l1d_cache_wb_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("l1d_cache_refill_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("l1d_cache_tlb_refill_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("l2c_access_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("l2c_refill_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("l2c_wb_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("bus_acc_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("bus_cycles_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("cpu_cycles_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("bus_acc_ld_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("bus_acc_st_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("exc_taken_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("exc_return_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("exc_irq_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("exc_fiq_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("cid_write_ret_count_0" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 1290])
+                    ("inst_ret_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("ld_ret_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("st_ret_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("pc_ret_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("br_imm_ret_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("br_mis_pred_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("unaligned_ldst_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("br_pred_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("mem_acc_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("l1i_cache_acc_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("l1i_cache_refill_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("l1i_cache_tlb_refill_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("l1d_cache_acc_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("l1d_cache_wb_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("l1d_cache_refill_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("l1d_cache_tlb_refill_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("l2c_access_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("l2c_refill_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("l2c_wb_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("bus_acc_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("bus_cycles_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("cpu_cycles_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("bus_acc_ld_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("bus_acc_st_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("exc_taken_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("exc_return_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("exc_irq_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("exc_fiq_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("cid_write_ret_count_1" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1294 2411])
+                    ("inst_ret_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("ld_ret_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("st_ret_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("pc_ret_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("br_imm_ret_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("br_mis_pred_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("unaligned_ldst_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("br_pred_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("mem_acc_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("l1i_cache_acc_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("l1i_cache_refill_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("l1i_cache_tlb_refill_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("l1d_cache_acc_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("l1d_cache_wb_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("l1d_cache_refill_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("l1d_cache_tlb_refill_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("l2c_access_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("l2c_refill_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("l2c_wb_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("bus_acc_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("bus_cycles_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("cpu_cycles_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("bus_acc_ld_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("bus_acc_st_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("exc_taken_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("exc_return_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("exc_irq_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("exc_fiq_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("cid_write_ret_count_2" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2415 3532])
+                    ("inst_ret_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("ld_ret_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("st_ret_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("pc_ret_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("br_imm_ret_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("br_mis_pred_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("unaligned_ldst_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("br_pred_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("mem_acc_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("l1i_cache_acc_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("l1i_cache_refill_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("l1i_cache_tlb_refill_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("l1d_cache_acc_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("l1d_cache_wb_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("l1d_cache_refill_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("l1d_cache_tlb_refill_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("l2c_access_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("l2c_refill_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("l2c_wb_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("bus_acc_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("bus_cycles_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("cpu_cycles_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("bus_acc_ld_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("bus_acc_st_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("exc_taken_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("exc_return_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("exc_irq_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("exc_fiq_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("cid_write_ret_count_3" variable
+                       (:default-value "0"
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3536 4653])
+                    ("net_pmn_export_enabled_0" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4658 4701])
+                    ("net_event_00_0f_en_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4704 4738])
+                    ("net_event_10_1f_en_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4741 4775])
+                    ("net_event_20_df_en_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4778 4812])
+                    ("net_event_e0_ef_en_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4815 4849])
+                    ("net_ins_ret_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4852 4879])
+                    ("net_ld_ret_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4882 4908])
+                    ("net_st_ret_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4911 4937])
+                    ("net_pc_ret_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4940 4966])
+                    ("net_br_imm_ret_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4969 4999])
+                    ("net_br_mis_pred_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5002 5033])
+                    ("net_unaligned_ldst_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5036 5070])
+                    ("net_br_pred_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5073 5100])
+                    ("net_mem_acc_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5103 5130])
+                    ("net_l1i_cache_acc_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5133 5166])
+                    ("net_l1i_cache_refill_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5169 5205])
+                    ("net_l1i_cache_tlb_refill_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5208 5248])
+                    ("net_l1d_cache_acc_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5251 5284])
+                    ("net_l1d_cache_wb_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5287 5319])
+                    ("net_l1d_cache_refill_1_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5322 5360])
+                    ("net_l1d_cache_tlb_refill_1_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5363 5405])
+                    ("net_l2c_access_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5408 5438])
+                    ("net_l2c_refill_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5441 5471])
+                    ("net_l2c_wb_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5474 5500])
+                    ("net_bus_acc_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5503 5530])
+                    ("net_bus_cycles_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5533 5563])
+                    ("net_cpu_cycles_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5566 5596])
+                    ("net_bus_acc_ld_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5599 5629])
+                    ("net_bus_acc_st_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5632 5662])
+                    ("net_exc_taken_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5665 5694])
+                    ("net_exc_return_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5697 5727])
+                    ("net_exc_irq_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5730 5757])
+                    ("net_exc_fiq_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5760 5787])
+                    ("net_cid_write_ret_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5790 5823])
+                    ("net_pmn_export_enabled_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5826 5864])
+                    ("net_event_00_0f_en_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5867 5901])
+                    ("net_event_10_1f_en_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5904 5938])
+                    ("net_event_20_df_en_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5941 5975])
+                    ("net_event_e0_ef_en_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5978 6012])
+                    ("net_ins_ret_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6016 6043])
+                    ("net_ld_ret_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6046 6072])
+                    ("net_st_ret_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6075 6101])
+                    ("net_pc_ret_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6104 6130])
+                    ("net_br_imm_ret_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6133 6163])
+                    ("net_br_mis_pred_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6166 6197])
+                    ("net_unaligned_ldst_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6200 6234])
+                    ("net_br_pred_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6237 6264])
+                    ("net_mem_acc_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6267 6294])
+                    ("net_l1i_cache_acc_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6297 6330])
+                    ("net_l1i_cache_refill_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6333 6369])
+                    ("net_l1i_cache_tlb_refill_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6372 6412])
+                    ("net_l1d_cache_acc_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6415 6448])
+                    ("net_l1d_cache_wb_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6451 6483])
+                    ("net_l1d_cache_refill_1_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6486 6524])
+                    ("net_l1d_cache_tlb_refill_1_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6527 6569])
+                    ("net_l2c_access_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6572 6602])
+                    ("net_l2c_refill_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6605 6635])
+                    ("net_l2c_wb_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6638 6664])
+                    ("net_bus_acc_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6667 6694])
+                    ("net_bus_cycles_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6697 6727])
+                    ("net_cpu_cycles_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6730 6760])
+                    ("net_bus_acc_ld_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6763 6793])
+                    ("net_bus_acc_st_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6796 6826])
+                    ("net_exc_taken_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6829 6858])
+                    ("net_exc_return_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6861 6891])
+                    ("net_exc_irq_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6894 6921])
+                    ("net_exc_fiq_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6924 6951])
+                    ("net_cid_write_ret_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6954 6987])
+                    ("net_pmn_export_enabled_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6990 7028])
+                    ("net_event_00_0f_en_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7031 7065])
+                    ("net_event_10_1f_en_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7068 7102])
+                    ("net_event_20_df_en_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7105 7139])
+                    ("net_event_e0_ef_en_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7142 7176])
+                    ("net_ins_ret_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7179 7206])
+                    ("net_ld_ret_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7209 7235])
+                    ("net_st_ret_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7238 7264])
+                    ("net_pc_ret_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7267 7293])
+                    ("net_br_imm_ret_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7296 7326])
+                    ("net_br_mis_pred_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7329 7360])
+                    ("net_unaligned_ldst_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7363 7397])
+                    ("net_br_pred_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7400 7427])
+                    ("net_mem_acc_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7430 7457])
+                    ("net_l1i_cache_acc_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7460 7493])
+                    ("net_l1i_cache_refill_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7496 7532])
+                    ("net_l1i_cache_tlb_refill_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7535 7575])
+                    ("net_l1d_cache_acc_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7578 7611])
+                    ("net_l1d_cache_wb_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7614 7646])
+                    ("net_l1d_cache_refill_1_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7649 7687])
+                    ("net_l1d_cache_tlb_refill_1_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7690 7732])
+                    ("net_l2c_access_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7735 7765])
+                    ("net_l2c_refill_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7768 7798])
+                    ("net_l2c_wb_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7801 7827])
+                    ("net_bus_acc_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7830 7857])
+                    ("net_bus_cycles_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7860 7890])
+                    ("net_cpu_cycles_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7893 7923])
+                    ("net_bus_acc_ld_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7926 7956])
+                    ("net_bus_acc_st_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7959 7989])
+                    ("net_exc_taken_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7992 8021])
+                    ("net_exc_return_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8024 8054])
+                    ("net_exc_irq_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8057 8084])
+                    ("net_exc_fiq_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8087 8114])
+                    ("net_cid_write_ret_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8117 8150])
+                    ("net_pmn_export_enabled_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8153 8191])
+                    ("net_event_00_0f_en_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8194 8228])
+                    ("net_event_10_1f_en_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8231 8265])
+                    ("net_event_20_df_en_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8268 8302])
+                    ("net_event_e0_ef_en_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8305 8339])
+                    ("net_ins_ret_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8342 8369])
+                    ("net_ld_ret_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8372 8398])
+                    ("net_st_ret_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8401 8427])
+                    ("net_pc_ret_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8430 8456])
+                    ("net_br_imm_ret_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8459 8489])
+                    ("net_br_mis_pred_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8492 8523])
+                    ("net_unaligned_ldst_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8526 8560])
+                    ("net_br_pred_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8563 8590])
+                    ("net_mem_acc_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8593 8620])
+                    ("net_l1i_cache_acc_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8623 8656])
+                    ("net_l1i_cache_refill_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8659 8695])
+                    ("net_l1i_cache_tlb_refill_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8698 8738])
+                    ("net_l1d_cache_acc_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8741 8774])
+                    ("net_l1d_cache_wb_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8777 8809])
+                    ("net_l1d_cache_refill_1_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8812 8850])
+                    ("net_l1d_cache_tlb_refill_1_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8853 8895])
+                    ("net_l2c_access_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8898 8928])
+                    ("net_l2c_refill_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8931 8961])
+                    ("net_l2c_wb_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8964 8990])
+                    ("net_bus_acc_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8993 9020])
+                    ("net_bus_cycles_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9023 9053])
+                    ("net_cpu_cycles_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9056 9086])
+                    ("net_bus_acc_ld_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9089 9119])
+                    ("net_bus_acc_st_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9122 9152])
+                    ("net_exc_taken_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9155 9184])
+                    ("net_exc_return_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9187 9217])
+                    ("net_exc_irq_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9220 9247])
+                    ("net_exc_fiq_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9250 9277])
+                    ("net_cid_write_ret_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9280 9313])
+                    ("public" label nil (reparse-symbol classsubparts) [9321 9328])
+                    ("CortexA53_pmu" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("num_cpus" variable (:type "int") (reparse-symbol arg-sub-list) [9347 9360])
+                            ("carbonModelHandle" variable
+                               (:pointer 1
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9361 9395])
+                            ("target" variable
+                               (:reference 1
+                                :type ("scx::scx_debug_target_if" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9395 9428]))                          
+                        :type ("CortexA53_pmu" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9333 9587])
+                    ("CortexA53_pmu" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [9593 9617])
+                    ("update" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [9624 24261])
+                    ("enable" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [24267 44881])
+                    ("disable" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [44885 44971])
+                    ("end_of_simulation" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [44977 45081])
+                    ("run" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [45119 53272])
+                    ("reset_counts" function (:type "void") (reparse-symbol classsubparts) [53275 57746]))                  
+                :type "class")
+                nil [113 57749]))          
+      :file "CortexA53_pmu.h"
+      :pointmax 57758
+      :fsize 57757
+      :lastmodtime '(22929 64135 840739 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CORTEXA53_PMU_H")
+          )
+))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!Scripts!cpus!CortexA53!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,53 @@
+;; Object base/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "base/"
+  :tables
+  (list
+    (semanticdb-table "sort.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [693 711])
+            ("time.h" include (:system-flag t) nil [712 729])
+            ("stdlib.h" include (:system-flag t) nil [730 749])
+            ("string.h" include (:system-flag t) nil [750 769])
+            ("sort.h" include nil nil [771 788])
+            ("nvic.h" include nil nil [789 806])
+            ("pseudo_intrinsics.h" include nil nil [807 837])
+            ("BOOL" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [1014 1031])
+            ("TRUE" variable (:constant-flag t) nil [1040 1044])
+            ("FALSE" variable (:constant-flag t) nil [1060 1065])
+            ("IRQ_Handler" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1566 1571]))                  
+                :type "void")
+                nil [1549 1575])
+            ("initPeripherals" function (:type "void") nil [1893 1981])
+            ("goUnpriv" function (:type "void") nil [2277 2369]))          
+      :file "sort.c"
+      :pointmax 2393
+      :fsize 2392
+      :lastmodtime '(22208 54472 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TRUE" . ((semantic-list "(1==1)" 1045 . 1051)))
+          ("FALSE" . ((semantic-list "(0==1)" 1066 . 1072)))
+          )
+)
+    (semanticdb-table "sort.h"
+      :file "sort.h"
+      :fsize 969
+      :lastmodtime '(22208 54472 0 0))
+    (semanticdb-table "nvic.h"
+      :file "nvic.h"
+      :fsize 1005
+      :lastmodtime '(22208 54472 0 0))
+    (semanticdb-table "pseudo_intrinsics.h"
+      :file "pseudo_intrinsics.h"
+      :fsize 1108
+      :lastmodtime '(22208 54472 0 0)))
+  :file "!home!bosqa!hudson_0!us-bos-hudson1!workspace!A1-IMK-MainLine-CheckOutAndGenerateScripts!modelkits!test!cpus!CortexM7!Applications!Memory!Auto!base!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

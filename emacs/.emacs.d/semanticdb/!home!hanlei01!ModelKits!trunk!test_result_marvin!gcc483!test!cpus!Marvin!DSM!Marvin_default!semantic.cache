@@ -1,0 +1,554 @@
+;; Object Marvin_default/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Marvin_default/"
+  :tables
+  (list
+    (semanticdb-table "Marvin.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cassert" include (:system-flag t) nil [64 82])
+            ("Marvin.h" include nil nil [86 105])
+            ("create_Marvin_icm" function
+               (:prototype-flag t
+                :type ("icm_model_t" type (:type "class") nil nil))
+                nil [223 255])
+            ("destroy_Marvin_icm" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("model" variable (:type ("icm_model_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [291 309]))                  
+                :type "void")
+                nil [267 310])
+            ("get_Marvin_cycle_model" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("model" variable (:type ("icm_model_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [351 369]))                  
+                :type "void")
+                nil [322 370])
+            ("enable_Marvin_tarmac" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("model" variable (:type ("icm_model_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [408 426])
+                    ("logfile_prefix" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [426 453])
+                    ("time_unit" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [453 475]))                  
+                :type "void")
+                nil [382 476])
+            ("icm_scx" type
+               (:members 
+                  ( ("" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :function-pointer t
+                        :type ("icm_model_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [528 546])
+                    ("icm_create" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("create_function" variable (:type ("icm_create_function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1051 1087])
+                            ("model_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1088 1111])
+                            ("icm" variable
+                               (:reference 1
+                                :type ("icm_model_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1112 1129])
+                            ("" variable
+                               (:pointer 1
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1153 1170])
+                            ("" variable (:type ("carbonModelHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1170 1188])
+                            ("error_message" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1189 1216]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1028 1651]))                  
+                :type "namespace")
+                nil [478 1653])
+            ("Marvin" function
+               (:constructor-flag t
+                :parent "Marvin"
+                :arguments 
+                  ( ("inst_name" variable (:type ("sc_module_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1691 1716])
+                    ("initialize" variable (:type "bool") (reparse-symbol arg-sub-list) [1716 1732])
+                    ("dumpWaves" variable (:type "bool") (reparse-symbol arg-sub-list) [1732 1747])
+                    ("waveType" variable (:type ("CarbonWaveFileType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1747 1775]))                  
+                :type ("Marvin" type (:type "class") nil nil))
+                nil [1676 29834])
+            ("Marvin" function
+               (:destructor-flag t
+                :parent "Marvin"
+                :type "void")
+                nil [29850 30137])
+            ("carbon_input_change_CLK" function
+               (:parent "Marvin"
+                :type "void")
+                nil [30178 30631])
+            ("carbon_input_change_nRESET" function
+               (:parent "Marvin"
+                :type "void")
+                nil [30632 31097])
+            ("carbon_input_change_nMBISTRESET" function
+               (:parent "Marvin"
+                :type "void")
+                nil [31098 31583])
+            ("carbon_input_change_BOOTNS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [31584 32049])
+            ("carbon_input_change_ATTRLOCKED" function
+               (:parent "Marvin"
+                :type "void")
+                nil [32050 32531])
+            ("carbon_input_change_ATTR0NSAID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [32532 33019])
+            ("carbon_input_change_ATTR1NSAID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [33020 33507])
+            ("carbon_input_change_ATTR2NSAID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [33508 33995])
+            ("carbon_input_change_ATTR3NSAID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [33996 34483])
+            ("carbon_input_change_ATTR4NSAID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [34484 34971])
+            ("carbon_input_change_ATTR5NSAID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [34972 35459])
+            ("carbon_input_change_ATTR6NSAID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [35460 35947])
+            ("carbon_input_change_ATTR7NSAID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [35948 36435])
+            ("carbon_input_change_ATTR0MMUSID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [36436 36921])
+            ("carbon_input_change_ATTR1MMUSID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [36922 37407])
+            ("carbon_input_change_ATTR2MMUSID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [37408 37893])
+            ("carbon_input_change_ATTR3MMUSID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [37894 38379])
+            ("carbon_input_change_ATTR4MMUSID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [38380 38865])
+            ("carbon_input_change_ATTR5MMUSID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [38866 39351])
+            ("carbon_input_change_ATTR6MMUSID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [39352 39837])
+            ("carbon_input_change_ATTR7MMUSID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [39838 40323])
+            ("carbon_input_change_ATTR0MMUSSID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [40324 40813])
+            ("carbon_input_change_ATTR1MMUSSID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [40814 41303])
+            ("carbon_input_change_ATTR2MMUSSID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [41304 41793])
+            ("carbon_input_change_ATTR3MMUSSID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [41794 42283])
+            ("carbon_input_change_ATTR4MMUSSID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [42284 42773])
+            ("carbon_input_change_ATTR5MMUSSID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [42774 43263])
+            ("carbon_input_change_ATTR6MMUSSID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [43264 43753])
+            ("carbon_input_change_ATTR7MMUSSID" function
+               (:parent "Marvin"
+                :type "void")
+                nil [43754 44243])
+            ("carbon_input_change_ATTR0MMUSSIDV" function
+               (:parent "Marvin"
+                :type "void")
+                nil [44244 44737])
+            ("carbon_input_change_ATTR1MMUSSIDV" function
+               (:parent "Marvin"
+                :type "void")
+                nil [44738 45231])
+            ("carbon_input_change_ATTR2MMUSSIDV" function
+               (:parent "Marvin"
+                :type "void")
+                nil [45232 45725])
+            ("carbon_input_change_ATTR3MMUSSIDV" function
+               (:parent "Marvin"
+                :type "void")
+                nil [45726 46219])
+            ("carbon_input_change_ATTR4MMUSSIDV" function
+               (:parent "Marvin"
+                :type "void")
+                nil [46220 46713])
+            ("carbon_input_change_ATTR5MMUSSIDV" function
+               (:parent "Marvin"
+                :type "void")
+                nil [46714 47207])
+            ("carbon_input_change_ATTR6MMUSSIDV" function
+               (:parent "Marvin"
+                :type "void")
+                nil [47208 47701])
+            ("carbon_input_change_ATTR7MMUSSIDV" function
+               (:parent "Marvin"
+                :type "void")
+                nil [47702 48195])
+            ("carbon_input_change_ATTR0ADDREXTEND" function
+               (:parent "Marvin"
+                :type "void")
+                nil [48196 48705])
+            ("carbon_input_change_ATTR1ADDREXTEND" function
+               (:parent "Marvin"
+                :type "void")
+                nil [48706 49215])
+            ("carbon_input_change_ATTR2ADDREXTEND" function
+               (:parent "Marvin"
+                :type "void")
+                nil [49216 49725])
+            ("carbon_input_change_CLKQREQn" function
+               (:parent "Marvin"
+                :type "void")
+                nil [49726 50199])
+            ("carbon_input_change_ARREADYM" function
+               (:parent "Marvin"
+                :type "void")
+                nil [50200 50673])
+            ("carbon_input_change_RVALIDM" function
+               (:parent "Marvin"
+                :type "void")
+                nil [50674 51143])
+            ("carbon_input_change_RIDM" function
+               (:parent "Marvin"
+                :type "void")
+                nil [51144 51607])
+            ("carbon_input_change_RDATAM" function
+               (:parent "Marvin"
+                :type "void")
+                nil [51608 52086])
+            ("carbon_input_change_RRESPM" function
+               (:parent "Marvin"
+                :type "void")
+                nil [52087 52558])
+            ("carbon_input_change_RLASTM" function
+               (:parent "Marvin"
+                :type "void")
+                nil [52559 53024])
+            ("carbon_input_change_AWREADYM" function
+               (:parent "Marvin"
+                :type "void")
+                nil [53025 53498])
+            ("carbon_input_change_WREADYM" function
+               (:parent "Marvin"
+                :type "void")
+                nil [53499 53968])
+            ("carbon_input_change_BVALIDM" function
+               (:parent "Marvin"
+                :type "void")
+                nil [53969 54438])
+            ("carbon_input_change_BIDM" function
+               (:parent "Marvin"
+                :type "void")
+                nil [54439 54902])
+            ("carbon_input_change_BRESPM" function
+               (:parent "Marvin"
+                :type "void")
+                nil [54903 55374])
+            ("carbon_input_change_AWAKEUPS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [55375 55848])
+            ("carbon_input_change_ARVALIDS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [55849 56322])
+            ("carbon_input_change_ARIDS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [56323 56784])
+            ("carbon_input_change_ARADDRS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [56785 57262])
+            ("carbon_input_change_ARLENS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [57263 57734])
+            ("carbon_input_change_ARSIZES" function
+               (:parent "Marvin"
+                :type "void")
+                nil [57735 58210])
+            ("carbon_input_change_ARBURSTS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [58211 58690])
+            ("carbon_input_change_ARLOCKS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [58691 59160])
+            ("carbon_input_change_ARCACHES" function
+               (:parent "Marvin"
+                :type "void")
+                nil [59161 59640])
+            ("carbon_input_change_ARPROTS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [59641 60116])
+            ("carbon_input_change_RREADYS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [60117 60586])
+            ("carbon_input_change_AWVALIDS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [60587 61060])
+            ("carbon_input_change_AWIDS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [61061 61522])
+            ("carbon_input_change_AWADDRS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [61523 62000])
+            ("carbon_input_change_AWLENS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [62001 62472])
+            ("carbon_input_change_AWSIZES" function
+               (:parent "Marvin"
+                :type "void")
+                nil [62473 62948])
+            ("carbon_input_change_AWBURSTS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [62949 63428])
+            ("carbon_input_change_AWLOCKS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [63429 63898])
+            ("carbon_input_change_AWCACHES" function
+               (:parent "Marvin"
+                :type "void")
+                nil [63899 64378])
+            ("carbon_input_change_AWPROTS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [64379 64854])
+            ("carbon_input_change_WVALIDS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [64855 65324])
+            ("carbon_input_change_WDATAS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [65325 65798])
+            ("carbon_input_change_WSTRBS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [65799 66270])
+            ("carbon_input_change_WLASTS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [66271 66736])
+            ("carbon_input_change_BREADYS" function
+               (:parent "Marvin"
+                :type "void")
+                nil [66737 67206])
+            ("carbon_input_change_DFTCGEN" function
+               (:parent "Marvin"
+                :type "void")
+                nil [67207 67676])
+            ("carbon_input_change_DFTRSTDISABLE" function
+               (:parent "Marvin"
+                :type "void")
+                nil [67677 68176])
+            ("carbon_input_change_DFTRAMHOLD" function
+               (:parent "Marvin"
+                :type "void")
+                nil [68177 68658])
+            ("carbon_input_change_MBISTREQ" function
+               (:parent "Marvin"
+                :type "void")
+                nil [68659 69132])
+            ("carbon_write_outputs" function
+               (:parent "Marvin"
+                :type "void")
+                nil [69135 69481])
+            ("outputs_written_event" function
+               (:parent "Marvin"
+                :constant-flag t
+                :type ("sc_core::sc_event" type (:type "class") nil nil))
+                nil [69571 69837])
+            ("start_of_simulation" function
+               (:parent "Marvin"
+                :type "void")
+                nil [69839 70059])
+            ("end_of_simulation" function
+               (:parent "Marvin"
+                :type "void")
+                nil [70061 70277])
+            ("before_end_of_elaboration" function
+               (:parent "Marvin"
+                :type "void")
+                nil [70279 70523])
+            ("end_of_elaboration" function
+               (:parent "Marvin"
+                :type "void")
+                nil [70525 75304])
+            ("format_message" function
+               (:pointer 1
+                :parent "Marvin"
+                :constant-flag t
+                :arguments 
+                  ( ("text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [75341 75358])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [75358 75375]))                  
+                :type "char")
+                nil [75306 75604])
+            ("find_feature" function
+               (:pointer 1
+                :parent "Marvin"
+                :arguments 
+                  ( ("feature_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [75648 75673]))                  
+                :type ("scx_wrapper_feature" type (:type "class") nil nil))
+                nil [75606 75960])
+            ("run_feature" function
+               (:parent "Marvin"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [75987 76004])
+                    ("os" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76004 76021]))                  
+                :type "void")
+                nil [75962 76115])
+            ("enable_feature" function
+               (:parent "Marvin"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [76145 76162]))                  
+                :type "void")
+                nil [76117 76259])
+            ("disable_feature" function
+               (:parent "Marvin"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [76290 76307]))                  
+                :type "void")
+                nil [76261 76403])
+            ("is_feature_enabled" function
+               (:parent "Marvin"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [76437 76454]))                  
+                :type "bool")
+                nil [76405 76575])
+            ("debug_param_get" function
+               (:parent "Marvin"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76624 76649])
+                    ("value" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76649 76669]))                  
+                :type "bool")
+                nil [76595 77111])
+            ("debug_param_set" function
+               (:parent "Marvin"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77142 77167])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77167 77193]))                  
+                :type "bool")
+                nil [77113 77731]))          
+      :file "Marvin.cpp"
+      :pointmax 77733
+      :fsize 77732
+      :lastmodtime '(23386 7896 54693 0)
+      :unmatched-syntax '((punctuation 1169 . 1170) (punctuation 526 . 527) (symbol 506 . 525) (USING 500 . 505)))
+    (semanticdb-table "Marvin.h"
+      :file "Marvin.h"
+      :fsize 21298
+      :lastmodtime '(23386 7896 41695 0)))
+  :file "!home!hanlei01!ModelKits!trunk!test_result_marvin!gcc483!test!cpus!Marvin!DSM!Marvin_default!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

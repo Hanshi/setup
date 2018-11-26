@@ -1,0 +1,2563 @@
+;; Object eslapi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "eslapi/"
+  :tables
+  (list
+    (semanticdb-table "CADITypes.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("CADI2Types_h" variable (:constant-flag t) nil [543 555])
+            ("eslapi/CADICommon.h" include nil nil [557 587])
+            ("cstring" include (:system-flag t) nil [589 608])
+            ("eslapi" type
+               (:members 
+                  ( ("" type
+                       (:members 
+                          ( ("CADI_REG_ALLGROUPS" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [672 692])
+                            ("0U" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [694 698]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [665 699])
+                    ("" type
+                       (:members 
+                          ( ("CADI_MEMBLOCK_ROOT" variable
+                               (:constant-flag t
+                                :default-value (728 730)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [707 730]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [700 733])
+                    ("" type
+                       (:members 
+                          ( ("CADI_NAME_SIZE" variable
+                               (:constant-flag t
+                                :default-value (759 763)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [742 763]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [735 766])
+                    ("" type
+                       (:members 
+                          ( ("CADI_DESCRIPTION_SIZE" variable
+                               (:constant-flag t
+                                :default-value (798 802)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [774 802]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [767 805])
+                    ("" type
+                       (:members 
+                          ( ("CADI_ERROR_MESSAGE_SIZE" variable
+                               (:constant-flag t
+                                :default-value (839 844)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [813 844]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [806 847])
+                    ("" type
+                       (:members 
+                          ( ("CADI_DESCRIPTION" variable
+                               (:constant-flag t
+                                :default-value (875 896)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [856 896]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [849 899])
+                    ("" type
+                       (:members 
+                          ( ("CADI_INVALID_REGISTER_ID" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1014 1040])
+                            ("0U" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1042 1046]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [1007 1047])
+                    ("AssignString" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("dst" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1074 1084])
+                            ("src" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1085 1101])
+                            ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1102 1113]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1049 1271])
+                    ("CADISimulationInfo_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1559 1566])
+                            ("CADISimulationInfo_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("id_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1601 1620])
+                                    ("name_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1645 1670])
+                                    ("description_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1695 1727]))                                  
+                                :type ("CADISimulationInfo_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1580 1870])
+                            ("public" label nil (reparse-symbol classsubparts) [1872 1879])
+                            ("id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1890 1904])
+                            ("name" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [1959 1985])
+                            ("description" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [2023 2063]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1529 2103])
+                    ("CADIValueDataType_t" type
+                       (:members 
+                          ( ("CADI_PARAM_INVALID" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2313 2332])
+                            ("CADI_PARAM_STRING" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2335 2353])
+                            ("CADI_PARAM_BOOL" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2356 2372])
+                            ("CADI_PARAM_INT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2375 2390])
+                            ("CADI_PARAM_ENUM_MAX" variable
+                               (:constant-flag t
+                                :default-value (2415 2425)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2393 2425]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [2284 2428])
+                    ("CADIParameterInfo_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2459 2466])
+                            ("CADIParameterInfo_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("id_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2500 2519])
+                                    ("name_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2543 2568])
+                                    ("dataType_par" variable
+                                       (:default-value "CADI_PARAM_INVALID"
+                                        :type ("CADIValueDataType_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2592 2645])
+                                    ("description_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2669 2701])
+                                    ("isRunTime_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2725 2751])
+                                    ("minValue_par" variable
+                                       (:default-value "0"
+                                        :type ("int64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2775 2799])
+                                    ("maxValue_par" variable
+                                       (:default-value "0"
+                                        :type ("int64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2823 2847])
+                                    ("defaultValue_par" variable
+                                       (:default-value "0"
+                                        :type ("int64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2871 2899])
+                                    ("defaultString_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2923 2957]))                                  
+                                :type ("CADIParameterInfo_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2480 3325])
+                            ("public" label nil (reparse-symbol classsubparts) [3327 3334])
+                            ("id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3345 3359])
+                            ("name" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [3413 3440])
+                            ("dataType" variable (:type ("CADIValueDataType_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3478 3507])
+                            ("description" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [3575 3616])
+                            ("isRunTime" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3645 3666])
+                            ("minValue" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3865 3884])
+                            ("maxValue" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3933 3952])
+                            ("defaultValue" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4001 4024])
+                            ("defaultString" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [4088 4131]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2430 4190])
+                    ("CADIParameterValue_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4222 4229])
+                            ("CADIParameterValue_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("parameterID_par" variable
+                                       (:default-value "static_cast<uint32_t>(-1)"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4264 4316])
+                                    ("dataType_par" variable
+                                       (:default-value "CADI_PARAM_INVALID"
+                                        :type ("CADIValueDataType_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4341 4394])
+                                    ("intValue_par" variable
+                                       (:default-value "0"
+                                        :type ("int64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4419 4443])
+                                    ("stringValue_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [4468 4498]))                                  
+                                :type ("CADIParameterValue_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [4243 4667])
+                            ("public" label nil (reparse-symbol classsubparts) [4670 4677])
+                            ("parameterID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4688 4711])
+                            ("dataType" variable (:type ("CADIValueDataType_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4784 4813])
+                            ("intValue" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4838 4857])
+                            ("stringValue" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [4932 4973]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [4192 5026])
+                    ("CADITargetInfo_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [5054 5061])
+                            ("CADITargetInfo_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("id_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5092 5111])
+                                    ("targetName_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5132 5163])
+                                    ("instanceName_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5184 5217])
+                                    ("version_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5238 5266])
+                                    ("description_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5287 5319])
+                                    ("componentType_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5340 5374])
+                                    ("numberOfParameters_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5395 5430])
+                                    ("executesSoftware_par" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [5451 5484])
+                                    ("isHardwareModel_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5505 5537])
+                                    ("systemName_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5558 5589])
+                                    ("systemID_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5610 5635])
+                                    ("systemDescription_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5656 5694])
+                                    ("canRunInBackground_par" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [5715 5750]))                                  
+                                :type ("CADITargetInfo_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [5075 6478])
+                            ("public" label nil (reparse-symbol classsubparts) [6480 6487])
+                            ("id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6498 6512])
+                            ("targetName" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [6567 6600])
+                            ("instanceName" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [6670 6705])
+                            ("version" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [6747 6784])
+                            ("description" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [6811 6852])
+                            ("componentType" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [6879 6915])
+                            ("numberOfParameters" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6978 7008])
+                            ("executesSoftware" variable (:type "bool") (reparse-symbol classsubparts) [7054 7077])
+                            ("isHardwareModel" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7243 7270])
+                            ("systemName" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [7441 7474])
+                            ("systemID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7619 7639])
+                            ("systemDescription" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [7673 7720])
+                            ("canRunInBackground" variable (:type "bool") (reparse-symbol classsubparts) [7752 7776]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [5028 7838])
+                    ("CADIFactoryErrorCode_t" type
+                       (:members 
+                          ( ("CADIFACT_ERROR_OK" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7872 7890])
+                            ("CADIFACT_ERROR_LICENSE_FOUND_BUT_EXPIRED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7985 8026])
+                            ("CADIFACT_ERROR_LICENSE_NOT_FOUND" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8029 8062])
+                            ("CADIFACT_ERROR_LICENSE_COUNT_EXCEEDED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8065 8103])
+                            ("CADIFACT_ERROR_CANNOT_CONTACT_LICENSE_SERVER" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8106 8151])
+                            ("CADIFACT_ERROR_WARNING_LICENSE_WILL_EXPIRE_SOON" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8154 8202])
+                            ("CADIFACT_ERROR_GENERAL_LICENSE_ERROR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8237 8274])
+                            ("CADIFACT_ERROR_PARAMETER_TYPE_MISMATCH" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8409 8448])
+                            ("CADIFACT_ERROR_PARAMETER_VALUE_OUT_OF_RANGE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8483 8527])
+                            ("CADIFACT_ERROR_PARAMETER_VALUE_INVALID" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8530 8569])
+                            ("CADIFACT_ERROR_UNKNOWN_PARAMETER_ID" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8618 8654])
+                            ("CADIFACT_ERROR_GENERAL_PARAMETER_ERROR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8657 8696])
+                            ("CADIFACT_ERROR_GENERAL_ERROR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8774 8803])
+                            ("CADIFACT_ERROR_GENERAL_WARNING" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8908 8939])
+                            ("CADIFACT_ERROR_MAX" variable
+                               (:constant-flag t
+                                :default-value (9083 9093)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9062 9093]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [7840 9160])
+                    ("CADIFactorySeverityCode_t" type
+                       (:members 
+                          ( ("CADIFACT_SEVERITY_OK" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9309 9330])
+                            ("CADIFACT_SEVERITY_WARNING" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9393 9419])
+                            ("CADIFACT_SEVERITY_ERROR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9482 9506])
+                            ("CADIFACT_SEVERITY_MAX" variable
+                               (:constant-flag t
+                                :default-value (9584 9594)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9560 9594]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [9274 9658])
+                    ("CADIFactoryErrorMessage_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [9695 9702])
+                            ("CADIFactoryErrorMessage_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("errorCode_par" variable
+                                       (:default-value "CADIFACT_ERROR_OK"
+                                        :type ("CADIFactoryErrorCode_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9742 9798])
+                                    ("erroneousParameterId_par" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9828 9863])
+                                    ("" variable (:type ("0U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9865 9868])
+                                    ("message_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [9897 9925])
+                                    ("severity_par" variable
+                                       (:default-value "CADIFACT_SEVERITY_OK"
+                                        :type ("CADIFactorySeverityCode_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9955 10016]))                                  
+                                :type ("CADIFactoryErrorMessage_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [9716 10193])
+                            ("public" label nil (reparse-symbol classsubparts) [10195 10202])
+                            ("errorCode" variable (:type ("CADIFactoryErrorCode_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10213 10249])
+                            ("erroneousParameterId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10269 10301])
+                            ("message" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [10355 10394])
+                            ("severity" variable (:type ("CADIFactorySeverityCode_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10414 10449]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [9660 10473])
+                    ("CADIReturn_t" type
+                       (:members 
+                          ( ("CADI_STATUS_OK" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10737 10752])
+                            ("CADI_STATUS_GeneralError" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10805 10830])
+                            ("CADI_STATUS_UnknownCommand" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10998 11025])
+                            ("CADI_STATUS_IllegalArgument" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11072 11100])
+                            ("CADI_STATUS_CmdNotSupported" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11145 11173])
+                            ("CADI_STATUS_ArgNotSupported" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11233 11261])
+                            ("CADI_STATUS_InsufficientResources" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11518 11552])
+                            ("CADI_STATUS_TargetNotResponding" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11679 11711])
+                            ("CADI_STATUS_TargetBusy" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11868 11891])
+                            ("CADI_STATUS_BufferSize" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12132 12155])
+                            ("CADI_STATUS_SecurityViolation" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12210 12240])
+                            ("CADI_STATUS_PermissionDenied" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12312 12341])
+                            ("CADI_STATUS_ENUM_MAX" variable
+                               (:constant-flag t
+                                :default-value (12441 12451)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [12418 12451]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [10714 12477])
+                    ("CADITargetFeatures_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [12561 12568])
+                            ("CADITargetFeatures_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("targetName_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [12603 12634])
+                                    ("targetVersion_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [12659 12693])
+                                    ("nrBreakpointsAvailable_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12718 12757])
+                                    ("fOverlaySupportAvailable_par" variable
+                                       (:default-value "0"
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12782 12822])
+                                    ("fProfilingAvailable_par" variable
+                                       (:default-value "0"
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12847 12882])
+                                    ("nrResetLevels_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12907 12937])
+                                    ("nrExecModes_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12962 12990])
+                                    ("nrExceptions_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13015 13044])
+                                    ("nrMemSpaces_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13069 13097])
+                                    ("nrRegisterGroups_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13122 13155])
+                                    ("nrPipeStages_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13180 13209])
+                                    ("nPCRegNum_par" variable
+                                       (:default-value "CADI_INVALID_REGISTER_ID"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13234 13283])
+                                    ("handledBreakpoints_par" variable
+                                       (:default-value "0"
+                                        :type ("uint16_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13308 13343])
+                                    ("nrOfHWThreads_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13368 13398])
+                                    ("nExtendedTargetFeaturesRegNum_par" variable
+                                       (:default-value "CADI_INVALID_REGISTER_ID"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13423 13492])
+                                    ("canonicalRegisterDescription_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [13517 13566])
+                                    ("canonicalMemoryDescription_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [13591 13638])
+                                    ("canCompleteMultipleInstructionsPerCycle_par" variable
+                                       (:default-value "0"
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13663 13718]))                                  
+                                :type ("CADITargetFeatures_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [12582 14962])
+                            ("public" label nil (reparse-symbol classsubparts) [14964 14971])
+                            ("targetName" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [14982 15014])
+                            ("targetVersion" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [15160 15195])
+                            ("nrBreakpointsAvailable" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15352 15386])
+                            ("fOverlaySupportAvailable" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15436 15472])
+                            ("fProfilingAvailable" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15539 15570])
+                            ("nrResetLevels" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15648 15673])
+                            ("nrExecModes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16179 16202])
+                            ("nrExceptions" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16391 16415])
+                            ("nrMemSpaces" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16479 16502])
+                            ("nrRegisterGroups" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16592 16620])
+                            ("nrPipeStages" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16710 16734])
+                            ("nPCRegNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16940 16961])
+                            ("handledBreakpoints" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17781 17811])
+                            ("nrOfHWThreads" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18525 18550])
+                            ("nExtendedTargetFeaturesRegNumValid" variable (:type "bool") (reparse-symbol classsubparts) [18606 18652])
+                            ("nExtendedTargetFeaturesRegNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18729 18770])
+                            ("canonicalRegisterDescription" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [22014 22076])
+                            ("canonicalMemoryDescription" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [22625 22685])
+                            ("canCompleteMultipleInstructionsPerCycle" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22772 22823]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [12531 22826])
+                    ("CADICallbackType_t" type
+                       (:members 
+                          ( ("CADI_CB_AppliOpen" variable
+                               (:constant-flag t
+                                :default-value (22928 22929)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [22901 22929])
+                            ("CADI_CB_AppliInput" variable
+                               (:constant-flag t
+                                :default-value (23123 23124)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [23096 23124])
+                            ("CADI_CB_AppliOutput" variable
+                               (:constant-flag t
+                                :default-value (23226 23227)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [23199 23227])
+                            ("CADI_CB_AppliClose" variable
+                               (:constant-flag t
+                                :default-value (23330 23331)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [23303 23331])
+                            ("CADI_CB_String" variable
+                               (:constant-flag t
+                                :default-value (23413 23414)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [23386 23414])
+                            ("CADI_CB_ModeChange" variable
+                               (:constant-flag t
+                                :default-value (23686 23687)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [23659 23687])
+                            ("CADI_CB_Reset" variable
+                               (:constant-flag t
+                                :default-value (23972 23973)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [23945 23973])
+                            ("CADI_CB_CycleTick" variable
+                               (:constant-flag t
+                                :default-value (24519 24520)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [24492 24520])
+                            ("CADI_CB_KillInterface" variable
+                               (:constant-flag t
+                                :default-value (24692 24693)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [24665 24693])
+                            ("CADI_CB_Bypass" variable
+                               (:constant-flag t
+                                :default-value (24974 24975)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [24947 24975])
+                            ("CADI_CB_LookupSymbol" variable
+                               (:constant-flag t
+                                :default-value (25148 25150)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25122 25150])
+                            ("CADI_CB_DisasmNotifyModeChange" variable
+                               (:constant-flag t
+                                :default-value (25226 25228)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25193 25228])
+                            ("CADI_CB_DisasmNotifyFileChange" variable
+                               (:constant-flag t
+                                :default-value (25295 25297)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25262 25297])
+                            ("CADI_CB_Refresh" variable
+                               (:constant-flag t
+                                :default-value (25357 25359)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25331 25359])
+                            ("CADI_CB_ProfileResourceAccess" variable
+                               (:constant-flag t
+                                :default-value (25491 25493)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25459 25493])
+                            ("CADI_CB_ProfileRegisterHazard" variable
+                               (:constant-flag t
+                                :default-value (25560 25562)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25528 25562])
+                            ("CADI_CB_Count" variable
+                               (:constant-flag t
+                                :default-value (25622 25624)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25596 25624])
+                            ("CADI_CB_ENUM_MAX" variable
+                               (:constant-flag t
+                                :default-value (25647 25657)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25628 25657]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [22873 25660])
+                    ("CADISimulationCallbackType_t" type
+                       (:members 
+                          ( ("CADI_SIM_CB_Message" variable
+                               (:constant-flag t
+                                :default-value (25782 25783)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25756 25783])
+                            ("CADI_SIM_CB_Shutdown" variable
+                               (:constant-flag t
+                                :default-value (25891 25892)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25865 25892])
+                            ("CADI_SIM_CB_Kill" variable
+                               (:constant-flag t
+                                :default-value (25978 25979)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [25952 25979])
+                            ("CADI_SIM_CB_Count" variable
+                               (:constant-flag t
+                                :default-value (26085 26086)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [26059 26086])
+                            ("CADI_SIM_ENUM_MAX" variable
+                               (:constant-flag t
+                                :default-value (26116 26126)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [26090 26126]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [25718 26129])
+                    ("CADIPipeStageContentInfo_t" type
+                       (:members 
+                          ( ("CADI_PIPESTAGE_Invalid" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [26265 26288])
+                            ("CADI_PIPESTAGE_OpcodeOnly" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [26363 26389])
+                            ("CADI_PIPESTAGE_DisassemblyOnly" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [26461 26492])
+                            ("CADI_PIPESTAGE_Instruction" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [26564 26591])
+                            ("CADI_PIPESTAGE_ENUM_COUNT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [26730 26756])
+                            ("CADI_PIPESTAGE_MAX" variable
+                               (:constant-flag t
+                                :default-value (26780 26790)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [26759 26790]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [26229 26793])
+                    ("CADIPipeStageField_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [26874 26881])
+                            ("CADIPipeStageField_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("pipeStageId_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26916 26944])
+                                    ("registerId_par" variable
+                                       (:default-value "CADI_INVALID_REGISTER_ID"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26969 27019]))                                  
+                                :type ("CADIPipeStageField_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [26895 27095])
+                            ("public" label nil (reparse-symbol classsubparts) [27097 27104])
+                            ("pipeStageId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [27115 27136])
+                            ("registerId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [27139 27159]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [26844 27162])
+                    ("CADIPipeStage_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [27229 27236])
+                            ("CADIPipeStage_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("id_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27266 27285])
+                                    ("name_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [27305 27330])
+                                    ("pc_par" variable
+                                       (:default-value "CADI_INVALID_REGISTER_ID"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27350 27392])
+                                    ("contentInfoRegisterId_par" variable
+                                       (:default-value "CADI_INVALID_REGISTER_ID"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27412 27473]))                                  
+                                :type ("CADIPipeStage_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [27250 27617])
+                            ("public" label nil (reparse-symbol classsubparts) [27619 27626])
+                            ("id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [27637 27651])
+                            ("name" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [27676 27703])
+                            ("pc" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [27706 27720])
+                            ("contentInfoRegisterId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [27796 27827]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [27204 27990])
+                    ("CADIAddrSimple_t" type
+                       (:typedef ("uint64_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [28106 28140])
+                    ("CADIMemSpace_t" type
+                       (:typedef ("uint32_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [28296 28328])
+                    ("CADI_MEM_SPACE_NOTSUPPORTED" variable
+                       (:constant-flag t
+                        :default-value "0xFFFFFFFF"
+                        :type ("CADIMemSpace_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [28329 28391])
+                    ("CADIOverlayId_t" type
+                       (:typedef ("uint32_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [28793 28826])
+                    ("CADI_NO_OVERLAY" variable
+                       (:constant-flag t
+                        :default-value "0"
+                        :type ("CADIOverlayId_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [28828 28870])
+                    ("CADIAddr_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [28983 28990])
+                            ("CADIAddr_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("space_par" variable
+                                       (:default-value "0"
+                                        :type ("CADIMemSpace_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29015 29043])
+                                    ("addr_par" variable
+                                       (:default-value "0"
+                                        :type ("CADIAddrSimple_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29058 29087]))                                  
+                                :type ("CADIAddr_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [29004 29139])
+                            ("==" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CADIAddr_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29160 29184]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [29142 29257])
+                            ("public" label nil (reparse-symbol classsubparts) [29259 29266])
+                            ("space" variable (:type ("CADIMemSpace_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [29277 29300])
+                            ("addr" variable (:type ("CADIAddrSimple_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [29367 29389]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [28963 29436])
+                    ("CADIAddrComplete_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [29624 29631])
+                            ("CADIAddrComplete_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("overlay_par" variable
+                                       (:default-value "0"
+                                        :type ("CADIOverlayId_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29664 29695])
+                                    ("location_par" variable
+                                       (:default-value "CADIAddr_t()"
+                                        :type ("CADIAddr_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29718 29756]))                                  
+                                :type ("CADIAddrComplete_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [29645 29821])
+                            ("==" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CADIAddrComplete_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29849 29881]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [29831 29958])
+                            ("public" label nil (reparse-symbol classsubparts) [29960 29967])
+                            ("overlay" variable (:type ("CADIOverlayId_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [29978 30002])
+                            ("location" variable (:type ("CADIAddr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [30117 30141]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [29596 30196])
+                    ("" type
+                       (:members 
+                          ( ("CADI_BPT_TRIGGER_ON_READ" variable
+                               (:constant-flag t
+                                :default-value (30422 30423)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [30395 30423])
+                            ("CADI_BPT_TRIGGER_ON_WRITE" variable
+                               (:constant-flag t
+                                :default-value (30455 30456)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [30427 30456])
+                            ("CADI_BPT_TRIGGER_ON_MODIFY" variable
+                               (:constant-flag t
+                                :default-value (30489 30490)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [30460 30490]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [30386 30493])
+                    ("" type
+                       (:members 
+                          ( ("CADI_BPT_CLEAR_ALL_TEMPORARY_BPTS" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [30502 30537])
+                            ("0U" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [30539 30543]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [30495 30544])
+                    ("CADIBptNumber_t" type
+                       (:typedef ("uint32_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [30692 30725])
+                    ("CADIBptType_t" type
+                       (:members 
+                          ( ("CADI_BPT_PROGRAM" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [30781 30798])
+                            ("CADI_BPT_MEMORY" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [30846 30862])
+                            ("CADI_BPT_REGISTER" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [30962 30980])
+                            ("CADI_BPT_INST_STEP" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31074 31093])
+                            ("CADI_BPT_PROGRAM_RANGE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31215 31238])
+                            ("CADI_BPT_EXCEPTION" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31405 31424])
+                            ("CADI_BPT_USER_DEFINED" variable
+                               (:constant-flag t
+                                :default-value (31506 31512)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31482 31512]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [30758 31530])
+                    ("" type
+                       (:members 
+                          ( ("CADI_TARGET_FEATURE_BPT_PROGRAM" variable
+                               (:constant-flag t
+                                :default-value (31648 31671)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31608 31671])
+                            ("CADI_TARGET_FEATURE_BPT_MEMORY" variable
+                               (:constant-flag t
+                                :default-value (31715 31737)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31675 31737])
+                            ("CADI_TARGET_FEATURE_BPT_REGISTER" variable
+                               (:constant-flag t
+                                :default-value (31781 31805)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31741 31805])
+                            ("CADI_TARGET_FEATURE_BPT_INST_STEP" variable
+                               (:constant-flag t
+                                :default-value (31849 31874)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31809 31874])
+                            ("CADI_TARGET_FEATURE_BPT_PROGRAM_RANGE" variable
+                               (:constant-flag t
+                                :default-value (31918 31947)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31878 31947])
+                            ("CADI_TARGET_FEATURE_BPT_EXCEPTION" variable
+                               (:constant-flag t
+                                :default-value (31991 32016)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [31951 32016]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [31599 32019])
+                    ("CADIBptConditionOperator_t" type
+                       (:members 
+                          ( ("CADI_BPT_COND_UNCONDITIONAL" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [32099 32127])
+                            ("CADI_BPT_COND_EQUALS" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [32213 32234])
+                            ("CADI_BPT_COND_NOT_EQUALS" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [32331 32356])
+                            ("CADI_BPT_COND_GREATER_THAN_SIGNED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [32473 32507])
+                            ("CADI_BPT_COND_GREATER_THAN_OR_EQUALS_SIGNED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [32589 32633])
+                            ("CADI_BPT_COND_LESS_THAN_SIGNED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [32705 32736])
+                            ("CADI_BPT_COND_LESS_THAN_OR_EQUALS_SIGNED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [32821 32862])
+                            ("CADI_BPT_COND_GREATER_THAN_UNSIGNED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [32963 32999])
+                            ("CADI_BPT_COND_GREATER_THAN_OR_EQUALS_UNSIGNED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [33081 33127])
+                            ("CADI_BPT_COND_LESS_THAN_UNSIGNED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [33199 33232])
+                            ("CADI_BPT_COND_LESS_THAN_OR_EQUALS_UNSIGNED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [33317 33360])
+                            ("CADI_BPT_COND_ENUM_COUNT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [33436 33461])
+                            ("CADI_BPT_COND_GREATER_THAN" variable
+                               (:constant-flag t
+                                :default-value (33600 33633)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [33571 33633])
+                            ("CADI_BPT_COND_GREATER_THAN_OR_EQUALS" variable
+                               (:constant-flag t
+                                :default-value (33676 33719)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [33637 33719])
+                            ("CADI_BPT_COND_LESS_THAN" variable
+                               (:constant-flag t
+                                :default-value (33749 33779)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [33723 33779])
+                            ("CADI_BPT_COND_LESS_THAN_OR_EQUALS" variable
+                               (:constant-flag t
+                                :default-value (33819 33859)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [33783 33859])
+                            ("CADI_BPT_COND_THREADID" variable
+                               (:constant-flag t
+                                :default-value (33895 33905)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [33870 33905])
+                            ("CADI_BPT_COND_ENUM_MAX" variable
+                               (:constant-flag t
+                                :default-value (34007 34017)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [33982 34017]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [32063 34020])
+                    ("CADIBptCondition_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [34771 34778])
+                            ("CADIBptCondition_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("conditionOperator_par" variable
+                                       (:default-value "CADI_BPT_COND_UNCONDITIONAL"
+                                        :type ("CADIBptConditionOperator_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [34811 34889])
+                                    ("comparisonValue_par" variable
+                                       (:default-value "0"
+                                        :type ("int64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [34912 34943])
+                                    ("threadID_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [34966 34991])
+                                    ("ignoreCount_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [35014 35042])
+                                    ("bitwidth_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [35065 35090]))                                  
+                                :type ("CADIBptCondition_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [34792 35278])
+                            ("public" label nil (reparse-symbol classsubparts) [35280 35287])
+                            ("conditionOperator" variable (:type ("CADIBptConditionOperator_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [35298 35346])
+                            ("comparisonValue" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [35558 35604])
+                            ("threadID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [39502 39541])
+                            ("ignoreCount" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [39569 39611])
+                            ("bitwidth" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [40261 40300]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [34743 40394])
+                    ("CADIBptRequest_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [40726 40733])
+                            ("CADIBptRequest_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("address_par" variable
+                                       (:constant-flag t
+                                        :default-value "CADIAddrComplete_t()"
+                                        :type ("CADIAddrComplete_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [40764 40823])
+                                    ("sizeOfAddressRange_par" variable
+                                       (:default-value "0"
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [40844 40879])
+                                    ("enabled_par" variable
+                                       (:default-value "0"
+                                        :type ("int32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [40900 40923])
+                                    ("conditions_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [40944 40975])
+                                    ("useFormalCondition_par" variable
+                                       (:default-value "1"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [40996 41027])
+                                    ("formalCondition_par" variable
+                                       (:default-value "CADIBptCondition_t()"
+                                        :type ("CADIBptCondition_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [41048 41109])
+                                    ("type_par" variable
+                                       (:default-value "CADI_BPT_PROGRAM"
+                                        :type ("CADIBptType_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [41130 41171])
+                                    ("regNumber_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [41192 41218])
+                                    ("temporary_par" variable
+                                       (:default-value "false"
+                                        :type ("int32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [41239 41268])
+                                    ("triggerType_par" variable
+                                       (:default-value "0"
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [41289 41316])
+                                    ("continueExecution_par" variable
+                                       (:default-value "false"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [41337 41375]))                                  
+                                :type ("CADIBptRequest_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [40747 41801])
+                            ("public" label nil (reparse-symbol classsubparts) [41803 41810])
+                            ("address" variable (:type ("CADIAddrComplete_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [41827 41855])
+                            ("sizeOfAddressRange" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [41942 41981])
+                            ("enabled" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [42379 42407])
+                            ("conditions" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [42526 42580])
+                            ("useFormalCondition" variable (:type "bool") (reparse-symbol classsubparts) [42743 42782])
+                            ("formalCondition" variable (:type ("CADIBptCondition_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [42911 42947])
+                            ("type" variable (:type ("CADIBptType_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [42976 43001])
+                            ("regNumber" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [43034 43064])
+                            ("temporary" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [43115 43145])
+                            ("triggerType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [43184 43216])
+                            ("continueExecution" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [43865 43903]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [40700 44226])
+                    ("CADIBptDescription_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [44291 44298])
+                            ("CADIBptDescription_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("bptNumber_par" variable
+                                       (:default-value "0"
+                                        :type ("CADIBptNumber_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [44333 44366])
+                                    ("bptInfo_par" variable
+                                       (:default-value "CADIBptRequest_t()"
+                                        :type ("CADIBptRequest_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [44391 44440]))                                  
+                                :type ("CADIBptDescription_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [44312 44506])
+                            ("public" label nil (reparse-symbol classsubparts) [44508 44515])
+                            ("bptNumber" variable (:type ("CADIBptNumber_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [44526 44556])
+                            ("bptInfo" variable (:type ("CADIBptRequest_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [44601 44627]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [44261 44697])
+                    ("CADIBptConfigure_t" type
+                       (:members 
+                          ( ("CADI_BPT_Disable" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [44753 44770])
+                            ("CADI_BPT_Enable" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [44773 44790]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [44725 44791])
+                    ("CADI_EXECMODE_t" type
+                       (:members 
+                          ( ("CADI_EXECMODE_Stop" variable
+                               (:constant-flag t
+                                :default-value (45837 45838)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [45816 45838])
+                            ("CADI_EXECMODE_Run" variable
+                               (:constant-flag t
+                                :default-value (46082 46083)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [46062 46083])
+                            ("CADI_EXECMODE_Bpt" variable
+                               (:constant-flag t
+                                :default-value (46864 46865)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [46844 46865])
+                            ("CADI_EXECMODE_Error" variable
+                               (:constant-flag t
+                                :default-value (47470 47471)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [47448 47471])
+                            ("CADI_EXECMODE_HighLevelStep" variable
+                               (:constant-flag t
+                                :default-value (47536 47537)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [47506 47537])
+                            ("CADI_EXECMODE_RunUnconditionally" variable
+                               (:constant-flag t
+                                :default-value (47607 47608)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [47572 47608])
+                            ("CADI_EXECMODE_ResetDone" variable
+                               (:constant-flag t
+                                :default-value (48760 48761)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [48734 48761])
+                            ("CADI_EXECMODE_ENUM_MAX" variable
+                               (:constant-flag t
+                                :default-value (48790 48800)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [48765 48800]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [45139 48803])
+                    ("CADIExecMode_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [49131 49138])
+                            ("CADIExecMode_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("number_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [49167 49190])
+                                    ("name_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [49209 49234]))                                  
+                                :type ("CADIExecMode_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [49152 49316])
+                            ("public" label nil (reparse-symbol classsubparts) [49318 49325])
+                            ("number" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [49336 49354])
+                            ("name" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [49357 49384]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [49107 49387])
+                    ("CADIResetLevel_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [49436 49443])
+                            ("CADIResetLevel_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("number_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [49474 49497])
+                                    ("name_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [49518 49543]))                                  
+                                :type ("CADIResetLevel_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [49457 49625])
+                            ("public" label nil (reparse-symbol classsubparts) [49627 49634])
+                            ("number" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [49645 49663])
+                            ("name" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [49666 49693]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [49410 49696])
+                    ("CADIException_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [49742 49749])
+                            ("CADIException_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("number_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [49779 49802])
+                                    ("name_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [49822 49847])
+                                    ("vector_par" variable
+                                       (:default-value "CADIAddr_t()"
+                                        :type ("CADIAddr_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [49867 49903]))                                  
+                                :type ("CADIException_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [49763 50009])
+                            ("public" label nil (reparse-symbol classsubparts) [50011 50018])
+                            ("number" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [50029 50047])
+                            ("name" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [50050 50077])
+                            ("vector" variable (:type ("CADIAddr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [50080 50098]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [49717 50101])
+                    ("CADIExceptionAction_t" type
+                       (:members 
+                          ( ("CADI_EXCEPTION_Raise" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [50160 50181])
+                            ("CADI_EXCEPTION_Lower" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [50239 50260])
+                            ("CADI_EXCEPTION_Pulse" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [50298 50319])
+                            ("CADI_EXCEPTION_ENUM_MAX" variable
+                               (:constant-flag t
+                                :default-value (50348 50358)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [50322 50358]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [50129 50361])
+                    ("CADIRegAccessAttribute_t" type
+                       (:members 
+                          ( ("CADI_REG_READ_WRITE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [50616 50636])
+                            ("CADI_REG_READ_ONLY" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [50639 50658])
+                            ("CADI_REG_WRITE_ONLY" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [50661 50681])
+                            ("CADI_REG_READ_WRITE_RESTRICTED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [50684 50715])
+                            ("CADI_REG_READ_ONLY_RESTRICTED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [50718 50748])
+                            ("CADI_REG_WRITE_ONLY_RESTRICTED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [50751 50782])
+                            ("CADI_REG_ATTR_MAX" variable
+                               (:constant-flag t
+                                :default-value (50805 50815)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [50785 50815]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [50582 50861])
+                    ("CADIReg_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [51207 51214])
+                            ("CADIReg_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("regNumber_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [51238 51264])
+                                    ("bytes_par" variable
+                                       (:default-value "0"
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [51278 51300])
+                                    ("offset128_par" variable
+                                       (:default-value "0"
+                                        :type ("uint16_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [51314 51340])
+                                    ("isUndefined_par" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [51354 51382])
+                                    ("attribute_par" variable
+                                       (:default-value "CADI_REG_READ_WRITE"
+                                        :type ("CADIRegAccessAttribute_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [51396 51456]))                                  
+                                :type ("CADIReg_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [51228 51736])
+                            ("public" label nil (reparse-symbol classsubparts) [51738 51745])
+                            ("regNumber" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [51756 51777])
+                            ("bytes" variable
+                               (:dereference 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [51909 51930])
+                            ("offset128" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [52213 52234])
+                            ("isUndefined" variable (:type "bool") (reparse-symbol classsubparts) [53948 53966])
+                            ("attribute" variable (:type ("CADIRegAccessAttribute_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [54162 54197]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [51188 54275])
+                    ("CADIRegGroup_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [54389 54396])
+                            ("CADIRegGroup_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("groupID_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [54425 54449])
+                                    ("description_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [54468 54500])
+                                    ("numRegsInGroup_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [54519 54550])
+                                    ("name_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [54569 54594])
+                                    ("isPseudoRegister_par" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [54613 54646]))                                  
+                                :type ("CADIRegGroup_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [54410 54883])
+                            ("public" label nil (reparse-symbol classsubparts) [54885 54892])
+                            ("groupID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [54903 54922])
+                            ("description" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [54925 54966])
+                            ("numRegsInGroup" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [55105 55131])
+                            ("name" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [55134 55161])
+                            ("isPseudoRegister" variable (:type "bool") (reparse-symbol classsubparts) [55164 55187]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [54365 55518])
+                    ("CADIRegDisplay_t" type
+                       (:members 
+                          ( ("CADI_REGTYPE_HEX" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [55916 55933])
+                            ("CADI_REGTYPE_UINT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [55991 56009])
+                            ("CADI_REGTYPE_INT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [56040 56057])
+                            ("CADI_REGTYPE_BOOL" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [56087 56105])
+                            ("CADI_REGTYPE_FLOAT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [56145 56164])
+                            ("CADI_REGTYPE_SYMBOL" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [56214 56234])
+                            ("CADI_REGTYPE_STRING" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [56267 56287])
+                            ("CADI_REGTYPE_PC" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [56307 56323])
+                            ("CADI_REGTYPE_BIN" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [56394 56411])
+                            ("CADI_REGTYPE_OCT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [56439 56482]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [55890 56483])
+                    ("CADIRegSymbols_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [56623 56630])
+                            ("CADIRegSymbols_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("numSymbols_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [56661 56688])
+                                    ("Symbols_par" variable
+                                       (:pointer 2
+                                        :default-value "0"
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [56709 56731]))                                  
+                                :type ("CADIRegSymbols_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [56644 56799])
+                            ("public" label nil (reparse-symbol classsubparts) [56801 56808])
+                            ("numSymbols" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [56819 56841])
+                            ("Symbols" variable
+                               (:pointer 2
+                                :type "char")
+                                (reparse-symbol classsubparts) [56844 56862]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [56597 56865])
+                    ("CADIRegFloatFormat_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [56931 56938])
+                            ("CADIRegFloatFormat_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("format_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [56973 57000]))                                  
+                                :type ("CADIRegFloatFormat_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [56952 57063])
+                            ("public" label nil (reparse-symbol classsubparts) [57065 57072])
+                            ("format" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [57083 57112]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [56901 57155])
+                    ("CADIRegType_t" type
+                       (:members 
+                          ( ("CADI_REGTYPE_Simple" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [57214 57234])
+                            ("CADI_REGTYPE_Compound" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [57281 57365]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [57185 57366])
+                    ("CADIRegDetails_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [57420 57427])
+                            ("CADIRegDetails_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("type_par" variable
+                                       (:default-value "CADI_REGTYPE_Simple"
+                                        :type ("CADIRegType_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [57458 57502])
+                                    ("count_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [57523 57545]))                                  
+                                :type ("CADIRegDetails_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [57441 57609])
+                            ("public" label nil (reparse-symbol classsubparts) [57611 57618])
+                            ("type" variable (:type ("CADIRegType_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [57629 57648])
+                            ("u" variable (:type ("" type
+                                 (:members 
+                                    ( ("compound" variable (:type ("" type
+                                           (:members 
+                                              ( ("count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [57694 57709]))                                              
+                                            :type "struct")
+                                            nil nil)) (reparse-symbol classsubparts) [57665 57781]))                                    
+                                  :type "union")
+                                  nil nil)) (reparse-symbol classsubparts) [57651 57831]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [57394 57986])
+                    ("CADIRegInfo_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [58034 58041])
+                            ("CADIRegInfo_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("name_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [58069 58094])
+                                    ("description_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [58112 58144])
+                                    ("regNumber_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [58162 58188])
+                                    ("bitsWide_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [58206 58231])
+                                    ("hasSideEffects_par" variable
+                                       (:default-value "0"
+                                        :type ("int32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [58249 58279])
+                                    ("details_par" variable
+                                       (:default-value "CADIRegDetails_t()"
+                                        :type ("CADIRegDetails_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [58297 58346])
+                                    ("display_par" variable
+                                       (:default-value "CADI_REGTYPE_HEX"
+                                        :type ("CADIRegDisplay_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [58364 58411])
+                                    ("symbols_par" variable
+                                       (:default-value "CADIRegSymbols_t()"
+                                        :type ("CADIRegSymbols_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [58429 58478])
+                                    ("fpFormat_par" variable
+                                       (:default-value "CADIRegFloatFormat_t()"
+                                        :type ("CADIRegFloatFormat_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [58496 58554])
+                                    ("lsbOffset_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [58572 58598])
+                                    ("dwarfIndex_par" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58616 58641])
+                                    ("" variable (:type ("0U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58643 58646])
+                                    ("isProfiled_par" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [58663 58690])
+                                    ("isPipeStageField_par" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [58708 58741])
+                                    ("threadID_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [58759 58784])
+                                    ("attribute_par" variable
+                                       (:default-value "CADI_REG_READ_WRITE"
+                                        :type ("CADIRegAccessAttribute_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [58802 58862])
+                                    ("canonicalRegisterNumber_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [58880 58920]))                                  
+                                :type ("CADIRegInfo_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [58055 59504])
+                            ("public" label nil (reparse-symbol classsubparts) [59506 59513])
+                            ("name" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [59524 59563])
+                            ("description" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [59566 59619])
+                            ("regNumber" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [59622 59655])
+                            ("bitsWide" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [59731 59763])
+                            ("hasSideEffects" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [59891 59928])
+                            ("details" variable (:type ("CADIRegDetails_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [59982 60008])
+                            ("display" variable (:type ("CADIRegDisplay_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [60041 60067])
+                            ("symbols" variable (:type ("CADIRegSymbols_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [60100 60126])
+                            ("fpFormat" variable (:type ("CADIRegFloatFormat_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [60167 60198])
+                            ("lsbOffset" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [60231 60264])
+                            ("" type
+                               (:members 
+                                  ( ("CADI_REGINFO_NO_DWARF_INDEX" variable
+                                       (:constant-flag t
+                                        :default-value (60462 60472)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [60432 60472]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [60425 60475])
+                            ("dwarfIndex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [60478 60512])
+                            ("isProfiled" variable (:type "bool") (reparse-symbol classsubparts) [60658 60687])
+                            ("isPipeStageField" variable (:type "bool") (reparse-symbol classsubparts) [60745 60780])
+                            ("threadID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [60920 60952])
+                            ("attribute" variable (:type ("CADIRegAccessAttribute_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [61033 61068])
+                            ("canonicalRegisterNumber" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [61105 61147]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [58011 61627])
+                    ("" type
+                       (:members 
+                          ( ("CADI_MAU_MULTIPLES_LIST_SIZE" variable
+                               (:constant-flag t
+                                :default-value (61844 61846)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [61813 61846]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [61806 61849])
+                    ("CADIMemSpaceInfo_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [62225 62232])
+                            ("CADIMemSpaceInfo_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("memSpaceName_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [62265 62298])
+                                    ("description_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [62321 62353])
+                                    ("memSpaceId_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [62376 62403])
+                                    ("bitsPerMau_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [62426 62453])
+                                    ("maxAddress_par" variable
+                                       (:default-value "0"
+                                        :type ("CADIAddrSimple_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [62476 62511])
+                                    ("nrMemBlocks_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [62534 62562])
+                                    ("isProgramMemory_par" variable
+                                       (:default-value "false"
+                                        :type ("int32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [62585 62620])
+                                    ("minAddress_par" variable
+                                       (:default-value "0"
+                                        :type ("CADIAddrSimple_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [62643 62678])
+                                    ("isVirtualMemory_par" variable
+                                       (:default-value "false"
+                                        :type ("int32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [62701 62736])
+                                    ("isCache_par" variable
+                                       (:default-value "false"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [62759 62787])
+                                    ("endianness_par" variable
+                                       (:default-value "0"
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [62810 62836])
+                                    ("invariance_par" variable
+                                       (:default-value "0"
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [62859 62885])
+                                    ("dwarfMemSpaceId_par" variable
+                                       (:default-value "NO_DWARF_ID"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [62908 62950]))                                  
+                                :type ("CADIMemSpaceInfo_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [62246 63479])
+                            ("public" label nil (reparse-symbol classsubparts) [63481 63488])
+                            ("memSpaceName" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [63499 63538])
+                            ("description" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [63567 63612])
+                            ("memSpaceId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [63647 63669])
+                            ("bitsPerMau" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [63714 63736])
+                            ("maxAddress" variable (:type ("CADIAddrSimple_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [63818 63846])
+                            ("nrMemBlocks" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [63905 63928])
+                            ("isProgramMemory" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [63980 64006])
+                            ("minAddress" variable (:type ("CADIAddrSimple_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64083 64111])
+                            ("isVirtualMemory" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64170 64196])
+                            ("isCache" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64266 64285])
+                            ("endianness" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64347 64369])
+                            ("invariance" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64430 64452])
+                            ("" type
+                               (:members 
+                                  ( ("NO_DWARF_ID" variable
+                                       (:constant-flag t
+                                        :default-value (64544 64554)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [64530 64554]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [64523 64557])
+                            ("dwarfMemSpaceId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64560 64587])
+                            ("canonicalMemoryNumber" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [64718 64751]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [62197 65181])
+                    ("CADIMemReadWrite_t" type
+                       (:members 
+                          ( ("CADI_MEM_ReadOnly" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [65279 65297])
+                            ("CADI_MEM_WriteOnly" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [65300 65319])
+                            ("CADI_MEM_ReadWrite" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [65322 65341])
+                            ("CADI_MEM_ENUM_MAX" variable
+                               (:constant-flag t
+                                :default-value (65364 65374)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [65344 65374]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [65251 65377])
+                    ("CADIMemBlockInfo_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [65903 65910])
+                            ("CADIMemBlockInfo_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("name_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [65943 65968])
+                                    ("description_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [65991 66023])
+                                    ("id_par" variable
+                                       (:default-value "0"
+                                        :type ("uint16_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [66046 66065])
+                                    ("parentID_par" variable
+                                       (:default-value "0"
+                                        :type ("uint16_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [66088 66113])
+                                    ("startAddr_par" variable
+                                       (:default-value "0"
+                                        :type ("CADIAddrSimple_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [66136 66170])
+                                    ("endAddr_par" variable
+                                       (:default-value "0"
+                                        :type ("CADIAddrSimple_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [66193 66225])
+                                    ("cyclesToAccess_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [66248 66279])
+                                    ("readWrite_par" variable
+                                       (:default-value "CADI_MEM_ReadWrite"
+                                        :type ("CADIMemReadWrite_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [66302 66355])
+                                    ("supportedMultiplesOfMAU_par" variable
+                                       (:pointer 1
+                                        :default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [66378 66419])
+                                    ("endianness_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [66442 66469])
+                                    ("invariance_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [66492 66519]))                                  
+                                :type ("CADIMemBlockInfo_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [65924 67114])
+                            ("public" label nil (reparse-symbol classsubparts) [67116 67123])
+                            ("name" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [67134 67173])
+                            ("description" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [67206 67259])
+                            ("id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [67294 67316])
+                            ("parentID" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [67365 67393])
+                            ("startAddr" variable (:type ("CADIAddrSimple_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [67474 67502])
+                            ("endAddr" variable (:type ("CADIAddrSimple_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [67567 67593])
+                            ("cyclesToAccess" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [67658 67692])
+                            ("readWrite" variable (:type ("CADIMemReadWrite_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [67765 67794])
+                            ("supportedMultiplesOfMAU" variable
+                               (:dereference 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [67852 67925])
+                            ("endianness" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [67992 68014])
+                            ("invariance" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [68077 68099]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [65875 68167])
+                    ("CADICacheInfo_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [68215 68222])
+                            ("CADICacheInfo_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("cacheLineSize_par" variable
+                                       (:default-value "0"
+                                        :type ("uint16_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [68252 68282])
+                                    ("cacheTagBits_par" variable
+                                       (:default-value "0"
+                                        :type ("uint16_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [68302 68331])
+                                    ("associativity_par" variable
+                                       (:default-value "0"
+                                        :type ("uint16_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [68351 68381])
+                                    ("writeThrough_par" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [68401 68430]))                                  
+                                :type ("CADICacheInfo_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [68236 68588])
+                            ("public" label nil (reparse-symbol classsubparts) [68590 68597])
+                            ("cacheLineSize" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [68608 68637])
+                            ("cacheTagBits" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [68676 68704])
+                            ("associativity" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [68737 68766])
+                            ("writeThrough" variable (:type "bool") (reparse-symbol classsubparts) [68800 68827]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [68190 68879])
+                    ("CADITraceControl_t" type
+                       (:members 
+                          ( ("CADI_TRACE_CNTL_StartContinuous" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [68988 69020])
+                            ("CADI_TRACE_CNTL_StartDiscontinuity" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [69023 69058])
+                            ("CADI_TRACE_CNTL_Stop" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [69061 69083]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [68960 69084])
+                    ("CADITraceBufferControl_t" type
+                       (:members 
+                          ( ("CADI_TRACE_BUFF_Wrap" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [69197 69218])
+                            ("CADI_TRACE_BUFF_StopOnFull" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [69221 69249]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [69163 69250])
+                    ("CADITraceOverlayControl_t" type
+                       (:members 
+                          ( ("CADI_TRACE_OVERLAY_Manager" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [69364 69391])
+                            ("CADI_TRACE_OVERLAY_Memory" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [69394 69421]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [69329 69422])
+                    ("CADITraceBlockType_t" type
+                       (:members 
+                          ( ("CADI_TRACE_BLK_Address" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [69513 69536])
+                            ("CADI_TRACE_BLK_Overlay" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [69539 69563]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [69483 69564])
+                    ("CADITraceBlock_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [69690 69697])
+                            ("CADITraceBlock_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("blockType_par" variable
+                                       (:default-value "CADI_TRACE_BLK_Address"
+                                        :type ("CADITraceBlockType_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [69728 69787])
+                                    ("address_par" variable
+                                       (:default-value "CADIAddr_t()"
+                                        :type ("CADIAddr_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [69808 69845])
+                                    ("overlay_par" variable
+                                       (:default-value "CADIOverlayId_t()"
+                                        :type ("CADIOverlayId_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [69866 69913]))                                  
+                                :type ("CADITraceBlock_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [69711 70011])
+                            ("public" label nil (reparse-symbol classsubparts) [70013 70020])
+                            ("blockType" variable (:type ("CADITraceBlockType_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [70031 70062])
+                            ("u" variable (:type ("" type
+                                 (:members 
+                                    ( ("address" variable (:type ("CADIAddr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [70080 70104])
+                                      ("overlay" variable (:type ("CADIOverlayId_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [70109 70133]))                                    
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol classsubparts) [70065 70140]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [69664 70143])
+                    ("CADISemiHostingInputChannelType_t" type
+                       (:members 
+                          ( ("CADI_INPUT_KEYBOARD" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [70266 70286])
+                            ("CADI_INPUT_POINTING_DEVICE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [70289 70317]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [70223 70318])
+                    ("CADISemiHostingInputChannel_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [70437 70444])
+                            ("CADISemiHostingInputChannel_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("ID_par" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [70488 70507])
+                                    ("name_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [70541 70566])
+                                    ("type_par" variable
+                                       (:default-value "CADI_INPUT_KEYBOARD"
+                                        :type ("CADISemiHostingInputChannelType_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [70600 70664]))                                  
+                                :type ("CADISemiHostingInputChannel_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [70458 70758])
+                            ("public" label nil (reparse-symbol classsubparts) [70760 70767])
+                            ("ID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [70778 70790])
+                            ("name" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [70793 70819])
+                            ("type" variable (:type ("CADISemiHostingInputChannelType_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [70822 70861]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [70398 70864])
+                    ("CADIConsoleChannel_t" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [70973 70980])
+                            ("CADIConsoleChannel_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("streamID_par" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71015 71037])
+                                    ("name_par" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [71061 71086])
+                                    ("blocking_par" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [71111 71136])
+                                    ("characterInput_par" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [71161 71192]))                                  
+                                :type ("CADIConsoleChannel_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [70994 71346])
+                            ("public" label nil (reparse-symbol classsubparts) [71348 71355])
+                            ("streamID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71366 71384])
+                            ("name" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [71387 71413])
+                            ("blocking" variable (:type "bool") (reparse-symbol classsubparts) [71416 71430])
+                            ("characterInput" variable (:type "bool") (reparse-symbol classsubparts) [71519 71539]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [70943 71735])
+                    ("CADIStreamId" type
+                       (:members 
+                          ( ("CADI_STREAMID_STDIN" variable
+                               (:constant-flag t
+                                :default-value (72230 72231)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [72208 72231])
+                            ("CADI_STREAMID_STDOUT" variable
+                               (:constant-flag t
+                                :default-value (72258 72259)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [72235 72259])
+                            ("CADI_STREAMID_STDERR" variable
+                               (:constant-flag t
+                                :default-value (72286 72287)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [72263 72287]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [72186 72290])
+                    ("CADIRefreshReason_t" type
+                       (:members 
+                          ( ("CADI_REFRESH_REASON_MEMORY" variable
+                               (:constant-flag t
+                                :default-value (72535 72536)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [72501 72536])
+                            ("CADI_REFRESH_REASON_REGISTERS" variable
+                               (:constant-flag t
+                                :default-value (72574 72575)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [72540 72575])
+                            ("CADI_REFRESH_REASON_BREAKPOINTS" variable
+                               (:constant-flag t
+                                :default-value (72670 72671)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [72636 72671])
+                            ("CADI_REFRESH_REASON_PARAMETERS" variable
+                               (:constant-flag t
+                                :default-value (72709 72710)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [72675 72710])
+                            ("CADI_REFRESH_REASON_OTHER" variable
+                               (:constant-flag t
+                                :default-value (72748 72757)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [72714 72757])
+                            ("CADI_REFRESH_REASON_ALL" variable
+                               (:constant-flag t
+                                :default-value (72849 72859)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [72815 72859]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [72472 72902]))                  
+                :type "namespace")
+                nil [646 72906]))          
+      :file "CADITypes.h"
+      :pointmax 72978
+      :fsize 72977
+      :lastmodtime '(22617 57199 843898 0)
+      :unmatched-syntax '((punctuation 58642 . 58643) (punctuation 58640 . 58641) (punctuation 30538 . 30539) (punctuation 30536 . 30537) (punctuation 9864 . 9865) (punctuation 9862 . 9863) (punctuation 1041 . 1042) (punctuation 1039 . 1040) (punctuation 693 . 694) (punctuation 691 . 692) (punctuation 1041 . 1042) (punctuation 1039 . 1040) (punctuation 693 . 694) (punctuation 691 . 692))
+      :lexical-table 
+        '(("CADI2Types_h")
+          )
+)
+    (semanticdb-table "CADICommon.h"
+      :file "CADICommon.h"
+      :fsize 361
+      :lastmodtime '(22617 57199 826894 0))
+    (semanticdb-table "CASISaveRestoreArch.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("CASISAVERESTOREARCH_H" variable (:constant-flag t) nil [605 626])
+            ("CASISaveRestore.h" include nil nil [628 656])
+            ("map" include (:system-flag t) nil [658 672])
+            ("list" include (:system-flag t) nil [673 688])
+            ("xmlNodePtr" type
+               (:typedef ("_xmlNode" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [690 726])
+            ("eslapi" type
+               (:members 
+                  ( ("CADI" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [748 759])
+                    ("CADIRegGroup_t" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [760 782])
+                    ("CADIRegInfo_t" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [783 804])
+                    ("CASISaveRestoreArchActionIF" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [805 839])
+                    ("CASIStringPair" type
+                       (:typedef ("std::pair" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [886 945])
+                    ("CASIValueLenPair" type
+                       (:typedef ("std::pair" type
+                             (:template-specifier 
+                                ( ("uint8_t" type (:pointer 1) nil nil)
+                                  ("uint32_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [999 1054])
+                    ("CASIRegGroupPair" type
+                       (:typedef ("std::pair" type
+                             (:template-specifier 
+                                ( ("CADIRegGroup_t" type (:pointer 1) nil nil)
+                                  ("CADIRegInfo_t" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [1096 1164])
+                    ("CASIMemoryRange" type
+                       (:typedef ("std::pair" type
+                             (:template-specifier 
+                                ( ("uint64_t" type nil nil nil)
+                                  ("uint32_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [1210 1264])
+                    ("CASIRegMap" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("CASIStringPair" type nil nil nil)
+                                  ("CASIRegGroupPair" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [1333 1395])
+                    ("CASIRegValueMap" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("CASIStringPair" type nil nil nil)
+                                  ("CASIValueLenPair" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [1456 1523])
+                    ("CASIMemoryValueMap" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("CASIMemoryRange" type nil nil nil)
+                                  ("CASIValueLenPair" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [1588 1659])
+                    ("CASISaveRestoreArchCallbackIF" variable (:type ("WEXP" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2024 4079])
+                    ("CASISaveRestoreArchCallbackIF" variable (:type "int") (reparse-symbol namespacesubparts) [4320 7158])
+                    ("CASISaveRestoreArchActionIF" variable (:type ("WEXP" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [7455 8038])
+                    ("CASISaveRestoreStreamType" type
+                       (:members 
+                          ( ("ArchStream" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8144 8155])
+                            ("BinaryStream" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8156 8170]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [8111 8171])
+                    ("CASISaveRestoreArchActionIF" variable (:type "int") (reparse-symbol namespacesubparts) [8666 11272])
+                    ("CAInterface" variable (:type "int") (reparse-symbol namespacesubparts) [11462 12297])
+                    ("CAInterface" variable (:type "int") (reparse-symbol namespacesubparts) [12479 13106]))                  
+                :type "namespace")
+                nil [728 13108]))          
+      :file "CASISaveRestoreArch.h"
+      :pointmax 13116
+      :fsize 13115
+      :lastmodtime '(22617 57199 911893 0)
+      :unmatched-syntax '((PUBLIC 12472 . 12478) (punctuation 12470 . 12471) (symbol 12441 . 12470) (PUBLIC 12434 . 12440) (punctuation 12432 . 12433) (symbol 12390 . 12431) (symbol 12385 . 12389) (CLASS 12379 . 12384) (PUBLIC 11455 . 11461) (punctuation 11453 . 11454) (symbol 11424 . 11453) (PUBLIC 11417 . 11423) (punctuation 11415 . 11416) (symbol 11376 . 11414) (symbol 11371 . 11375) (CLASS 11365 . 11370) (PUBLIC 8659 . 8665) (punctuation 8657 . 8658) (symbol 8642 . 8657) (PUBLIC 8635 . 8641) (punctuation 8633 . 8634) (symbol 8613 . 8632) (symbol 8608 . 8612) (CLASS 8602 . 8607) (PUBLIC 4313 . 4319) (punctuation 4311 . 4312) (symbol 4276 . 4310) (symbol 4271 . 4275) (CLASS 4265 . 4270))
+      :lexical-table 
+        '(("CASISAVERESTOREARCH_H")
+          )
+)
+    (semanticdb-table "CASISaveRestore.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("CASISAVERESTORE_H" variable (:constant-flag t) nil [631 648])
+            ("CASISaveRestoreIF.h" include nil nil [650 680])
+            ("string" include (:system-flag t) nil [681 698])
+            ("eslapi" type
+               (:members 
+                  ( ("CASIIDataStream" variable (:type ("WEXP" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [749 1980])
+                    ("atEnd" function
+                       (:parent "CASIIDataStream"
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2193 2275])
+                    ("eof" function
+                       (:parent "CASIIDataStream"
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2277 2339])
+                    ("byteOrder" function
+                       (:parent "CASIIDataStream"
+                        :typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2341 2410])
+                    (">>" function
+                       (:operator-flag t
+                        :parent "CASIIDataStream"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable
+                               (:reference 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2465 2477]))                          
+                        :type ("CASIIDataStream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2412 2511])
+                    (">>" function
+                       (:operator-flag t
+                        :parent "CASIIDataStream"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable
+                               (:reference 1
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2566 2579]))                          
+                        :type ("CASIIDataStream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2513 2614])
+                    (">>" function
+                       (:operator-flag t
+                        :parent "CASIIDataStream"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable
+                               (:reference 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2669 2682]))                          
+                        :type ("CASIIDataStream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2616 2717])
+                    (">>" function
+                       (:operator-flag t
+                        :parent "CASIIDataStream"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable
+                               (:reference 1
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2772 2785]))                          
+                        :type ("CASIIDataStream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2719 2820])
+                    ("CASIODataStream" variable (:type ("WEXP" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2861 4124])
+                    ("byteOrder" function
+                       (:parent "CASIODataStream"
+                        :typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [4337 4406])
+                    ("<<" function
+                       (:operator-flag t
+                        :parent "CASIODataStream"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4461 4472]))                          
+                        :type ("CASIODataStream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4408 4505])
+                    ("<<" function
+                       (:operator-flag t
+                        :parent "CASIODataStream"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4560 4572]))                          
+                        :type ("CASIODataStream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4507 4606])
+                    ("<<" function
+                       (:operator-flag t
+                        :parent "CASIODataStream"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4661 4673]))                          
+                        :type ("CASIODataStream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4608 4707])
+                    ("<<" function
+                       (:operator-flag t
+                        :parent "CASIODataStream"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4762 4774]))                          
+                        :type ("CASIODataStream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4709 4808])
+                    ("<<" function
+                       (:operator-flag t
+                        :parent "CASIODataStream"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("b" variable (:type "bool") (reparse-symbol arg-sub-list) [4863 4871]))                          
+                        :type ("CASIODataStream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4810 4918])
+                    ("CASIModule" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [4929 4946])
+                    ("CASISaveRestoreIF" variable (:type "int") (reparse-symbol namespacesubparts) [5202 6535])
+                    ("SAVE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [7209 7213])
+                    ("RESTORE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [7260 7267])
+                    ("SAVE_VARIANT_VERSION" variable (:constant-flag t) (reparse-symbol namespacesubparts) [7449 7469])
+                    ("CHECK_VARIANT_VERSION" variable (:constant-flag t) (reparse-symbol namespacesubparts) [7619 7640]))                  
+                :type "namespace")
+                nil [700 8405]))          
+      :file "CASISaveRestore.h"
+      :pointmax 8414
+      :fsize 8413
+      :lastmodtime '(22617 57199 909893 0)
+      :unmatched-syntax '((PUBLIC 5195 . 5201) (punctuation 5193 . 5194) (symbol 5177 . 5192) (symbol 5172 . 5176) (CLASS 5166 . 5171))
+      :lexical-table 
+        '(("CHECK_VARIANT_VERSION" (spp-arg-list ("stream") 7640 . 7648) . ((semantic-list "{ \\
+    char* variant; \\
+    stream >> variant; \\
+    if (strcmp(variant, getProperty(CASI_PROP_COMPONENT_VARIANT).c_str())) \\
+    { \\
+        message(CASI_MSG_WARNING, \"May not restore data for component of variant <%s> with data saved by variant <%s>\", \\
+                getProperty(CASI_PROP_COMPONENT_VARIANT).c_str(), variant); \\
+    } \\
+    delete [] variant; \\
+    char* version; \\
+    stream >> version; \\
+    if (strcmp(version, getProperty(CASI_PROP_COMPONENT_VERSION).c_str())) \\
+    { \\
+        message(CASI_MSG_WARNING, \"May not restore data for component version <%s> with data saved by component of version <%s>\", \\
+                getProperty(CASI_PROP_COMPONENT_VERSION).c_str(), version); \\
+    } \\
+    delete [] version; \\
+}" 7652 . 8395)))
+          ("CASISAVERESTORE_H")
+          ("SAVE" (spp-arg-list ("stream" "item") 7213 . 7227) . 
+              ((symbol "stream" 7237 . 7243) (punctuation "<" 7244 . 7245) (punctuation "<" 7245 . 7246) (symbol "item" 7247 . 7251)))
+          ("RESTORE" (spp-arg-list ("stream" "item") 7267 . 7281) . 
+              ((symbol "stream" 7288 . 7294) (punctuation ">" 7295 . 7296) (punctuation ">" 7296 . 7297) (symbol "item" 7298 . 7302)))
+          ("SAVE_VARIANT_VERSION" (spp-arg-list ("stream") 7469 . 7477) . 
+              ((symbol "stream" 7484 . 7490) (punctuation "<" 7491 . 7492) (punctuation "<" 7492 . 7493) (symbol "getProperty" 7494 . 7505) (semantic-list "(CASI_PROP_COMPONENT_VARIANT)" 7505 . 7534) (punctuation "." 7534 . 7535) (symbol "c_str" 7535 . 7540) (semantic-list "()" 7540 . 7542) (punctuation ";" 7542 . 7543) (symbol "stream" 7550 . 7556) (punctuation "<" 7557 . 7558) (punctuation "<" 7558 . 7559) (symbol "getProperty" 7560 . 7571) (semantic-list "(CASI_PROP_COMPONENT_VERSION)" 7571 . 7600) (punctuation "." 7600 . 7601) (symbol "c_str" 7601 . 7606) (semantic-list "()" 7606 . 7608) (punctuation ";" 7608 . 7609)))
+          )
+)
+    (semanticdb-table "CASISaveRestoreIF.h"
+      :file "CASISaveRestoreIF.h"
+      :fsize 1348
+      :lastmodtime '(22617 57199 913895 0)))
+  :file "!home!hanlei01!Source!socdesigner!MaxSim!eslapi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

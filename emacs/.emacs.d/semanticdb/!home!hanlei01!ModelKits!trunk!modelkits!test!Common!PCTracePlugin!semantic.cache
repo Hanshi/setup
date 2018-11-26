@@ -1,0 +1,179 @@
+;; Object PCTracePlugin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "PCTracePlugin/"
+  :tables
+  (list
+    (semanticdb-table "PCTracePlugin.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("PCTracePlugin.h" include nil nil [385 411])
+            ("iomanip" include (:system-flag t) nil [413 431])
+            ("sstream" include (:system-flag t) nil [432 450])
+            ("fstream" include (:system-flag t) nil [451 469])
+            ("Carbon::PCTrace" using (:type ("Carbon::PCTrace" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [472 504])
+            ("eslapi" using (:type ("eslapi" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [505 528])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [529 549])
+            ("regdisplaymap" variable
+               (:typemodifiers ("static")
+                :type ("std::map" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("std::string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [553 601])
+            ("regattrmap" variable
+               (:typemodifiers ("static")
+                :type ("std::map" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("std::string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [602 647])
+            ("cadiReturnMap" variable
+               (:typemodifiers ("static")
+                :type ("std::map" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("std::string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [648 696])
+            ("Hierarchy" variable
+               (:pointer 1
+                :dereference 1
+                :constant-flag t
+                :default-value "{
+  /* columns rows colors chars-per-pixel */
+  \"16 16 4 1\",
+  \"  c Gray0\",
+  \". c None\",
+  \"X c Yellow\",
+  \"o c #fffbf0\",
+  /* pixels */
+  \"....ooooooo.....\",
+  \"....oXXXXX .....\",
+  \"....oXXXXX .....\",
+  \"....oXXXXX .....\",
+  \"....o      .....\",
+  \"....... ........\",
+  \"....... ........\",
+  \"...         ....\",
+  \"... ....... ....\",
+  \"... ....... ....\",
+  \"oooooo...oooooo.\",
+  \"oXXXX ...oXXXX .\",
+  \"oXXXX ...oXXXX .\",
+  \"o     ...o     .\",
+  \"................\",
+  \"................\"
+}"
+                :type "char")
+                nil [698 1215])
+            ("MxPluginInit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1335 1340]))                  
+                :type "void")
+                nil [1317 1827])
+            ("MxPluginTerminate" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1864 1869]))                  
+                :type "void")
+                nil [1841 1873])
+            ("myCallback" function
+               (:constructor-flag t
+                :parent "myCallback"
+                :arguments 
+                  ( ("_pluginP" variable
+                       (:pointer 1
+                        :type ("MxPlugin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1914 1933]))                  
+                :type ("myCallback" type (:type "class") nil nil))
+                nil [1891 1959])
+            ("myCallback" function
+               (:destructor-flag t
+                :parent "myCallback"
+                :type "void")
+                nil [1976 2005])
+            ("BranchRecorder" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2166 2173])
+                    ("BranchRecorder" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2191 2203]))                          
+                        :type ("BranchRecorder" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2176 2312])
+                    ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("source" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2331 2347])
+                            ("destination" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2348 2369])
+                            ("isa" variable (:type ("ISA::ISA" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2370 2383]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2315 2825])
+                    ("private" label nil (reparse-symbol classsubparts) [2826 2834])
+                    ("mComponentName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2837 2859])
+                    ("public" label nil (reparse-symbol classsubparts) [2860 2867])
+                    ("mTraceOutput" variable (:type ("shared_ptr" type
+                         (:template-specifier 
+                            ( ("ofstream" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2870 2904]))                  
+                :type "class")
+                nil [2143 2907])
+            ("processComponents" function
+               (:parent "myCallback"
+                :arguments 
+                  ( ("topComponent" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3035 3071]))                  
+                :type "void")
+                nil [3000 3479])
+            ("attachTracer" function
+               (:parent "myCallback"
+                :arguments 
+                  ( ("component" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3564 3596]))                  
+                :type "void")
+                nil [3534 4450])
+            ("pluginCallback" function
+               (:parent "myCallback"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4506 4511]))                  
+                :type "bool")
+                nil [4473 5043])
+            ("checkPluginCallback" function
+               (:parent "myCallback"
+                :arguments 
+                  ( ("puComponent" variable
+                       (:pointer 1
+                        :type ("maxsim::sc_mx_module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5083 5117]))                  
+                :type "int")
+                nil [5046 5136]))          
+      :file "PCTracePlugin.cpp"
+      :pointmax 5140
+      :fsize 5139
+      :lastmodtime '(21584 3286 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "PCTracePlugin.h"
+      :file "PCTracePlugin.h"
+      :fsize 1355
+      :lastmodtime '(21584 3286 0 0)))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!Common!PCTracePlugin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

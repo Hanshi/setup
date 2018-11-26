@@ -1,0 +1,44 @@
+;; Object count_words/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "count_words/"
+  :tables
+  (list
+    (semanticdb-table "create_dic.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("string" include (:system-flag t) nil [20 37])
+            ("fstream" include (:system-flag t) nil [38 56])
+            ("sstream" include (:system-flag t) nil [57 75])
+            ("iostream" include (:system-flag t) nil [76 95])
+            ("set" include (:system-flag t) nil [96 110])
+            ("vector" include (:system-flag t) nil [111 128])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [129 149])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [306 315])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [316 329]))                  
+                :type "int")
+                nil [297 1377]))          
+      :file "create_dic.cpp"
+      :pointmax 1378
+      :fsize 1377
+      :lastmodtime '(22691 40177 655687 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("count_words" function (:arguments ("create_dic.cpp")) nil [1 29]))          
+      :file "makefile"
+      :pointmax 62
+      :unmatched-syntax '((symbol 47 . 61) (symbol 44 . 46) (punctuation 43 . 44) (punctuation 42 . 43) (symbol 41 . 42) (punctuation 40 . 41) (symbol 35 . 40) (punctuation 33 . 34) (punctuation 32 . 33) (symbol 31 . 32) (bol 29 . 29) (symbol 14 . 28) (punctuation 12 . 13) (symbol 1 . 12) (bol 1 . 1) (punctuation 12 . 13) (symbol 1 . 12) (bol 1 . 1) (symbol 30 . 44) (symbol 27 . 29) (punctuation 26 . 27) (punctuation 25 . 26) (symbol 24 . 25) (punctuation 23 . 24) (symbol 18 . 23) (punctuation 16 . 17) (punctuation 15 . 16) (symbol 14 . 15) (bol 14 . 14) (symbol 29 . 43) (symbol 26 . 28) (punctuation 25 . 26) (punctuation 24 . 25) (symbol 23 . 24) (punctuation 22 . 23) (symbol 17 . 22) (punctuation 15 . 16) (punctuation 14 . 15) (symbol 13 . 14) (bol 13 . 13) (symbol 1 . 12) (bol 1 . 1) (symbol 24 . 38) (symbol 21 . 23) (punctuation 20 . 21) (punctuation 19 . 20) (symbol 18 . 19) (punctuation 17 . 18) (symbol 12 . 17) (punctuation 10 . 11) (punctuation 9 . 10) (symbol 8 . 9) (bol 8 . 8) (symbol 1 . 7) (bol 1 . 1) (symbol 23 . 37) (symbol 20 . 22) (punctuation 19 . 20) (punctuation 18 . 19) (symbol 17 . 18) (punctuation 16 . 17) (symbol 11 . 16) (punctuation 9 . 10) (punctuation 8 . 9) (symbol 7 . 8) (bol 7 . 7) (symbol 1 . 6) (bol 1 . 1) (symbol 18 . 32) (symbol 15 . 17) (punctuation 14 . 15) (punctuation 13 . 14) (symbol 12 . 13) (punctuation 11 . 12) (symbol 6 . 11) (punctuation 4 . 5) (punctuation 3 . 4) (symbol 2 . 3) (bol 2 . 2) (symbol 19 . 33) (symbol 16 . 18) (punctuation 15 . 16) (punctuation 14 . 15) (symbol 13 . 14) (punctuation 12 . 13) (symbol 7 . 12) (punctuation 5 . 6) (punctuation 4 . 5) (symbol 3 . 4) (bol 3 . 3) (symbol 1 . 2) (bol 1 . 1) (symbol 20 . 34) (symbol 17 . 19) (punctuation 16 . 17) (punctuation 15 . 16) (symbol 14 . 15) (punctuation 13 . 14) (symbol 8 . 13) (punctuation 6 . 7) (punctuation 5 . 6) (symbol 4 . 5) (bol 4 . 4) (symbol 1 . 3) (bol 1 . 1) (symbol 17 . 31) (symbol 14 . 16) (punctuation 13 . 14) (punctuation 12 . 13) (symbol 11 . 12) (punctuation 10 . 11) (symbol 5 . 10) (punctuation 3 . 4) (punctuation 2 . 3) (symbol 1 . 2) (bol 1 . 1))))
+  :file "!home!hanlei01!Downloads!systemC_cpaks!count_words!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,959 @@
+;; Object MaxSimIDE/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "MaxSimIDE/"
+  :tables
+  (list
+    (semanticdb-table "RegisterDialogImp.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("RegisterDialogImp.h" include nil nil [450 480])
+            ("MxSchedulerAccess.h" include nil nil [482 512])
+            ("MxBreakPoint.h" include nil nil [513 538])
+            ("PlatformUtils/Environment.h" include nil nil [539 577])
+            ("list" include (:system-flag t) nil [579 594])
+            ("qapplication.h" include (:system-flag t) nil [596 621])
+            ("q3header.h" include (:system-flag t) nil [622 643])
+            ("q3listview.h" include (:system-flag t) nil [644 667])
+            ("qtooltip.h" include (:system-flag t) nil [668 689])
+            ("qpushbutton.h" include (:system-flag t) nil [690 714])
+            ("qtabwidget.h" include (:system-flag t) nil [715 738])
+            ("qwidget.h" include (:system-flag t) nil [739 759])
+            ("qlayout.h" include (:system-flag t) nil [760 780])
+            ("qvariant.h" include (:system-flag t) nil [781 802])
+            ("qtooltip.h" include (:system-flag t) nil [803 824])
+            ("q3popupmenu.h" include (:system-flag t) nil [825 849])
+            ("q3whatsthis.h" include (:system-flag t) nil [850 874])
+            ("qevent.h" include (:system-flag t) nil [875 894])
+            ("qlabel.h" include (:system-flag t) nil [895 914])
+            ("qtimer.h" include (:system-flag t) nil [915 934])
+            ("q3dockwindow.h" include (:system-flag t) nil [935 960])
+            ("qfontmetrics.h" include (:system-flag t) nil [961 986])
+            ("qthread.h" include (:system-flag t) nil [987 1007])
+            ("qfontdatabase.h" include (:system-flag t) nil [1008 1034])
+            ("qmessagebox.h" include (:system-flag t) nil [1035 1059])
+            ("qclipboard.h" include (:system-flag t) nil [1060 1083])
+            ("q3filedialog.h" include (:system-flag t) nil [1084 1109])
+            ("QPixmap" include (:system-flag t) nil [1129 1147])
+            ("QMouseEvent" include (:system-flag t) nil [1148 1170])
+            ("Q3ValueList" include (:system-flag t) nil [1171 1193])
+            ("QKeyEvent" include (:system-flag t) nil [1194 1214])
+            ("Q3VBoxLayout" include (:system-flag t) nil [1215 1238])
+            ("MxTracer.h" include nil nil [1240 1261])
+            ("Inline.hpp" include nil nil [1263 1284])
+            ("cross.xpm" include nil nil [1286 1306])
+            ("tick.xpm" include nil nil [1307 1326])
+            ("BreakPoint_Small.xpm" include nil nil [1327 1358])
+            ("RegisterBreakpoint.xpm" include nil nil [1359 1392])
+            ("RegisterBreakpoint_Gray.xpm" include nil nil [1393 1431])
+            ("VCDLogger_Small.xpm" include nil nil [1432 1462])
+            ("VCDLogger_Small_Gray.xpm" include nil nil [1463 1498])
+            ("BreakPoint_VCD_Small.xpm" include nil nil [1499 1534])
+            ("BreakPoint_VCD_Small_Gray.xpm" include nil nil [1535 1575])
+            ("MainWindow.hpp" include nil nil [1577 1602])
+            ("MxCustomEvents.h" include nil nil [1603 1630])
+            ("Private.h" include nil nil [1631 1651])
+            ("MxToolWindow.h" include nil nil [1652 1677])
+            ("MaxSimCommands.h" include nil nil [1679 1706])
+            ("utils.h" include nil nil [1707 1725])
+            ("Common.h" include nil nil [1726 1745])
+            ("MxDILock.h" include nil nil [1747 1768])
+            ("limits" include (:system-flag t) nil [1831 1848])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1849 1869])
+            ("REG_MAX_STRING_LEN" variable (:constant-flag t) nil [1879 1897])
+            ("eslapi" using (:type ("eslapi" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1904 1927])
+            ("getCsvText" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("Q3ListView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1950 1968])
+                    ("separator" variable
+                       (:reference 1
+                        :constant-flag t
+                        :default-value "\",\""
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1969 1999]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [1931 2001])
+            ("copyCsvToClipboard" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("Q3ListView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2027 2045]))                  
+                :type "void")
+                nil [2002 2046])
+            ("saveCsvToFile" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2067 2084])
+                    ("list" variable
+                       (:pointer 1
+                        :type ("Q3ListView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2085 2103])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2104 2124]))                  
+                :type "void")
+                nil [2047 2125])
+            ("" type
+               (:members 
+                  ( ("IdViewModeDefault" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2138 2156])
+                    ("IdViewModeHex" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2159 2173])
+                    ("IdViewModeDec" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2176 2190])
+                    ("IdViewModeBin" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2193 2207])
+                    ("IdViewModeOct" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2210 2224])
+                    ("IdViewModeOneDefault" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2228 2249])
+                    ("IdViewModeOneHex" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2252 2269])
+                    ("IdViewModeOneDec" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2272 2289])
+                    ("IdViewModeOneBin" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2292 2309])
+                    ("IdViewModeOneOct" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2312 2329])
+                    ("IdBreakPoint" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2352 2365])
+                    ("IdBreakPointEnable" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2368 2387])
+                    ("IdBreakPointProperties" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2390 2413])
+                    ("IdFontInc" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2436 2446])
+                    ("IdFontDec" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2449 2459])
+                    ("IdTracer" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2482 2491])
+                    ("IdTraceAll" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2494 2505])
+                    ("IdOpenNewWindow" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2528 2544])
+                    ("IdCount" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2548 2556])
+                    ("IdCopyToClipboard" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2560 2578])
+                    ("IdSaveToFile" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2581 2595]))                  
+                :type "enum")
+                nil [2129 2596])
+            ("RegisterDialogImp" function
+               (:constructor-flag t
+                :parent "RegisterDialogImp"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2872 2888])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2890 2907])
+                    ("modal" variable (:type "bool") (reparse-symbol arg-sub-list) [2908 2919])
+                    ("fl" variable (:type ("Qt::WFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2920 2935]))                  
+                :type ("RegisterDialogImp" type (:type "class") nil nil))
+                nil [2834 4530])
+            ("RegisterDialogImp" function
+               (:destructor-flag t
+                :parent "RegisterDialogImp"
+                :type "void")
+                nil [4597 5319])
+            ("slotBreakpointRemoved" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("MxBreakPointItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5368 5387]))                  
+                :type "void")
+                nil [5321 5417])
+            ("slotBreakpointAdded" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("MxBreakPointItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5464 5483]))                  
+                :type "void")
+                nil [5419 5513])
+            ("slotBreakpointEnabled" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("MxBreakPointItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5562 5581])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [5582 5587]))                  
+                :type "void")
+                nil [5515 5617])
+            ("slotReInitRegisterView" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [5619 6783])
+            ("slotInitRegisterView" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("con" variable (:type "bool") (reparse-symbol arg-sub-list) [6831 6841]))                  
+                :type "void")
+                nil [6785 7902])
+            ("slotTerminateRegisterView" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [7904 8813])
+            ("setVisible" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("shown" variable (:type "bool") (reparse-symbol arg-sub-list) [8850 8861]))                  
+                :type "void")
+                nil [8815 8918])
+            ("show" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [8920 9015])
+            ("hide" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [9017 9114])
+            ("visabilityModified" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("shown" variable (:type "bool") (reparse-symbol arg-sub-list) [9160 9172]))                  
+                :type "void")
+                nil [9116 10116])
+            ("slotSimulationRunning" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [10118 10396])
+            ("slotSimulationStopped" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [10398 10878])
+            ("slotSimulationReset" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("hard" variable (:type "bool") (reparse-symbol arg-sub-list) [11020 11031]))                  
+                :type "void")
+                nil [10975 11173])
+            ("slotResetWindow" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [11175 11509])
+            ("slotRemoveHighlights" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [11511 11920])
+            ("dummySlot" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [11922 11986])
+            ("setComponent" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("comp" variable
+                       (:pointer 1
+                        :type ("MxComponentIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12026 12047]))                  
+                :type "void")
+                nil [11988 12288])
+            ("setWindowId" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [12327 12335]))                  
+                :type "void")
+                nil [12290 12429])
+            ("terminateCDIConnection" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [12431 12918])
+            ("initCDIConnection" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [12920 16582])
+            ("setupRegisterTabs" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [16585 24763])
+            ("slotCurrentTabChanged" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [24765 25620])
+            ("slotUpdateWindowCaption" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [25623 27074])
+            ("createChildHierarchy" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("reg" variable
+                       (:pointer 1
+                        :type ("CADIRegInfo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27123 27142])
+                    ("group" variable
+                       (:pointer 1
+                        :type ("CADIRegGroup_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27143 27165])
+                    ("item" variable
+                       (:pointer 1
+                        :type ("ColorListViewItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27166 27191]))                  
+                :type "void")
+                nil [27077 30463])
+            ("findIndexForRegister" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("registerNum" variable (:type "int") (reparse-symbol arg-sub-list) [30510 30526])
+                    ("registerGroup" variable (:type "int") (reparse-symbol arg-sub-list) [30527 30546]))                  
+                :type "int")
+                nil [30465 30831])
+            ("findIndexForGroup" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("group" variable
+                       (:pointer 1
+                        :type ("CADIRegGroup_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30875 30898]))                  
+                :type "int")
+                nil [30833 31068])
+            ("findItemForRegister" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("registerNum" variable (:type "int") (reparse-symbol arg-sub-list) [31136 31153]))                  
+                :type ("list" type
+                     (:template-specifier 
+                        ( ("ColorListViewItem" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [31070 31633])
+            ("findRegGroupInfoForItem" function
+               (:pointer 1
+                :parent "RegisterDialogImp"
+                :arguments 
+                  ( ("itemList" variable
+                       (:pointer 1
+                        :type ("ColorListViewItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31695 31724]))                  
+                :type ("CADIRegInfo_t" type (:type "class") nil nil))
+                nil [31636 32302])
+            ("findItemForRegister" function
+               (:pointer 1
+                :parent "RegisterDialogImp"
+                :arguments 
+                  ( ("registerNum" variable (:type "int") (reparse-symbol arg-sub-list) [32365 32381])
+                    ("group" variable (:type "int") (reparse-symbol arg-sub-list) [32382 32393]))                  
+                :type ("ColorListViewItem" type (:type "class") nil nil))
+                nil [32305 32941])
+            ("isRegisterItemInCurrentGroup" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("number" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32997 33014]))                  
+                :type "bool")
+                nil [32943 33705])
+            ("highlightRegisterItem" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("number" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33754 33770])
+                    ("red" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [33771 33789])
+                    ("green" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [33790 33810])
+                    ("blue" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [33811 33830])
+                    ("display" variable (:type "bool") (reparse-symbol arg-sub-list) [33831 33845]))                  
+                :type "void")
+                nil [33707 34796])
+            ("refreshRegisterList" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("initial" variable (:type "bool") (reparse-symbol arg-sub-list) [34844 34858]))                  
+                :type "void")
+                nil [34799 49652])
+            ("slotRegDoubleClicked" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("i" variable
+                       (:pointer 1
+                        :type ("Q3ListViewItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49700 49719]))                  
+                :type "void")
+                nil [49654 50903])
+            ("slotTraceAll" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [50906 52498])
+            ("slotTraceRegister" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("i" variable
+                       (:pointer 1
+                        :type ("Q3ListViewItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52543 52561])
+                    ("refresh" variable (:type "bool") (reparse-symbol arg-sub-list) [52562 52576]))                  
+                :type "void")
+                nil [52500 55306])
+            ("cursorOnItem" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("item" variable
+                       (:pointer 1
+                        :type ("Q3ListViewItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55346 55368]))                  
+                :type "void")
+                nil [55308 55398])
+            ("slotRegModified" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("item" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ColorListViewItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55441 55471])
+                    ("_value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55472 55495]))                  
+                :type "void")
+                nil [55400 61096])
+            ("qregexp.h" include (:system-flag t) nil [61098 61118])
+            ("writeRegViaScriptInterface" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("MxComponentIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61172 61189])
+                    ("num" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61190 61203])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61204 61226]))                  
+                :type "void")
+                nil [61120 62623])
+            ("BufToINT64" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("pUI" variable
+                       (:pointer 1
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [62661 62675])
+                    ("pBuf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [62676 62702])
+                    ("nBytesToConvert" variable (:type "int") (reparse-symbol arg-sub-list) [62734 62755]))                  
+                :type "void")
+                nil [62625 62903])
+            ("BitBufToINT64" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("pUI" variable
+                       (:pointer 1
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [62944 62958])
+                    ("pBuf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [62959 62985])
+                    ("nBitsToConvert" variable (:type "int") (reparse-symbol arg-sub-list) [63020 63040]))                  
+                :type "void")
+                nil [62905 63187])
+            ("INT64ToBuf" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("pBuf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [63225 63245])
+                    ("int64Data" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63246 63265])
+                    ("nBytesToConvert" variable (:type "int") (reparse-symbol arg-sub-list) [63296 63316]))                  
+                :type "void")
+                nil [63190 63604])
+            ("slotShowContextMenu" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("item" variable
+                       (:pointer 1
+                        :type ("Q3ListViewItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63651 63672])
+                    ("pos" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QPoint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63673 63691])
+                    ("col" variable (:type "int") (reparse-symbol arg-sub-list) [63692 63701]))                  
+                :type "void")
+                nil [63606 72101])
+            ("mousePressEvent" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("QMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72145 72161]))                  
+                :type "void")
+                nil [72104 72405])
+            ("keyReleaseEvent" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("QKeyEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72448 72462]))                  
+                :type "void")
+                nil [72407 72984])
+            ("resizeToFitContents" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [72986 73697])
+            ("ensureHeaderLabelFits" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [73699 75216])
+            ("setDebuggerMode" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("globalVars" variable (:type "bool") (reparse-symbol arg-sub-list) [75410 75426]))                  
+                :type "void")
+                nil [75370 75572])
+            ("setHeaderColor" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("color" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QColor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75614 75634]))                  
+                :type "void")
+                nil [75575 75694])
+            ("getCurrentTabIndex" function
+               (:parent "RegisterDialogImp"
+                :type "int")
+                nil [75697 75784])
+            ("setCurrentTabIndex" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [75830 75841]))                  
+                :type "void")
+                nil [75786 76092])
+            ("getCurrentTabPosition" function
+               (:parent "RegisterDialogImp"
+                :type "int")
+                nil [76094 76545])
+            ("getTabPosition" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76586 76603]))                  
+                :type "int")
+                nil [76547 76962])
+            ("getColumnWidths" function
+               (:parent "RegisterDialogImp"
+                :type ("Q3ValueList" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [76964 77401])
+            ("setColumnWidths" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("widths" variable (:type ("Q3ValueList" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [77444 77469]))                  
+                :type "void")
+                nil [77403 78093])
+            ("setCurrentTabPosition" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [78142 78151]))                  
+                :type "void")
+                nil [78095 78433])
+            ("setFont" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("f" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78552 78568]))                  
+                :type "void")
+                nil [78519 79113])
+            ("slotFontIncrement" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [79921 80094])
+            ("slotFontDecrement" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [80096 80268])
+            ("slotFontPercentage" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [80314 80321]))                  
+                :type "void")
+                nil [80270 80325])
+            ("getColor" function
+               (:parent "RegisterDialogImp"
+                :type ("QColor" type (:type "class") nil nil))
+                nil [80329 80529])
+            ("getComponent" function
+               (:pointer 1
+                :parent "RegisterDialogImp"
+                :type ("CASIModuleIF" type (:type "class") nil nil))
+                nil [80533 80604])
+            ("setMenuId" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [80643 80651]))                  
+                :type "void")
+                nil [80608 80670])
+            ("getMenuId" function
+               (:parent "RegisterDialogImp"
+                :type "int")
+                nil [80673 80728])
+            ("setPositionStack" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("posStack" variable
+                       (:pointer 1
+                        :type ("deque" type
+                             (:template-specifier 
+                                ( ("RegWindowPosInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [80944 80979]))                  
+                :type "void")
+                nil [80902 81011])
+            ("x" function
+               (:parent "RegisterDialogImp"
+                :type "int")
+                nil [81014 81126])
+            ("y" function
+               (:parent "RegisterDialogImp"
+                :type "int")
+                nil [81129 81241])
+            ("width" function
+               (:parent "RegisterDialogImp"
+                :type "int")
+                nil [81245 81369])
+            ("slotCopyToClipboard" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [81374 81498])
+            ("slotSaveToFile" function
+               (:parent "RegisterDialogImp"
+                :type "void")
+                nil [81501 81805])
+            ("height" function
+               (:parent "RegisterDialogImp"
+                :type "int")
+                nil [82292 82419])
+            ("getRegIDFromItem" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("i" variable
+                       (:pointer 1
+                        :type ("Q3ListViewItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82472 82490]))                  
+                :type "unsigned int")
+                nil [82423 82703])
+            ("viewModeOneHex" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("i" variable
+                       (:pointer 1
+                        :type ("Q3ListViewItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82745 82763]))                  
+                :type "void")
+                nil [82706 82844])
+            ("viewModeOneDefault" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("i" variable
+                       (:pointer 1
+                        :type ("Q3ListViewItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82890 82908]))                  
+                :type "void")
+                nil [82847 82985])
+            ("viewModeOneDec" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("i" variable
+                       (:pointer 1
+                        :type ("Q3ListViewItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83027 83045]))                  
+                :type "void")
+                nil [82988 83126])
+            ("viewModeOneBin" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("i" variable
+                       (:pointer 1
+                        :type ("Q3ListViewItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83168 83186]))                  
+                :type "void")
+                nil [83129 83267])
+            ("viewModeOneOct" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("i" variable
+                       (:pointer 1
+                        :type ("Q3ListViewItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83309 83327]))                  
+                :type "void")
+                nil [83270 83408])
+            ("getViewModeOne" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("regID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [83454 83473]))                  
+                :type ("ViewMode" type (:type "class") nil nil))
+                nil [83411 83667])
+            ("getViewModeOne" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("i" variable
+                       (:pointer 1
+                        :type ("Q3ListViewItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83713 83731]))                  
+                :type ("ViewMode" type (:type "class") nil nil))
+                nil [83670 83812])
+            ("getTooltipRegGroup" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("registerViewList" variable
+                       (:pointer 1
+                        :type ("RegisterListView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83858 83893])
+                    ("tooltip" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83894 83911]))                  
+                :type "void")
+                nil [83815 84096])
+            ("getTooltipRegGroup" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("regTab" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [84143 84159])
+                    ("tooltip" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [84160 84177]))                  
+                :type "void")
+                nil [84100 84351])
+            ("isLsdOffsetInitialized" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("childRegisters" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [84402 84427])
+                    ("indexGroup" variable (:type "int") (reparse-symbol arg-sub-list) [84428 84443])
+                    ("numChildRegisters" variable (:type "int") (reparse-symbol arg-sub-list) [84444 84466])
+                    ("bitsWide" variable (:type "int") (reparse-symbol arg-sub-list) [84467 84480]))                  
+                :type "bool")
+                nil [84355 85196])
+            ("isBitsIntersection" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("regInfo1" variable
+                       (:pointer 1
+                        :type ("CADIRegInfo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [85243 85267])
+                    ("regInfo2" variable
+                       (:pointer 1
+                        :type ("CADIRegInfo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [85268 85292]))                  
+                :type "bool")
+                nil [85200 85511])
+            ("getNoBitsChildren" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("childRegisters" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [85555 85580])
+                    ("indexGroup" variable (:type "int") (reparse-symbol arg-sub-list) [85581 85596])
+                    ("numChildRegisters" variable (:type "int") (reparse-symbol arg-sub-list) [85597 85619]))                  
+                :type "int")
+                nil [85514 85871])
+            ("checkComponentStability" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [85923 85928]))                  
+                :type "bool")
+                nil [85875 86166])
+            ("ShowStableState" function
+               (:parent "RegisterDialogImp"
+                :arguments 
+                  ( ("stable" variable (:type "bool") (reparse-symbol arg-sub-list) [86210 86222]))                  
+                :type "void")
+                nil [86170 86973])
+            ("getCsvText" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("Q3ListView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87216 87234])
+                    ("separator" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87235 87260]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [87197 87924])
+            ("copyCsvToClipboard" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("Q3ListView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87952 87970]))                  
+                :type "void")
+                nil [87927 88106])
+            ("saveCsvToFile" function
+               (:arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88129 88146])
+                    ("list" variable
+                       (:pointer 1
+                        :type ("Q3ListView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88147 88165])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88166 88186]))                  
+                :type "void")
+                nil [88109 89241])
+            ("DynamicTooltipRegGroups" function
+               (:constructor-flag t
+                :parent "DynamicTooltipRegGroups"
+                :arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("RegisterListView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89376 89396])
+                    ("tab" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89397 89410])
+                    ("dialog" variable
+                       (:pointer 1
+                        :type ("RegisterDialogImp" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89411 89438]))                  
+                :type ("DynamicTooltipRegGroups" type (:type "class") nil nil))
+                nil [89326 89489])
+            ("eventFilter" function
+               (:parent "DynamicTooltipRegGroups"
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89534 89547])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("QEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89548 89563]))                  
+                :type "bool")
+                nil [89491 90445]))          
+      :file "RegisterDialogImp.cpp"
+      :pointmax 90530
+      :fsize 90532
+      :lastmodtime '(22617 57198 441898 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("REG_MAX_STRING_LEN" . ((number "1024" 1898 . 1902)))
+          )
+)
+    (semanticdb-table "RegisterDialogImp.h"
+      :file "RegisterDialogImp.h"
+      :fsize 8213
+      :lastmodtime '(22617 57198 444900 0))
+    (semanticdb-table "Inline.hpp"
+      :file "Inline.hpp"
+      :fsize 2731
+      :lastmodtime '(22617 57197 852895 0))
+    (semanticdb-table "MainWindow.hpp"
+      :file "MainWindow.hpp"
+      :fsize 140335
+      :lastmodtime '(22617 57197 926898 0))
+    (semanticdb-table "MxCustomEvents.h"
+      :file "MxCustomEvents.h"
+      :fsize 6005
+      :lastmodtime '(22617 57198 122892 0))
+    (semanticdb-table "MxToolWindow.h"
+      :file "MxToolWindow.h"
+      :fsize 17385
+      :lastmodtime '(22617 57198 175897 0)))
+  :file "!home!hanlei01!Source!socdesigner!MaxSim!MaxSimIDE!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

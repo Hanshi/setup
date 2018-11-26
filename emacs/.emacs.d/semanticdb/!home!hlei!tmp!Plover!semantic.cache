@@ -1,0 +1,141 @@
+;; Object Plover/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Plover/"
+  :tables
+  (list
+    (semanticdb-table "FM_r8.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cstdlib" include (:system-flag t) nil [36 54])
+            ("FM_r8.h" include nil nil [55 73])
+            ("plover_save_createHandler" function
+               (:prototype-flag t
+                :pointer 1
+                :type ("ArchSaveHandlerIF" type (:type "class") nil nil))
+                nil [86 133])
+            ("FM_r8" function
+               (:constructor-flag t
+                :parent "FM_r8"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147 176])
+                    ("scName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sc_module_name" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [177 206])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [207 231]))                  
+                :type ("FM_r8" type (:type "class") nil nil))
+                nil [134 571])
+            ("FM_r8" function
+               (:destructor-flag t
+                :parent "FM_r8"
+                :type "void")
+                nil [573 592])
+            ("init" function
+               (:parent "FM_r8"
+                :type "void")
+                nil [594 760])
+            ("before_end_of_elaboration" function
+               (:parent "FM_r8"
+                :type "void")
+                nil [762 855])
+            ("terminate" function
+               (:parent "FM_r8"
+                :type "void")
+                nil [856 937])
+            ("getName" function
+               (:parent "FM_r8"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [939 989])
+            ("setParameter" function
+               (:parent "FM_r8"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1016 1040])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1041 1066]))                  
+                :type "void")
+                nil [991 1119])
+            ("getParameter" function
+               (:parent "FM_r8"
+                :arguments 
+                  ( ("key" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1153 1176]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1121 1441])
+            ("getProperty" function
+               (:parent "FM_r8"
+                :arguments 
+                  ( ("property" variable (:type ("eslapi::CASIPropertyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1474 1508]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1443 2372])
+            ("addRegisters_0" function
+               (:parent "FM_r8"
+                :type "void")
+                nil [2374 47186])
+            ("FM_r8Factory" type
+               (:superclasses 
+                  ( ("CASIFactory" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [47229 47236])
+                    ("FM_r8Factory" function
+                       (:constructor-flag t
+                        :type ("FM_r8Factory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [47239 47279])
+                    ("createInstance" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("c" variable
+                               (:pointer 1
+                                :type ("CASIModuleIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [47311 47327])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [47328 47345]))                          
+                        :type ("CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [47282 47501]))                  
+                :type "class")
+                nil [47187 47504])
+            ("CASIInit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [47532 47537]))                  
+                :type "void")
+                nil [47517 47562])
+            ("CASIInit_SCImport" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [47599 47604]))                  
+                :type "void")
+                nil [47575 47608]))          
+      :file "FM_r8.cpp"
+      :pointmax 47610
+      :fsize 47609
+      :lastmodtime '(22423 53068 233347 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "FM_r8.h"
+      :file "FM_r8.h"
+      :fsize 820
+      :lastmodtime '(22423 53068 227347 0)))
+  :file "!home!hlei!tmp!Plover!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,40 @@
+;; Object Helios/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Helios/"
+  :tables
+  (list
+    (semanticdb-table "Helios.cxx"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("model.h" include nil nil [1 19])
+            ("carbon/carbon_capi.h" include nil nil [20 51])
+            ("carbon/carbon_dbapi.h" include nil nil [52 84])
+            ("carbonFlowThruSchedule" function
+               (:type ("CarbonStatus" type (:type "class") nil nil)
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [142 166])
+                    ("time" variable (:type ("CarbonTime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [167 183]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [99 184])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [193 202])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [203 216]))                  
+                :type "int")
+                nil [188 444]))          
+      :file "Helios.cxx"
+      :pointmax 444
+      :fsize 462
+      :lastmodtime '(22474 10582 0 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!cpus!Helios!ModelKit!Helios!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

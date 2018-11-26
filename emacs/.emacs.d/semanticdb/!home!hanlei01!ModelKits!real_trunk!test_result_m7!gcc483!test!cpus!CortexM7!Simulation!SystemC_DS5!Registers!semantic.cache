@@ -1,0 +1,34 @@
+;; Object Registers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Registers/"
+  :tables
+  (list
+    (semanticdb-table "registers_bps.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("BREAKPOINT_CORE_READ" variable nil nil [1 34])
+            ("BREAKPOINT_CORE_FAIL" variable nil nil [35 68])
+            ("BREAKPOINT_CORE_WRITE" variable nil nil [69 103])
+            ("BREAKPOINT_DEBUG" variable nil nil [104 133])
+            ("BREAKPOINT_SYSTEM_CONTROL" variable nil nil [134 172])
+            ("BREAKPOINT_SYSTEM_WRITE" variable nil nil [173 209])
+            ("BREAKPOINT_MPU" variable nil nil [210 237])
+            ("BREAKPOINT_MPU_WRITE" variable nil nil [238 271])
+            ("BREAKPOINT_DWT" variable nil nil [272 299])
+            ("BREAKPOINT_DWT_WRITE" variable nil nil [300 333])
+            ("BREAKPOINT_FPB" variable nil nil [334 361])
+            ("BREAKPOINT_FPB_WRITE" variable nil nil [362 395])
+            ("BREAKPOINT_TCMCR" variable nil nil [396 425])
+            ("BREAKPOINT_TCMCR_WRITE" variable nil nil [426 461])
+            ("BREAKPOINT_CACHECTRL" variable nil nil [462 495])
+            ("BREAKPOINT_CACHECTRL_WRITE" variable nil nil [496 535])
+            ("BREAKPOINT_FPU" variable nil nil [536 563])
+            ("BREAKPOINT_FPU_WRITE" variable nil nil [564 597])
+            ("BREAKPOINT_NVIC" variable nil nil [598 626])
+            ("BREAKPOINT_NVIC_CLEAR_REGS" variable nil nil [627 666]))          
+      :file "registers_bps.py"
+      :pointmax 667
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!real_trunk!test_result_m7!gcc483!test!cpus!CortexM7!Simulation!SystemC_DS5!Registers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

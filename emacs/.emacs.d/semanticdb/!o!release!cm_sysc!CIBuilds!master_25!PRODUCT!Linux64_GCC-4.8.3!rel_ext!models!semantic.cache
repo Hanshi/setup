@@ -1,0 +1,110 @@
+;; Object models/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "models/"
+  :tables
+  (list
+    (semanticdb-table "SimpleBus.h"
+      :major-mode 'c-mode
+      :tags nil
+      :file "SimpleBus.h"
+      :pointmax 2169
+      :fsize 2168
+      :lastmodtime '(22812 27471 599010 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ARM_MODELUTILS_SIMPLEBUSIMP_H")
+          )
+)
+    (semanticdb-table "RAMBlock.h"
+      :file "RAMBlock.h"
+      :fsize 1347
+      :lastmodtime '(22812 27471 570009 0))
+    (semanticdb-table "BasicUART.h"
+      :file "BasicUART.h"
+      :fsize 3019
+      :lastmodtime '(22812 27471 514010 0))
+    (semanticdb-table "TargetMemoryMap.h"
+      :file "TargetMemoryMap.h"
+      :fsize 2051
+      :lastmodtime '(22812 27471 753012 0))
+    (semanticdb-table "SimpleBus.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("SimpleBus.h" include nil nil [801 823])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [825 845])
+            ("tlm" using (:type ("tlm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [846 866])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [867 891])
+            ("ARM" type
+               (:members 
+                  ( ("Models" type
+                       (:members 
+                          ( ("SimpleBus" function
+                               (:constructor-flag t
+                                :parent "SimpleBus"
+                                :arguments 
+                                  ( ("p_scName" variable (:type ("sc_core::sc_module_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [964 997])
+                                    ("numMasters_" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [998 1019])
+                                    ("numTargets_" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1020 1041])
+                                    ("busWidthBits_" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1042 1065]))                                  
+                                :type ("SimpleBus" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [943 1690])
+                            ("SimpleBus" function
+                               (:destructor-flag t
+                                :parent "SimpleBus"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1705 1851])
+                            ("addMap" function
+                               (:parent "SimpleBus"
+                                :arguments 
+                                  ( ("portId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1876 1892])
+                                    ("baseAddr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1893 1911])
+                                    ("slaveSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1912 1931]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1853 1986])
+                            ("nb_transport_fw" function
+                               (:parent "SimpleBus"
+                                :arguments 
+                                  ( ("payload" variable
+                                       (:reference 1
+                                        :type ("PayloadT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2076 2094])
+                                    ("phase" variable
+                                       (:reference 1
+                                        :type ("PhaseT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2095 2109]))                                  
+                                :type ("tlm_sync_enum" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2035 2503])
+                            ("nb_transport_bw" function
+                               (:parent "SimpleBus"
+                                :arguments 
+                                  ( ("payload" variable
+                                       (:reference 1
+                                        :type ("PayloadT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2546 2564])
+                                    ("phase" variable
+                                       (:reference 1
+                                        :type ("PhaseT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2565 2579]))                                  
+                                :type ("tlm_sync_enum" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2505 2632]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [909 2635]))                  
+                :type "namespace")
+                nil [893 2637]))          
+      :file "SimpleBus.cpp"
+      :pointmax 2638
+      :fsize 2637
+      :lastmodtime '(22812 27471 581009 0)
+      :unmatched-syntax nil))
+  :file "!o!release!cm_sysc!CIBuilds!master_25!PRODUCT!Linux64_GCC-4.8.3!rel_ext!models!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

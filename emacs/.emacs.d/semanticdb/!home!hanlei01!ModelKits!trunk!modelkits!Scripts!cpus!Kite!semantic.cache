@@ -1,0 +1,119 @@
+;; Object Kite/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Kite/"
+  :tables
+  (list
+    (semanticdb-table "generate_IP.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [134 148])
+            ("sys" include nil nil [149 159])
+            ("argparse" include nil nil [160 175])
+            ("subprocess" include nil nil [176 193])
+            ("os" include nil nil [194 203])
+            ("shutil" include nil nil [204 217])
+            ("ERROR_NONEXISTING_PATH" variable nil nil [220 247])
+            ("CompileCortexR52DsmException" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [342 360])
+                            ("self" variable nil (reparse-symbol indented_block_body) [369 391]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [313 317])
+                            ("msg" variable nil (reparse-symbol function_parameters) [319 322])
+                            ("retcode" variable nil (reparse-symbol function_parameters) [324 331]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [300 392])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [408 412]))                          )
+                        (reparse-symbol indented_block_body) [396 449]))                  
+                :type "class")
+                nil [249 449])
+            ("copy_configuration_files_kite" function (:arguments 
+              ( ("src_dir" variable nil (reparse-symbol function_parameters) [634 641])
+                ("build_dir" variable nil (reparse-symbol function_parameters) [643 652]))              ) nil [600 1048])
+            ("gen_CompiledModel_Kite" function (:arguments 
+              ( ("answers_file" variable nil (reparse-symbol function_parameters) [1077 1089])
+                ("cm_compile_loc" variable nil (reparse-symbol function_parameters) [1091 1105])
+                ("testdir" variable nil (reparse-symbol function_parameters) [1107 1114])
+                ("builddir" variable nil (reparse-symbol function_parameters) [1116 1124])
+                ("license_str" variable nil (reparse-symbol function_parameters) [1126 1137])
+                ("cbuild_cache_loc" variable nil (reparse-symbol function_parameters) [1139 1155])
+                ("no_render" variable nil (reparse-symbol function_parameters) [1157 1166]))              ) nil [1050 3026])
+            ("CmdLineOptions" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [3237 3276])
+                            ("self" code nil (reparse-symbol indented_block_body) [3285 3429])
+                            ("self" code nil (reparse-symbol indented_block_body) [3438 3555])
+                            ("self" code nil (reparse-symbol indented_block_body) [3564 3651])
+                            ("self" code nil (reparse-symbol indented_block_body) [3776 3864])
+                            ("self" code nil (reparse-symbol indented_block_body) [4002 4141])
+                            ("self" code nil (reparse-symbol indented_block_body) [4150 4249])
+                            ("self" code nil (reparse-symbol indented_block_body) [4293 4397])
+                            ("self" code nil (reparse-symbol indented_block_body) [4565 4684])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4844 4889]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3216 3220])
+                            ("argv" variable nil (reparse-symbol function_parameters) [3222 3226]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3203 4890])
+                    ("CheckPath" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4910 4914])
+                            ("cmd_option" variable nil (reparse-symbol function_parameters) [4916 4926]))                          )
+                        (reparse-symbol indented_block_body) [4896 5249])
+                    ("getAnswersFile" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5348 5352]))                          )
+                        (reparse-symbol indented_block_body) [5329 5438])
+                    ("getCMCompileLocation" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5468 5472]))                          )
+                        (reparse-symbol indented_block_body) [5443 6024])
+                    ("getTestdir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6044 6048]))                          )
+                        (reparse-symbol indented_block_body) [6029 6215])
+                    ("getBuilddir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6237 6241]))                          )
+                        (reparse-symbol indented_block_body) [6221 6411])
+                    ("getLicenseStr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6434 6438]))                          )
+                        (reparse-symbol indented_block_body) [6416 6646])
+                    ("getCbuildCacheWrapperLoc" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6680 6684]))                          )
+                        (reparse-symbol indented_block_body) [6651 6996])
+                    ("getNoRender" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7017 7021]))                          )
+                        (reparse-symbol indented_block_body) [7001 7153]))                  
+                :type "class")
+                nil [3176 7153])
+            ("if" code nil nil [7196 8311]))          
+      :file "generate_IP.py"
+      :pointmax 8312
+      :fsize 8311
+      :lastmodtime '(23372 62893 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 8250 . 8311) (NEWLINE 8249 . 8250) (COLON 8248 . 8249) (TRY 7228 . 7231) (AS 8244 . 8246))))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!Scripts!cpus!Kite!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

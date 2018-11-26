@@ -1,0 +1,47 @@
+;; Object Registers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Registers/"
+  :tables
+  (list
+    (semanticdb-table "registers.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("functions" include nil nil [39 55])
+            ("registers_bps" include nil nil [56 76])
+            ("functions" include nil nil [77 100])
+            ("registers_bps" include nil nil [101 128])
+            ("arm_ds.debugger_v1" include nil nil [129 168])
+            ("arm_ds.debugger_v1" include nil nil [169 214])
+            ("Memory" variable nil nil [216 226])
+            ("debugger" variable nil nil [273 294])
+            ("ec" variable nil nil [322 358])
+            ("ec" code nil nil [359 459])
+            ("CORE" variable nil nil [460 467])
+            ("print" code nil nil [468 515])
+            ("print" code nil nil [517 542])
+            ("CADIRegWrite" code nil nil [543 574])
+            ("RUNTO" code nil nil [799 844])
+            ("CHECK_REGISTER_VALUE" code nil nil [847 885])
+            ("CHECK_REGISTER_VALUE" code nil nil [887 925])
+            ("CHECK_REGISTER_VALUE" code nil nil [927 965])
+            ("CHECK_REGISTER_VALUE" code nil nil [967 1005])
+            ("CHECK_REGISTER_VALUE" code nil nil [1007 1045])
+            ("CHECK_REGISTER_VALUE" code nil nil [1047 1085])
+            ("CHECK_REGISTER_VALUE" code nil nil [1087 1125])
+            ("CHECK_REGISTER_VALUE" code nil nil [1127 1165])
+            ("CHECK_REGISTER_VALUE" code nil nil [1167 1205])
+            ("CHECK_REGISTER_VALUE" code nil nil [1207 1246])
+            ("CHECK_REGISTER_VALUE" code nil nil [1248 1287])
+            ("CHECK_REGISTER_VALUE" code nil nil [1289 1328])
+            ("CHECK_REGISTER_VALUE" code nil nil [1330 1369])
+            ("CHECK_REGISTER_SUMMARY" code nil nil [1372 1396])
+            ("if" code nil nil [1398 1492])
+            ("print" code nil nil [1495 1528]))          
+      :file "registers.py"
+      :pointmax 1531
+      :fsize 1530
+      :lastmodtime '(23498 24124 725376 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!real_trunk!modelkits!test!cpus!CortexM7!Simulation!SystemC_DS5!Registers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

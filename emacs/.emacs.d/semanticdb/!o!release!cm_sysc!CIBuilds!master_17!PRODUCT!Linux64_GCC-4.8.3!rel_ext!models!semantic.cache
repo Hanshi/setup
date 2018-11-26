@@ -1,0 +1,230 @@
+;; Object models/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "models/"
+  :tables
+  (list
+    (semanticdb-table "TrafficGenerator.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cstring" include (:system-flag t) nil [64 82])
+            ("TrafficGenerator.h" include nil nil [84 113])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [115 135])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [136 160])
+            ("tlm" using (:type ("tlm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [161 181])
+            ("ARM::AXI4" using (:type ("ARM::AXI4" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [182 208])
+            ("clock_posedge" function
+               (:parent "TrafficGenerator"
+                :type "void")
+                nil [210 782])
+            ("clock_negedge" function
+               (:parent "TrafficGenerator"
+                :type "void")
+                nil [784 3574])
+            ("nb_transport_bw" function
+               (:parent "TrafficGenerator"
+                :arguments 
+                  ( ("payload" variable
+                       (:reference 1
+                        :type ("Payload" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3624 3641])
+                    ("phase" variable
+                       (:reference 1
+                        :type ("Phase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3646 3659]))                  
+                :type ("tlm_sync_enum" type (:type "class") nil nil))
+                nil [3576 4582])
+            ("TrafficGenerator" function
+               (:constructor-flag t
+                :parent "TrafficGenerator"
+                :arguments 
+                  ( ("name" variable (:type ("sc_core::sc_module_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4619 4648])
+                    ("port_width" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4648 4668])
+                    ("protocol" variable (:type ("ARM::TLM::Protocol" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4668 4696]))                  
+                :type ("TrafficGenerator" type (:type "class") nil nil))
+                nil [4584 5171])
+            ("add_payload" function
+               (:parent "TrafficGenerator"
+                :arguments 
+                  ( ("command" variable (:type ("Command" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5208 5224])
+                    ("address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5225 5242])
+                    ("size" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5243 5253])
+                    ("len" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5258 5270])
+                    ("burst" variable (:type ("Burst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5271 5283]))                  
+                :type "void")
+                nil [5173 5696]))          
+      :file "TrafficGenerator.cpp"
+      :pointmax 5697
+      :fsize 5696
+      :lastmodtime '(22784 57437 540544 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "TrafficGenerator.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ARM_TRAFFICGENERATOR_H" variable (:constant-flag t) nil [103 125])
+            ("deque" include (:system-flag t) nil [127 143])
+            ("arm_axi4.h" include nil nil [145 166])
+            ("TrafficGenerator" type
+               (:superclasses 
+                  ( ("sc_core::sc_module" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("protected" label nil (reparse-symbol classsubparts) [221 231])
+                    ("SC_HAS_PROCESS" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TrafficGenerator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [251 268]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [236 269])
+                    ("ChannelState" type
+                       (:members 
+                          ( ("CLEAR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [307 313])
+                            ("REQ" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [322 326])
+                            ("ACK" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [335 344]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [275 345])
+                    ("aw_queue" variable (:type ("std::deque" type
+                         (:template-specifier 
+                            ( ("ARM::AXI4::Payload" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [390 431])
+                    ("w_queue" variable (:type ("std::deque" type
+                         (:template-specifier 
+                            ( ("ARM::AXI4::Payload" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [436 476])
+                    ("ar_queue" variable (:type ("std::deque" type
+                         (:template-specifier 
+                            ( ("ARM::AXI4::Payload" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [481 522])
+                    ("cr_queue" variable (:type ("std::deque" type
+                         (:template-specifier 
+                            ( ("ARM::AXI4::Payload" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [527 568])
+                    ("wack_queue" variable (:type ("std::deque" type
+                         (:template-specifier 
+                            ( ("ARM::AXI4::Payload" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [573 616])
+                    ("rack_queue" variable (:type ("std::deque" type
+                         (:template-specifier 
+                            ( ("ARM::AXI4::Payload" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [621 664])
+                    ("aw_state" variable (:type ("ChannelState" type (:type "class") nil nil)) (reparse-symbol classsubparts) [714 736])
+                    ("w_state" variable (:type ("ChannelState" type (:type "class") nil nil)) (reparse-symbol classsubparts) [741 762])
+                    ("ar_state" variable (:type ("ChannelState" type (:type "class") nil nil)) (reparse-symbol classsubparts) [767 789])
+                    ("cr_state" variable (:type ("ChannelState" type (:type "class") nil nil)) (reparse-symbol classsubparts) [794 816])
+                    ("cr_incoming" variable
+                       (:pointer 1
+                        :type ("ARM::AXI4::Payload" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [876 908])
+                    ("wack_incoming" variable
+                       (:pointer 1
+                        :type ("ARM::AXI4::Payload" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [913 947])
+                    ("rack_incoming" variable
+                       (:pointer 1
+                        :type ("ARM::AXI4::Payload" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [952 986])
+                    ("w_beat_count" variable (:type "unsigned int") (reparse-symbol classsubparts) [1066 1088])
+                    ("clock_posedge" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1094 1115])
+                    ("clock_negedge" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1120 1141])
+                    ("nb_transport_bw" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("payload" variable
+                               (:reference 1
+                                :type ("ARM::AXI4::Payload" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1182 1210])
+                            ("phase" variable
+                               (:reference 1
+                                :type ("ARM::AXI4::Phase" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1219 1243]))                          
+                        :type ("tlm::tlm_sync_enum" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1147 1244])
+                    ("public" label nil (reparse-symbol classsubparts) [1246 1253])
+                    ("TrafficGenerator" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("name" variable (:type ("sc_core::sc_module_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1275 1304])
+                            ("port_width" variable
+                               (:default-value "128"
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [1304 1327])
+                            ("protocol" variable
+                               (:default-value "ARM"
+                                :type ("ARM::TLM::Protocol" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1328 1359])
+                            ("" variable (:type ("TLM::PROTOCOL_ACE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1361 1379]))                          
+                        :type ("TrafficGenerator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1258 1380])
+                    ("add_payload" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("command" variable (:type ("ARM::AXI4::Command" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1449 1476])
+                            ("address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1477 1494])
+                            ("size" variable (:type ("ARM::AXI4::Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1503 1524])
+                            ("len" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1525 1537])
+                            ("burst" variable
+                               (:default-value "ARM"
+                                :type ("ARM::AXI4::Burst" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1538 1574])
+                            ("" variable (:type ("AXI4::BURST_INCR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1576 1593]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1432 1594])
+                    ("master" variable (:type ("ARM::AXI4::SimpleMasterSocket" type
+                         (:template-specifier 
+                            ( ("TrafficGenerator" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1600 1655])
+                    ("clock" variable (:type ("sc_core::sc_in" type
+                         (:template-specifier 
+                            ( ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1661 1688]))                  
+                :type "class")
+                nil [168 1691]))          
+      :file "TrafficGenerator.h"
+      :pointmax 1726
+      :fsize 1725
+      :lastmodtime '(22784 57437 534543 0)
+      :unmatched-syntax '((punctuation 1575 . 1576) (punctuation 1574 . 1575) (punctuation 1360 . 1361) (punctuation 1359 . 1360))
+      :lexical-table 
+        '(("ARM_TRAFFICGENERATOR_H")
+          )
+))
+  :file "!o!release!cm_sysc!CIBuilds!master_17!PRODUCT!Linux64_GCC-4.8.3!rel_ext!models!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

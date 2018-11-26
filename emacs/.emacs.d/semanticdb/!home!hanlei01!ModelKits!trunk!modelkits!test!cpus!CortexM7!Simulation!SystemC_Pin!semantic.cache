@@ -1,0 +1,44 @@
+;; Object SystemC_Pin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC_Pin/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/AXIMonitor.h" include nil nil [851 881])
+            ("models/RAMBlock.h" include nil nil [890 918])
+            ("models/SimpleBus.h" include nil nil [919 948])
+            ("models/BasicUART.h" include nil nil [949 978])
+            ("models/ElfLoader.h" include nil nil [979 1008])
+            ("CortexM7Imp.h" include nil nil [1009 1033])
+            ("tlm_utils/simple_target_socket.h" include (:system-flag t) nil [1034 1077])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [1078 1124])
+            ("iostream" include (:system-flag t) nil [1126 1145])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1147 1171])
+            ("cm7_tarmac_terminate_thread" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void")
+                (reparse-symbol extern-c-contents) [1243 1285])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1301 1310])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1311 1324]))                  
+                :type "int")
+                nil [1289 3370]))          
+      :file "system_test.cpp"
+      :pointmax 3371
+      :fsize 3370
+      :lastmodtime '(22791 40876 797181 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!CortexM7!Simulation!SystemC_Pin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

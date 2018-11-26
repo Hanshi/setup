@@ -1,0 +1,443 @@
+;; Object CortexM7/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "CortexM7/"
+  :tables
+  (list
+    (semanticdb-table "CarbonMemSystem.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_CARBONCORTEXM7L1MEMSYSTEM_H_" variable (:constant-flag t) nil [557 586])
+            ("map" include (:system-flag t) nil [588 602])
+            ("string" include (:system-flag t) nil [603 620])
+            ("stddef.h" include nil nil [621 640])
+            ("carbon/carbon_capi.h" include nil nil [641 672])
+            ("carbon/carbon_dbapi.h" include nil nil [673 705])
+            ("carbon/CarbonCADITypes.h" include nil nil [706 741])
+            ("cpus/CarbonTransTableEntry.h" include nil nil [742 781])
+            ("common/carbon_mkversion.h" include nil nil [782 818])
+            ("common/CarbonComponentHelper.h" include nil nil [819 860])
+            ("ArchRestoreHandlerIF.h" include nil nil [861 894])
+            ("CarbonComponentHelperIF" type
+               (:prototype t
+                :type "class")
+                nil [921 951])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("CarbonComponentHelper" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [991 1019])
+                    ("CARBONMKLIBRARYCORTEXM7" type
+                       (:members 
+                          ( ("TCM" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1060 1070])
+                            ("DataCache" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1073 1089])
+                            ("CarbonMemSystem" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1183 1190])
+                                    ("CarbonMemSystem" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("compHelper" variable
+                                               (:pointer 1
+                                                :type ("CarbonComponentHelperIF" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1379 1415])
+                                            ("cadi" variable
+                                               (:pointer 1
+                                                :type ("eslapi::CADI" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1416 1435])
+                                            ("mem_system_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1457 1481])
+                                            ("itcm_system_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1482 1507])
+                                            ("dtcm_system_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1528 1553]))                                          
+                                        :type ("CarbonMemSystem" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1363 1554])
+                                    ("CarbonMemSystem" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1579 1598])
+                                    ("read" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("va" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1667 1679])
+                                            ("pa" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1680 1692])
+                                            ("bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1693 1708])
+                                            ("buf" variable
+                                               (:pointer 1
+                                                :type "unsigned char")
+                                                (reparse-symbol arg-sub-list) [1723 1742]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1657 1743])
+                                    ("write" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("va" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1819 1831])
+                                            ("pa" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1832 1844])
+                                            ("bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1845 1860])
+                                            ("buf" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "unsigned char")
+                                                (reparse-symbol arg-sub-list) [1876 1901]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1808 1902])
+                                    ("private" label nil (reparse-symbol classsubparts) [1907 1915])
+                                    ("findNet" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :arguments 
+                                          ( ("netName" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [2016 2036]))                                          
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1995 2037])
+                                    ("getTCMData" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("addr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2095 2109])
+                                            ("memdata" variable
+                                               (:pointer 1
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2110 2127]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2079 2128])
+                                    ("setTCMData" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("addr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2186 2200])
+                                            ("memdata" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2201 2217]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2170 2218])
+                                    ("createTCM" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("mem_system_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2264 2288])
+                                            ("itcm_system_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2289 2314])
+                                            ("dtcm_system_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2315 2340]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2249 2341])
+                                    ("createCache" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2379 2398])
+                                    ("isCachePresent" variable (:type "bool") (reparse-symbol classsubparts) [2404 2424])
+                                    ("protected" label nil (reparse-symbol classsubparts) [2431 2441])
+                                    ("mCompHelper" variable
+                                       (:pointer 1
+                                        :type ("CARBON_MKLIB_NAMESPACE::CarbonComponentHelper" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2446 2509])
+                                    ("mCarbonObj" variable
+                                       (:pointer 1
+                                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2514 2576])
+                                    ("mTCM" variable
+                                       (:pointer 1
+                                        :type ("TCM" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2581 2637])
+                                    ("mCache" variable
+                                       (:pointer 1
+                                        :type ("DataCache" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2642 2700])
+                                    ("IsTCMEnabled" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2707 2771])
+                                    ("InstTCMSize" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2776 2839])
+                                    ("DataTCMSize" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2844 2907])
+                                    ("mMem_System_Idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2915 2940])
+                                    ("mITcm_System_Idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2945 2971])
+                                    ("mDTcm_System_Idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2976 3002])
+                                    ("mCadi" variable
+                                       (:pointer 1
+                                        :type ("eslapi::CADI" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3008 3028]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1093 3034]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1021 3064]))                  
+                :type "namespace")
+                nil [953 3105]))          
+      :file "CarbonMemSystem.h"
+      :pointmax 3177
+      :fsize 3713
+      :lastmodtime '(23456 60607 182384 0)
+      :unmatched-syntax '((punctuation 3064 . 3065))
+      :lexical-table 
+        '(("_CARBONCORTEXM7L1MEMSYSTEM_H_")
+          )
+)
+    (semanticdb-table "TCM.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_CARBONCORTEXM7TCM_H_" variable (:constant-flag t) nil [556 577])
+            ("map" include (:system-flag t) nil [579 593])
+            ("string" include (:system-flag t) nil [594 611])
+            ("stddef.h" include nil nil [612 631])
+            ("carbon/carbon_capi.h" include nil nil [632 663])
+            ("carbon/CarbonCADITypes.h" include nil nil [664 699])
+            ("cpus/CarbonTransTableEntry.h" include nil nil [700 739])
+            ("common/carbon_mkversion.h" include nil nil [740 776])
+            ("ITCMBaseAddress" variable (:constant-flag t) nil [786 801])
+            ("DTCMBaseAddress" variable (:constant-flag t) nil [821 836])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("CarbonComponentHelper" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [886 914])
+                    ("CARBONMKLIBRARYCORTEXM7" type
+                       (:members 
+                          ( ("TCM" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [972 979])
+                                    ("TCM" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("compHelper" variable
+                                               (:pointer 1
+                                                :type ("CARBON_MKLIB_NAMESPACE::CarbonComponentHelper" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1009 1067])
+                                            ("mem_system_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1068 1092])
+                                            ("itcm_system_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1093 1118])
+                                            ("dtcm_system_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1119 1144]))                                          
+                                        :type ("TCM" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1005 1145])
+                                    ("TCM" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1168 1183])
+                                    ("isTCMHit" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("addr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1251 1265]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1237 1266])
+                                    ("getTCMData" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("addr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1313 1327])
+                                            ("memdata" variable
+                                               (:pointer 1
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1328 1345]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1297 1346])
+                                    ("setTCMData" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("addr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1394 1408])
+                                            ("memdata" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1409 1425]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1378 1426])
+                                    ("AccessTCMData" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("addr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1472 1486])
+                                            ("memdata" variable
+                                               (:pointer 1
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1487 1504])
+                                            ("write" variable (:type "bool") (reparse-symbol arg-sub-list) [1505 1516]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1453 1517])
+                                    ("private" label nil (reparse-symbol classsubparts) [1521 1529])
+                                    ("TCM_HIT" type
+                                       (:typedef ("" type
+                                             (:members 
+                                                ( ("NOHIT" variable
+                                                     (:constant-flag t
+                                                      :type "int")
+                                                      (reparse-symbol enumsubparts) [1548 1554])
+                                                  ("ITCMHIT" variable
+                                                     (:constant-flag t
+                                                      :type "int")
+                                                      (reparse-symbol enumsubparts) [1555 1563])
+                                                  ("DTCMHIT" variable
+                                                     (:constant-flag t
+                                                      :type "int")
+                                                      (reparse-symbol enumsubparts) [1564 1572]))                                                
+                                              :type "enum")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1534 1581])
+                                    ("getTCMSize" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("tcmsize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1641 1658]))                                          
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1621 1659])
+                                    ("getTCMHit" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("addr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1737 1751]))                                          
+                                        :type ("TCM_HIT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1719 1752])
+                                    ("isITCMEnabled" function
+                                       (:prototype-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1789 1810])
+                                    ("isDTCMEnabled" function
+                                       (:prototype-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1851 1872])
+                                    ("getITCMSize" function
+                                       (:prototype-flag t
+                                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1909 1936])
+                                    ("getDTCMSize" function
+                                       (:prototype-flag t
+                                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1977 2004])
+                                    ("findNet" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :arguments 
+                                          ( ("netName" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [2031 2051]))                                          
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2010 2052])
+                                    ("mCompHelper" variable
+                                       (:pointer 1
+                                        :type ("CARBON_MKLIB_NAMESPACE::CarbonComponentHelper" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2058 2118])
+                                    ("mCarbonObj" variable
+                                       (:pointer 1
+                                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2123 2182])
+                                    ("mTCMEnableInput" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2187 2254])
+                                    ("mITCMSize" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2259 2320])
+                                    ("mDTCMSize" variable
+                                       (:pointer 1
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2325 2386])
+                                    ("mMem_system_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2392 2417])
+                                    ("mItcm_system_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2422 2448])
+                                    ("mDtcm_system_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2453 2479]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [955 2485]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [916 2504]))                  
+                :type "namespace")
+                nil [849 2545]))          
+      :file "TCM.h"
+      :pointmax 2584
+      :fsize 2583
+      :lastmodtime '(22157 36004 0 0)
+      :unmatched-syntax '((punctuation 2504 . 2505))
+      :lexical-table 
+        '(("ITCMBaseAddress" . ((number "0x00000000" 802 . 812)))
+          ("_CARBONCORTEXM7TCM_H_")
+          ("DTCMBaseAddress" . ((number "0x20000000" 837 . 847)))
+          )
+)
+    (semanticdb-table "ICM_CortexM7Model.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("icm_impl/icm_model.h" include nil nil [65 96])
+            ("common/ICMComponentHelper.h" include nil nil [97 135])
+            ("ICM_CortexM7Model" type
+               (:superclasses 
+                  ( ("icm_impl::ICMModel" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [192 199])
+                    ("ICM_CortexM7Model" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("cyclem_model" variable
+                               (:pointer 1
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [220 249]))                          
+                        :type ("ICM_CortexM7Model" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [202 250])
+                    ("ICM_CortexM7Model" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [253 276])
+                    ("protected" label nil (reparse-symbol classsubparts) [280 290])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [384 393])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [612 621])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [738 747])
+                    ("private" label nil (reparse-symbol classsubparts) [750 758])
+                    ("m_component_helper" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("CARBON_MKLIB_NAMESPACE::ICMComponentHelper" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [761 840]))                  
+                :type "class")
+                nil [137 844]))          
+      :file "ICM_CortexM7Model.h"
+      :pointmax 846
+      :fsize 845
+      :lastmodtime '(23456 60607 295410 0)
+      :unmatched-syntax '((semantic-list 696 . 737) (symbol 670 . 696) (punctuation 664 . 665) (symbol 658 . 664) (punctuation 657 . 658) (punctuation 656 . 657) (symbol 648 . 656) (punctuation 647 . 648) (symbol 637 . 647) (punctuation 636 . 637) (punctuation 635 . 636) (symbol 632 . 635) (VIRTUAL 624 . 631) (semantic-list 470 . 611) (symbol 447 . 470) (punctuation 445 . 446) (symbol 430 . 445) (punctuation 429 . 430) (punctuation 428 . 429) (symbol 420 . 428) (punctuation 419 . 420) (symbol 409 . 419) (punctuation 408 . 409) (punctuation 407 . 408) (symbol 404 . 407) (VIRTUAL 396 . 403) (semantic-list 355 . 383) (symbol 337 . 355) (punctuation 335 . 336) (symbol 327 . 335) (punctuation 326 . 327) (punctuation 325 . 326) (symbol 317 . 325) (punctuation 316 . 317) (symbol 306 . 316) (punctuation 305 . 306) (punctuation 304 . 305) (symbol 301 . 304) (VIRTUAL 293 . 300) (symbol 59 . 63) (symbol 52 . 58) (punctuation 51 . 52)))
+    (semanticdb-table "ICM_CortexM7DebugController.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("cpus/ICM_DebugController.h" include nil nil [223 260])
+            ("cpus/CortexM7/PCStateMachine.h" include nil nil [261 302])
+            ("ICM_CortexM7DebugController" type
+               (:superclasses 
+                  ( ("ICM_DebugController" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [370 377])
+                    ("ICM_CortexM7DebugController" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("corenum" variable (:type "int") (reparse-symbol arg-sub-list) [452 464])
+                            ("component_helper" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("CARBON_MKLIB_NAMESPACE::ICMComponentHelper" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [465 542])
+                            ("cycle_model" variable
+                               (:pointer 1
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [543 571])
+                            ("icm_model" variable
+                               (:pointer 1
+                                :type ("icm_impl::ICMModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [572 602]))                          
+                        :type ("ICM_CortexM7DebugController" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [424 966])
+                    ("ICM_CortexM7DebugController" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [970 1008]))                  
+                :type "class")
+                nil [304 1012]))          
+      :file "ICM_CortexM7DebugController.h"
+      :pointmax 1013
+      :fsize 1012
+      :lastmodtime '(23456 6236 0 0)
+      :unmatched-syntax '((punctuation 419 . 420) (DELETE 413 . 419) (punctuation 411 . 412) (semantic-list 408 . 410) (symbol 381 . 408) (symbol 218 . 222) (symbol 211 . 217) (punctuation 210 . 211)))
+    (semanticdb-table "PCStateMachine.h"
+      :file "PCStateMachine.h"
+      :fsize 6458
+      :lastmodtime '(23456 60607 479393 0)))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!src!include!cpus!CortexM7!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

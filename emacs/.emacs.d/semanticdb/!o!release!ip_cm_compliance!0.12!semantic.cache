@@ -1,0 +1,121 @@
+;; Object 0.12/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "0.12/"
+  :tables
+  (list
+    (semanticdb-table "cm_compile_check.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [27 64])
+            ("logging" include nil nil [101 115])
+            ("sys" include nil nil [116 126])
+            ("argparse" include nil nil [127 142])
+            ("subprocess" include nil nil [143 160])
+            ("os" include nil nil [161 170])
+            ("re" include nil nil [171 180])
+            ("vcgen2" include nil nil [181 208])
+            ("topmodulefilename" variable nil nil [243 280])
+            ("DOTFFILENAME" variable nil nil [357 388])
+            ("generateFileListFromIPXACT" function (:arguments 
+              ( ("top" variable nil (reparse-symbol function_parameters) [694 697])
+                ("lang" variable nil (reparse-symbol function_parameters) [699 703])
+                ("dash_y" variable nil (reparse-symbol function_parameters) [705 711])
+                ("ipxact_files_list" variable nil (reparse-symbol function_parameters) [713 730]))              ) nil [663 1206])
+            ("runCMCompileCheck" function (:arguments 
+              ( ("top" variable nil (reparse-symbol function_parameters) [2221 2224])
+                ("lang" variable nil (reparse-symbol function_parameters) [2226 2230])
+                ("quick" variable nil (reparse-symbol function_parameters) [2232 2237])
+                ("dash_y" variable nil (reparse-symbol function_parameters) [2239 2245])
+                ("comp_name" variable nil (reparse-symbol function_parameters) [2247 2256])
+                ("vcfilename" variable nil (reparse-symbol function_parameters) [2258 2268])
+                ("license_str" variable nil (reparse-symbol function_parameters) [2270 2281])
+                ("cbuild_cache_wrapper_loc" variable nil (reparse-symbol function_parameters) [2283 2307])
+                ("cbuild_flags" variable nil (reparse-symbol function_parameters) [2309 2321])
+                ("ipxact_files_list" variable nil (reparse-symbol function_parameters) [2323 2340]))              ) nil [2199 6101])
+            ("CmdLineOptions" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [6204 6243])
+                            ("self" code nil (reparse-symbol indented_block_body) [6252 6353])
+                            ("self" code nil (reparse-symbol indented_block_body) [6362 6524])
+                            ("self" code nil (reparse-symbol indented_block_body) [6647 6828])
+                            ("self" code nil (reparse-symbol indented_block_body) [6837 6929])
+                            ("self" code nil (reparse-symbol indented_block_body) [6938 7084])
+                            ("self" code nil (reparse-symbol indented_block_body) [7560 7677])
+                            ("self" code nil (reparse-symbol indented_block_body) [7686 7792])
+                            ("self" code nil (reparse-symbol indented_block_body) [7836 7955])
+                            ("self" code nil (reparse-symbol indented_block_body) [8108 8206])
+                            ("self" code nil (reparse-symbol indented_block_body) [8288 8401])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8603 8648]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6183 6187])
+                            ("argv" variable nil (reparse-symbol function_parameters) [6189 6193]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [6170 8649])
+                    ("getTop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8769 8773]))                          )
+                        (reparse-symbol indented_block_body) [8758 8811])
+                    ("getLang" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8828 8832]))                          )
+                        (reparse-symbol indented_block_body) [8816 8871])
+                    ("getQuick" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8889 8893]))                          )
+                        (reparse-symbol indented_block_body) [8876 8933])
+                    ("getIpxactFilesList" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8961 8965]))                          )
+                        (reparse-symbol indented_block_body) [8938 9012])
+                    ("getSrcDir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9031 9035]))                          )
+                        (reparse-symbol indented_block_body) [9017 9203])
+                    ("getCompName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9224 9228]))                          )
+                        (reparse-symbol indented_block_body) [9208 9392])
+                    ("getLicenseStr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9415 9419]))                          )
+                        (reparse-symbol indented_block_body) [9397 9589])
+                    ("getCbuildCacheLoc" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9624 9628]))                          )
+                        (reparse-symbol indented_block_body) [9602 9837])
+                    ("getDotFFile" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9858 9862]))                          )
+                        (reparse-symbol indented_block_body) [9842 9901])
+                    ("getCbuildFlags" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9925 9929]))                          )
+                        (reparse-symbol indented_block_body) [9906 10277]))                  
+                :type "class")
+                nil [6143 10277])
+            ("if" code nil nil [10286 11055]))          
+      :file "cm_compile_check.py"
+      :pointmax 11055
+      :fsize 11054
+      :lastmodtime '(23216 62698 933928 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "vcgen2.py"
+      :file "vcgen2.py"
+      :fsize 13129
+      :lastmodtime '(23216 62698 956929 0)))
+  :file "!o!release!ip_cm_compliance!0.12!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

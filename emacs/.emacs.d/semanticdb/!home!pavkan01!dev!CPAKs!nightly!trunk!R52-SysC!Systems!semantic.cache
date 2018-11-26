@@ -1,0 +1,45 @@
+;; Object Systems/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Systems/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/SimpleFlash.h" include nil nil [831 862])
+            ("models/SimpleFlashImp.h" include nil nil [863 897])
+            ("models/RAMBlock.h" include nil nil [898 926])
+            ("models/SimpleBus.h" include nil nil [927 956])
+            ("models/BasicUART.h" include nil nil [957 986])
+            ("models/ElfLoader.h" include nil nil [987 1016])
+            ("libCortexR52.tlm.h" include nil nil [1017 1046])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [1047 1093])
+            ("../perf_common.h" include nil nil [1094 1121])
+            ("iostream" include (:system-flag t) nil [1123 1142])
+            ("scx/scx.h" include (:system-flag t) nil [1144 1164])
+            ("scx_simcontroller.cpp" include (:system-flag t) nil [1165 1197])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1198 1234])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1235 1268])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1270 1294])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1308 1317])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1318 1331]))                  
+                :type "int")
+                nil [1296 5916]))          
+      :file "system_test.cpp"
+      :pointmax 5917
+      :fsize 5916
+      :lastmodtime '(23040 48075 281217 0)
+      :unmatched-syntax nil))
+  :file "!home!pavkan01!dev!CPAKs!nightly!trunk!R52-SysC!Systems!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,73 @@
+;; Object Systems/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Systems/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/RAMBlock.h" include nil nil [831 859])
+            ("models/SimpleBus.h" include nil nil [860 889])
+            ("models/BasicUART.h" include nil nil [890 919])
+            ("models/ElfLoader.h" include nil nil [920 949])
+            ("libCORTEXA53_32KL1_128KL2_FPU_Axi3.tlm.h" include nil nil [950 1001])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [1002 1048])
+            ("iostream" include (:system-flag t) nil [1050 1069])
+            ("scx/scx.h" include (:system-flag t) nil [1070 1090])
+            ("scx/scx_signal_sizer.h" include (:system-flag t) nil [1091 1124])
+            ("scx_simcontroller.cpp" include (:system-flag t) nil [1125 1157])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1158 1194])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1195 1228])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1230 1254])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1270 1279])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1280 1293]))                  
+                :type "int")
+                nil [1258 4253]))          
+      :file "system_test.cpp"
+      :pointmax 4254
+      :fsize 4253
+      :lastmodtime '(23295 7588 476805 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("SystemCMisc2_DIR" variable (:default-value ("../MODELS/SystemCMisc/gcc483")) nil [1 47])
+            ("MODELS" variable (:default-value ("A53_1CPU_32KL1_128KL2_FPU_AXI3")) nil [47 85])
+            ("CONNECTION" variable (:default-value ("tlm")) nil [85 100])
+            ("A53_1CPU_32KL1_128KL2_FPU_AXI3_DIR" variable (:default-value ("../MODELS/CortexA53_1CPU/$(CM_PLATFORM)/SystemC")) nil [100 183])
+            ("LDFLAGS" variable (:default-value ("../MODELS/CortexA53_1CPU/gcc483/SystemC/univentUtil/lib/ca53_tarmac_dpi.so")) nil [183 266])
+            ("CXX" variable (:default-value ("g++" "-DSC_INCLUDE_DYNAMIC_PROCESSES" "-Wall" "-Wextra" "-Werror" "-Wno-return-type" "-Wno-format-contains-nul" "-Wno-unused-parameter" "-Wno-unused-variable" "-Wno-unused-function" "-Wno-reorder" "-std=c++11" "-DNUM_CPUS=$(NUM_CPUS)")) nil [630 844])
+            ("CM_SYSC_HOME" variable (:default-value ("../MODELS/SystemCMisc/$(CM_PLATFORM)")) nil [925 975])
+            ("TARMAC_DECODE_BIN" variable (:default-value ("$(wildcard $(subst lib,bin,$(dir $(filter %_tarmac_dpi.so,$(LDFLAGS))))*_tarmac_decode)")) nil [996 1103])
+            ("$(1)" function (:arguments ("=.icm")) nil [1126 1145])
+            ("$(1)" function (:arguments ("=icm_runtime")) nil [1145 1172])
+            ("CFLAGS" variable (:default-value ("-I." "-I$(SYSTEMC_INC)" "-I$(CARBON_HOME)/include" "$(CM_SYSC_CXXFLAGS)")) nil [2151 2247])
+            ("LDFLAGS" variable (:default-value ("$(FM_LIB)" "-L$(CARBON_HOME)/Linux64/lib/gcc/shared" "-lcarbon5" "-L$(SYSTEMC_LIB)" "-lsystemc" "-lpthread" "-ldl" "-lz")) nil [2248 2394])
+            ("MODEL_OBJS" variable (:default-value ("$(patsubst %.cpp,%.o,$(MODEL_SRCS))")) nil [2473 2520])
+            (".PHONY" function (:arguments ("all" "clean" "system" "run")) nil [2936 2965])
+            ("all" function (:arguments ("system")) nil [2966 2978])
+            ("system" function (:arguments ("system_test")) nil [2979 2999])
+            ("check-runtime-env" function nil nil [3000 3019])
+            ("run" function (:arguments ("system")) nil [3319 3420])
+            ("system_test" function (:arguments ("system_test.o" "$(MODEL_OBJS)")) nil [3421 3493])
+            ("system_test.o" function (:arguments ("system_test.cpp")) nil [3494 3571])
+            ("%.o" function (:arguments ("%.cpp")) nil [3572 3629])
+            ("clean" function nil nil [3630 3697]))          
+      :file "Makefile"
+      :pointmax 3698
+      :fsize 3697
+      :lastmodtime '(23295 7596 866814 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!tmp!A53-SysC-V9.3.0-CMS9.5.1-MK2018.03.30-SOCD9.6.0!Systems!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

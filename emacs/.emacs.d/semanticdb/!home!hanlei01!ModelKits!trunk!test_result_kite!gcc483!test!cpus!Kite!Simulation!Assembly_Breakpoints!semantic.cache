@@ -1,0 +1,32 @@
+;; Object Assembly_Breakpoints/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Assembly_Breakpoints/"
+  :tables
+  (list
+    (semanticdb-table "breakpoints.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("BP_RegLoad" variable
+               (:default-value "0x00000068"
+                :type "int")
+                nil [1 29])
+            ("BP_MemWrite" variable
+               (:default-value "0x000000a0"
+                :type "int")
+                nil [30 59])
+            ("BP_Deposit" variable
+               (:default-value "0x000000d8"
+                :type "int")
+                nil [60 88])
+            ("BP_LoopStart" variable
+               (:default-value "0x000000ec"
+                :type "int")
+                nil [89 119]))          
+      :file "breakpoints.h"
+      :pointmax 120
+      :fsize 119
+      :lastmodtime '(23255 44183 830173 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!test_result_kite!gcc483!test!cpus!Kite!Simulation!Assembly_Breakpoints!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

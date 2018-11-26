@@ -1,0 +1,991 @@
+;; Object plugin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "plugin/"
+  :tables
+  (list
+    (semanticdb-table "SGSystem.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("SGSystem.h" include nil nil [508 529])
+            ("SystemMap.h" include nil nil [530 552])
+            ("SGVersion.h" include nil nil [553 575])
+            ("ReadXML.h" include nil nil [576 596])
+            ("WriteXML.h" include nil nil [597 618])
+            ("LisaTypes.h" include nil nil [619 641])
+            ("Util.h" include nil nil [642 659])
+            ("Messages.h" include nil nil [660 681])
+            ("ProtocolUtils.h" include nil nil [682 708])
+            ("eslapi/CASIModule.h" include nil nil [709 739])
+            ("iostream" include (:system-flag t) nil [740 759])
+            ("sstream" include (:system-flag t) nil [760 778])
+            ("cassert" include (:system-flag t) nil [779 797])
+            ("Carbon::FastModelIntegration" using (:type ("Carbon::FastModelIntegration" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [799 844])
+            ("SGSystem" function
+               (:constructor-flag t
+                :parent "SGSystem"
+                :arguments 
+                  ( ("systemFactory" variable
+                       (:pointer 1
+                        :type ("SystemMap::Factory" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [865 899])
+                    ("fmComp" variable
+                       (:pointer 1
+                        :type ("SystemMap::Component" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [919 948])
+                    ("sgVersion" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SGVersion" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [968 995]))                  
+                :type ("SGSystem" type (:type "class") nil nil))
+                nil [846 7262])
+            ("mapExternalAxiPortInfo" function
+               (:parent "SGSystem"
+                :arguments 
+                  ( ("type" variable (:type ("PortMapping::Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7302 7325])
+                    ("protocol_variants" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7359 7409])
+                    ("portInfo" variable
+                       (:pointer 1
+                        :type ("ExternalPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7443 7470])
+                    ("portInfoACE" variable
+                       (:pointer 1
+                        :type ("ExternalPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7504 7534]))                  
+                :type "void")
+                nil [7264 8070])
+            ("SGSystem" function
+               (:destructor-flag t
+                :parent "SGSystem"
+                :type "void")
+                nil [8072 8545])
+            ("getConnectionRanges" function
+               (:parent "SGSystem"
+                :arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Port" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8582 8612])
+                    ("slave" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Port" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8613 8642])
+                    ("ranges" variable
+                       (:pointer 1
+                        :type ("AddressMap::RangeVec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8678 8707])
+                    ("slaveBaseAddress" variable
+                       (:pointer 1
+                        :type ("fmAddress_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8708 8738]))                  
+                :type "bool")
+                nil [8547 10806])
+            ("getModifiedIndex" function
+               (:arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10922 10946]))                  
+                :type "int")
+                nil [10901 11296])
+            ("addComponent" function
+               (:parent "SGSystem"
+                :arguments 
+                  ( ("instanceName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11326 11358])
+                    ("oldComp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Component" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11387 11423])
+                    ("compMapping" variable
+                       (:pointer 1
+                        :type ("ComponentMapping" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11452 11482])
+                    ("messages" variable
+                       (:pointer 1
+                        :type ("Messages" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11511 11530])
+                    ("newCompPtr" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("SystemMap::Component" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11559 11599]))                  
+                :type "bool")
+                nil [11298 18933])
+            ("addExternalPort" function
+               (:parent "SGSystem"
+                :arguments 
+                  ( ("basePortName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18966 18998])
+                    ("oldPort" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Port" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18999 19030])
+                    ("portMapping" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("PortMapping" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19031 19062])
+                    ("arrayIndex" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19063 19082])
+                    ("portClkName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19083 19114]))                  
+                :type "void")
+                nil [18935 24175])
+            ("addRangedConnection" function
+               (:parent "SGSystem"
+                :arguments 
+                  ( ("oldMaster" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Port" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24212 24245])
+                    ("oldSlave" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Port" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24246 24278])
+                    ("loAddr" variable (:type ("fmAddress_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24279 24298])
+                    ("hiAddr" variable (:type ("fmAddress_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24299 24318])
+                    ("relative" variable (:type "bool") (reparse-symbol arg-sub-list) [24319 24333]))                  
+                :type "bool")
+                nil [24177 25522])
+            ("getComponentMapping" function
+               (:pointer 1
+                :parent "SGSystem"
+                :constant-flag t
+                :arguments 
+                  ( ("instanceName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25578 25610]))                  
+                :type ("ComponentMapping" type (:type "class") nil nil))
+                nil [25524 25820])
+            ("getMemoryFromSnoop" function
+               (:pointer 1
+                :parent "SGSystem"
+                :constant-flag t
+                :arguments 
+                  ( ("snoop" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Component" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25879 25913]))                  
+                :type ("SystemMap::Component" type (:type "class") nil nil))
+                nil [25822 26139])
+            ("getExternalPortType" function
+               (:parent "SGSystem"
+                :constant-flag t
+                :arguments 
+                  ( ("portName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26190 26218]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [26141 26512])
+            ("connect" function
+               (:parent "SGSystem"
+                :arguments 
+                  ( ("messages" variable
+                       (:pointer 1
+                        :type ("Messages" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26537 26556]))                  
+                :type "void")
+                nil [26514 29245])
+            ("postConnect" function
+               (:parent "SGSystem"
+                :arguments 
+                  ( ("messages" variable
+                       (:pointer 1
+                        :type ("Messages" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29274 29293]))                  
+                :type "bool")
+                nil [29247 30584])
+            ("setCPUNameParameter" function
+               (:parent "SGSystem"
+                :type "void")
+                nil [30699 31740])
+            ("createExternalPortInfo" function
+               (:pointer 1
+                :parent "SGSystem"
+                :arguments 
+                  ( ("externalPortType" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31803 31839])
+                    ("pvComponentName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31840 31875])
+                    ("pvInPortName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31880 31912])
+                    ("pvOutPortName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31913 31946])
+                    ("transactionSource" variable (:type "bool") (reparse-symbol arg-sub-list) [31951 31974]))                  
+                :type ("SGSystem::ExternalPortInfo" type (:type "class") nil nil))
+                nil [31742 32726])
+            ("addPort" function
+               (:parent "SGSystem"
+                :arguments 
+                  ( ("component" variable
+                       (:pointer 1
+                        :type ("SystemMap::Component" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32751 32783])
+                    ("oldPort" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Port" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32784 32815])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32816 32840])
+                    ("arrayIndex" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32841 32860]))                  
+                :type "void")
+                nil [32728 34295])
+            ("handleNewPort" function
+               (:pointer 1
+                :parent "SGSystem"
+                :arguments 
+                  ( ("newComp" variable
+                       (:pointer 1
+                        :type ("SystemMap::Component" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34343 34373])
+                    ("oldPort" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Port" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34374 34405])
+                    ("compMapping" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ComponentMapping" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34406 34442])
+                    ("portMapping" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("PortMapping" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34443 34474])
+                    ("newPortName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34479 34510])
+                    ("modifiedPortName" variable
+                       (:pointer 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34511 34541]))                  
+                :type ("SystemMap::Component" type (:type "class") nil nil))
+                nil [34297 38309])
+            ("configureMemSnoop" function
+               (:parent "SGSystem"
+                :arguments 
+                  ( ("snoop" variable
+                       (:pointer 1
+                        :type ("SystemMap::Component" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38344 38372])
+                    ("messages" variable
+                       (:pointer 1
+                        :type ("Messages" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38373 38392]))                  
+                :type "bool")
+                nil [38311 43018])
+            ("isConnectedExternal" function
+               (:parent "SGSystem"
+                :arguments 
+                  ( ("comp" variable
+                       (:pointer 1
+                        :type ("SystemMap::Component" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43123 43150]))                  
+                :type "bool")
+                nil [43088 44458])
+            ("insertBusDecoders" function
+               (:parent "SGSystem"
+                :type "void")
+                nil [44460 47510])
+            ("correctFMParameters" function
+               (:parent "SGSystem"
+                :arguments 
+                  ( ("messages" variable
+                       (:pointer 1
+                        :type ("Messages" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47547 47566]))                  
+                :type "void")
+                nil [47512 48809])
+            ("createComponent" function
+               (:parent "SGSystem"
+                :arguments 
+                  ( ("instance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48842 48870])
+                    ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48871 48895])
+                    ("compPtr" variable
+                       (:pointer 2
+                        :type ("SystemMap::Component" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48896 48927])
+                    ("compMappingPtr" variable
+                       (:pointer 2
+                        :type ("ComponentMapping" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48928 48962])
+                    ("lisaCompPtr" variable
+                       (:pointer 2
+                        :type ("LisaComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48963 48991]))                  
+                :type "void")
+                nil [48811 49735])
+            ("createPort" function
+               (:pointer 1
+                :parent "SGSystem"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49775 49799])
+                    ("master" variable (:type "bool") (reparse-symbol arg-sub-list) [49800 49812])
+                    ("comp" variable
+                       (:pointer 1
+                        :type ("SystemMap::Component" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49813 49840])
+                    ("compMapping" variable
+                       (:pointer 1
+                        :type ("ComponentMapping" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49841 49871])
+                    ("lisaComp" variable
+                       (:pointer 1
+                        :type ("LisaComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49872 49896]))                  
+                :type ("SystemMap::Port" type (:type "class") nil nil))
+                nil [49737 50524])
+            ("createParameterUInt32" function
+               (:parent "SGSystem"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50563 50587])
+                    ("value" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50588 50603])
+                    ("compMapping" variable
+                       (:pointer 1
+                        :type ("ComponentMapping" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50604 50634])
+                    ("lisaComp" variable
+                       (:pointer 1
+                        :type ("LisaComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50635 50659]))                  
+                :type "void")
+                nil [50526 50952])
+            ("createParameterUInt64" function
+               (:parent "SGSystem"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50991 51015])
+                    ("value" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51016 51031])
+                    ("compMapping" variable
+                       (:pointer 1
+                        :type ("ComponentMapping" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51032 51062])
+                    ("lisaComp" variable
+                       (:pointer 1
+                        :type ("LisaComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51063 51087]))                  
+                :type "void")
+                nil [50954 51382])
+            ("createParameter" function
+               (:parent "SGSystem"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51415 51439])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51440 51465])
+                    ("compMapping" variable
+                       (:pointer 1
+                        :type ("ComponentMapping" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51466 51496])
+                    ("lisaComp" variable
+                       (:pointer 1
+                        :type ("LisaComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51497 51521]))                  
+                :type "void")
+                nil [51384 51818])
+            ("findPortByIndex" function
+               (:pointer 1
+                :parent "SGSystem"
+                :arguments 
+                  ( ("portList" variable (:type ("PortIndexList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51863 51886])
+                    ("arrayIndex" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51887 51906]))                  
+                :type ("SystemMap::Port" type (:type "class") nil nil))
+                nil [51820 52090]))          
+      :file "SGSystem.cpp"
+      :pointmax 52091
+      :fsize 52090
+      :lastmodtime '(22413 16817 11600 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "SGSystem.h"
+      :file "SGSystem.h"
+      :fsize 11483
+      :lastmodtime '(22246 65449 475903 0))
+    (semanticdb-table "SystemMap.h"
+      :file "SystemMap.h"
+      :fsize 13572
+      :lastmodtime '(22246 65449 526915 0))
+    (semanticdb-table "SGVersion.h"
+      :file "SGVersion.h"
+      :fsize 1565
+      :lastmodtime '(22246 65449 498918 0))
+    (semanticdb-table "ReadXML.h"
+      :file "ReadXML.h"
+      :fsize 7186
+      :lastmodtime '(22246 65449 459913 0))
+    (semanticdb-table "WriteXML.h"
+      :file "WriteXML.h"
+      :fsize 2821
+      :lastmodtime '(22246 65449 596902 0))
+    (semanticdb-table "LisaTypes.h"
+      :file "LisaTypes.h"
+      :fsize 7896
+      :lastmodtime '(22413 16816 968601 0))
+    (semanticdb-table "Util.h"
+      :file "Util.h"
+      :fsize 839
+      :lastmodtime '(22246 65449 542909 0))
+    (semanticdb-table "Messages.h"
+      :file "Messages.h"
+      :fsize 1603
+      :lastmodtime '(22246 65449 441908 0))
+    (semanticdb-table "AddressMap.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("AddressMap.h" include nil nil [508 531])
+            ("SGSystem.h" include nil nil [532 553])
+            ("SystemMap.h" include nil nil [554 576])
+            ("Mappings.h" include nil nil [577 598])
+            ("LisaTypes.h" include nil nil [599 621])
+            ("Messages.h" include nil nil [622 643])
+            ("sstream" include (:system-flag t) nil [644 662])
+            ("iostream" include (:system-flag t) nil [663 682])
+            ("algorithm" include (:system-flag t) nil [683 703])
+            ("string" include (:system-flag t) nil [704 721])
+            ("cassert" include (:system-flag t) nil [722 740])
+            ("CARBON_FM_MAX_BUS_ADDR_WIDTH" variable (:constant-flag t) nil [750 778])
+            ("RangeChecker" type
+               (:parent "AddressMap"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [850 857])
+                    ("RangeChecker" function
+                       (:constructor-flag t
+                        :type ("RangeChecker" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [860 877])
+                    ("RangeChecker" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [880 898])
+                    ("addAndCheckOverlap" function
+                       (:arguments 
+                          ( ("thisRange" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Range" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [987 1010])
+                            ("otherRange" variable
+                               (:pointer 1
+                                :type ("Range" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1011 1029]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [963 1506])
+                    ("private" label nil (reparse-symbol classsubparts) [1508 1516])
+                    ("mRanges" variable (:type ("RangeVec" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1519 1536]))                  
+                :type "class")
+                nil [817 1539])
+            ("MemRangeTracker" type
+               (:parent "AddressMap"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1727 1734])
+                    ("MemRangeTracker" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("master" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("SystemMap::Component" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1753 1788]))                          
+                        :type ("MemRangeTracker" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1737 1809])
+                    ("MemRangeTracker" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1812 1833])
+                    ("addRanges" function
+                       (:arguments 
+                          ( ("slave" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("SystemMap::Component" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1852 1886])
+                            ("ranges" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("RangeVec" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1887 1910]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1837 2078])
+                    ("getMaster" function
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Component" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2082 2155])
+                    ("CompRangeMap" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("SystemMap::Component" type
+                                     (:pointer 1
+                                      :constant-flag t)
+                                      nil nil)
+                                  ("RangeVec" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2159 2228])
+                    ("RangeLoop" type
+                       (:typedef ("ConstLoop" type
+                             (:template-specifier 
+                                ( ("CompRangeMap" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2231 2273])
+                    ("loopRanges" function (:type ("RangeLoop" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2276 2348])
+                    ("private" label nil (reparse-symbol classsubparts) [2350 2358])
+                    ("mMaster" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Component" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2361 2397])
+                    ("mSlaveRanges" variable (:type ("CompRangeMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2400 2426]))                  
+                :type "class")
+                nil [1691 2429])
+            ("isFullAddressSpace" function
+               (:parent "AddressMap::Range"
+                :type "bool")
+                nil [2432 2595])
+            ("==" function
+               (:operator-flag t
+                :parent "AddressMap::Range"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Range" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2632 2651]))                  
+                :type "bool")
+                nil [2597 2876])
+            ("!=" function
+               (:operator-flag t
+                :parent "AddressMap::Range"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Range" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2913 2932]))                  
+                :type "bool")
+                nil [2878 2970])
+            ("=" function
+               (:operator-flag t
+                :parent "AddressMap::Range"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Range" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3020 3039]))                  
+                :type ("AddressMap::Range" type (:type "class") nil nil))
+                nil [2972 3122])
+            ("invalidate" function
+               (:parent "AddressMap::Range"
+                :type "void")
+                nil [3124 3184])
+            ("trimToFit" function
+               (:parent "AddressMap::Range"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AddressMap::Range" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3220 3251]))                  
+                :type "void")
+                nil [3186 3555])
+            ("tryMerge" function
+               (:parent "AddressMap::Range"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Range" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3590 3609]))                  
+                :type "bool")
+                nil [3557 4080])
+            ("tryRemove" function
+               (:parent "AddressMap::Range"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Range" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4116 4135])
+                    ("remainder" variable
+                       (:pointer 1
+                        :type ("Range" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4136 4153]))                  
+                :type "bool")
+                nil [4082 4864])
+            ("overlapsWith" function
+               (:parent "AddressMap::Range"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Range" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4903 4922]))                  
+                :type "bool")
+                nil [4866 5023])
+            ("isContainedBy" function
+               (:parent "AddressMap::Range"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Range" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5063 5082]))                  
+                :type "bool")
+                nil [5025 5139])
+            ("isAdjacentTo" function
+               (:parent "AddressMap::Range"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Range" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5178 5197]))                  
+                :type "bool")
+                nil [5141 5302])
+            ("AddressMap" function
+               (:constructor-flag t
+                :parent "AddressMap"
+                :arguments 
+                  ( ("sgSystem" variable
+                       (:pointer 1
+                        :type ("SGSystem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5327 5346]))                  
+                :type ("AddressMap" type (:type "class") nil nil))
+                nil [5304 5374])
+            ("AddressMap" function
+               (:destructor-flag t
+                :parent "AddressMap"
+                :type "void")
+                nil [5376 5541])
+            ("addInitialRange" function
+               (:parent "AddressMap"
+                :arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Port" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5576 5606])
+                    ("slave" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Port" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5607 5636])
+                    ("lowAddr" variable (:type ("fmAddress_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5637 5657])
+                    ("highAddr" variable (:type ("fmAddress_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5658 5679])
+                    ("relative" variable (:type "bool") (reparse-symbol arg-sub-list) [5680 5694]))                  
+                :type "void")
+                nil [5543 5789])
+            ("addModifiedRange" function
+               (:parent "AddressMap"
+                :arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Port" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5825 5855])
+                    ("slave" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Port" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5856 5885])
+                    ("lowAddr" variable (:type ("fmAddress_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5886 5906])
+                    ("highAddr" variable (:type ("fmAddress_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5907 5928])
+                    ("relative" variable (:type "bool") (reparse-symbol arg-sub-list) [5929 5943]))                  
+                :type "void")
+                nil [5791 6039])
+            ("sanityCheck" function
+               (:parent "AddressMap"
+                :arguments 
+                  ( ("messages" variable
+                       (:pointer 1
+                        :type ("Messages" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6070 6089]))                  
+                :type "bool")
+                nil [6041 11214])
+            ("adjustRanges" function
+               (:parent "AddressMap"
+                :arguments 
+                  ( ("messages" variable
+                       (:pointer 1
+                        :type ("Messages" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11246 11265]))                  
+                :type "bool")
+                nil [11216 15143])
+            ("findMemCPUAssociations" function
+               (:parent "AddressMap"
+                :type "void")
+                nil [15145 16714])
+            ("finalize" function
+               (:parent "AddressMap"
+                :type "void")
+                nil [16716 17790])
+            ("findCPUAndBaseAddr" function
+               (:parent "AddressMap"
+                :arguments 
+                  ( ("mem" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Component" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17828 17860])
+                    ("cpu" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("SystemMap::Component" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17861 17894])
+                    ("baseAddr" variable
+                       (:pointer 1
+                        :type ("fmAddress_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17895 17917]))                  
+                :type "bool")
+                nil [17792 18190])
+            ("getConnectionRanges" function
+               (:parent "AddressMap"
+                :arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Port" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18229 18259])
+                    ("slave" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Port" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18260 18289])
+                    ("ranges" variable
+                       (:pointer 1
+                        :type ("AddressMap::RangeVec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18290 18319]))                  
+                :type "bool")
+                nil [18192 18825])
+            ("migrateAddressRanges" function
+               (:parent "AddressMap"
+                :arguments 
+                  ( ("oldMaster" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Port" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18865 18898])
+                    ("newMaster" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Port" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18899 18932]))                  
+                :type "void")
+                nil [18827 19545])
+            ("print" function
+               (:parent "AddressMap"
+                :type "void")
+                nil [19547 19761])
+            ("getHierarchicalCallPath" function
+               (:arguments 
+                  ( ("portStack" variable
+                       (:constant-flag t
+                        :type ("AddressMap::PortSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19799 19835]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [19763 20215])
+            ("LowAddressLessThan" function
+               (:arguments 
+                  ( ("lhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AddressMap::Range" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20242 20271])
+                    ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AddressMap::Range" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20272 20301]))                  
+                :type "bool")
+                nil [20218 20331])
+            ("LowAddressGreaterEqualThan" type
+               (:members 
+                  ( ("value_" variable (:type ("fmAddress_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20448 20467])
+                    ("LowAddressGreaterEqualThan" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("value" variable (:type ("fmAddress_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20497 20515]))                          
+                        :type ("LowAddressGreaterEqualThan" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [20470 20533])
+                    ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("AddressMap::Range" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20554 20581]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [20537 20656]))                  
+                :type "struct")
+                nil [20334 20659])
+            ("rangeVectorIsOrdered" function
+               (:arguments 
+                  ( ("ranges" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AddressMap::RangeVec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20780 20815]))                  
+                :type "bool")
+                nil [20754 21052])
+            ("rangeVectorHasNoOverlaps" function
+               (:arguments 
+                  ( ("ranges" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AddressMap::RangeVec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21084 21119]))                  
+                :type "bool")
+                nil [21054 21360])
+            ("insertAndMergeRange" function
+               (:arguments 
+                  ( ("ranges" variable
+                       (:reference 1
+                        :type ("AddressMap::RangeVec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21699 21728])
+                    ("r" variable (:type ("AddressMap::Range" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21729 21749]))                  
+                :type "void")
+                nil [21674 22912])
+            ("populateModifiedRangeMap" function
+               (:parent "AddressMap"
+                :arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SystemMap::Port" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22958 22988])
+                    ("currentRange" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Range" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22993 23019])
+                    ("visitedPorts" variable
+                       (:pointer 1
+                        :type ("PortSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23024 23046])
+                    ("memRangeTracker" variable
+                       (:pointer 1
+                        :type ("MemRangeTracker" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23051 23084])
+                    ("messages" variable
+                       (:pointer 1
+                        :type ("Messages" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23089 23108]))                  
+                :type "bool")
+                nil [22916 27765])
+            ("reduceRanges" function
+               (:parent "AddressMap"
+                :type "void")
+                nil [27767 33821])
+            ("printMap" function
+               (:parent "AddressMap"
+                :arguments 
+                  ( ("rangeMap" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("RangeMap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33849 33874]))                  
+                :type "void")
+                nil [33823 34704])
+            ("getCPUName" function
+               (:parent "AddressMap"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [34746 35032]))          
+      :file "AddressMap.cpp"
+      :pointmax 35033
+      :fsize 35032
+      :lastmodtime '(22246 65449 278915 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CARBON_FM_MAX_BUS_ADDR_WIDTH" . ((number "44" 779 . 781)))
+          )
+)
+    (semanticdb-table "AddressMap.h"
+      :file "AddressMap.h"
+      :fsize 6302
+      :lastmodtime '(22246 65449 292910 0))
+    (semanticdb-table "Mappings.h"
+      :file "Mappings.h"
+      :fsize 20578
+      :lastmodtime '(22246 65449 436919 0)))
+  :file "!mnt!home!hlei!source!socdesigner!FastModels!src!plugin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

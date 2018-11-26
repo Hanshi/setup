@@ -1,0 +1,60 @@
+;; Object Primes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Primes/"
+  :tables
+  (list
+    (semanticdb-table "main.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [180 198])
+            ("armv8_aarch64_SystemTimer.h" include nil nil [199 237])
+            ("armv8_aarch64_gicv3.h" include nil nil [238 270])
+            ("dummymaster.h" include nil nil [271 295])
+            ("DummyMaster" variable (:constant-flag t) nil [305 316])
+            ("GITS_TRANSLATER" variable (:constant-flag t) nil [346 361])
+            ("TEST_ATTR" variable (:constant-flag t) nil [387 396])
+            ("flag" variable
+               (:typemodifiers ("volatile")
+                :type "unsigned int")
+                nil [437 464])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [536 541]))                  
+                :type "int")
+                nil [527 9504])
+            ("fiqHandler" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9583 9588]))                  
+                :type "void")
+                nil [9567 12016])
+            ("irqHandler" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12095 12100]))                  
+                :type "void")
+                nil [12079 14468]))          
+      :file "main.c"
+      :pointmax 14530
+      :fsize 15001
+      :lastmodtime '(22461 64218 608861 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TEST_ATTR" . ((semantic-list "(DM_ATTR_DATA | DM_ATTR_NS)" 406 . 433)))
+          ("GITS_TRANSLATER" . ((symbol "0xE0030040LL" 365 . 377)))
+          ("DummyMaster" . ((semantic-list "(void*)" 318 . 325) (number "0xd0000000" 326 . 336)))
+          )
+)
+    (semanticdb-table "armv8_aarch64_SystemTimer.h"
+      :file "armv8_aarch64_SystemTimer.h"
+      :fsize 8260
+      :lastmodtime '(22461 64218 559835 0))
+    (semanticdb-table "armv8_aarch64_gicv3.h"
+      :file "armv8_aarch64_gicv3.h"
+      :fsize 22205
+      :lastmodtime '(22461 64218 618834 0))
+    (semanticdb-table "dummymaster.h"
+      :file "dummymaster.h"
+      :fsize 1558
+      :lastmodtime '(22461 64218 673845 0)))
+  :file "!home!hlei!modelkit!modelkits!test!primecells!PL690!Interrupt!Applications!Primes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

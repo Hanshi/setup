@@ -1,0 +1,37 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("LINUX_DIR" variable (:default-value (".")) nil [1 15])
+            ("PACKAGE_LIB_DIR" variable (:default-value ("./lib")) nil [66 90])
+            ("COMP_NAME" variable (:default-value ("$(subst lib,,$(basename $(notdir $(wildcard $(PACKAGE_LIB_DIR)/lib*.a))))")) nil [188 274])
+            ("clean" function nil nil [275 303])
+            ("gen_code" function nil nil [304 314])
+            ("Makefile.internal" include nil nil [333 359])
+            ("CXX" variable (:default-value ("g++")) nil [421 429])
+            ("CXXFLAGS" variable (:default-value ("-fPIC" "-g" "-std=c++11" "-I$(SYSTEMC_HOME)/include" "-I$(CARBON_HOME)/include" "$(CM_SYSC_CXXFLAGS)" "-I." "-I$(LINUX_DIR)")) nil [430 589])
+            ("OBJS" variable (:default-value ("lib$(COMP_NAME).systemc.o" "lib$(COMP_NAME).tlm.o" "univent_tarmac.o")) nil [590 673])
+            ("all" function (:arguments ("lib$(COMP_NAME).tlm.a" "lib$(COMP_NAME).tlm.so")) nil [674 725])
+            ("lib" function (:arguments ("$(OBJS)")) nil [726 775])
+            ("lib" function (:arguments ("$(OBJS)")) nil [776 1161])
+            ("lib" function (:arguments ("gen_code")) nil [1162 1200])
+            ("univent_tarmac.cpp" function (:arguments ("gen_code")) nil [1201 1230])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp")) nil [1231 1319])
+            ("lib" function (:arguments ("lib$(COMP_NAME).tlm.cpp")) nil [1320 1400])
+            ("univent_tarmac.o" function (:arguments ("univent_tarmac.cpp" "gen_code")) nil [1401 1479]))          
+      :file "Makefile"
+      :pointmax 1479
+      :fsize 1478
+      :lastmodtime '(22929 54299 620594 0)
+      :unmatched-syntax '((shell-command 1448 . 1478) (bol 1447 . 1447) (symbol 390 . 419) (semantic-list 376 . 390) (punctuation 375 . 376) (symbol 366 . 374) (bol 366 . 366) (symbol 124 . 132) (semantic-list 107 . 124) (punctuation 106 . 107) (punctuation 104 . 105) (punctuation 103 . 104) (symbol 90 . 102) (bol 90 . 90) (symbol 32 . 65) (punctuation 29 . 30) (punctuation 28 . 29) (symbol 15 . 27) (bol 15 . 15)))
+    (semanticdb-table "Makefile.internal"
+      :file "Makefile.internal"
+      :fsize 2479
+      :lastmodtime '(22929 54299 624594 0)))
+  :file "!o!mkwork!hanlei01!MK_trunk!modelbuild!models!builddir!Kite!workarea!DSM!ip!Kite_1CPU!gcc483!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

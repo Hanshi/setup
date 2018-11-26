@@ -1,0 +1,1200 @@
+;; Object cpus/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cpus/"
+  :tables
+  (list
+    (semanticdb-table "PCStateMachineBase.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__PC_STATE_MACHINE_BASE_H__" variable (:constant-flag t) nil [560 587])
+            ("common/carbon_mkversion.h" include nil nil [589 625])
+            ("carbon/carbon_capi.h" include nil nil [627 658])
+            ("eslapi/CADITypes.h" include nil nil [660 689])
+            ("cassert" include (:system-flag t) nil [813 831])
+            ("deque" include (:system-flag t) nil [832 848])
+            ("string" include (:system-flag t) nil [849 866])
+            ("vector" include (:system-flag t) nil [867 884])
+            ("CarbonSemiHostMasterPort" type
+               (:prototype t
+                :type "class")
+                nil [886 917])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("CarbonComponentHelper" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [955 983])
+                    ("SemihostingCallback" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [984 1010])
+                    ("CarbonSaveStreamIntf" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1011 1038])
+                    ("CarbonRestoreStreamIntf" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1039 1069])
+                    ("PCStateMachineBase" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2178 2185])
+                            ("PCStateMachineBase" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("compHelper" variable
+                                       (:pointer 1
+                                        :type ("CarbonComponentHelper" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2207 2241])
+                                    ("semiHost" variable
+                                       (:pointer 1
+                                        :type ("CarbonSemiHostMasterPort" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2263 2298])
+                                    ("semiHostCallback" variable
+                                       (:pointer 1
+                                        :type ("SemihostingCallback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2320 2358])
+                                    ("pcBreakpointBlockSize" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2380 2415])
+                                    ("IsV8" variable (:type "bool") (reparse-symbol arg-sub-list) [2437 2447])
+                                    ("useMismatch" variable (:type "bool") (reparse-symbol arg-sub-list) [2469 2486])
+                                    ("name" variable
+                                       (:default-value "\"\""
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2509 2530]))                                  
+                                :type ("PCStateMachineBase" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2188 2532])
+                            ("PCStateMachineBase" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2535 2565])
+                            ("reset" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2569 2582])
+                            ("getReportPC" function (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2585 2639])
+                            ("requestForcePC" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("pc" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2662 2678]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2642 2679])
+                            ("getCommittedPCs" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("startIndex" variable (:type "int") (reparse-symbol arg-sub-list) [2719 2734])
+                                    ("desiredCount" variable (:type "int") (reparse-symbol arg-sub-list) [2774 2791])
+                                    ("actualCount" variable
+                                       (:pointer 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [2831 2848])
+                                    ("pcs" variable
+                                       (:pointer 1
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2888 2902]))                                  
+                                :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2682 2909])
+                            ("validSoftwareBreakpoint" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2912 2949])
+                            ("doCyclePreModelRun" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2953 2979])
+                            ("doCyclePostModelRun" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2982 3009])
+                            ("checkSemihostConnection" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3073 3104])
+                            ("putSingleStep" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("step" variable (:type "bool") (reparse-symbol arg-sub-list) [3127 3137]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3108 3138])
+                            ("getSingleStep" function (:type "bool") (reparse-symbol classsubparts) [3141 3191])
+                            ("putExternalStop" function
+                               (:arguments 
+                                  ( ("stop" variable (:type "bool") (reparse-symbol arg-sub-list) [3215 3225]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3194 3253])
+                            ("IsExternalStopEnabled" function (:type "bool") (reparse-symbol classsubparts) [3256 3318])
+                            ("putBringUpStop" function
+                               (:arguments 
+                                  ( ("stop" variable (:type "bool") (reparse-symbol arg-sub-list) [3341 3351]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3321 3383])
+                            ("saveState" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("os" variable
+                                       (:pointer 1
+                                        :type ("CarbonSaveStreamIntf" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3401 3426]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3386 3433])
+                            ("restoreState" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("is" variable
+                                       (:pointer 1
+                                        :type ("CarbonRestoreStreamIntf" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3454 3482]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3436 3483])
+                            ("getCycleCount" function
+                               (:prototype-flag t
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3486 3511])
+                            ("getName" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3515 3560])
+                            ("protected" label nil (reparse-symbol classsubparts) [5401 5411])
+                            ("mCompHelper" variable
+                               (:pointer 1
+                                :type ("CarbonComponentHelper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5414 5455])
+                            ("mCarbonObj" variable
+                               (:pointer 1
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5458 5485])
+                            ("DebugInstruction" type
+                               (:members 
+                                  ( ("instruction" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5521 5542])
+                                    ("saveScratchRegisters" variable (:type "bool") (reparse-symbol classsubparts) [5547 5573])
+                                    ("restoreScratchRegisters" variable (:type "bool") (reparse-symbol classsubparts) [5578 5607])
+                                    ("usesR0" variable (:type "bool") (reparse-symbol classsubparts) [5612 5624])
+                                    ("r0Value" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5629 5646])
+                                    ("DebugInstruction" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("instr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5668 5683])
+                                            ("saveRegs" variable
+                                               (:default-value "false"
+                                                :type "bool")
+                                                (reparse-symbol arg-sub-list) [5684 5705])
+                                            ("restoreRegs" variable
+                                               (:default-value "false"
+                                                :type "bool")
+                                                (reparse-symbol arg-sub-list) [5707 5731])
+                                            ("useR0" variable
+                                               (:default-value "false"
+                                                :type "bool")
+                                                (reparse-symbol arg-sub-list) [5733 5751])
+                                            ("r0val" variable
+                                               (:default-value "false"
+                                                :type "bool")
+                                                (reparse-symbol arg-sub-list) [5753 5771]))                                          
+                                        :type ("DebugInstruction" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [5651 5913])
+                                    ("DebugInstruction" function
+                                       (:constructor-flag t
+                                        :type ("DebugInstruction" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [5919 5966]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [5489 5972])
+                            ("getLastDebugPC" function (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6032 6092])
+                            ("setLastDebugPC" function
+                               (:arguments 
+                                  ( ("val" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6115 6132]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6095 6156])
+                            ("getBreakPC" function (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6159 6211])
+                            ("setBreakPC" function
+                               (:arguments 
+                                  ( ("val" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6230 6247]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6214 6267])
+                            ("getPipelinePC" function (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6270 6328])
+                            ("setPipelinePC" function
+                               (:arguments 
+                                  ( ("val" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6350 6367]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6331 6390])
+                            ("getThumbMode" function (:type "bool") (reparse-symbol classsubparts) [6393 6441])
+                            ("setThumbMode" function
+                               (:arguments 
+                                  ( ("val" variable (:type "bool") (reparse-symbol arg-sub-list) [6462 6471]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6444 6493])
+                            ("getThumbModeSpsr" function (:type "bool") (reparse-symbol classsubparts) [6496 6552])
+                            ("setThumbModeSpsr" function
+                               (:arguments 
+                                  ( ("val" variable (:type "bool") (reparse-symbol arg-sub-list) [6577 6586]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6555 6612])
+                            ("getSecureMode" function (:type "bool") (reparse-symbol classsubparts) [6615 6665])
+                            ("setSecureMode" function
+                               (:arguments 
+                                  ( ("val" variable (:type "bool") (reparse-symbol arg-sub-list) [6687 6696]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6668 6719])
+                            ("getR14" function (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6722 6766])
+                            ("setR14" function
+                               (:arguments 
+                                  ( ("val" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6781 6798]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6769 6814])
+                            ("getEndian" function (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6817 6867])
+                            ("setEndian" function
+                               (:arguments 
+                                  ( ("val" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6885 6902]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6870 6921])
+                            ("getSvc_Exception_Vector" function (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6924 7002])
+                            ("setSvc_Exception_Vector" function
+                               (:arguments 
+                                  ( ("val" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7034 7051]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7005 7084])
+                            ("getSavedR0" function (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7087 7139])
+                            ("setSavedR0" function
+                               (:arguments 
+                                  ( ("val" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7158 7175]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7142 7195])
+                            ("getEffectiveVBAR" function (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7198 7262])
+                            ("setEffectiveVBAR" function
+                               (:arguments 
+                                  ( ("val" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7287 7304]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7265 7330])
+                            ("getNumPCsValid" function (:type "int") (reparse-symbol classsubparts) [7333 7384])
+                            ("setNumPCsValid" function
+                               (:arguments 
+                                  ( ("val" variable (:type "int") (reparse-symbol arg-sub-list) [7407 7415]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7387 7439])
+                            ("getETMPC" function
+                               (:arguments 
+                                  ( ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7464 7483]))                                  
+                                :type ("CarbonUInt32" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7442 7516])
+                            ("setETMPC" function
+                               (:arguments 
+                                  ( ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7533 7552])
+                                    ("val" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7553 7570]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7519 7737])
+                            ("getSemihostEnabled" function (:type "bool") (reparse-symbol classsubparts) [7741 7801])
+                            ("getVerbose" function (:type "bool") (reparse-symbol classsubparts) [7804 7848])
+                            ("getDebugHaltInstructions" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("DebugInstruction" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [7970 8040])
+                            ("getDebugPCDepositInstructions" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("DebugInstruction" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8098 8160])
+                            ("getTBit" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8201 8234])
+                            ("isAArch32" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8323 8358])
+                            ("depositHaltRequest" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("val" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8437 8454]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8405 8459])
+                            ("putBreakOnSVCException" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [8565 8577]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8529 8582])
+                            ("depositInstruction" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("instr" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DebugInstruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8659 8689]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8627 8694])
+                            ("depositRestart" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [8743 8777])
+                            ("enableStall" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("match" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9269 9288])
+                                    ("doStep" variable (:type "bool") (reparse-symbol arg-sub-list) [9289 9301]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9244 9306])
+                            ("readRTLValues" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [9459 9492])
+                            ("updateCommittedPCs" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [9543 9581])
+                            ("saveDebugScratchRegisters" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [9657 9702])
+                            ("restoreDebugScratchRegisters" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [9779 9833])
+                            ("isStalled" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10204 10239])
+                            ("isInstructionComplete" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10301 10348])
+                            ("isRestarted" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10522 10559])
+                            ("correctAddressMatch" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("addressMatch" variable (:type "bool") (reparse-symbol arg-sub-list) [10649 10667])
+                                    ("bpAddrToCheck" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10668 10695]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10616 10700])
+                            ("ARM_DSB" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xf57ff04f"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10704 10755])
+                            ("ARM_DCCMVAC" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xee070f3a"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10759 10810])
+                            ("ARM_MOV_PC_R0" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xf57ff04f"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10814 10871])
+                            ("DUMMY_DEBUG_INSTRUCTION" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xdeadbeef"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10897 10956])
+                            ("ARM_DSB_V8_AARCH32_Thumb" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0x8f4ff3bf"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11036 11101])
+                            ("ARM_MOV_PC_R2_V8_AARCH32_Thumb" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0x2f35ee64"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11105 11179])
+                            ("ARM_SUBS_PC_LR_V8_AARCH32_Thumb" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0x8f00f3de"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11201 11270])
+                            ("ARM_DCCMVAC_V8_AARCH32_Thumb" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0x0f3aee07"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11365 11430])
+                            ("ARM_DCPS1_V8_AARCH32_Thumb" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0x8001F78F"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11433 11496])
+                            ("ARM_DRPS_V8_AARCH32_Thumb" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0x8F00F3DE"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11499 11561])
+                            ("ARM_MOV_R3_DLR_V8_AARCH32_Thumb" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0x3f35ee74"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11564 11632])
+                            ("ARM_MOV_DLR_R3_V8_AARCH32_Thumb" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0x3f35ee64"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11635 11703])
+                            ("ARM_DCCMVAC_V8_AARCH64" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd50b7a22"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11800 11862])
+                            ("ARM_DSB_V8_AARCH64" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd5033f9f"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11866 11928])
+                            ("ARM_MOV_PC_X2_V8_AARCH64" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd51b4522"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11932 12000])
+                            ("ARM_DRPS_V8_AARCH64" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xD6BF03E0"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12003 12066])
+                            ("ARM_V8_AARCH64_MSR_DBGDTREL0_X0" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd5130400"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12166 12236])
+                            ("ARM_V8_AARCH64_MSR_DBGDTREL0_X1" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd5130401"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12239 12309])
+                            ("ARM_V8_AARCH64_MSR_DBGDTREL0_X2" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd5130402"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12312 12382])
+                            ("ARM_V8_AARCH64_MSR_DBGDTREL0_X3" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd5130403"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12385 12455])
+                            ("ARM_V8_AARCH64_MSR_DBGDTREL0_X4" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd5130404"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12458 12528])
+                            ("ARM_V8_AARCH64_MSR_DBGDTREL0_X5" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd5130405"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12531 12601])
+                            ("ARM_V8_AARCH64_MSR_DBGDTREL0_X6" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd5130406"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12605 12675])
+                            ("ARM_V8_AARCH64_MSR_DBGDTREL0_X20" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd5130414"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12678 12748])
+                            ("ARM_V8_AARCH64_MSR_DBGDTREL0_X21" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd5130415"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12751 12821])
+                            ("ARM_V8_AARCH64_MSR_DBGDTREL0_X22" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd5130416"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12824 12894])
+                            ("ARM_V8_AARCH64_MSR_DBGDTREL0_X23" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd5130417"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12897 12967])
+                            ("ARM_V8_AARCH64_MSR_DBGDTREL0_X24" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd5130418"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12970 13040])
+                            ("ARM_V8_AARCH64_MRS_X0_ELR_EL3" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd53e4020"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13045 13116])
+                            ("ARM_V8_AARCH64_MRS_X0_MPIDR_EL1" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd53800a0"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13119 13190])
+                            ("ARM_V8_AARCH64_MRS_X0_SCR_EL3" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd53e1100"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13193 13264])
+                            ("ARM_V8_AARCH64_MRS_X0_SCTLR_EL3" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd53e1000"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13267 13338])
+                            ("ARM_V8_AARCH64_MRS_X0_SCTLR_EL2" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd53c1000"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13341 13412])
+                            ("ARM_V8_AARCH64_MRS_X0_SCTLR_EL1" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd5381000"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13415 13486])
+                            ("ARM_V8_AARCH64_MRS_X0_TTBR0_EL3" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd53e2000"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13489 13560])
+                            ("ARM_V8_AARCH64_MRS_X0_TTBR0_EL2" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd53c2000"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13563 13634])
+                            ("ARM_V8_AARCH64_MRS_X0_TTBR0_EL1" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd5382000"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13637 13708])
+                            ("ARM_V8_AARCH64_MRS_X0_TCR_EL3" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd53e2040"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13711 13782])
+                            ("ARM_V8_AARCH64_MRS_X0_CNTPCT_EL0" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd53be020"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13785 13856])
+                            ("ARM_V8_AARCH64_MRS_X0_SPSR_EL1" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd5384000"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13859 13930])
+                            ("ARM_V8_AARCH64_MRS_X0_DBGDTREL0" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd5330400"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13934 14005])
+                            ("private" label nil (reparse-symbol classsubparts) [14009 14017])
+                            ("mName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14020 14038])
+                            ("mSemihost" variable
+                               (:pointer 1
+                                :type ("CarbonSemiHostMasterPort" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14085 14127])
+                            ("mSemihostCallback" variable
+                               (:pointer 1
+                                :type ("SemihostingCallback" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14130 14175])
+                            ("mPCBreakpointBlockSize" variable
+                               (:constant-flag t
+                                :type ("CarbonUInt32" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14494 14536])
+                            ("mBreakpointAddressMask" variable
+                               (:constant-flag t
+                                :type ("CarbonUInt32" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14600 14642])
+                            ("mAddressOffsetMask" variable
+                               (:constant-flag t
+                                :type ("CarbonUInt32" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14748 14786])
+                            ("mFullMatch" variable
+                               (:constant-flag t
+                                :type ("CarbonUInt32" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14938 14968])
+                            ("mUseMismatch" variable (:type "bool") (reparse-symbol classsubparts) [15095 15113])
+                            ("mIsV8" variable (:type "bool") (reparse-symbol classsubparts) [15116 15127])
+                            ("mBringUpHaltRequest" variable (:type "bool") (reparse-symbol classsubparts) [15131 15166])
+                            ("mExtHaltRequest" variable (:type "bool") (reparse-symbol classsubparts) [15247 15268])
+                            ("mSingleStep" variable (:type "bool") (reparse-symbol classsubparts) [15317 15334])
+                            ("mExtPCForce" variable (:type "bool") (reparse-symbol classsubparts) [15399 15416])
+                            ("mSPHalt" variable (:type "bool") (reparse-symbol classsubparts) [15419 15432])
+                            ("mReset" variable (:type "bool") (reparse-symbol classsubparts) [15525 15537])
+                            ("mVerbose" variable (:type "bool") (reparse-symbol classsubparts) [15622 15636])
+                            ("mSemihostDetected" variable (:type "bool") (reparse-symbol classsubparts) [15693 15716])
+                            ("mSemihostDetectedStall" variable (:type "bool") (reparse-symbol classsubparts) [15763 15791])
+                            ("mSemihostEnabled" variable (:type "bool") (reparse-symbol classsubparts) [15937 15959])
+                            ("mBreakOnSVCException" variable (:type "bool") (reparse-symbol classsubparts) [15962 15988])
+                            ("mLastDebugPC" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16054 16080])
+                            ("mBreakPC" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16129 16151])
+                            ("mPipelinePC" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16206 16231])
+                            ("mThumbMode" variable (:type "bool") (reparse-symbol classsubparts) [16283 16299])
+                            ("mThumbModeSpsr" variable (:type "bool") (reparse-symbol classsubparts) [16363 16383])
+                            ("mSecureMode" variable (:type "bool") (reparse-symbol classsubparts) [16443 16460])
+                            ("mR14" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16463 16481])
+                            ("mEndian" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16484 16505])
+                            ("mSvc_Exception_Vector" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16508 16543])
+                            ("mSavedR0" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16546 16568])
+                            ("mEffectiveVBAR" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16635 16663])
+                            ("mNumPCsValid" variable (:type "int") (reparse-symbol classsubparts) [16732 16749])
+                            ("mETMPCs" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("CarbonUInt32" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [16803 16838])
+                            ("PCState" type
+                               (:members 
+                                  ( ("ePCRunning" variable
+                                       (:constant-flag t
+                                        :default-value (16951 16952)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [16938 16952])
+                                    ("ePCStalled" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [17000 17011])
+                                    ("ePCRestart" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [17089 17100])
+                                    ("ePCWaitRestart" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [17151 17166])
+                                    ("ePCDetectHalt" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [17228 17242])
+                                    ("ePCExecuteDebugInstruction" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [17247 17274])
+                                    ("ePCWaitDebugInstructionComplete" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [17279 17311])
+                                    ("ePCDebugInstructionCompleted" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [17316 17345])
+                                    ("ePCReset" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [17350 17359]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [16917 17364])
+                            ("mPCState" variable (:type ("PCState" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17368 17385])
+                            ("mPrevState" variable (:type ("PCState" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17452 17471])
+                            ("mReportPC" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17537 17560])
+                            ("mRestartPC" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17623 17647])
+                            ("mForcePC" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17731 17753])
+                            ("mSingleStepBreakpoint" variable (:type ("eslapi::CADIBptNumber_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17765 17811])
+                            ("mDoPCForce" variable (:type "bool") (reparse-symbol classsubparts) [17902 17918])
+                            ("mBptCount" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17987 18006])
+                            ("scMaxBptCount" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "100"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [18009 18051])
+                            ("mBptList" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("eslapi::CADIBptDescription_t" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [18054 18105])
+                            ("SemiHostPC" type
+                               (:typedef ("std::pair" type
+                                     (:template-specifier 
+                                        ( ("CarbonUInt32" type nil nil nil)
+                                          ("bool" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [18236 18285])
+                            ("mDebugInstructions" variable (:type ("std::deque" type
+                                 (:template-specifier 
+                                    ( ("DebugInstruction" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [18289 18337])
+                            ("StopReason" type
+                               (:members 
+                                  ( ("eStopReason" type
+                                       (:members 
+                                          ( ("eBreakPoint" variable
+                                               (:constant-flag t
+                                                :default-value (18410 18411)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [18396 18411])
+                                            ("eSVC" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [18463 18468])
+                                            ("eExternalRequest" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [18553 18570])
+                                            ("eBringUpHaltRequest" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [18671 18770]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [18367 18771])
+                                    ("StopReason" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("r" variable (:type ("eStopReason" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18791 18805])
+                                            ("bptNum" variable
+                                               (:default-value "0"
+                                                :type ("eslapi::CADIBptNumber_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18806 18840]))                                          
+                                        :type ("StopReason" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [18780 18882])
+                                    ("reason" variable (:type ("eStopReason" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18888 18907])
+                                    ("breakpointNumber" variable (:type ("eslapi::CADIBptNumber_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18967 19008]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [18341 19054])
+                            ("mStopReasons" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("StopReason" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [19057 19094])
+                            ("ARM_MSR_CPSR_R0" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xe16ff000"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19412 19463])
+                            ("ARM_MRS_R0_SPSR" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xe10f0000"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19466 19517])
+                            ("ARM_MOV_PC_LR" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xe1a0f00E"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19520 19571])
+                            ("ARM_ADD_PC_LR_0" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xe28EF000"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19574 19625])
+                            ("ARM_ADD_PC_LR_1" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xe28EF001"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19628 19679])
+                            ("ARM_ADD_PC_LR_2" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xe28EF002"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19682 19733])
+                            ("ARM_ADD_PC_LR_3" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xe28EF003"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19736 19787])
+                            ("ARM_ADD_PC_LR_4" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xe28EF004"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19790 19841])
+                            ("MOV_PC_R0" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xe1a0f000"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19844 19895])
+                            ("ARM_MSR_CPSR_R2_V8_Thumb" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0x2f15ee64"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19898 19958])
+                            ("ARM_MRS_R2_SPSR_V8_Thumb" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0x8230f3f2"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19961 20021])
+                            ("ARM_MSR_CPSR_R0_V8" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0x2f15ee64"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20136 20190])
+                            ("ARM_MRS_R0_SPSR_V8" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xd53e4002"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20193 20247])
+                            ("ARM_MOV_PC_LR_V8" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0x46f7"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20363 20413])
+                            ("ARM_ADD_PC_LR_0_V8" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xe28EF000"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20416 20470])
+                            ("ARM_ADD_PC_R2_V8" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0x0f02ea5f"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20473 20525])
+                            ("ARM_MOV_R2_DLR_V8" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0x2f35ee74"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20528 20581])
+                            ("ARM_ADD_PC_LR_1_V8" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xef35ee64"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20643 20697])
+                            ("ARM_ADD_PC_LR_2_V8" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xe28EF002"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20700 20754])
+                            ("ARM_ADD_PC_LR_3_V8" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xe28EF003"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20757 20811])
+                            ("ARM_ADD_PC_LR_4_V8" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xe28EF004"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20814 20868])
+                            ("MOV_PC_R0_V8" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0x2f35ee64"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20930 20984])
+                            ("EXC_VEC_SVC" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0x8"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [21078 21118])
+                            ("sGetStateString" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("state" variable (:type ("PCState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21157 21171]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [21122 21172])
+                            ("resetStateVariables" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [21216 21243])
+                            ("forcePC" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("pc" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21297 21313]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [21284 21314])
+                            ("checkBreakpoints" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("stepFound" variable
+                                       (:pointer 1
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [21394 21410]))                                  
+                                :type ("CarbonUInt32" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [21364 21411])
+                            ("getStopReason" function
+                               (:prototype-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("StopReason" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [21473 21519])
+                            ("getUpdatedPCState" function
+                               (:prototype-flag t
+                                :type ("PCState" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [21553 21587])
+                            ("calculateReportedPC" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [21642 21669])
+                            ("executeInstruction" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [21738 21764])
+                            ("restartProcessor" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [21814 21838])
+                            ("isSemihost" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [21890 21914])
+                            ("isPipelinePcSvc" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [21984 22013])
+                            ("isActiveBreakpoint" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("checkPC" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22109 22130]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [22085 22137])
+                            ("putBreakOnSVCExceptionAndUpdate" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [22255 22267]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [22218 22268]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2151 22271]))                  
+                :type "namespace")
+                nil [919 22274]))          
+      :file "PCStateMachineBase.h"
+      :pointmax 22296
+      :fsize 22295
+      :lastmodtime '(23392 43539 108657 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__PC_STATE_MACHINE_BASE_H__")
+          )
+)
+    (semanticdb-table "ICM_DebugController.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("icm_impl/debug_controller.h" include nil nil [87 125])
+            ("common/ICMComponentHelper.h" include nil nil [126 164])
+            ("cpus/PCStateMachineBase.h" include nil nil [165 201])
+            ("cpus/ICM_DebugControllerCallbacks.h" include nil nil [202 248])
+            ("memory" include (:system-flag t) nil [249 266])
+            ("ICM_DebugController" type
+               (:superclasses 
+                  ( ("icm_impl::DebugController" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [332 339])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [395 404])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [432 441])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [591 600])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [653 662])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [822 831])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [889 898])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [957 966])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [1026 1035])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [1096 1105])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [1269 1278])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [1323 1332])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [1364 1373])
+                    ("readPC" function
+                       (:prototype-flag t
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1411 1429])
+                    ("writePC" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1449 1458]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1432 1459])
+                    ("public" label nil (reparse-symbol classsubparts) [1462 1469])
+                    ("ICM_DebugController" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("corenum" variable (:type "int") (reparse-symbol arg-sub-list) [1526 1538])
+                            ("component_helper" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("CARBON_MKLIB_NAMESPACE::ICMComponentHelper" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1539 1616])
+                            ("cycle_model" variable
+                               (:pointer 1
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1640 1668])
+                            ("pcsm" variable
+                               (:pointer 1
+                                :type ("CARBON_MKLIB_NAMESPACE::PCStateMachineBase" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1669 1718])
+                            ("clk_path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1741 1762]))                          
+                        :type ("ICM_DebugController" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1506 1763])
+                    ("ICM_DebugController" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1767 1876])
+                    ("posedge" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1880 1895])
+                    ("negedge" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1898 1913])
+                    ("private" label nil (reparse-symbol classsubparts) [1915 1923])
+                    ("m_core_number" variable (:type "int") (reparse-symbol classsubparts) [1926 1944])
+                    ("m_component_helper" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("CARBON_MKLIB_NAMESPACE::ICMComponentHelper" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1950 2029])
+                    ("m_pcsm" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("CARBON_MKLIB_NAMESPACE::PCStateMachineBase" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2068 2135])
+                    ("halted_cb" variable (:type ("ICM_DebugControllerCallbackFromPCStateMachine" type
+                         (:template-specifier 
+                            ( ("icm_control_callback_model_halted_fn" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2139 2233])
+                    ("stepped_cb" variable (:type ("ICM_DebugControllerCallbackFromPCStateMachine" type
+                         (:template-specifier 
+                            ( ("icm_control_callback_instructions_stepped_fn" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2236 2339])
+                    ("breakpoint_cb" variable (:type ("ICM_DebugControllerCallbackFromPCStateMachine_Breakpoint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2342 2413]))                  
+                :type "class")
+                nil [268 2416]))          
+      :file "ICM_DebugController.h"
+      :pointmax 2418
+      :fsize 3437
+      :lastmodtime '(23392 43539 67640 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ICM_Registers.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("icm_impl/registers/register.h" include nil nil [132 172])
+            ("icm_impl/registers/register_description.h" include nil nil [173 225])
+            ("icm_impl/registers/banked_register.h" include nil nil [226 273])
+            ("common/ICMComponentHelper.h" include nil nil [275 313])
+            ("cpus/ICM_DebugController.h" include nil nil [314 351])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("icm_impl::RegisterDescription" variable (:type "int") (reparse-symbol namespacesubparts) [476 724])
+                    ("icm_impl::Register" variable (:type "int") (reparse-symbol namespacesubparts) [793 1249])
+                    ("icm_impl::RegisterDescription" variable (:type "int") (reparse-symbol namespacesubparts) [1328 1465])
+                    ("icm_impl::Register" variable (:type "int") (reparse-symbol namespacesubparts) [1508 1823])
+                    ("create_PCRegister" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("debugCtrl" variable
+                               (:pointer 1
+                                :type ("ICM_DebugController" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1939 1970])
+                            ("supportsWrite" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [1971 1995]))                          
+                        :type ("std::unique_ptr" type
+                             (:template-specifier 
+                                ( ("CARBON_MKLIB_NAMESPACE::PCRegister" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [1869 1997])
+                    ("create_PCMemSpaceRegister" function
+                       (:prototype-flag t
+                        :type ("std::unique_ptr" type
+                             (:template-specifier 
+                                ( ("CARBON_MKLIB_NAMESPACE::PCMemSpace_Register" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [2000 2089]))                  
+                :type "namespace")
+                nil [353 2092]))          
+      :file "ICM_Registers.h"
+      :pointmax 2093
+      :fsize 2092
+      :lastmodtime '(23127 35744 0 0)
+      :unmatched-syntax '((PUBLIC 1501 . 1507) (punctuation 1499 . 1500) (symbol 1493 . 1498) (symbol 1473 . 1492) (CLASS 1467 . 1472) (PUBLIC 1321 . 1327) (punctuation 1319 . 1320) (symbol 1313 . 1318) (symbol 1282 . 1312) (CLASS 1276 . 1281) (PUBLIC 786 . 792) (punctuation 784 . 785) (symbol 778 . 783) (symbol 767 . 777) (CLASS 761 . 766) (PUBLIC 469 . 475) (punctuation 467 . 468) (symbol 461 . 466) (symbol 439 . 460) (CLASS 433 . 438) (symbol 126 . 130) (symbol 119 . 125) (punctuation 118 . 119)))
+    (semanticdb-table "ICM_DebugControllerCallbacks.h"
+      :file "ICM_DebugControllerCallbacks.h"
+      :fsize 2462
+      :lastmodtime '(23317 38558 41320 0)))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!src!include!cpus!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

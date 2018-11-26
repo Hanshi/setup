@@ -1,0 +1,108 @@
+;; Object QtCore/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "QtCore/"
+  :tables
+  (list
+    (semanticdb-table "qcoreapplication.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("QCOREAPPLICATION_H" variable (:constant-flag t) nil [794 812])
+            ("QtCore/qobject.h" include (:system-flag t) nil [814 841])
+            ("QtCore/qcoreevent.h" include (:system-flag t) nil [842 872])
+            ("QtCore/qeventloop.h" include (:system-flag t) nil [873 903])
+            ("QCoreApplicationPrivate" type
+               (:prototype t
+                :type "class")
+                nil [1101 1131])
+            ("QTextCodec" type
+               (:prototype t
+                :type "class")
+                nil [1132 1149])
+            ("QTranslator" type
+               (:prototype t
+                :type "class")
+                nil [1150 1168])
+            ("QPostEventList" type
+               (:prototype t
+                :type "class")
+                nil [1169 1190])
+            ("QStringList" type
+               (:prototype t
+                :type "class")
+                nil [1191 1209])
+            ("qApp" variable (:constant-flag t) nil [1219 1223])
+            ("QObject" variable (:type "int") nil [1300 6544])
+            ("sendEvent" function
+               (:parent "QCoreApplication"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("receiver" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6586 6604])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("QEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6605 6619]))                  
+                :type "bool")
+                nil [6546 6718])
+            ("sendSpontaneousEvent" function
+               (:parent "QCoreApplication"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("receiver" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6771 6789])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("QEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6790 6804]))                  
+                :type "bool")
+                nil [6720 6901])
+            ("sendPostedEvents" function
+               (:parent "QCoreApplication"
+                :typemodifiers ("inline")
+                :type "void")
+                nil [6903 6979])
+            ("Q_DECLARE_TR_FUNCTIONS" variable (:constant-flag t) nil [7816 7838])
+            ("QtCleanUpFunction" function
+               (:prototype-flag t
+                :function-pointer t
+                :type "void")
+                nil [8831 8859])
+            ("qAddPostRoutine" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("QtCleanUpFunction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8896 8914]))                  
+                :type "void")
+                nil [8875 8915])
+            ("qRemovePostRoutine" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("QtCleanUpFunction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8954 8972]))                  
+                :type "void")
+                nil [8930 8973])
+            ("qAppName" function
+               (:prototype-flag t
+                :type ("QString" type (:type "class") nil nil))
+                nil [8988 9007]))          
+      :file "qcoreapplication.h"
+      :pointmax 9272
+      :fsize 9271
+      :lastmodtime '(21326 54811 0 0)
+      :unmatched-syntax '((symbol 9228 . 9241) (symbol 9210 . 9226) (symbol 8974 . 8987) (symbol 8916 . 8929) (symbol 8861 . 8874) (TYPEDEF 8823 . 8830) (PUBLIC 1293 . 1299) (punctuation 1291 . 1292) (symbol 1274 . 1290) (symbol 1260 . 1273) (CLASS 1254 . 1259) (semantic-list 1093 . 1099) (symbol 1084 . 1093) (symbol 1064 . 1082) (symbol 1047 . 1062))
+      :lexical-table 
+        '(("QCOREAPPLICATION_H")
+          ("qApp" . 
+              ((symbol "QCoreApplication" 1224 . 1240) (punctuation ":" 1240 . 1241) (punctuation ":" 1241 . 1242) (symbol "instance" 1242 . 1250) (semantic-list "()" 1250 . 1252)))
+          ("Q_DECLARE_TR_FUNCTIONS" (spp-arg-list ("context") 7838 . 7847) . 
+              ((PUBLIC "public" 7850 . 7856) (punctuation ":" 7856 . 7857) (STATIC "static" 7864 . 7870) (INLINE "inline" 7871 . 7877) (symbol "QString" 7878 . 7885) (symbol "tr" 7886 . 7888) (semantic-list "(const char *sourceText, const char *disambiguation = 0)" 7888 . 7944) (semantic-list "{ return QCoreApplication::translate(#context, sourceText, disambiguation); }" 7955 . 8032) (STATIC "static" 8039 . 8045) (INLINE "inline" 8046 . 8052) (symbol "QString" 8053 . 8060) (symbol "trUtf8" 8061 . 8067) (semantic-list "(const char *sourceText, const char *disambiguation = 0)" 8067 . 8123) (semantic-list "{ return QCoreApplication::translate(#context, sourceText, disambiguation, \\
+                                             QCoreApplication::UnicodeUTF8); }" 8134 . 8289) (STATIC "static" 8296 . 8302) (INLINE "inline" 8303 . 8309) (symbol "QString" 8310 . 8317) (symbol "tr" 8318 . 8320) (semantic-list "(const char *sourceText, const char *disambiguation, int n)" 8320 . 8379) (semantic-list "{ return QCoreApplication::translate(#context, sourceText, disambiguation, \\
+                                             QCoreApplication::CodecForTr, n); }" 8390 . 8547) (STATIC "static" 8554 . 8560) (INLINE "inline" 8561 . 8567) (symbol "QString" 8568 . 8575) (symbol "trUtf8" 8576 . 8582) (semantic-list "(const char *sourceText, const char *disambiguation, int n)" 8582 . 8641) (semantic-list "{ return QCoreApplication::translate(#context, sourceText, disambiguation, \\
+                                             QCoreApplication::UnicodeUTF8, n); }" 8652 . 8810) (PRIVATE "private" 8813 . 8820) (punctuation ":" 8820 . 8821)))
+          )
+))
+  :file "!arm!eda!tools!build_dependencies2!qt!4.8.6!Linux-x86_64!gcc-4.7.2!Release!include!QtCore!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

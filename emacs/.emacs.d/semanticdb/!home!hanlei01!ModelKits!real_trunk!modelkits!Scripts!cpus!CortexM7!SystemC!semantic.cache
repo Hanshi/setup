@@ -1,0 +1,33 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("LINUX_DIR" variable (:default-value (".")) nil [1 15])
+            ("PACKAGE_LIB_DIR" variable (:default-value ("./lib")) nil [15 39])
+            ("COMP_NAME" variable (:default-value ("$(subst lib,,$(basename $(basename $(notdir $(wildcard $(PACKAGE_LIB_DIR)/lib*.icm.so)))))")) nil [134 237])
+            ("clean" function nil nil [238 267])
+            ("gen_code" function nil nil [268 278])
+            ("Makefile.internal" include nil nil [297 323])
+            ("CXX" variable (:default-value ("g++")) nil [385 393])
+            ("CXXFLAGS" variable (:default-value ("-fPIC" "-g" "-std=c++11" "-I$(SYSTEMC_INC)" "-I$(CARBON_HOME)/include" "$(CM_SYSC_CXXFLAGS)" "-I." "-I$(LINUX_DIR)")) nil [394 544])
+            ("OBJS" variable (:default-value ("lib$(COMP_NAME).systemc.o" "univent_tarmac.o")) nil [545 601])
+            ("Makefile.tlm" include nil nil [602 623])
+            ("all" function (:arguments ("lib$(COMP_NAME).systemc.so" "lib$(COMP_NAME).systemc.a")) nil [624 682])
+            ("lib" function (:arguments ("$(OBJS)")) nil [683 736])
+            ("lib" function (:arguments ("$(OBJS)")) nil [737 1103])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp")) nil [1104 1191])
+            ("univent_tarmac.o" function (:arguments ("univent_tarmac.cpp")) nil [1192 1261])
+            ("lib" function (:arguments ("gen_code")) nil [1262 1300])
+            ("univent_tarmac.cpp" function (:arguments ("gen_code")) nil [1301 1330]))          
+      :file "Makefile"
+      :pointmax 1331
+      :fsize 1330
+      :lastmodtime '(23479 53777 391262 0)
+      :unmatched-syntax '((symbol 354 . 383) (semantic-list 340 . 354) (punctuation 339 . 340) (symbol 330 . 338) (bol 330 . 330) (symbol 73 . 81) (semantic-list 56 . 73) (punctuation 55 . 56) (punctuation 53 . 54) (punctuation 52 . 53) (symbol 39 . 51) (bol 39 . 39))))
+  :file "!home!hanlei01!ModelKits!real_trunk!modelkits!Scripts!cpus!CortexM7!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

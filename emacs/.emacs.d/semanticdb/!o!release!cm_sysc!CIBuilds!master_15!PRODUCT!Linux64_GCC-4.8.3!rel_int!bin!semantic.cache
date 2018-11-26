@@ -1,0 +1,733 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "sysc_to_armtlm.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [61 98])
+            ("xml.etree.ElementTree" include nil nil [99 134])
+            ("sys" include nil nil [135 145])
+            ("os" include nil nil [146 155])
+            ("fnmatch" include nil nil [156 170])
+            ("operator" include nil nil [171 204])
+            ("carbon_home" variable nil nil [206 245])
+            ("carbon_python" variable nil nil [246 345])
+            ("sys" code nil nil [346 376])
+            ("ld_library_path" variable nil nil [377 424])
+            ("add_ld_path" variable nil nil [425 480])
+            ("os" code nil nil [481 547])
+            ("cm_sysc_template_dir, filename" code nil nil [549 622])
+            ("cm_sysc_template_dir" code nil nil [623 684])
+            ("options" variable nil nil [686 700])
+            ("Carbon.Cfg" include nil nil [702 719])
+            ("Carbon" include nil nil [720 733])
+            ("Carbon.SystemC.module" include nil nil [735 763])
+            ("Carbon.carboncfg" include nil nil [764 787])
+            ("parse_command_line" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [812 816]))              ) nil [789 2541])
+            ("check_options" function (:arguments 
+              ( ("options" variable nil (reparse-symbol function_parameters) [2560 2567]))              ) nil [2542 2703])
+            ("find_by_name" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [2725 2729])
+                ("things" variable nil (reparse-symbol function_parameters) [2730 2736]))              ) nil [2708 2839])
+            ("render_code" function (:arguments 
+              ( ("options" variable nil (reparse-symbol function_parameters) [2856 2863])
+                ("systemc" variable nil (reparse-symbol function_parameters) [2864 2871])
+                ("sc_ports" variable nil (reparse-symbol function_parameters) [2872 2880])
+                ("tlm_ports" variable nil (reparse-symbol function_parameters) [2881 2890])
+                ("socd_ccfg" variable nil (reparse-symbol function_parameters) [2891 2900])
+                ("components" variable nil (reparse-symbol function_parameters) [2901 2911])
+                ("lib_name" variable nil (reparse-symbol function_parameters) [2912 2920])
+                ("subdir" variable nil (reparse-symbol function_parameters) [2921 2927]))              ) nil [2840 8458])
+            ("dump_reset_code" function (:arguments 
+              ( ("socd_ccfg" variable nil (reparse-symbol function_parameters) [8547 8556])
+                ("sc_ports" variable nil (reparse-symbol function_parameters) [8557 8565])
+                ("suffix" variable nil (reparse-symbol function_parameters) [8566 8572]))              ) nil [8527 11757])
+            ("SystemCPort" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [11822 11839])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11848 11871])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11880 11902])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11911 11937])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11946 11976]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11794 11798])
+                            ("port" variable nil (reparse-symbol function_parameters) [11799 11803])
+                            ("isInput" variable nil (reparse-symbol function_parameters) [11804 11811]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [11781 11977])
+                    ("port" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11999 12003]))                          )
+                        (reparse-symbol indented_block_body) [11990 12032])
+                    ("isInput" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12048 12052]))                          )
+                        (reparse-symbol indented_block_body) [12036 12084])
+                    ("isVectorized" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12105 12109]))                          )
+                        (reparse-symbol indented_block_body) [12088 12146])
+                    ("setVectorized" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12168 12172]))                          )
+                        (reparse-symbol indented_block_body) [12150 12227])
+                    ("setTLM" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12242 12246]))                          )
+                        (reparse-symbol indented_block_body) [12231 12279])
+                    ("setNonTLM" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12297 12301]))                          )
+                        (reparse-symbol indented_block_body) [12283 12335])
+                    ("isTLM" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12349 12353]))                          )
+                        (reparse-symbol indented_block_body) [12339 12386])
+                    ("forceScBiguint" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12409 12413]))                          )
+                        (reparse-symbol indented_block_body) [12390 12454])
+                    ("numWords" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12471 12475]))                          )
+                        (reparse-symbol indented_block_body) [12458 12609])
+                    ("dataType" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12631 12635]))                          )
+                        (reparse-symbol indented_block_body) [12618 12999])
+                    ("name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13017 13021]))                          )
+                        (reparse-symbol indented_block_body) [13008 13061])
+                    ("kname" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13076 13080]))                          )
+                        (reparse-symbol indented_block_body) [13066 13116])
+                    ("portDirection" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13139 13143]))                          )
+                        (reparse-symbol indented_block_body) [13121 13242])
+                    ("scPortType" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13262 13266]))                          )
+                        (reparse-symbol indented_block_body) [13247 13337])
+                    ("declaration" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13362 13366]))                          )
+                        (reparse-symbol indented_block_body) [13346 13542])
+                    ("portDeclaration" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13571 13575]))                          )
+                        (reparse-symbol indented_block_body) [13551 13767])
+                    ("signalDeclaration" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13802 13806]))                          )
+                        (reparse-symbol indented_block_body) [13780 13996])
+                    ("signalHookup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14018 14022]))                          )
+                        (reparse-symbol indented_block_body) [14001 14131])
+                    ("signalToPortDeclaration" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14172 14176]))                          )
+                        (reparse-symbol indented_block_body) [14144 14264])
+                    ("signalConstructor" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14291 14295]))                          )
+                        (reparse-symbol indented_block_body) [14269 14501])
+                    ("signalToPortHookup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14529 14533]))                          )
+                        (reparse-symbol indented_block_body) [14506 14704])
+                    ("width" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14723 14727]))                          )
+                        (reparse-symbol indented_block_body) [14713 14769])
+                    ("addSignal" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14788 14792]))                          )
+                        (reparse-symbol indented_block_body) [14774 14879]))                  
+                :type "class")
+                nil [11758 14879])
+            ("Clock" type
+               (:members 
+                  ( ("high_values" variable nil (reparse-symbol indented_block_body) [14897 14962])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [15000 15017]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14980 14984])
+                            ("port" variable nil (reparse-symbol function_parameters) [14985 14989]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [14967 15018])
+                    ("name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15031 15035]))                          )
+                        (reparse-symbol indented_block_body) [15022 15071])
+                    ("high_value" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15090 15094]))                          )
+                        (reparse-symbol indented_block_body) [15075 15226])
+                    ("low_value" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15244 15248]))                          )
+                        (reparse-symbol indented_block_body) [15230 15341])
+                    ("isVectorized" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15362 15366]))                          )
+                        (reparse-symbol indented_block_body) [15345 15410])
+                    ("width" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15424 15428]))                          )
+                        (reparse-symbol indented_block_body) [15414 15471]))                  
+                :type "class")
+                nil [14880 15471])
+            ("Parameter" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [15536 15555])
+                            ("self" variable nil (reparse-symbol indented_block_body) [15564 15581]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15510 15514])
+                            ("param" variable nil (reparse-symbol function_parameters) [15515 15520])
+                            ("port" variable nil (reparse-symbol function_parameters) [15521 15525]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [15497 15582])
+                    ("name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15595 15599]))                          )
+                        (reparse-symbol indented_block_body) [15586 15636])
+                    ("type" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15649 15653]))                          )
+                        (reparse-symbol indented_block_body) [15640 15690])
+                    ("description" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15710 15714]))                          )
+                        (reparse-symbol indented_block_body) [15694 15790])
+                    ("value" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15804 15808]))                          )
+                        (reparse-symbol indented_block_body) [15794 15846])
+                    ("runtime" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15862 15866]))                          )
+                        (reparse-symbol indented_block_body) [15850 15914])
+                    ("scx_type" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15931 15935]))                          )
+                        (reparse-symbol indented_block_body) [15918 16381])
+                    ("width" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16395 16399]))                          )
+                        (reparse-symbol indented_block_body) [16385 16467])
+                    ("max_value" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16485 16489]))                          )
+                        (reparse-symbol indented_block_body) [16471 16612]))                  
+                :type "class")
+                nil [15476 16612])
+            ("TLMPort" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [16672 16694])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16734 16749])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16758 16788])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16797 16816])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16825 16844])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16853 16870])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16879 16896])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16905 16929]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16653 16657])
+                            ("bus" variable nil (reparse-symbol function_parameters) [16658 16661]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [16640 16930])
+                    ("name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16944 16948]))                          )
+                        (reparse-symbol indented_block_body) [16935 16977])
+                    ("isMaster" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16994 16998]))                          )
+                        (reparse-symbol indented_block_body) [16981 17036])
+                    ("isSlave" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17052 17056]))                          )
+                        (reparse-symbol indented_block_body) [17040 17098])
+                    ("dataWidth" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17116 17120]))                          )
+                        (reparse-symbol indented_block_body) [17102 17154])
+                    ("addrWidth" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17172 17176]))                          )
+                        (reparse-symbol indented_block_body) [17158 17210])
+                    ("protocol" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17227 17231]))                          )
+                        (reparse-symbol indented_block_body) [17214 17270])
+                    ("prefix" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17285 17289]))                          )
+                        (reparse-symbol indented_block_body) [17274 17320])
+                    ("suffix" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17335 17339]))                          )
+                        (reparse-symbol indented_block_body) [17324 17370])
+                    ("setSuffix" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17388 17392])
+                            ("suffix" variable nil (reparse-symbol function_parameters) [17393 17399]))                          )
+                        (reparse-symbol indented_block_body) [17374 17432])
+                    ("setPrefix" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17450 17454])
+                            ("prefix" variable nil (reparse-symbol function_parameters) [17455 17461]))                          )
+                        (reparse-symbol indented_block_body) [17436 17494])
+                    ("uppercase" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17512 17516]))                          )
+                        (reparse-symbol indented_block_body) [17498 17550])
+                    ("setLowercase" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17571 17575]))                          )
+                        (reparse-symbol indented_block_body) [17554 17612])
+                    ("setDataWidth" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17633 17637])
+                            ("width" variable nil (reparse-symbol function_parameters) [17638 17643]))                          )
+                        (reparse-symbol indented_block_body) [17616 17678])
+                    ("setAddrWidth" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17699 17703])
+                            ("width" variable nil (reparse-symbol function_parameters) [17704 17709]))                          )
+                        (reparse-symbol indented_block_body) [17682 17744])
+                    ("portNames" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17762 17766]))                          )
+                        (reparse-symbol indented_block_body) [17748 17806])
+                    ("constructName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17828 17832]))                          )
+                        (reparse-symbol indented_block_body) [17810 18069]))                  
+                :type "class")
+                nil [16621 18069])
+            ("Bus" type
+               (:members 
+                  ( ("protocol_map" variable nil (reparse-symbol indented_block_body) [18230 18415])
+                    ("max_data_width_map" variable nil (reparse-symbol indented_block_body) [18420 18584])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [18645 18662])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18671 18696])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18705 18726])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18736 18761]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18607 18611])
+                            ("name" variable nil (reparse-symbol function_parameters) [18612 18616])
+                            ("protocol" variable nil (reparse-symbol function_parameters) [18617 18625])
+                            ("isMaster" variable nil (reparse-symbol function_parameters) [18626 18634]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [18594 18762])
+                    ("addPortName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18782 18786])
+                            ("name" variable nil (reparse-symbol function_parameters) [18787 18791]))                          )
+                        (reparse-symbol indented_block_body) [18766 18832])
+                    ("maxDataWidth" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18853 18857]))                          )
+                        (reparse-symbol indented_block_body) [18836 18921])
+                    ("protocol" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18938 18942]))                          )
+                        (reparse-symbol indented_block_body) [18925 19003]))                  
+                :type "class")
+                nil [18118 19003])
+            ("Component" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [19105 19122])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19131 19154])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19163 19189])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19198 19222]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19077 19081])
+                            ("name" variable nil (reparse-symbol function_parameters) [19082 19086])
+                            ("subComp" variable nil (reparse-symbol function_parameters) [19087 19094]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [19064 19223])
+                    ("name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19236 19240]))                          )
+                        (reparse-symbol indented_block_body) [19227 19269])
+                    ("addRegisterGroup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19294 19298])
+                            ("regGroup" variable nil (reparse-symbol function_parameters) [19299 19307]))                          )
+                        (reparse-symbol indented_block_body) [19273 19357])
+                    ("addMemorySpace" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19380 19384])
+                            ("memSpace" variable nil (reparse-symbol function_parameters) [19385 19393]))                          )
+                        (reparse-symbol indented_block_body) [19361 19441])
+                    ("registerGroups" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19464 19468]))                          )
+                        (reparse-symbol indented_block_body) [19445 19508])
+                    ("memorySpaces" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19529 19533]))                          )
+                        (reparse-symbol indented_block_body) [19512 19571])
+                    ("isSubComp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19589 19593]))                          )
+                        (reparse-symbol indented_block_body) [19575 19625]))                  
+                :type "class")
+                nil [19043 19625])
+            ("RegisterGroup" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [19692 19709])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19718 19738]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19672 19676])
+                            ("name" variable nil (reparse-symbol function_parameters) [19677 19681]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [19659 19739])
+                    ("name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19752 19756]))                          )
+                        (reparse-symbol indented_block_body) [19743 19793])
+                    ("addRegister" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19813 19817])
+                            ("reg" variable nil (reparse-symbol function_parameters) [19818 19821]))                          )
+                        (reparse-symbol indented_block_body) [19797 19860])
+                    ("registers" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19878 19882]))                          )
+                        (reparse-symbol indented_block_body) [19864 19916]))                  
+                :type "class")
+                nil [19634 19916])
+            ("Access" type
+               (:members 
+                  ( ("READ_WRITE" variable nil (reparse-symbol indented_block_body) [19988 20002])
+                    ("READ_ONLY" variable nil (reparse-symbol indented_block_body) [20007 20020])
+                    ("WRITE_ONLY" variable nil (reparse-symbol indented_block_body) [20025 20039])
+                    ("scx_access_map" variable nil (reparse-symbol indented_block_body) [20044 20234]))                  
+                :type "class")
+                nil [19968 20235])
+            ("Register" type
+               (:members 
+                  ( ("hidden_regs" variable nil (reparse-symbol indented_block_body) [20260 20314])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [20351 20366])
+                            ("self" variable nil (reparse-symbol indented_block_body) [20375 20391])
+                            ("self" variable nil (reparse-symbol indented_block_body) [20400 20416])
+                            ("self" variable nil (reparse-symbol indented_block_body) [20425 20441])
+                            ("self" variable nil (reparse-symbol indented_block_body) [20450 20470])
+                            ("self" variable nil (reparse-symbol indented_block_body) [20479 20500])
+                            ("if" code nil (reparse-symbol indented_block_body) [20518 20591]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20332 20336])
+                            ("reg" variable nil (reparse-symbol function_parameters) [20337 20340]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [20319 20591])
+                    ("scx_access" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20611 20615]))                          )
+                        (reparse-symbol indented_block_body) [20596 21349])
+                    ("isPC" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21371 21375]))                          )
+                        (reparse-symbol indented_block_body) [21362 21402])
+                    ("isVisible" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21420 21424]))                          )
+                        (reparse-symbol indented_block_body) [21406 21456])
+                    ("isSP" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21469 21473]))                          )
+                        (reparse-symbol indented_block_body) [21460 21500])
+                    ("isLR" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21513 21517]))                          )
+                        (reparse-symbol indented_block_body) [21504 21544])
+                    ("name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21557 21561]))                          )
+                        (reparse-symbol indented_block_body) [21548 21596])
+                    ("width" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21610 21614]))                          )
+                        (reparse-symbol indented_block_body) [21600 21650])
+                    ("description" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21670 21674]))                          )
+                        (reparse-symbol indented_block_body) [21654 21712])
+                    ("addBitField" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21732 21736])
+                            ("field" variable nil (reparse-symbol function_parameters) [21737 21742]))                          )
+                        (reparse-symbol indented_block_body) [21716 21784])
+                    ("fields" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21799 21803]))                          )
+                        (reparse-symbol indented_block_body) [21788 21838])
+                    ("isCompound" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21857 21861]))                          )
+                        (reparse-symbol indented_block_body) [21842 21902]))                  
+                :type "class")
+                nil [20240 21902])
+            ("RegisterBitField" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [21973 21992])
+                            ("self" variable nil (reparse-symbol indented_block_body) [22044 22076])
+                            ("if" code nil (reparse-symbol indented_block_body) [22085 22163])
+                            ("if" code nil (reparse-symbol indented_block_body) [22171 22251]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21952 21956])
+                            ("field" variable nil (reparse-symbol function_parameters) [21957 21962]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [21939 22251])
+                    ("name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22277 22281]))                          )
+                        (reparse-symbol indented_block_body) [22268 22318])
+                    ("offset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22333 22337]))                          )
+                        (reparse-symbol indented_block_body) [22322 22378])
+                    ("bits_wide" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22396 22400]))                          )
+                        (reparse-symbol indented_block_body) [22382 22468])
+                    ("access" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22483 22487]))                          )
+                        (reparse-symbol indented_block_body) [22472 22518]))                  
+                :type "class")
+                nil [21911 22518])
+            ("MemorySpace" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [22588 22607])
+                            ("self" variable nil (reparse-symbol indented_block_body) [22616 22635]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22567 22571])
+                            ("space" variable nil (reparse-symbol function_parameters) [22572 22577]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [22554 22636])
+                    ("name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22649 22653]))                          )
+                        (reparse-symbol indented_block_body) [22640 22690])
+                    ("width" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22704 22708]))                          )
+                        (reparse-symbol indented_block_body) [22694 22746])
+                    ("minAddr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22762 22766]))                          )
+                        (reparse-symbol indented_block_body) [22750 22786])
+                    ("maxAddr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22802 22806]))                          )
+                        (reparse-symbol indented_block_body) [22790 22847])
+                    ("mau" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22859 22863]))                          )
+                        (reparse-symbol indented_block_body) [22851 22883])
+                    ("progMem" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22899 22903]))                          )
+                        (reparse-symbol indented_block_body) [22887 22997])
+                    ("displayAtZero" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23019 23023]))                          )
+                        (reparse-symbol indented_block_body) [23001 23123])
+                    ("virtMem" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23139 23143]))                          )
+                        (reparse-symbol indented_block_body) [23127 23173])
+                    ("endianness" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23192 23196]))                          )
+                        (reparse-symbol indented_block_body) [23177 23273])
+                    ("description" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23293 23297]))                          )
+                        (reparse-symbol indented_block_body) [23277 23337])
+                    ("addMemory" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23355 23359])
+                            ("mem" variable nil (reparse-symbol function_parameters) [23360 23363]))                          )
+                        (reparse-symbol indented_block_body) [23341 23401])
+                    ("memories" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23418 23422]))                          )
+                        (reparse-symbol indented_block_body) [23405 23455]))                  
+                :type "class")
+                nil [22531 23455])
+            ("Memory" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [23514 23529]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23495 23499])
+                            ("mem" variable nil (reparse-symbol function_parameters) [23500 23503]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [23482 23530])
+                    ("name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23543 23547]))                          )
+                        (reparse-symbol indented_block_body) [23534 23582])
+                    ("baseAddr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23599 23603]))                          )
+                        (reparse-symbol indented_block_body) [23586 23642])
+                    ("size" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23655 23659]))                          )
+                        (reparse-symbol indented_block_body) [23646 23694]))                  
+                :type "class")
+                nil [23464 23694])
+            ("extract_registers_and_memories" function (:arguments 
+              ( ("socd_ccfg" variable nil (reparse-symbol function_parameters) [23855 23864]))              ) nil [23820 25424])
+            ("extract_tlm_ports" function (:arguments 
+              ( ("sc_ports" variable nil (reparse-symbol function_parameters) [25488 25496])
+                ("version" variable nil (reparse-symbol function_parameters) [25497 25504])
+                ("noTLM_ports" variable nil (reparse-symbol function_parameters) [25505 25516]))              ) nil [25466 29339])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [29353 29357]))              ) nil [29344 31802])
+            ("if" code nil nil [31803 31878]))          
+      :file "sysc_to_armtlm.py"
+      :pointmax 31879
+      :fsize 31878
+      :lastmodtime '(22775 43847 461698 0)
+      :unmatched-syntax nil))
+  :file "!o!release!cm_sysc!CIBuilds!master_15!PRODUCT!Linux64_GCC-4.8.3!rel_int!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

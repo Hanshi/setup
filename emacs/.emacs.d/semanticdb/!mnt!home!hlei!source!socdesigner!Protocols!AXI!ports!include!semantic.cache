@@ -1,0 +1,277 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "AXI_Master_Port.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_AXIMASTERPORT_H_" variable (:constant-flag t) nil [407 424])
+            ("AXIPortIF.h" include nil nil [426 448])
+            ("AXI_Sender_PortBase" type
+               (:prototype t
+                :type "class")
+                nil [501 527])
+            ("AXI_Receiver_PortBase" type
+               (:prototype t
+                :type "class")
+                nil [528 556])
+            ("AXI_Master_Port" type
+               (:superclasses 
+                  ( ("MxTransactionMasterPort" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("AXIPortIF" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("AXI_Slave_Port" friend nil (reparse-symbol classsubparts) [810 837])
+                    ("public" label nil (reparse-symbol classsubparts) [840 847])
+                    ("AXI_Master_Port" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("o" variable
+                               (:pointer 1
+                                :type ("CASIModule" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [954 968])
+                            ("n" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [969 983]))                          
+                        :type ("AXI_Master_Port" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [938 984])
+                    ("AXI_Master_Port" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1016 1043])
+                    ("driveTransactionCB_R" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1219 1257])
+                    ("driveTransactionCB_B" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1434 1472])
+                    ("sendDrive" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1615 1632])
+                    ("setAW" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("valid" variable (:type "bool") (reparse-symbol arg-sub-list) [1925 1936])
+                            ("id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1937 1949])
+                            ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1950 1964])
+                            ("len" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1965 1977])
+                            ("size" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1978 1991])
+                            ("burst" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1992 2006])
+                            ("lock" variable (:type "bool") (reparse-symbol arg-sub-list) [2007 2017])
+                            ("cache" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2018 2032])
+                            ("prot" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2033 2046])
+                            ("user" variable
+                               (:default-value "0"
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2047 2062]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1911 2064])
+                    ("setAR" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("valid" variable (:type "bool") (reparse-symbol arg-sub-list) [2356 2367])
+                            ("id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2368 2380])
+                            ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2381 2395])
+                            ("len" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2396 2408])
+                            ("size" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2409 2422])
+                            ("burst" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2423 2437])
+                            ("lock" variable (:type "bool") (reparse-symbol arg-sub-list) [2438 2448])
+                            ("cache" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2449 2463])
+                            ("prot" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2464 2477])
+                            ("user" variable
+                               (:default-value "0"
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2478 2493]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2342 2495])
+                    ("setW" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("valid" variable (:type "bool") (reparse-symbol arg-sub-list) [2785 2796])
+                            ("id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2797 2809])
+                            ("strb" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2810 2824])
+                            ("last" variable (:type "bool") (reparse-symbol arg-sub-list) [2825 2835])
+                            ("user" variable
+                               (:default-value "0"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2836 2851]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2771 2853])
+                    ("setWData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3152 3166])
+                            ("idx" variable
+                               (:default-value "0"
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3167 3182]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3138 3184])
+                    ("setRReady" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ready" variable (:type "bool") (reparse-symbol arg-sub-list) [3423 3434]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3408 3435])
+                    ("setBReady" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ready" variable (:type "bool") (reparse-symbol arg-sub-list) [3673 3684]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3658 3685])
+                    ("setSig" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sigIdx" variable (:type ("AXI_SIGNAL_IDX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4021 4043])
+                            ("val" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4044 4057]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4009 4058])
+                    ("getSig" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sigIdx" variable (:type ("AXI_SIGNAL_IDX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4363 4385]))                          
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4347 4386])
+                    ("getRData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("idx" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4537 4549]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4519 4550])
+                    ("clear" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4690 4703])
+                    ("connect" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("iface" variable
+                               (:pointer 1
+                                :type ("CASITransactionIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4871 4896]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4855 4897])
+                    ("disconnect" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("iface" variable
+                               (:pointer 1
+                                :type ("CASITransactionIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4916 4941]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4900 4942])
+                    ("init" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("addrWidth" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5069 5088])
+                            ("dataWidth" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5089 5108]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5059 5109])
+                    ("reset" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5209 5222])
+                    ("getConnectedAddressWidth" function (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5226 5304])
+                    ("saveData" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("eslapi::CASIODataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5330 5358]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5308 5359])
+                    ("restoreData" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("is" variable
+                               (:reference 1
+                                :type ("eslapi::CASIIDataStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5387 5415]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5362 5416])
+                    ("public" label nil (reparse-symbol classsubparts) [5418 5425])
+                    ("owner" variable
+                       (:pointer 1
+                        :type ("CASIModule" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5446 5464])
+                    ("name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5494 5506])
+                    ("AR_TMaster" variable
+                       (:pointer 1
+                        :type ("AXI_Sender_PortBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5553 5585])
+                    ("AW_TMaster" variable
+                       (:pointer 1
+                        :type ("AXI_Sender_PortBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5588 5620])
+                    ("W_TMaster" variable
+                       (:pointer 1
+                        :type ("AXI_Sender_PortBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5623 5654])
+                    ("R_TSlave" variable
+                       (:pointer 1
+                        :type ("AXI_Receiver_PortBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5657 5689])
+                    ("B_TSlave" variable
+                       (:pointer 1
+                        :type ("AXI_Receiver_PortBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5692 5724])
+                    ("private" label nil (reparse-symbol classsubparts) [5726 5734])
+                    ("mConnectedAddressWidth" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5737 5769])
+                    ("AXI_Master_Port" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("AXI_Master_Port" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5795 5813])
+                    ("AXI_Master_Port" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("AXI_Master_Port" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5832 5855]))                          
+                        :type ("AXI_Master_Port" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5816 5856])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("AXI_Master_Port" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5886 5909]))                          
+                        :type ("AXI_Master_Port" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5859 5910]))                  
+                :type "class")
+                nil [733 5913]))          
+      :file "AXI_Master_Port.h"
+      :pointmax 5925
+      :fsize 5924
+      :lastmodtime '(22246 65483 672648 0)
+      :unmatched-syntax '((punctuation 1472 . 1473) (punctuation 1257 . 1258) (punctuation 837 . 838))
+      :lexical-table 
+        '(("_AXIMASTERPORT_H_")
+          )
+)
+    (semanticdb-table "AXIPortIF.h"
+      :file "AXIPortIF.h"
+      :fsize 1314
+      :lastmodtime '(22246 65483 664639 0)))
+  :file "!mnt!home!hlei!source!socdesigner!Protocols!AXI!ports!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

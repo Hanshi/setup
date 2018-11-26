@@ -1,0 +1,63 @@
+;; Object Systems/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Systems/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/BasicUART.h" include nil nil [801 830])
+            ("CORTEXA53_2CPU_AXI3Imp.h" include nil nil [831 866])
+            ("NIC400_APB4Imp.h" include nil nil [867 894])
+            ("BP140Imp.h" include nil nil [895 916])
+            ("scx_signal_sizer.h" include nil nil [917 946])
+            ("axi_pin_to_tlm.h" include nil nil [947 974])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [975 1021])
+            ("iostream" include (:system-flag t) nil [1022 1041])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1043 1067])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1081 1090])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1091 1104]))                  
+                :type "int")
+                nil [1069 25710]))          
+      :file "system_test.cpp"
+      :pointmax 25711
+      :fsize 25710
+      :lastmodtime '(22815 11186 302240 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++" "-g" "-O0" "-DSC_INCLUDE_DYNAMIC_PROCESSES" "-Wall" "-Wextra" "-Werror" "-Wno-unused-parameter" "-Wno-unused-variable" "-std=c++11")) nil [27 149])
+            ("SYSTEMC_INC" variable (:default-value ("$(SYSTEMC_HOME)/include/")) nil [212 251])
+            ("SYSTEMC_LIB" variable (:default-value ("$(SYSTEMC_HOME)/lib-linux64")) nil [251 293])
+            ("CPAK_DIR" variable (:default-value ("$(PWD)/..")) nil [293 314])
+            ("A53_DIR" variable (:default-value ("$(CPAK_DIR)/MODELS/CortexA53_2CPU/${CM_PLATFORM}/SystemC")) nil [314 381])
+            ("BP140_DIR" variable (:default-value ("$(CPAK_DIR)/MODELS/BP140/${CM_PLATFORM}/SystemC")) nil [381 441])
+            ("NIC400_DIR" variable (:default-value ("$(CPAK_DIR)/MODELS/NIC400_APB4/${CM_PLATFORM}/SystemC")) nil [441 508])
+            ("A53_BUILD_DIR" variable (:default-value ("$(A53_DIR)/build")) nil [508 541])
+            ("BP140_BUILD_DIR" variable (:default-value ("$(BP140_DIR)/build")) nil [541 578])
+            ("NIC400_BUILD_DIR" variable (:default-value ("$(NIC400_DIR)/build")) nil [578 617])
+            ("system_test" function (:arguments ("$(A53_BUILD_DIR)/libCORTEXA53_2CPU_AXI3.so" "system_test.o" "CORTEXA53_2CPU_AXI3ResetImp.o" "NIC400_APB4ResetImp.o" "BP140ResetImp.o")) nil [682 1560])
+            ("$(A53_BUILD_DIR)" function nil nil [1561 2436])
+            ("system_test.o" function (:arguments ("system_test.cpp")) nil [2438 2838])
+            ("CORTEXA53_2CPU_AXI3ResetImp.o" function (:arguments ("$(A53_BUILD_DIR)/CORTEXA53_2CPU_AXI3ResetImp.cpp")) nil [2839 3185])
+            ("NIC400_APB4ResetImp.o" function (:arguments ("$(NIC400_BUILD_DIR)/NIC400_APB4ResetImp.cpp")) nil [3186 3522])
+            ("BP140ResetImp.o" function (:arguments ("$(BP140_BUILD_DIR)/BP140ResetImp.cpp")) nil [3523 3845])
+            ("clean" function nil nil [3846 3933]))          
+      :file "Makefile"
+      :pointmax 3933
+      :fsize 3932
+      :lastmodtime '(22815 10054 562834 0)
+      :unmatched-syntax '((shell-command 3854 . 3932) (bol 3853 . 3853) (semantic-list 666 . 679) (punctuation 665 . 666) (symbol 645 . 665) (semantic-list 635 . 645) (punctuation 634 . 635) (punctuation 631 . 632) (punctuation 630 . 631) (symbol 617 . 629) (bol 617 . 617) (symbol 165 . 211) (punctuation 163 . 164) (punctuation 162 . 163) (symbol 149 . 161) (bol 149 . 149))))
+  :file "!home!hanlei01!tmp!A53-MP2_NIC-400-SysC!9.1.0!A53-MP2_NIC-400-SysC-V9.1.0-CMS9.1.0-MK2017.02.24-SOCD9.1.0!Systems!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,18 @@
+;; Object scratch/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scratch/"
+  :tables
+  (list
+    (semanticdb-table "64bitshift.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function (:type "int") nil [20 223]))          
+      :file "64bitshift.cpp"
+      :pointmax 224
+      :fsize 223
+      :lastmodtime '(22675 22366 469111 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!tmp!scratch!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

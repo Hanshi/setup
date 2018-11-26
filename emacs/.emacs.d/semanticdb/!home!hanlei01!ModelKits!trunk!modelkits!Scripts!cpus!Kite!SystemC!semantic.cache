@@ -1,0 +1,198 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("LINUX_DIR" variable (:default-value (".")) nil [1 15])
+            ("PACKAGE_LIB_DIR" variable (:default-value ("./lib")) nil [147 171])
+            ("COMP_NAME" variable (:default-value ("$(subst lib,,$(basename $(basename $(notdir $(wildcard $(PACKAGE_LIB_DIR)/lib*.icm.so)))))")) nil [269 372])
+            ("clean" function nil nil [373 401])
+            ("gen_code" function nil nil [402 412])
+            ("Makefile.internal" include nil nil [431 457])
+            ("CXX" variable (:default-value ("g++")) nil [519 527])
+            ("CXXFLAGS" variable (:default-value ("-fPIC" "-g" "-std=c++11" "-I$(SYSTEMC_INC)" "-I$(CARBON_HOME)/include" "$(CM_SYSC_CXXFLAGS)" "-I." "-I$(LINUX_DIR)")) nil [528 678])
+            ("OBJS" variable (:default-value ("lib$(COMP_NAME).systemc.o" "univent_tarmac.o")) nil [679 736])
+            ("Makefile.tlm" include nil nil [737 758])
+            ("all" function (:arguments ("lib$(COMP_NAME).systemc.so" "lib$(COMP_NAME).systemc.a")) nil [759 817])
+            ("lib" function (:arguments ("$(OBJS)")) nil [818 871])
+            ("lib" function (:arguments ("$(OBJS)")) nil [872 1240])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp")) nil [1241 1328])
+            ("univent_tarmac.o" function (:arguments ("univent_tarmac.cpp")) nil [1329 1398])
+            ("lib" function (:arguments ("gen_code")) nil [1399 1437])
+            ("univent_tarmac.cpp" function (:arguments ("gen_code")) nil [1438 1467]))          
+      :file "Makefile"
+      :pointmax 1468
+      :fsize 1467
+      :lastmodtime '(23317 38531 115302 0)
+      :unmatched-syntax '((symbol 488 . 517) (semantic-list 474 . 488) (punctuation 473 . 474) (symbol 464 . 472) (bol 464 . 464) (symbol 205 . 213) (semantic-list 188 . 205) (punctuation 187 . 188) (punctuation 185 . 186) (punctuation 184 . 185) (symbol 171 . 183) (bol 171 . 171) (symbol 134 . 146) (semantic-list 120 . 134) (punctuation 119 . 120) (punctuation 117 . 118) (punctuation 116 . 117) (symbol 104 . 115) (bol 104 . 104) (symbol 95 . 103) (semantic-list 81 . 95) (punctuation 80 . 81) (punctuation 78 . 79) (punctuation 77 . 78) (symbol 65 . 76) (bol 65 . 65) (symbol 31 . 64) (punctuation 29 . 30) (punctuation 28 . 29) (symbol 15 . 27) (bol 15 . 15)))
+    (semanticdb-table "Makefile.internal"
+      :major-mode 'makefile-mode
+      :tags 
+        '( ("IPXACT_FILENAME" variable (:default-value ("$(shell $(CARBON_MK_HOME)/Scripts/get_ipxact_filename.sh)")) nil [26 102])
+            ("CM_SYSC_PYTHON" variable (:default-value ("$(CM_SYSC_PACKAGE)/rel_int/python/bin/python")) nil [102 164])
+            ("SYSC_TO_ARMTLM" variable (:default-value ("$(CM_SYSC_PACKAGE)/rel_int/bin/sysc_to_armtlm.py")) nil [164 230])
+            ("TARMAC_SYSC" variable (:default-value ("$(CM_SYSC_PACKAGE)/rel_int/bin/tarmac_sysc.py")) nil [230 291])
+            ("LINUX_DIR" variable (:default-value ("../linux")) nil [292 313])
+            ("COMP_NAME" variable (:default-value ("$(subst lib,,$(basename $(notdir $(wildcard $(LINUX_DIR)/lib*.a))))")) nil [313 393])
+            ("MODEL_NAME" variable (:default-value ("$(basename $(notdir $(wildcard ../*.xmlAnswers)))")) nil [393 456])
+            ("ICM_MODEL_IPNAME" variable (:default-value ("Kite")) nil [536 560])
+            ("NUM_CPUS" variable (:default-value ("$(shell grep NUM_CPUS ../$(MODEL_NAME).xmlAnswers)")) nil [737 799])
+            ("NUM_CPUS" variable (:default-value ("4")) nil [837 848])
+            ("NUM_CPUS" variable (:default-value ("3")) nil [892 903])
+            ("NUM_CPUS" variable (:default-value ("2")) nil [947 958])
+            ("NUM_CPUS" variable (:default-value ("1")) nil [963 974])
+            ("NO_TLM" variable (:default-value ("$(shell grep NoTLM ../$(MODEL_NAME).xmlAnswers)")) nil [1024 1081])
+            ("NO_TLM" variable (:default-value ("TRUE")) nil [1123 1137])
+            ("NO_TLM" variable (:default-value ("FALSE")) nil [1142 1157])
+            ("DSM" variable (:default-value ("$(shell grep DSM ../$(MODEL_NAME).xmlAnswers)")) nil [1305 1357])
+            ("DSM" variable (:default-value ("--dsm")) nil [1396 1408])
+            ("DSM" variable nil nil [1413 1419])
+            ("SYSTEMC_FLAGS" variable (:default-value ("$(shell grep SystemCFlags ../$(MODEL_NAME).xmlAnswers)")) nil [1670 1741])
+            ("SYSTEMC_FLAGS_VALUE" variable (:default-value ("$(shell echo \"$(SYSTEMC_FLAGS)\" | cut -d \">\" -f2 | cut -d \"<\" -f1)")) nil [1776 1865])
+            ("TARMAC_FLAGS" variable (:default-value ("$(shell grep TarmacFlags ../$(MODEL_NAME).xmlAnswers)")) nil [1918 1987])
+            ("TARMAC_FLAGS_VALUE" variable (:default-value ("$(shell echo \"$(TARMAC_FLAGS)\" | cut -d \">\" -f2 | cut -d \"<\" -f1)")) nil [2022 2109])
+            (".PHONY" function (:arguments ("gen_code")) nil [2110 2127])
+            ("gen_code" function (:arguments ("$(ICM_SO)")) nil [2127 2826])
+            ("clean" function nil nil [4863 5009]))          
+      :file "Makefile.internal"
+      :pointmax 5009
+      :fsize 4953
+      :lastmodtime '(23256 44321 828925 0)
+      :unmatched-syntax '((shell-command 4871 . 5008) (bol 4870 . 4870) (shell-command 4776 . 4855) (bol 4775 . 4775) (shell-command 4594 . 4718) (bol 4593 . 4593) (shell-command 4282 . 4586) (bol 4281 . 4281) (shell-command 4262 . 4280) (bol 4261 . 4261) (shell-command 4224 . 4260) (bol 4223 . 4223) (shell-command 4184 . 4222) (bol 4183 . 4183) (shell-command 4107 . 4182) (bol 4106 . 4106) (shell-command 3825 . 4105) (bol 3824 . 3824) (shell-command 3735 . 3823) (bol 3734 . 3734) (shell-command 3718 . 3733) (bol 3717 . 3717) (shell-command 3603 . 3716) (bol 3602 . 3602) (shell-command 3575 . 3601) (bol 3574 . 3574) (shell-command 3435 . 3467) (bol 3434 . 3434) (shell-command 3211 . 3428) (bol 3210 . 3210) (shell-command 3116 . 3209) (bol 3115 . 3115) (shell-command 2948 . 3037) (bol 2947 . 2947) (shell-command 2880 . 2916) (bol 2879 . 2879) (ELSE 903 . 907) (bol 903 . 903) (ELSE 848 . 852) (bol 848 . 848) (symbol 625 . 659) (semantic-list 612 . 625) (punctuation 611 . 612) (symbol 602 . 610) (bol 602 . 602)))
+    (semanticdb-table "CortexR52_atcm.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("CORTEXR52_ATCM_H" variable (:constant-flag t) nil [97 113])
+            ("CortexR52_atcm" type
+               (:superclasses 
+                  ( ("scx_wrapper_feature" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [167 175])
+                    ("mMemory0" variable
+                       (:pointer 1
+                        :type ("CarbonMemoryID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [204 230])
+                    ("mMemory1" variable
+                       (:pointer 1
+                        :type ("CarbonMemoryID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [234 260])
+                    ("mMemory2" variable
+                       (:pointer 1
+                        :type ("CarbonMemoryID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [264 290])
+                    ("mMemory3" variable
+                       (:pointer 1
+                        :type ("CarbonMemoryID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [294 320])
+                    ("public" label nil (reparse-symbol classsubparts) [328 335])
+                    ("CortexR52_atcm" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("num_cpus" variable (:type "int") (reparse-symbol arg-sub-list) [355 368])
+                            ("carbonModelHandle" variable
+                               (:pointer 1
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [368 402])
+                            ("target" variable
+                               (:reference 1
+                                :type ("scx::scx_debug_target_if" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [402 435]))                          
+                        :type ("CortexR52_atcm" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [340 1005])
+                    ("CortexR52_atcm" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1012 1039])
+                    ("enable" function (:type "void") (reparse-symbol classsubparts) [1047 1119])
+                    ("load" function (:type "void") (reparse-symbol classsubparts) [1157 3025]))                  
+                :type "class")
+                nil [115 3028]))          
+      :file "CortexR52_atcm.h"
+      :pointmax 3037
+      :fsize 3036
+      :lastmodtime '(22856 3870 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CORTEXR52_ATCM_H")
+          )
+)
+    (semanticdb-table "CortexR52_tarmac.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("CORTEXR52_TARMAC_H" variable (:constant-flag t) nil [99 117])
+            ("univent_tarmac.h" include nil nil [119 146])
+            ("CortexR52_tarmac" type
+               (:superclasses 
+                  ( ("scx_wrapper_feature" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [202 210])
+                    ("public" label nil (reparse-symbol classsubparts) [213 220])
+                    ("CortexR52_tarmac" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("num_cpus" variable (:type "int") (reparse-symbol arg-sub-list) [243 256])
+                            ("carbonModelHandle" variable
+                               (:pointer 1
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [257 291])
+                            ("target" variable
+                               (:reference 1
+                                :type ("scx::scx_debug_target_if" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [291 324]))                          
+                        :type ("CortexR52_tarmac" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [226 489])
+                    ("CortexR52_tarmac" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [492 519])
+                    ("start_of_simulation" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [540 789])
+                    ("end_of_simulation" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [792 864]))                  
+                :type "class")
+                nil [148 874]))          
+      :file "CortexR52_tarmac.h"
+      :pointmax 883
+      :fsize 1124
+      :lastmodtime '(23022 23651 971346 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CORTEXR52_TARMAC_H")
+          )
+)
+    (semanticdb-table "libKite.pmu_gen.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("common/CarbonComponentHelper.h" include nil nil [225 266])
+            ("carbon/carbon_capi.h" include nil nil [267 298])
+            ("cpus/Kite/CarbonProfile.h" include nil nil [299 335])
+            ("mMyCapi" variable
+               (:pointer 1
+                :type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYKITE::CarbonProfile" type (:type "class") nil nil))
+                nil [337 405])
+            ("main" function (:type "int") nil [407 507]))          
+      :file "libKite.pmu_gen.cpp"
+      :pointmax 508
+      :fsize 507
+      :lastmodtime '(23016 50151 861502 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile.tlm"
+      :file "Makefile.tlm"
+      :fsize 684
+      :lastmodtime '(23317 38531 240288 0)))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!Scripts!cpus!Kite!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

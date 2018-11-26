@@ -1,0 +1,1179 @@
+;; Object Plover/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Plover/"
+  :tables
+  (list
+    (semanticdb-table "PCStateMachine.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("common/CarbonComponentHelper.h" include nil nil [511 552])
+            ("cpus/Plover/PCStateMachine.h" include nil nil [553 592])
+            ("cpus/Plover/VirtualRegs.h" include nil nil [593 629])
+            ("cpus/Plover/PloverCommon.h" include nil nil [630 667])
+            ("CARBON_MKLIB_NAMESPACE" using (:type ("CARBON_MKLIB_NAMESPACE" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [669 708])
+            ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER" using (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [709 771])
+            ("PCStateMachine" function
+               (:constructor-flag t
+                :parent "PCStateMachine"
+                :arguments 
+                  ( ("coreNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [804 821])
+                    ("compHelper" variable
+                       (:pointer 1
+                        :type ("CarbonComponentHelper" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [853 887])
+                    ("semiHost" variable
+                       (:pointer 1
+                        :type ("CarbonSemiHostMasterPort" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [919 954])
+                    ("semiHostCallback" variable
+                       (:pointer 1
+                        :type ("SemihostingCallback" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [986 1024]))                  
+                :type ("PCStateMachine" type (:type "class") nil nil))
+                nil [773 6981])
+            ("PCStateMachine" function
+               (:destructor-flag t
+                :parent "PCStateMachine"
+                :type "void")
+                nil [6983 7102])
+            ("getDebugHaltInstructions" function
+               (:parent "PCStateMachine"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("CARBON_MKLIB_NAMESPACE::PCStateMachineBase::DebugInstruction" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [7104 7398])
+            ("getDebugPCDepositInstructions" function
+               (:parent "PCStateMachine"
+                :type ("CARBON_MKLIB_NAMESPACE::PCStateMachineBase::DebugInstruction" type (:type "class") nil nil))
+                nil [7401 7565])
+            ("getTBit" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [7569 7715])
+            ("depositHaltRequest" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("val" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7757 7774]))                  
+                :type "void")
+                nil [7717 7841])
+            ("putBreakOnSVCException" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [7887 7899]))                  
+                :type "void")
+                nil [7843 8210])
+            ("depositInstruction" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("instr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DebugInstruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8252 8282]))                  
+                :type "void")
+                nil [8212 9121])
+            ("depositRestart" function
+               (:parent "PCStateMachine"
+                :type "void")
+                nil [9123 9249])
+            ("enableStall" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("match" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9284 9303])
+                    ("doStep" variable (:type "bool") (reparse-symbol arg-sub-list) [9304 9316]))                  
+                :type "void")
+                nil [9251 14925])
+            ("readRTLValues" function
+               (:parent "PCStateMachine"
+                :type "void")
+                nil [14927 16878])
+            ("updateCommittedPCs" function
+               (:parent "PCStateMachine"
+                :type "void")
+                nil [16881 22817])
+            ("saveDebugScratchRegisters" function
+               (:parent "PCStateMachine"
+                :type "void")
+                nil [22819 23006])
+            ("restoreDebugScratchRegisters" function
+               (:parent "PCStateMachine"
+                :type "void")
+                nil [23008 23196])
+            ("isStalled" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [23198 23486])
+            ("isInstructionComplete" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [23488 23902])
+            ("isRestarted" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [23904 24160])
+            ("correctAddressMatch" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("addressMatch" variable (:type "bool") (reparse-symbol arg-sub-list) [24203 24221])
+                    ("bpAddrToCheck" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24222 24249]))                  
+                :type "bool")
+                nil [24162 24361])
+            ("findNet" function
+               (:pointer 1
+                :parent "PCStateMachine"
+                :arguments 
+                  ( ("rtlPrefix" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24400 24429])
+                    ("netName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24430 24457]))                  
+                :type ("CarbonNetID" type (:type "class") nil nil))
+                nil [24363 24810]))          
+      :file "PCStateMachine.cpp"
+      :pointmax 24811
+      :fsize 24812
+      :lastmodtime '(23255 47240 890251 0)
+      :unmatched-syntax '((punctuation 7565 . 7566) (punctuation 7398 . 7399)))
+    (semanticdb-table "PloverCommon.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cpus/Plover/PloverCommon.h" include nil nil [511 548])
+            ("string" include (:system-flag t) nil [550 567])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("CARBONMKLIBRARYPLOVER" type
+                       (:members 
+                          ( ("gFullCorePath" function
+                               (:arguments 
+                                  ( ("coreNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [665 682]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [639 1084]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [604 1088]))                  
+                :type "namespace")
+                nil [569 1089]))          
+      :file "PloverCommon.cpp"
+      :pointmax 1103
+      :fsize 1102
+      :lastmodtime '(22838 56883 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ICM_PloverModel.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cpus/ICM_Registers.h" include nil nil [52 83])
+            ("cpus/Plover/ICM_Memory.h" include nil nil [84 119])
+            ("cpus/Plover/ICM_PloverModel.h" include nil nil [120 160])
+            ("cpus/Plover/ICM_PloverDebugController.h" include nil nil [161 211])
+            ("cpus/Plover/ICM_PloverRegisters.h" include nil nil [212 256])
+            ("cpus/Plover/Enum.h" include nil nil [257 286])
+            ("icm/api/icm_registers.h" include nil nil [287 321])
+            ("iostream" include (:system-flag t) nil [323 342])
+            ("ICM_CREATE_AND_ADD_CORE_REG" variable (:constant-flag t) nil [465 492])
+            ("ICM_CREATE_AND_ADD_BANKED_CORE_R8to12" variable (:constant-flag t) nil [886 923])
+            ("_RegDesc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("REGNAMESTR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1060 1071]))                  
+                :type "int")
+                nil [1051 1090])
+            ("addSelectCase" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER::eEM_Usr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1127 1182])
+                    ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1183 1206])
+                    ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1209 1228]))                  
+                :type "int")
+                nil [1113 1230])
+            ("addSelectCase" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER::eEM_Sys" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1267 1322])
+                    ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1323 1346])
+                    ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1349 1368]))                  
+                :type "int")
+                nil [1253 1370])
+            ("addSelectCase" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER::eEM_Irq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1407 1462])
+                    ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1463 1486])
+                    ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1489 1508]))                  
+                :type "int")
+                nil [1393 1510])
+            ("addSelectCase" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER::eEM_Svc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1547 1602])
+                    ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1603 1626])
+                    ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1629 1648]))                  
+                :type "int")
+                nil [1533 1650])
+            ("addSelectCase" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER::eEM_Abt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1687 1742])
+                    ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1743 1766])
+                    ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1769 1788]))                  
+                :type "int")
+                nil [1673 1790])
+            ("addSelectCase" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER::eEM_Und" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1827 1882])
+                    ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1883 1906])
+                    ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1909 1928]))                  
+                :type "int")
+                nil [1813 1930])
+            ("addSelectCase" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER::eEM_Fiq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1967 2022])
+                    ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2023 2046])
+                    ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2049 2068]))                  
+                :type "int")
+                nil [1953 2070])
+            ("REGNAME" variable
+               (:default-value "std::make_unique<icm_impl::BankedRegister>(REGNAME##_RegDesc)"
+                :type ("auto" type (:type "class") nil nil))
+                nil [2075 2152])
+            ("add_register" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("std::move" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2170 2190]))                  
+                :type "int")
+                nil [2157 2192])
+            ("ICM_PloverModel" function
+               (:constructor-flag t
+                :parent "ICM_PloverModel"
+                :arguments 
+                  ( ("cycle_model" variable
+                       (:pointer 1
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2228 2256]))                  
+                :type ("ICM_PloverModel" type (:type "class") nil nil))
+                nil [2195 2904])
+            ("create_child_model" function
+               (:parent "ICM_PloverModel"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("icm_impl::ICMModel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2978 3005]))                  
+                :type ("std::unique_ptr" type
+                     (:template-specifier 
+                        ( ("icm_impl::ICMModel" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2906 3142])
+            ("create_debug_controller" function
+               (:parent "ICM_PloverModel"
+                :arguments 
+                  ( ("component_name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3315 3349])
+                    ("hdl_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3434 3462]))                  
+                :type ("std::unique_ptr" type
+                     (:template-specifier 
+                        ( ("icm_impl::DebugController" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3231 8024])
+            ("create_user_defined_memory" function
+               (:parent "ICM_PloverModel"
+                :arguments 
+                  ( ("desc" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("icm_impl::MemoryDescription" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8104 8144]))                  
+                :type ("std::unique_ptr" type
+                     (:template-specifier 
+                        ( ("icm_impl::Memory" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [8026 9250])
+            ("end_of_reset" function
+               (:parent "ICM_PloverModel"
+                :type "void")
+                nil [9252 9392]))          
+      :file "ICM_PloverModel.cpp"
+      :pointmax 9393
+      :fsize 9392
+      :lastmodtime '(23317 38557 10314 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ICM_CREATE_AND_ADD_BANKED_CORE_R8to12" (spp-arg-list ("REGNAME" "REGNAMESTR") 923 . 944) . 
+              ((symbol "CARBON_MKLIB_NAMESPACE" 965 . 987) (punctuation ":" 987 . 988) (punctuation ":" 988 . 989) (symbol "CARBONMKLIBRARYPLOVER" 989 . 1010) (punctuation ":" 1010 . 1011) (punctuation ":" 1011 . 1012) (symbol "CoreBankedRegisterDescription" 1012 . 1041) (spp-symbol-merge ((symbol "REGNAME" 1042 . 1049) (symbol "_RegDesc" 1051 . 1059)) 1042 . 1059) (semantic-list "(REGNAMESTR, \"encoded_mode_q\")" 1059 . 1089) (punctuation ";" 1089 . 1090) (spp-symbol-merge ((symbol "REGNAME" 1095 . 1102) (symbol "_RegDesc" 1104 . 1112)) 1095 . 1112) (punctuation "." 1112 . 1113) (symbol "addSelectCase" 1113 . 1126) (semantic-list "(CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER::eEM_Usr, std::string(REGNAMESTR) + std::string(\"_USR\"))" 1126 . 1229) (punctuation ";" 1229 . 1230) (spp-symbol-merge ((symbol "REGNAME" 1235 . 1242) (symbol "_RegDesc" 1244 . 1252)) 1235 . 1252) (punctuation "." 1252 . 1253) (symbol "addSelectCase" 1253 . 1266) (semantic-list "(CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER::eEM_Sys, std::string(REGNAMESTR) + std::string(\"_USR\"))" 1266 . 1369) (punctuation ";" 1369 . 1370) (spp-symbol-merge ((symbol "REGNAME" 1375 . 1382) (symbol "_RegDesc" 1384 . 1392)) 1375 . 1392) (punctuation "." 1392 . 1393) (symbol "addSelectCase" 1393 . 1406) (semantic-list "(CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER::eEM_Irq, std::string(REGNAMESTR) + std::string(\"_USR\"))" 1406 . 1509) (punctuation ";" 1509 . 1510) (spp-symbol-merge ((symbol "REGNAME" 1515 . 1522) (symbol "_RegDesc" 1524 . 1532)) 1515 . 1532) (punctuation "." 1532 . 1533) (symbol "addSelectCase" 1533 . 1546) (semantic-list "(CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER::eEM_Svc, std::string(REGNAMESTR) + std::string(\"_USR\"))" 1546 . 1649) (punctuation ";" 1649 . 1650) (spp-symbol-merge ((symbol "REGNAME" 1655 . 1662) (symbol "_RegDesc" 1664 . 1672)) 1655 . 1672) (punctuation "." 1672 . 1673) (symbol "addSelectCase" 1673 . 1686) (semantic-list "(CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER::eEM_Abt, std::string(REGNAMESTR) + std::string(\"_USR\"))" 1686 . 1789) (punctuation ";" 1789 . 1790) (spp-symbol-merge ((symbol "REGNAME" 1795 . 1802) (symbol "_RegDesc" 1804 . 1812)) 1795 . 1812) (punctuation "." 1812 . 1813) (symbol "addSelectCase" 1813 . 1826) (semantic-list "(CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER::eEM_Und, std::string(REGNAMESTR) + std::string(\"_USR\"))" 1826 . 1929) (punctuation ";" 1929 . 1930) (spp-symbol-merge ((symbol "REGNAME" 1935 . 1942) (symbol "_RegDesc" 1944 . 1952)) 1935 . 1952) (punctuation "." 1952 . 1953) (symbol "addSelectCase" 1953 . 1966) (semantic-list "(CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER::eEM_Fiq, std::string(REGNAMESTR) + std::string(\"_FIQ\"))" 1966 . 2069) (punctuation ";" 2069 . 2070) (symbol "auto" 2075 . 2079) (symbol "REGNAME" 2080 . 2087) (punctuation "=" 2088 . 2089) (symbol "std" 2090 . 2093) (punctuation ":" 2093 . 2094) (punctuation ":" 2094 . 2095) (symbol "make_unique" 2095 . 2106) (punctuation "<" 2106 . 2107) (symbol "icm_impl" 2107 . 2115) (punctuation ":" 2115 . 2116) (punctuation ":" 2116 . 2117) (symbol "BankedRegister" 2117 . 2131) (punctuation ">" 2131 . 2132) (semantic-list "(REGNAME##_RegDesc)" 2132 . 2151) (punctuation ";" 2151 . 2152) (symbol "add_register" 2157 . 2169) (semantic-list "(std::move( REGNAME ))" 2169 . 2191) (punctuation ";" 2191 . 2192)))
+          ("ICM_CREATE_AND_ADD_CORE_REG" (spp-arg-list ("REGNAME" "REGNAMESTR") 492 . 513) . 
+              ((symbol "CARBON_MKLIB_NAMESPACE" 519 . 541) (punctuation ":" 541 . 542) (punctuation ":" 542 . 543) (symbol "CARBONMKLIBRARYPLOVER" 543 . 564) (punctuation ":" 564 . 565) (punctuation ":" 565 . 566) (symbol "R_CoreRegisterDescription" 566 . 591) (spp-symbol-merge ((symbol "REGNAME" 592 . 599) (symbol "_RegDesc" 601 . 609)) 592 . 609) (semantic-list "(REGNAMESTR)" 609 . 621) (punctuation ";" 621 . 622) (symbol "auto" 639 . 643) (symbol "REGNAME" 644 . 651) (punctuation "=" 652 . 653) (symbol "std" 654 . 657) (punctuation ":" 657 . 658) (punctuation ":" 658 . 659) (symbol "make_unique" 659 . 670) (punctuation "<" 670 . 671) (symbol "CARBON_MKLIB_NAMESPACE" 671 . 693) (punctuation ":" 693 . 694) (punctuation ":" 694 . 695) (symbol "CARBONMKLIBRARYPLOVER" 695 . 716) (punctuation ":" 716 . 717) (punctuation ":" 717 . 718) (symbol "R_CoreRegister" 718 . 732) (punctuation ">" 732 . 733) (semantic-list "(REGNAME##_RegDesc, m_virtualRegs.get(),CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER::eGRM_##REGNAME)" 733 . 835) (punctuation ";" 835 . 836) (symbol "add_register" 841 . 853) (semantic-list "(std::move( REGNAME ))" 853 . 875) (punctuation ";" 875 . 876)))
+          )
+)
+    (semanticdb-table "CarbonMemSystem.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [571 588])
+            ("sstream" include (:system-flag t) nil [589 607])
+            ("assert.h" include (:system-flag t) nil [608 627])
+            ("CARBONMEM_OVERRIDES" variable (:constant-flag t) nil [665 684])
+            ("carbon/carbon_capi.h" include nil nil [692 723])
+            ("carbon/carbon_dbapi.h" include nil nil [724 756])
+            ("cpus/Plover/CarbonMemSystem.h" include nil nil [758 798])
+            ("cpus/Plover/PloverCommon.h" include nil nil [799 836])
+            ("common/carbon_mkversion.h" include nil nil [837 873])
+            ("cpus/Plover/TCM.h" include nil nil [875 903])
+            ("cpus/Plover/DataCache.h" include nil nil [904 938])
+            ("cstring" include (:system-flag t) nil [940 958])
+            ("carbon/CarbonCADITypes.h" include nil nil [977 1012])
+            ("eslapi/CADI.h" include nil nil [1013 1037])
+            ("eslapi" using (:type ("eslapi" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1039 1062])
+            ("Carbon::ArchRestoreHandlerIF" using (:type ("Carbon::ArchRestoreHandlerIF" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1063 1108])
+            ("CARBON_MKLIB_NAMESPACE" using (:type ("CARBON_MKLIB_NAMESPACE" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1116 1155])
+            ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER" using (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1156 1218])
+            ("CarbonMemSystem" function
+               (:constructor-flag t
+                :parent "CarbonMemSystem"
+                :arguments 
+                  ( ("compHelper" variable
+                       (:pointer 1
+                        :type ("CarbonComponentHelperIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1253 1289])
+                    ("procInst" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1290 1308])
+                    ("cadi" variable
+                       (:pointer 1
+                        :type ("eslapi::CADI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1361 1380])
+                    ("mem_system_idx_m0" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1422 1453])
+                    ("mem_system_idx_m1" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1454 1504])
+                    ("sctlr_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1505 1527])
+                    ("rgnr_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1528 1545])
+                    ("drbar_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1546 1564])
+                    ("drsr_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1565 1582])
+                    ("dracr_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1583 1609]))                  
+                :type ("CarbonMemSystem" type (:type "class") nil nil))
+                nil [1220 2793])
+            ("CarbonMemSystem" function
+               (:destructor-flag t
+                :parent "CarbonMemSystem"
+                :type "void")
+                nil [2796 2950])
+            ("createTCM" function
+               (:parent "CarbonMemSystem"
+                :type "void")
+                nil [2952 3029])
+            ("createCache" function
+               (:parent "CarbonMemSystem"
+                :type "void")
+                nil [3031 3118])
+            ("read" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("idx_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3148 3170])
+                    ("tag_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3201 3223])
+                    ("bytes" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3254 3273])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3304 3317]))                  
+                :type "bool")
+                nil [3121 5272])
+            ("getTcmData" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("tag_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5318 5340]))                  
+                :type ("CarbonUInt8" type (:type "class") nil nil))
+                nil [5278 5799])
+            ("write" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("idx_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5829 5851])
+                    ("tag_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5883 5905])
+                    ("bytes" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5937 5956])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5988 6007]))                  
+                :type "bool")
+                nil [5801 8025])
+            ("setTcmData" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("tag_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8060 8082])
+                    ("memdata" variable
+                       (:pointer 1
+                        :type ("CarbonUInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8083 8105]))                  
+                :type "void")
+                nil [8027 8538])
+            ("setupAxiMasterFiltering" function
+               (:parent "CarbonMemSystem"
+                :type "void")
+                nil [8540 9702])
+            ("external_memory_read" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("memId" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9765 9784])
+                    ("tag_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9785 9807])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9808 9825]))                  
+                :type "bool")
+                nil [9722 10115])
+            ("external_memory_write" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("memId" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10161 10180])
+                    ("tag_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10181 10203])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CarbonUInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10204 10227]))                  
+                :type "bool")
+                nil [10117 10524])
+            ("restore" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10694 10718])
+                    ("stream" variable
+                       (:reference 1
+                        :type ("RestoreArchStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10719 10745]))                  
+                :type "int")
+                nil [10665 17420])
+            ("restoreRegisters" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("stream" variable
+                       (:reference 1
+                        :type ("RestoreArchStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17583 17609])
+                    ("numMPUReg" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17610 17630]))                  
+                :type "int")
+                nil [17545 19898])
+            ("regWrite" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("reg" variable
+                       (:reference 1
+                        :type ("eslapi::CADIReg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19934 19957])
+                    ("val" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19958 19971]))                  
+                :type "bool")
+                nil [19903 20191]))          
+      :file "CarbonMemSystem.cpp"
+      :pointmax 20522
+      :fsize 20521
+      :lastmodtime '(23449 22318 85581 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CARBONMEM_OVERRIDES")
+          )
+)
+    (semanticdb-table "VirtualRegs.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sstream" include (:system-flag t) nil [511 529])
+            ("carbon/carbon_capi.h" include nil nil [531 562])
+            ("carbon/carbon_dbapi.h" include nil nil [563 595])
+            ("common/carbon_mkversion.h" include nil nil [597 633])
+            ("common/CarbonComponentHelper.h" include nil nil [634 675])
+            ("cpus/Plover/VirtualRegs.h" include nil nil [676 712])
+            ("cpus/Plover/PloverCommon.h" include nil nil [713 750])
+            ("common/CarbonStreamIntf.h" include nil nil [752 788])
+            ("CARBON_MKLIB_NAMESPACE" using (:type ("CARBON_MKLIB_NAMESPACE" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [790 829])
+            ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER" using (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [830 892])
+            ("VirtualRegs" function
+               (:constructor-flag t
+                :parent "VirtualRegs"
+                :arguments 
+                  ( ("compHelper" variable
+                       (:pointer 1
+                        :type ("CARBON_MKLIB_NAMESPACE::CarbonComponentHelper" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [920 978])
+                    ("core" variable (:type "int") (reparse-symbol arg-sub-list) [979 988]))                  
+                :type ("VirtualRegs" type (:type "class") nil nil))
+                nil [895 2279])
+            ("read" function
+               (:parent "VirtualRegs"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2319 2337])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2338 2357]))                  
+                :type "void")
+                nil [2296 3020])
+            ("write" function
+               (:parent "VirtualRegs"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3046 3070])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3071 3090]))                  
+                :type "bool")
+                nil [3022 3619])
+            ("writeInternal" function
+               (:parent "VirtualRegs"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3653 3677])
+                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3678 3697]))                  
+                :type "bool")
+                nil [3621 4084])
+            ("isAllocated" function
+               (:parent "VirtualRegs"
+                :arguments 
+                  ( ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4116 4135])
+                    ("virtualIndex" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4136 4163]))                  
+                :type "bool")
+                nil [4086 4568])
+            ("initForArchRestore" function
+               (:parent "VirtualRegs"
+                :type "void")
+                nil [4570 5670])
+            ("init_cpsr_paths" function
+               (:parent "VirtualRegs"
+                :arguments 
+                  ( ("fullCorePath" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5706 5733]))                  
+                :type "void")
+                nil [5672 14062])
+            ("read_cpsr" function
+               (:parent "VirtualRegs"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14092 14110]))                  
+                :type "void")
+                nil [14064 15768])
+            ("write_cpsr" function
+               (:parent "VirtualRegs"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15799 15823]))                  
+                :type "void")
+                nil [15770 18505]))          
+      :file "VirtualRegs.cpp"
+      :pointmax 18506
+      :fsize 18505
+      :lastmodtime '(22940 15335 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "TCM.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cpus/Plover/TCM.h" include nil nil [511 539])
+            ("cpus/Plover/PloverCommon.h" include nil nil [540 577])
+            ("carbon/carbon_dbapi.h" include nil nil [578 610])
+            ("sstream" include (:system-flag t) nil [611 629])
+            ("assert.h" include nil nil [630 649])
+            ("CARBON_MKLIB_NAMESPACE" using (:type ("CARBON_MKLIB_NAMESPACE" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [651 690])
+            ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER" using (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [691 753])
+            ("TCM" function
+               (:constructor-flag t
+                :parent "TCM"
+                :arguments 
+                  ( ("compHelper" variable
+                       (:pointer 1
+                        :type ("CarbonComponentHelper" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [764 798])
+                    ("procInst" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [799 821]))                  
+                :type ("TCM" type (:type "class") nil nil))
+                nil [755 1021])
+            ("TCM" function
+               (:destructor-flag t
+                :parent "TCM"
+                :type "void")
+                nil [1023 1038])
+            ("setupTcmNets" function
+               (:parent "TCM"
+                :type "void")
+                nil [1064 3413])
+            ("tcmHit" function
+               (:parent "TCM"
+                :arguments 
+                  ( ("addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3697 3715]))                  
+                :type "bool")
+                nil [3680 3930])
+            ("getTcmHit" function
+               (:parent "TCM"
+                :arguments 
+                  ( ("pa" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4157 4173]))                  
+                :type ("TCM::TCM_HIT" type (:type "class") nil nil))
+                nil [4129 4626])
+            ("getITcmBaseAddress" function
+               (:parent "TCM"
+                :type ("CarbonUInt32" type (:type "class") nil nil))
+                nil [4679 4868])
+            ("getDTcmBaseAddress" function
+               (:parent "TCM"
+                :type ("CarbonUInt32" type (:type "class") nil nil))
+                nil [4914 5103])
+            ("getITcmSize" function
+               (:parent "TCM"
+                :type ("CarbonUInt32" type (:type "class") nil nil))
+                nil [5159 5266])
+            ("getDTcmSize" function
+               (:parent "TCM"
+                :type ("CarbonUInt32" type (:type "class") nil nil))
+                nil [5316 5422])
+            ("getTcmSize" function
+               (:parent "TCM"
+                :arguments 
+                  ( ("tcmSize" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5521 5542]))                  
+                :type ("CarbonUInt32" type (:type "class") nil nil))
+                nil [5492 6292])
+            ("getTcmSize" function
+               (:parent "TCM"
+                :arguments 
+                  ( ("cp15SizeNet" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6324 6349])
+                    ("cfgEnNet" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6379 6401])
+                    ("cfgSizeNet" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6431 6455]))                  
+                :type ("CarbonUInt32" type (:type "class") nil nil))
+                nil [6295 7122])
+            ("isTcmEnabled" function
+               (:parent "TCM"
+                :type "bool")
+                nil [7179 7465])
+            ("isITCMEnabled" function
+               (:parent "TCM"
+                :type "bool")
+                nil [7509 7672])
+            ("isDTCMEnabled" function
+               (:parent "TCM"
+                :type "bool")
+                nil [7716 7879])
+            ("getTcmData" function
+               (:parent "TCM"
+                :arguments 
+                  ( ("addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8074 8092]))                  
+                :type ("CarbonUInt8" type (:type "class") nil nil))
+                nil [8046 8974])
+            ("setTcmData" function
+               (:parent "TCM"
+                :arguments 
+                  ( ("addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9069 9087])
+                    ("memdata" variable
+                       (:pointer 1
+                        :type ("CarbonUInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9088 9109]))                  
+                :type "void")
+                nil [9048 10085])
+            ("setITCMData" function
+               (:parent "TCM"
+                :arguments 
+                  ( ("addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10216 10234])
+                    ("memdata" variable
+                       (:pointer 1
+                        :type ("CarbonUInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10235 10256]))                  
+                :type "void")
+                nil [10194 11158])
+            ("setDTCMData" function
+               (:parent "TCM"
+                :arguments 
+                  ( ("addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11289 11307])
+                    ("memdata" variable
+                       (:pointer 1
+                        :type ("CarbonUInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11308 11329]))                  
+                :type "void")
+                nil [11267 12232])
+            ("getITcmMask" function
+               (:parent "TCM"
+                :arguments 
+                  ( ("tcmSize" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12265 12286]))                  
+                :type "unsigned int")
+                nil [12235 12749])
+            ("getDTcmMask" function
+               (:parent "TCM"
+                :arguments 
+                  ( ("tcmSize" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12782 12803]))                  
+                :type "unsigned int")
+                nil [12752 13271])
+            ("getAddr" function
+               (:parent "TCM"
+                :arguments 
+                  ( ("place" variable (:type ("TCM_HIT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13300 13314])
+                    ("addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13315 13333]))                  
+                :type "unsigned int")
+                nil [13274 13975])
+            ("getDTcmBank" function
+               (:parent "TCM"
+                :arguments 
+                  ( ("pa" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14106 14122]))                  
+                :type ("CarbonUInt32" type (:type "class") nil nil))
+                nil [14076 14154])
+            ("getITcmBank" function
+               (:parent "TCM"
+                :arguments 
+                  ( ("pa" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14186 14202]))                  
+                :type "unsigned int")
+                nil [14156 14234]))          
+      :file "TCM.cpp"
+      :pointmax 14235
+      :fsize 12826
+      :lastmodtime '(23256 44362 632984 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ICM_Memory.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cpus/Plover/ICM_Memory.h" include nil nil [53 88])
+            ("cpus/Plover/ICM_MemSystem.h" include nil nil [89 127])
+            ("common/cpp14.h" include nil nil [128 153])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("CARBONMKLIBRARYPLOVER" type
+                       (:members 
+                          ( ("ICM_Memory" function
+                               (:constructor-flag t
+                                :parent "ICM_Memory"
+                                :arguments 
+                                  ( ("desc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("icm_impl::MemoryDescription" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [256 296])
+                                    ("mem_ports" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("icm_impl::MemoryPort" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [297 343])
+                                    ("compHelper" variable
+                                       (:pointer 1
+                                        :type ("ICMComponentHelper" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [372 403])
+                                    ("coreNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [404 421]))                                  
+                                :type ("ICM_Memory" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [233 538])
+                            ("memory_read" function
+                               (:parent "ICM_Memory"
+                                :arguments 
+                                  ( ("addr" variable
+                                       (:constant-flag t
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [573 593])
+                                    ("num_bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [594 613])
+                                    ("bytes_processed" variable
+                                       (:pointer 1
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [647 673])
+                                    ("buf" variable
+                                       (:pointer 1
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [674 687]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [544 870])
+                            ("memory_write" function
+                               (:parent "ICM_Memory"
+                                :arguments 
+                                  ( ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [907 921])
+                                    ("num_bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [922 941])
+                                    ("bytes_processed" variable
+                                       (:pointer 1
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [976 1002])
+                                    ("buf" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1003 1022]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [877 1200])
+                            ("end_of_reset" function
+                               (:parent "ICM_Memory"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1206 1293]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [193 1297]))                  
+                :type "namespace")
+                nil [155 1299]))          
+      :file "ICM_Memory.cpp"
+      :pointmax 1301
+      :fsize 1300
+      :lastmodtime '(23317 38556 934315 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ICM_MemSystem.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cpus/Plover/ICM_Memory.h" include nil nil [52 87])
+            ("cpus/Plover/ICM_MemSystem.h" include nil nil [88 126])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("CARBONMKLIBRARYPLOVER" type
+                       (:members 
+                          ( ("ICM_MemSystem" function
+                               (:constructor-flag t
+                                :parent "ICM_MemSystem"
+                                :arguments 
+                                  ( ("compHelper" variable
+                                       (:pointer 1
+                                        :type ("ICMComponentHelper" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [235 266])
+                                    ("procNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [267 284])
+                                    ("parent" variable
+                                       (:pointer 1
+                                        :type ("ICM_Memory" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [285 304]))                                  
+                                :type ("ICM_MemSystem" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [206 599])
+                            ("external_memory_read" function
+                               (:parent "ICM_MemSystem"
+                                :arguments 
+                                  ( ("memId" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [650 669])
+                                    ("tag_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [670 692])
+                                    ("buf" variable
+                                       (:pointer 1
+                                        :type ("CarbonUInt8" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [693 710]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [609 873])
+                            ("external_memory_write" function
+                               (:parent "ICM_MemSystem"
+                                :arguments 
+                                  ( ("memId" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [921 940])
+                                    ("tag_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [941 963])
+                                    ("buf" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("CarbonUInt8" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [964 987]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [879 1151]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [166 1155]))                  
+                :type "namespace")
+                nil [128 1157]))          
+      :file "ICM_MemSystem.cpp"
+      :pointmax 1159
+      :fsize 1158
+      :lastmodtime '(23053 62397 325832 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ICM_PloverRegisters.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cpus/Plover/ICM_PloverRegisters.h" include nil nil [121 165])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("CARBONMKLIBRARYPLOVER" type
+                       (:members 
+                          ( ("R_CoreRegisterDescription" function
+                               (:constructor-flag t
+                                :parent "R_CoreRegisterDescription"
+                                :arguments 
+                                  ( ("id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [335 350]))                                  
+                                :type ("R_CoreRegisterDescription" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [282 418])
+                            ("R_CoreRegister" function
+                               (:constructor-flag t
+                                :parent "R_CoreRegister"
+                                :arguments 
+                                  ( ("RegDesc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("R_CoreRegisterDescription" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [478 520])
+                                    ("virtual_regs" variable
+                                       (:pointer 1
+                                        :type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER::VirtualRegs" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [521 594])
+                                    ("index" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [595 614]))                                  
+                                :type ("R_CoreRegister" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [447 697])
+                            ("read" function
+                               (:parent "R_CoreRegister"
+                                :arguments 
+                                  ( ("data" variable
+                                       (:pointer 1
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [725 740]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [699 807])
+                            ("write" function
+                               (:parent "R_CoreRegister"
+                                :arguments 
+                                  ( ("data" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [839 860]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [812 966])
+                            ("CoreBankedRegisterDescription" function
+                               (:constructor-flag t
+                                :parent "CoreBankedRegisterDescription"
+                                :arguments 
+                                  ( ("id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1068 1083])
+                                    ("select_id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1084 1106])
+                                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [1107 1117]))                                  
+                                :type ("CoreBankedRegisterDescription" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1007 1234])
+                            ("addSelectCase" function
+                               (:parent "CoreBankedRegisterDescription"
+                                :arguments 
+                                  ( ("value" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1286 1301])
+                                    ("case_register_id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1302 1331]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1236 1409]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [204 1414]))                  
+                :type "namespace")
+                nil [167 1416]))          
+      :file "ICM_PloverRegisters.cpp"
+      :pointmax 1420
+      :fsize 1419
+      :lastmodtime '(23138 8392 939568 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "CarbonMemSystem.cpp.debuginfo"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [571 588])
+            ("sstream" include (:system-flag t) nil [589 607])
+            ("assert.h" include (:system-flag t) nil [608 627])
+            ("CARBONMEM_OVERRIDES" variable (:constant-flag t) nil [665 684])
+            ("carbon/carbon_capi.h" include nil nil [692 723])
+            ("carbon/carbon_dbapi.h" include nil nil [724 756])
+            ("cpus/Plover/CarbonMemSystem.h" include nil nil [758 798])
+            ("cpus/Plover/PloverCommon.h" include nil nil [799 836])
+            ("common/carbon_mkversion.h" include nil nil [837 873])
+            ("cpus/Plover/TCM.h" include nil nil [875 903])
+            ("cpus/Plover/DataCache.h" include nil nil [904 938])
+            ("cstring" include (:system-flag t) nil [940 958])
+            ("carbon/CarbonCADITypes.h" include nil nil [977 1012])
+            ("eslapi/CADI.h" include nil nil [1013 1037])
+            ("eslapi" using (:type ("eslapi" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1039 1062])
+            ("Carbon::ArchRestoreHandlerIF" using (:type ("Carbon::ArchRestoreHandlerIF" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1063 1108])
+            ("CARBON_MKLIB_NAMESPACE" using (:type ("CARBON_MKLIB_NAMESPACE" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1116 1155])
+            ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER" using (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYPLOVER" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1156 1218])
+            ("CarbonMemSystem" function
+               (:constructor-flag t
+                :parent "CarbonMemSystem"
+                :arguments 
+                  ( ("compHelper" variable
+                       (:pointer 1
+                        :type ("CarbonComponentHelperIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1253 1289])
+                    ("procInst" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1290 1308])
+                    ("cadi" variable
+                       (:pointer 1
+                        :type ("eslapi::CADI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1361 1380])
+                    ("mem_system_idx_m0" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1422 1453])
+                    ("mem_system_idx_m1" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1454 1504])
+                    ("sctlr_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1505 1527])
+                    ("rgnr_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1528 1545])
+                    ("drbar_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1546 1564])
+                    ("drsr_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1565 1582])
+                    ("dracr_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1583 1609]))                  
+                :type ("CarbonMemSystem" type (:type "class") nil nil))
+                nil [1220 2793])
+            ("CarbonMemSystem" function
+               (:destructor-flag t
+                :parent "CarbonMemSystem"
+                :type "void")
+                nil [2796 2950])
+            ("createTCM" function
+               (:parent "CarbonMemSystem"
+                :type "void")
+                nil [2952 3029])
+            ("createCache" function
+               (:parent "CarbonMemSystem"
+                :type "void")
+                nil [3031 3118])
+            ("read" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("idx_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3148 3170])
+                    ("tag_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3201 3223])
+                    ("bytes" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3254 3273])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3304 3317]))                  
+                :type "bool")
+                nil [3121 5229])
+            ("getTcmData" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("tag_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5275 5297]))                  
+                :type ("CarbonUInt8" type (:type "class") nil nil))
+                nil [5235 5547])
+            ("write" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("idx_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5577 5599])
+                    ("tag_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5631 5653])
+                    ("bytes" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5685 5704])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5736 5755]))                  
+                :type "bool")
+                nil [5549 7663])
+            ("setTcmData" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("tag_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7698 7720])
+                    ("memdata" variable
+                       (:pointer 1
+                        :type ("CarbonUInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7721 7743]))                  
+                :type "void")
+                nil [7665 7990])
+            ("setupAxiMasterFiltering" function
+               (:parent "CarbonMemSystem"
+                :type "void")
+                nil [7992 9154])
+            ("external_memory_read" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("memId" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9217 9236])
+                    ("tag_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9237 9259])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("CarbonUInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9260 9277]))                  
+                :type "bool")
+                nil [9174 9567])
+            ("external_memory_write" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("memId" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9613 9632])
+                    ("tag_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9633 9655])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CarbonUInt8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9656 9679]))                  
+                :type "bool")
+                nil [9569 9976])
+            ("restore" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10146 10170])
+                    ("stream" variable
+                       (:reference 1
+                        :type ("RestoreArchStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10171 10197]))                  
+                :type "int")
+                nil [10117 16872])
+            ("restoreRegisters" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("stream" variable
+                       (:reference 1
+                        :type ("RestoreArchStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17035 17061])
+                    ("numMPUReg" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17062 17082]))                  
+                :type "int")
+                nil [16997 19350])
+            ("regWrite" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("reg" variable
+                       (:reference 1
+                        :type ("eslapi::CADIReg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19386 19409])
+                    ("val" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19410 19423]))                  
+                :type "bool")
+                nil [19355 19643]))          
+      :file "CarbonMemSystem.cpp.debuginfo"
+      :pointmax 19974
+      :fsize 19973
+      :lastmodtime '(23446 52543 158255 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CARBONMEM_OVERRIDES")
+          )
+))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!src!cpus!Plover!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

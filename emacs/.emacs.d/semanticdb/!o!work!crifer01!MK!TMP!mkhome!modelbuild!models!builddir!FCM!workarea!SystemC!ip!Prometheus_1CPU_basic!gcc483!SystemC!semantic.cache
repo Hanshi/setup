@@ -1,0 +1,61 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("LINUX_DIR" variable (:default-value (".")) nil [87 101])
+            ("PACKAGE_LIB_DIR" variable (:default-value ("./lib")) nil [152 176])
+            ("COMP_NAME" variable (:default-value ("$(subst lib,,$(basename $(notdir $(wildcard $(PACKAGE_LIB_DIR)/lib*.a))))")) nil [274 360])
+            ("clean" function nil nil [361 386])
+            ("gen_code" function nil nil [387 397])
+            ("NUM_BIG_CORES" variable (:default-value ("1")) nil [434 452])
+            ("NUM_LITTLE_CORES" variable (:default-value ("0")) nil [452 473])
+            ("Makefile.internal" include nil nil [492 518])
+            ("CXX" variable (:default-value ("g++")) nil [581 589])
+            ("CXXFLAGS" variable (:default-value ("-fPIC" "-g" "-DCARBON_DUMP_VCD=0" "-std=c++11" "-I$(SYSTEMC_HOME)/include" "-I$(CARBON_HOME)/include" "$(CM_SYSC_CXXFLAGS)" "-I." "-I$(LINUX_DIR)" "-DUNIVENT_TARMAC=1" "-DNUM_LITTLE_CORES=$(NUM_LITTLE_CORES)" "-DNUM_BIG_CORES=$(NUM_BIG_CORES)")) nil [590 892])
+            ("ENABLE_PMU" variable (:default-value ("-DENABLE_PMU=1")) nil [893 919])
+            ("DISABLE_PMU" variable (:default-value ("-DENABLE_PMU=0")) nil [919 946])
+            ("TARMAC_OBJS" variable (:default-value ("Prometheus_tarmac.o")) nil [947 981])
+            ("OBJS" variable (:default-value ("$(COMP_NAME)Imp.o" "lib$(COMP_NAME).systemc.o" "$(TARMAC_OBJS)")) nil [982 1058])
+            ("OBJS_noPMU" variable (:default-value ("$(COMP_NAME)Imp_noPMU.o" "lib$(COMP_NAME)_noPMU.systemc.o" "$(TARMAC_OBJS)")) nil [1059 1153])
+            ("all" function (:arguments ("lib$(COMP_NAME)_noPMU.so" "lib$(COMP_NAME).so")) nil [1154 1203])
+            ("lib" function (:arguments ("$(OBJS_noPMU)")) nil [1204 1624])
+            ("lib" function (:arguments ("$(OBJS)")) nil [1625 2022])
+            ("$(COMP_NAME)" function (:arguments ("gen_code")) nil [2023 2053])
+            ("$(COMP_NAME)" function (:arguments ("$(COMP_NAME)Imp.cpp")) nil [2054 2140])
+            ("$(COMP_NAME)" function (:arguments ("$(COMP_NAME)Imp.cpp")) nil [2141 2234])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp" "gen_code")) nil [2235 2345])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp" "gen_code")) nil [2346 2463])
+            ("Prometheus_tarmac.cpp" function (:arguments ("gen_code")) nil [2464 2496])
+            ("Prometheus_tarmac.o" function (:arguments ("Prometheus_tarmac.cpp" "gen_code")) nil [2497 2582]))          
+      :file "Makefile"
+      :pointmax 2582
+      :fsize 2581
+      :lastmodtime '(22994 37945 897873 0)
+      :unmatched-syntax '((shell-command 2550 . 2581) (bol 2549 . 2549) (symbol 549 . 578) (semantic-list 535 . 549) (punctuation 534 . 535) (symbol 525 . 533) (bol 525 . 525) (symbol 210 . 218) (semantic-list 193 . 210) (punctuation 192 . 193) (punctuation 190 . 191) (punctuation 189 . 190) (symbol 176 . 188) (bol 176 . 176) (symbol 117 . 151) (punctuation 115 . 116) (punctuation 114 . 115) (symbol 101 . 113) (bol 101 . 101)))
+    (semanticdb-table "Makefile.internal"
+      :file "Makefile.internal"
+      :fsize 2776
+      :lastmodtime '(22994 37945 900874 0))
+    (semanticdb-table "libFCM.pmu_gen.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("common/CarbonComponentHelper.h" include nil nil [225 266])
+            ("carbon/carbon_capi.h" include nil nil [267 298])
+            ("cpus/FCM/CarbonProfile.h" include nil nil [299 334])
+            ("mMyCapi" variable
+               (:pointer 1
+                :type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYFCM::CarbonProfile" type (:type "class") nil nil))
+                nil [336 403])
+            ("main" function (:type "int") nil [405 559]))          
+      :file "libFCM.pmu_gen.cpp"
+      :pointmax 560
+      :fsize 559
+      :lastmodtime '(22994 37941 60873 0)
+      :unmatched-syntax nil))
+  :file "!o!work!crifer01!MK!TMP!mkhome!modelbuild!models!builddir!FCM!workarea!SystemC!ip!Prometheus_1CPU_basic!gcc483!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

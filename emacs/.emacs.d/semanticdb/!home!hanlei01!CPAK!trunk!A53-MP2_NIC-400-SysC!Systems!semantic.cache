@@ -1,0 +1,37 @@
+;; Object Systems/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Systems/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CORTEXA53_2CPU_AXI3Imp.h" include nil nil [801 836])
+            ("NIC400_APB4Imp.h" include nil nil [837 864])
+            ("BP140Imp.h" include nil nil [865 886])
+            ("BP140_TrickBoxImp.h" include nil nil [887 917])
+            ("scx_signal_sizer.h" include nil nil [918 947])
+            ("../perf_common.h" include nil nil [948 975])
+            ("iostream" include (:system-flag t) nil [976 995])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [997 1021])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1035 1044])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1045 1058]))                  
+                :type "int")
+                nil [1023 26307]))          
+      :file "system_test.cpp"
+      :pointmax 26308
+      :fsize 26307
+      :lastmodtime '(22812 34070 233649 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!CPAK!trunk!A53-MP2_NIC-400-SysC!Systems!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,44 @@
+;; Object Systems/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Systems/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/SimpleFlash.h" include nil nil [831 862])
+            ("models/SimpleFlashImp.h" include nil nil [863 897])
+            ("models/RAMBlock.h" include nil nil [898 926])
+            ("models/SimpleBus.h" include nil nil [927 956])
+            ("models/BasicUART.h" include nil nil [957 986])
+            ("models/ElfLoader.h" include nil nil [987 1016])
+            ("libCortexR52.tlm.h" include nil nil [1017 1046])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [1047 1093])
+            ("iostream" include (:system-flag t) nil [1095 1114])
+            ("scx/scx.h" include (:system-flag t) nil [1116 1136])
+            ("scx_simcontroller.cpp" include (:system-flag t) nil [1137 1169])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1170 1206])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1207 1240])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1242 1266])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1280 1289])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1290 1303]))                  
+                :type "int")
+                nil [1268 5988]))          
+      :file "system_test.cpp"
+      :pointmax 5989
+      :fsize 5988
+      :lastmodtime '(23449 38991 806643 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!OoBT!Sep_2018!R52-SysC-V10.0.0-CMS10.0.0-MK2018.09.17-SOCD9.6.0!Systems!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,315 @@
+;; Object memaccess/
+;; SEMANTICDB Tags save file
+    (semanticdb-project-database-file "memaccess/"
+      :tables
+      (list
+        (semanticdb-table "CarbonArmMemAccess.cxx"
+          :major-mode 'c++-mode
+          :tags 
+        '( ("CarbonArmMemAccess.h" include nil nil [494 525])
+            ("iostream" include (:system-flag t) nil [526 545])
+            ("assert.h" include nil nil [546 565])
+            ("math.h" include nil nil [566 583])
+            ("common/carbon_mkversion.h" include nil nil [584 620])
+            ("cpus/CarbonCpuTypes.h" include nil nil [621 653])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("CarbonArmMemAccessBase" function
+                       (:constructor-flag t
+                        :parent "CarbonArmMemAccessBase"
+                        :type ("CarbonArmMemAccessBase" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [693 749])
+                    ("isEnabled" function
+                       (:parent "CarbonArmMemAccessBase"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [753 872])
+                    ("areWriteBuffersEnabled" function
+                       (:parent "CarbonArmMemAccessBase"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [876 1019])
+                    ("isDataCacheEnabled" function
+                       (:parent "CarbonArmMemAccessBase"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1023 1159])
+                    ("isS2Enabled" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1300 1420])
+                    ("isMMUEnabled" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1424 1544])
+                    ("isSecure" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1581 1658])
+                    ("getCurrentEL" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :type ("CarbonTrustZone::exceptionLevel" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1725 2291])
+                    ("hasEL2" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2297 2725])
+                    ("paMax" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [2731 3026])
+                    ("transFullTableWalk" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :arguments 
+                          ( ("va" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3885 3895]))                          
+                        :type ("CarbonTransTableEntry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3822 4316])
+                    ("getFirstStageTranslate" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :arguments 
+                          ( ("mva" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4738 4749]))                          
+                        :type ("CarbonTransTableEntry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4671 5103])
+                    ("getTransAddr1Off" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :arguments 
+                          ( ("mva" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [5248 5271]))                          
+                        :type ("CarbonTransTableEntry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5187 5497])
+                    ("is64BitPhysicalAddressMode" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [5501 5880])
+                    ("getSecondStageWalk" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :arguments 
+                          ( ("address" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5970 5985])
+                            ("mva" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5986 5997])
+                            ("isSecondStage" variable (:type "bool") (reparse-symbol arg-sub-list) [5998 6017]))                          
+                        :type ("CarbonTransTableEntry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5907 6250])
+                    ("getSecondStageTranslate" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :arguments 
+                          ( ("address" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6537 6552])
+                            ("mva" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6553 6564])
+                            ("isSecondStage" variable (:type "bool") (reparse-symbol arg-sub-list) [6565 6584]))                          
+                        :type ("CarbonTransTableEntry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6469 7003])
+                    ("getPageTableZeroSize" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :arguments 
+                          ( ("el" variable (:type ("CarbonTrustZone::exceptionLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7261 7296]))                          
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [7205 7612])
+                    ("getPageTableFirstSize" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :arguments 
+                          ( ("el" variable (:type ("CarbonTrustZone::exceptionLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7872 7907]))                          
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [7815 8223])
+                    ("getTop" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :arguments 
+                          ( ("mva_addr" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8423 8439]))                          
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [8381 8652])
+                    ("isOnes" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :arguments 
+                          ( ("mva_addr" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8759 8775])
+                            ("top" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8776 8793])
+                            ("bottom" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8794 8814]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [8725 8999])
+                    ("getPhysicalAddrSize" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :arguments 
+                          ( ("el" variable (:type ("CarbonTrustZone::exceptionLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9224 9259]))                          
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [9169 10246])
+                    ("getElTTBR0" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :arguments 
+                          ( ("el" variable (:type ("CarbonTrustZone::exceptionLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10366 10401]))                          
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10324 10755])
+                    ("getElTTBR1" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :arguments 
+                          ( ("el" variable (:type ("CarbonTrustZone::exceptionLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10875 10910]))                          
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10833 10969])
+                    ("getT0SZSize" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :arguments 
+                          ( ("el" variable (:type ("CarbonTrustZone::exceptionLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11162 11197]))                          
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [11115 11485])
+                    ("getT1SZSize" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :arguments 
+                          ( ("el" variable (:type ("CarbonTrustZone::exceptionLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11683 11718]))                          
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [11636 12038])
+                    ("getTransTableWalk" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :arguments 
+                          ( ("ipa_address" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13816 13835])
+                            ("mva" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13836 13847])
+                            ("is_second_stage" variable (:type "bool") (reparse-symbol arg-sub-list) [13848 13869]))                          
+                        :type ("CarbonTransTableEntry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13754 26218])
+                    ("transTableWalk" function
+                       (:parent "CarbonArmMemAccessBase"
+                        :arguments 
+                          ( ("va" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26287 26297]))                          
+                        :type ("CarbonTransTableEntry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [26226 26963])
+                    ("getShortDescFirstTransTableEntry" function
+                       (:parent "CarbonArmMemAccessBase"
+                        :arguments 
+                          ( ("mva" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27046 27057]))                          
+                        :type ("CarbonTransTableEntry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [26967 28723])
+                    ("getShortDescSecondTransTableEntry" function
+                       (:parent "CarbonArmMemAccessBase"
+                        :arguments 
+                          ( ("addr" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28809 28821])
+                            ("mva" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28822 28833])
+                            ("tinyPages" variable (:type "bool") (reparse-symbol arg-sub-list) [28894 28909]))                          
+                        :type ("CarbonTransTableEntry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [28727 30646])
+                    ("L1MemoryReadLE32" function
+                       (:parent "CarbonArmMemAccessBase"
+                        :arguments 
+                          ( ("va" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30704 30714])
+                            ("pa" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30715 30725]))                          
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [30650 31201])
+                    ("<<" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("o" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31230 31246])
+                            ("table" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CarbonTransTableEntry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31247 31282]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [31205 32307])
+                    ("CarbonArmV6MemAccess" function
+                       (:constructor-flag t
+                        :parent "CarbonArmV6MemAccess"
+                        :type ("CarbonArmV6MemAccess" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [32311 32363])
+                    ("getShortDescLevel1TransTableAddr" function
+                       (:parent "CarbonArmV6MemAccess"
+                        :arguments 
+                          ( ("mva" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32429 32440]))                          
+                        :type ("addr_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [32367 33516])
+                    ("isBigEndianPT" function
+                       (:parent "CarbonArmV6MemAccess"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [33520 33721])
+                    ("CarbonArmV5MemAccess" function
+                       (:constructor-flag t
+                        :parent "CarbonArmV5MemAccess"
+                        :type ("CarbonArmV5MemAccess" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [33725 33777])
+                    ("getShortDescLevel1TransTableAddr" function
+                       (:parent "CarbonArmV5MemAccess"
+                        :arguments 
+                          ( ("mva" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33843 33854]))                          
+                        :type ("addr_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [33781 34066])
+                    ("CarbonArmLPAMemAccess" function
+                       (:constructor-flag t
+                        :parent "CarbonArmLPAMemAccess"
+                        :arguments 
+                          ( ("trustZone" variable (:type ("CarbonTrustZone::TrustZone" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34115 34152]))                          
+                        :type ("CarbonArmLPAMemAccess" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [34070 34188])
+                    ("CarbonArmV8MemAccess" function
+                       (:constructor-flag t
+                        :parent "CarbonArmV8MemAccess"
+                        :arguments 
+                          ( ("trustZone" variable (:type ("CarbonTrustZone::TrustZone" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34235 34272]))                          
+                        :type ("CarbonArmV8MemAccess" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [34192 34342])
+                    ("isLargePhysicalAddressMode" function
+                       (:parent "CarbonArmLPAMemAccess"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [34348 34609])
+                    ("transTableWalk" function
+                       (:parent "CarbonArmLPAMemAccess"
+                        :arguments 
+                          ( ("va" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34673 34683]))                          
+                        :type ("CarbonTransTableEntry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [34613 35011])
+                    ("transTableWalk" function
+                       (:parent "CarbonArmV8MemAccess"
+                        :arguments 
+                          ( ("va" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35074 35084]))                          
+                        :type ("CarbonTransTableEntry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [35015 35356])
+                    ("longDescTransTableWalk" function
+                       (:parent "CarbonArmLPAMemAccess"
+                        :arguments 
+                          ( ("va" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35430 35440]))                          
+                        :type ("CarbonTransTableEntry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [35362 37968])
+                    ("longDescTransStageTableWalk" function
+                       (:parent "CarbonArmLPAMemAccess"
+                        :arguments 
+                          ( ("pageTableAddr" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38047 38068])
+                            ("regionSize" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38069 38087])
+                            ("addr" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38141 38153])
+                            ("stage" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [38154 38173]))                          
+                        :type ("CarbonTransTableEntry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [37972 39239])
+                    ("getLongDescPageTableEntry" function
+                       (:parent "CarbonArmLPAMemAccess"
+                        :arguments 
+                          ( ("pageTableAddr" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39316 39337])
+                            ("addr" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39338 39350])
+                            ("stage" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [39351 39370])
+                            ("level" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [39423 39442]))                          
+                        :type ("CarbonTransTableEntry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [39243 42950])
+                    ("getLongDescPageTableAddr" function
+                       (:parent "CarbonArmLPAMemAccess"
+                        :arguments 
+                          ( ("va" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43007 43017])
+                            ("ttbr0" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [43018 43043])
+                            ("ttbr1" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [43099 43124])
+                            ("t0Size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [43125 43145])
+                            ("t1Size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [43201 43221])
+                            ("baseAddr" variable
+                               (:pointer 1
+                                :type ("addr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [43222 43239])
+                            ("regionSize" variable
+                               (:pointer 1
+                                :type ("addr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [43295 43314]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [42954 44948])
+                    ("L1MemoryReadLE64" function
+                       (:parent "CarbonArmLPAMemAccess"
+                        :arguments 
+                          ( ("va" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45011 45021])
+                            ("pa" variable (:type ("addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45022 45032]))                          
+                        :type "unsigned long long")
+                        (reparse-symbol namespacesubparts) [44952 45784]))                  
+                :type "namespace")
+                nil [655 45787]))          
+          :file "CarbonArmMemAccess.cxx"
+          :pointmax 45820
+          :fsize 45843
+          :lastmodtime '(22629 24150 0 0)
+          :unmatched-syntax nil))
+      :file "!home!hanlei01!ModelKits!trunk!modelkits!src!cpus!common!memaccess!semantic.cache"
+      :semantic-tag-version "2.0"
+      :semanticdb-version "2.2")

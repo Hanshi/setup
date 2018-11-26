@@ -1,0 +1,19 @@
+;; Object Breakpoints/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Breakpoints/"
+  :tables
+  (list
+    (semanticdb-table "breakpoints.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("init_regs" variable (:type "int") nil [10 20])
+            ("init_neon_regs" variable (:type "int") nil [30 45])
+            ("bootcode" variable (:type "int") nil [56 65]))          
+      :file "breakpoints.h"
+      :pointmax 66
+      :fsize 65
+      :lastmodtime '(22982 53790 178182 0)
+      :unmatched-syntax '((punctuation 54 . 55) (number 50 . 53) (INT 46 . 49) (punctuation 28 . 29) (number 25 . 27) (INT 21 . 24) (punctuation 8 . 9) (number 5 . 7) (INT 1 . 4))))
+  :file "!o!work!bosqa!IMK!MK_mainline!arm!TEST-7825_all-2017-Sep-22-1152PM!gcc483!test!cpus!Kite!Simulation!Breakpoints!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

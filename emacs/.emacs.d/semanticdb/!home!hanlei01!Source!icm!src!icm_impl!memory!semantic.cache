@@ -1,0 +1,130 @@
+;; Object memory/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "memory/"
+  :tables
+  (list
+    (semanticdb-table "Memory.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("fmt/format.h" include nil nil [53 76])
+            ("icm_impl/exceptions.h" include nil nil [77 109])
+            ("icm_impl/icm_logger.h" include nil nil [110 142])
+            ("boost/current_function.hpp" include (:system-flag t) nil [143 180])
+            ("icm_impl/memory/Memory.h" include nil nil [181 216])
+            ("fmt" using (:type ("fmt" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [218 238])
+            ("icm_impl" type
+               (:members 
+                  ( ("Memory" function
+                       (:constructor-flag t
+                        :parent "Memory"
+                        :arguments 
+                          ( ("desc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MemoryDescription" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [278 308])
+                            ("mem_ports" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("MemoryPort" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [309 345]))                          
+                        :type ("Memory" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [263 605])
+                    ("Memory" function
+                       (:destructor-flag t
+                        :parent "Memory"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [611 631])
+                    ("memory_read" function
+                       (:parent "Memory"
+                        :arguments 
+                          ( ("addr" variable
+                               (:constant-flag t
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [802 822])
+                            ("num_bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [823 842])
+                            ("bytes_processed" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [870 896])
+                            ("buf" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [897 910]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [777 975])
+                    ("memory_write" function
+                       (:parent "Memory"
+                        :arguments 
+                          ( ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1145 1159])
+                            ("num_bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1160 1179])
+                            ("bytes_processed" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1208 1234])
+                            ("buf" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1235 1254]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1119 1320])
+                    ("read_port" function
+                       (:parent "Memory"
+                        :arguments 
+                          ( ("port_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1347 1364])
+                            ("addr" variable
+                               (:constant-flag t
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1365 1385])
+                            ("num_bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1386 1405])
+                            ("bytes_processed" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1431 1457])
+                            ("buf" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1458 1471]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1324 2316])
+                    ("write_port" function
+                       (:parent "Memory"
+                        :arguments 
+                          ( ("port_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2344 2361])
+                            ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2362 2376])
+                            ("num_bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2377 2396])
+                            ("bytes_processed" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2423 2449])
+                            ("buf" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2450 2469]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2320 3324])
+                    ("reset_done" function
+                       (:parent "Memory"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3328 3361])
+                    ("print" function
+                       (:parent "Memory"
+                        :arguments 
+                          ( ("prefix" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3391 3410]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3365 3752]))                  
+                :type "namespace")
+                nil [240 3754]))          
+      :file "Memory.cpp"
+      :pointmax 3755
+      :fsize 3754
+      :lastmodtime '(23142 19831 889955 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!Source!icm!src!icm_impl!memory!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

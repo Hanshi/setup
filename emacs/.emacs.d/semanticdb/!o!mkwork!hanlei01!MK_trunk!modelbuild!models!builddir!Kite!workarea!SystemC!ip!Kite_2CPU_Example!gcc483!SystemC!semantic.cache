@@ -1,0 +1,1165 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "univent_tarmac.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("univent_tarmac.h" include nil nil [801 828])
+            ("svGetNameFromScope" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("scope" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6085 6097]))                  
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [6060 6137])
+            ("svGetScope" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [6016 6057])
+            ("kite_tarmac_ed79377e_shaper_13" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("threadid" variable (:type "int") (reparse-symbol arg-sub-list) [5963 5981]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5924 5982])
+            ("kite_tarmac_ed79377e_shaper_12" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("threadid" variable (:type "int") (reparse-symbol arg-sub-list) [5452 5470])
+                    ("cpsr_regfile_en" variable (:type "bool") (reparse-symbol arg-sub-list) [5470 5496])
+                    ("spsr_abt_sample" variable (:type "bool") (reparse-symbol arg-sub-list) [5496 5522])
+                    ("spsr_fiq_sample" variable (:type "bool") (reparse-symbol arg-sub-list) [5522 5548])
+                    ("spsr_hyp_sample" variable (:type "bool") (reparse-symbol arg-sub-list) [5548 5574])
+                    ("spsr_irq_sample" variable (:type "bool") (reparse-symbol arg-sub-list) [5574 5600])
+                    ("spsr_svc_sample" variable (:type "bool") (reparse-symbol arg-sub-list) [5600 5626])
+                    ("spsr_und_sample" variable (:type "bool") (reparse-symbol arg-sub-list) [5626 5652])
+                    ("cpsr_ret_full_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5652 5685])
+                    ("nxt_cpsr_ret_full_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5685 5722])
+                    ("spsr_abt_full_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5722 5755])
+                    ("spsr_fiq_full_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5755 5788])
+                    ("spsr_hyp_full_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5788 5821])
+                    ("spsr_irq_full_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5821 5854])
+                    ("spsr_svc_full_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5854 5887])
+                    ("spsr_und_full_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5887 5920]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5413 5921])
+            ("kite_tarmac_ed79377e_shaper_11" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("threadid" variable (:type "int") (reparse-symbol arg-sub-list) [5352 5370])
+                    ("instr_done_count_f5_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5370 5409]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5313 5410])
+            ("kite_tarmac_ed79377e_shaper_10" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("threadid" variable (:type "int") (reparse-symbol arg-sub-list) [5185 5203])
+                    ("load_dtrtx" variable (:type "bool") (reparse-symbol arg-sub-list) [5203 5224])
+                    ("dscr_ext_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5224 5252])
+                    ("dscr_int_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5252 5280])
+                    ("nxt_dtrtx_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5280 5309]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5146 5310])
+            ("kite_tarmac_ed79377e_shaper_9" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("threadid" variable (:type "int") (reparse-symbol arg-sub-list) [4896 4914])
+                    ("dpu_cp_valid_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [4914 4940])
+                    ("dpu_ready_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [4940 4963])
+                    ("ns_scr" variable (:type "bool") (reparse-symbol arg-sub-list) [4963 4980])
+                    ("dpu_cp_op_wr_9_0" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4980 5011])
+                    ("dpu_raw_cp_decode_wr_6_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5011 5049])
+                    ("ls_size_wr_1_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5049 5077])
+                    ("mcr_data_wr_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5077 5108])
+                    ("raw_cp_decode_wr_7_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5108 5142]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4858 5143])
+            ("kite_tarmac_ed79377e_shaper_8" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("threadid" variable (:type "int") (reparse-symbol arg-sub-list) [4763 4781])
+                    ("instr_count_f4_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4781 4815])
+                    ("unflushable_sfmac_iss_1_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4815 4854]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4725 4855])
+            ("kite_tarmac_ed79377e_shaper_7" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("threadid" variable (:type "int") (reparse-symbol arg-sub-list) [4350 4368])
+                    ("unflushable_sfdiv_f5" variable (:type "bool") (reparse-symbol arg-sub-list) [4368 4399])
+                    ("instr_count_f5_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4399 4433])
+                    ("rf_wr_addr_fw0_f5_4_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4433 4468])
+                    ("rf_wr_addr_fw1_f5_4_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4468 4503])
+                    ("rf_wr_data_fw0_f5_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4503 4540])
+                    ("rf_wr_data_fw1_f5_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4540 4577])
+                    ("rf_wr_en_fw0_f5_3_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4577 4610])
+                    ("rf_wr_en_fw1_f5_3_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4610 4643])
+                    ("sfmac_instr_count_f5_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4643 4683])
+                    ("unflushable_sfmac_f5_1_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4683 4721]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4312 4722])
+            ("kite_tarmac_ed79377e_shaper_6" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("threadid" variable (:type "int") (reparse-symbol arg-sub-list) [4255 4273])
+                    ("lsu_cp_reg_data_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4273 4308]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4217 4309])
+            ("kite_tarmac_ed79377e_shaper_5" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("threadid" variable (:type "int") (reparse-symbol arg-sub-list) [3724 3742])
+                    ("expt_en_dfar" variable (:type "bool") (reparse-symbol arg-sub-list) [3742 3765])
+                    ("expt_en_dfsr" variable (:type "bool") (reparse-symbol arg-sub-list) [3765 3788])
+                    ("expt_en_hcr" variable (:type "bool") (reparse-symbol arg-sub-list) [3788 3810])
+                    ("expt_en_hdfar" variable (:type "bool") (reparse-symbol arg-sub-list) [3810 3834])
+                    ("expt_en_hifar" variable (:type "bool") (reparse-symbol arg-sub-list) [3834 3858])
+                    ("expt_en_hpfar" variable (:type "bool") (reparse-symbol arg-sub-list) [3858 3882])
+                    ("expt_en_hsr" variable (:type "bool") (reparse-symbol arg-sub-list) [3882 3904])
+                    ("expt_en_ifar" variable (:type "bool") (reparse-symbol arg-sub-list) [3904 3927])
+                    ("expt_en_ifsr" variable (:type "bool") (reparse-symbol arg-sub-list) [3927 3950])
+                    ("cp_hpfar_rd_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3950 3981])
+                    ("cp_hsr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3981 4007])
+                    ("dfar_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4007 4031])
+                    ("expt_dfsr_full_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4031 4065])
+                    ("hcr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4065 4088])
+                    ("hcr2_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4088 4112])
+                    ("hdfar_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4112 4137])
+                    ("hifar_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4137 4162])
+                    ("ifar_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4162 4186])
+                    ("ifsr_rd_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4186 4213]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3686 4214])
+            ("kite_tarmac_ed79377e_shaper_4" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("threadid" variable (:type "int") (reparse-symbol arg-sub-list) [3144 3162])
+                    ("en_restore" variable (:type "bool") (reparse-symbol arg-sub-list) [3162 3183])
+                    ("forceop_valid_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [3183 3210])
+                    ("harzarded_div_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [3210 3237])
+                    ("rf_wr_en_w0_unsuppressed_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [3237 3275])
+                    ("rf_wr_en_w0_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [3275 3300])
+                    ("rf_wr_en_w1_unsuppressed_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [3300 3338])
+                    ("rf_wr_en_w1_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [3338 3363])
+                    ("rf_wr_en_w2_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [3363 3388])
+                    ("w0_slot1_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [3388 3410])
+                    ("valid_instrs_wr_1" variable (:type "bool") (reparse-symbol arg-sub-list) [3410 3438])
+                    ("instr_count_wr_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3438 3472])
+                    ("rf_wr_addr_w0_wr_5_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3472 3506])
+                    ("rf_wr_addr_w1_wr_5_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3506 3540])
+                    ("rf_wr_addr_w2_wr_5_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3540 3574])
+                    ("rf_wr_data_w0_wr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3574 3610])
+                    ("rf_wr_data_w1_wr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3610 3646])
+                    ("rf_wr_data_w2_wr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3646 3682]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3106 3683])
+            ("kite_tarmac_ed79377e_shaper_3" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("threadid" variable (:type "int") (reparse-symbol arg-sub-list) [2737 2755])
+                    ("enter_halt_ret" variable (:type "bool") (reparse-symbol arg-sub-list) [2755 2780])
+                    ("expt_ecc_reexec" variable (:type "bool") (reparse-symbol arg-sub-list) [2780 2806])
+                    ("expt_ext_halt_ret" variable (:type "bool") (reparse-symbol arg-sub-list) [2806 2834])
+                    ("expt_fiq_ret" variable (:type "bool") (reparse-symbol arg-sub-list) [2834 2857])
+                    ("expt_imprecise_ret" variable (:type "bool") (reparse-symbol arg-sub-list) [2857 2886])
+                    ("expt_irq_ret" variable (:type "bool") (reparse-symbol arg-sub-list) [2886 2909])
+                    ("expt_reset_ret" variable (:type "bool") (reparse-symbol arg-sub-list) [2909 2934])
+                    ("expt_slot1" variable (:type "bool") (reparse-symbol arg-sub-list) [2934 2955])
+                    ("expt_vfiq_ret" variable (:type "bool") (reparse-symbol arg-sub-list) [2955 2979])
+                    ("expt_vimprecise_ret" variable (:type "bool") (reparse-symbol arg-sub-list) [2979 3009])
+                    ("expt_virq_ret" variable (:type "bool") (reparse-symbol arg-sub-list) [3009 3033])
+                    ("exception_mode_ret_3_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3033 3069])
+                    ("expt_vec_offset_4_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3069 3102]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2699 3103])
+            ("kite_tarmac_ed79377e_shaper_2" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("threadid" variable (:type "int") (reparse-symbol arg-sub-list) [2227 2245])
+                    ("ls_store_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [2245 2267])
+                    ("lsu_abort_ls3" variable (:type "bool") (reparse-symbol arg-sub-list) [2267 2291])
+                    ("lsu_strex_fail_ls3" variable (:type "bool") (reparse-symbol arg-sub-list) [2291 2320])
+                    ("lsu_wpt_hit_ls3" variable (:type "bool") (reparse-symbol arg-sub-list) [2320 2346])
+                    ("mem_is_flash" variable (:type "bool") (reparse-symbol arg-sub-list) [2346 2369])
+                    ("mem_is_tcm" variable (:type "bool") (reparse-symbol arg-sub-list) [2369 2390])
+                    ("slot1_ls_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [2390 2412])
+                    ("valid_instrs_wr_1" variable (:type "bool") (reparse-symbol arg-sub-list) [2412 2440])
+                    ("dpu_st_data_wr_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2440 2474])
+                    ("instr_count_wr_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2474 2508])
+                    ("lsu_ld_data_ls3_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2508 2543])
+                    ("mem_addr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2543 2571])
+                    ("mem_inner_attrs_3_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2571 2604])
+                    ("mem_outer_attrs_3_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2604 2637])
+                    ("shareability_1_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2637 2667])
+                    ("strobe_ls3_7_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2667 2695]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2189 2696])
+            ("kite_tarmac_ed79377e_shaper_1" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("threadid" variable (:type "int") (reparse-symbol arg-sub-list) [2008 2026])
+                    ("cc_pass_instr1_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [2026 2054])
+                    ("size_instr1_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [2054 2079])
+                    ("slot1_fp_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [2079 2101])
+                    ("undef1_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [2101 2121])
+                    ("instr1_addr_wr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2121 2155])
+                    ("opcode1_wr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2155 2185]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1970 2186])
+            ("kite_tarmac_ed79377e_shaper_0" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("threadid" variable (:type "int") (reparse-symbol arg-sub-list) [1185 1203])
+                    ("all_traps_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [1203 1226])
+                    ("cc_pass_instr0_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [1226 1254])
+                    ("cc_pass_instr1_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [1254 1282])
+                    ("expt_instr_fault_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [1282 1312])
+                    ("expt_pc_align_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [1312 1339])
+                    ("fdivs_valid_f3" variable (:type "bool") (reparse-symbol arg-sub-list) [1339 1364])
+                    ("in_halt" variable (:type "bool") (reparse-symbol arg-sub-list) [1364 1382])
+                    ("ns_scr" variable (:type "bool") (reparse-symbol arg-sub-list) [1382 1399])
+                    ("sideband_hw_bkpt_vc0_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [1399 1433])
+                    ("size_instr0_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [1433 1458])
+                    ("size_instr1_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [1458 1483])
+                    ("slot0_br_flush_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [1483 1511])
+                    ("slot1_fp_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [1511 1533])
+                    ("take_il_trap_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [1533 1559])
+                    ("undef0_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [1559 1579])
+                    ("undef1_wr" variable (:type "bool") (reparse-symbol arg-sub-list) [1579 1599])
+                    ("valid_instrs_wr_1" variable (:type "bool") (reparse-symbol arg-sub-list) [1599 1627])
+                    ("cpsr_ret_full_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1627 1660])
+                    ("instr0_addr_wr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1660 1694])
+                    ("instr1_addr_wr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1694 1728])
+                    ("instr_count_wr_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1728 1762])
+                    ("isa_instr0_wr_1_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1762 1793])
+                    ("isa_instr1_wr_1_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1793 1824])
+                    ("opcode0_wr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1824 1854])
+                    ("opcode1_wr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1854 1884])
+                    ("rf_wr_ctl_fw0_neon_wr_20_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1884 1925])
+                    ("rf_wr_ctl_fw1_neon_wr_20_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1925 1966]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1147 1967])
+            ("kite_tarmac_ed79377e_update_time_value" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1085 1094])
+                    ("" variable (:type "long long") (reparse-symbol arg-sub-list) [1095 1105]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1041 1106])
+            ("kite_tarmac_ed79377e_enable_range" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [993 1002])
+                    ("start" variable
+                       (:pointer 1
+                        :type "long long")
+                        (reparse-symbol arg-sub-list) [1003 1020])
+                    ("stop" variable
+                       (:pointer 1
+                        :type "long long")
+                        (reparse-symbol arg-sub-list) [1021 1037]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [954 1038])
+            ("kite_tarmac_ed79377e_terminate_id" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [941 950]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [902 951])
+            ("kite_tarmac_ed79377e_declare_1" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [881 898]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [846 899])
+            ("univent_tarmac_trigger" function
+               (:arguments 
+                  ( ("id" variable
+                       (:pointer 1
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6218 6237])
+                    ("net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6238 6255])
+                    ("user_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6256 6272])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6273 6292])
+                    ("drive" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6294 6314]))                  
+                :type "void")
+                nil [6190 6629])
+            ("debug" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [6631 6657])
+            ("univent_tarmac_core" function
+               (:constructor-flag t
+                :parent "univent_tarmac_core"
+                :arguments 
+                  ( ("handle" variable
+                       (:pointer 1
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6715 6738])
+                    ("path" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6738 6761])
+                    ("logfile_prefix" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6761 6788]))                  
+                :type ("univent_tarmac_core" type (:type "class") nil nil))
+                nil [6674 24054])
+            ("univent_tarmac_core" function
+               (:destructor-flag t
+                :parent "univent_tarmac_core"
+                :type "void")
+                nil [24070 24174])
+            ("dump" function
+               (:parent "univent_tarmac_core"
+                :type "void")
+                nil [24205 48438])
+            ("univent_tarmac_cores" variable
+               (:typemodifiers ("static")
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("univent_tarmac_core" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [48440 48502])
+            ("univent_tarmac_initialize" function
+               (:arguments 
+                  ( ("handle" variable
+                       (:pointer 1
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48535 48558])
+                    ("logfile_prefix" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48558 48585]))                  
+                :type "void")
+                nil [48504 48961])
+            ("univent_tarmac_terminate" function (:type "void") nil [48963 49133]))          
+      :file "univent_tarmac.cpp"
+      :pointmax 49134
+      :fsize 49133
+      :lastmodtime '(22877 17833 973822 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "univent_tarmac.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_univent_tarmac_H_" variable (:constant-flag t) nil [835 853])
+            ("__CARBON_SYS_INCLUDE_H__" variable (:constant-flag t) nil [862 886])
+            ("string" include (:system-flag t) nil [887 904])
+            ("cctype" include (:system-flag t) nil [905 922])
+            ("systemc.h" include nil nil [924 944])
+            ("carbon/carbon_sc_multiwrite_signal.h" include nil nil [945 992])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [994 1014])
+            ("carbon/carbon_capi.h" include nil nil [1040 1071])
+            ("carbon/carbon_dbapi.h" include nil nil [1102 1134])
+            ("univent_tarmac_initialize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("handle" variable
+                       (:pointer 1
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1174 1197])
+                    ("logfile_prefix" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :default-value "NULL"
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1197 1228]))                  
+                :type "void")
+                nil [1143 1230])
+            ("univent_tarmac_terminate" function
+               (:prototype-flag t
+                :type "void")
+                nil [1231 1263])
+            ("univent_tarmac_core" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1293 1300])
+                    ("univent_tarmac_core" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("handle" variable
+                               (:pointer 1
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1323 1346])
+                            ("path" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1346 1369])
+                            ("logfile_prefix" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1369 1396]))                          
+                        :type ("univent_tarmac_core" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1303 1397])
+                    ("univent_tarmac_core" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1400 1423])
+                    ("dump" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1426 1438])
+                    ("private" label nil (reparse-symbol classsubparts) [1439 1447])
+                    ("instr_count_wr_63_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1500 1537])
+                    ("isa_instr0_wr_1_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1538 1573])
+                    ("isa_instr1_wr_1_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1574 1609])
+                    ("opcode0_wr_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1610 1643])
+                    ("opcode1_wr_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1644 1677])
+                    ("instr0_addr_wr_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1678 1715])
+                    ("instr1_addr_wr_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1716 1753])
+                    ("cpsr_ret_full_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1754 1790])
+                    ("rf_wr_ctl_fw0_neon_wr_20_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1791 1835])
+                    ("rf_wr_ctl_fw1_neon_wr_20_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1836 1880])
+                    ("valid_instrs_wr_1_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1881 1916])
+                    ("size_instr0_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1917 1949])
+                    ("size_instr1_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1950 1982])
+                    ("cc_pass_instr0_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1983 2018])
+                    ("cc_pass_instr1_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2019 2054])
+                    ("ns_scr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2055 2079])
+                    ("in_halt_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2080 2105])
+                    ("fdivs_valid_f3_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2106 2138])
+                    ("slot0_br_flush_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2139 2174])
+                    ("undef0_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2175 2202])
+                    ("undef1_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2203 2230])
+                    ("expt_instr_fault_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2231 2268])
+                    ("sideband_hw_bkpt_vc0_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2269 2310])
+                    ("take_il_trap_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2311 2344])
+                    ("all_traps_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2345 2375])
+                    ("slot1_fp_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2376 2405])
+                    ("expt_pc_align_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2406 2440])
+                    ("dpu_st_data_wr_63_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2441 2478])
+                    ("lsu_ld_data_ls3_63_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2479 2517])
+                    ("mem_addr_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2518 2549])
+                    ("strobe_ls3_7_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2550 2582])
+                    ("mem_inner_attrs_3_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2583 2620])
+                    ("mem_outer_attrs_3_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2621 2658])
+                    ("shareability_1_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2659 2693])
+                    ("slot1_ls_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2694 2723])
+                    ("ls_store_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2724 2753])
+                    ("lsu_wpt_hit_ls3_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2754 2787])
+                    ("lsu_strex_fail_ls3_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2788 2824])
+                    ("lsu_abort_ls3_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2825 2856])
+                    ("mem_is_flash_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2857 2887])
+                    ("mem_is_tcm_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2888 2916])
+                    ("expt_vec_offset_4_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2917 2954])
+                    ("exception_mode_ret_3_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2955 2995])
+                    ("expt_slot1_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2996 3024])
+                    ("expt_reset_ret_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3025 3057])
+                    ("expt_fiq_ret_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3058 3088])
+                    ("expt_vfiq_ret_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3089 3120])
+                    ("expt_irq_ret_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3121 3151])
+                    ("expt_virq_ret_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3152 3183])
+                    ("expt_imprecise_ret_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3184 3220])
+                    ("expt_vimprecise_ret_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3221 3258])
+                    ("expt_ext_halt_ret_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3259 3294])
+                    ("expt_ecc_reexec_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3295 3328])
+                    ("enter_halt_ret_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3329 3361])
+                    ("rf_wr_addr_w0_wr_5_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3362 3400])
+                    ("rf_wr_addr_w1_wr_5_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3401 3439])
+                    ("rf_wr_addr_w2_wr_5_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3440 3478])
+                    ("rf_wr_data_w0_wr_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3479 3518])
+                    ("rf_wr_data_w1_wr_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3519 3558])
+                    ("rf_wr_data_w2_wr_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3559 3598])
+                    ("w0_slot1_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3599 3628])
+                    ("rf_wr_en_w0_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3629 3661])
+                    ("rf_wr_en_w1_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3662 3694])
+                    ("rf_wr_en_w2_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3695 3727])
+                    ("forceop_valid_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3728 3762])
+                    ("rf_wr_en_w0_unsuppressed_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3763 3808])
+                    ("rf_wr_en_w1_unsuppressed_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3809 3854])
+                    ("harzarded_div_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3855 3889])
+                    ("en_restore_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3890 3918])
+                    ("cp_hsr_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3919 3948])
+                    ("expt_dfsr_full_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3949 3986])
+                    ("ifsr_rd_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3987 4017])
+                    ("cp_hpfar_rd_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4018 4052])
+                    ("dfar_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4053 4080])
+                    ("ifar_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4081 4108])
+                    ("hdfar_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4109 4137])
+                    ("hifar_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4138 4166])
+                    ("hcr_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4167 4193])
+                    ("hcr2_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4194 4221])
+                    ("expt_en_hsr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4222 4251])
+                    ("expt_en_dfsr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4252 4282])
+                    ("expt_en_ifsr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4283 4313])
+                    ("expt_en_hpfar_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4314 4345])
+                    ("expt_en_dfar_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4346 4376])
+                    ("expt_en_ifar_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4377 4407])
+                    ("expt_en_hdfar_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4408 4439])
+                    ("expt_en_hifar_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4440 4471])
+                    ("expt_en_hcr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4472 4501])
+                    ("lsu_cp_reg_data_63_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4502 4540])
+                    ("instr_count_f5_63_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4541 4578])
+                    ("rf_wr_data_fw0_f5_63_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4579 4619])
+                    ("rf_wr_data_fw1_f5_63_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4620 4660])
+                    ("sfmac_instr_count_f5_63_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4661 4704])
+                    ("rf_wr_en_fw0_f5_3_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4705 4742])
+                    ("rf_wr_en_fw1_f5_3_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4743 4780])
+                    ("rf_wr_addr_fw0_f5_4_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4781 4820])
+                    ("rf_wr_addr_fw1_f5_4_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4821 4860])
+                    ("unflushable_sfmac_f5_1_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4861 4903])
+                    ("unflushable_sfdiv_f5_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4904 4942])
+                    ("instr_count_f4_63_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4943 4980])
+                    ("unflushable_sfmac_iss_1_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4981 5024])
+                    ("mcr_data_wr_63_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5025 5059])
+                    ("dpu_raw_cp_decode_wr_6_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5060 5102])
+                    ("dpu_cp_op_wr_9_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5103 5137])
+                    ("raw_cp_decode_wr_7_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5138 5176])
+                    ("ls_size_wr_1_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5177 5209])
+                    ("dpu_ready_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5210 5240])
+                    ("dpu_cp_valid_wr_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5241 5274])
+                    ("dscr_ext_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5275 5306])
+                    ("dscr_int_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5307 5338])
+                    ("nxt_dtrtx_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5339 5371])
+                    ("load_dtrtx_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5372 5400])
+                    ("instr_done_count_f5_63_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5401 5443])
+                    ("nxt_cpsr_ret_full_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5444 5484])
+                    ("spsr_svc_full_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5485 5521])
+                    ("spsr_abt_full_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5522 5558])
+                    ("spsr_und_full_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5559 5595])
+                    ("spsr_irq_full_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5596 5632])
+                    ("spsr_fiq_full_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5633 5669])
+                    ("spsr_hyp_full_31_0_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5670 5706])
+                    ("cpsr_regfile_en_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5707 5740])
+                    ("spsr_svc_sample_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5741 5774])
+                    ("spsr_abt_sample_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5775 5808])
+                    ("spsr_und_sample_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5809 5842])
+                    ("spsr_irq_sample_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5843 5876])
+                    ("spsr_fiq_sample_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5877 5910])
+                    ("spsr_hyp_sample_net" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5911 5944])
+                    ("instr_sample_wr_cond_net_0" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5991 6031])
+                    ("slot1_instr_sample_wr_cond_net_1" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6032 6078])
+                    ("mem_sample_cond_net_2" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6079 6114])
+                    ("expt_event_trigger_cond_net_3" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6115 6158])
+                    ("int_reg_wr_sample_cond_net_4" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6159 6201])
+                    ("expt_sys_reg_sample_cond_net_5" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6202 6246])
+                    ("ats_par_sample_cond_net_6" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6247 6286])
+                    ("fpu_reg_wr_sample_cond_net_7" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6287 6329])
+                    ("sample_unflushable_sfmac_iss_cond_net_8" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6330 6383])
+                    ("sys_reg_wr_sample_cond_net_9" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6384 6426])
+                    ("trace_dbg_reg_trigger_cond_net_10" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6427 6474])
+                    ("instr_ended_f5_sample_cond_net_11" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6475 6522])
+                    ("psr_sample_cond_net_12" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6523 6559])
+                    ("forceop_valid_wr_cond_net_13" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6560 6602])
+                    ("instr_count_wr_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6641 6670])
+                    ("isa_instr0_wr_1_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6671 6697])
+                    ("isa_instr1_wr_1_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6698 6724])
+                    ("opcode0_wr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6725 6750])
+                    ("opcode1_wr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6751 6776])
+                    ("instr0_addr_wr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6777 6806])
+                    ("instr1_addr_wr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6807 6836])
+                    ("cpsr_ret_full_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6837 6865])
+                    ("rf_wr_ctl_fw0_neon_wr_20_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6866 6902])
+                    ("rf_wr_ctl_fw1_neon_wr_20_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6903 6939])
+                    ("valid_instrs_wr_1" variable (:type "bool") (reparse-symbol classsubparts) [6940 6963])
+                    ("size_instr0_wr" variable (:type "bool") (reparse-symbol classsubparts) [6964 6984])
+                    ("size_instr1_wr" variable (:type "bool") (reparse-symbol classsubparts) [6985 7005])
+                    ("cc_pass_instr0_wr" variable (:type "bool") (reparse-symbol classsubparts) [7006 7029])
+                    ("cc_pass_instr1_wr" variable (:type "bool") (reparse-symbol classsubparts) [7030 7053])
+                    ("ns_scr" variable (:type "bool") (reparse-symbol classsubparts) [7054 7066])
+                    ("in_halt" variable (:type "bool") (reparse-symbol classsubparts) [7067 7080])
+                    ("fdivs_valid_f3" variable (:type "bool") (reparse-symbol classsubparts) [7081 7101])
+                    ("slot0_br_flush_wr" variable (:type "bool") (reparse-symbol classsubparts) [7102 7125])
+                    ("undef0_wr" variable (:type "bool") (reparse-symbol classsubparts) [7126 7141])
+                    ("undef1_wr" variable (:type "bool") (reparse-symbol classsubparts) [7142 7157])
+                    ("expt_instr_fault_wr" variable (:type "bool") (reparse-symbol classsubparts) [7158 7183])
+                    ("sideband_hw_bkpt_vc0_wr" variable (:type "bool") (reparse-symbol classsubparts) [7184 7213])
+                    ("take_il_trap_wr" variable (:type "bool") (reparse-symbol classsubparts) [7214 7235])
+                    ("all_traps_wr" variable (:type "bool") (reparse-symbol classsubparts) [7236 7254])
+                    ("slot1_fp_wr" variable (:type "bool") (reparse-symbol classsubparts) [7255 7272])
+                    ("expt_pc_align_wr" variable (:type "bool") (reparse-symbol classsubparts) [7273 7295])
+                    ("dpu_st_data_wr_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7296 7325])
+                    ("lsu_ld_data_ls3_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7326 7356])
+                    ("mem_addr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7357 7380])
+                    ("strobe_ls3_7_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7381 7404])
+                    ("mem_inner_attrs_3_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7405 7433])
+                    ("mem_outer_attrs_3_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7434 7462])
+                    ("shareability_1_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7463 7488])
+                    ("slot1_ls_wr" variable (:type "bool") (reparse-symbol classsubparts) [7489 7506])
+                    ("ls_store_wr" variable (:type "bool") (reparse-symbol classsubparts) [7507 7524])
+                    ("lsu_wpt_hit_ls3" variable (:type "bool") (reparse-symbol classsubparts) [7525 7546])
+                    ("lsu_strex_fail_ls3" variable (:type "bool") (reparse-symbol classsubparts) [7547 7571])
+                    ("lsu_abort_ls3" variable (:type "bool") (reparse-symbol classsubparts) [7572 7591])
+                    ("mem_is_flash" variable (:type "bool") (reparse-symbol classsubparts) [7592 7610])
+                    ("mem_is_tcm" variable (:type "bool") (reparse-symbol classsubparts) [7611 7627])
+                    ("expt_vec_offset_4_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7628 7656])
+                    ("exception_mode_ret_3_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7657 7688])
+                    ("expt_slot1" variable (:type "bool") (reparse-symbol classsubparts) [7689 7705])
+                    ("expt_reset_ret" variable (:type "bool") (reparse-symbol classsubparts) [7706 7726])
+                    ("expt_fiq_ret" variable (:type "bool") (reparse-symbol classsubparts) [7727 7745])
+                    ("expt_vfiq_ret" variable (:type "bool") (reparse-symbol classsubparts) [7746 7765])
+                    ("expt_irq_ret" variable (:type "bool") (reparse-symbol classsubparts) [7766 7784])
+                    ("expt_virq_ret" variable (:type "bool") (reparse-symbol classsubparts) [7785 7804])
+                    ("expt_imprecise_ret" variable (:type "bool") (reparse-symbol classsubparts) [7805 7829])
+                    ("expt_vimprecise_ret" variable (:type "bool") (reparse-symbol classsubparts) [7830 7855])
+                    ("expt_ext_halt_ret" variable (:type "bool") (reparse-symbol classsubparts) [7856 7879])
+                    ("expt_ecc_reexec" variable (:type "bool") (reparse-symbol classsubparts) [7880 7901])
+                    ("enter_halt_ret" variable (:type "bool") (reparse-symbol classsubparts) [7902 7922])
+                    ("rf_wr_addr_w0_wr_5_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7923 7952])
+                    ("rf_wr_addr_w1_wr_5_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7953 7982])
+                    ("rf_wr_addr_w2_wr_5_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7983 8012])
+                    ("rf_wr_data_w0_wr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8013 8044])
+                    ("rf_wr_data_w1_wr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8045 8076])
+                    ("rf_wr_data_w2_wr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8077 8108])
+                    ("w0_slot1_wr" variable (:type "bool") (reparse-symbol classsubparts) [8109 8126])
+                    ("rf_wr_en_w0_wr" variable (:type "bool") (reparse-symbol classsubparts) [8127 8147])
+                    ("rf_wr_en_w1_wr" variable (:type "bool") (reparse-symbol classsubparts) [8148 8168])
+                    ("rf_wr_en_w2_wr" variable (:type "bool") (reparse-symbol classsubparts) [8169 8189])
+                    ("forceop_valid_wr" variable (:type "bool") (reparse-symbol classsubparts) [8190 8212])
+                    ("rf_wr_en_w0_unsuppressed_wr" variable (:type "bool") (reparse-symbol classsubparts) [8213 8246])
+                    ("rf_wr_en_w1_unsuppressed_wr" variable (:type "bool") (reparse-symbol classsubparts) [8247 8280])
+                    ("harzarded_div_wr" variable (:type "bool") (reparse-symbol classsubparts) [8281 8303])
+                    ("en_restore" variable (:type "bool") (reparse-symbol classsubparts) [8304 8320])
+                    ("cp_hsr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8321 8342])
+                    ("expt_dfsr_full_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8343 8372])
+                    ("ifsr_rd_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8373 8395])
+                    ("cp_hpfar_rd_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8396 8422])
+                    ("dfar_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8423 8442])
+                    ("ifar_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8443 8462])
+                    ("hdfar_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8463 8483])
+                    ("hifar_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8484 8504])
+                    ("hcr_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8505 8523])
+                    ("hcr2_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8524 8543])
+                    ("expt_en_hsr" variable (:type "bool") (reparse-symbol classsubparts) [8544 8561])
+                    ("expt_en_dfsr" variable (:type "bool") (reparse-symbol classsubparts) [8562 8580])
+                    ("expt_en_ifsr" variable (:type "bool") (reparse-symbol classsubparts) [8581 8599])
+                    ("expt_en_hpfar" variable (:type "bool") (reparse-symbol classsubparts) [8600 8619])
+                    ("expt_en_dfar" variable (:type "bool") (reparse-symbol classsubparts) [8620 8638])
+                    ("expt_en_ifar" variable (:type "bool") (reparse-symbol classsubparts) [8639 8657])
+                    ("expt_en_hdfar" variable (:type "bool") (reparse-symbol classsubparts) [8658 8677])
+                    ("expt_en_hifar" variable (:type "bool") (reparse-symbol classsubparts) [8678 8697])
+                    ("expt_en_hcr" variable (:type "bool") (reparse-symbol classsubparts) [8698 8715])
+                    ("lsu_cp_reg_data_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8716 8746])
+                    ("instr_count_f5_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8747 8776])
+                    ("rf_wr_data_fw0_f5_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8777 8809])
+                    ("rf_wr_data_fw1_f5_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8810 8842])
+                    ("sfmac_instr_count_f5_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8843 8878])
+                    ("rf_wr_en_fw0_f5_3_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8879 8907])
+                    ("rf_wr_en_fw1_f5_3_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8908 8936])
+                    ("rf_wr_addr_fw0_f5_4_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8937 8967])
+                    ("rf_wr_addr_fw1_f5_4_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8968 8998])
+                    ("unflushable_sfmac_f5_1_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8999 9032])
+                    ("unflushable_sfdiv_f5" variable (:type "bool") (reparse-symbol classsubparts) [9033 9059])
+                    ("instr_count_f4_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9060 9089])
+                    ("unflushable_sfmac_iss_1_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9090 9124])
+                    ("mcr_data_wr_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9125 9151])
+                    ("dpu_raw_cp_decode_wr_6_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9152 9185])
+                    ("dpu_cp_op_wr_9_0" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9186 9212])
+                    ("raw_cp_decode_wr_7_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9213 9242])
+                    ("ls_size_wr_1_0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9243 9266])
+                    ("dpu_ready_wr" variable (:type "bool") (reparse-symbol classsubparts) [9267 9285])
+                    ("dpu_cp_valid_wr" variable (:type "bool") (reparse-symbol classsubparts) [9286 9307])
+                    ("dscr_ext_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9308 9331])
+                    ("dscr_int_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9332 9355])
+                    ("nxt_dtrtx_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9356 9380])
+                    ("load_dtrtx" variable (:type "bool") (reparse-symbol classsubparts) [9381 9397])
+                    ("instr_done_count_f5_63_0" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9398 9432])
+                    ("nxt_cpsr_ret_full_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9433 9465])
+                    ("spsr_svc_full_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9466 9494])
+                    ("spsr_abt_full_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9495 9523])
+                    ("spsr_und_full_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9524 9552])
+                    ("spsr_irq_full_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9553 9581])
+                    ("spsr_fiq_full_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9582 9610])
+                    ("spsr_hyp_full_31_0" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9611 9639])
+                    ("cpsr_regfile_en" variable (:type "bool") (reparse-symbol classsubparts) [9640 9661])
+                    ("spsr_svc_sample" variable (:type "bool") (reparse-symbol classsubparts) [9662 9683])
+                    ("spsr_abt_sample" variable (:type "bool") (reparse-symbol classsubparts) [9684 9705])
+                    ("spsr_und_sample" variable (:type "bool") (reparse-symbol classsubparts) [9706 9727])
+                    ("spsr_irq_sample" variable (:type "bool") (reparse-symbol classsubparts) [9728 9749])
+                    ("spsr_fiq_sample" variable (:type "bool") (reparse-symbol classsubparts) [9750 9771])
+                    ("spsr_hyp_sample" variable (:type "bool") (reparse-symbol classsubparts) [9772 9793])
+                    ("tarmac_thread_id" variable (:type "int") (reparse-symbol classsubparts) [9794 9815])
+                    ("tarmac_time_start" variable (:type "long long") (reparse-symbol classsubparts) [9818 9864])
+                    ("tarmac_time_stop" variable (:type "long long") (reparse-symbol classsubparts) [9818 9864])
+                    ("carbonModelHandle" variable
+                       (:pointer 1
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9867 9901]))                  
+                :type "class")
+                nil [1265 9904]))          
+      :file "univent_tarmac.h"
+      :pointmax 9911
+      :fsize 9910
+      :lastmodtime '(22877 17833 999821 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__CARBON_SYS_INCLUDE_H__")
+          ("_univent_tarmac_H_")
+          )
+))
+  :file "!o!mkwork!hanlei01!MK_trunk!modelbuild!models!builddir!Kite!workarea!SystemC!ip!Kite_2CPU_Example!gcc483!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

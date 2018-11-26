@@ -1,0 +1,26 @@
+;; Object SystemC_mem_test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC_mem_test/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("$(CM_CXX_SYSTEMC_COMMON)" "-g" "-O0" "-Wno-unused-variable" "-D$(MODEL_CONFIG)")) nil [129 205])
+            ("PLOVER_DIR" variable (:default-value ("./MODELS/Plover/$(MODEL_CONFIG)/gcc/SystemC")) nil [338 395])
+            ("NUM_CPUS" variable (:default-value ("$(shell echo $(MODEL_CONFIG) | grep -o '[0-9]\\+' | head -n 1)")) nil [439 512])
+            ("$(CM_SYSC_PACKAGE)/rel_ext/makefiles/cm_sysc_common.mak" include nil nil [513 577])
+            ("system_test_" function (:arguments ("system_test_$(MODEL_CONFIG).o" "PloverResetImp.o" "$(PLOVER_DIR)/libPlover.tlm.a" "$(PLOVER_DIR)/lib/libPlover.icm.so" "$(PLOVER_DIR)/lib/libicm_runtime.so" "$(FM_LIB)" "tlm_bridge.o" "trickbox.o" "trickbox_memory.o" "trickbox_uart.o" "trickbox_test.o")) nil [578 1168])
+            ("PloverResetImp.o" function (:arguments ("$(PLOVER_DIR)/PloverResetImp.cpp")) nil [1168 1345])
+            ("system_test_" function (:arguments ("system_test_$(MODEL_CONFIG).cpp")) nil [1346 1568])
+            ("system_test.o" function (:arguments ("system_test.cpp")) nil [1568 1752])
+            ("%.o" function (:arguments ("%.cpp")) nil [1753 1936])
+            ("clean" function nil nil [1938 2023]))          
+      :file "Makefile"
+      :pointmax 2025
+      :fsize 2024
+      :lastmodtime '(23392 38252 629021 0)
+      :unmatched-syntax '((symbol 429 . 437) (semantic-list 412 . 429) (punctuation 411 . 412) (punctuation 409 . 410) (punctuation 408 . 409) (symbol 395 . 407) (bol 395 . 395))))
+  :file "!home!shivic01!modelKits!mk_sysc_mem!modelkits!test!cpus!Plover!Simulation!SystemC_mem_test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

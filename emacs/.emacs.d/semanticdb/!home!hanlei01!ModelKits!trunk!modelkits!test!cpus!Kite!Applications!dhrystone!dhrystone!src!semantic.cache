@@ -1,0 +1,365 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "dhry_2.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("string.h" include (:system-flag t) nil [414 433])
+            ("dhry.h" include nil nil [435 452])
+            ("REG" variable (:constant-flag t) nil [474 477])
+            ("Int_Glob" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [599 624])
+            ("Ch_1_Glob" variable
+               (:typemodifiers ("extern")
+                :type "char")
+                nil [625 651])
+            ("Func_3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Enum_Par_Val" variable (:type ("Enumeration" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [669 694]))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [653 695])
+            ("Proc_6" function
+               (:arguments 
+                  ( ("Enum_Val_Par" variable (:type ("Enumeration" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [710 736])
+                    ("Enum_Ref_Par" variable
+                       (:pointer 1
+                        :type ("Enumeration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [743 769]))                  
+                :type "void")
+                nil [697 1368])
+            ("Proc_7" function
+               (:arguments 
+                  ( ("Int_1_Par_Val" variable (:type ("One_Fifty" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1397 1421])
+                    ("Int_2_Par_Val" variable (:type ("One_Fifty" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1423 1447])
+                    ("Int_Par_Ref" variable
+                       (:pointer 1
+                        :type ("One_Fifty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1449 1472]))                  
+                :type "void")
+                nil [1384 2096])
+            ("Proc_8" function
+               (:arguments 
+                  ( ("Arr_1_Par_Ref" variable (:type ("Arr_1_Dim" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2125 2149])
+                    ("Arr_2_Par_Ref" variable (:type ("Arr_2_Dim" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2151 2175])
+                    ("Int_1_Par_Val" variable (:type "int") (reparse-symbol arg-sub-list) [2177 2195])
+                    ("Int_2_Par_Val" variable (:type "int") (reparse-symbol arg-sub-list) [2197 2215]))                  
+                :type "void")
+                nil [2112 2842])
+            ("Func_1" function
+               (:arguments 
+                  ( ("Ch_1_Par_Val" variable (:type ("Capital_Letter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2878 2906])
+                    ("Ch_2_Par_Val" variable (:type ("Capital_Letter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2913 2941]))                  
+                :type ("Enumeration" type (:type "class") nil nil))
+                nil [2858 3563])
+            ("Func_2" function
+               (:arguments 
+                  ( ("Str_1_Par_Ref" variable (:type ("Str_30" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3595 3616])
+                    ("Str_2_Par_Ref" variable (:type ("Str_30" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3619 3640]))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [3579 4568])
+            ("Func_3" function
+               (:arguments 
+                  ( ("Enum_Par_Val" variable (:type ("Enumeration" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4600 4625]))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [4584 4893]))          
+      :file "dhry_2.c"
+      :pointmax 4908
+      :fsize 4907
+      :lastmodtime '(22977 24435 78368 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("REG")
+          )
+)
+    (semanticdb-table "dhry.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("Mic_secs_Per_Second" variable (:constant-flag t) nil [14625 14644])
+            ("structassign" variable (:constant-flag t) nil [14833 14845])
+            ("structassign" variable (:constant-flag t) nil [14833 14845])
+            ("structassign" variable (:constant-flag t) nil [14833 14845])
+            ("Enumeration" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("Ident_1" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [15036 15044])
+                          ("Ident_2" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [15045 15053])
+                          ("Ident_3" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [15054 15062])
+                          ("Ident_4" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [15063 15071])
+                          ("Ident_5" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [15072 15080]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [15013 15109])
+            ("stdio.h" include (:system-flag t) nil [15209 15227])
+            ("Null" variable (:constant-flag t) nil [15278 15282])
+            ("true" variable (:constant-flag t) nil [15339 15343])
+            ("false" variable (:constant-flag t) nil [15355 15360])
+            ("One_Thirty" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [15364 15391])
+            ("One_Fifty" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [15392 15418])
+            ("Capital_Letter" type
+               (:typedef ("char")
+                :type "typedef")
+                nil [15419 15450])
+            ("Boolean" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [15451 15475])
+            ("Str_30" type
+               (:typedef ("char")
+                :type "typedef")
+                nil [15476 15504])
+            ("Arr_1_Dim" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [15505 15536])
+            ("Arr_2_Dim" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [15537 15573])
+            ("record" type
+               (:members 
+                  ( ("Ptr_Comp" variable
+                       (:pointer 1
+                        :type ("record" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [15607 15631])
+                    ("Discr" variable (:type ("Enumeration" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15636 15657])
+                    ("variant" variable (:type ("" type
+                         (:members 
+                            ( ("var_1" variable (:type ("" type
+                                   (:members 
+                                      ( ("Enum_Comp" variable (:type ("Enumeration" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15707 15729])
+                                        ("Int_Comp" variable (:type "int") (reparse-symbol classsubparts) [15748 15769])
+                                        ("Str_Comp" variable
+                                           (:dereference 1
+                                            :type "char")
+                                            (reparse-symbol classsubparts) [15788 15814]))                                      
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [15680 15841])
+                              ("var_2" variable (:type ("" type
+                                   (:members 
+                                      ( ("E_Comp_2" variable (:type ("Enumeration" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15879 15900])
+                                        ("Str_2_Comp" variable
+                                           (:dereference 1
+                                            :type "char")
+                                            (reparse-symbol classsubparts) [15919 15947]))                                      
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [15852 15974])
+                              ("var_3" variable (:type ("" type
+                                   (:members 
+                                      ( ("Ch_1_Comp" variable (:type "char") (reparse-symbol classsubparts) [16012 16034])
+                                        ("Ch_2_Comp" variable (:type "char") (reparse-symbol classsubparts) [16053 16075]))                                      
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [15985 16102]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [15662 16123]))                  
+                :type "struct")
+                nil [15575 16155])
+            ("Rec_Pointer" type
+               (:typedef ("record" type (:type "struct") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [15575 16155])
+            ("Rec_Type" type
+               (:typedef ("record" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [15575 16155]))          
+      :file "dhry.h"
+      :pointmax 16157
+      :fsize 16156
+      :lastmodtime '(22977 24435 80366 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("false" . ((number "0" 15361 . 15362)))
+          ("Null" . ((number "0" 15283 . 15284)))
+          ("structassign" (spp-arg-list ("d" "s") 14845 . 14851) . 
+              ((symbol "d" 14857 . 14858) (punctuation "=" 14859 . 14860) (symbol "s" 14861 . 14862)))
+          ("Mic_secs_Per_Second" . ((number "1000000.0" 14649 . 14658)))
+          ("true" . ((number "1" 15345 . 15346)))
+          )
+)
+    (semanticdb-table "dhry_1.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [414 433])
+            ("string.h" include (:system-flag t) nil [434 453])
+            ("benchmark.h" include nil nil [455 477])
+            ("dhry.h" include nil nil [478 495])
+            ("Ptr_Glob" variable (:type ("Rec_Pointer" type (:type "class") nil nil)) nil [522 578])
+            ("Next_Ptr_Glob" variable (:type ("Rec_Pointer" type (:type "class") nil nil)) nil [522 578])
+            ("Int_Glob" variable (:type "int") nil [579 604])
+            ("Bool_Glob" variable (:type ("Boolean" type (:type "class") nil nil)) nil [605 631])
+            ("Ch_1_Glob" variable (:type "char") nil [632 685])
+            ("Ch_2_Glob" variable (:type "char") nil [632 685])
+            ("Arr_1_Glob" variable
+               (:dereference 1
+                :type "int")
+                nil [686 718])
+            ("Arr_2_Glob" variable
+               (:dereference 2
+                :type "int")
+                nil [719 756])
+            ("Reg_Define" variable
+               (:dereference 1
+                :default-value "\"Register option selected.\""
+                :type "char")
+                nil [758 806])
+            ("dont_print" variable
+               (:typemodifiers ("extern")
+                :default-value "1"
+                :type "int")
+                nil [967 1015])
+            ("read_tcm_size" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1041 1046]))                  
+                :type "int")
+                nil [1016 1047])
+            ("REG" variable (:constant-flag t) nil [1070 1073])
+            ("Func_1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Ch_1_Par_Val" variable (:type ("Capital_Letter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1215 1243])
+                    ("Ch_2_Par_Val" variable (:type ("Capital_Letter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1244 1272]))                  
+                :type ("Enumeration" type (:type "class") nil nil))
+                nil [1195 1273])
+            ("Func_2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Str_1_Par_Ref" variable (:type ("Str_30" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1290 1311])
+                    ("Str_2_Par_Ref" variable (:type ("Str_30" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1312 1333]))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [1274 1334])
+            ("Proc_1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Ptr_Val_Par" variable (:type ("Rec_Pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1352 1376]))                  
+                :type "void")
+                nil [1335 1377])
+            ("Proc_2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Int_Par_Ref" variable
+                       (:pointer 1
+                        :type ("One_Fifty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1391 1414]))                  
+                :type "void")
+                nil [1378 1415])
+            ("Proc_3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Ptr_Ref_Par" variable
+                       (:pointer 1
+                        :type ("Rec_Pointer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1429 1454]))                  
+                :type "void")
+                nil [1416 1455])
+            ("Proc_4" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1469 1474]))                  
+                :type "void")
+                nil [1456 1475])
+            ("Proc_5" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1489 1494]))                  
+                :type "void")
+                nil [1476 1495])
+            ("Proc_6" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Enum_Val_Par" variable (:type ("Enumeration" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1509 1535])
+                    ("Enum_Ref_Par" variable
+                       (:pointer 1
+                        :type ("Enumeration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1536 1562]))                  
+                :type "void")
+                nil [1496 1563])
+            ("Proc_7" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Int_1_Par_Val" variable (:type ("One_Fifty" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1577 1601])
+                    ("Int_2_Par_Val" variable (:type ("One_Fifty" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1602 1626])
+                    ("Int_Par_Ref" variable
+                       (:pointer 1
+                        :type ("One_Fifty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1627 1650]))                  
+                :type "void")
+                nil [1564 1651])
+            ("Proc_8" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Arr_1_Par_Ref" variable (:type ("Arr_1_Dim" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1665 1689])
+                    ("Arr_2_Par_Ref" variable (:type ("Arr_2_Dim" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1690 1714])
+                    ("Int_1_Par_Val" variable (:type "int") (reparse-symbol arg-sub-list) [1715 1733])
+                    ("Int_2_Par_Val" variable (:type "int") (reparse-symbol arg-sub-list) [1734 1752]))                  
+                :type "void")
+                nil [1652 1753])
+            ("Too_Small_Time" variable (:constant-flag t) nil [1803 1817])
+            ("main" function (:type "int") nil [2124 10397])
+            ("Proc_1" function
+               (:arguments 
+                  ( ("Ptr_Val_Par" variable (:type ("Rec_Pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10417 10441]))                  
+                :type "void")
+                nil [10400 11545])
+            ("Proc_2" function
+               (:arguments 
+                  ( ("Int_Par_Ref" variable
+                       (:pointer 1
+                        :type ("One_Fifty" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11574 11597]))                  
+                :type "void")
+                nil [11561 11993])
+            ("Proc_3" function
+               (:arguments 
+                  ( ("Ptr_Ref_Par" variable
+                       (:pointer 1
+                        :type ("Rec_Pointer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12022 12047]))                  
+                :type "void")
+                nil [12009 12283])
+            ("Proc_4" function (:type "void") nil [12299 12483])
+            ("Proc_5" function (:type "void") nil [12499 12616]))          
+      :file "dhry_1.c"
+      :pointmax 12892
+      :fsize 12891
+      :lastmodtime '(22977 24435 75366 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("Too_Small_Time" . ((number "2" 1818 . 1819)))
+          ("REG")
+          )
+))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!Kite!Applications!dhrystone!dhrystone!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

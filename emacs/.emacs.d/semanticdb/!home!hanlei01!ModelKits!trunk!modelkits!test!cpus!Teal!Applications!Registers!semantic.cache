@@ -1,0 +1,30 @@
+;; Object Registers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Registers/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CPU_TARGET" variable (:default-value ("Cortex-M33")) nil [462 489])
+            ("ASFLAGS" variable (:default-value ("--unsafe" "--apcs" "/inter" "--fpu=SoftVFP" "--arm" "--thumb" "--keep")) nil [490 558])
+            ("LDFLAGS" variable (:default-value ("--keep" "\"*\"" "--bestdebug" "--scatter=scatter.ld")) nil [558 612])
+            ("PROGRAMS" variable (:default-value ("test")) nil [612 629])
+            ("TARGETS" variable (:default-value ("$(foreach FILE,$(PROGRAMS), $(FILE).elf $(FILE).axf $(FILE).sym $(FILE).dis)")) nil [629 716])
+            ("default" function (:arguments ("$(addprefix $(CPU_TARGET)/, $(TARGETS))" "$(CPU_TARGET)")) nil [717 780])
+            ("$(CPU_TARGET)" function (:arguments ("$(CPU_TARGET)/%.axf")) nil [781 842])
+            ("$(CPU_TARGET)" function (:arguments ("$(CPU_TARGET)/%.axf")) nil [843 904])
+            ("$(CPU_TARGET)" function (:arguments ("$(CPU_TARGET)/%.o")) nil [905 975])
+            ("$(CPU_TARGET)" function (:arguments ("$(CPU_TARGET)/%.o")) nil [976 1044])
+            ("$(CPU_TARGET)" function (:arguments ("%.s" "$(CPU_TARGET)")) nil [1045 1130])
+            ("$(CPU_TARGET)" function nil nil [1131 1167])
+            (".PHONY" function (:arguments ("clean")) nil [1168 1183])
+            ("clean" function nil nil [1184 1216]))          
+      :file "Makefile"
+      :pointmax 1217
+      :fsize 1216
+      :lastmodtime '(22912 52078 0 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!Teal!Applications!Registers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object mk_pkg/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mk_pkg/"
+  :tables
+  (list
+    (semanticdb-table "modelbuilder.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "modelbuilder.py"
+      :pointmax 114779
+      :fsize 114778
+      :lastmodtime '(22537 10040 153404 0)
+      :unmatched-syntax nil))
+  :file "!home!hlei!modelkit!modelkits!Scripts!mk_pkg!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

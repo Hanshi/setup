@@ -1,0 +1,47 @@
+;; Object makefiles/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "makefiles/"
+  :tables
+  (list
+    (semanticdb-table "icm_common.mak"
+      :major-mode 'makefile-mode
+      :tags 
+        '( ("ICM_TARMAC_PREFIX_OPTION" variable nil nil [2359 2386])
+            ("ICM_TARMAC_PREFIX_OPTION" variable (:default-value ("--tarmac_prefix=$(ICM_TARMAC_PREFIX)")) nil [2391 2455])
+            ("ICM_DISABLE_METAFILE_INIT" variable (:default-value ("--disable_metafile")) nil [2507 2554])
+            ("ICM_DISABLE_METAFILE_INIT" variable nil nil [2559 2588])
+            ("ICM_SO" variable (:default-value ("lib$(COMP_NAME).icm.so")) nil [2595 2627])
+            ("ICM_CXX" variable (:default-value ("g++")) nil [2628 2640])
+            ("ICM_CXXFLAGS" variable (:default-value ("-O3" "-fPIC" "-g" "-std=c++11" "-Wall" "-Werror" "-fvisibility=hidden" "-fvisibility-inlines-hidden" "-I$(CARBON_HOME)/include" "-I." "-I$(ICM_PACKAGE)/external/include" "-I$(ICM_PACKAGE)/internal/include")) nil [2641 2905])
+            ("ICM_CFLAGS" variable (:default-value ("-x" "c" "-O3" "-fPIC" "-g" "-Wall" "-Werror")) nil [2906 2991])
+            ("ICM_USER_CXX_FLAGS" variable (:default-value ("-I$(ICM_MKL_MODEL_INCLUDE)" "-DMODEL_EXPORTS" "-I$(LINUX_DIR)")) nil [2992 3072])
+            ("ICM_GCC_VER" variable (:default-value ("$(shell gcc -dumpversion)")) nil [3273 3313])
+            ("ICM_USER_LINK_FLAGS" variable (:default-value ("-L$(ICM_MKL_LIB_DIR)" "-L$(LINUX_DIR)" "-L$(ICM_PACKAGE)/internal/lib/Linux-x86_64-GCC-$(ICM_GCC_VER)" "-licm_impl" "-lmodelkit_icm-$(ICM_GCC_VER)" "-licm_impl" "-pthread" "-lz" "-lcurses")) nil [3313 3508])
+            ("ICM_USER_LINK_FLAGS" variable (:default-value ("-Wl,--exclude-libs,ALL")) nil [3630 3676])
+            ("ICM_CXXFLAGS" variable (:default-value ("$(ICM_USER_CXX_FLAGS)")) nil [3677 3718])
+            ("ICM_LDFLAGS" variable (:default-value ("-L$(LINUX_DIR)" "-l$(COMP_NAME)")) nil [3718 3768])
+            ("ICM_LDFLAGS" variable (:default-value ("$(ICM_USER_LINK_FLAGS)")) nil [3769 3808])
+            ("ICM_PACKAGE_SOURCES" variable (:default-value ("$(ICM_BUILD)/$(COMP_NAME)_icm.cpp")) nil [3837 3893])
+            ("ICM_PACKAGE_OBJECTS" variable (:default-value ("$(patsubst %.cpp,%.o,$(ICM_PACKAGE_SOURCES))")) nil [3893 3960])
+            ("ICM_META_OBJ" variable (:default-value ("$(ICM_BUILD)/meta_data.o")) nil [3960 4000])
+            ("GEN_ICM_CPP" variable (:default-value ("$(ICM_BUILD)/$(COMP_NAME)_icm.cpp")) nil [4049 4097])
+            ("GEN_ICM_H" variable (:default-value ("$(COMP_NAME)_icm.h")) nil [4097 4128])
+            ("ICM_CREATE_WRAPPER_OPTIONS" variable (:default-value ("--primecells")) nil [4150 4192])
+            ("ICM_CREATE_WRAPPER_OPTIONS" variable nil nil [4197 4226])
+            ("ICM_CREATE_WRAPPER_OPTIONS" variable (:default-value ("--check_rtl_simulator")) nil [4262 4314])
+            ("ICM_PACKAGE_OBJECTS" variable (:default-value ("$(ICM_BUILD)/check_rtl_simulator.o")) nil [4314 4372])
+            ("$(ICM_SO)" function (:arguments ("create_icm_wrapper" "$(ICM_PACKAGE_OBJECTS)" "$(ICM_META_OBJ)" "create_icm_runtime")) nil [4379 4720])
+            ("%.o" function (:arguments ("%.cpp")) nil [4820 4872])
+            ("%.o" function (:arguments ("%.c")) nil [4971 5067])
+            ("$(ICM_META_OBJ)" function (:arguments ("$(ICM_META_SRC)")) nil [5068 5392])
+            ("create_icm_wrapper" function nil nil [5393 5463])
+            ("create_icm_runtime" function nil nil [5927 5947])
+            ("icm_clean" function nil nil [6272 6306]))          
+      :file "icm_common.mak"
+      :pointmax 6358
+      :fsize 6536
+      :lastmodtime '(23366 19811 0 0)
+      :unmatched-syntax '((shell-command 6330 . 6350) (bol 6329 . 6329) (shell-command 6198 . 6264) (bol 6197 . 6197) (shell-command 6179 . 6196) (bol 6178 . 6178) (shell-command 6128 . 6172) (bol 6127 . 6127) (shell-command 6013 . 6094) (bol 6012 . 6012) (shell-command 5977 . 6005) (bol 5976 . 5976) (shell-command 5835 . 5913) (bol 5834 . 5834) (shell-command 5764 . 5803) (bol 5763 . 5763) (shell-command 5517 . 5739) (bol 5516 . 5516) (shell-command 5487 . 5509) (bol 5486 . 5486) (shell-command 4780 . 4812) (bol 4779 . 4779) (shell-command 4750 . 4778) (bol 4749 . 4749) (symbol 3825 . 3836) (punctuation 3823 . 3824) (punctuation 3822 . 3823) (symbol 3809 . 3818) (bol 3809 . 3809) (symbol 2314 . 2328) (semantic-list 2303 . 2314) (punctuation 2302 . 2303) (symbol 2299 . 2302) (punctuation 2297 . 2298) (punctuation 2296 . 2297) (symbol 2283 . 2295) (bol 2283 . 2283) (symbol 2272 . 2282) (semantic-list 2256 . 2272) (punctuation 2255 . 2256) (punctuation 2253 . 2254) (punctuation 2252 . 2253) (symbol 2236 . 2251) (bol 2236 . 2236) (symbol 2227 . 2235) (semantic-list 2211 . 2227) (punctuation 2210 . 2211) (punctuation 2208 . 2209) (punctuation 2207 . 2208) (symbol 2185 . 2206) (bol 2185 . 2185) (symbol 2088 . 2093) (punctuation 2086 . 2087) (punctuation 2085 . 2086) (symbol 2069 . 2084) (bol 2069 . 2069) (symbol 2060 . 2068) (punctuation 2058 . 2059) (punctuation 2057 . 2058) (symbol 2047 . 2056) (bol 2047 . 2047))))
+  :file "!o!release!icm!master!178!Release!internal!makefiles!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

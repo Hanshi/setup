@@ -1,0 +1,116 @@
+;; Object PCTrace/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "PCTrace/"
+  :tables
+  (list
+    (semanticdb-table "pctrace_basic.mxscr"
+      :major-mode 'c-mode
+      :tags 
+        '( ("COMPONENT" variable (:constant-flag t) nil [20 29])
+            ("MEMORYNAME" variable (:constant-flag t) nil [50 60])
+            ("MEMSPACE" variable (:constant-flag t) nil [84 92])
+            ("../functions.h" include nil nil [155 180])
+            ("pctrace_basic.h" include nil nil [260 286])
+            ("CORE" variable (:type ("string" type (:type "class") nil nil)) nil [583 595])
+            ("sprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("CORE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [604 609])
+                    ("" variable (:type ("myCPUID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [633 641]))                  
+                :type "int")
+                nil [596 642])
+            ("setVerbosity" function
+               (:prototype-flag t
+                :type "int")
+                nil [727 749])
+            ("message" function
+               (:prototype-flag t
+                :type "int")
+                nil [750 779])
+            ("setAppFile" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("CORE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [791 796]))                  
+                :type "int")
+                nil [780 862])
+            ("openSystem" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SYSTEM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [874 881]))                  
+                :type "int")
+                nil [863 885])
+            ("ALIGN_WAVES" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [947 953]))                  
+                :type "int")
+                nil [935 954])
+            ("DUMP_WAVES" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [966 972]))                  
+                :type "int")
+                nil [955 973])
+            ("WAVE_FORMAT" function
+               (:prototype-flag t
+                :type "int")
+                nil [974 994])
+            ("initSystem" function
+               (:prototype-flag t
+                :type "int")
+                nil [995 1008])
+            ("CADIMemWrite" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MP_MASTERCPU" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1042 1055])
+                    ("" variable (:type ("myCPUID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1056 1064]))                  
+                :type "int")
+                nil [1010 1065])
+            ("message" function
+               (:prototype-flag t
+                :type "int")
+                nil [1282 1324])
+            ("callPlugin" function
+               (:prototype-flag t
+                :type "int")
+                nil [1325 1353])
+            ("CADIRegWrite" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("CORE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1493 1498]))                  
+                :type "int")
+                nil [1480 1519])
+            ("step" function
+               (:prototype-flag t
+                :type "int")
+                nil [1522 1534])
+            ("message" function
+               (:prototype-flag t
+                :type "int")
+                nil [1605 1637])
+            ("message" function
+               (:prototype-flag t
+                :type "int")
+                nil [1643 1674])
+            ("CHECK_REGISTER_SUMMARY" function
+               (:prototype-flag t
+                :type "int")
+                nil [1697 1722])
+            ("closeSystem" function
+               (:prototype-flag t
+                :type "int")
+                nil [1725 1739]))          
+      :file "pctrace_basic.mxscr"
+      :pointmax 1772
+      :fsize 1771
+      :lastmodtime '(21584 3287 0 0)
+      :unmatched-syntax '((string 1659 . 1672) (string 1651 . 1657) (ELSE 1638 . 1642) (string 1622 . 1635) (string 1613 . 1620) (semantic-list 1567 . 1604) (IF 1564 . 1566) (number 1527 . 1532) (number 1507 . 1517) (string 1499 . 1505) (string 1336 . 1351) (string 1298 . 1322) (string 1290 . 1296) (string 1035 . 1040) (string "\"axi4*_mem[2]\"" 1023 . 1033) (string 986 . 992) (number 882 . 883) (string 797 . 860) (string 758 . 777) (string 740 . 747) (string "\"CortexA57\"" 622 . 631) (string 610 . 620))
+      :lexical-table 
+        '(("COMPONENT" . ((string "\"CortexA57\"" 30 . 41)))
+          ("MEMSPACE" . ((string "\"axi_m\"" 93 . 100)))
+          ("MEMORYNAME" . ((string "\"axi4*_mem[2]\"" 61 . 75)))
+          )
+))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!CortexA57!Simulation!PCTrace!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

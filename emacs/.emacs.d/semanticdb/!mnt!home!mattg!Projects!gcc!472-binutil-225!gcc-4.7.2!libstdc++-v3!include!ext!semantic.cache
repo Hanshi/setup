@@ -1,0 +1,96 @@
+;; Object ext/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ext/"
+  :tables
+  (list
+    (semanticdb-table "atomicity.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_GLIBCXX_ATOMICITY_H" variable (:constant-flag t) nil [1257 1277])
+            ("bits/c++config.h" include (:system-flag t) nil [1281 1308])
+            ("bits/gthr.h" include (:system-flag t) nil [1309 1331])
+            ("bits/atomic_word.h" include (:system-flag t) nil [1332 1361])
+            ("__gnu_cxx" type
+               (:members 
+                  ( ("__exchange_and_add" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("__mem" variable
+                               (:pointer 1
+                                :typemodifiers ("volatile")
+                                :type ("_Atomic_word" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1703 1732])
+                            ("__val" variable (:type "int") (reparse-symbol arg-sub-list) [1733 1743]))                          
+                        :type ("_Atomic_word" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1654 1808])
+                    ("__atomic_add" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("__mem" variable
+                               (:pointer 1
+                                :typemodifiers ("volatile")
+                                :type ("_Atomic_word" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1846 1875])
+                            ("__val" variable (:type "int") (reparse-symbol arg-sub-list) [1876 1886]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1812 1944])
+                    ("__exchange_and_add_single" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("__mem" variable
+                               (:pointer 1
+                                :type ("_Atomic_word" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2215 2235])
+                            ("__val" variable (:type "int") (reparse-symbol arg-sub-list) [2236 2246]))                          
+                        :type ("_Atomic_word" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2160 2332])
+                    ("__atomic_add_single" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("__mem" variable
+                               (:pointer 1
+                                :type ("_Atomic_word" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2377 2397])
+                            ("__val" variable (:type "int") (reparse-symbol arg-sub-list) [2398 2408]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2336 2431])
+                    ("__exchange_and_add_dispatch" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("__mem" variable
+                               (:pointer 1
+                                :type ("_Atomic_word" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2523 2543])
+                            ("__val" variable (:type "int") (reparse-symbol arg-sub-list) [2544 2554]))                          
+                        :type ("_Atomic_word" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2435 2785])
+                    ("__atomic_add_dispatch" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("__mem" variable
+                               (:pointer 1
+                                :type ("_Atomic_word" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2863 2883])
+                            ("__val" variable (:type "int") (reparse-symbol arg-sub-list) [2884 2894]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2789 3086]))                  
+                :type "namespace")
+                nil [1363 3120])
+            ("_GLIBCXX_READ_MEM_BARRIER" variable (:constant-flag t) nil [3322 3347])
+            ("_GLIBCXX_WRITE_MEM_BARRIER" variable (:constant-flag t) nil [3431 3457]))          
+      :file "atomicity.h"
+      :pointmax 3507
+      :fsize 3506
+      :lastmodtime '(20259 2139 0 0)
+      :unmatched-syntax '((symbol 3110 . 3118))
+      :lexical-table 
+        '(("_GLIBCXX_WRITE_MEM_BARRIER" . 
+              ((symbol "__asm" 3458 . 3463) (symbol "__volatile" 3464 . 3474) (semantic-list "(\"\":::\"memory\")" 3475 . 3490)))
+          ("_GLIBCXX_READ_MEM_BARRIER" . 
+              ((symbol "__asm" 3348 . 3353) (symbol "__volatile" 3354 . 3364) (semantic-list "(\"\":::\"memory\")" 3365 . 3380)))
+          ("_GLIBCXX_ATOMICITY_H" . ((number "1" 1278 . 1279)))
+          )
+))
+  :file "!mnt!home!mattg!Projects!gcc!472-binutil-225!gcc-4.7.2!libstdc++-v3!include!ext!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

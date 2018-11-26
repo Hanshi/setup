@@ -1,0 +1,3647 @@
+;; Object comp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "comp/"
+  :tables
+  (list
+    (semanticdb-table "FMCompImpl.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FastModelComponent.h" include nil nil [500 531])
+            ("FastModelInterface.h" include nil nil [532 563])
+            ("FMCompImpl.h" include nil nil [564 587])
+            ("FMSubcomp.h" include nil nil [588 610])
+            ("FMCompPorts.h" include nil nil [611 635])
+            ("FMCadiInterceptor.h" include nil nil [636 666])
+            ("FastModelComponent.h" include nil nil [667 698])
+            ("sc_mx_import_module.h" include nil nil [699 731])
+            ("eslapi/CADIFactory.h" include nil nil [732 763])
+            ("eslapi/CAInterface.h" include nil nil [764 795])
+            ("MxLicenseAPI.h" include nil nil [796 821])
+            ("AxiMasterPort.h" include nil nil [822 848])
+            ("AxiSlavePort.h" include nil nil [849 874])
+            ("AhbMasterPort.h" include nil nil [875 901])
+            ("AXI4_TLM.h" include nil nil [902 923])
+            ("stdexcept" include (:system-flag t) nil [924 944])
+            ("sFMModeToString" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1077 1091])
+                    ("str" variable
+                       (:pointer 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1092 1109]))                  
+                :type "void")
+                nil [1049 1464])
+            ("sCADIModeToString" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1496 1510])
+                    ("str" variable
+                       (:pointer 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1511 1528]))                  
+                :type "void")
+                nil [1466 1910])
+            ("WaitCallback" type
+               (:superclasses 
+                  ( ("sc::sc_sg_callbacks" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1962 1969])
+                    ("WaitCallback" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("parent" variable
+                               (:pointer 1
+                                :type ("FMCompImpl" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1985 2004])
+                            ("sgModel" variable
+                               (:pointer 1
+                                :type ("sc::sc_sg_wrapper_base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2020 2052])
+                            ("simAdapter" variable
+                               (:pointer 1
+                                :type ("eslapi::MxSimAdapter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2068 2101]))                          
+                        :type ("WaitCallback" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1972 2230])
+                    ("WaitCallback" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2233 2259])
+                    ("start_of_quantum" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [2293 2302]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2263 2723])
+                    ("wait" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("t" variable (:type "double") (reparse-symbol arg-sub-list) [2745 2754])
+                            ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [2755 2764]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2727 5960])
+                    ("proceed_quantum" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [5993 6002]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5964 6190])
+                    ("private" label nil (reparse-symbol classsubparts) [6192 6200])
+                    ("mParent" variable
+                       (:pointer 1
+                        :type ("FMCompImpl" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6203 6223])
+                    ("mSGModel" variable
+                       (:pointer 1
+                        :type ("sc::sc_sg_wrapper_base" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6226 6259])
+                    ("mSimAdapter" variable
+                       (:pointer 1
+                        :type ("eslapi::MxSimAdapter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6262 6296])
+                    ("mSetCadiSCThreadContextCalled" variable (:type "bool") (reparse-symbol classsubparts) [6299 6334]))                  
+                :type "class")
+                nil [1912 6337])
+            ("SGCompCADICallback" type
+               (:superclasses 
+                  ( ("eslapi::CADICallbackObj" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [6400 6407])
+                    ("SGCompCADICallback" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("simAdapter" variable
+                               (:pointer 1
+                                :type ("eslapi::MxSimAdapter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6429 6462])
+                            ("owner_" variable
+                               (:pointer 1
+                                :type ("FMCompImpl" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6463 6482])
+                            ("interceptor_" variable
+                               (:pointer 1
+                                :type ("FMCadiInterceptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6483 6515]))                          
+                        :type ("SGCompCADICallback" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6410 6586])
+                    ("SGCompCADICallback" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [6589 6621])
+                    ("ObtainInterface" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("ifName" variable (:type ("eslapi::if_name_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6663 6691])
+                            ("minRev" variable (:type ("eslapi::if_rev_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6732 6760])
+                            ("actualRev" variable
+                               (:pointer 1
+                                :type ("eslapi::if_rev_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6801 6832]))                          
+                        :type ("eslapi::CAInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6625 7548])
+                    ("appliOpen" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("sFileName" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [7579 7601])
+                            ("mode" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [7631 7648]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7552 7670])
+                    ("appliInput" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("streamId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7697 7715])
+                            ("count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7742 7757])
+                            ("actualCount" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7784 7806])
+                            ("buffer" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [7833 7846]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7673 8118])
+                    ("appliOutput" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("streamId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8146 8164])
+                            ("count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8192 8207])
+                            ("actualCount" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8235 8258])
+                            ("buffer" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [8286 8305]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8121 8458])
+                    ("appliClose" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("streamID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8489 8507]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8461 8602])
+                    ("doString" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stringArg" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [8628 8650]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8606 8653])
+                    ("modeChange" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("newMode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8681 8698])
+                            ("bptNumber" variable (:type ("eslapi::CADIBptNumber_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8725 8759]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8657 10397])
+                    ("reset" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("resetLevel" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10420 10440]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10401 10443])
+                    ("cycleTick" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10469 10474]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10446 10477])
+                    ("killInterface" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10507 10512]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10480 10515])
+                    ("bypass" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("commandLength" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10542 10565])
+                            ("command" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [10592 10613])
+                            ("maxResponseLength" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10640 10667])
+                            ("response" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [10694 10709]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10518 10731])
+                    ("lookupSymbol" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("symbolLength" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10765 10787])
+                            ("symbol" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [10821 10840])
+                            ("maxResponseLength" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10874 10901])
+                            ("response" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [10935 10950]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10734 10972])
+                    ("refresh" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("refreshReason" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10996 11019]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10975 11022])
+                    ("private" label nil (reparse-symbol classsubparts) [11024 11032])
+                    ("mSimAdapter" variable
+                       (:pointer 1
+                        :type ("eslapi::MxSimAdapter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11035 11069])
+                    ("owner" variable
+                       (:pointer 1
+                        :type ("FMCompImpl" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11072 11090])
+                    ("interceptor" variable
+                       (:pointer 1
+                        :type ("FMCadiInterceptor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11093 11124]))                  
+                :type "class")
+                nil [6340 11127])
+            ("FMCompImpl" function
+               (:constructor-flag t
+                :parent "FMCompImpl"
+                :arguments 
+                  ( ("sdComp" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIModule" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11153 11180]))                  
+                :type ("FMCompImpl" type (:type "class") nil nil))
+                nil [11130 12001])
+            ("FMCompImpl" function
+               (:destructor-flag t
+                :parent "FMCompImpl"
+                :type "void")
+                nil [12003 12137])
+            ("init" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("sgModel" variable
+                       (:pointer 1
+                        :type ("sc::sc_sg_wrapper_base" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12161 12193]))                  
+                :type "void")
+                nil [12139 13520])
+            ("terminate" function
+               (:parent "FMCompImpl"
+                :type "void")
+                nil [13522 13860])
+            ("reset" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("level" variable (:type ("eslapi::CASIResetLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13885 13914])
+                    ("filelist" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("eslapi::CASIFileMapIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13915 13953]))                  
+                :type "void")
+                nil [13862 14787])
+            ("interconnect" function
+               (:parent "FMCompImpl"
+                :type "void")
+                nil [14789 15305])
+            ("communicate" function
+               (:parent "FMCompImpl"
+                :type "void")
+                nil [15307 15421])
+            ("update" function
+               (:parent "FMCompImpl"
+                :type "void")
+                nil [15423 15527])
+            ("simulatorStatusChanged" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("running" variable (:type "int") (reparse-symbol arg-sub-list) [15569 15581]))                  
+                :type "void")
+                nil [15529 18308])
+            ("FMRun" function
+               (:parent "FMCompImpl"
+                :type "void")
+                nil [18310 20498])
+            ("FMStop" function
+               (:parent "FMCompImpl"
+                :type "void")
+                nil [20500 21053])
+            ("waitOneCycle" function
+               (:parent "FMCompImpl"
+                :type "void")
+                nil [21055 21113])
+            ("putSingleStepping" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("singlestepping" variable (:type "bool") (reparse-symbol arg-sub-list) [21150 21170]))                  
+                :type "void")
+                nil [21115 21206])
+            ("addSubcomponent" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21241 21265])
+                    ("origCompName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21299 21331])
+                    ("origCompFullName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21365 21401])
+                    ("executesSoftware" variable (:type "bool") (reparse-symbol arg-sub-list) [21435 21457])
+                    ("loadsApplication" variable (:type "bool") (reparse-symbol arg-sub-list) [21491 21513]))                  
+                :type "void")
+                nil [21208 21898])
+            ("putSCTLR" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("instance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21926 21954])
+                    ("sctlr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21955 21980]))                  
+                :type "void")
+                nil [21900 22067])
+            ("putSaveMemorySpace" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("instance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22105 22133])
+                    ("space" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22134 22159]))                  
+                :type "void")
+                nil [22069 22256])
+            ("addIgnoreRegister" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("instance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22293 22321])
+                    ("group" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22322 22347])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22348 22372]))                  
+                :type "void")
+                nil [22258 22474])
+            ("addRemapRegister" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("instance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22510 22538])
+                    ("group" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22573 22598])
+                    ("oldName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22633 22660])
+                    ("newName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22695 22722])
+                    ("newSize" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22757 22784]))                  
+                :type "void")
+                nil [22476 22906])
+            ("addGroupRemapRegister" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("instance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22947 22975])
+                    ("oldGroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23015 23043])
+                    ("newGroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23083 23111])
+                    ("oldName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23151 23178])
+                    ("newName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23218 23245])
+                    ("newSize" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23285 23312]))                  
+                :type "void")
+                nil [22908 23452])
+            ("addFullGroupRemapRegister" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("instance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23497 23525])
+                    ("oldGroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23526 23554])
+                    ("newGroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23555 23583]))                  
+                :type "void")
+                nil [23454 23700])
+            ("addVirtualRegister" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("instance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23738 23766])
+                    ("group" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23767 23792])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23793 23817])
+                    ("width" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23817 23842])
+                    ("address" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23842 23869]))                  
+                :type "void")
+                nil [23702 23985])
+            ("addSignalMaster" function
+               (:pointer 1
+                :parent "FMCompImpl"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24037 24061]))                  
+                :type ("SignalMasterPortInfo" type (:type "class") nil nil))
+                nil [23987 24288])
+            ("addSignalSlave" function
+               (:pointer 1
+                :parent "FMCompImpl"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24338 24362]))                  
+                :type ("SignalSlavePortInfo" type (:type "class") nil nil))
+                nil [24290 24574])
+            ("addSignalSlaveArray" function
+               (:pointer 1
+                :parent "FMCompImpl"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24634 24658])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24659 24674]))                  
+                :type ("SignalSlaveArrayPortInfo" type (:type "class") nil nil))
+                nil [24576 24913])
+            ("addValueMaster" function
+               (:pointer 1
+                :parent "FMCompImpl"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24963 24987])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24988 25003]))                  
+                :type ("ValueMasterPortInfo" type (:type "class") nil nil))
+                nil [24915 25233])
+            ("addValueSlave" function
+               (:pointer 1
+                :parent "FMCompImpl"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25281 25305])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25306 25321]))                  
+                :type ("ValueSlavePortInfo" type (:type "class") nil nil))
+                nil [25235 25536])
+            ("addValueStateMaster" function
+               (:pointer 1
+                :parent "FMCompImpl"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25596 25620])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25621 25636]))                  
+                :type ("ValueStateMasterPortInfo" type (:type "class") nil nil))
+                nil [25538 25886])
+            ("addValueStateSlave" function
+               (:pointer 1
+                :parent "FMCompImpl"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25944 25968])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25969 25984]))                  
+                :type ("ValueStateSlavePortInfo" type (:type "class") nil nil))
+                nil [25888 26219])
+            ("addAXITransactionMaster" function
+               (:pointer 1
+                :parent "FMCompImpl"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26287 26311])
+                    ("data_width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26316 26336])
+                    ("clkName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26341 26368])
+                    ("addr_width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26373 26393])
+                    ("user_width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26398 26418])
+                    ("protocol_name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26423 26456]))                  
+                :type ("AXITransactionMasterPortInfo" type (:type "class") nil nil))
+                nil [26221 27145])
+            ("addAXITransactionSlave" function
+               (:pointer 1
+                :parent "FMCompImpl"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27211 27235])
+                    ("data_width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27240 27260])
+                    ("clkName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27265 27292])
+                    ("addr_width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27297 27317])
+                    ("user_width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27322 27342])
+                    ("protocol_name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27347 27380]))                  
+                :type ("AXITransactionSlavePortInfo" type (:type "class") nil nil))
+                nil [27147 28131])
+            ("addAHBTransactionMaster" function
+               (:pointer 1
+                :parent "FMCompImpl"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28199 28223])
+                    ("ahblite" variable (:type "bool") (reparse-symbol arg-sub-list) [28224 28237])
+                    ("pre" variable (:type "bool") (reparse-symbol arg-sub-list) [28238 28247])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28248 28263])
+                    ("clkName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28268 28295]))                  
+                :type ("AHBTransactionMasterPortInfo" type (:type "class") nil nil))
+                nil [28133 28839])
+            ("addAHBTransactionSlave" function
+               (:pointer 1
+                :parent "FMCompImpl"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28905 28929])
+                    ("ahblite" variable (:type "bool") (reparse-symbol arg-sub-list) [28930 28943])
+                    ("pre" variable (:type "bool") (reparse-symbol arg-sub-list) [28944 28953])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28954 28969])
+                    ("clkName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28974 29001]))                  
+                :type ("AHBTransactionSlavePortInfo" type (:type "class") nil nil))
+                nil [28841 29541])
+            ("addAPBTransactionMaster" function
+               (:pointer 1
+                :parent "FMCompImpl"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29609 29633])
+                    ("clkName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29638 29665]))                  
+                :type ("APBTransactionMasterPortInfo" type (:type "class") nil nil))
+                nil [29543 30188])
+            ("bindPort" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("SignalMasterPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30216 30247])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::signal_master_port" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30248 30290]))                  
+                :type "void")
+                nil [30190 30324])
+            ("bindPort" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("SignalSlavePortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30352 30382])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::signal_slave_export" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30383 30426]))                  
+                :type "void")
+                nil [30326 30460])
+            ("bindPort" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("SignalSlaveArrayPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30488 30523])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::signal_slave_export" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30524 30567])
+                    ("index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30568 30583]))                  
+                :type "void")
+                nil [30462 30624])
+            ("bindPort" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("ValueMasterPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30652 30682])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::signal_master_port" type
+                             (:template-specifier 
+                                ( ("uint32_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30683 30729]))                  
+                :type "void")
+                nil [30626 30763])
+            ("bindPort" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("ValueSlavePortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30791 30820])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::signal_slave_export" type
+                             (:template-specifier 
+                                ( ("uint32_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30821 30868]))                  
+                :type "void")
+                nil [30765 30902])
+            ("bindPort" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("ValueStateMasterPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30930 30965])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::signal_state_master_port" type
+                             (:template-specifier 
+                                ( ("uint32_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30966 31018]))                  
+                :type "void")
+                nil [30904 31052])
+            ("bindPort" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("ValueStateSlavePortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31080 31114])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::signal_state_slave_export" type
+                             (:template-specifier 
+                                ( ("uint32_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31115 31168]))                  
+                :type "void")
+                nil [31054 31202])
+            ("bindPort" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("AXITransactionMasterPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31230 31269])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::amba_pv_master_socket" type
+                             (:template-specifier (("64"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31270 31313]))                  
+                :type "void")
+                nil [31204 31347])
+            ("bindPort" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("AXITransactionSlavePortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31375 31413])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::amba_pv_slave_socket" type
+                             (:template-specifier (("64"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31414 31456]))                  
+                :type "void")
+                nil [31349 31490])
+            ("bindPort" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("AHBTransactionMasterPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31518 31557])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::amba_pv_master_socket" type
+                             (:template-specifier (("64"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31558 31601]))                  
+                :type "void")
+                nil [31492 31635])
+            ("bindPort" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("AHBTransactionSlavePortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31663 31701])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::amba_pv_slave_socket" type
+                             (:template-specifier (("64"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31702 31744]))                  
+                :type "void")
+                nil [31637 31778])
+            ("bindPort" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("APBTransactionMasterPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31806 31845])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::amba_pv_master_socket" type
+                             (:template-specifier (("64"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31846 31889]))                  
+                :type "void")
+                nil [31780 31923])
+            ("end_of_elaboration" function
+               (:parent "FMCompImpl"
+                :type "void")
+                nil [31925 37086])
+            ("loadApplication" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("instance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37121 37149])
+                    ("application" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37150 37181]))                  
+                :type "void")
+                nil [37088 38431])
+            ("registerMemory" function
+               (:pointer 1
+                :parent "FMCompImpl"
+                :arguments 
+                  ( ("memInstance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38487 38518])
+                    ("cpuInstance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38519 38550])
+                    ("baseAddress" variable (:type ("fmAddress_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38551 38575]))                  
+                :type ("FastModelRegisteredMemory" type (:type "class") nil nil))
+                nil [38433 39162])
+            ("recordMemAccess" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("mem" variable
+                       (:pointer 1
+                        :type ("FastModelRegisteredMemory" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39284 39315])
+                    ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39316 39330]))                  
+                :type "void")
+                nil [39251 39481])
+            ("recordUnexpectedMemAccess" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("instance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39526 39554]))                  
+                :type "void")
+                nil [39483 39677])
+            ("getSubcomponent" function
+               (:pointer 1
+                :parent "FMCompImpl"
+                :arguments 
+                  ( ("instance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39723 39751]))                  
+                :type ("FMSubcomponent" type (:type "class") nil nil))
+                nil [39679 40071])
+            ("getClockedPorts" function
+               (:pointer 1
+                :parent "FMCompImpl"
+                :arguments 
+                  ( ("clkName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40115 40142]))                  
+                :type ("ClockedPorts" type (:type "class") nil nil))
+                nil [40073 40815])
+            ("checkIdleTransactors" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("nonIdle" variable
+                       (:pointer 1
+                        :type ("StringVec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40855 40874]))                  
+                :type "bool")
+                nil [40817 41177])
+            ("FMClockSlave" function
+               (:constructor-flag t
+                :parent "FMClockSlave"
+                :arguments 
+                  ( ("owner" variable
+                       (:pointer 1
+                        :type ("CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41207 41227]))                  
+                :type ("FMClockSlave" type (:type "class") nil nil))
+                nil [41180 41288])
+            ("FMClockSlave" function
+               (:destructor-flag t
+                :parent "FMClockSlave"
+                :type "void")
+                nil [41290 41340])
+            ("getClockedPorts" function
+               (:pointer 1
+                :parent "FMClockSlave"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [41386 41391]))                  
+                :type ("ClockedPorts" type (:type "class") nil nil))
+                nil [41342 41412])
+            ("reset" function
+               (:parent "FMClockSlave"
+                :type "void")
+                nil [41414 41463])
+            ("communicate" function
+               (:parent "FMClockSlave"
+                :type "void")
+                nil [41465 41526])
+            ("update" function
+               (:parent "FMClockSlave"
+                :type "void")
+                nil [41528 41579])
+            ("checkIdleTransactors" function
+               (:parent "FMClockSlave"
+                :arguments 
+                  ( ("nonIdle" variable
+                       (:pointer 1
+                        :type ("FMCompImpl::StringVec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41621 41652]))                  
+                :type "bool")
+                nil [41581 41710])
+            ("registerFMQuantumCB" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("cb" variable (:type ("Carbon::FM::FMQuantumCB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41754 41781]))                  
+                :type "unsigned int")
+                nil [41713 41859])
+            ("unregisterFMQuantumCB" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("callbackId" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [41900 41920]))                  
+                :type "void")
+                nil [41861 42251])
+            ("addArchSaveHandler" function
+               (:parent "FMCompImpl"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42289 42313])
+                    ("handler" variable
+                       (:pointer 1
+                        :type ("ArchSaveHandlerIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42313 42340]))                  
+                :type "void")
+                nil [42253 42496]))          
+      :file "FMCompImpl.cpp"
+      :pointmax 42498
+      :fsize 42497
+      :lastmodtime '(22591 25991 644639 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "FastModelComponent.h"
+      :file "FastModelComponent.h"
+      :fsize 7605
+      :lastmodtime '(22588 41720 305663 0))
+
+
+    (semanticdb-table "FMCompImpl.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__FMCOMPIMPL_H__" variable (:constant-flag t) nil [947 963])
+            ("maxsimCompatibility.h" include nil nil [965 997])
+            ("eslapi/CASISaveRestoreArch.h" include nil nil [998 1037])
+            ("common/FastModelTypes.h" include nil nil [1038 1072])
+            ("amba_pv.h" include nil nil [1073 1093])
+            ("sc_sg_wrapper_base.h" include nil nil [1094 1125])
+            ("eslapi/CADIFactory.h" include nil nil [1126 1157])
+            ("eslapi/CAInterface.h" include nil nil [1158 1189])
+            ("peerapi/FMQuantumCallbackIF.h" include nil nil [1190 1230])
+            ("peerapi/ArchSaveHandlerIF.h" include nil nil [1231 1269])
+            ("vector" include (:system-flag t) nil [1271 1288])
+            ("map" include (:system-flag t) nil [1289 1303])
+            ("PortInfoBase" type
+               (:prototype t
+                :type "class")
+                nil [1347 1366])
+            ("SignalMasterPortInfo" type
+               (:prototype t
+                :type "class")
+                nil [1367 1394])
+            ("SignalSlavePortInfo" type
+               (:prototype t
+                :type "class")
+                nil [1395 1421])
+            ("SignalSlaveArrayPortInfo" type
+               (:prototype t
+                :type "class")
+                nil [1422 1453])
+            ("ValueMasterPortInfo" type
+               (:prototype t
+                :type "class")
+                nil [1454 1480])
+            ("ValueSlavePortInfo" type
+               (:prototype t
+                :type "class")
+                nil [1481 1506])
+            ("ValueStateMasterPortInfo" type
+               (:prototype t
+                :type "class")
+                nil [1507 1538])
+            ("ValueStateSlavePortInfo" type
+               (:prototype t
+                :type "class")
+                nil [1539 1569])
+            ("AXITransactionMasterPortInfo" type
+               (:prototype t
+                :type "class")
+                nil [1570 1605])
+            ("AXITransactionSlavePortInfo" type
+               (:prototype t
+                :type "class")
+                nil [1606 1640])
+            ("AHBTransactionMasterPortInfo" type
+               (:prototype t
+                :type "class")
+                nil [1641 1676])
+            ("AHBTransactionSlavePortInfo" type
+               (:prototype t
+                :type "class")
+                nil [1677 1711])
+            ("APBTransactionMasterPortInfo" type
+               (:prototype t
+                :type "class")
+                nil [1712 1747])
+            ("FMSubcomponent" type
+               (:prototype t
+                :type "class")
+                nil [1748 1769])
+            ("FMCadiInterceptor" type
+               (:prototype t
+                :type "class")
+                nil [1770 1794])
+            ("FastModelInterface" type
+               (:prototype t
+                :type "class")
+                nil [1795 1820])
+            ("FastModelRegisteredMemory" type
+               (:prototype t
+                :type "class")
+                nil [1821 1853])
+            ("ClockedPorts" type
+               (:prototype t
+                :type "class")
+                nil [1854 1873])
+            ("FMClockSlave" type
+               (:prototype t
+                :type "class")
+                nil [1874 1893])
+            ("Carbon::ArchSaveHandlerIF" using (:type ("Carbon::ArchSaveHandlerIF" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1895 1937])
+            ("FMCompImpl" type
+               (:superclasses 
+                  ( ("eslapi::MxSimStatusListener" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1995 2002])
+                    ("FMCompImpl" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("sdComp" variable
+                               (:pointer 1
+                                :type ("eslapi::CASIModule" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2016 2043]))                          
+                        :type ("FMCompImpl" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2005 2044])
+                    ("FMCompImpl" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2047 2069])
+                    ("end_of_elaboration" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2073 2099])
+                    ("getSDComp" function
+                       (:pointer 1
+                        :type ("eslapi::CASIModule" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2103 2162])
+                    ("init" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("sgModel" variable
+                               (:pointer 1
+                                :type ("sc::sc_sg_wrapper_base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2184 2216]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2166 2217])
+                    ("terminate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2220 2245])
+                    ("reset" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("level" variable (:type ("eslapi::CASIResetLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2267 2296])
+                            ("filelist" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("eslapi::CASIFileMapIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2297 2335]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2248 2336])
+                    ("interconnect" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2339 2359])
+                    ("communicate" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2362 2381])
+                    ("update" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2384 2398])
+                    ("getCADI" function
+                       (:pointer 1
+                        :type ("eslapi::CADI" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2402 2451])
+                    ("getSGModel" function
+                       (:pointer 1
+                        :type ("sc::sc_sg_wrapper_base" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2454 2519])
+                    ("simulatorStatusChanged" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("running" variable (:type "int") (reparse-symbol arg-sub-list) [2559 2571]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2523 2572])
+                    ("waitOneCycle" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2576 2596])
+                    ("putSingleStepping" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("singlestepping" variable (:type "bool") (reparse-symbol arg-sub-list) [2622 2642]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2599 2643])
+                    ("getSingleStepping" function (:type "bool") (reparse-symbol classsubparts) [2646 2702])
+                    ("getStarted" function (:type "bool") (reparse-symbol classsubparts) [2705 2751])
+                    ("setStarted" function (:type "void") (reparse-symbol classsubparts) [2754 2800])
+                    ("putHaltOnFMStop" function
+                       (:arguments 
+                          ( ("halt" variable (:type "bool") (reparse-symbol arg-sub-list) [2824 2834]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2803 2868])
+                    ("getHaltOnFMStop" function (:type "bool") (reparse-symbol classsubparts) [2871 2933])
+                    ("putSupportsSwapAndPlay" function (:type "void") (reparse-symbol classsubparts) [2937 3007])
+                    ("getSupportsSwapAndPlay" function (:type "bool") (reparse-symbol classsubparts) [3010 3086])
+                    ("addSubcomponent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3111 3135])
+                            ("origCompName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3136 3168])
+                            ("origCompFullName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3169 3205])
+                            ("executesSoftware" variable (:type "bool") (reparse-symbol arg-sub-list) [3230 3252])
+                            ("loadsApplication" variable (:type "bool") (reparse-symbol arg-sub-list) [3253 3275]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3090 3276])
+                    ("addArchSaveHandler" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3304 3328])
+                            ("handler" variable
+                               (:pointer 1
+                                :type ("ArchSaveHandlerIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3328 3355]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3280 3356])
+                    ("putSCTLR" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3373 3401])
+                            ("sctlr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3402 3427]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3359 3428])
+                    ("putSaveMemorySpace" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3455 3483])
+                            ("space" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3484 3509]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3431 3510])
+                    ("addIgnoreRegister" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3537 3565])
+                            ("group" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3566 3591])
+                            ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3592 3616]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3514 3617])
+                    ("addRemapRegister" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3642 3670])
+                            ("group" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3695 3720])
+                            ("oldName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3745 3772])
+                            ("newName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3797 3824])
+                            ("newSize" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3849 3876]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3620 3877])
+                    ("addGroupRemapRegister" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3907 3935])
+                            ("oldGroup" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3965 3993])
+                            ("newGroup" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4023 4051])
+                            ("oldName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4081 4108])
+                            ("newName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4138 4165])
+                            ("newSize" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4195 4222]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3880 4223])
+                    ("addFullGroupRemapRegister" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4257 4285])
+                            ("oldGroup" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4286 4314])
+                            ("newGroup" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4315 4343]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4226 4344])
+                    ("addVirtualRegister" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4371 4399])
+                            ("group" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4400 4425])
+                            ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4426 4450])
+                            ("width" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4450 4475])
+                            ("address" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4475 4502]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4347 4503])
+                    ("addSignalMaster" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4545 4569]))                          
+                        :type ("SignalMasterPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4507 4570])
+                    ("addSignalSlave" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4609 4633]))                          
+                        :type ("SignalSlavePortInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4573 4634])
+                    ("addSignalSlaveArray" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4683 4707])
+                            ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4708 4723]))                          
+                        :type ("SignalSlaveArrayPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4637 4724])
+                    ("addValueMaster" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4763 4787])
+                            ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4788 4803]))                          
+                        :type ("ValueMasterPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4727 4804])
+                    ("addValueSlave" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4841 4865])
+                            ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4866 4881]))                          
+                        :type ("ValueSlavePortInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4807 4882])
+                    ("addValueStateMaster" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4931 4955])
+                            ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4956 4971]))                          
+                        :type ("ValueStateMasterPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4885 4972])
+                    ("addValueStateSlave" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5019 5043])
+                            ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5044 5059]))                          
+                        :type ("ValueStateSlavePortInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4975 5060])
+                    ("addAXITransactionMaster" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5117 5141])
+                            ("data_width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5142 5162])
+                            ("clkName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5169 5196])
+                            ("addr_width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5203 5223])
+                            ("user_width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5230 5250])
+                            ("protocol_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5270 5303]))                          
+                        :type ("AXITransactionMasterPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5063 5304])
+                    ("addAXITransactionSlave" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5359 5383])
+                            ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5384 5399])
+                            ("clkName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5406 5433])
+                            ("addr_width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5440 5460])
+                            ("user_width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5467 5487])
+                            ("protocol_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5507 5540]))                          
+                        :type ("AXITransactionSlavePortInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5307 5541])
+                    ("addAHBTransactionMaster" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5598 5622])
+                            ("ahblite" variable (:type "bool") (reparse-symbol arg-sub-list) [5623 5636])
+                            ("pre" variable (:type "bool") (reparse-symbol arg-sub-list) [5637 5646])
+                            ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5647 5662])
+                            ("clkName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5669 5696]))                          
+                        :type ("AHBTransactionMasterPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5544 5697])
+                    ("addAHBTransactionSlave" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5752 5776])
+                            ("ahblite" variable (:type "bool") (reparse-symbol arg-sub-list) [5777 5790])
+                            ("pre" variable (:type "bool") (reparse-symbol arg-sub-list) [5791 5800])
+                            ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5801 5816])
+                            ("clkName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5823 5850]))                          
+                        :type ("AHBTransactionSlavePortInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5700 5851])
+                    ("addAPBTransactionMaster" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5908 5932])
+                            ("clkName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5939 5966]))                          
+                        :type ("APBTransactionMasterPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5854 5967])
+                    ("bindPort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("portInfo" variable
+                               (:pointer 1
+                                :type ("SignalMasterPortInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5985 6016])
+                            ("sgPort" variable
+                               (:pointer 1
+                                :type ("amba_pv::signal_master_port" type
+                                     (:template-specifier 
+                                        ( ("bool" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6017 6059]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5971 6060])
+                    ("bindPort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("portInfo" variable
+                               (:pointer 1
+                                :type ("SignalSlavePortInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6077 6107])
+                            ("sgPort" variable
+                               (:pointer 1
+                                :type ("amba_pv::signal_slave_export" type
+                                     (:template-specifier 
+                                        ( ("bool" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6108 6151]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6063 6152])
+                    ("bindPort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("portInfo" variable
+                               (:pointer 1
+                                :type ("SignalSlaveArrayPortInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6169 6204])
+                            ("sgPort" variable
+                               (:pointer 1
+                                :type ("amba_pv::signal_slave_export" type
+                                     (:template-specifier 
+                                        ( ("bool" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6205 6248])
+                            ("index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6249 6264]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6155 6265])
+                    ("bindPort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("portInfo" variable
+                               (:pointer 1
+                                :type ("ValueMasterPortInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6282 6312])
+                            ("sgPort" variable
+                               (:pointer 1
+                                :type ("amba_pv::signal_master_port" type
+                                     (:template-specifier 
+                                        ( ("uint32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6313 6359]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6268 6360])
+                    ("bindPort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("portInfo" variable
+                               (:pointer 1
+                                :type ("ValueSlavePortInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6377 6406])
+                            ("sgPort" variable
+                               (:pointer 1
+                                :type ("amba_pv::signal_slave_export" type
+                                     (:template-specifier 
+                                        ( ("uint32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6407 6454]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6363 6455])
+                    ("bindPort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("portInfo" variable
+                               (:pointer 1
+                                :type ("ValueStateMasterPortInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6472 6507])
+                            ("sgPort" variable
+                               (:pointer 1
+                                :type ("amba_pv::signal_state_master_port" type
+                                     (:template-specifier 
+                                        ( ("uint32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6508 6560]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6458 6561])
+                    ("bindPort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("portInfo" variable
+                               (:pointer 1
+                                :type ("ValueStateSlavePortInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6578 6612])
+                            ("sgPort" variable
+                               (:pointer 1
+                                :type ("amba_pv::signal_state_slave_export" type
+                                     (:template-specifier 
+                                        ( ("uint32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6613 6666]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6564 6667])
+                    ("bindPort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("portInfo" variable
+                               (:pointer 1
+                                :type ("AXITransactionMasterPortInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6684 6723])
+                            ("sgPort" variable
+                               (:pointer 1
+                                :type ("amba_pv::amba_pv_master_socket" type
+                                     (:template-specifier (("64"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6724 6767]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6670 6768])
+                    ("bindPort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("portInfo" variable
+                               (:pointer 1
+                                :type ("AXITransactionSlavePortInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6785 6823])
+                            ("sgPort" variable
+                               (:pointer 1
+                                :type ("amba_pv::amba_pv_slave_socket" type
+                                     (:template-specifier (("64"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6824 6866]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6771 6867])
+                    ("bindPort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("portInfo" variable
+                               (:pointer 1
+                                :type ("AHBTransactionMasterPortInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6884 6923])
+                            ("sgPort" variable
+                               (:pointer 1
+                                :type ("amba_pv::amba_pv_master_socket" type
+                                     (:template-specifier (("64"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6924 6967]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6870 6968])
+                    ("bindPort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("portInfo" variable
+                               (:pointer 1
+                                :type ("AHBTransactionSlavePortInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6985 7023])
+                            ("sgPort" variable
+                               (:pointer 1
+                                :type ("amba_pv::amba_pv_slave_socket" type
+                                     (:template-specifier (("64"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7024 7066]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6971 7067])
+                    ("bindPort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("portInfo" variable
+                               (:pointer 1
+                                :type ("APBTransactionMasterPortInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7084 7123])
+                            ("sgPort" variable
+                               (:pointer 1
+                                :type ("amba_pv::amba_pv_master_socket" type
+                                     (:template-specifier (("64"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7124 7167]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7070 7168])
+                    ("setFMmode" function
+                       (:arguments 
+                          ( ("newmode" variable (:type "int") (reparse-symbol arg-sub-list) [7187 7199]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7172 7237])
+                    ("getFMmode" function (:type "int") (reparse-symbol classsubparts) [7240 7290])
+                    ("atDebuggablePoint" function (:type "bool") (reparse-symbol classsubparts) [7293 7412])
+                    ("StringVec" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [7483 7526])
+                    ("checkIdleTransactors" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("nonIdle" variable
+                               (:pointer 1
+                                :type ("StringVec" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7555 7574]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7529 7581])
+                    ("mCurrentSDmode" variable (:type "int") (reparse-symbol classsubparts) [7585 7604])
+                    ("FMRun" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7607 7620])
+                    ("FMStop" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7623 7637])
+                    ("debugoutput" variable (:type "bool") (reparse-symbol classsubparts) [7641 7658])
+                    ("getFastModelInterface" function
+                       (:pointer 1
+                        :type ("FastModelInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7662 7733])
+                    ("registerMemory" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("memInstance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8069 8100])
+                            ("cpuInstance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8101 8132])
+                            ("baseAddress" variable (:type ("fmAddress_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8133 8157]))                          
+                        :type ("FastModelRegisteredMemory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8027 8158])
+                    ("recordMemAccess" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("mem" variable
+                               (:pointer 1
+                                :type ("FastModelRegisteredMemory" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8226 8257])
+                            ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8258 8272]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8205 8273])
+                    ("recordUnexpectedMemAccess" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8360 8388]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8329 8389])
+                    ("putTransactionActive" function
+                       (:arguments 
+                          ( ("active" variable (:type "bool") (reparse-symbol arg-sub-list) [8419 8431]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8393 8472])
+                    ("getTransactionActive" function (:type "bool") (reparse-symbol classsubparts) [8475 8547])
+                    ("getGlobalQuantum" function (:type "double") (reparse-symbol classsubparts) [8551 8617])
+                    ("setGlobalQuantum" function
+                       (:arguments 
+                          ( ("val" variable (:type "double") (reparse-symbol arg-sub-list) [8642 8653]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8620 8737])
+                    ("registerFMQuantumCB" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("Carbon::FM::FMQuantumCB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8805 8829]))                          
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [8776 8830])
+                    ("unregisterFMQuantumCB" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("callbackId" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8860 8880]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8833 8881])
+                    ("mNextFMQuantumId" variable (:type "unsigned int") (reparse-symbol classsubparts) [8908 8934])
+                    ("mFMQuantumCB" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("unsigned int" type nil nil nil)
+                              ("Carbon::FM::FMQuantumCB" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [8937 8993])
+                    ("private" label nil (reparse-symbol classsubparts) [8995 9003])
+                    ("mSDComp" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIModule" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9006 9034])
+                    ("mSGModel" variable
+                       (:pointer 1
+                        :type ("sc::sc_sg_wrapper_base" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9037 9070])
+                    ("mSupportsSwapAndPlay" variable (:type "bool") (reparse-symbol classsubparts) [9074 9100])
+                    ("SubcomponentMap" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("FMSubcomponent" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [9104 9167])
+                    ("mSubcomponents" variable (:type ("SubcomponentMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9170 9201])
+                    ("mMasterClockPorts" variable
+                       (:pointer 1
+                        :type ("ClockedPorts" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9252 9284])
+                    ("ClockSlaves" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("FMClockSlave" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [9361 9418])
+                    ("mClockSlaves" variable (:type ("ClockSlaves" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9421 9446])
+                    ("getClockedPorts" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("clkName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9561 9588]))                          
+                        :type ("ClockedPorts" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9531 9589])
+                    ("mWaitCB" variable
+                       (:pointer 1
+                        :type ("sc::sc_sg_callbacks" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9626 9655])
+                    ("mTimeOneCycle" variable (:type ("sc_time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9702 9724])
+                    ("mCadi" variable
+                       (:pointer 1
+                        :type ("eslapi::CADI" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9753 9773])
+                    ("CADIVec" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("FMCadiInterceptor" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [9776 9824])
+                    ("mCPUCadi" variable (:type ("CADIVec" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9827 9844])
+                    ("CADICallbackVec" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("eslapi::CADICallbackObj" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [9847 9909])
+                    ("mCPUCadiCallbacks" variable (:type ("CADICallbackVec" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9912 9946])
+                    ("mSingleStep" variable (:type "bool") (reparse-symbol classsubparts) [10143 10160])
+                    ("mStarted" variable (:type "bool") (reparse-symbol classsubparts) [10265 10279])
+                    ("mHaltOnFMStop" variable (:type "bool") (reparse-symbol classsubparts) [10361 10380])
+                    ("loadApplication" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10622 10650])
+                            ("application" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10651 10682]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10601 10683])
+                    ("getSubcomponent" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("instance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10718 10746]))                          
+                        :type ("FMSubcomponent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10686 10747])
+                    ("mCurrentFMmode" variable (:type "int") (reparse-symbol classsubparts) [10751 10770])
+                    ("mFMIntf" variable
+                       (:pointer 1
+                        :type ("FastModelInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10847 10875])
+                    ("mTransactionActive" variable (:type "bool") (reparse-symbol classsubparts) [10915 10939])
+                    ("mGlobalQuantum" variable (:type "double") (reparse-symbol classsubparts) [11004 11026]))                  
+                :type "class")
+                nil [1939 11030])
+            ("FMClockSlave" type
+               (:superclasses 
+                  ( ("eslapi::CASIClockSlave" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [11193 11200])
+                    ("FMClockSlave" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("owner" variable
+                               (:pointer 1
+                                :type ("CASIModuleIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11234 11254]))                          
+                        :type ("FMClockSlave" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11221 11255])
+                    ("FMClockSlave" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [11276 11300])
+                    ("getClockedPorts" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("ClockedPorts" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11359 11391])
+                    ("reset" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [11451 11464])
+                    ("communicate" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [11518 11537])
+                    ("update" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [11591 11605])
+                    ("checkIdleTransactors" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("nonIdle" variable
+                               (:pointer 1
+                                :type ("FMCompImpl::StringVec" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11703 11734]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [11677 11741])
+                    ("private" label nil (reparse-symbol classsubparts) [11743 11751])
+                    ("mPorts" variable
+                       (:pointer 1
+                        :type ("ClockedPorts" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11754 11775]))                  
+                :type "class")
+                nil [11140 11778])
+            ("featureStringFastModelRuntime" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  'S' ^ 'S',
+  'o' ^ 'o',
+  'f' ^ 'C',
+  't' ^ 'D',
+  'w' ^ 'e',
+  'a' ^ 's',
+  'r' ^ 'i',
+  'e' ^ 'g',
+  ' ' ^ 'n',
+  'B' ^ 'e',
+  'y' ^ 'r',
+  ' ' ^ '_',
+  'A' ^ 'F',
+  'X' ^ 'a',
+  'Y' ^ 's',
+  'S' ^ 't',
+  ' ' ^ 'M',
+  'D' ^ 'o',
+  'e' ^ 'd',
+  's' ^ 'e',
+  'i' ^ 'l',
+  'g' ^ '_',
+  'n' ^ 'R',
+  ' ' ^ 'u',
+  ' ' ^ 'n',
+  ' ' ^ 't',
+  ' ' ^ 'i',
+  ' ' ^ 'm',
+  ' ' ^ 'e',
+  '\\0'
+}"
+                :type "char")
+                nil [11846 12290])
+            ("licenseVersionStr" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  'A' ^ '1',
+  'X' ^ '.',
+  'Y' ^ '0',
+  'S' ^ '0',
+  '\\0'
+}"
+                :type "char")
+                nil [12303 12409]))          
+      :file "FMCompImpl.h"
+      :pointmax 12418
+      :fsize 12417
+      :lastmodtime '(22588 41720 257664 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__FMCOMPIMPL_H__")
+          )
+)
+    (semanticdb-table "FMSubcomp.h"
+      :file "FMSubcomp.h"
+      :fsize 8488
+      :lastmodtime '(22588 41720 298672 0))
+    (semanticdb-table "FMCompPorts.h"
+      :file "FMCompPorts.h"
+      :fsize 18510
+      :lastmodtime '(22588 41720 268668 0))
+    (semanticdb-table "FMCadiInterceptor.h"
+      :file "FMCadiInterceptor.h"
+      :fsize 9642
+      :lastmodtime '(22588 41720 249666 0))
+    (semanticdb-table "AxiMasterPort.h"
+      :file "AxiMasterPort.h"
+      :fsize 3170
+      :lastmodtime '(22588 41720 235668 0))
+    (semanticdb-table "AxiSlavePort.h"
+      :file "AxiSlavePort.h"
+      :fsize 3081
+      :lastmodtime '(22588 41720 240668 0))
+    (semanticdb-table "AhbMasterPort.h"
+      :file "AhbMasterPort.h"
+      :fsize 6634
+      :lastmodtime '(22588 41720 218667 0))
+
+    (semanticdb-table "FastModelComponent.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GlobalDefs.h" include nil nil [441 464])
+            ("scx_scheduler_mapping.h" include nil nil [465 499])
+            ("FastModelComponent.h" include nil nil [501 532])
+            ("CarbonSimulationController.h" include nil nil [533 572])
+            ("CarbonSchedulerMapping.h" include nil nil [573 608])
+            ("FMCompImpl.h" include nil nil [609 632])
+            ("MxPrivateTypes.h" include nil nil [633 660])
+            ("ProtocolUtils.h" include nil nil [661 687])
+            ("FMQuantumInit.h" include nil nil [688 714])
+            ("sstream" include (:system-flag t) nil [716 734])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [735 755])
+            ("fm_socd_quantum" variable (:type ("eslapi::fm_socd_quantum_t" type (:type "class") nil nil)) nil [758 800])
+            ("gFMSimController" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("CarbonSimulationController" type (:type "class") nil nil))
+                nil [801 853])
+            ("FastModelComponent" function
+               (:constructor-flag t
+                :parent "FastModelComponent"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [894 923])
+                    ("scName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sc_module_name" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [924 953])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [993 1017]))                  
+                :type ("FastModelComponent" type (:type "class") nil nil))
+                nil [855 1233])
+            ("FastModelComponent" function
+               (:destructor-flag t
+                :parent "FastModelComponent"
+                :type "void")
+                nil [1235 1360])
+            ("before_end_of_elaboration" function
+               (:parent "FastModelComponent"
+                :type "void")
+                nil [1362 1465])
+            ("end_of_elaboration" function
+               (:parent "FastModelComponent"
+                :type "void")
+                nil [1467 1585])
+            ("start_of_simulation" function
+               (:parent "FastModelComponent"
+                :type "void")
+                nil [1587 5082])
+            ("terminate" function
+               (:parent "FastModelComponent"
+                :type "void")
+                nil [5084 5206])
+            ("reset" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("level" variable (:type ("eslapi::CASIResetLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5239 5268])
+                    ("filelist" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("eslapi::CASIFileMapIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5269 5307]))                  
+                :type "void")
+                nil [5208 5435])
+            ("getCADI" function
+               (:pointer 1
+                :parent "FastModelComponent"
+                :type ("eslapi::CADI" type (:type "class") nil nil))
+                nil [5437 5511])
+            ("getProperty" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("property" variable (:type ("eslapi::CASIPropertyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5552 5586]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [5513 6176])
+            ("getCB" function
+               (:pointer 1
+                :parent "FastModelComponent"
+                :type ("eslapi::CASISaveRestoreArchCallbackIF" type (:type "class") nil nil))
+                nil [6178 6447])
+            ("putSupportsSwapAndPlay" function
+               (:parent "FastModelComponent"
+                :type "void")
+                nil [6449 6537])
+            ("addSubcomponent" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6580 6604])
+                    ("origCompName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6609 6641])
+                    ("origCompFullName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6646 6682])
+                    ("executesSoftware" variable (:type "bool") (reparse-symbol arg-sub-list) [6687 6709])
+                    ("loadsApplication" variable (:type "bool") (reparse-symbol arg-sub-list) [6714 6736]))                  
+                :type "void")
+                nil [6539 6914])
+            ("putSCTLR" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("instance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6950 6978])
+                    ("sctlr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6979 7004]))                  
+                :type "void")
+                nil [6916 7044])
+            ("putSaveMemorySpace" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("instance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7090 7118])
+                    ("space" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7119 7144]))                  
+                :type "void")
+                nil [7046 7194])
+            ("addIgnoreRegister" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("instance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7239 7267])
+                    ("group" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7268 7293])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7294 7318]))                  
+                :type "void")
+                nil [7196 7373])
+            ("addRemapRegister" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("instance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7417 7445])
+                    ("group" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7450 7475])
+                    ("oldName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7480 7507])
+                    ("newName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7512 7539])
+                    ("newSize" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7544 7571]))                  
+                :type "void")
+                nil [7375 7646])
+            ("addGroupRemapRegister" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("instance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7695 7723])
+                    ("oldGroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7728 7756])
+                    ("newGroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7761 7789])
+                    ("oldName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7794 7821])
+                    ("newName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7826 7853])
+                    ("newSize" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7858 7885]))                  
+                :type "void")
+                nil [7648 7978])
+            ("addFullGroupRemapRegister" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("instance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8031 8059])
+                    ("oldGroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8060 8088])
+                    ("newGroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8089 8117]))                  
+                :type "void")
+                nil [7980 8187])
+            ("addVirtualRegister" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("instance" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8233 8261])
+                    ("group" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8262 8287])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8288 8312])
+                    ("width" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8312 8337])
+                    ("address" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8337 8364]))                  
+                :type "void")
+                nil [8189 8432])
+            ("addSignalMaster" function
+               (:pointer 1
+                :parent "FastModelComponent"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8492 8516]))                  
+                :type ("SignalMasterPortInfo" type (:type "class") nil nil))
+                nil [8434 8559])
+            ("addSignalSlave" function
+               (:pointer 1
+                :parent "FastModelComponent"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8617 8641]))                  
+                :type ("SignalSlavePortInfo" type (:type "class") nil nil))
+                nil [8561 8683])
+            ("addSignalSlaveArray" function
+               (:pointer 1
+                :parent "FastModelComponent"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8751 8775])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8776 8791]))                  
+                :type ("SignalSlaveArrayPortInfo" type (:type "class") nil nil))
+                nil [8685 8845])
+            ("addValueMaster" function
+               (:pointer 1
+                :parent "FastModelComponent"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8903 8927])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8928 8943]))                  
+                :type ("ValueMasterPortInfo" type (:type "class") nil nil))
+                nil [8847 8992])
+            ("addValueSlave" function
+               (:pointer 1
+                :parent "FastModelComponent"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9048 9072])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9073 9088]))                  
+                :type ("ValueSlavePortInfo" type (:type "class") nil nil))
+                nil [8994 9136])
+            ("addValueStateMaster" function
+               (:pointer 1
+                :parent "FastModelComponent"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9204 9228])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9229 9244]))                  
+                :type ("ValueStateMasterPortInfo" type (:type "class") nil nil))
+                nil [9138 9298])
+            ("addValueStateSlave" function
+               (:pointer 1
+                :parent "FastModelComponent"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9364 9388])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9389 9404]))                  
+                :type ("ValueStateSlavePortInfo" type (:type "class") nil nil))
+                nil [9300 9457])
+            ("addAXITransactionMaster" function
+               (:pointer 1
+                :parent "FastModelComponent"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9533 9557])
+                    ("data_width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9562 9582])
+                    ("clkName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9587 9614])
+                    ("addr_width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9619 9639])
+                    ("user_width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9644 9664])
+                    ("protocol_name" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9669 9701]))                  
+                :type ("AXITransactionMasterPortInfo" type (:type "class") nil nil))
+                nil [9459 9812])
+            ("addAXITransactionSlave" function
+               (:pointer 1
+                :parent "FastModelComponent"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9886 9910])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9915 9930])
+                    ("clkName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9935 9962])
+                    ("addr_width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9967 9987])
+                    ("user_width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9992 10012])
+                    ("protocol_name" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10017 10049]))                  
+                :type ("AXITransactionSlavePortInfo" type (:type "class") nil nil))
+                nil [9814 10154])
+            ("addAHBTransactionMaster" function
+               (:pointer 1
+                :parent "FastModelComponent"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10230 10254])
+                    ("ahblite" variable (:type "bool") (reparse-symbol arg-sub-list) [10255 10268])
+                    ("pre" variable (:type "bool") (reparse-symbol arg-sub-list) [10269 10278])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10279 10294])
+                    ("clkName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10295 10322]))                  
+                :type ("AHBTransactionMasterPortInfo" type (:type "class") nil nil))
+                nil [10156 10403])
+            ("addAHBTransactionSlave" function
+               (:pointer 1
+                :parent "FastModelComponent"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10477 10501])
+                    ("ahblite" variable (:type "bool") (reparse-symbol arg-sub-list) [10502 10515])
+                    ("pre" variable (:type "bool") (reparse-symbol arg-sub-list) [10516 10525])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10526 10541])
+                    ("clkName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10542 10569]))                  
+                :type ("AHBTransactionSlavePortInfo" type (:type "class") nil nil))
+                nil [10405 10649])
+            ("addAPBTransactionMaster" function
+               (:pointer 1
+                :parent "FastModelComponent"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10725 10749])
+                    ("clkName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10750 10777]))                  
+                :type ("APBTransactionMasterPortInfo" type (:type "class") nil nil))
+                nil [10651 10837])
+            ("bindPort" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("SignalMasterPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10873 10904])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::signal_master_port" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10905 10947]))                  
+                :type "void")
+                nil [10839 10988])
+            ("bindPort" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("SignalSlavePortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11024 11054])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::signal_slave_export" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11055 11098]))                  
+                :type "void")
+                nil [10990 11139])
+            ("bindPort" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("SignalSlaveArrayPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11175 11210])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::signal_slave_export" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11211 11254])
+                    ("index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11255 11270]))                  
+                :type "void")
+                nil [11141 11318])
+            ("bindPort" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("ValueMasterPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11354 11384])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::signal_master_port" type
+                             (:template-specifier 
+                                ( ("uint32_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11385 11431]))                  
+                :type "void")
+                nil [11320 11472])
+            ("bindPort" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("ValueSlavePortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11508 11537])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::signal_slave_export" type
+                             (:template-specifier 
+                                ( ("uint32_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11538 11585]))                  
+                :type "void")
+                nil [11474 11626])
+            ("bindPort" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("ValueStateMasterPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11662 11697])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::signal_state_master_port" type
+                             (:template-specifier 
+                                ( ("uint32_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11698 11750]))                  
+                :type "void")
+                nil [11628 11791])
+            ("bindPort" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("ValueStateSlavePortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11827 11861])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::signal_state_slave_export" type
+                             (:template-specifier 
+                                ( ("uint32_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11862 11915]))                  
+                :type "void")
+                nil [11793 11956])
+            ("bindPort" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("AXITransactionMasterPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11992 12031])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::amba_pv_master_socket" type
+                             (:template-specifier (("64"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12032 12075]))                  
+                :type "void")
+                nil [11958 12116])
+            ("bindPort" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("AXITransactionSlavePortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12152 12190])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::amba_pv_slave_socket" type
+                             (:template-specifier (("64"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12191 12233]))                  
+                :type "void")
+                nil [12118 12274])
+            ("bindPort" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("AHBTransactionMasterPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12310 12349])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::amba_pv_master_socket" type
+                             (:template-specifier (("64"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12350 12393]))                  
+                :type "void")
+                nil [12276 12434])
+            ("bindPort" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("AHBTransactionSlavePortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12470 12508])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::amba_pv_slave_socket" type
+                             (:template-specifier (("64"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12509 12551]))                  
+                :type "void")
+                nil [12436 12592])
+            ("bindPort" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("portInfo" variable
+                       (:pointer 1
+                        :type ("APBTransactionMasterPortInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12628 12667])
+                    ("sgPort" variable
+                       (:pointer 1
+                        :type ("amba_pv::amba_pv_master_socket" type
+                             (:template-specifier (("64"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12668 12711]))                  
+                :type "void")
+                nil [12594 12752])
+            ("init" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("sgModel" variable
+                       (:pointer 1
+                        :type ("scx::scx_evs_base" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12784 12811]))                  
+                :type "void")
+                nil [12754 13121])
+            ("getParameter" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("key" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13168 13191]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [13123 13575])
+            ("setParameter" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("key" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13615 13638])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13639 13664]))                  
+                :type "void")
+                nil [13577 16319])
+            ("interconnect" function
+               (:parent "FastModelComponent"
+                :type "void")
+                nil [16362 16548])
+            ("communicate" function
+               (:parent "FastModelComponent"
+                :type "void")
+                nil [16550 16616])
+            ("update" function
+               (:parent "FastModelComponent"
+                :type "void")
+                nil [16618 16674])
+            ("saveStreamType" function
+               (:parent "FastModelComponent"
+                :type ("eslapi::CASISaveRestoreStreamType" type (:type "class") nil nil))
+                nil [16676 17005])
+            ("saveDataArch" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("CASIODataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17045 17067]))                  
+                :type "bool")
+                nil [17007 17212])
+            ("saveDataBinary" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("CASIODataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17254 17276]))                  
+                :type "bool")
+                nil [17214 17370])
+            ("restoreDataBinary" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("CASIIDataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17415 17437]))                  
+                :type "bool")
+                nil [17372 17583])
+            ("restoreDataArch" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("CASIIDataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17626 17648]))                  
+                :type "bool")
+                nil [17585 17794])
+            ("addArchSaveHandler" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("name" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17840 17863])
+                    ("handler" variable
+                       (:pointer 1
+                        :type ("ArchSaveHandlerIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17863 17890]))                  
+                :type "void")
+                nil [17796 17937])
+            ("dump_variable" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17959 17975])
+                    ("hint" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17976 17993]))                  
+                :type "void")
+                nil [17940 18299])
+            ("dump_env_variables" function
+               (:parent "FastModelComponent"
+                :type "void")
+                nil [18301 22285])
+            ("dump_hierarchy" function
+               (:parent "FastModelComponent"
+                :type "void")
+                nil [22354 22702])
+            ("traverse_children" function
+               (:parent "FastModelComponent"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("sc_core::sc_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22747 22774])
+                    ("fh" variable
+                       (:reference 1
+                        :type ("std::ofstream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22775 22793]))                  
+                :type "void")
+                nil [22704 23109]))          
+      :file "FastModelComponent.cpp"
+      :pointmax 23111
+      :fsize 16685
+      :lastmodtime '(22588 41720 302663 0)
+      :unmatched-syntax nil)
+
+
+    (semanticdb-table "FMSubcomp.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FMSubcomp.h" include nil nil [513 535])
+            ("FMCompImpl.h" include nil nil [536 559])
+            ("FMCompRegisters.h" include nil nil [560 588])
+            ("MxPrivateTypes.h" include nil nil [589 616])
+            ("FMCompTrace.h" include nil nil [617 641])
+            ("MxSaveRestoreUtility.h" include nil nil [642 675])
+            ("sstream" include (:system-flag t) nil [676 694])
+            ("vector" include (:system-flag t) nil [695 712])
+            ("stdexcept" include (:system-flag t) nil [713 733])
+            ("__STDC_FORMAT_MACROS" variable (:constant-flag t) nil [742 762])
+            ("inttypes.h" include (:system-flag t) nil [763 784])
+            ("Carbon::ArchSaveHandlerIF" using (:type ("Carbon::ArchSaveHandlerIF" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [787 829])
+            ("MMUDisable" type
+               (:parent "FMSubcomponent"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [935 942])
+                    ("MMUDisable" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("subcomp" variable
+                               (:pointer 1
+                                :type ("FMSubcomponent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [956 980])
+                            ("sctlr" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIReg_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [994 1019]))                          
+                        :type ("MMUDisable" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [945 1554])
+                    ("MMUDisable" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1558 1815])
+                    ("private" label nil (reparse-symbol classsubparts) [1817 1825])
+                    ("mSubcomp" variable
+                       (:pointer 1
+                        :type ("FMSubcomponent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1828 1853])
+                    ("mSCTLRReg" variable
+                       (:pointer 1
+                        :type ("eslapi::CADIReg_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1856 1885])
+                    ("mSCTLRVal" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1927 1948])
+                    ("mModified" variable (:type "bool") (reparse-symbol classsubparts) [1989 2004]))                  
+                :type "class")
+                nil [900 2050])
+            ("RegReadWrite" type
+               (:parent "FMSubcomponent"
+                :superclasses 
+                  ( ("eslapi::CASISaveRestoreArchDefaultCallback" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2304 2311])
+                    ("RegReadWrite" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("cadi" variable
+                               (:pointer 1
+                                :type ("eslapi::CADI" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2327 2346]))                          
+                        :type ("RegReadWrite" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2314 2444])
+                    ("RegReadWrite" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2448 2474])
+                    ("readRegister" function
+                       (:arguments 
+                          ( ("regInfo" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIRegInfo_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2496 2527])
+                            ("nbytes" variable
+                               (:reference 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2548 2565])
+                            ("" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2586 2595])
+                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2596 2602]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2478 2703])
+                    ("writeRegister" function
+                       (:arguments 
+                          ( ("regInfo" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIRegInfo_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2726 2757])
+                            ("nbytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2766 2782])
+                            ("" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2790 2799])
+                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2800 2806]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2707 2908]))                  
+                :type "class")
+                nil [2215 2912])
+            ("FMSubcomponent" function
+               (:constructor-flag t
+                :parent "FMSubcomponent"
+                :arguments 
+                  ( ("compImpl" variable
+                       (:pointer 1
+                        :type ("FMCompImpl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2945 2966])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIModuleIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2998 3027])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sc_module_name" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3059 3086])
+                    ("origCompName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3118 3150])
+                    ("origCompFullName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3182 3218])
+                    ("executesSoftware" variable (:type "bool") (reparse-symbol arg-sub-list) [3250 3272])
+                    ("loadsApplication" variable (:type "bool") (reparse-symbol arg-sub-list) [3304 3326]))                  
+                :type ("FMSubcomponent" type (:type "class") nil nil))
+                nil [2914 3693])
+            ("FMSubcomponent" function
+               (:destructor-flag t
+                :parent "FMSubcomponent"
+                :type "void")
+                nil [3695 4185])
+            ("getProperty" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("property" variable (:type ("eslapi::CASIPropertyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4227 4261]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [4187 5295])
+            ("setParameter" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("key" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5331 5354])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5355 5380]))                  
+                :type "void")
+                nil [5297 5541])
+            ("putCADI" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("cadi" variable
+                       (:pointer 1
+                        :type ("eslapi::CADI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5572 5591]))                  
+                :type "void")
+                nil [5543 5611])
+            ("init" function
+               (:parent "FMSubcomponent"
+                :type "void")
+                nil [5613 5644])
+            ("getParameter" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("key" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5687 5710]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [5646 6134])
+            ("ObtainInterface" function
+               (:pointer 1
+                :parent "FMSubcomponent"
+                :arguments 
+                  ( ("ifName" variable (:type ("eslapi::if_name_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6189 6214])
+                    ("minRev" variable (:type ("eslapi::if_rev_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6219 6243])
+                    ("actualRev" variable
+                       (:pointer 1
+                        :type ("eslapi::if_rev_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6248 6276]))                  
+                :type ("eslapi::CAInterface" type (:type "class") nil nil))
+                nil [6136 7457])
+            ("addIgnoreRegister" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("group" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7527 7552])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7553 7577]))                  
+                :type "void")
+                nil [7488 7666])
+            ("addRemapRegister" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("group" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7706 7731])
+                    ("oldName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7770 7797])
+                    ("newName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7836 7863])
+                    ("newSize" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7902 7929]))                  
+                :type "void")
+                nil [7668 8101])
+            ("addGroupRemapRegister" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("oldGroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8146 8174])
+                    ("newGroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8179 8207])
+                    ("oldName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8212 8239])
+                    ("newName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8244 8271])
+                    ("newSize" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8276 8303]))                  
+                :type "void")
+                nil [8103 8430])
+            ("addFullGroupRemapRegister" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("oldGroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8479 8507])
+                    ("newGroup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8508 8536]))                  
+                :type "void")
+                nil [8432 8804])
+            ("addVirtualRegister" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("group" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8846 8871])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8912 8936])
+                    ("width" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8977 9002])
+                    ("address" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9043 9070]))                  
+                :type "void")
+                nil [8806 9185])
+            ("addSnoopedMemory" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("mem" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("FMSubcomponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9225 9251])
+                    ("baseAddress" variable (:type ("fmAddress_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9252 9276]))                  
+                :type "void")
+                nil [9187 9433])
+            ("putUpstreamCPU" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("cpu" variable
+                       (:pointer 1
+                        :type ("FMSubcomponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9471 9491]))                  
+                :type "void")
+                nil [9435 9517])
+            ("recordMemAccess" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("mem" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("FMSubcomponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9556 9582])
+                    ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9583 9597]))                  
+                :type "void")
+                nil [9519 10769])
+            ("writeMemorySaveState" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("mem" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("FMSubcomponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10813 10839])
+                    ("action" variable
+                       (:pointer 1
+                        :type ("eslapi::CASISaveRestoreArchActionIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10840 10884]))                  
+                :type "bool")
+                nil [10771 13857])
+            ("saveCache" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("regMap" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIRegMap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13985 14012]))                  
+                :type "bool")
+                nil [13954 14797])
+            ("saveCache" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14831 14848])
+                    ("regMap" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIRegMap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14849 14876])
+                    ("file_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14877 14899]))                  
+                :type "bool")
+                nil [14799 19280])
+            ("saveRegisters" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("regMap" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIRegMap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19318 19345])
+                    ("action" variable
+                       (:pointer 1
+                        :type ("eslapi::CASISaveRestoreArchActionIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19381 19425]))                  
+                :type "bool")
+                nil [19283 22939])
+            ("restoreRegisters" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("regMap" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIRegMap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22979 23006])
+                    ("regValueMap" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIRegValueMap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23045 23082]))                  
+                :type "bool")
+                nil [22941 23229])
+            ("saveMemory" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("eslapi::CASISaveRestoreArchActionIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23263 23307]))                  
+                :type "bool")
+                nil [23231 23520])
+            ("restoreMemory" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("memoryValueMap" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIMemoryValueMap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23557 23600]))                  
+                :type "bool")
+                nil [23522 23747])
+            ("saveWithHandlers" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("node" variable (:type ("xmlNodePtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23787 23804]))                  
+                :type "bool")
+                nil [23749 24333])
+            ("restoreWithHandlers" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("node" variable (:type ("xmlNodePtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24377 24393]))                  
+                :type "bool")
+                nil [24335 24540])
+            ("message" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24571 24594])
+                    ("type" variable (:type ("eslapi::CASIMessageType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24595 24624]))                  
+                :type "void")
+                nil [24542 24722])
+            ("saveStreamType" function
+               (:parent "FMSubcomponent"
+                :type ("eslapi::CASISaveRestoreStreamType" type (:type "class") nil nil))
+                nil [24724 24871])
+            ("saveDataArch" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("CASIODataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24907 24929]))                  
+                :type "bool")
+                nil [24873 26099])
+            ("saveDataBinary" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("CASIODataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26137 26159]))                  
+                :type "bool")
+                nil [26101 26312])
+            ("restoreDataBinary" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("CASIIDataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26353 26375]))                  
+                :type "bool")
+                nil [26314 26522])
+            ("restoreDataArch" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("CASIIDataStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26561 26583]))                  
+                :type "bool")
+                nil [26524 26730])
+            ("lookupSaveMemSpace" function
+               (:parent "FMSubcomponent"
+                :type ("eslapi::CADIMemSpace_t" type (:type "class") nil nil))
+                nil [26732 27581])
+            ("findRegister" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("reg_name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27617 27645])
+                    ("" variable
+                       (:pointer 1
+                        :type ("eslapi::CADIReg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27645 27664])
+                    ("" variable (:type ("reg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27665 27669])
+                    ("reg_width" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27670 27690]))                  
+                :type "void")
+                nil [27583 29433])
+            ("flushCache" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("pageaddr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29467 29485])
+                    ("pagesize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29513 29531])
+                    ("dccmvac" variable
+                       (:pointer 1
+                        :type ("eslapi::CADIReg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29559 29586])
+                    ("dccmvac_width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29614 29637])
+                    ("cache_line_width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29665 29691]))                  
+                :type "void")
+                nil [29435 30511])
+            ("registerFMQuantumCB" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("cb" variable (:type ("Carbon::FM::FMQuantumCB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30559 30586]))                  
+                :type "unsigned int")
+                nil [30514 30635])
+            ("unregisterFMQuantumCB" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("callbackId" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [30680 30700]))                  
+                :type "void")
+                nil [30637 30752])
+            ("bytearray2value" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("cnt" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30795 30808])
+                    ("array" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30809 30824]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [30754 30975])
+            ("addMxScriptEntry" function
+               (:parent "FMSubcomponent"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31016 31024])
+                    ("start_address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31025 31048])
+                    ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31049 31065])
+                    ("bytearray" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31066 31085]))                  
+                :type "void")
+                nil [30977 31525])
+            ("getHasDCache" function
+               (:parent "FMSubcomponent"
+                :type "bool")
+                nil [31527 32702]))          
+      :file "FMSubcomp.cpp"
+      :pointmax 32703
+      :fsize 32706
+      :lastmodtime '(22588 41720 295665 0)
+      :unmatched-syntax '((punctuation 27663 . 27664) (punctuation 2798 . 2799) (punctuation 2594 . 2595))
+      :lexical-table 
+        '(("__STDC_FORMAT_MACROS")
+          )
+)
+    (semanticdb-table "FMCompRegisters.h"
+      :file "FMCompRegisters.h"
+      :fsize 4021
+      :lastmodtime '(22588 41720 273666 0))
+    (semanticdb-table "FMCompTrace.h"
+      :file "FMCompTrace.h"
+      :fsize 1711
+      :lastmodtime '(22588 41720 278663 0))
+    (semanticdb-table "FastModelInterface.h"
+      :file "FastModelInterface.h"
+      :fsize 1928
+      :lastmodtime '(22588 41720 309664 0)))
+  :file "!mnt!home!hlei!source!socdesigner!FastModels!src!comp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

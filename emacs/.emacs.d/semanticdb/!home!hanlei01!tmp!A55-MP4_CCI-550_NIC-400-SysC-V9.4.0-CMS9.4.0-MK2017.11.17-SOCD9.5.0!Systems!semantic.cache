@@ -1,0 +1,80 @@
+;; Object Systems/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Systems/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [801 820])
+            ("time.h" include (:system-flag t) nil [821 838])
+            ("CM_SYSC_IO_UNIVENT_TARMAC" variable (:constant-flag t) nil [848 873])
+            ("libCORTEXA55.systemc.h" include nil nil [874 907])
+            ("libCCI550.systemc.h" include nil nil [941 971])
+            ("libNIC400_APB4.systemc.h" include nil nil [972 1007])
+            ("libBP140.systemc.h" include nil nil [1008 1037])
+            ("libBP140_TrickBox.systemc.h" include nil nil [1038 1076])
+            ("CORTEXA55ResetModule.h" include nil nil [1078 1111])
+            ("CCI550ResetModule.h" include nil nil [1112 1142])
+            ("NIC400_APB4ResetModule.h" include nil nil [1143 1178])
+            ("BP140ResetModule.h" include nil nil [1179 1208])
+            ("BP140_TrickBoxResetModule.h" include nil nil [1209 1247])
+            ("scx/scx.h" include (:system-flag t) nil [1249 1269])
+            ("scx/scx_signal_sizer.h" include (:system-flag t) nil [1270 1303])
+            ("scx_simcontroller.cpp" include (:system-flag t) nil [1304 1336])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1337 1373])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1374 1407])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2138 2147])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2148 2161]))                  
+                :type "int")
+                nil [2126 96993]))          
+      :file "system_test.cpp"
+      :pointmax 96994
+      :fsize 96993
+      :lastmodtime '(23098 50629 302233 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("NIC400_APB4_DIR" variable (:default-value ("../MODELS/NIC400_APB4/$(CM_PLATFORM)/SystemC")) nil [1 62])
+            ("MODELS" variable (:default-value ("BP140_64bit_RAM" "CCI550_Default" "NIC400_APB4" "CortexA55_TARMAC" "BP140_TrickBox")) nil [62 144])
+            ("SystemCMisc1_DIR" variable (:default-value ("../MODELS/SystemCMisc/gcc483/include/ARM/scx/")) nil [144 207])
+            ("SystemCMisc3_DIR" variable (:default-value ("../MODELS/SystemCMisc/gcc483/makefiles")) nil [207 263])
+            ("BP140_64bit_RAM_DIR" variable (:default-value ("../MODELS/BP140/$(CM_PLATFORM)/SystemC")) nil [263 322])
+            ("BP140_TrickBox_DIR" variable (:default-value ("../MODELS/BP140_TrickBox/$(CM_PLATFORM)/SystemC")) nil [322 389])
+            ("SystemCMisc2_DIR" variable (:default-value ("../MODELS/SystemCMisc/gcc483/include/icm")) nil [389 447])
+            ("SystemCMisc0_DIR" variable (:default-value ("../MODELS/SystemCMisc/gcc483/FMRuntime")) nil [447 503])
+            ("CCI550_Default_DIR" variable (:default-value ("../MODELS/CCI550_Default/$(CM_PLATFORM)/SystemC")) nil [503 570])
+            ("LDFLAGS" variable (:default-value ("../MODELS/CortexA55_TARMAC/gcc483/SystemC/univentUtil/lib/ananke_tarmac_dpi.so")) nil [570 657])
+            ("CortexA55_TARMAC_DIR" variable (:default-value ("../MODELS/CortexA55_TARMAC/$(CM_PLATFORM)/SystemC")) nil [657 728])
+            ("CXX" variable (:default-value ("g++" "-DSC_INCLUDE_DYNAMIC_PROCESSES" "-Wall" "-Wextra" "-Werror" "-Wno-return-type" "-Wno-format-contains-nul" "-Wno-unused-parameter" "-Wno-unused-variable" "-Wno-unused-function" "-Wno-reorder" "-std=c++11" "-DNUM_CPUS=$(NUM_CPUS)")) nil [1092 1306])
+            ("CM_SYSC_HOME" variable (:default-value ("../MODELS/SystemCMisc/$(CM_PLATFORM)")) nil [1387 1437])
+            ("TARMAC_DECODE_BIN" variable (:default-value ("$(wildcard $(subst lib,bin,$(dir $(filter %_tarmac_dpi.so,$(LDFLAGS))))*_tarmac_decode)")) nil [1458 1565])
+            ("$(1)" function (:arguments ("=.icm")) nil [1588 1607])
+            ("$(1)" function (:arguments ("=icm_runtime")) nil [1607 1634])
+            ("CFLAGS" variable (:default-value ("-I." "-I$(SYSTEMC_INC)" "-I$(CARBON_HOME)/include" "$(CM_SYSC_CXXFLAGS)")) nil [2613 2709])
+            ("LDFLAGS" variable (:default-value ("$(FM_LIB)" "-L$(CARBON_HOME)/Linux64/lib/gcc/shared" "-lcarbon5" "-L$(SYSTEMC_LIB)" "-lsystemc" "-lpthread" "-ldl" "-lz")) nil [2710 2856])
+            ("MODEL_OBJS" variable (:default-value ("$(patsubst %.cpp,%.o,$(MODEL_SRCS))")) nil [2935 2982])
+            (".PHONY" function (:arguments ("all" "clean" "system" "run")) nil [3091 3120])
+            ("all" function (:arguments ("system")) nil [3121 3133])
+            ("system" function (:arguments ("system_test")) nil [3134 3154])
+            ("check-runtime-env" function nil nil [3155 3174])
+            ("run" function (:arguments ("system")) nil [3474 3518])
+            ("system_test" function (:arguments ("system_test.o" "$(MODEL_OBJS)")) nil [3519 3591])
+            ("system_test.o" function (:arguments ("system_test.cpp")) nil [3592 3669])
+            ("%.o" function (:arguments ("%.cpp")) nil [3670 3727])
+            ("clean" function nil nil [3728 3795]))          
+      :file "Makefile"
+      :pointmax 3796
+      :fsize 3811
+      :lastmodtime '(23090 49812 33083 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!tmp!A55-MP4_CCI-550_NIC-400-SysC-V9.4.0-CMS9.4.0-MK2017.11.17-SOCD9.5.0!Systems!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

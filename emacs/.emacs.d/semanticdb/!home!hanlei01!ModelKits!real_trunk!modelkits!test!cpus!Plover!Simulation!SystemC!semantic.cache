@@ -1,0 +1,26 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("$(CM_CXX_SYSTEMC_COMMON)" "-g" "-O0" "-Wno-unused-variable" "-D$(MODEL_CONFIG)")) nil [129 205])
+            ("PLOVER_DIR" variable (:default-value ("./MODELS/Plover/$(MODEL_CONFIG)/gcc/SystemC")) nil [338 395])
+            ("NUM_CPUS" variable (:default-value ("$(shell echo $(MODEL_CONFIG) | grep -o '[0-9]\\+' | head -n 1)")) nil [439 512])
+            ("$(CM_SYSC_PACKAGE)/rel_ext/makefiles/cm_sysc_common.mak" include nil nil [513 577])
+            ("system_test_" function (:arguments ("system_test_$(MODEL_CONFIG).o" "PloverResetImp.o" "$(PLOVER_DIR)/libPlover.tlm.a" "$(PLOVER_DIR)/lib/libPlover.icm.so" "$(PLOVER_DIR)/lib/libicm_runtime.so" "$(FM_LIB)")) nil [578 1095])
+            ("system_test" function (:arguments ("system_test.o" "PloverResetImp.o" "$(PLOVER_DIR)/libPlover.tlm.a" "$(PLOVER_DIR)/lib/libPlover.icm.so" "$(PLOVER_DIR)/lib/libicm_runtime.so" "$(FM_LIB)")) nil [1095 1580])
+            ("PloverResetImp.o" function (:arguments ("$(PLOVER_DIR)/PloverResetImp.cpp")) nil [1580 1757])
+            ("system_test_" function (:arguments ("system_test_$(MODEL_CONFIG).cpp")) nil [1758 1980])
+            ("system_test.o" function (:arguments ("system_test.cpp")) nil [1980 2170])
+            ("clean" function nil nil [2171 2256]))          
+      :file "Makefile"
+      :pointmax 2258
+      :fsize 2257
+      :lastmodtime '(23430 50941 149584 0)
+      :unmatched-syntax '((symbol 429 . 437) (semantic-list 412 . 429) (punctuation 411 . 412) (punctuation 409 . 410) (punctuation 408 . 409) (symbol 395 . 407) (bol 395 . 395))))
+  :file "!home!hanlei01!ModelKits!real_trunk!modelkits!test!cpus!Plover!Simulation!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

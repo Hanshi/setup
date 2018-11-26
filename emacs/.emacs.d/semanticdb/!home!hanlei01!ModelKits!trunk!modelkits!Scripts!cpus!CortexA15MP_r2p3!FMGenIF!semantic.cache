@@ -1,0 +1,20 @@
+;; Object FMGenIF/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "FMGenIF/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CC" variable (:default-value ("${CARBON_SDCXX_PATH}/bin/g++")) nil [1 35])
+            ("rm" variable (:default-value ("rm" "-rf")) nil [36 48])
+            ("all" function (:arguments ("a15_save_arch_handler.cpp")) nil [49 361])
+            ("clean" function nil nil [362 385]))          
+      :file "Makefile"
+      :pointmax 385
+      :fsize 384
+      :lastmodtime '(22704 46347 868560 0)
+      :unmatched-syntax '((shell-command 371 . 384) (bol 370 . 370))))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!Scripts!cpus!CortexA15MP_r2p3!FMGenIF!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

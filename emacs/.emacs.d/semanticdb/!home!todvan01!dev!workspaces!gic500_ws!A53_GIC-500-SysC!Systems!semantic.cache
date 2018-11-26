@@ -1,0 +1,45 @@
+;; Object Systems/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Systems/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/RAMBlock.h" include nil nil [888 916])
+            ("models/SimpleBus.h" include nil nil [917 946])
+            ("models/BasicUART.h" include nil nil [947 976])
+            ("models/ElfLoader.h" include nil nil [977 1006])
+            ("CORTEXA53_2CPU_AXI3Imp.h" include nil nil [1007 1042])
+            ("GIC500Imp.h" include nil nil [1043 1065])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [1066 1112])
+            ("scx_signal_sizer.h" include nil nil [1113 1142])
+            ("iostream" include (:system-flag t) nil [1144 1163])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1165 1189])
+            ("SC_MODULE" function
+               (:arguments 
+                  ( ("" variable (:type ("Counter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1202 1210]))                  
+                :type "int")
+                nil [1192 1441])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1933 1942])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1943 1956]))                  
+                :type "int")
+                nil [1921 8342]))          
+      :file "system_test.cpp"
+      :pointmax 8343
+      :fsize 8342
+      :lastmodtime '(22812 28682 592999 0)
+      :unmatched-syntax '((punctuation 1441 . 1442))))
+  :file "!home!todvan01!dev!workspaces!gic500_ws!A53_GIC-500-SysC!Systems!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

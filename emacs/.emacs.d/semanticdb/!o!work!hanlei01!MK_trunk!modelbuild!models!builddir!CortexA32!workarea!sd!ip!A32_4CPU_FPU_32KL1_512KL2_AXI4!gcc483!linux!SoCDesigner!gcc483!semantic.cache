@@ -1,0 +1,303 @@
+;; Object gcc483/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gcc483/"
+  :tables
+  (list
+    (semanticdb-table "mx.CortexA32_CADI.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("mx.CortexA32.h" include nil nil [503 528])
+            ("mx.CortexA32_CADI.h" include nil nil [529 559])
+            ("MEMORY_COUNT" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "1"
+                :type "unsigned int")
+                nil [651 694])
+            ("MemBlock_CortexA32_mem_mem" type
+               (:superclasses 
+                  ( ("CarbonDebugMemoryBlock" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [945 952])
+                    ("public" label nil (reparse-symbol classsubparts) [953 960])
+                    ("MemBlock_CortexA32_mem_mem" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("comp" variable
+                               (:pointer 1
+                                :type ("CortexA32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [988 1004])
+                            ("mxdi" variable
+                               (:pointer 1
+                                :type ("CortexA32_CADI" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1005 1026])
+                            ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1027 1044])
+                            ("base" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1045 1059])
+                            ("size" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1060 1074]))                          
+                        :type ("MemBlock_CortexA32_mem_mem" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [961 1809])
+                    ("MemBlock_CortexA32_mem_mem" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1812 2321])
+                    ("memWrite" function
+                       (:arguments 
+                          ( ("startAddress" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2338 2360])
+                            ("unitsToWrite" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2361 2383])
+                            ("unitSizeInBytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2384 2409])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2426 2446])
+                            ("actualNumOfUnitsWritten" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2447 2481])
+                            ("doSideEffects" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2482 2504]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2324 4063])
+                    ("decode" function
+                       (:arguments 
+                          ( ("startAddr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4078 4097])
+                            ("requestedUnits" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4098 4122])
+                            ("unitSizeInBytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4122 4147])
+                            ("actualUnits" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4147 4169]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4066 6229])
+                    ("memRead" function
+                       (:arguments 
+                          ( ("startAddress" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6245 6267])
+                            ("unitsToRead" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6268 6289])
+                            ("unitSizeInBytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6290 6315])
+                            ("data" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6332 6346])
+                            ("actualNumOfUnitsRead" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6347 6378])
+                            ("doSideEffects" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6379 6401]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6232 7939])
+                    ("clearBuffer" function
+                       (:arguments 
+                          ( ("bufferAddress" variable
+                               (:pointer 2
+                                :type ("CarbonUInt32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7959 7988])
+                            ("requestedSizeInBytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7989 8019]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7942 8869])
+                    ("private" label nil (reparse-symbol classsubparts) [8874 8882])
+                    ("mMemBufferByteSize" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8883 8916])
+                    ("mMemBuffer" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8918 8944])
+                    ("mWriteBufferByteSize" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8946 8981])
+                    ("mWriteBuffer" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8983 9011])
+                    ("mReadBufferByteSize" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9013 9047])
+                    ("mReadBuffer" variable
+                       (:pointer 1
+                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9049 9076])
+                    ("mComp" variable
+                       (:pointer 1
+                        :type ("CortexA32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9078 9096]))                  
+                :type "class")
+                nil [776 9203])
+            ("DebugMemory_CortexA32_mem" type
+               (:superclasses 
+                  ( ("CarbonDebugMemory" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [9447 9454])
+                    ("public" label nil (reparse-symbol classsubparts) [9455 9462])
+                    ("DebugMemory_CortexA32_mem" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("comp" variable
+                               (:pointer 1
+                                :type ("CortexA32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9489 9505])
+                            ("mxdi" variable
+                               (:pointer 1
+                                :type ("CortexA32_CADI" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9506 9527]))                          
+                        :type ("DebugMemory_CortexA32_mem" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9463 9881])
+                    ("DebugMemory_CortexA32_mem" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [9884 10172])
+                    ("memWrite" function
+                       (:arguments 
+                          ( ("startAddress" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10189 10211])
+                            ("unitsToWrite" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10212 10234])
+                            ("unitSizeInBytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10235 10260])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10278 10298])
+                            ("actualNumOfUnitsWritten" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10299 10333])
+                            ("doSideEffects" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10334 10356]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [10175 11418])
+                    ("memRead" function
+                       (:arguments 
+                          ( ("startAddress" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11434 11456])
+                            ("unitsToRead" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11457 11478])
+                            ("unitSizeInBytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11479 11504])
+                            ("data" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11522 11536])
+                            ("actualNumOfUnitsRead" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11537 11568])
+                            ("doSideEffects" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11569 11591]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [11421 12691]))                  
+                :type "class")
+                nil [9285 12800])
+            ("CortexA32_CADI" function
+               (:constructor-flag t
+                :parent "CortexA32_CADI"
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("CortexA32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12832 12845]))                  
+                :type ("CortexA32_CADI" type (:type "class") nil nil))
+                nil [12801 15338])
+            ("CortexA32_CADI" function
+               (:destructor-flag t
+                :parent "CortexA32_CADI"
+                :type "void")
+                nil [15340 15736])
+            ("reset" function
+               (:parent "CortexA32_CADI"
+                :type "void")
+                nil [15738 16000])
+            ("CADIMemGetSpaces" function
+               (:parent "CortexA32_CADI"
+                :arguments 
+                  ( ("spaceIndex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16056 16076])
+                    ("memSpaceSlots" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16077 16100])
+                    ("memSpaceCount" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16101 16125])
+                    ("memSpace" variable
+                       (:pointer 1
+                        :type ("eslapi::CADIMemSpaceInfo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16126 16163]))                  
+                :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                nil [16002 16722])
+            ("CADIMemGetBlocks" function
+               (:parent "CortexA32_CADI"
+                :arguments 
+                  ( ("memorySpace" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16778 16799])
+                    ("blockIndex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16800 16820])
+                    ("memBlockSlots" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16821 16844])
+                    ("memBlockCount" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16845 16869])
+                    ("memBlock" variable
+                       (:pointer 1
+                        :type ("eslapi::CADIMemBlockInfo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16870 16907]))                  
+                :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                nil [16724 17506])
+            ("CADIMemWrite" function
+               (:parent "CortexA32_CADI"
+                :arguments 
+                  ( ("startAddress" variable (:type ("eslapi::CADIAddrComplete_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17558 17598])
+                    ("unitsToWrite" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17599 17621])
+                    ("unitSizeInBytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17622 17647])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17648 17668])
+                    ("actualNumOfUnitsWritten" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17669 17703])
+                    ("doSideEffects" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17704 17726]))                  
+                :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                nil [17508 18389])
+            ("CADIMemRead" function
+               (:parent "CortexA32_CADI"
+                :arguments 
+                  ( ("startAddress" variable (:type ("eslapi::CADIAddrComplete_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18440 18480])
+                    ("unitsToRead" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18481 18502])
+                    ("unitSizeInBytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18503 18528])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18529 18543])
+                    ("actualNumOfUnitsRead" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18544 18575])
+                    ("doSideEffects" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18576 18598]))                  
+                :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                nil [18391 19255])
+            ("CADIGetCommitedPCs" function
+               (:parent "CortexA32_CADI"
+                :arguments 
+                  ( ("startIndex" variable (:type "int") (reparse-symbol arg-sub-list) [19313 19328])
+                    ("desiredCount" variable (:type "int") (reparse-symbol arg-sub-list) [19329 19346])
+                    ("actualCount" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [19347 19364])
+                    ("pcs" variable
+                       (:pointer 1
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19365 19379]))                  
+                :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                nil [19257 19662]))          
+      :file "mx.CortexA32_CADI.cpp"
+      :pointmax 19665
+      :fsize 19664
+      :lastmodtime '(23266 16842 788994 0)
+      :unmatched-syntax '((punctuation 12691 . 12692) (punctuation 11418 . 11419) (punctuation 10172 . 10173) (punctuation 9881 . 9882) (punctuation 8869 . 8870) (punctuation 7939 . 7940) (punctuation 6229 . 6230) (punctuation 4063 . 4064) (punctuation 2321 . 2322) (punctuation 1809 . 1810)))
+    (semanticdb-table "mx.CortexA32.h"
+      :file "mx.CortexA32.h"
+      :fsize 199178
+      :lastmodtime '(23266 16842 804988 0))
+    (semanticdb-table "mx.CortexA32_CADI.h"
+      :file "mx.CortexA32_CADI.h"
+      :fsize 2661
+      :lastmodtime '(23266 16842 765989 0)))
+  :file "!o!work!hanlei01!MK_trunk!modelbuild!models!builddir!CortexA32!workarea!sd!ip!A32_4CPU_FPU_32KL1_512KL2_AXI4!gcc483!linux!SoCDesigner!gcc483!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

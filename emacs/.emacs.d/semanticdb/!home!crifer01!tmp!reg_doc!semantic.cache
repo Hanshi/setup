@@ -1,0 +1,43 @@
+;; Object reg_doc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "reg_doc/"
+  :tables
+  (list
+    (semanticdb-table "regInfo.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [1 10])
+            ("sys" include nil nil [11 21])
+            ("getopt" include nil nil [22 35])
+            ("xml.etree.ElementTree" include nil nil [36 70])
+            ("RegInfo" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [143 171])
+                            ("self" variable nil (reparse-symbol indented_block_body) [180 204]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [106 110])
+                            ("sourceFile" variable nil (reparse-symbol function_parameters) [112 122])
+                            ("destFile" variable nil (reparse-symbol function_parameters) [124 132]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [93 205])
+                    ("printRegInfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [241 245]))                          )
+                        (reparse-symbol indented_block_body) [224 1153]))                  
+                :type "class")
+                nil [74 1153])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [1216 1220]))              ) nil [1207 2158])
+            ("if" code nil nil [2159 2209]))          
+      :file "regInfo.py"
+      :pointmax 2209
+      :fsize 2208
+      :lastmodtime '(22961 29873 921210 0)
+      :unmatched-syntax nil))
+  :file "!home!crifer01!tmp!reg_doc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

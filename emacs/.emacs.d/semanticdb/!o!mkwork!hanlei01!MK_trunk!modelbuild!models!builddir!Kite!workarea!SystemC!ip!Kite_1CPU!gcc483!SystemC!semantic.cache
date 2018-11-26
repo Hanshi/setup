@@ -1,0 +1,68 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("LINUX_DIR" variable (:default-value (".")) nil [1 15])
+            ("PACKAGE_LIB_DIR" variable (:default-value ("./lib")) nil [66 90])
+            ("COMP_NAME" variable (:default-value ("$(subst lib,,$(basename $(notdir $(wildcard $(PACKAGE_LIB_DIR)/lib*.a))))")) nil [188 274])
+            ("clean" function nil nil [275 300])
+            ("gen_code" function nil nil [301 311])
+            ("NUM_CPUS" variable (:default-value ("$(shell grep NUM_CPUS ./$(COMP_NAME).xmlAnswers)")) nil [388 448])
+            ("NUM_CPUS" variable (:default-value ("4")) nil [486 497])
+            ("NUM_CPUS" variable (:default-value ("3")) nil [541 552])
+            ("NUM_CPUS" variable (:default-value ("2")) nil [596 607])
+            ("NUM_CPUS" variable (:default-value ("1")) nil [612 623])
+            ("Makefile.internal" include nil nil [660 686])
+            ("$(CM_SYSC_HOME)/makefiles/cm_sysc_common.mak" include nil nil [693 746])
+            ("CXX" variable (:default-value ("g++")) nil [747 755])
+            ("CXXFLAGS" variable (:default-value ("-fPIC" "-g" "-DCARBON_DUMP_VCD=0" "-std=c++11" "-I$(SYSTEMC_HOME)/include" "-I$(CARBON_HOME)/include" "$(CM_SYSC_CXXFLAGS)" "-I." "-I$(LINUX_DIR)" "-DUNIVENT_TARMAC=1" "-DNUM_CPUS=$(NUM_CPUS)")) nil [756 992])
+            ("ENABLE_PMU" variable (:default-value ("-DENABLE_PMU=1")) nil [992 1018])
+            ("DISABLE_PMU" variable (:default-value ("-DENABLE_PMU=0")) nil [1019 1046])
+            ("ENABLE_ATCM_LOAD" variable (:default-value ("-DENABLE_ATCM_LOAD=0")) nil [1434 1472])
+            ("ENABLE_BTCM_LOAD" variable (:default-value ("-DENABLE_BTCM_LOAD=0")) nil [1472 1510])
+            ("ENABLE_CTCM_LOAD" variable (:default-value ("-DENABLE_CTCM_LOAD=0")) nil [1510 1548])
+            ("CPU0_ATCM_DAT_FILE" variable (:default-value ("-DCPU0_ATCM_DAT_FILE=\\\"Kite_cpu00_ATCM_InstanceName.dat\\\"")) nil [1574 1651])
+            ("CPU0_BTCM_LO_DAT_FILE" variable (:default-value ("-DCPU0_BTCM_LO_DAT_FILE=\\\"Kite_cpu00_BTCM_Lo_InstanceName.dat\\\"")) nil [1651 1737])
+            ("CPU0_BTCM_HI_DAT_FILE" variable (:default-value ("-DCPU0_BTCM_HI_DAT_FILE=\\\"Kite_cpu00_BTCM_Hi_InstanceName.dat\\\"")) nil [1737 1823])
+            ("CPU0_CTCM_LO_DAT_FILE" variable (:default-value ("-DCPU0_CTCM_LO_DAT_FILE=\\\"Kite_cpu00_CTCM_Lo_InstanceName.dat\\\"")) nil [1823 1909])
+            ("CPU0_CTCM_HI_DAT_FILE" variable (:default-value ("-DCPU0_CTCM_HI_DAT_FILE=\\\"Kite_cpu00_CTCM_Hi_InstanceName.dat\\\"")) nil [1909 1995])
+            ("CPU1_ATCM_DAT_FILE" variable (:default-value ("-DCPU1_ATCM_DAT_FILE=\\\"Kite_cpu01_ATCM_InstanceName.dat\\\"")) nil [2021 2098])
+            ("CPU1_BTCM_LO_DAT_FILE" variable (:default-value ("-DCPU1_BTCM_LO_DAT_FILE=\\\"Kite_cpu01_BTCM_Lo_InstanceName.dat\\\"")) nil [2098 2184])
+            ("CPU1_BTCM_HI_DAT_FILE" variable (:default-value ("-DCPU1_BTCM_HI_DAT_FILE=\\\"Kite_cpu01_BTCM_Hi_InstanceName.dat\\\"")) nil [2184 2270])
+            ("CPU1_CTCM_LO_DAT_FILE" variable (:default-value ("-DCPU1_CTCM_LO_DAT_FILE=\\\"Kite_cpu01_CTCM_Lo_InstanceName.dat\\\"")) nil [2270 2356])
+            ("CPU1_CTCM_HI_DAT_FILE" variable (:default-value ("-DCPU1_CTCM_HI_DAT_FILE=\\\"Kite_cpu01_CTCM_Hi_InstanceName.dat\\\"")) nil [2356 2442])
+            ("CPU2_ATCM_DAT_FILE" variable (:default-value ("-DCPU2_ATCM_DAT_FILE=\\\"Kite_cpu02_ATCM_InstanceName.dat\\\"")) nil [2468 2545])
+            ("CPU2_BTCM_LO_DAT_FILE" variable (:default-value ("-DCPU2_BTCM_LO_DAT_FILE=\\\"Kite_cpu02_BTCM_Lo_InstanceName.dat\\\"")) nil [2545 2631])
+            ("CPU2_BTCM_HI_DAT_FILE" variable (:default-value ("-DCPU2_BTCM_HI_DAT_FILE=\\\"Kite_cpu02_BTCM_Hi_InstanceName.dat\\\"")) nil [2631 2717])
+            ("CPU2_CTCM_LO_DAT_FILE" variable (:default-value ("-DCPU2_CTCM_LO_DAT_FILE=\\\"Kite_cpu02_CTCM_Lo_InstanceName.dat\\\"")) nil [2717 2803])
+            ("CPU2_CTCM_HI_DAT_FILE" variable (:default-value ("-DCPU2_CTCM_HI_DAT_FILE=\\\"Kite_cpu02_CTCM_Hi_InstanceName.dat\\\"")) nil [2803 2889])
+            ("CPU3_ATCM_DAT_FILE" variable (:default-value ("-DCPU3_ATCM_DAT_FILE=\\\"Kite_cpu03_ATCM_InstanceName.dat\\\"")) nil [2915 2992])
+            ("CPU3_BTCM_LO_DAT_FILE" variable (:default-value ("-DCPU3_BTCM_LO_DAT_FILE=\\\"Kite_cpu03_BTCM_Lo_InstanceName.dat\\\"")) nil [2992 3078])
+            ("CPU3_BTCM_HI_DAT_FILE" variable (:default-value ("-DCPU3_BTCM_HI_DAT_FILE=\\\"Kite_cpu03_BTCM_Hi_InstanceName.dat\\\"")) nil [3078 3164])
+            ("CPU3_CTCM_LO_DAT_FILE" variable (:default-value ("-DCPU3_CTCM_LO_DAT_FILE=\\\"Kite_cpu03_CTCM_Lo_InstanceName.dat\\\"")) nil [3164 3250])
+            ("CPU3_CTCM_HI_DAT_FILE" variable (:default-value ("-DCPU3_CTCM_HI_DAT_FILE=\\\"Kite_cpu03_CTCM_Hi_InstanceName.dat\\\"")) nil [3250 3336])
+            ("TCM_DAT_FILES" variable (:default-value ("$(CPU0_ATCM_DAT_FILE)" "$(CPU0_BTCM_LO_DAT_FILE)" "$(CPU0_BTCM_HI_DAT_FILE)" "$(CPU0_CTCM_LO_DAT_FILE)" "$(CPU0_CTCM_HI_DAT_FILE)" "$(CPU1_ATCM_DAT_FILE)" "$(CPU1_BTCM_LO_DAT_FILE)" "$(CPU1_BTCM_HI_DAT_FILE)" "$(CPU1_CTCM_LO_DAT_FILE)" "$(CPU1_CTCM_HI_DAT_FILE)" "$(CPU2_ATCM_DAT_FILE)" "$(CPU2_BTCM_LO_DAT_FILE)" "$(CPU2_BTCM_HI_DAT_FILE)" "$(CPU2_CTCM_LO_DAT_FILE)" "$(CPU2_CTCM_HI_DAT_FILE)" "$(CPU3_ATCM_DAT_FILE)" "$(CPU3_BTCM_LO_DAT_FILE)" "$(CPU3_BTCM_HI_DAT_FILE)" "$(CPU3_CTCM_LO_DAT_FILE)" "$(CPU3_CTCM_HI_DAT_FILE)")) nil [3337 4030])
+            ("OBJS" variable (:default-value ("$(COMP_NAME)Imp.o" "lib$(COMP_NAME).systemc.o" "univent_tarmac.o")) nil [4032 4111])
+            ("OBJS_noPMU" variable (:default-value ("$(COMP_NAME)Imp_noPMU.o" "lib$(COMP_NAME)_noPMU.systemc.o" "univent_tarmac.o")) nil [4112 4208])
+            ("all" function (:arguments ("lib$(COMP_NAME)_noPMU.so" "lib$(COMP_NAME).so")) nil [4210 4259])
+            ("lib" function (:arguments ("$(OBJS_noPMU)")) nil [4260 4751])
+            ("lib" function (:arguments ("$(OBJS)")) nil [4752 5220])
+            ("$(COMP_NAME)" function (:arguments ("gen_code")) nil [5222 5252])
+            ("univent_tarmac.cpp" function (:arguments ("gen_code")) nil [5253 5282])
+            ("$(COMP_NAME)" function (:arguments ("$(COMP_NAME)Imp.cpp")) nil [5283 5446])
+            ("$(COMP_NAME)" function (:arguments ("$(COMP_NAME)Imp.cpp")) nil [5447 5617])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp" "gen_code")) nil [5618 5806])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp" "gen_code")) nil [5807 6001])
+            ("univent_tarmac.o" function (:arguments ("univent_tarmac.cpp" "gen_code")) nil [6002 6080]))          
+      :file "Makefile"
+      :pointmax 6080
+      :fsize 6079
+      :lastmodtime '(22775 60784 929929 0)
+      :unmatched-syntax '((shell-command 6049 . 6079) (bol 6048 . 6048) (ELSE 552 . 556) (bol 552 . 552) (ELSE 497 . 501) (bol 497 . 497) (symbol 124 . 132) (semantic-list 107 . 124) (punctuation 106 . 107) (punctuation 104 . 105) (punctuation 103 . 104) (symbol 90 . 102) (bol 90 . 90) (symbol 32 . 65) (punctuation 29 . 30) (punctuation 28 . 29) (symbol 15 . 27) (bol 15 . 15))))
+  :file "!o!mkwork!hanlei01!MK_trunk!modelbuild!models!builddir!Kite!workarea!SystemC!ip!Kite_1CPU!gcc483!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

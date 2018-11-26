@@ -1,0 +1,799 @@
+;; Object CortexA53/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "CortexA53/"
+  :tables
+  (list
+    (semanticdb-table "PCStateMachine.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sstream" include (:system-flag t) nil [515 533])
+            ("common/CarbonComponentHelper.h" include nil nil [534 575])
+            ("cpus/CortexA53/PCStateMachine.h" include nil nil [576 618])
+            ("cpus/CortexA53/RegBank.h" include nil nil [619 654])
+            ("common/PCTraceReporter.h" include nil nil [655 690])
+            ("cpus/CortexA53/A53Common.h" include nil nil [691 728])
+            ("common/CarbonStreamIntf.h" include nil nil [729 765])
+            ("CARBON_MKLIB_NAMESPACE" using (:type ("CARBON_MKLIB_NAMESPACE" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [768 807])
+            ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYCORTEXA53" using (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYCORTEXA53" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [808 873])
+            ("PCStateMachine" function
+               (:constructor-flag t
+                :parent "PCStateMachine"
+                :arguments 
+                  ( ("coreNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [906 923])
+                    ("compHelper" variable
+                       (:pointer 1
+                        :type ("CarbonComponentHelper" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [955 989])
+                    ("semiHost" variable
+                       (:pointer 1
+                        :type ("CarbonSemiHostMasterPort" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1021 1056])
+                    ("semiHostCallback" variable
+                       (:pointer 1
+                        :type ("SemihostingCallback" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1088 1126]))                  
+                :type ("PCStateMachine" type (:type "class") nil nil))
+                nil [875 7694])
+            ("PCStateMachine" function
+               (:destructor-flag t
+                :parent "PCStateMachine"
+                :type "void")
+                nil [7696 7752])
+            ("getDebugHaltInstructions" function
+               (:parent "PCStateMachine"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("CARBON_MKLIB_NAMESPACE::PCStateMachineBase::DebugInstruction" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [7754 10186])
+            ("getDebugPCDepositInstructions" function
+               (:parent "PCStateMachine"
+                :type ("CARBON_MKLIB_NAMESPACE::PCStateMachineBase::DebugInstruction" type (:type "class") nil nil))
+                nil [10189 10707])
+            ("getTBit" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [10711 10869])
+            ("isAArch32" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [10973 11184])
+            ("depositHaltRequest" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("val" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11226 11243]))                  
+                :type "void")
+                nil [11186 11299])
+            ("putBreakOnSVCException" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [11599 11611]))                  
+                :type "void")
+                nil [11555 12490])
+            ("depositInstruction" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("instr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DebugInstruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12532 12562]))                  
+                :type "void")
+                nil [12492 15295])
+            ("depositRestart" function
+               (:parent "PCStateMachine"
+                :type "void")
+                nil [15297 15749])
+            ("enableStall" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("match" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15784 15803])
+                    ("doStep" variable (:type "bool") (reparse-symbol arg-sub-list) [15804 15816]))                  
+                :type "void")
+                nil [15751 16603])
+            ("readRTLValues" function
+               (:parent "PCStateMachine"
+                :type "void")
+                nil [16605 19309])
+            ("updateCommittedPCs" function
+               (:parent "PCStateMachine"
+                :type "void")
+                nil [19312 23072])
+            ("saveDebugScratchRegisters" function
+               (:parent "PCStateMachine"
+                :type "void")
+                nil [23074 23691])
+            ("restoreDebugScratchRegisters" function
+               (:parent "PCStateMachine"
+                :type "void")
+                nil [23693 24174])
+            ("isStalled" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [24176 24685])
+            ("isInstructionComplete" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [24687 26155])
+            ("isRestarted" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [26157 27030])
+            ("correctAddressMatch" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("addressMatch" variable (:type "bool") (reparse-symbol arg-sub-list) [27074 27092])
+                    ("bpAddrToCheck" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27093 27120]))                  
+                :type "bool")
+                nil [27033 27229])
+            ("findNet" function
+               (:pointer 1
+                :parent "PCStateMachine"
+                :arguments 
+                  ( ("netName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27268 27288]))                  
+                :type ("CarbonNetID" type (:type "class") nil nil))
+                nil [27231 27568])
+            ("findCpuNet" function
+               (:pointer 1
+                :parent "PCStateMachine"
+                :arguments 
+                  ( ("netName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27610 27630]))                  
+                :type ("CarbonNetID" type (:type "class") nil nil))
+                nil [27570 27888])
+            ("carbonExamine64" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("pcNetLo" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27988 28010])
+                    ("pcNetHi" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28011 28033]))                  
+                :type ("CarbonUInt64" type (:type "class") nil nil))
+                nil [27943 28203])
+            ("carbonDeposit64" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("pcNetLo" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28242 28264])
+                    ("pcNetHi" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28265 28287])
+                    ("depositValue" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28288 28314]))                  
+                :type "void")
+                nil [28205 28645])
+            ("carbonForce64" function
+               (:parent "PCStateMachine"
+                :arguments 
+                  ( ("pcNetLo" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28682 28704])
+                    ("pcNetHi" variable
+                       (:pointer 1
+                        :type ("CarbonNetID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28704 28726])
+                    ("depositValue" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28728 28754]))                  
+                :type "void")
+                nil [28647 29139])
+            ("isAArch64EL1" function
+               (:parent "PCStateMachine"
+                :type "bool")
+                nil [29142 29717]))          
+      :file "PCStateMachine.cpp"
+      :pointmax 29718
+      :fsize 29717
+      :lastmodtime '(23116 64161 115507 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "CarbonProfile.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("common/CarbonComponentHelper.h" include nil nil [516 557])
+            ("cpus/CortexA53/CarbonProfile.h" include nil nil [558 599])
+            ("carbon/carbon_capi.h" include nil nil [600 631])
+            ("assert.h" include (:system-flag t) nil [632 651])
+            ("iostream" include (:system-flag t) nil [652 671])
+            ("sstream" include (:system-flag t) nil [672 690])
+            ("common/carbon_mkversion.h" include nil nil [691 727])
+            ("CARBON_MKLIB_NAMESPACE" using (:type ("CARBON_MKLIB_NAMESPACE" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [913 952])
+            ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYCORTEXA53" using (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYCORTEXA53" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [953 1018])
+            ("arraySize" variable (:constant-flag t) nil [1028 1037])
+            ("sReplaceLDSTPathTemplate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("templateStr" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1129 1159])
+                    ("ldn_st" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1160 1176]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1085 1519])
+            ("CortexA53EventEnableInfo" type
+               (:members 
+                  ( ("hdlPathPattern" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [1557 1584])
+                    ("assertValue" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1587 1612]))                  
+                :type "struct")
+                nil [1521 1615])
+            ("sEventEnableInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.pmn_export_enabled\", 1},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.event_00_0f_en\", 1},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.event_10_1f_en\", 1},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.event_20_df_en\", 1},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.event_e0_ef_en\", 1},
+}"
+                :type ("CortexA53EventEnableInfo" type (:type "class") nil nil))
+                nil [1750 2296])
+            ("CompareType" type
+               (:members 
+                  ( ("eAnyBit" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2319 2327])
+                    ("eSpecialBit" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2385 2397])
+                    ("eSumBits" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2590 2599])
+                    ("eIgnoreBits" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2707 2859]))                  
+                :type "enum")
+                nil [2298 2860])
+            ("CortexA53EventInfo" type
+               (:members 
+                  ( ("hdlPathPattern" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [2941 2968])
+                    ("compareStyle" variable (:type ("CompareType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2971 2996])
+                    ("bitHi" variable (:type "int") (reparse-symbol classsubparts) [2999 3009])
+                    ("bitLow" variable (:type "int") (reparse-symbol classsubparts) [3012 3023])
+                    ("symbol" variable (:type ("eslapi::CAPISymbolValue_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3026 3059])
+                    ("commentStr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [3062 3085]))                  
+                :type "struct")
+                nil [2911 3088])
+            ("sInstructionEventInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_instr_exec_i\",       eSumBits, 1, 0, { \"0x08_INST_RETIRED\",      eslapi::CAPI_COLOR_DARKGREEN}, \"Instructions architecturally executed\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_expt_taken_rs\",      eAnyBit, 0, 0, { \"0x09_EXC_TAKEN\",         eslapi::CAPI_COLOR_DARKRED},   \"Exception taken\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_expt_rtn_ret_rs\",    eAnyBit, 0, 0, { \"0x0A_EXC_RETURN\",        eslapi::CAPI_COLOR_LAWNGREEN}, \"Exception return architecturally executed\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_cntxtid_write_rs\",   eAnyBit, 0, 0, { \"0x0B_CID_WRITE_RETIRED\", eslapi::CAPI_COLOR_LIGHTGREEN},\"Counts the number of instructions architecturally executed writing into the ContextID Register\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_data_rd_wr_rs\",    eAnyBit, 0, 0,{ \"0x06_LD_RETIRED\",         eslapi::CAPI_COLOR_STEELBLUE4}, \"Data read architecturally executed\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_data_wr_wr_rs\",    eAnyBit, 0, 0,{ \"0x07_ST_RETIRED\",         eslapi::CAPI_COLOR_STEELBLUE4}, \"Data write architecturally executed\"}
+}"
+                :type ("CortexA53EventInfo" type (:type "class") nil nil))
+                nil [3225 4621])
+            ("sPipelineEventInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_sw_change_pc_rs\",    eAnyBit, 0, 0,{ \"0x0C_PC_WRITE_RETIRED\",   eslapi::CAPI_COLOR_SPRINGGREEN4}, \"Instruction speculatively executed - Software change of the PC\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_br_direct_wr_rs\",    eAnyBit, 0, 0,{ \"0x0D_BR_IMMED_RETIRED\",   eslapi::CAPI_COLOR_STEELBLUE1}, \"Immediate branch architecturally executed\"},
+  // This event 0xe doesn't appear to be present for a53
+  //  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_br_return_wr_i\",     eAnyBit, 0, 0,{ \"0x0E_BR_RETURN_RETIRED\",  eslapi::CAPI_COLOR_STEELBLUE2}, \"Procedure return (other than exception returns) architecturally executed.\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_unaligned_ls_rs\",    eAnyBit, 0, 0,{ \"0x0F_UNALIGNED_LDST_RETIRED\",eslapi::CAPI_COLOR_STEELBLUE3}, \"Unaligned load-store.\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_br_mispred_rs\",      eAnyBit, 0, 0,{ \"0x10_BR_MIS_PRED\",           eslapi::CAPI_COLOR_ORANGERED}, \"Mispredicted or not predicted branch speculatively executed\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_br_valid_wr_rs\",     eAnyBit, 0, 0,{ \"0x12_BR_PRED\",               eslapi::CAPI_COLOR_DARKGREEN}, \"Predictable branch speculatively executed\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_br_indirect_rs\",     eAnyBit, 0, 0,{ \"0x7A_BR_INDIRECT_SPEC\",      eslapi::CAPI_COLOR_DARKRED}, \"Predictable branch speculatively executed - indirect branch\"},
+}"
+                :type ("CortexA53EventInfo" type (:type "class") nil nil))
+                nil [4623 6376])
+            ("sICacheEventInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_ic_lf_rs\",           eAnyBit, 0, 0,{ \"0x01_L1I_CACHE_REFILL\",      eslapi::CAPI_COLOR_RED},   \"Level 1 instruction cache refill\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_instr_pagewalk_rs\",  eAnyBit, 0, 0,{ \"0x02_L1I_TLB_REFILL\",        eslapi::CAPI_COLOR_GREEN}, \"Level 1 instruction TLB refill\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_ic_access_rs\",       eAnyBit, 0, 0,{ \"0x14_L1I_CACHE\",             eslapi::CAPI_COLOR_BLUE}, \"Level 1 instruction cache access\"}
+}"
+                :type ("CortexA53EventInfo" type (:type "class") nil nil))
+                nil [6378 7061])
+            ("sDCacheEventInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_rw_lf_rs\",           eAnyBit, 0, 0,{ \"0x03_L1D_CACHE_REFILL\",        eslapi::CAPI_COLOR_RED},    \"Level 1 data cache refill\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_dc_access_rs\",       eAnyBit, 0, 0,{ \"0x04_L1D_CACHE_ACCESS\",      eslapi::CAPI_COLOR_LIGHTGREEN}, \"Level 1 data cache access\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_data_pagewalk_rs\",   eAnyBit, 0, 0,{ \"0x05_L1D_TLB_REFILL\",        eslapi::CAPI_COLOR_PURPLE}, \"Level 1 data TLB refill\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_eviction_rs\",        eAnyBit, 0, 0,{ \"0x15_L1D_CACHE_WB\",          eslapi::CAPI_COLOR_PURPLE}, \"Level 1 data cache write-back\"}
+}"
+                :type ("CortexA53EventInfo" type (:type "class") nil nil))
+                nil [7063 7945])
+            ("sCycleEventInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  // Note: For the 0x11 CPU Cycles eventinfo, the net provided is just a placeholder - as we are counting cpu cycles, we just increment every cycle
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.scu_evnt_bus_cycle_i\",    eIgnoreBits, 0, 0,{ \"0x11_CPU_CYCLES\",            eslapi::CAPI_COLOR_GRAY}, \"Cycle\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_irq_taken_rs\",        eAnyBit, 0, 0,{ \"0x86_EXC_IRQ\",              eslapi::CAPI_COLOR_THISTLE1}, \"IRQ Exception Taken\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_fiq_taken_rs\",        eAnyBit, 0, 0,{ \"0x87_EXC_FIQ\",              eslapi::CAPI_COLOR_THISTLE2}, \"FIQ Exception Taken\"}
+}"
+                :type ("CortexA53EventInfo" type (:type "class") nil nil))
+                nil [7947 8736])
+            ("sMemoryEventInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_data_mem_access_i\",  eSumBits, 1, 0, { \"0x13_MEM_ACCESS\",          eslapi::CAPI_COLOR_GREEN}, \"Data memory access\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_mem_err\",             eAnyBit, 0, 0, { \"0x1A_MEM_ERROR\",           eslapi::CAPI_COLOR_GREEN}, \"Local Data memory error\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.biu_evnt_ext_mem_req_i\",      eSumBits, 1, 0,{ \"0xC0_EXT_MEM_REQ\",         eslapi::CAPI_COLOR_DARKRED}, \"External Memory Request\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.biu_evnt_ext_mem_req_nc_i\",   eSumBits, 1, 0,{ \"0xC1_NC_EXT_MEM_REQ\",      eslapi::CAPI_COLOR_PALEVIOLETRED}, \"Non cacheable external memory request\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_pf_lf_rs\",            eAnyBit, 0, 0,{ \"0xC2_Linefill_Prefetch\",    eslapi::CAPI_COLOR_TURQUOISE2}, \"Linefill because of prefetch\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_throttle_rs\",         eAnyBit, 0, 0,{ \"0xC3_Throttle\",             eslapi::CAPI_COLOR_ORANGE}, \"Instruction Cache Throttle occurred\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_ramode_enter_rs\",     eAnyBit, 0, 0,{ \"0xC4_Entering_Read_Alloc\",  eslapi::CAPI_COLOR_YELLOWGREEN}, \"Entering read allocation mode\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_ramode_rs\",           eAnyBit, 0, 0,{ \"0xC5_Read_Alloc_Mode\",      eslapi::CAPI_COLOR_GOLDENROD}, \"Read Allocate Mode\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_mem_err_ifu_i\",       eAnyBit, 0, 0,{ \"0xD0_L1I_mem_err\",          eslapi::CAPI_COLOR_DARKRED}, \"L1 Instruction Cache Mem Err\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_mem_err_dcu_i\",       eAnyBit, 0, 0,{ \"0xD1_L1D_mem_err\",          eslapi::CAPI_COLOR_PINK}, \"L1 Data Cache Mem Err\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_mem_err_tlb_i\",       eAnyBit, 0, 0,{ \"0xD2_TLB_mem_err\",          eslapi::CAPI_COLOR_PURPLE}, \"TLB Mem Err\"}
+}"
+                :type ("CortexA53EventInfo" type (:type "class") nil nil))
+                nil [8737 11071])
+            ("sL2CacheEventInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_l2_access_rs\",        eAnyBit, 0, 0,{ \"0x16_L2D_CACHE\",            eslapi::CAPI_COLOR_DARKBLUE}, \"Level 2 data cache access\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_l2_refill_rs\",        eAnyBit, 0, 0,{ \"0x17_L2D_CACHE_REFILL\",     eslapi::CAPI_COLOR_DARKRED}, \"Level 2 data cache refill\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_l2_wb_rs\",            eAnyBit, 0, 0,{ \"0x18_L2D_CACHE_WB\",         eslapi::CAPI_COLOR_PURPLE}, \"Level 2 data cache write-back\"}
+}"
+                :type ("CortexA53EventInfo" type (:type "class") nil nil))
+                nil [11072 11747])
+            ("sBusEventInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.scu_evnt_bus_acc_<LDSTPATH>_i\",          eSpecialBit, 0, 0,{ \"0x19_BUS_ACCESS\",           eslapi::CAPI_COLOR_GRAY}, \"Bus access\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_bus_cycle_rs\",        eAnyBit, 0, 0,{ \"0x1D_BUS_CYCLES\",           eslapi::CAPI_COLOR_DARKSLATEGRAY}, \"Bus cycles\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_bus_acc_rd_rs\",       eAnyBit, 0, 0,{ \"0x60_BUS_ACCESS_LD\",        eslapi::CAPI_COLOR_GREEN}, \"Bus access - Read\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_bus_acc_wr_rs\",       eAnyBit, 0, 0,{ \"0x61_BUS_ACCESS_ST\",        eslapi::CAPI_COLOR_DARKGREEN}, \"Bus access - Write\"}
+}"
+                :type ("CortexA53EventInfo" type (:type "class") nil nil))
+                nil [11748 12599])
+            ("sMicroarchitectureEventInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.pmn_chain\",                eAnyBit, 5, 0,{ \"0x1E_CHAIN\",               eslapi::CAPI_COLOR_ORANGERED}, \"Odd performance counter chain mode\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_pdc_valid_rs\",        eAnyBit, 0, 0,{ \"0xC6_PREDECODE_ERR\",       eslapi::CAPI_COLOR_PALEVIOLETRED}, \"Predecode error\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_stb_stall_rs\",        eAnyBit, 0, 0,{ \"0xC7_DATA_WR_STALL\",       eslapi::CAPI_COLOR_SIENNA}, \"Data Write operation that stalls the pipeline because of the store buffer being full\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_snooped_data_rs\",     eAnyBit, 0, 0,{ \"0xC8_SCU_SNOOPED\",         eslapi::CAPI_COLOR_GOLD}, \"SCU Snooped data from another [<CPU>] for this [<CPU>]\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_br_cond_predict_rs\",  eAnyBit, 0, 0,{ \"0xC9_COND_BR\",             eslapi::CAPI_COLOR_CORAL}, \"Conditional branch executed\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_br_indirect_mispred_rs\",     eAnyBit, 0, 0,{ \"0xCA_INDIRECT_BR_MIS\",eslapi::CAPI_COLOR_TURQUOISE}, \"Indirect branch mis-predicted\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_br_indirect_mispred_addr_rs\",eAnyBit, 0, 0,{ \"0xCB_INDIRECT_BR_MIS_MISC\",eslapi::CAPI_COLOR_LIGHTGREEN}, \"Indirect branch mis-predicted because of address mis-compare\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.evnt_br_cond_mispredict_rs\",      eAnyBit, 0, 0,{ \"0xCC_COND_BR_MIS\",  eslapi::CAPI_COLOR_BLACK}, \"Conditional branch mis-predicted\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.attr_evnt_e0\",                    eAnyBit, 0, 0,{ \"0xE0_attr_evnt_e0\", eslapi::CAPI_COLOR_PINK}, \"attr_evnt_e0\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.attr_evnt_e1\",                    eAnyBit, 0, 0,{ \"0xE1_attr_evnt_e1\", eslapi::CAPI_COLOR_LAVENDER}, \"attr_evnt_e1\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.attr_evnt_e2\",                    eAnyBit, 0, 0,{ \"0xE2_attr_evnt_e2\", eslapi::CAPI_COLOR_LIMEGREEN}, \"attr_evnt_e2\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.attr_evnt_e3\",                    eAnyBit, 0, 0,{ \"0xE3_attr_evnt_e3\", eslapi::CAPI_COLOR_MAGENTA}, \"attr_evnt_e3\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.attr_evnt_e4\",                    eAnyBit, 0, 0,{ \"0xE4_attr_evnt_e4\", eslapi::CAPI_COLOR_YELLOW}, \"attr_evnt_e4\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.attr_evnt_e5\",                    eAnyBit, 0, 0,{ \"0xE5_attr_evnt_e5\", eslapi::CAPI_COLOR_SPRINGGREEN4}, \"attr_evnt_e5\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.attr_evnt_e6\",                    eAnyBit, 0, 0,{ \"0xE6_attr_evnt_e6\", eslapi::CAPI_COLOR_TAN}, \"attr_evnt_e6\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.attr_evnt_e7\",                    eAnyBit, 0, 0,{ \"0xE7_attr_evnt_e7\", eslapi::CAPI_COLOR_DARKOLIVEGREEN}, \"attr_evnt_e7\"},
+  {\"CORTEXA53.g_ca53_cpu[<CPU>].u_ca53_cpu.u_ca53_noram.u_ca53dpu.u_dpu_pmu.attr_evnt_e8\",                    eAnyBit, 0, 0,{ \"0xE8_attr_evnt_e8\", eslapi::CAPI_COLOR_STEELBLUE2}, \"attr_evnt_e8\"},
+}"
+                :type ("CortexA53EventInfo" type (:type "class") nil nil))
+                nil [12600 16206])
+            ("CortexA53Streams" type
+               (:members 
+                  ( ("streamName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [16235 16258])
+                    ("eventInfoArray" variable
+                       (:pointer 1
+                        :type ("CortexA53EventInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [16261 16296])
+                    ("numEvents" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16299 16322]))                  
+                :type "struct")
+                nil [16207 16325])
+            ("sStreams" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  { \"Instructions\", sInstructionEventInfo, arraySize(sInstructionEventInfo, CortexA53EventInfo)},
+  { \"Pipeline\",    sPipelineEventInfo,     arraySize(sPipelineEventInfo,    CortexA53EventInfo)},
+  { \"I-Cache\",     sICacheEventInfo,       arraySize(sICacheEventInfo,      CortexA53EventInfo)},
+  { \"D-Cache\",     sDCacheEventInfo,       arraySize(sDCacheEventInfo,      CortexA53EventInfo)},
+  { \"L2-Cache\",    sL2CacheEventInfo,       arraySize(sL2CacheEventInfo,      CortexA53EventInfo)},
+  { \"Memory\",    sMemoryEventInfo,       arraySize(sMemoryEventInfo,      CortexA53EventInfo)},
+  { \"Bus\",    sBusEventInfo,       arraySize(sBusEventInfo,      CortexA53EventInfo)},
+  { \"Microarchitecture\",    sMicroarchitectureEventInfo,       arraySize(sMicroarchitectureEventInfo,      CortexA53EventInfo)},
+  { \"Cycle\",    sCycleEventInfo,       arraySize(sCycleEventInfo,      CortexA53EventInfo)}
+}"
+                :type ("CortexA53Streams" type (:type "class") nil nil))
+                nil [16328 17265])
+            ("CarbonProfile" function
+               (:constructor-flag t
+                :parent "CarbonProfile"
+                :arguments 
+                  ( ("_compHelper" variable
+                       (:pointer 1
+                        :type ("CarbonComponentHelperIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17296 17333])
+                    ("comp" variable
+                       (:pointer 1
+                        :type ("eslapi::CASIModule" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17334 17359])
+                    ("topName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17360 17380])
+                    ("numCores" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17381 17403]))                  
+                :type ("CarbonProfile" type (:type "class") nil nil))
+                nil [17267 17717])
+            ("CarbonProfile" function
+               (:destructor-flag t
+                :parent "CarbonProfile"
+                :type "void")
+                nil [17719 17986])
+            ("buildStreams" function
+               (:parent "CarbonProfile"
+                :type "void")
+                nil [17988 18807])
+            ("buildCoreStreams" function
+               (:parent "CarbonProfile"
+                :arguments 
+                  ( ("core" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18846 18864]))                  
+                :type "void")
+                nil [18809 20971])
+            ("init" function
+               (:parent "CarbonProfile"
+                :type "void")
+                nil [20973 22788])
+            ("update" function
+               (:parent "CarbonProfile"
+                :type "void")
+                nil [22790 27197])
+            ("CAPIGetProfilingStreams" function
+               (:parent "CarbonProfile"
+                :arguments 
+                  ( ("desiredNrStreams" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27259 27285])
+                    ("actualNrStreams" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27325 27351])
+                    ("streams" variable
+                       (:pointer 1
+                        :type ("eslapi::CAPIStreamInfo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27391 27425])
+                    ("streamIndex" variable (:type "int") (reparse-symbol arg-sub-list) [27465 27481]))                  
+                :type ("eslapi::CAPIReturn_t" type (:type "class") nil nil))
+                nil [27199 27945])
+            ("findNet" function
+               (:pointer 1
+                :parent "CarbonProfile"
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27983 28003])
+                    ("netName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28004 28024]))                  
+                :type ("CarbonNetID" type (:type "class") nil nil))
+                nil [27947 28214]))          
+      :file "CarbonProfile.cpp"
+      :pointmax 28215
+      :fsize 28214
+      :lastmodtime '(23155 26524 205257 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("arraySize" (spp-arg-list ("arrayP" "arrayT") 1037 . 1052) . 
+              ((SIZEOF "sizeof" 1053 . 1059) (semantic-list "(arrayP)" 1059 . 1067) (punctuation "/" 1067 . 1068) (SIZEOF "sizeof" 1068 . 1074) (semantic-list "(arrayT)" 1074 . 1082)))
+          )
+)
+    (semanticdb-table "CarbonMemSystem.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [576 593])
+            ("iostream" include (:system-flag t) nil [594 613])
+            ("sstream" include (:system-flag t) nil [614 632])
+            ("assert.h" include nil nil [633 652])
+            ("CARBONMEM_OVERRIDES" variable (:constant-flag t) nil [690 709])
+            ("carbon/carbon_capi.h" include nil nil [711 742])
+            ("carbon/CarbonCADITypes.h" include nil nil [743 778])
+            ("carbon/carbon_dbapi.h" include nil nil [779 811])
+            ("cpus/CortexA53/CarbonMemSystem.h" include nil nil [813 856])
+            ("cpus/CortexA53/CarbonMMUAccess.h" include nil nil [857 900])
+            ("common/CarbonComponentHelper.h" include nil nil [902 943])
+            ("common/carbon_mkversion.h" include nil nil [944 980])
+            ("eslapi" using (:type ("eslapi" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [982 1005])
+            ("Carbon::ArchRestoreHandlerIF" using (:type ("Carbon::ArchRestoreHandlerIF" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1006 1051])
+            ("CARBON_MKLIB_NAMESPACE" using (:type ("CARBON_MKLIB_NAMESPACE" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1053 1092])
+            ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYCORTEXA53" using (:type ("CARBON_MKLIB_NAMESPACE::CARBONMKLIBRARYCORTEXA53" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1093 1158])
+            ("CarbonMemSystem" function
+               (:constructor-flag t
+                :parent "CarbonMemSystem"
+                :arguments 
+                  ( ("trustZone" variable (:type ("CARBON_MKLIB_NAMESPACE::CarbonTrustZone::TrustZone" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1196 1257])
+                    ("cpuNum" variable (:type "int") (reparse-symbol arg-sub-list) [1258 1269])
+                    ("compHelper" variable
+                       (:pointer 1
+                        :type ("CarbonComponentHelperIF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1303 1339])
+                    ("cadi" variable
+                       (:pointer 1
+                        :type ("eslapi::CADI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1340 1359])
+                    ("memSystemIdx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1395 1417]))                  
+                :type ("CarbonMemSystem" type (:type "class") nil nil))
+                nil [1163 2470])
+            ("set_total_num_cpu" function
+               (:parent "CarbonMemSystem"
+                :type "void")
+                nil [2560 3333])
+            ("setupL1Nets" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("cpuNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3457 3473]))                  
+                :type "void")
+                nil [3423 4784])
+            ("setupL2Nets" function
+               (:parent "CarbonMemSystem"
+                :type "void")
+                nil [4875 6226])
+            ("findNet" function
+               (:pointer 1
+                :parent "CarbonMemSystem"
+                :arguments 
+                  ( ("netPath" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6305 6332]))                  
+                :type ("CarbonNetID" type (:type "class") nil nil))
+                nil [6267 6610])
+            ("findMemory" function
+               (:pointer 1
+                :parent "CarbonMemSystem"
+                :arguments 
+                  ( ("memPath" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6658 6685]))                  
+                :type ("CarbonMemoryID" type (:type "class") nil nil))
+                nil [6614 6972])
+            ("CarbonMemSystem" function
+               (:destructor-flag t
+                :parent "CarbonMemSystem"
+                :type "void")
+                nil [6976 8362])
+            ("setMMUSystem" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("mmu" variable
+                       (:pointer 1
+                        :type ("CarbonMMUAccess" type
+                             (:prototype t
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8401 8428]))                  
+                :type "void")
+                nil [8366 8458])
+            ("cacheHitL2" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("way" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8495 8508])
+                    ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8509 8521])
+                    ("tagMask" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8522 8539])
+                    ("tagAddr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8576 8593])
+                    ("isDirty" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [8594 8608]))                  
+                :type "bool")
+                nil [8462 10442])
+            ("cacheHitL1" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("way" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10515 10528])
+                    ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10529 10541])
+                    ("cpu" variable (:type "int") (reparse-symbol arg-sub-list) [10542 10550])
+                    ("isDirty" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [10551 10565]))                  
+                :type "bool")
+                nil [10482 14610])
+            ("read" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("va" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14677 14689])
+                    ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14690 14702])
+                    ("bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14703 14718])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14719 14732]))                  
+                :type "bool")
+                nil [14650 16754])
+            ("readinternal" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("va" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16821 16833])
+                    ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16834 16846])
+                    ("bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16847 16862])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16863 16876]))                  
+                :type "bool")
+                nil [16786 18251])
+            ("write" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("va" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18319 18331])
+                    ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18332 18344])
+                    ("bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18345 18360])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18361 18380]))                  
+                :type "bool")
+                nil [18291 19916])
+            ("writeinternal" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("va" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19985 19997])
+                    ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19998 20010])
+                    ("bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20011 20026])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20027 20046]))                  
+                :type "bool")
+                nil [19949 20940])
+            ("getRotatedIndex" function
+               (:pointer 1
+                :parent "CarbonMemSystem"
+                :arguments 
+                  ( ("index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21278 21293])
+                    ("way" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21294 21311]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [21234 27454])
+            ("accessL1CacheData" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("isWrite" variable (:type "bool") (reparse-symbol arg-sub-list) [27502 27515])
+                    ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27516 27528])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27529 27543])
+                    ("profiling" variable (:type "bool") (reparse-symbol arg-sub-list) [27544 27559])
+                    ("cpu" variable (:type "int") (reparse-symbol arg-sub-list) [27560 27568])
+                    ("isDirty" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [27569 27583]))                  
+                :type "bool")
+                nil [27462 31262])
+            ("accessL2CacheData" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("isWrite" variable (:type "bool") (reparse-symbol arg-sub-list) [31349 31362])
+                    ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31363 31375])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31376 31390])
+                    ("profiling" variable (:type "bool") (reparse-symbol arg-sub-list) [31391 31406])
+                    ("isDirty" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [31407 31421]))                  
+                :type "bool")
+                nil [31309 34873])
+            ("setCacheData" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("va" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34955 34967])
+                    ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34968 34980])
+                    ("data" variable (:type ("CarbonUInt8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34981 34998])
+                    ("profiling" variable (:type "bool") (reparse-symbol arg-sub-list) [34999 35014]))                  
+                :type "bool")
+                nil [34920 35643])
+            ("restore" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35776 35800])
+                    ("stream" variable
+                       (:reference 1
+                        :type ("RestoreArchStream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35801 35827]))                  
+                :type "int")
+                nil [35747 38980])
+            ("restoreL2Cache" function
+               (:parent "CarbonMemSystem"
+                :arguments 
+                  ( ("pa" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39444 39456])
+                    ("tag" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39457 39470])
+                    ("way" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39471 39484])
+                    ("shareability" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39485 39506])
+                    ("dirty" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39507 39521])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39522 39536])
+                    ("validate" variable (:type "bool") (reparse-symbol arg-sub-list) [39537 39551]))                  
+                :type "void")
+                nil [39407 44129]))          
+      :file "CarbonMemSystem.cpp"
+      :pointmax 44181
+      :fsize 45327
+      :lastmodtime '(23138 8391 720555 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CARBONMEM_OVERRIDES")
+          )
+))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!src!cpus!CortexA53!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

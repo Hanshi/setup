@@ -1,0 +1,72 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("models/Memory.h" include nil nil [22 48])
+            ("models/TrafficGenerator.h" include nil nil [49 85])
+            ("models/Monitor.h" include nil nil [86 113])
+            ("CCI550Imp.h" include nil nil [114 136])
+            ("ARM::AXI4" using (:type ("ARM::AXI4" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [137 163])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2337 2361])
+            ("ARM::Models" using (:type ("ARM::Models" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2362 2390])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2404 2413])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2414 2427]))                  
+                :type "int")
+                nil [2392 8513]))          
+      :file "system_test.cpp"
+      :pointmax 8514
+      :fsize 8513
+      :lastmodtime '(22796 55268 867691 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PAYLOAD_SIZE" . ((symbol "SIZE_16" 5709 . 5716)))
+          ("BURST_TYPE" . ((symbol "BURST_INCR" 5677 . 5687)))
+          ("PAYLOAD_LEN" . ((number "3" 5656 . 5657)))
+          )
+)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++" "-g" "-O0" "-DSC_INCLUDE_DYNAMIC_PROCESSES" "-Wall" "-Wextra" "-Werror" "-Wno-unused-parameter" "-DGENERATE_SLAVE_PORTS=1" "-std=c++11")) nil [88 214])
+            ("SYSTEMC_INC" variable (:default-value ("$(SYSTEMC_HOME)/include/")) nil [250 289])
+            ("SYSTEMC_LIB" variable (:default-value ("$(SYSTEMC_HOME)/lib-linux64/")) nil [289 332])
+            ("CCI550_DIR" variable (:default-value ("./MODELS/PL423/$(MODEL_CONFIG)/gcc/SystemC")) nil [332 388])
+            ("ANANKE_DIR" variable (:default-value ("./MODELS/FCM/Ananke_1CPU_AHmax_TARMAC/gcc/SystemC")) nil [388 451])
+            ("$(CM_SYSC_HOME)/makefiles/cm_sysc_common.mak" include nil nil [495 548])
+            ("all" function (:arguments ("system_test" "cci550_ananke" "../../../cpus/Ananke/Applications/DecrData_sysc/AARCH64/decrDataMP_v8.elf")) nil [549 655])
+            ("system_test" function (:arguments ("system_test.o" "CCI550ResetImp.o")) nil [656 972])
+            ("CCI550ResetImp.o" function (:arguments ("$(CCI550_DIR)/CCI550ResetImp.cpp")) nil [974 1151])
+            ("AnankeResetImp.o" function (:arguments ("$(ANANKE_DIR)/AnankeResetImp.cpp")) nil [1152 1335])
+            ("system_test.o" function (:arguments ("system_test.cpp")) nil [1336 1499])
+            ("cci550_ananke" function (:arguments ("cci550_ananke.o" "AnankeResetImp.o" "CCI550ResetImp.o")) nil [1500 1928])
+            ("cci550_ananke.o" function (:arguments ("cci550_ananke.cpp")) nil [1929 2117])
+            ("../../../cpus/Ananke/Applications/DecrData_sysc/AARCH64/decrDataMP_v8.elf" function nil nil [2118 2219])
+            ("clean" function nil nil [2220 2265]))          
+      :file "Makefile"
+      :pointmax 2267
+      :fsize 2266
+      :lastmodtime '(22796 54744 620307 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!primecells!PL423!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

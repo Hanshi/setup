@@ -1,0 +1,67 @@
+;; Object noTLM/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "noTLM/"
+  :tables
+  (list
+    (semanticdb-table "KiteImp.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cassert" include (:system-flag t) nil [801 819])
+            ("KiteImp.h" include nil nil [821 841])
+            ("ARM" type
+               (:members 
+                  ( ("Models" type
+                       (:members 
+                          ( ("Cycle" type
+                               (:members 
+                                  ( ("ModelKite" type
+                                       (:members 
+                                          ( ("KiteImp" function
+                                               (:constructor-flag t
+                                                :parent "KiteImp"
+                                                :arguments 
+                                                  ( ("name" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("sc_core::sc_module_name" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [990 1026])
+                                                    ("add_tarmac_prefix" variable (:type "bool") (reparse-symbol arg-sub-list) [1026 1049]))                                                  
+                                                :type ("KiteImp" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [973 46888])
+                                            ("tick_model" function
+                                               (:parent "KiteImp"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [46891 46947])
+                                            ("KiteImp" function
+                                               (:destructor-flag t
+                                                :parent "KiteImp"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [46963 47067])
+                                            ("posedge" function
+                                               (:parent "KiteImp"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [47468 47644])
+                                            ("negedge" function
+                                               (:parent "KiteImp"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [47646 47818]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [950 47820]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [932 47822]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [913 47824]))                  
+                :type "namespace")
+                nil [897 47826]))          
+      :file "KiteImp.cpp"
+      :pointmax 47827
+      :fsize 47826
+      :lastmodtime '(22775 61065 477131 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "KiteImp.h"
+      :file "KiteImp.h"
+      :fsize 31360
+      :lastmodtime '(22775 61065 219135 0)))
+  :file "!o!mkwork!hanlei01!MK_trunk!modelbuild!models!builddir!Kite!workarea!SystemC!ip!Kite_2CPU_Example!gcc483!SystemC!noTLM!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

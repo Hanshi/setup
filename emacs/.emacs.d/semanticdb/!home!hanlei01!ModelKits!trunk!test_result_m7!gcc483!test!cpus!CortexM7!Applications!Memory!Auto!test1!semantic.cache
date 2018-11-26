@@ -1,0 +1,30 @@
+;; Object test1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test1/"
+  :tables
+  (list
+    (semanticdb-table "test1_symbols.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("bp_autotest_test1_store0" variable
+               (:default-value "0x000005e3"
+                :type "int")
+                nil [1 43])
+            ("bp_autotest_test1_store1" variable
+               (:default-value "0x0000060d"
+                :type "int")
+                nil [44 86])
+            ("bp_autotest_test1_store2" variable
+               (:default-value "0x00000643"
+                :type "int")
+                nil [87 129])
+            ("bp_autotest_test1_end" variable
+               (:default-value "0x00000649"
+                :type "int")
+                nil [130 169]))          
+      :file "test1_symbols.h"
+      :pointmax 170
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!test_result_m7!gcc483!test!cpus!CortexM7!Applications!Memory!Auto!test1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

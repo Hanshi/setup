@@ -1,0 +1,83 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("LINUX_DIR" variable (:default-value (".")) nil [1 15])
+            ("PACKAGE_LIB_DIR" variable (:default-value ("./lib")) nil [147 171])
+            ("COMP_NAME" variable (:default-value ("$(subst lib,,$(basename $(basename $(notdir $(wildcard $(PACKAGE_LIB_DIR)/lib*.icm.so)))))")) nil [327 430])
+            ("clean" function nil nil [431 460])
+            ("gen_code" function nil nil [461 471])
+            ("Makefile.internal" include nil nil [490 516])
+            ("CXX" variable (:default-value ("g++")) nil [578 586])
+            ("CXXFLAGS" variable (:default-value ("-fPIC" "-g" "-std=c++11" "-I$(SYSTEMC_INC)" "-I$(CARBON_HOME)/include" "$(CM_SYSC_CXXFLAGS)" "-I." "-I$(LINUX_DIR)")) nil [587 737])
+            ("OBJS" variable (:default-value ("lib$(COMP_NAME).systemc.o" "univent_tarmac.o")) nil [738 794])
+            ("Makefile.tlm" include nil nil [795 816])
+            ("all" function (:arguments ("lib$(COMP_NAME).systemc.so" "lib$(COMP_NAME).systemc.a")) nil [817 875])
+            ("lib" function (:arguments ("$(OBJS)")) nil [968 1021])
+            ("lib" function (:arguments ("$(OBJS)")) nil [1022 1411])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp")) nil [1412 1499])
+            ("univent_tarmac.o" function (:arguments ("univent_tarmac.cpp")) nil [1500 1569])
+            ("lib" function (:arguments ("gen_code")) nil [1570 1608])
+            ("univent_tarmac.cpp" function (:arguments ("gen_code")) nil [1609 1638]))          
+      :file "Makefile"
+      :pointmax 1639
+      :fsize 1638
+      :lastmodtime '(23027 33266 762339 0)
+      :unmatched-syntax '((symbol 547 . 576) (semantic-list 533 . 547) (punctuation 532 . 533) (symbol 523 . 531) (bol 523 . 523) (symbol 263 . 271) (semantic-list 246 . 263) (punctuation 245 . 246) (punctuation 243 . 244) (punctuation 242 . 243) (symbol 229 . 241) (bol 229 . 229) (symbol 134 . 146) (semantic-list 120 . 134) (punctuation 119 . 120) (punctuation 117 . 118) (punctuation 116 . 117) (symbol 104 . 115) (bol 104 . 104) (symbol 95 . 103) (semantic-list 81 . 95) (punctuation 80 . 81) (punctuation 78 . 79) (punctuation 77 . 78) (symbol 65 . 76) (bol 65 . 65) (symbol 31 . 64) (punctuation 29 . 30) (punctuation 28 . 29) (symbol 15 . 27) (bol 15 . 15)))
+    (semanticdb-table "Makefile.internal"
+      :major-mode 'makefile-mode
+      :tags 
+        '( ("IPXACT_FILENAME" variable (:default-value ("$(shell $(CARBON_MK_HOME)/Scripts/get_ipxact_filename.sh)")) nil [26 102])
+            ("CM_SYSC_INTERNAL" variable (:default-value ("$(CM_SYSC_PACKAGE)/rel_int")) nil [102 148])
+            ("CM_SYSC_PYTHON" variable (:default-value ("$(CM_SYSC_INTERNAL)/python/bin/python")) nil [148 203])
+            ("SYSC_TO_ARMTLM" variable (:default-value ("$(CM_SYSC_INTERNAL)/bin/sysc_to_armtlm.py")) nil [203 262])
+            ("TARMAC_SYSC" variable (:default-value ("$(CM_SYSC_INTERNAL)/bin/tarmac_sysc.py")) nil [262 316])
+            ("LINUX_DIR" variable (:default-value ("../linux")) nil [317 338])
+            ("COMP_NAME" variable (:default-value ("$(subst lib,,$(basename $(notdir $(wildcard $(LINUX_DIR)/lib*.a))))")) nil [338 418])
+            ("MODEL_NAME" variable (:default-value ("$(basename $(notdir $(wildcard ../*.xmlAnswers)))")) nil [418 481])
+            ("TARMAC3_SYSC" variable (:default-value ("$(CM_SYSC_INTERNAL)/bin/tarmac3_sysc.py")) nil [481 536])
+            ("PACKAGE_LIB_DIR" variable (:default-value ("./lib")) nil [536 560])
+            ("ICM_MODEL_IPNAME" variable (:default-value ("Plover")) nil [640 666])
+            ("$(ICM_PACKAGE)/internal/makefiles/icm_common.mak" include nil nil [708 765])
+            ("NUM_CPUS" variable (:default-value ("$(shell grep NUM_CPUS ../$(MODEL_NAME).xmlAnswers)")) nil [846 908])
+            ("NUM_CPUS" variable (:default-value ("4")) nil [946 957])
+            ("NUM_CPUS" variable (:default-value ("3")) nil [1001 1012])
+            ("NUM_CPUS" variable (:default-value ("2")) nil [1056 1067])
+            ("NUM_CPUS" variable (:default-value ("1")) nil [1072 1083])
+            ("NO_TLM" variable (:default-value ("$(shell grep NoTLM ../$(MODEL_NAME).xmlAnswers)")) nil [1133 1190])
+            ("NO_TLM" variable (:default-value ("TRUE")) nil [1232 1246])
+            ("NO_TLM" variable (:default-value ("FALSE")) nil [1251 1266])
+            ("DSM" variable (:default-value ("$(shell grep DSM ../$(MODEL_NAME).xmlAnswers)")) nil [1414 1466])
+            ("DSM" variable (:default-value ("--dsm")) nil [1505 1517])
+            ("DSM" variable nil nil [1522 1528])
+            ("FPU_PRESENT" variable (:default-value ("$(shell grep FPU_PRESENT ../$(MODEL_NAME).xmlAnswers)")) nil [1576 1644])
+            ("FPU_PRESENT" variable (:default-value ("PLOVER_FPU" "1")) nil [1689 1714])
+            ("FPU_PRESENT" variable nil nil [1719 1732])
+            ("SYSTEMC_FLAGS" variable (:default-value ("$(shell grep SystemCFlags ../$(MODEL_NAME).xmlAnswers)")) nil [1982 2053])
+            ("SYSTEMC_FLAGS_VALUE" variable (:default-value ("$(shell echo \"$(SYSTEMC_FLAGS)\" | cut -d \">\" -f2 | cut -d \"<\" -f1)")) nil [2088 2177])
+            ("TARMAC_FLAGS" variable (:default-value ("$(shell grep TarmacFlags ../$(MODEL_NAME).xmlAnswers)")) nil [2230 2299])
+            ("TARMAC_FLAGS_VALUE" variable (:default-value ("$(shell echo \"$(TARMAC_FLAGS)\" | cut -d \">\" -f2 | cut -d \"<\" -f1)")) nil [2334 2421])
+            ("DUMP_WAVEFORMS" variable (:default-value ("scx_dump_waveforms")) nil [2541 2577])
+            ("ITCMSIZE" variable (:default-value ("$(shell grep ITCMSIZE ../$(MODEL_NAME).xmlAnswers)")) nil [2577 2639])
+            ("DUMP_WAVEFORMS" variable (:default-value ("$(COMP_NAME)_dump_waveforms")) nil [2684 2729])
+            ("DTCMSIZE" variable (:default-value ("$(shell grep DTCMSIZE ../$(MODEL_NAME).xmlAnswers)")) nil [2735 2797])
+            ("DUMP_WAVEFORMS" variable (:default-value ("$(COMP_NAME)_dump_waveforms")) nil [2842 2887])
+            (".PHONY" function (:arguments ("gen_code")) nil [3040 3057])
+            ("gen_code" function (:arguments ("$(ICM_SO)")) nil [3057 3077])
+            ("clean" function (:arguments ("icm_clean")) nil [4919 5069]))          
+      :file "Makefile.internal"
+      :pointmax 5071
+      :fsize 5070
+      :lastmodtime '(23116 64143 474482 0)
+      :unmatched-syntax '((shell-command 4832 . 4911) (bol 4831 . 4831) (shell-command 4685 . 4806) (bol 4684 . 4684) (shell-command 4424 . 4683) (bol 4423 . 4423) (shell-command 4366 . 4402) (bol 4365 . 4365) (shell-command 4326 . 4364) (bol 4325 . 4325) (shell-command 4020 . 4248) (bol 4019 . 4019) (shell-command 3958 . 3973) (bol 3957 . 3957) (shell-command 3789 . 3842) (bol 3788 . 3788) (shell-command 3739 . 3787) (bol 3738 . 3738) (shell-command 3710 . 3737) (bol 3709 . 3709) (shell-command 3652 . 3708) (bol 3651 . 3651) (shell-command 3614 . 3650) (bol 3613 . 3613) (shell-command 3563 . 3612) (bol 3562 . 3562) (shell-command 3491 . 3549) (bol 3490 . 3490) (shell-command 3389 . 3489) (bol 3388 . 3388) (shell-command 3327 . 3387) (bol 3326 . 3326) (ELSE 1012 . 1016) (bol 1012 . 1012) (ELSE 957 . 961) (bol 957 . 957)))
+    (semanticdb-table "Makefile.tlm"
+      :file "Makefile.tlm"
+      :fsize 707
+      :lastmodtime '(23027 21933 0 0)))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!Scripts!cpus!Plover!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

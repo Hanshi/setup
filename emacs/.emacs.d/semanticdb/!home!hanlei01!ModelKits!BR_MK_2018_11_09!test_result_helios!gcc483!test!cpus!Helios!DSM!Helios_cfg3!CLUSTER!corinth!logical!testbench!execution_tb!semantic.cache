@@ -1,0 +1,16 @@
+;; Object execution_tb/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "execution_tb/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags nil
+      :file "Makefile"
+      :pointmax 31309
+      :fsize 31308
+      :lastmodtime '(23531 12814 458056 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!BR_MK_2018_11_09!test_result_helios!gcc483!test!cpus!Helios!DSM!Helios_cfg3!CLUSTER!corinth!logical!testbench!execution_tb!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

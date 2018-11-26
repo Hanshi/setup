@@ -1,0 +1,539 @@
+;; Object FCM/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "FCM/"
+  :tables
+  (list
+    (semanticdb-table "CarbonProfile.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_CARBONFCMPROFILE_H_" variable (:constant-flag t) nil [526 546])
+            ("common/carbon_mkversion.h" include nil nil [548 584])
+            ("eslapi/CAPI.h" include nil nil [585 609])
+            ("eslapi/CASI.h" include nil nil [610 634])
+            ("cpus/FCM/CarbonProfileCompareTypes.h" include nil nil [635 682])
+            ("cpus/FCM/CarbonProfilePrometheusEvents.h" include nil nil [683 734])
+            ("cpus/FCM/CarbonProfileAnankeEvents.h" include nil nil [735 782])
+            ("cpus/FCM/CarbonProfileSCUEvents.h" include nil nil [783 827])
+            ("vector" include (:system-flag t) nil [829 846])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("CARBONMKLIBRARYFCM" type
+                       (:members 
+                          ( ("CarbonProfile" type
+                               (:superclasses 
+                                  ( ("eslapi::CAPI" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1039 1046])
+                                    ("CarbonProfile" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("compHelper" variable
+                                               (:pointer 1
+                                                :type ("CarbonComponentHelperIF" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1073 1109])
+                                            ("comp" variable
+                                               (:pointer 1
+                                                :type ("eslapi::CASIModule" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1110 1135])
+                                            ("totalNumCores" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1136 1163])
+                                            ("littleCoreType" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [1164 1191])
+                                            ("littleCoreNum" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1192 1219])
+                                            ("bigCoreType" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [1220 1244])
+                                            ("bigCoreNum" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1245 1270]))                                          
+                                        :type ("CarbonProfile" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1059 1271])
+                                    ("CarbonProfile" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("littleCoreType" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [1298 1325])
+                                            ("littleCoreNum" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1326 1353])
+                                            ("bigCoreType" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [1354 1378])
+                                            ("bigCoreNum" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1379 1404]))                                          
+                                        :type ("CarbonProfile" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1284 1405])
+                                    ("CarbonProfile" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1412 1429])
+                                    ("init" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1477 1489])
+                                    ("update" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1533 1547])
+                                    ("CAPIGetProfilingStreams" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("desiredNrStreams" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1651 1677])
+                                            ("actualNrStreams" variable
+                                               (:pointer 1
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1729 1755])
+                                            ("streams" variable
+                                               (:pointer 1
+                                                :type ("eslapi::CAPIStreamInfo_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1807 1841])
+                                            ("streamIndex" variable (:type "int") (reparse-symbol arg-sub-list) [1893 1909]))                                          
+                                        :type ("eslapi::CAPIReturn_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1606 1910])
+                                    ("private" label nil (reparse-symbol classsubparts) [1915 1923])
+                                    ("buildStreams" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1982 2002])
+                                    ("buildCoreStreams" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("core" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2031 2049])
+                                            ("isLittle" variable (:type "bool") (reparse-symbol arg-sub-list) [2050 2064]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2009 2065])
+                                    ("buildSCUStreams" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2072 2095])
+                                    ("buildEventRTLPaths" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("numStreams" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2136 2160])
+                                            ("corePath" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2161 2182])
+                                            ("obj" variable
+                                               (:pointer 1
+                                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2183 2203]))                                          
+                                        :type ("CarbonUInt32" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2104 2204])
+                                    ("updateStreams" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("numStreams" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2232 2256])
+                                            ("obj" variable
+                                               (:pointer 1
+                                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2257 2277]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2213 2278])
+                                    ("updateEnables" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("core" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2305 2323])
+                                            ("enabledStreamDetected" variable (:type "bool") (reparse-symbol arg-sub-list) [2324 2351])
+                                            ("numEnableSignals" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2352 2382])
+                                            ("profileEnableSignal" variable
+                                               (:reference 1
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("bool" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2383 2422])
+                                            ("corePath" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2423 2444])
+                                            ("obj" variable
+                                               (:pointer 1
+                                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2445 2465]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2286 2466])
+                                    ("buildSystemCPMUCode" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("coreType" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [2505 2526])
+                                            ("coreStart" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2527 2550])
+                                            ("coreStop" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2551 2573])
+                                            ("numStreams" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2574 2598])
+                                            ("numEnables" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2599 2623]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2480 2624])
+                                    ("findNet" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :arguments 
+                                          ( ("obj" variable
+                                               (:pointer 1
+                                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2697 2717])
+                                            ("netName" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [2718 2738]))                                          
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2676 2739])
+                                    ("mCompHelper" variable
+                                       (:pointer 1
+                                        :type ("CARBON_MKLIB_NAMESPACE::CarbonComponentHelper" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2774 2833])
+                                    ("mStreams" variable
+                                       (:pointer 2
+                                        :type ("eslapi::CAPIStream_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2882 2914])
+                                    ("mStreamInfo" variable
+                                       (:pointer 1
+                                        :type ("eslapi::CAPIStreamInfo_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2974 3012])
+                                    ("isPrometheusConfig" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("numBigCores" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3108 3133])
+                                            ("bigCoreType" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [3134 3158]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3084 3159])
+                                    ("getPrometheusCorePath" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("coreNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3200 3217]))                                          
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3166 3218])
+                                    ("isAnankeConfig" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("numLittleCores" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3246 3274])
+                                            ("littleCoreType" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [3275 3302]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3226 3303])
+                                    ("getAnankeCorePath" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("coreNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3340 3357]))                                          
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3310 3358])
+                                    ("getSCUPath" function
+                                       (:prototype-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3366 3391])
+                                    ("mIsMP" variable (:type "bool") (reparse-symbol classsubparts) [3431 3442])
+                                    ("msStreams" variable
+                                       (:pointer 1
+                                        :type ("Streams" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3450 3469])
+                                    ("msEventEnableInfo" variable
+                                       (:pointer 1
+                                        :type ("EventEnableInfo" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3476 3511])
+                                    ("mProfileEnableSignalForcedForBigCore" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("bool" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [3670 3725])
+                                    ("mProfileEnableSignalForcedForLittleCore" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("bool" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [3732 3790])
+                                    ("mProfileEnableSignalForcedForSCU" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("bool" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [3797 3848])
+                                    ("mTotalNumCores" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3936 3964])
+                                    ("mNumLittleCores" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3971 4000])
+                                    ("mNumBigCores" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4007 4033])
+                                    ("mLittleType" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [4041 4065])
+                                    ("mBigType" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [4072 4093])
+                                    ("mNumTimesUpdateCalled" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4149 4184])
+                                    ("mVerbose" variable (:type "bool") (reparse-symbol classsubparts) [4192 4206])
+                                    ("mNumStreamsPerBigCore" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4310 4345])
+                                    ("mNumStreamsPerLittleCore" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4352 4390])
+                                    ("mNumStreamsPerSCU" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4397 4428])
+                                    ("mStreamIndex" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4436 4462])
+                                    ("mStreamIndexBase" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4469 4499])
+                                    ("mEventSignalIndex" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4506 4537])
+                                    ("mEventSignalHandles" variable
+                                       (:pointer 2
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4678 4712])
+                                    ("mSpecialSignalHandles" variable
+                                       (:pointer 2
+                                        :type ("CarbonNetID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4719 4755])
+                                    ("mNumEventSignalHandles" variable (:type "int") (reparse-symbol classsubparts) [4762 4789])
+                                    ("mNumSpecialSignalHandles" variable (:type "int") (reparse-symbol classsubparts) [4836 4865]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [987 4916]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [886 4920]))                  
+                :type "namespace")
+                nil [848 4924]))          
+      :file "CarbonProfile.h"
+      :pointmax 4963
+      :fsize 4963
+      :lastmodtime '(22981 6575 295284 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_CARBONFCMPROFILE_H_")
+          )
+)
+    (semanticdb-table "CarbonProfileCompareTypes.h"
+      :file "CarbonProfileCompareTypes.h"
+      :fsize 1618
+      :lastmodtime '(22552 56883 0 0))
+    (semanticdb-table "CarbonProfilePrometheusEvents.h"
+      :file "CarbonProfilePrometheusEvents.h"
+      :fsize 20401
+      :lastmodtime '(22987 51837 331497 0))
+    (semanticdb-table "CarbonProfileAnankeEvents.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_CARBONFCMANANKEPROFILEEVENTS_H_" variable (:constant-flag t) nil [538 570])
+            ("cpus/FCM/CarbonProfileCompareTypes.h" include nil nil [572 619])
+            ("sAnankeEventEnableInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.pmn_export_enabled\", 1},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.event_00_0f_en\", 1},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.event_10_1f_en\", 1},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.event_20_3f_en\", 1},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.event_40_6f_en\", 1},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.event_70_bf_en\", 1},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.event_c0_df_en\", 1},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.event_e0_1ff_en\", 1},
+}"
+                :type ("EventEnableInfo" type (:type "class") nil nil))
+                nil [754 1285])
+            ("sAnankeInstructionEventInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_instr_exec_i\",       eSumBits, 1, 0, { \"0x08_INST_RETIRED\",      eslapi::CAPI_COLOR_DARKGREEN}, \"Instructions architecturally executed\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_expt_taken_rs\",      eAnyBit, 0, 0, { \"0x09_EXC_TAKEN\",         eslapi::CAPI_COLOR_DARKRED},   \"Exception taken\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_expt_rtn_wr\",        eAnyBit, 0, 0, { \"0x0A_EXC_RETURN\",        eslapi::CAPI_COLOR_LAWNGREEN}, \"Exception return. Instruction architecturally executed, condition code check pass, exception return\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_cntxtid_write_rs\",   eAnyBit, 0, 0, { \"0x0B_CID_WRITE_RETIRED\", eslapi::CAPI_COLOR_LIGHTGREEN},\"Write to ContextID Register. Instruction architecturally executed, condition code check pass\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_data_rd_wr_rs\",      eAnyBit, 0, 0,{ \"0x06_LD_RETIRED\",         eslapi::CAPI_COLOR_STEELBLUE4}, \"Data read. Instruction architecturally executed, condition code check pass, load\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_data_wr_wr_rs\",      eAnyBit, 0, 0,{ \"0x07_ST_RETIRED\",         eslapi::CAPI_COLOR_STEELBLUE4}, \"Data write. Instruction architecturally executed, condition code check pass, store\"}
+}"
+                :type ("EventInfo" type (:type "class") nil nil))
+                nil [1580 2898])
+            ("sAnankePipelineEventInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_sw_change_pc_rs\",    eAnyBit, 0, 0,{ \"0x0C_PC_WRITE_RETIRED\",   eslapi::CAPI_COLOR_SPRINGGREEN4}, \"Instruction speculatively executed - Software change of the PC\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_br_direct_wr_rs\",    eAnyBit, 0, 0,{ \"0x0D_BR_IMMED_RETIRED\",   eslapi::CAPI_COLOR_STEELBLUE1}, \"Immediate branch. Instruction architecturally executed, condition code check pass\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_br_return_wr_rs\",    eAnyBit, 0, 0,{ \"0x0E_BR_RETURN_RETIRED\",   eslapi::CAPI_COLOR_STEELBLUE1}, \"Procedure return. Instruction architecturally executed, condition code check pass\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.dcu_evnt_unaligned_<LDSTPATH>_i\",    eSpecialBit, 0, 0,{ \"0x0F_UNALIGNED_LDST_RETIRED\",eslapi::CAPI_COLOR_STEELBLUE3}, \"Unaligned load-store. Instruction architecturally executed, condition code check pass\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_br_mispred_rs\",      eAnyBit, 0, 0,{ \"0x10_BR_MIS_PRED\",           eslapi::CAPI_COLOR_ORANGERED}, \"Mispredicted or not predicted branch speculatively executed\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_br_pred_wr_rs\",      eAnyBit, 0, 0,{ \"0x12_BR_PRED\",               eslapi::CAPI_COLOR_DARKGREEN}, \"Predictable branch speculatively executed\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_inst_spec_iss_i\",       eSumBits, 1, 0,{ \"0x1B_INST_SPEC\",               eslapi::CAPI_COLOR_LIGHTGREEN}, \"Operation speculatively executed\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_br_valid_wr_rs\",     eAnyBit, 0, 0,{ \"0x21_BR_RETIRED\",               eslapi::CAPI_COLOR_DARKGREY}, \"Branch. Instruction architecturally executed\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_br_mis_pred_rs\",     eAnyBit, 0, 0,{ \"0x22_BR_MIS_PRED_RETIRED\",               eslapi::CAPI_COLOR_DARKBLUE}, \"Mispredicted branch. Instruction architecturally executed\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_stall_frontend_rs\",  eAnyBit, 0, 0,{ \"0x23_STALL_FRONTEND\",               eslapi::CAPI_COLOR_DARKRED}, \"No operation issued due to the frontend\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_stall_backend_rs\",   eAnyBit, 0, 0,{ \"0x24_STALL_BACKEND\",               eslapi::CAPI_COLOR_YELLOW}, \"No operation issued due to the backend\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_ld_spec_rs\",     eAnyBit, 0, 0,{ \"0x70_LD_SPEC\",      eslapi::CAPI_COLOR_YELLOW}, \"Operation speculatively executed, load\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_st_spec_rs\",     eAnyBit, 0, 0,{ \"0x71_ST_SPEC\",      eslapi::CAPI_COLOR_GOLDENROD}, \"Operation speculatively executed, store\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_<LDSTPATH>_spec_iss_i\",     eSpecialBit, 0, 0,{ \"0x72_LDST_SPEC\",      eslapi::CAPI_COLOR_VIOLET}, \"Operation speculatively executed, load or store\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_dp_spec_iss_i\",     eSumBits, 1, 0,{ \"0x73_DP_SPEC\",      eslapi::CAPI_COLOR_GREY}, \"Operation speculatively executed, integer data processing\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_ase_spec_iss_i\",     eSumBits, 1, 0,{ \"0x74_ASE_SPEC\",      eslapi::CAPI_COLOR_BLACK}, \"Operation speculatively executed, Advanced SIMD instruction\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_vfp_spec_iss_i\",     eSumBits, 1, 0,{ \"0x75_VFP_SPEC\",      eslapi::CAPI_COLOR_PURPLE}, \"Operation speculatively executed, Floating point instruction\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_pc_spec_rs\",     eAnyBit, 0, 0,{ \"0x76_PC_SPEC\",      eslapi::CAPI_COLOR_CORAL}, \"Operation speculatively executed\"},
+  // CAD FIXFIX do we present this unconditionally
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_crypto_spec_rs\",     eAnyBit, 0, 0,{ \"0x77_CRYPTO_SPEC\",      eslapi::CAPI_COLOR_DARKOLIVEGREEN}, \"Operation speculatively executed, crypto instruction\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_br_direct_wr_rs\",    eAnyBit, 0, 0,{ \"0x78_BR_IMMED_SPEC\",      eslapi::CAPI_COLOR_DARKRED}, \"direct branch\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_br_return_wr_rs\",    eAnyBit, 0, 0,{ \"0x79_BR_RETURN_SPEC\",      eslapi::CAPI_COLOR_DARKORANGE}, \"return wr\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_br_indirect_rs\",     eAnyBit, 0, 0,{ \"0x7A_BR_INDIRECT_SPEC\",      eslapi::CAPI_COLOR_PINK}, \"Predictable branch speculatively executed - indirect branch\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_br_cond_predict_rs\",  eAnyBit, 0, 0,{ \"0xC9_BR_COND_PRED\",             eslapi::CAPI_COLOR_CORAL}, \"Predicted conditional branch executed\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_br_indirect_mispred_rs\",     eAnyBit, 0, 0,{ \"0xCA_BR_INDIRECT_MIS_PRED\",eslapi::CAPI_COLOR_TURQUOISE}, \"Indirect branch mis-predicted\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_br_indirect_mispred_addr_rs\",eAnyBit, 0, 0,{ \"0xCB_BR_INDIRECT_ADDR_MIS_PRED\",eslapi::CAPI_COLOR_LIGHTGREEN}, \"Indirect branch mis-predicted due to address mis-compare\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_br_cond_mispredict_rs\",      eAnyBit, 0, 0,{ \"0xCC_BR_COND_MIS_PRED\",  eslapi::CAPI_COLOR_BLACK}, \"Conditional branch mis-predicted\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_br_indirect_addr_pred_rs\",      eAnyBit, 0, 0,{ \"0xCD_BR_INDIRECT_ADDR_PRED\",  eslapi::CAPI_COLOR_BLACK}, \"Indirect branch with predicted address executed\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_crs_br_retired_wr_rs\",      eAnyBit, 0, 0,{ \"0xCE_BR_RETURN_ADDR_PRED\",  eslapi::CAPI_COLOR_DARKGREEN}, \"Procedure return with predicted address executed\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_mis_pred_crs_br_wr_rs\",      eAnyBit, 0, 0,{ \"0xCF_BR_RETURN_ADDR_MIS_PRED\",  eslapi::CAPI_COLOR_DARKRED}, \"Procedure return mis-predicted due to address mis-compare\"}
+}"
+                :type ("EventInfo" type (:type "class") nil nil))
+                nil [2900 8615])
+            ("sAnankeICacheEventInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_ic_lf_rs\",           eAnyBit, 0, 0,{ \"0x01_L1I_CACHE_REFILL\",      eslapi::CAPI_COLOR_ORANGE},   \"Level 1 instruction cache refill\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l1itlb_refill_rs\",   eAnyBit, 0, 0,{ \"0x02_L1I_TLB_REFILL\",        eslapi::CAPI_COLOR_GREEN}, \"Level 1 instruction TLB refill\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_ic_access_rs\",       eAnyBit, 0, 0,{ \"0x14_L1I_CACHE\",             eslapi::CAPI_COLOR_BLUE}, \"Level 1 instruction cache access\"}
+}"
+                :type ("EventInfo" type (:type "class") nil nil))
+                nil [8617 9186])
+            ("sAnankeDCacheEventInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.dcu_evnt_cache_refill_<LDSTPATH>_i\",           eSpecialBit, 0, 0,{ \"0x03_L1D_CACHE_REFILL\",        eslapi::CAPI_COLOR_RED},    \"Level 1 data cache refill\"},
+  // CAD: FIXFIX need to implement new function \"LOADSTORE\"
+  //  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.dcu_evnt_dc_<LOADSTOREPATH>_access_i\",       eSpecialBit, 0, 0,{ \"0x04_L1D_CACHE_ACCESS\",      eslapi::CAPI_COLOR_LIGHTGREEN}, \"Level 1 data cache access\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l1dc_access_rs\",       eAnyBit, 0, 0,{ \"0x04_L1D_CACHE_ACCESS\",      eslapi::CAPI_COLOR_LIGHTGREEN}, \"Level 1 data cache access\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l1dtlb_refill_rs\",   eAnyBit, 0, 0,{ \"0x05_L1D_TLB_REFILL\",        eslapi::CAPI_COLOR_PURPLE}, \"Level 1 data TLB refill\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l1d_cache_wb_rs\",        eAnyBit, 0, 0,{ \"0x15_L1D_CACHE_WB\",          eslapi::CAPI_COLOR_PURPLE}, \"Level 1 data cache eviction write-back\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l1dc_rd_rs\",            eAnyBit, 0, 0,{ \"0x40_L1D_CACHE_RD\",         eslapi::CAPI_COLOR_PINK}, \"Level 1 data cache access, read\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l1dc_wr_rs\",            eAnyBit, 0, 0,{ \"0x41_L1D_CACHE_WR\",         eslapi::CAPI_COLOR_BLUE}, \"Level 1 data cache access, write\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l1dc_refill_rd_rs\",            eAnyBit, 0, 0,{ \"0x42_L1D_CACHE_REFILL_RD\",         eslapi::CAPI_COLOR_DARKBLUE}, \"Level 1 data cache refill, read\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l1dc_refill_wr_rs\",            eAnyBit, 0, 0,{ \"0x43_L1D_CACHE_REFILL_WR\",         eslapi::CAPI_COLOR_LIGHTBLUE}, \"Level 1 data cache refill, write\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l1dc_refill_inner_rd\",            eAnyBit, 0, 0,{ \"0x44_L1D_CACHE_REFILL_INNER\",         eslapi::CAPI_COLOR_STEELBLUE}, \"Level 1 data cache refill, inner\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l1dc_refill_outer_rd\",            eAnyBit, 0, 0,{ \"0x45_L1D_CACHE_REFILL_OUTER\",         eslapi::CAPI_COLOR_YELLOW}, \"Level 1 data cache refill, outer\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_pf_lf_rs\",               eAnyBit, 0, 0,{ \"0xC2_L1D_CACHE_REFILL_PREFETCH\",    eslapi::CAPI_COLOR_TURQUOISE2}, \"Level 1 data cache refill due to prefetch\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_ramode_enter_rs\",        eAnyBit, 0, 0,{ \"0xC4_L1D_WS_MODE_ENTRY\",  eslapi::CAPI_COLOR_YELLOWGREEN}, \"Level 1 data cache entering write streaming mode\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_ramode_rs\",              eAnyBit, 0, 0,{ \"0xC5_L1D_WS_MODE\",      eslapi::CAPI_COLOR_GOLDENROD}, \"Level 1 data cache write streaming mode\"}
+}"
+                :type ("EventInfo" type (:type "class") nil nil))
+                nil [9188 11926])
+            ("sAnankeCycleEventInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  //In the RTL this event is just tied to 1'b1, so tying here to something which is always set
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.pmn_export_enabled\",    eAnyBit, 0, 0,{ \"0x11_CPU_CYCLES\",            eslapi::CAPI_COLOR_GRAY}, \"Cycle\"}, 
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_irq_taken_rs\",       eAnyBit, 0, 0,{ \"0x86_EXC_IRQ\",              eslapi::CAPI_COLOR_THISTLE1}, \"IRQ Exception Taken\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_fiq_taken_rs\",       eAnyBit, 0, 0,{ \"0x87_EXC_FIQ\",              eslapi::CAPI_COLOR_THISTLE2}, \"FIQ Exception Taken\"}
+}"
+                :type ("EventInfo" type (:type "class") nil nil))
+                nil [11928 12540])
+            ("sAnankeMemoryEventInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.dcu_evnt_mem_access_<LDSTPATH>_i\",          eSpecialBit, 0, 0, { \"0x13_MEM_ACCESS\",              eslapi::CAPI_COLOR_GREEN}, \"Data memory access\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_mem_err_i\",                   eAnyBit, 0, 0, { \"0x1A_MEMORY_ERROR\",            eslapi::CAPI_COLOR_LIGHTGREEN}, \"Local memory error\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_pdc_valid_rs\",                eAnyBit,  0, 0, { \"0xC6_PREDECODE_ERROR\",         eslapi::CAPI_COLOR_GOLDENROD}, \"Predecode error\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l2tlb_llwalk_access_rs\",      eAnyBit,  0, 0, { \"0xD0_L2D_LLWALK_TLB\",          eslapi::CAPI_COLOR_DARKRED}, \"Level 2 TLB last-level walk cache access\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l2tlb_llwalk_refill_rs\",      eAnyBit,  0, 0, { \"0xD1_L2D_LLWALK_TLB_REFILL\",   eslapi::CAPI_COLOR_PINK}, \"Level 2 TLB last-level walk cache refill\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l2tlb_s2_access_rs\",          eAnyBit,  0, 0,  { \"0xD4_L2D_S2_TLB\",              eslapi::CAPI_COLOR_BLUE}, \"Level 2 TLB IPA cache access\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l2tlb_s2_refill_rs\",          eAnyBit,  0, 0,  { \"0xD5_L2D_S2_TLB_REFILL\",       eslapi::CAPI_COLOR_ORANGE}, \"Level 2 TLB IPA cache refill\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_ttbr_wr_rs\",                  eAnyBit,  0, 0,  { \"0x1C_TTBR_WRITE_RETIRED\",      eslapi::CAPI_COLOR_RED}, \"Write to TTBR. Instruction architecturally executed, condition code check pass\"},
+  //  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.dcu_evnt_dc_<LOADSTOREPATH>_access_i\", eSpecialBit,  0, 0,  { \"0x25_L1D_TLB\",                 eslapi::CAPI_COLOR_BLUE}, \"Level 1 data TLB access\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l1d_tlb_rs\",                  eAnyBit,  0, 0,  { \"0x25_L1D_TLB\",                 eslapi::CAPI_COLOR_GREEN}, \"Level 1 data TLB access\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l1i_tlb_rs\",                  eAnyBit,  0, 0,  { \"0x26_L11_TLB\",                 eslapi::CAPI_COLOR_GREEN}, \"Level 1 instruction TLB access\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_data_pagewalk_rs\",            eAnyBit,  0, 0,  { \"0x34_DTLB_WALK\",               eslapi::CAPI_COLOR_BLACK}, \"Access to data TLB that caused a page table walk\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_instr_pagewalk_rs\",           eAnyBit,  0, 0,  { \"0x35_ITLB_WALK\",               eslapi::CAPI_COLOR_ORANGE}, \"Access to instruction TLB that caused a page table walk\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_ll_cache_rd_rs\",              eAnyBit,  0, 0,  { \"0x36_LL_CACHE_RD\",             eslapi::CAPI_COLOR_BROWN}, \"Last Level cache access, read\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_ll_cache_miss_rd_rs\",         eAnyBit,  0, 0,  { \"0x37_LL_CACHE_MISS_RD\",        eslapi::CAPI_COLOR_VIOLET}, \"Last Level cache miss, read\"},
+  // Doc says event 38, but RTL has event 31
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_remote_access_rs\",            eAnyBit, 0, 0,{ \"0x38_REMOTE_ACCESS_RD\",         eslapi::CAPI_COLOR_YELLOW}, \"Access to another socket in a multi-socket system, read\"},
+ {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_mem_access_read_rs\",            eAnyBit, 0, 0,{ \"0x66_MEM_ACCESS_RD\",         eslapi::CAPI_COLOR_BLUE}, \"Data memory access, read\"},
+ {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_mem_access_write_rs\",            eAnyBit, 0, 0,{ \"0x67_MEM_ACCESS_WR\",         eslapi::CAPI_COLOR_BLUE}, \"Data memory access, write\"}
+}"
+                :type ("EventInfo" type (:type "class") nil nil))
+                nil [12541 16061])
+            ("sAnankeL2CacheEventInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l2d_cache_refill_pf_rs\", eSumBits, 1, 0,{ \"0xC1_L2D_CACHE_REFILL_PREFETCH\",      eslapi::CAPI_COLOR_PALEVIOLETRED}, \"Level 2 cache refill due to prefetch\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l2d_cache_rs\",        eAnyBit, 0, 0,{ \"0x16_L2D_CACHE\",            eslapi::CAPI_COLOR_DARKBLUE}, \"Level 2 data cache access\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l2d_cache_refill_rs\",        eAnyBit, 0, 0,{ \"0x17_L2D_CACHE_REFILL\",     eslapi::CAPI_COLOR_DARKRED}, \"Level 2 data cache refill\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l2d_cache_wb_rs\",            eAnyBit, 0, 0,{ \"0x18_L2D_CACHE_WB\",         eslapi::CAPI_COLOR_PURPLE}, \"Level 2 data cache write-back\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l2_cache_allocate_rs\",            eAnyBit, 0, 0,{ \"0x20_L2D_CACHE_ALLOCATE\",         eslapi::CAPI_COLOR_BLUE}, \"Level 2 data cache allocation without refill\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l2tlb_refill_rs\",            eAnyBit, 0, 0,{ \"0x2D_L2D_TLB_REFILL\",         eslapi::CAPI_COLOR_PINK}, \"Attributable Level 2 unified TLB refill\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l2tlb_access_rs\",            eAnyBit, 0, 0,{ \"0x2F_L2D_TLB\",         eslapi::CAPI_COLOR_PURPLE}, \"Attributable Level 2 unified TLB access\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l2_evnt_l2d_cache_rd_rs\",            eAnyBit, 0, 0,{ \"0x50_L2D_CACHE_RD\",         eslapi::CAPI_COLOR_GOLDENROD}, \"Level 2 data cache access, read\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l2d_cache_wr_rs\",            eAnyBit, 0, 0,{ \"0x51_L2D_CACHE_WR\",         eslapi::CAPI_COLOR_PALEVIOLETRED}, \"Level 2 data cache access, write\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l2d_cache_refill_rd_rs\",            eAnyBit, 0, 0,{ \"0x52_L2D_CACHE_REFILL_RD\",         eslapi::CAPI_COLOR_DARKSLATEGRAY}, \"Level 2 data cache refill, read\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l2d_cache_refill_wr_rs\",            eAnyBit, 0, 0,{ \"0x53_L2D_CACHE_REFILL_WR\",         eslapi::CAPI_COLOR_DARKGREEN}, \"Level 2 data cache refill, write\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l2_ramode_rs\",           eAnyBit, 0, 0,{ \"0xC3_L2D_WS_MODE\",             eslapi::CAPI_COLOR_ORANGE}, \"Level 2 cache write streaming mode\"}
+}"
+                :type ("EventInfo" type (:type "class") nil nil))
+                nil [16392 18705])
+            ("sAnankeL3CacheEventInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l3_cache_allocate_rs\",            eAnyBit, 0, 0,{ \"0x29_L3D_CACHE_ALLOCATE\",         eslapi::CAPI_COLOR_BLUE}, \"Attributable Level 3 unified cache allocation without refill\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.l2_evnt_l3d_cache_refill\",            eSum3Bits, 1, 0,{ \"0x2A_L3D_CACHE_REFILL\",         eslapi::CAPI_COLOR_GREEN}, \"Attributable Level 3 unified cache refill\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l3d_cache_rs\",            eAnyBit, 0, 0,{ \"0x2B_L3D_CACHE\",         eslapi::CAPI_COLOR_PINK}, \"Attributable Level 3 unified cache access\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l3_cache_rd_rs\",            eAnyBit, 0, 0,{ \"0xA0_L3D_CACHE_RD\",         eslapi::CAPI_COLOR_PINK}, \"Attributable Level 3 unified cache access, read\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.l2_evnt_l3d_cache_refill\",            eSum3Bits, 1, 0,{ \"0xA2_L3D_CACHE_REFILL_RD\",         eslapi::CAPI_COLOR_BLACK}, \"Attributable Level 3 unified cache refill, read\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l3_cache_refill_pf_rs\",            eAnyBit, 0, 0,{ \"0xC0_L3D_CACHE_REFILL_PREFETCH\",          eslapi::CAPI_COLOR_RED}, \"Level 3 cache refill due to prefetch\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l3_ramode_rs\",              eAnyBit, 0, 0,{ \"0xC7_L3D_WS_MODE\",      eslapi::CAPI_COLOR_GOLDENROD}, \"Level 3 cache write streaming mode\"},
+}"
+                :type ("EventInfo" type (:type "class") nil nil))
+                nil [18706 20144])
+            ("sAnankeBusEventInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.l2_evnt_bus_access_i\",    eSumBits, 1, 0,{ \"0x19_BUS_ACCESS\",           eslapi::CAPI_COLOR_GRAY}, \"Bus access to L3\"},
+  //In the RTL this event is just tied to 1'b1, so tying here to something which is always set
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.pmn_export_enabled\",        eAnyBit, 0, 0,{ \"0x1D_BUS_CYCLES\",           eslapi::CAPI_COLOR_DARKSLATEGRAY}, \"Bus cycles to L3\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l2_evnt_bus_access_rd_rs\",       eAnyBit, 0, 0,{ \"0x60_BUS_ACCESS_LD\",        eslapi::CAPI_COLOR_GREEN}, \"Bus access read\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_l2_evnt_bus_access_wr_rs\",       eAnyBit, 0, 0,{ \"0x61_BUS_ACCESS_ST\",        eslapi::CAPI_COLOR_DARKGREEN}, \"Bus access write\"}
+}"
+                :type ("EventInfo" type (:type "class") nil nil))
+                nil [20146 20950])
+            ("sAnankeMicroarchitectureEventInfo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.pmn_chain\",                eSumBits, 5, 0,{ \"0x1E_CHAIN\",               eslapi::CAPI_COLOR_ORANGERED}, \"Odd performance counter chain mode\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.evnt_pdc_valid_rs\",        eAnyBit, 0, 0,{ \"0xC6_PREDECODE_ERR\",       eslapi::CAPI_COLOR_PALEVIOLETRED}, \"Predecode error\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.attr_evnt_e1\",                    eAnyBit, 0, 0,{ \"0xE1_STALL_FRONTEND_CACHE\", eslapi::CAPI_COLOR_LAVENDER}, \"No operation issued due to the frontend, cache miss\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.attr_evnt_e2\",                    eAnyBit, 0, 0,{ \"0xE2_STALL_FRONTEND_TLB\", eslapi::CAPI_COLOR_LIMEGREEN}, \"No operation issued due to the frontend, TLB miss\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.attr_evnt_e3\",                    eAnyBit, 0, 0,{ \"0xE3_STALL_FRONTEND_PDERR\", eslapi::CAPI_COLOR_MAGENTA}, \"No operation issued due to the frontend, pre-decode error\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.attr_evnt_e4\",                    eAnyBit, 0, 0,{ \"0xE4_STALL_BACKEND_ILOCK\", eslapi::CAPI_COLOR_YELLOW}, \"No operation issued due to the backend, interlock\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.attr_evnt_e5\",                    eAnyBit, 0, 0,{ \"0xE5_STALL_BACKEND_ILOCK_AGU\", eslapi::CAPI_COLOR_SPRINGGREEN4}, \"No operation issued due to the backend, interlock, AGU\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.attr_evnt_e6\",                    eAnyBit, 0, 0,{ \"0xE6_STALL_BACKEND_ILOCK_FPU\", eslapi::CAPI_COLOR_TAN}, \"No operation issued due to the backend, interlock, FPU\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.attr_evnt_e7\",                    eAnyBit, 0, 0,{ \"0xE7_STALL_BACKEND_LD\", eslapi::CAPI_COLOR_DARKOLIVEGREEN}, \"No operation issued due to the backend, load\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.attr_evnt_e8\",                    eAnyBit, 0, 0,{ \"0xE8_STALL_BACKEND_ST\", eslapi::CAPI_COLOR_STEELBLUE2}, \"No operation issued due to the backend, store\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.attr_evnt_e9\",                    eAnyBit, 0, 0,{ \"0xE9_STALL_BACKEND_LD_CACHE\", eslapi::CAPI_COLOR_STEELBLUE3}, \"No operation issued due to the backend, load, cache miss\"},
+  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.attr_evnt_ea\",                    eAnyBit, 0, 0,{ \"0xEA_STALL_BACKEND_LD_TLB\", eslapi::CAPI_COLOR_PINK}, \"No operation issued due to the backend, load, TLB miss\"}
+  // CAD: FIXFIX need to add this in once have a build wiht these directives in meta file
+  //  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.attr_evnt_eb\",                    eAnyBit, 0, 0,{ \"0xEB_STALL_BACKEND_ST_STB\", eslapi::CAPI_COLOR_YELLOWGREEN}, \"No operation issued due to the backend, store, STB full\"},
+  //  {\"<COREPATH>.u_ananke_dpu.u_dpu_pmu.attr_evnt_ec\",                    eAnyBit, 0, 0,{ \"0xEC_STALL_BACKEND_ST_TLB\", eslapi::CAPI_COLOR_BLACK}, \"No operation issued due to the backend, store, TLB miss\"}
+}"
+                :type ("EventInfo" type (:type "class") nil nil))
+                nil [20953 23899]))          
+      :file "CarbonProfileAnankeEvents.h"
+      :pointmax 23910
+      :fsize 23910
+      :lastmodtime '(22713 52048 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_CARBONFCMANANKEPROFILEEVENTS_H_")
+          )
+)
+    (semanticdb-table "CarbonProfileSCUEvents.h"
+      :file "CarbonProfileSCUEvents.h"
+      :fsize 11048
+      :lastmodtime '(22552 56883 0 0)))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!src!include!cpus!FCM!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

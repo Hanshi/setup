@@ -1,0 +1,170 @@
+;; Object CortexA7/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "CortexA7/"
+  :tables
+  (list
+    (semanticdb-table "compgen.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("createComponent" function (:arguments 
+              ( ("srcCcfgFile" variable nil (reparse-symbol FormalParameterList) [211 222])
+                ("compInfo" variable nil (reparse-symbol FormalParameterList) [224 232]))              ) nil [186 1890])
+            ("retainFiles" function nil nil [1971 2573])
+            ("createSoCDesignerComponent" function nil nil [2575 3057])
+            ("copyComponent" function (:arguments 
+              ( ("ccfg" variable nil (reparse-symbol FormalParameterList) [3083 3087])
+                ("ccfgSrc" variable nil (reparse-symbol FormalParameterList) [3089 3096])
+                ("compInfo" variable nil (reparse-symbol FormalParameterList) [3098 3106])
+                ("cpuId" variable nil (reparse-symbol FormalParameterList) [3108 3113]))              ) nil [3060 3760])
+            ("copyComponentProperties" function (:arguments 
+              ( ("ccfg" variable nil (reparse-symbol FormalParameterList) [3795 3799])
+                ("ccfgSrc" variable nil (reparse-symbol FormalParameterList) [3801 3808]))              ) nil [3762 3957])
+            ("copySubComponents" function (:arguments 
+              ( ("ccfg" variable nil (reparse-symbol FormalParameterList) [3986 3990])
+                ("ccfgSrc" variable nil (reparse-symbol FormalParameterList) [3992 3999])
+                ("compInfo" variable nil (reparse-symbol FormalParameterList) [4001 4009]))              ) nil [3959 4731])
+            ("addComponentTemplateVariables" function (:arguments 
+              ( ("ccfg" variable nil (reparse-symbol FormalParameterList) [4772 4776])
+                ("compInfo" variable nil (reparse-symbol FormalParameterList) [4778 4786]))              ) nil [4733 4862])
+            ("addCpuTemplateVariables" function (:arguments 
+              ( ("ccfg" variable nil (reparse-symbol FormalParameterList) [4897 4901])
+                ("compInfo" variable nil (reparse-symbol FormalParameterList) [4903 4911])
+                ("cpu" variable nil (reparse-symbol FormalParameterList) [4913 4916]))              ) nil [4864 6425])
+            ("addCommonTemplateVariables" function (:arguments 
+              ( ("ccfg" variable nil (reparse-symbol FormalParameterList) [6463 6467])
+                ("compInfo" variable nil (reparse-symbol FormalParameterList) [6469 6477]))              ) nil [6427 7427])
+            ("shouldAddGroup" function (:arguments 
+              ( ("groupName" variable nil (reparse-symbol FormalParameterList) [7453 7462])
+                ("cpuInfo" variable nil (reparse-symbol FormalParameterList) [7464 7471]))              ) nil [7429 7685])
+            ("shouldAddReg" function (:arguments 
+              ( ("groupName" variable nil (reparse-symbol FormalParameterList) [7709 7718])
+                ("regName" variable nil (reparse-symbol FormalParameterList) [7720 7727])
+                ("cpuInfo" variable nil (reparse-symbol FormalParameterList) [7729 7736])
+                ("compInfo" variable nil (reparse-symbol FormalParameterList) [7738 7746]))              ) nil [7687 8304])
+            ("copyRegisters" function (:arguments 
+              ( ("ccfg" variable nil (reparse-symbol FormalParameterList) [8329 8333])
+                ("ccfgSrc" variable nil (reparse-symbol FormalParameterList) [8335 8342])
+                ("cpuInfo" variable nil (reparse-symbol FormalParameterList) [8344 8351])
+                ("compInfo" variable nil (reparse-symbol FormalParameterList) [8353 8361]))              ) nil [8306 9611])
+            ("copyMemories" function (:arguments 
+              ( ("ccfg" variable nil (reparse-symbol FormalParameterList) [9635 9639])
+                ("ccfgSrc" variable nil (reparse-symbol FormalParameterList) [9641 9648]))              ) nil [9613 9885])
+            ("copyCadi" function (:arguments 
+              ( ("ccfg" variable nil (reparse-symbol FormalParameterList) [9961 9965])
+                ("ccfgSrc" variable nil (reparse-symbol FormalParameterList) [9967 9974]))              ) nil [9943 10066])
+            ("copyCustomCode" function (:arguments 
+              ( ("parent" variable nil (reparse-symbol FormalParameterList) [10163 10169])
+                ("parentSrc" variable nil (reparse-symbol FormalParameterList) [10171 10180]))              ) nil [10139 10368])
+            ("copyElfSections" function (:arguments 
+              ( ("elfLoader" variable nil (reparse-symbol FormalParameterList) [10395 10404])
+                ("elfLoaderSrc" variable nil (reparse-symbol FormalParameterList) [10406 10418]))              ) nil [10370 10708])
+            ("copyProcessorInfo" function (:arguments 
+              ( ("ccfg" variable nil (reparse-symbol FormalParameterList) [10737 10741])
+                ("ccfgSrc" variable nil (reparse-symbol FormalParameterList) [10743 10750])
+                ("cpuInfo" variable nil (reparse-symbol FormalParameterList) [10752 10759]))              ) nil [10710 11280])
+            ("genUserCode_CSSELR" function (:arguments 
+              ( ("reg" variable nil (reparse-symbol FormalParameterList) [11311 11314])
+                ("uCPUxPartPath" variable nil (reparse-symbol FormalParameterList) [11316 11329])
+                ("fieldName" variable nil (reparse-symbol FormalParameterList) [11331 11340]))              ) nil [11282 14021])
+            ("genUserCode_CSSELR2" function (:arguments 
+              ( ("reg" variable nil (reparse-symbol FormalParameterList) [14053 14056])
+                ("uCPUxPartPath" variable nil (reparse-symbol FormalParameterList) [14058 14071])
+                ("fieldName" variable nil (reparse-symbol FormalParameterList) [14073 14082])
+                ("fieldName2" variable nil (reparse-symbol FormalParameterList) [14084 14094]))              ) nil [14023 17080])
+            ("addRegister_DBGECR" function (:arguments 
+              ( ("compInfo" variable nil (reparse-symbol FormalParameterList) [17111 17119])
+                ("cpuCcfg" variable nil (reparse-symbol FormalParameterList) [17121 17128])
+                ("cpuID" variable nil (reparse-symbol FormalParameterList) [17129 17134]))              ) nil [17082 17636])
+            ("addRegister_PMCEID0" function (:arguments 
+              ( ("compInfo" variable nil (reparse-symbol FormalParameterList) [17668 17676])
+                ("cpuCcfg" variable nil (reparse-symbol FormalParameterList) [17678 17685])
+                ("cpuID" variable nil (reparse-symbol FormalParameterList) [17686 17691]))              ) nil [17638 18261])
+            ("addRegister_CSSELR" function (:arguments 
+              ( ("compInfo" variable nil (reparse-symbol FormalParameterList) [18292 18300])
+                ("cpuCcfg" variable nil (reparse-symbol FormalParameterList) [18302 18309])
+                ("cpuID" variable nil (reparse-symbol FormalParameterList) [18310 18315]))              ) nil [18263 19302])
+            ("addRegister_N_CSSELR" function (:arguments 
+              ( ("compInfo" variable nil (reparse-symbol FormalParameterList) [19335 19343])
+                ("cpuCcfg" variable nil (reparse-symbol FormalParameterList) [19345 19352])
+                ("cpuID" variable nil (reparse-symbol FormalParameterList) [19353 19358]))              ) nil [19304 20086])
+            ("addRegister_S_CSSELR" function (:arguments 
+              ( ("compInfo" variable nil (reparse-symbol FormalParameterList) [20119 20127])
+                ("cpuCcfg" variable nil (reparse-symbol FormalParameterList) [20129 20136])
+                ("cpuID" variable nil (reparse-symbol FormalParameterList) [20137 20142]))              ) nil [20088 20864])
+            ("addRegister_NSACR" function (:arguments 
+              ( ("compInfo" variable nil (reparse-symbol FormalParameterList) [20894 20902])
+                ("cpuCcfg" variable nil (reparse-symbol FormalParameterList) [20904 20911])
+                ("cpuID" variable nil (reparse-symbol FormalParameterList) [20913 20918]))              ) nil [20866 22622])
+            ("addRegister_CPACR" function (:arguments 
+              ( ("compInfo" variable nil (reparse-symbol FormalParameterList) [22652 22660])
+                ("cpuCcfg" variable nil (reparse-symbol FormalParameterList) [22662 22669])
+                ("cpuID" variable nil (reparse-symbol FormalParameterList) [22670 22675]))              ) nil [22624 23979])
+            ("addConfigDependentRegisters" function (:arguments 
+              ( ("cfgFunctions" variable nil (reparse-symbol FormalParameterList) [24019 24031])
+                ("compInfo" variable nil (reparse-symbol FormalParameterList) [24033 24041]))              ) nil [23982 24728])
+            ("addToComponent" function (:arguments 
+              ( ("cfgFunctions" variable nil (reparse-symbol FormalParameterList) [24753 24765])
+                ("compInfo" variable nil (reparse-symbol FormalParameterList) [24767 24775]))              ) nil [24729 25447])
+            ("addTransactors" function (:arguments 
+              ( ("cfgFunctions" variable nil (reparse-symbol FormalParameterList) [25473 25485])
+                ("compInfo" variable nil (reparse-symbol FormalParameterList) [25487 25495]))              ) nil [25449 26553])
+            ("addESLPorts" function (:arguments 
+              ( ("cfgFunctions" variable nil (reparse-symbol FormalParameterList) [26576 26588])
+                ("compInfo" variable nil (reparse-symbol FormalParameterList) [26590 26598]))              ) nil [26555 29779])
+            ("addClocksAndResets" function (:arguments 
+              ( ("cfgFunctions" variable nil (reparse-symbol FormalParameterList) [29809 29821])
+                ("compInfo" variable nil (reparse-symbol FormalParameterList) [29823 29831]))              ) nil [29781 30778])
+            ("addTies" function (:arguments 
+              ( ("cfgFunctions" variable nil (reparse-symbol FormalParameterList) [30797 30809])
+                ("compInfo" variable nil (reparse-symbol FormalParameterList) [30811 30819]))              ) nil [30780 30884])
+            ("hideParameters" function (:arguments 
+              ( ("cfgFunctions" variable nil (reparse-symbol FormalParameterList) [30910 30922])
+                ("compInfo" variable nil (reparse-symbol FormalParameterList) [30924 30932]))              ) nil [30886 31165])
+            ("addParameters" function (:arguments 
+              ( ("cfgFunctions" variable nil (reparse-symbol FormalParameterList) [31190 31202])
+                ("compInfo" variable nil (reparse-symbol FormalParameterList) [31204 31212]))              ) nil [31167 34596])
+            ("addMirroredParameters" function (:arguments 
+              ( ("cfgFunctions" variable nil (reparse-symbol FormalParameterList) [34629 34641])
+                ("numCpus" variable nil (reparse-symbol FormalParameterList) [34643 34650]))              ) nil [34598 36183])
+            ("addParameterSyncCustomCode" function (:arguments 
+              ( ("cfgFunctions" variable nil (reparse-symbol FormalParameterList) [36221 36233])
+                ("numCpus" variable nil (reparse-symbol FormalParameterList) [36235 36242])
+                ("paramBase" variable nil (reparse-symbol FormalParameterList) [36244 36253]))              ) nil [36185 38521])
+            ("addMisc" function (:arguments 
+              ( ("ccfg" variable nil (reparse-symbol FormalParameterList) [38541 38545])
+                ("compInfo" variable nil (reparse-symbol FormalParameterList) [38547 38555]))              ) nil [38524 38994])
+            ("addBackwardDebug" function (:arguments 
+              ( ("cfgFunctions" variable nil (reparse-symbol FormalParameterList) [39022 39034])
+                ("compInfo" variable nil (reparse-symbol FormalParameterList) [39036 39044]))              ) nil [38996 40619])
+            ("addFastModelConfig" function (:arguments 
+              ( ("cfgFunctions" variable nil (reparse-symbol FormalParameterList) [40649 40661])
+                ("compInfo" variable nil (reparse-symbol FormalParameterList) [40663 40671]))              ) nil [40621 43676])
+            ("ignoreSwapPlayStaticConfigRegs" function (:arguments 
+              ( ("swapplay" variable nil (reparse-symbol FormalParameterList) [43719 43727]))              ) nil [43678 44909])
+            ("ignoreSwapPlayPCSMRegs" function (:arguments 
+              ( ("swapplay" variable nil (reparse-symbol FormalParameterList) [44944 44952]))              ) nil [44911 45304])
+            ("ignoreSwapPlayBankedRegs" function (:arguments 
+              ( ("swapplay" variable nil (reparse-symbol FormalParameterList) [45341 45349]))              ) nil [45306 47233])
+            ("ignoreSwapPlaySideEffectRegs" function (:arguments 
+              ( ("compInfo" variable nil (reparse-symbol FormalParameterList) [47329 47337])
+                ("swapplay" variable nil (reparse-symbol FormalParameterList) [47339 47347]))              ) nil [47290 49295])
+            ("ignoreSwapPlayUnimplementedRegs" function (:arguments 
+              ( ("compInfo" variable nil (reparse-symbol FormalParameterList) [49339 49347])
+                ("swapplay" variable nil (reparse-symbol FormalParameterList) [49349 49357]))              ) nil [49297 55413])
+            ("ignoreSwapPlayOverloadedRegs" function (:arguments 
+              ( ("compInfo" variable nil (reparse-symbol FormalParameterList) [55454 55462])
+                ("swapplay" variable nil (reparse-symbol FormalParameterList) [55464 55472]))              ) nil [55415 56158])
+            ("ignoreSwapPlayFMSpecificRegs" function (:arguments 
+              ( ("swapplay" variable nil (reparse-symbol FormalParameterList) [56199 56207]))              ) nil [56160 57593])
+            ("addSwapPlayConfig" function (:arguments 
+              ( ("fastModelFunctions" variable nil (reparse-symbol FormalParameterList) [57623 57641])
+                ("compInfo" variable nil (reparse-symbol FormalParameterList) [57643 57651]))              ) nil [57596 59869])
+            ("db" variable (:default-value "CarbonDB") nil [59974 59992]))          
+      :file "compgen.js"
+      :pointmax 60762
+      :fsize 60761
+      :lastmodtime '(22877 22264 118823 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!cpus!CortexA7_js!ModelKit!CortexA7!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

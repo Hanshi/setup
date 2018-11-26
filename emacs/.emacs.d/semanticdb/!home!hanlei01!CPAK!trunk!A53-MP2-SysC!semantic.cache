@@ -1,0 +1,42 @@
+;; Object A53-MP2-SysC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "A53-MP2-SysC/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("ARMCC" variable (:default-value ("armclang")) nil [508 524])
+            ("ARMCCPATH" variable (:default-value ("$(shell command -v $(ARMCC) 2> /dev/null)")) nil [524 577])
+            ("FROMELF" variable (:default-value ("fromelf")) nil [577 594])
+            ("FROMELFPATH" variable (:default-value ("$(shell command -v $(FROMELF) 2> /dev/null)")) nil [594 651])
+            ("SYSTEMS_DIR" variable (:default-value ("Systems")) nil [652 672])
+            ("APPLICATIONS_DIR" variable (:default-value ("Applications")) nil [672 702])
+            ("SCRIPTS_DIR" variable (:default-value ("Scripts")) nil [702 722])
+            ("RUNLOG_CMD" function (:arguments ("=" ">" "$(abspath $(RUNLOG))" "2>&1")) nil [798 846])
+            ("export" function (:arguments ("=" ">" "$(abspath $(RUNLOG))" "2>&1")) nil [798 846])
+            ("SUBDIRS" variable (:default-value ("$(SYSTEMS_DIR)")) nil [887 912])
+            (".PHONY" function (:arguments ("help" "all" "clean" "system" "run" "check-system-env" "check-app-env" "app-setup" "$(SUBDIRS)")) nil [913 999])
+            ("all" function (:arguments ("$(SUBDIRS)")) nil [1000 1016])
+            ("system" function (:arguments ("$(SYSTEMS_DIR)")) nil [1091 1114])
+            ("app-setup" function nil nil [1189 1200])
+            ("run" function (:arguments ("app-setup" "check-runtime-env" "$(SYSTEMS_DIR)")) nil [1489 1582])
+            ("$(SYSTEMS_DIR)" function (:arguments ("check-system-env")) nil [1583 1669])
+            ("$(APPLICATIONS_DIR)" function (:arguments ("check-app-env")) nil [1670 1771])
+            ("check-system-env" function nil nil [1772 1790])
+            ("check-app-env" function nil nil [1911 1926])
+            ("check-runtime-env" function nil nil [2014 2063])
+            ("help" function nil nil [2063 2290])
+            ("clean" function (:arguments ("$(SUBDIRS)")) nil [2291 2309]))          
+      :file "Makefile"
+      :pointmax 2311
+      :fsize 2310
+      :lastmodtime '(23289 62662 992534 0)
+      :unmatched-syntax '((shell-command 1944 . 2006) (bol 1943 . 1943) (shell-command 1871 . 1903) (bol 1870 . 1870) (shell-command 1811 . 1844) (bol 1810 . 1810) (shell-command 1413 . 1481) (bol 1412 . 1412) (shell-command 1270 . 1411) (bol 1269 . 1269) (shell-command 1211 . 1268) (bol 1210 . 1210) (shell-command 1125 . 1181) (bol 1124 . 1124) (shell-command 1027 . 1083) (bol 1026 . 1026) (symbol 876 . 885) (semantic-list 863 . 876) (punctuation 862 . 863) (symbol 853 . 861) (bol 853 . 853) (symbol 758 . 777) (semantic-list 745 . 758) (punctuation 744 . 745) (punctuation 743 . 744) (punctuation 742 . 743) (symbol 733 . 742) (bol 733 . 733)))
+    (semanticdb-table "perf_common.h"
+      :file "perf_common.h"
+      :fsize 1354
+      :lastmodtime '(23290 7687 75886 0)))
+  :file "!home!hanlei01!CPAK!trunk!A53-MP2-SysC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

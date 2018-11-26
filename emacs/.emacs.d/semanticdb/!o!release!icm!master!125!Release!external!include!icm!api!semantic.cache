@@ -1,0 +1,191 @@
+;; Object api/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "api/"
+  :tables
+  (list
+    (semanticdb-table "icm_memory.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("icm_memory_h" variable (:constant-flag t) nil [1339 1351])
+            ("icm/api/icm_error.h" include nil nil [1353 1383])
+            ("icm/api/icm_types.h" include nil nil [1384 1414])
+            ("icm_api_memory_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("count" variable (:type ("icm_memory_count_fn" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5473 5499])
+                    ("info" variable (:type ("icm_memory_info_fn" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5502 5526])
+                    ("read" variable (:type ("icm_memory_read_fn" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5529 5553])
+                    ("write" variable (:type ("icm_memory_write_fn" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5556 5582]))                  )
+                (reparse-symbol extern-c-contents) [5445 5585])
+            ("icm_memory_write_fn" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mem_handle" variable (:type ("icm_memory_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5239 5263])
+                    ("addr" variable
+                       (:constant-flag t
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5264 5284])
+                    ("num_bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5285 5304])
+                    ("bytes_processed" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5341 5367])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5368 5387])
+                    ("err" variable
+                       (:pointer 1
+                        :type ("icm_error_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5388 5405]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5211 5406])
+            ("icm_memory_read_fn" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mem_handle" variable (:type ("icm_memory_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4499 4523])
+                    ("addr" variable
+                       (:constant-flag t
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4524 4544])
+                    ("num_bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4545 4564])
+                    ("bytes_processed" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4573 4599])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4600 4613])
+                    ("err" variable
+                       (:pointer 1
+                        :type ("icm_error_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4614 4631]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4472 4632])
+            ("icm_memory_info_fn" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("icm_memory_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("model" variable (:type ("icm_model_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3695 3713])
+                    ("index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3714 3729])
+                    ("name" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3730 3748])
+                    ("desc" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3749 3767])
+                    ("start" variable
+                       (:pointer 1
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3812 3828])
+                    ("end" variable
+                       (:pointer 1
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3829 3843])
+                    ("mem_attr" variable
+                       (:pointer 1
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3844 3863])
+                    ("err" variable
+                       (:pointer 1
+                        :type ("icm_error_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3864 3881]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3660 3882])
+            ("icm_memory_count_fn" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("model" variable (:type ("icm_model_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2738 2756])
+                    ("err" variable
+                       (:pointer 1
+                        :type ("icm_error_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2757 2774]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2706 2775])
+            ("icm_memory_attribute_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("ICM_MEM_IS_READ_ONLY" variable
+                       (:constant-flag t
+                        :default-value (1894 1902)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1871 1902])
+                    ("ICM_MEM_IS_WRITE_ONLY" variable
+                       (:constant-flag t
+                        :default-value (1997 2005)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1973 2005])
+                    ("ICM_MEM_ENDIAN_LE" variable
+                       (:constant-flag t
+                        :default-value (2089 2097)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2069 2097])
+                    ("ICM_MEM_ENDIAN_BE8" variable
+                       (:constant-flag t
+                        :default-value (2201 2209)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2180 2209])
+                    ("ICM_MEM_ENDIAN_BE32" variable
+                       (:constant-flag t
+                        :default-value (2315 2323)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2293 2323])
+                    ("ICM_MEM_ENDIAN_VARIABLE" variable
+                       (:constant-flag t
+                        :default-value (2409 2417)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2383 2417])
+                    ("ICM_MEM_ENDIAN_UNSPECIFIED" variable
+                       (:constant-flag t
+                        :default-value (2554 2562)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2525 2562]))                  )
+                (reparse-symbol extern-c-contents) [1773 2566])
+            ("icm_memory_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("void"))
+                (reparse-symbol extern-c-contents) [1604 1631])
+            ("api_id_arm_memory_1_0" variable
+               (:type "char"
+                :default-value "\"arm.cycle_model.memory/1.0\""
+                :constant-flag t
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [1480 1552]))          
+      :file "icm_memory.h"
+      :pointmax 5624
+      :fsize 5623
+      :lastmodtime '(23051 26858 0 0)
+      :unmatched-syntax '((TYPEDEF 5203 . 5210) (TYPEDEF 4464 . 4471) (TYPEDEF 3652 . 3659) (TYPEDEF 2698 . 2705) (symbol 1468 . 1479))
+      :lexical-table 
+        '(("icm_memory_h")
+          )
+)
+    (semanticdb-table "icm_error.h"
+      :file "icm_error.h"
+      :fsize 2822
+      :lastmodtime '(23051 26858 0 0))
+    (semanticdb-table "icm_types.h"
+      :file "icm_types.h"
+      :fsize 447
+      :lastmodtime '(23051 26858 0 0)))
+  :file "!o!release!icm!master!125!Release!external!include!icm!api!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

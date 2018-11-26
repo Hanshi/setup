@@ -1,0 +1,358 @@
+;; Object PMUTest/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "PMUTest/"
+  :tables
+  (list
+    (semanticdb-table "feature_runner.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("FEATURE_RUNNER_H" variable (:constant-flag t) nil [36 52])
+            ("arm_axi4.h" include nil nil [54 75])
+            ("unordered_map" include (:system-flag t) nil [76 100])
+            ("feature_runner" type
+               (:template 
+                  ( ("MODEL" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [299 306])
+                    ("feature_runner" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("name" variable (:type ("sc_core::sc_module_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [323 352])
+                            ("implementor" variable
+                               (:pointer 1
+                                :type ("MODEL" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [353 373])
+                            ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [374 383])
+                            ("" variable (:type ("ARM::TLM::Protocol" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [384 403]))                          
+                        :type ("feature_runner" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [308 404])
+                    ("Payload" type
+                       (:typedef ("ARM::AXI4::Payload" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [408 443])
+                    ("Phase" type
+                       (:typedef ("ARM::AXI4::Phase" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [445 476])
+                    ("slave" variable (:type ("ARM::AXI4::SimpleSlaveSocket" type
+                         (:template-specifier 
+                            ( ("feature_runner" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [479 530])
+                    ("master" variable (:type ("ARM::AXI4::SimpleMasterSocket" type
+                         (:template-specifier 
+                            ( ("feature_runner" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [535 588])
+                    ("nb_transport_fw" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("payload" variable
+                               (:reference 1
+                                :type ("ARM::AXI4::Payload" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [633 661])
+                            ("phase" variable
+                               (:reference 1
+                                :type ("ARM::AXI4::Phase" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [662 686]))                          
+                        :type ("tlm::tlm_sync_enum" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [594 687])
+                    ("nb_transport_bw" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("payload" variable
+                               (:reference 1
+                                :type ("ARM::AXI4::Payload" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [731 759])
+                            ("phase" variable
+                               (:reference 1
+                                :type ("ARM::AXI4::Phase" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [760 784]))                          
+                        :type ("tlm::tlm_sync_enum" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [692 785])
+                    ("add_feature_enable_sequence" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [829 841])
+                            ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [842 854]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [791 855])
+                    ("add_feature_disable_sequence" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [898 910])
+                            ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [911 923]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [860 924])
+                    ("add_feature_run_sequence" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [963 975])
+                            ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [976 988])
+                            ("os" variable
+                               (:reference 1
+                                :default-value "std"
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [989 1009])
+                            ("" variable (:type ("cout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1011 1016]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [929 1017])
+                    ("private" label nil (reparse-symbol classsubparts) [1019 1027])
+                    ("MAX_TRANS_BYTES" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "32768"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [1030 1080])
+                    ("feature_method" type
+                       (:members 
+                          ( ("RUN_FEATURE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1184 1196])
+                            ("ENABLE_FEATURE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1199 1214])
+                            ("DISABLE_FEATURE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1217 1235]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [1160 1236])
+                    ("action" type
+                       (:members 
+                          ( ("action" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("method" variable (:type ("feature_method" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1353 1375])
+                                    ("name" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1376 1393])
+                                    ("os" variable
+                                       (:reference 1
+                                        :default-value "std"
+                                        :type ("std::ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1394 1414])
+                                    ("" variable (:type ("cout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1416 1421]))                                  
+                                :type ("action" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1346 1483])
+                            ("m_method" variable (:type ("feature_method" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1487 1511])
+                            ("m_feature_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1514 1541])
+                            ("m_os" variable (:type ("std::ostream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1544 1563]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [1327 1567])
+                    ("m_sequence_action_map" variable (:type ("std::unordered_map" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil)
+                              ("action" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1684 1746])
+                    ("m_beat_count" variable (:type ("std::unordered_map" type
+                         (:template-specifier 
+                            ( ("ARM::AXI4::Payload" type (:pointer 1) nil nil)
+                              ("unsigned int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1748 1811])
+                    ("m_model" variable
+                       (:pointer 1
+                        :type ("MODEL" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1814 1830])
+                    ("m_data_buf" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [1833 1875])
+                    ("m_strb_buf" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [1919 1963])
+                    ("get_action" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2109 2121]))                          
+                        :type ("action" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2089 2122])
+                    ("perform_action" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("action" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2146 2161]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2125 2162]))                  
+                :superclasses 
+                  ( ("sc_core::sc_module" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [222 2165])
+            ("feature_runner" function
+               (:template 
+                  ( ("MODEL" type (:type "class") nil nil))                  
+                :type ("feature_runner" type (:type "class") nil nil)
+                :arguments 
+                  ( ("name" variable (:type ("sc_core::sc_module_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2448 2477])
+                    ("model" variable
+                       (:pointer 1
+                        :type ("MODEL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2478 2492])
+                    ("port_width" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2493 2513])
+                    ("protocol" variable (:type ("ARM::TLM::Protocol" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2514 2542]))                  
+                :parent "feature_runner"
+                :constructor-flag t)
+                nil [2385 2837])
+            ("add_feature_enable_sequence" function
+               (:template 
+                  ( ("MODEL" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("feature_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3104 3129])
+                    ("seq" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3130 3146]))                  
+                :parent "feature_runner")
+                nil [3023 3226])
+            ("add_feature_run_sequence" function
+               (:template 
+                  ( ("MODEL" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("feature_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3486 3511])
+                    ("seq" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3512 3528])
+                    ("os" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3529 3561]))                  
+                :parent "feature_runner")
+                nil [3408 3642])
+            ("add_feature_disable_sequence" function
+               (:template 
+                  ( ("MODEL" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("feature_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3911 3936])
+                    ("seq" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3937 3953]))                  
+                :parent "feature_runner")
+                nil [3829 4034])
+            ("get_action" function
+               (:pointer 1
+                :parent "feature_runner"
+                :arguments 
+                  ( ("sequence" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4307 4329]))                  
+                :type ("action" type (:type "class") nil nil))
+                nil [4265 4575])
+            ("perform_action" function
+               (:template 
+                  ( ("MODEL" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("act" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("action" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4821 4840]))                  
+                :parent "feature_runner")
+                nil [4753 5145])
+            ("nb_transport_fw" function
+               (:template 
+                  ( ("MODEL" type (:type "class") nil nil))                  
+                :type ("tlm::tlm_sync_enum" type (:type "class") nil nil)
+                :arguments 
+                  ( ("payload" variable
+                       (:reference 1
+                        :type ("Payload" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5309 5326])
+                    ("phase" variable
+                       (:reference 1
+                        :type ("Phase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5327 5340]))                  
+                :parent "feature_runner")
+                nil [5226 5993])
+            ("nb_transport_bw" function
+               (:template 
+                  ( ("MODEL" type (:type "class") nil nil))                  
+                :type ("tlm::tlm_sync_enum" type (:type "class") nil nil)
+                :arguments 
+                  ( ("payload" variable
+                       (:reference 1
+                        :type ("Payload" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6078 6095])
+                    ("phase" variable
+                       (:reference 1
+                        :type ("Phase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6096 6109]))                  
+                :parent "feature_runner")
+                nil [5995 6454]))          
+      :file "feature_runner.h"
+      :pointmax 6464
+      :fsize 6463
+      :lastmodtime '(23118 16787 0 0)
+      :unmatched-syntax '((punctuation 4264 . 4265) (punctuation 4263 . 4264) (punctuation 4262 . 4263) (symbol 4257 . 4262) (punctuation 4256 . 4257) (symbol 4242 . 4256) (TYPENAME 4233 . 4241) (punctuation 4231 . 4232) (symbol 4226 . 4231) (TYPENAME 4217 . 4225) (punctuation 4216 . 4217) (TEMPLATE 4208 . 4216) (punctuation 1415 . 1416) (punctuation 1414 . 1415) (punctuation 1415 . 1416) (punctuation 1414 . 1415) (punctuation 1010 . 1011) (punctuation 1009 . 1010))
+      :lexical-table 
+        '(("FEATURE_RUNNER_H")
+          )
+))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!Common!TestGenerator!PMUTest!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

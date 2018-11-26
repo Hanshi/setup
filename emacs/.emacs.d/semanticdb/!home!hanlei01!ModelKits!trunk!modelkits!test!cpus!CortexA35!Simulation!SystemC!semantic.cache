@@ -1,0 +1,90 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "system_test_1CPU.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/AXIMonitor.h" include nil nil [852 882])
+            ("models/RAMBlock.h" include nil nil [891 919])
+            ("models/SimpleBus.h" include nil nil [920 949])
+            ("models/BasicUART.h" include nil nil [950 979])
+            ("models/ElfLoader.h" include nil nil [980 1009])
+            ("CortexA35Imp.h" include nil nil [1010 1035])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [1036 1082])
+            ("iostream" include (:system-flag t) nil [1084 1103])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1105 1129])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1144 1153])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1154 1167]))                  
+                :type "int")
+                nil [1132 3808]))          
+      :file "system_test_1CPU.cpp"
+      :pointmax 3809
+      :fsize 3808
+      :lastmodtime '(22791 36084 287120 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++" "-g" "-O0" "-DSC_INCLUDE_DYNAMIC_PROCESSES" "-Wall" "-Wextra" "-Werror" "-Wno-unused-parameter" "--std=c++11")) nil [27 129])
+            ("SYSTEMC_INC" variable (:default-value ("$(SYSTEMC_HOME)/include/")) nil [164 203])
+            ("SYSTEMC_LIB" variable (:default-value ("$(SYSTEMC_HOME)/lib-linux64/")) nil [203 246])
+            ("A35_DIR" variable (:default-value ("./MODELS/CortexA35/$(MODEL_CONFIG)/gcc/SystemC")) nil [246 303])
+            ("PMU" variable (:default-value ("True")) nil [346 355])
+            ("NUM_CPU" variable (:default-value ("$(shell expr match \"$(MODEL_CONFIG)\" \".*\\([1-4]CPU\\)\")")) nil [356 421])
+            ("$(CM_SYSC_HOME)/makefiles/cm_sysc_common.mak" include nil nil [422 475])
+            ("system_test" function (:arguments ("system_test.o" "CortexA35ResetImp.o")) nil [496 900])
+            ("system_test" function (:arguments ("system_test.o" "CortexA35ResetImp.o")) nil [926 1336])
+            ("system_test" function (:arguments ("system_test.o")) nil [1342 1442])
+            ("CortexA35ResetImp.o" function (:arguments ("$(A35_DIR)/CortexA35ResetImp.cpp")) nil [1455 1633])
+            ("system_test.o" function (:arguments ("system_test_$(NUM_CPU).cpp")) nil [1634 1805])
+            ("clean" function nil nil [1806 1836]))          
+      :file "Makefile"
+      :pointmax 1838
+      :fsize 1837
+      :lastmodtime '(22704 46394 976573 0)
+      :unmatched-syntax '((symbol 337 . 345) (semantic-list 320 . 337) (punctuation 319 . 320) (punctuation 317 . 318) (punctuation 316 . 317) (symbol 303 . 315) (bol 303 . 303)))
+    (semanticdb-table "system_test_4CPU.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/RAMBlock.h" include nil nil [891 919])
+            ("models/SimpleBus.h" include nil nil [920 949])
+            ("models/BasicUART.h" include nil nil [950 979])
+            ("models/ElfLoader.h" include nil nil [980 1009])
+            ("CortexA35Imp.h" include nil nil [1010 1035])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [1036 1082])
+            ("iostream" include (:system-flag t) nil [1084 1103])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1105 1129])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1144 1153])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1154 1167]))                  
+                :type "int")
+                nil [1132 3959]))          
+      :file "system_test_4CPU.cpp"
+      :pointmax 3960
+      :fsize 3959
+      :lastmodtime '(22791 36120 899137 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!CortexA35!Simulation!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,34 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("LINUX_DIR" variable (:default-value (".")) nil [1 15])
+            ("PACKAGE_LIB_DIR" variable (:default-value ("./lib")) nil [66 90])
+            ("COMP_NAME" variable (:default-value ("$(subst lib,,$(basename $(notdir $(wildcard $(PACKAGE_LIB_DIR)/lib*.a))))")) nil [188 274])
+            ("clean" function nil nil [275 300])
+            ("gen_code" function nil nil [301 311])
+            ("Makefile.internal" include nil nil [330 356])
+            ("CXX" variable (:default-value ("g++")) nil [418 426])
+            ("CXXFLAGS" variable (:default-value ("-fPIC" "-g" "-DCARBON_DUMP_VCD=0" "-std=c++11" "-I$(SYSTEMC_HOME)/include" "-I$(CARBON_HOME)/include" "$(CM_SYSC_CXXFLAGS)" "-I." "-I$(LINUX_DIR)" "-DGENERATE_SLAVE_PORTS=1")) nil [427 640])
+            ("OBJS" variable (:default-value ("$(COMP_NAME)Imp.o" "lib$(COMP_NAME).systemc.o")) nil [641 699])
+            ("all" function (:arguments ("lib$(COMP_NAME).so")) nil [700 724])
+            ("lib" function (:arguments ("$(OBJS)")) nil [725 1122])
+            ("$(COMP_NAME)" function (:arguments ("gen_code")) nil [1124 1154])
+            ("$(COMP_NAME)" function (:arguments ("$(COMP_NAME)Imp.cpp")) nil [1155 1227])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp" "gen_code")) nil [1228 1324]))          
+      :file "Makefile"
+      :pointmax 1325
+      :fsize 1324
+      :lastmodtime '(22783 52684 267399 0)
+      :unmatched-syntax '((symbol 387 . 416) (semantic-list 373 . 387) (punctuation 372 . 373) (symbol 363 . 371) (bol 363 . 363) (symbol 124 . 132) (semantic-list 107 . 124) (punctuation 106 . 107) (punctuation 104 . 105) (punctuation 103 . 104) (symbol 90 . 102) (bol 90 . 90) (symbol 32 . 65) (punctuation 29 . 30) (punctuation 28 . 29) (symbol 15 . 27) (bol 15 . 15)))
+    (semanticdb-table "Makefile.internal"
+      :file "Makefile.internal"
+      :fsize 1985
+      :lastmodtime '(22778 22546 872269 0)))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!Scripts!primecells!PL690!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

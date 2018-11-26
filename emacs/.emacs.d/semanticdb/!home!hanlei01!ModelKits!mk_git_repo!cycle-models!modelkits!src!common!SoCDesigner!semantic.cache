@@ -1,0 +1,822 @@
+;; Object SoCDesigner/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SoCDesigner/"
+  :tables
+  (list
+    (semanticdb-table "MKCADIBase.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("common/MKCADIBase.h" include nil nil [407 437])
+            ("iostream" include (:system-flag t) nil [438 457])
+            ("MxSchedulerAccess.h" include nil nil [459 489])
+            ("MxOutput.h" include nil nil [490 511])
+            ("MxSimAPI.h" include nil nil [512 533])
+            ("MxDisassembler.h" include nil nil [535 562])
+            ("MxDICoreAdaptor.h" include nil nil [563 591])
+            ("MxSimAdapter.h" include nil nil [593 618])
+            ("stdlib.h" include (:system-flag t) nil [620 639])
+            ("stdio.h" include (:system-flag t) nil [640 658])
+            ("dlfcn.h" include (:system-flag t) nil [673 691])
+            ("strings.h" include (:system-flag t) nil [692 712])
+            ("map" include (:system-flag t) nil [747 761])
+            ("CADI_DEBUG" variable (:constant-flag t) nil [813 823])
+            ("VERBOSE" variable (:constant-flag t) nil [887 894])
+            ("MINIMUM" variable (:constant-flag t) nil [905 912])
+            ("REG_MAX_STRING_LEN" variable (:constant-flag t) nil [923 941])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("debug_level" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [986 1009]))                  
+                :type "namespace")
+                nil [947 1011])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1013 1033])
+            ("InternalDisasmCB" type
+               (:superclasses 
+                  ( ("eslapi::CADIDisassemblerCB" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1098 1105])
+                    ("ReceiveModeName" function
+                       (:arguments 
+                          ( ("mode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1130 1144])
+                            ("modename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1145 1166]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1109 1169])
+                    ("ReceiveSourceReference" function
+                       (:arguments 
+                          ( ("addr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("eslapi::CADIAddr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1202 1233])
+                            ("sourceFile" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1234 1257])
+                            ("sourceLine" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1258 1278]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1174 1281])
+                    ("ReceiveDisassembly" function
+                       (:arguments 
+                          ( ("addr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("eslapi::CADIAddr_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1310 1341])
+                            ("opcodes" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1342 1362])
+                            ("disassembly" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1363 1387]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1286 1397])
+                    ("ObtainInterface" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("ifName" variable (:type ("eslapi::if_name_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1438 1463])
+                            ("minRev" variable (:type ("eslapi::if_rev_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1463 1487])
+                            ("actualRev" variable
+                               (:pointer 1
+                                :type ("eslapi::if_rev_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1488 1516]))                          
+                        :type ("eslapi::CAInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1401 1532]))                  
+                :type "class")
+                nil [1035 1536])
+            ("getRegInfo" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cadi" variable
+                       (:pointer 1
+                        :type ("eslapi::CADI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1560 1579])
+                    ("regnum" variable (:type "int") (reparse-symbol arg-sub-list) [1579 1590])
+                    ("match" variable
+                       (:pointer 1
+                        :type ("eslapi::CADIRegInfo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1590 1619]))                  
+                :type "int")
+                nil [1538 2746])
+            ("getMemorySpaceID" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cadi" variable
+                       (:pointer 1
+                        :type ("eslapi::CADI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2906 2925])
+                    ("idStringRegister" variable (:type "int") (reparse-symbol arg-sub-list) [2926 2947]))                  
+                :type "int")
+                nil [2878 5630])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("reset" function
+                       (:parent "MKCADIBase"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5668 5727])
+                    ("MKCADIBase" function
+                       (:constructor-flag t
+                        :parent "MKCADIBase"
+                        :type ("MKCADIBase" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5729 6875])
+                    ("MKCADIBase" function
+                       (:constructor-flag t
+                        :parent "MKCADIBase"
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("eslapi::CASIModuleIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6900 6946]))                          
+                        :type ("MKCADIBase" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6877 7992])
+                    ("MKCADIBase" function
+                       (:destructor-flag t
+                        :parent "MKCADIBase"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7994 8023])
+                    ("DuplicateRef" function
+                       (:parent "MKCADIBase"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8025 8174])
+                    ("ReleaseRef" function
+                       (:parent "MKCADIBase"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8176 8324])
+                    ("ObtainInterface" function
+                       (:pointer 1
+                        :parent "MKCADIBase"
+                        :arguments 
+                          ( ("ifName" variable (:type ("eslapi::if_name_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8377 8405])
+                            ("minRev" variable (:type ("eslapi::if_rev_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8406 8434])
+                            ("actualRev" variable
+                               (:pointer 1
+                                :type ("eslapi::if_rev_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8435 8466]))                          
+                        :type ("eslapi::CAInterface" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8326 8655])
+                    ("CADIXfaceGetFeatures" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("_features" variable
+                               (:pointer 1
+                                :type ("eslapi::CADITargetFeatures_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8712 8752]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8657 8869])
+                    ("CADIXfaceGetError" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("messageSlots" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8924 8946])
+                            ("messageCount" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8957 8980])
+                            ("errorMessage" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [8991 9010]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8871 9059])
+                    ("CADIXfaceAddCallback" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("callbackObj" variable
+                               (:pointer 1
+                                :type ("eslapi::CADICallbackObj" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9118 9155])
+                            ("enable" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [9167 9202]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9061 9328])
+                    ("CADIXfaceRemoveCallback" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("callbackObj" variable
+                               (:pointer 1
+                                :type ("eslapi::CADICallbackObj" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9390 9427]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9330 9477])
+                    ("CADIXfaceBypass" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("commandSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9530 9551])
+                            ("command" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [9560 9580])
+                            ("responseSlots" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9589 9612])
+                            ("response" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [9621 9636]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9479 9686])
+                    ("CADIBptGetList" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("listindex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9738 9757])
+                            ("bptSlots" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9768 9786])
+                            ("_bptCount" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9797 9817])
+                            ("breakpoint" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIBptDescription_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9828 9869]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9688 10072])
+                    ("CADIBptSet" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("request" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIBptRequest_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10120 10154])
+                            ("breakpoint" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIBptNumber_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10162 10198]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10074 13206])
+                    ("CADIBptClear" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("breakpointId" variable (:type ("eslapi::CADIBptNumber_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13256 13293]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13208 14356])
+                    ("CADIBptConfigure" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("breakpointId" variable (:type ("eslapi::CADIBptNumber_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14410 14447])
+                            ("configuration" variable (:type ("eslapi::CADIBptConfigure_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14456 14497]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14358 14819])
+                    ("CADIExecGetModes" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("modeindex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14873 14892])
+                            ("modeSlots" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14902 14921])
+                            ("modeCount" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14931 14951])
+                            ("execMode" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIExecMode_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14961 14994]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14821 15044])
+                    ("CADIExecGetResetLevels" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("levelindex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15104 15124])
+                            ("resetLevelSlots" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15137 15162])
+                            ("resetLevelCount" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15175 15201])
+                            ("resetLevel" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIResetLevel_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15214 15251]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [15046 15311])
+                    ("CADIExecSetMode" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("execMode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15364 15382]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [15313 15432])
+                    ("CADIExecGetMode" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("execMode" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15485 15504]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [15434 15554])
+                    ("CADIExecSingleStep" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("instructionCount" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15613 15639])
+                            ("stepCycle" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15670 15687])
+                            ("stepOver" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15718 15734]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [15559 25076])
+                    ("CADIExecReset" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("resetLevel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [25127 25151]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [25078 25201])
+                    ("CADIExecContinue" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [25255 25260]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [25203 25310])
+                    ("CADIExecStop" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [25360 25365]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [25312 25415])
+                    ("CADIExecGetExceptions" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("excpindex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25474 25493])
+                            ("exceptionSlots" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25505 25529])
+                            ("exceptionCount" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25541 25566])
+                            ("exception" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIException_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25578 25613]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [25417 25663])
+                    ("CADIExecAssertException" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("exception" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [25724 25747])
+                            ("action" variable (:type ("eslapi::CADIExceptionAction_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25758 25795]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [25665 25845])
+                    ("CADIExecGetPipeStages" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("stageindex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25904 25924])
+                            ("pipeStageSlots" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25936 25960])
+                            ("pipeStageCount" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25972 25997])
+                            ("pipeStages" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIPipeStage_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26009 26045]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [25847 26095])
+                    ("CADIExecGetPipeStageFields" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("startPipeStageFieldIndex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26158 26192])
+                            ("desiredNumOfPipeStageFields" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26202 26239])
+                            ("actualNumOfPipeStageFields" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26249 26286])
+                            ("pipeStageFields" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIPipeStageField_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26296 26342]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [26097 26392])
+                    ("CADIMemGetSpaces" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("spaceindex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26446 26466])
+                            ("memSpaceSlots" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26476 26499])
+                            ("memSpaceCount" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26509 26533])
+                            ("memSpace" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIMemSpaceInfo_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26543 26580]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [26394 26630])
+                    ("CADIMemGetBlocks" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("memorySpace" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26684 26705])
+                            ("blockindex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26715 26735])
+                            ("memBlockSlots" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26745 26768])
+                            ("memBlockCount" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26778 26802])
+                            ("memBlock" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIMemBlockInfo_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26812 26849]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [26632 26899])
+                    ("CADIMemWrite" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("startAddress" variable (:type ("eslapi::CADIAddrComplete_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26949 26989])
+                            ("unitsToWrite" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26993 27015])
+                            ("unitSizeInBytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27020 27045])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27050 27070])
+                            ("actualNumOfUnitsWritten" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27075 27109])
+                            ("doSideEffects" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27114 27136]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [26901 27186])
+                    ("CADIMemRead" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("startAddress" variable (:type ("eslapi::CADIAddrComplete_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27235 27275])
+                            ("unitsToRead" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27285 27306])
+                            ("unitSizeInBytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27317 27342])
+                            ("data" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27353 27367])
+                            ("actualNumOfUnitsRead" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27378 27409])
+                            ("doSideEffects" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27420 27442]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [27188 27492])
+                    ("CADIMemGetOverlays" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("ovlyindex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27548 27567])
+                            ("activeOverlaySlots" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27579 27607])
+                            ("activeOverlayCount" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27619 27648])
+                            ("overlay" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIOverlayId_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27660 27693]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [27494 27742])
+                    ("CADIGetCacheInfo" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("memSpaceID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27808 27828])
+                            ("cacheInfo" variable
+                               (:pointer 1
+                                :type ("eslapi::CADICacheInfo_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27837 27872]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [27756 27921])
+                    ("CADICacheRead" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("addr" variable (:type ("eslapi::CADIAddr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27983 28007])
+                            ("linesToRead" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28048 28069])
+                            ("data" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [28077 28091])
+                            ("tags" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [28126 28140])
+                            ("is_dirty" variable
+                               (:pointer 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [28176 28191])
+                            ("is_valid" variable
+                               (:pointer 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [28215 28230])
+                            ("numLinesRead" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [28254 28277])
+                            ("doSideEffects" variable (:type "bool") (reparse-symbol arg-sub-list) [28284 28303]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [27935 28385])
+                    ("CADICacheWrite" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("addr" variable (:type ("eslapi::CADIAddr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28448 28472])
+                            ("linesToWrite" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28514 28536])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [28544 28564])
+                            ("tags" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [28598 28618])
+                            ("is_dirty" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [28653 28674])
+                            ("is_valid" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [28697 28718])
+                            ("numLinesWritten" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [28741 28767])
+                            ("doSideEffects" variable (:type "bool") (reparse-symbol arg-sub-list) [28774 28793]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [28399 28862])
+                    ("CADIRegGetGroups" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("groupIndex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28916 28936])
+                            ("desiredNumOfRegGroups" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28947 28978])
+                            ("actualNumOfRegGroups" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [28989 29020])
+                            ("reg" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIRegGroup_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29031 29059]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [28864 29109])
+                    ("CADIRegGetMap" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("groupID" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29160 29177])
+                            ("groupindex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29187 29207])
+                            ("registerSlots" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29217 29240])
+                            ("registerCount" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29250 29274])
+                            ("reg" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIRegInfo_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29284 29311]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [29111 29362])
+                    ("CADIRegGetCompound" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("reg" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29418 29431])
+                            ("regindex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29443 29461])
+                            ("componentSlots" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29473 29497])
+                            ("componentCount" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29509 29534])
+                            ("component" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29546 29566]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [29364 29616])
+                    ("CADIRegWrite" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("regCount" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29666 29684])
+                            ("reg" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIReg_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29693 29716])
+                            ("actCount" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29725 29744])
+                            ("doSideEffects" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29753 29775]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [29618 29825])
+                    ("CADIRegRead" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("regCount" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29874 29892])
+                            ("reg" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIReg_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29900 29923])
+                            ("actCount" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29931 29950])
+                            ("doSideEffects" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29958 29980]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [29827 30030])
+                    ("Register" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [30090 30095]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [30047 30325])
+                    ("UnRegister" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [30372 30377]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [30327 30609])
+                    ("CADIGetPC" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [30643 30648]))                          
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [30612 30862])
+                    ("CADIGetPC" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("is_virtual" variable
+                               (:pointer 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [30896 30913]))                          
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [30865 31149])
+                    ("VirtualToPhysical" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("vaddr" variable (:type ("eslapi::CADIAddrComplete_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31208 31241]))                          
+                        :type ("eslapi::CADIAddrComplete_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [31151 31494])
+                    ("PhysicalToVirtual" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("paddr" variable (:type ("eslapi::CADIAddrComplete_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31553 31586]))                          
+                        :type ("eslapi::CADIAddrComplete_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [31496 31840])
+                    ("cycleFinishedCB" function
+                       (:parent "MKCADIBase"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31843 38948])
+                    ("simulatorStatusChanged" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("running" variable (:type "int") (reparse-symbol arg-sub-list) [38992 39005]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [38951 39089])
+                    ("CADIGetParameterInfo" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("parameterName" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [39515 39541])
+                            ("param" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIParameterInfo_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [39542 39577]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [39461 39627])
+                    ("CADIGetParameterValues" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("parameterCount" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40233 40257])
+                            ("actualNumOfParamsRead" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [40258 40290])
+                            ("paramValuesOut" variable
+                               (:pointer 1
+                                :type ("eslapi::CADIParameterValue_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [40291 40336]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [40177 40386])
+                    ("CADIGetTargetInfo" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("targetInfo" variable
+                               (:pointer 1
+                                :type ("eslapi::CADITargetInfo_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [40663 40701]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [40611 40751])
+                    ("CADIExecLoadApplication" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("filename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [41273 41294])
+                            ("loadData" variable (:type "bool") (reparse-symbol arg-sub-list) [41295 41309])
+                            ("verbose" variable (:type "bool") (reparse-symbol arg-sub-list) [41310 41323])
+                            ("parameters" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [41324 41347]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [41216 41397])
+                    ("CADIExecUnloadApplication" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("filename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [41748 41769]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [41689 41819])
+                    ("CADIExecGetLoadedApplications" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("startIndex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43533 43553])
+                            ("desiredNumberOfApplications" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43554 43591])
+                            ("actualNumberOfApplicatiosReturnedOut" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [43599 43646])
+                            ("filenamesOut" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [43647 43666])
+                            ("filenameLength" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43674 43698])
+                            ("parametersOut" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [43699 43719])
+                            ("parametersLength" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43720 43746]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [43470 43796])
+                    ("CADIGetCommitedPCs" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("startIndex" variable (:type "int") (reparse-symbol arg-sub-list) [44301 44316])
+                            ("desiredCount" variable (:type "int") (reparse-symbol arg-sub-list) [44317 44334])
+                            ("actualCount" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [44335 44353])
+                            ("pcs" variable
+                               (:pointer 1
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [44354 44369]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [44248 44419])
+                    ("ObtainInterface" function
+                       (:pointer 1
+                        :parent "CADICallbackObjBase"
+                        :arguments 
+                          ( ("ifName" variable (:type ("eslapi::if_name_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44480 44508])
+                            ("minRev" variable (:type ("eslapi::if_rev_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44509 44537])
+                            ("actualRev" variable
+                               (:pointer 1
+                                :type ("eslapi::if_rev_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [44538 44569]))                          
+                        :type ("eslapi::CAInterface" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [44421 44773])
+                    ("CADIGetDisassembler" function
+                       (:pointer 1
+                        :parent "MKCADIBase"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [44834 44839]))                          
+                        :type ("eslapi::CADIDisassembler" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [44775 44862])
+                    ("CADIGetCycleCount" function
+                       (:parent "MKCADIBase"
+                        :arguments 
+                          ( ("cycleCount" variable
+                               (:reference 1
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [44916 44938])
+                            ("systemCycles" variable (:type "bool") (reparse-symbol arg-sub-list) [44939 44957]))                          
+                        :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [44865 45162]))                  
+                :type "namespace")
+                nil [5632 45165]))          
+      :file "MKCADIBase.cpp"
+      :pointmax 45186
+      :fsize 45185
+      :lastmodtime '(23137 870 895766 0)
+      :unmatched-syntax '((punctuation 1532 . 1533) (punctuation 1281 . 1282) (punctuation 1169 . 1170))
+      :lexical-table 
+        '(("CADI_DEBUG" (spp-arg-list ("l") 823 . 826) . 
+              ((IF "if" 827 . 829) (semantic-list "(l< CARBON_MKLIB_NAMESPACE::debug_level )" 830 . 871) (symbol "printf" 872 . 878)))
+          ("VERBOSE" . ((number "3" 895 . 896)))
+          ("REG_MAX_STRING_LEN" . ((number "1024" 942 . 946)))
+          ("MINIMUM" . ((number "1" 913 . 914)))
+          )
+))
+  :file "!home!hanlei01!ModelKits!mk_git_repo!cycle-models!modelkits!src!common!SoCDesigner!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

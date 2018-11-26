@@ -1,0 +1,190 @@
+;; Object SemiHost/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SemiHost/"
+  :tables
+  (list
+    (semanticdb-table "Semihost.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [71 90])
+            ("fstream" include (:system-flag t) nil [91 109])
+            ("sstream" include (:system-flag t) nil [110 128])
+            ("map" include (:system-flag t) nil [129 143])
+            ("cerrno" include (:system-flag t) nil [169 186])
+            ("cstdio" include (:system-flag t) nil [187 204])
+            ("cstdlib" include (:system-flag t) nil [205 223])
+            ("ctime" include (:system-flag t) nil [224 240])
+            ("assert.h" include (:system-flag t) nil [241 260])
+            ("unistd.h" include (:system-flag t) nil [277 296])
+            ("eslapi/CADI.h" include nil nil [305 329])
+            ("common/CarbonComponentHelper.h" include nil nil [330 371])
+            ("armtypes.h" include nil nil [372 393])
+            ("ENOTSUP" variable (:constant-flag t) nil [477 484])
+            ("cpus/CarbonSemihost.h" include nil nil [498 530])
+            ("common/carbon_mkversion.h" include nil nil [531 567])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [569 589])
+            ("LOG_WARNING" variable (:constant-flag t) nil [599 610])
+            ("LOG_INFO" variable (:constant-flag t) nil [775 783])
+            ("LOG_DEBUG" variable (:constant-flag t) nil [946 955])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("get_nth_byte_arg" function
+                       (:parent "CarbonSemihost"
+                        :arguments 
+                          ( ("callback" variable
+                               (:pointer 1
+                                :type ("CarbonSemihostCB_IF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1191 1221])
+                            ("arg" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1258 1271])
+                            ("mode" variable (:type ("arm_psr_mode_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1308 1328]))                          
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1150 1501])
+                    ("get_nth_word_arg" function
+                       (:parent "CarbonSemihost"
+                        :arguments 
+                          ( ("callback" variable
+                               (:pointer 1
+                                :type ("CarbonSemihostCB_IF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1545 1575])
+                            ("arg" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1613 1626])
+                            ("mode" variable (:type ("arm_psr_mode_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1664 1684])
+                            ("endian_be8" variable (:type "bool") (reparse-symbol arg-sub-list) [1776 1792]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1503 2186])
+                    ("get_string" function
+                       (:parent "CarbonSemihost"
+                        :arguments 
+                          ( ("callback" variable
+                               (:pointer 1
+                                :type ("CarbonSemihostCB_IF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2228 2258])
+                            ("from" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2285 2299])
+                            ("to" variable
+                               (:pointer 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2326 2343])
+                            ("max_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2370 2394]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2196 2760])
+                    ("put_string" function
+                       (:parent "CarbonSemihost"
+                        :arguments 
+                          ( ("callback" variable
+                               (:pointer 1
+                                :type ("CarbonSemihostCB_IF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2794 2824])
+                            ("from" variable
+                               (:pointer 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2851 2870])
+                            ("to" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2897 2914]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2762 3106])
+                    ("read_word" function
+                       (:parent "CarbonSemihost"
+                        :arguments 
+                          ( ("callback" variable
+                               (:pointer 1
+                                :type ("CarbonSemihostCB_IF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3143 3173])
+                            ("addr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3203 3217])
+                            ("endian_be8" variable (:type "bool") (reparse-symbol arg-sub-list) [3247 3267]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3108 3658])
+                    ("write_word" function
+                       (:parent "CarbonSemihost"
+                        :arguments 
+                          ( ("callback" variable
+                               (:pointer 1
+                                :type ("CarbonSemihostCB_IF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3692 3722])
+                            ("addr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3749 3763])
+                            ("data" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3790 3804])
+                            ("endian_be8" variable (:type "bool") (reparse-symbol arg-sub-list) [3831 3851]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3660 4402])
+                    ("console_read" function
+                       (:parent "CarbonSemihost"
+                        :arguments 
+                          ( ("is" variable
+                               (:pointer 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4440 4457])
+                            ("buffer" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4458 4474])
+                            ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4475 4487]))                          
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4404 4788])
+                    ("file_read" function
+                       (:parent "CarbonSemihost"
+                        :arguments 
+                          ( ("buffer" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4823 4839])
+                            ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4840 4852])
+                            ("nmemb" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4853 4866])
+                            ("cs" variable
+                               (:pointer 1
+                                :type ("FILE" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4867 4876]))                          
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4790 5203])
+                    ("CarbonSemihost" function
+                       (:constructor-flag t
+                        :parent "CarbonSemihost"
+                        :arguments 
+                          ( ("compHelper_" variable
+                               (:pointer 1
+                                :type ("CarbonComponentHelperIF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5236 5274]))                          
+                        :type ("CarbonSemihost" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5205 5692])
+                    ("close_streams" function
+                       (:parent "CarbonSemihost"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5693 6298])
+                    ("semihostCall" function
+                       (:parent "CarbonSemihost"
+                        :arguments 
+                          ( ("instr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7359 7381])
+                            ("svc_number" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7414 7441])
+                            ("callback" variable
+                               (:pointer 1
+                                :type ("CarbonSemihostCB_IF" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7474 7540]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7287 37616])
+                    ("getTimeElapsed" function
+                       (:parent "CarbonSemihost"
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [37618 37713])
+                    ("getCycleCount" function
+                       (:parent "CarbonSemihost"
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [37715 37869]))                  
+                :type "namespace")
+                nil [1114 37872]))          
+      :file "Semihost.cpp"
+      :pointmax 37903
+      :fsize 37902
+      :lastmodtime '(20004 21393 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ENOTSUP" . ((symbol "EBADF" 485 . 490)))
+          ("LOG_WARNING" (spp-arg-list ("x") 610 . 613) . 
+              ((IF "if" 614 . 616) (semantic-list "(1)" 616 . 619) (semantic-list "{ std::stringstream ss(std::stringstream::out); ss<<x ;string ts = ss.str(); compHelper->message(CarbonComponentHelper::eMsgWarning, ts.c_str());}" 620 . 766)))
+          ("LOG_INFO" (spp-arg-list ("x") 783 . 786) . 
+              ((IF "if" 787 . 789) (semantic-list "(1)" 789 . 792) (semantic-list "{ std::stringstream ss(std::stringstream::out); ss<<x ;string ts = ss.str();  compHelper->message(CarbonComponentHelper::eMsgInfo, ts.c_str());}" 793 . 937)))
+          ("LOG_DEBUG" (spp-arg-list ("x") 955 . 958) . 
+              ((IF "if" 959 . 961) (semantic-list "(debug)" 961 . 968) (semantic-list "{ std::stringstream ss(std::stringstream::out); ss<<x ;string ts = ss.str(); compHelper->message(CarbonComponentHelper::eMsgInfo, ts.c_str());}" 969 . 1112)))
+          )
+))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!src!cpus!common!SemiHost!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

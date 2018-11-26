@@ -1,0 +1,76 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "system_test_1CPU.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/RAMBlock.h" include nil nil [831 859])
+            ("models/SimpleBus.h" include nil nil [860 889])
+            ("models/BasicUART.h" include nil nil [890 919])
+            ("models/ElfLoader.h" include nil nil [920 949])
+            ("libDeimos.tlm.h" include nil nil [950 976])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [977 1023])
+            ("iostream" include (:system-flag t) nil [1025 1044])
+            ("scx/scx.h" include (:system-flag t) nil [1045 1065])
+            ("scx_simcontroller.cpp" include (:system-flag t) nil [1066 1098])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1099 1135])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1136 1169])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1172 1196])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1210 1219])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1220 1233]))                  
+                :type "int")
+                nil [1198 4920]))          
+      :file "system_test_1CPU.cpp"
+      :pointmax 4921
+      :fsize 4920
+      :lastmodtime '(23374 9820 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "system_test_4CPU.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/RAMBlock.h" include nil nil [831 859])
+            ("models/SimpleBus.h" include nil nil [860 889])
+            ("models/BasicUART.h" include nil nil [890 919])
+            ("models/ElfLoader.h" include nil nil [920 949])
+            ("libDeimos.tlm.h" include nil nil [950 976])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [977 1023])
+            ("iostream" include (:system-flag t) nil [1025 1044])
+            ("scx/scx.h" include (:system-flag t) nil [1045 1065])
+            ("scx_simcontroller.cpp" include (:system-flag t) nil [1066 1098])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1099 1135])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1136 1169])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1172 1196])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1210 1219])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1220 1233]))                  
+                :type "int")
+                nil [1198 5089]))          
+      :file "system_test_4CPU.cpp"
+      :pointmax 5090
+      :fsize 5089
+      :lastmodtime '(23374 9820 0 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!real_trunk!modelkits!test!cpus!Deimos!Simulation!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

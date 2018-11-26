@@ -1,0 +1,378 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables
+  (list
+    (semanticdb-table "PCStateMachineBase.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdexcept" include (:system-flag t) nil [572 592])
+            ("ios" include (:system-flag t) nil [593 607])
+            ("sstream" include (:system-flag t) nil [608 626])
+            ("cpus/CarbonSemihostCommandParserV7.h" include nil nil [775 822])
+            ("cpus/CarbonSemihostCommandParserV8.h" include nil nil [823 870])
+            ("cpus/CarbonSemihostCommandParserV8_32.h" include nil nil [871 921])
+            ("cpus/CarbonSemihostingCallback.h" include nil nil [922 965])
+            ("cpus/CarbonSemihostMasterPort.h" include nil nil [966 1008])
+            ("algorithm" include (:system-flag t) nil [1018 1038])
+            ("common/CarbonStreamIntf.h" include nil nil [1039 1075])
+            ("cpus/PCStateMachineBase.h" include nil nil [1076 1112])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1115 1135])
+            ("CARBON_MKLIB_NAMESPACE" using (:type ("CARBON_MKLIB_NAMESPACE" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1136 1175])
+            ("PCStateMachineBase" function
+               (:constructor-flag t
+                :parent "PCStateMachineBase"
+                :arguments 
+                  ( ("compHelper" variable
+                       (:pointer 1
+                        :type ("CarbonComponentHelper" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1216 1250])
+                    ("semiHost" variable
+                       (:pointer 1
+                        :type ("CarbonSemiHostMasterPort" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1290 1325])
+                    ("semiHostCallback" variable
+                       (:pointer 1
+                        :type ("SemihostingCallback" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1365 1403])
+                    ("pcBreakpointBlockSize" variable (:type ("CarbonUInt32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1443 1478])
+                    ("IsV8" variable (:type "bool") (reparse-symbol arg-sub-list) [1518 1528])
+                    ("useMismatch" variable (:type "bool") (reparse-symbol arg-sub-list) [1568 1585])
+                    ("name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1625 1637]))                  
+                :type ("PCStateMachineBase" type (:type "class") nil nil))
+                nil [1177 2379])
+            ("PCStateMachineBase" function
+               (:destructor-flag t
+                :parent "PCStateMachineBase"
+                :type "void")
+                nil [2381 2426])
+            ("reset" function
+               (:parent "PCStateMachineBase"
+                :type "void")
+                nil [2428 2575])
+            ("requestForcePC" function
+               (:parent "PCStateMachineBase"
+                :arguments 
+                  ( ("pc" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3342 3358]))                  
+                :type "void")
+                nil [3302 4481])
+            ("getCommittedPCs" function
+               (:parent "PCStateMachineBase"
+                :arguments 
+                  ( ("startIndex" variable (:type "int") (reparse-symbol arg-sub-list) [4540 4555])
+                    ("desiredCount" variable (:type "int") (reparse-symbol arg-sub-list) [4613 4630])
+                    ("actualCount" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4688 4705])
+                    ("pcs" variable
+                       (:pointer 1
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4763 4777]))                  
+                :type ("eslapi::CADIReturn_t" type (:type "class") nil nil))
+                nil [4483 5108])
+            ("validSoftwareBreakpoint" function
+               (:parent "PCStateMachineBase"
+                :type "bool")
+                nil [5110 5260])
+            ("doCyclePreModelRun" function
+               (:parent "PCStateMachineBase"
+                :type "void")
+                nil [5517 7393])
+            ("doCyclePostModelRun" function
+               (:parent "PCStateMachineBase"
+                :type "void")
+                nil [7714 19010])
+            ("checkSemihostConnection" function
+               (:parent "PCStateMachineBase"
+                :type "void")
+                nil [19015 19246])
+            ("putSingleStep" function
+               (:parent "PCStateMachineBase"
+                :arguments 
+                  ( ("step" variable (:type "bool") (reparse-symbol arg-sub-list) [19287 19297]))                  
+                :type "void")
+                nil [19248 20519])
+            ("saveState" function
+               (:parent "PCStateMachineBase"
+                :arguments 
+                  ( ("os" variable
+                       (:pointer 1
+                        :type ("CarbonSaveStreamIntf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20556 20581]))                  
+                :type "bool")
+                nil [20521 21601])
+            ("restoreState" function
+               (:parent "PCStateMachineBase"
+                :arguments 
+                  ( ("is" variable
+                       (:pointer 1
+                        :type ("CarbonRestoreStreamIntf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21641 21669]))                  
+                :type "bool")
+                nil [21603 22831])
+            ("getCycleCount" function
+               (:parent "PCStateMachineBase"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [22833 23021])
+            ("sGetStateString" function
+               (:parent "PCStateMachineBase"
+                :arguments 
+                  ( ("state" variable (:type ("PCState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23071 23085]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [23023 23614])
+            ("resetStateVariables" function
+               (:parent "PCStateMachineBase"
+                :type "void")
+                nil [23616 24558])
+            ("forcePC" function
+               (:parent "PCStateMachineBase"
+                :arguments 
+                  ( ("pc" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24593 24609]))                  
+                :type "void")
+                nil [24560 25229])
+            ("checkBreakpoints" function
+               (:parent "PCStateMachineBase"
+                :arguments 
+                  ( ("stepFound" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [25281 25297]))                  
+                :type ("CarbonUInt32" type (:type "class") nil nil))
+                nil [25231 31441])
+            ("getStopReason" function
+               (:parent "PCStateMachineBase"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("PCStateMachineBase::StopReason" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [31817 34193])
+            ("getUpdatedPCState" function
+               (:parent "PCStateMachineBase"
+                :type ("PCStateMachineBase::PCState" type (:type "class") nil nil))
+                nil [34441 35685])
+            ("calculateReportedPC" function
+               (:parent "PCStateMachineBase"
+                :type "void")
+                nil [36351 36610])
+            ("executeInstruction" function
+               (:parent "PCStateMachineBase"
+                :type "void")
+                nil [36612 37114])
+            ("restartProcessor" function
+               (:parent "PCStateMachineBase"
+                :type "void")
+                nil [37116 37292])
+            ("isSemihost" function
+               (:parent "PCStateMachineBase"
+                :type "bool")
+                nil [37294 37581])
+            ("isPipelinePcSvc" function
+               (:parent "PCStateMachineBase"
+                :type "bool")
+                nil [37583 38570])
+            ("isActiveBreakpoint" function
+               (:parent "PCStateMachineBase"
+                :arguments 
+                  ( ("checkPC" variable (:type ("CarbonUInt64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38691 38712]))                  
+                :type "bool")
+                nil [38647 39373])
+            ("putBreakOnSVCExceptionAndUpdate" function
+               (:parent "PCStateMachineBase"
+                :arguments 
+                  ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [39432 39444]))                  
+                :type "void")
+                nil [39375 39515]))          
+      :file "PCStateMachineBase.cpp"
+      :pointmax 45207
+      :fsize 45206
+      :lastmodtime '(23460 2346 487551 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ICM_DebugController.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("carbon/carbon_shelltypes.h" include nil nil [67 104])
+            ("cpus/PCStateMachineBase.h" include nil nil [105 141])
+            ("cpus/ICM_DebugController.h" include nil nil [142 179])
+            ("memory" include (:system-flag t) nil [181 198])
+            ("string" include (:system-flag t) nil [199 216])
+            ("stdlib.h" include (:system-flag t) nil [217 236])
+            ("unnamed" type
+               (:members 
+                  ( ("clock_callback" function
+                       (:arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [339 355])
+                            ("" variable
+                               (:pointer 1
+                                :type ("CarbonNetID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [356 369])
+                            ("debug_controller_pointer" variable (:type ("CarbonClientData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [370 412])
+                            ("data" variable
+                               (:pointer 1
+                                :type ("CarbonUInt32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [413 432])
+                            ("drive" variable
+                               (:pointer 1
+                                :type ("CarbonUInt32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [433 453]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [319 710]))                  
+                :type "namespace")
+                nil [238 712])
+            ("ICM_DebugController" function
+               (:constructor-flag t
+                :parent "ICM_DebugController"
+                :arguments 
+                  ( ("component_helper" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("CARBON_MKLIB_NAMESPACE::ICMComponentHelper" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [755 832])
+                    ("cycle_model" variable
+                       (:pointer 1
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [875 903])
+                    ("pcsm" variable
+                       (:pointer 1
+                        :type ("CARBON_MKLIB_NAMESPACE::PCStateMachineBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [904 953])
+                    ("icm_model" variable
+                       (:pointer 1
+                        :type ("icm_impl::ICMModel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [996 1026])
+                    ("clk_path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1068 1089])
+                    ("rst_path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1090 1111]))                  
+                :type ("ICM_DebugController" type (:type "class") nil nil))
+                nil [714 2629])
+            ("posedge" function
+               (:parent "ICM_DebugController"
+                :type "void")
+                nil [2631 5541])
+            ("negedge" function
+               (:parent "ICM_DebugController"
+                :type "void")
+                nil [5543 5684])
+            ("enter_halt" function
+               (:parent "ICM_DebugController"
+                :type "int")
+                nil [5687 6438])
+            ("exit_halt" function
+               (:parent "ICM_DebugController"
+                :type "int")
+                nil [6440 7364])
+            ("set_halted_callback" function
+               (:parent "ICM_DebugController"
+                :arguments 
+                  ( ("model" variable (:type ("icm_model_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7482 7500])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7501 7512])
+                    ("callback" variable (:type ("icm_control_callback_model_halted_fn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7559 7605]))                  
+                :type "void")
+                nil [7436 7694])
+            ("request_instruction_step" function
+               (:parent "ICM_DebugController"
+                :arguments 
+                  ( ("count" variable (:type "int") (reparse-symbol arg-sub-list) [7746 7756]))                  
+                :type "int")
+                nil [7696 8114])
+            ("set_stepped_callback" function
+               (:parent "ICM_DebugController"
+                :arguments 
+                  ( ("model" variable (:type ("icm_model_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8231 8249])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8250 8261])
+                    ("callback" variable (:type ("icm_control_callback_instructions_stepped_fn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8309 8363]))                  
+                :type "void")
+                nil [8184 8514])
+            ("set_program_breakpoint" function
+               (:parent "ICM_DebugController"
+                :arguments 
+                  ( ("address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8565 8582]))                  
+                :type "void")
+                nil [8516 8662])
+            ("clear_program_breakpoint" function
+               (:parent "ICM_DebugController"
+                :arguments 
+                  ( ("address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8715 8732]))                  
+                :type "void")
+                nil [8664 8814])
+            ("enable_program_breakpoint" function
+               (:parent "ICM_DebugController"
+                :arguments 
+                  ( ("address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8868 8885]))                  
+                :type "void")
+                nil [8816 8968])
+            ("disable_program_breakpoint" function
+               (:parent "ICM_DebugController"
+                :arguments 
+                  ( ("address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9023 9040]))                  
+                :type "void")
+                nil [8970 9123])
+            ("set_breakpoint_callback" function
+               (:parent "ICM_DebugController"
+                :arguments 
+                  ( ("model" variable (:type ("icm_model_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9226 9244])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9245 9256])
+                    ("callback" variable (:type ("icm_control_program_breakpoint_callback_fn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9286 9338]))                  
+                :type "void")
+                nil [9176 9499])
+            ("get_instruction_count" function
+               (:parent "ICM_DebugController"
+                :type "long long")
+                nil [9501 9644])
+            ("is_debuggable" function
+               (:parent "ICM_DebugController"
+                :type "bool")
+                nil [9646 10142])
+            ("set_execution_state" function
+               (:parent "ICM_DebugController"
+                :arguments 
+                  ( ("stay_halted" variable (:type "int") (reparse-symbol arg-sub-list) [10245 10261]))                  
+                :type "void")
+                nil [10199 10577])
+            ("set_reset_done_callback" function
+               (:parent "ICM_DebugController"
+                :arguments 
+                  ( ("model" variable (:type ("icm_model_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10782 10800])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10801 10812])
+                    ("callback" variable (:type ("icm_control_callback_model_reset_done_fn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10863 10913]))                  
+                :type "void")
+                nil [10732 11015])
+            ("readPC" function
+               (:parent "ICM_DebugController"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [11017 11091])
+            ("writePC" function
+               (:parent "ICM_DebugController"
+                :arguments 
+                  ( ("data" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11132 11146]))                  
+                :type "void")
+                nil [11094 11182]))          
+      :file "ICM_DebugController.cpp"
+      :pointmax 11185
+      :fsize 11184
+      :lastmodtime '(23392 43537 217642 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!src!cpus!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

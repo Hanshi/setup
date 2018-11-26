@@ -1,0 +1,44 @@
+;; Object Systems/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Systems/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("libCortexM7.systemc.h" include nil nil [801 833])
+            ("libNIC400.systemc.h" include nil nil [834 864])
+            ("libBP140.systemc.h" include nil nil [865 894])
+            ("libBP140_TrickBox.systemc.h" include nil nil [895 933])
+            ("CortexM7ResetModule.h" include nil nil [934 966])
+            ("NIC400ResetModule.h" include nil nil [967 997])
+            ("BP140ResetModule.h" include nil nil [998 1027])
+            ("BP140_TrickBoxResetModule.h" include nil nil [1028 1066])
+            ("../perf_common.h" include nil nil [1067 1094])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1096 1120])
+            ("scx/scx.h" include (:system-flag t) nil [1122 1142])
+            ("scx/scx_signal_sizer.h" include (:system-flag t) nil [1143 1176])
+            ("scx_simcontroller.cpp" include (:system-flag t) nil [1177 1209])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1210 1246])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1247 1280])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1294 1303])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1304 1317]))                  
+                :type "int")
+                nil [1282 38079]))          
+      :file "system_test.cpp"
+      :pointmax 38080
+      :fsize 38079
+      :lastmodtime '(23193 48795 973008 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!CPAK!trunk!common_checkout_directory_gcc483!M7_NIC-400-SysC!Systems!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

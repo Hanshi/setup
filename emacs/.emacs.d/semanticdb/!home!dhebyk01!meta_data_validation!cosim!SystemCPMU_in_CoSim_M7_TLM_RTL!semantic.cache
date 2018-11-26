@@ -1,0 +1,50 @@
+;; Object SystemCPMU_in_CoSim_M7_TLM_RTL/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemCPMU_in_CoSim_M7_TLM_RTL/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("systemc.h" include (:system-flag t) nil [845 865])
+            ("models/SimpleMem.h" include nil nil [866 895])
+            ("models/RAMBlock.h" include nil nil [896 924])
+            ("models/SimpleBus.h" include nil nil [925 954])
+            ("models/BasicUART.h" include nil nil [955 984])
+            ("models/ElfLoader.h" include nil nil [985 1014])
+            ("libCortexM7.tlm.h" include nil nil [1015 1043])
+            ("feature_runner.h" include nil nil [1044 1071])
+            ("tlm_utils/simple_target_socket.h" include (:system-flag t) nil [1072 1115])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [1116 1162])
+            ("systemc" include (:system-flag t) nil [1163 1181])
+            ("iostream" include (:system-flag t) nil [1188 1207])
+            ("scx/scx.h" include (:system-flag t) nil [1209 1229])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1231 1267])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1268 1301])
+            ("mx_scx_simcontroller.cpp" include nil nil [1364 1399])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1407 1431])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1447 1456])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1457 1470]))                  
+                :type "int")
+                nil [1435 3845]))          
+      :file "system_test.cpp"
+      :pointmax 3846
+      :fsize 3845
+      :lastmodtime '(23392 52697 452057 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "mx_scx_simcontroller.cpp"
+      :file "mx_scx_simcontroller.cpp"
+      :fsize 10966
+      :lastmodtime '(23378 4077 106788 0)))
+  :file "!home!dhebyk01!meta_data_validation!cosim!SystemCPMU_in_CoSim_M7_TLM_RTL!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

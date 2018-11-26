@@ -1,0 +1,36 @@
+;; Object dsm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dsm/"
+  :tables
+  (list
+    (semanticdb-table "Kite.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_Kite_h_" variable (:constant-flag t) nil [904 912])
+            ("__CARBON_SYS_INCLUDE_H__" variable (:constant-flag t) nil [921 945])
+            ("cctype" include (:system-flag t) nil [1074 1091])
+            ("systemc.h" include nil nil [1094 1114])
+            ("carbon/carbon_sc_multiwrite_signal.h" include nil nil [1115 1162])
+            ("libKite.h" include nil nil [1163 1183])
+            ("SC_MODULE" function
+               (:arguments 
+                  ( ("" variable (:type ("Kite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1548 1553]))                  
+                :type "int")
+                nil [1538 179047]))          
+      :file "Kite.h"
+      :pointmax 179072
+      :fsize 179071
+      :lastmodtime '(22922 9495 451239 0)
+      :unmatched-syntax '((punctuation 179047 . 179048))
+      :lexical-table 
+        '(("_Kite_h_")
+          ("__CARBON_SYS_INCLUDE_H__")
+          )
+)
+    (semanticdb-table "libKite.h"
+      :file "libKite.h"
+      :fsize 620
+      :lastmodtime '(22922 9495 476223 0)))
+  :file "!o!work!hanlei01!MK_2017_07_31!modelbuild!models!Kite!workarea!DSM!ip!Kite_1CPU!gcc483!dsm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

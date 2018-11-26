@@ -1,0 +1,76 @@
+;; Object CortexR5/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "CortexR5/"
+  :tables
+  (list
+    (semanticdb-table "ICM_CortexR5Model.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cpus/ICM_Registers.h" include nil nil [52 83])
+            ("cpus/CortexR5/ICM_Memory.h" include nil nil [84 121])
+            ("cpus/CortexR5/ICM_CortexR5Model.h" include nil nil [122 166])
+            ("cpus/CortexR5/ICM_CortexR5DebugController.h" include nil nil [167 221])
+            ("ICM_CortexR5Model" function
+               (:constructor-flag t
+                :parent "ICM_CortexR5Model"
+                :arguments 
+                  ( ("cycle_model" variable
+                       (:pointer 1
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [261 289]))                  
+                :type ("ICM_CortexR5Model" type (:type "class") nil nil))
+                nil [224 937])
+            ("create_child_model" function
+               (:parent "ICM_CortexR5Model"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("icm_impl::ICMModel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1013 1040]))                  
+                :type ("std::unique_ptr" type
+                     (:template-specifier 
+                        ( ("icm_impl::ICMModel" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [939 1142])
+            ("create_debug_controller" function
+               (:parent "ICM_CortexR5Model"
+                :arguments 
+                  ( ("component_name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1317 1351])
+                    ("hdl_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1433 1461]))                  
+                :type ("std::unique_ptr" type
+                     (:template-specifier 
+                        ( ("icm_impl::DebugController" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1231 2016])
+            ("create_user_defined_memory" function
+               (:parent "ICM_CortexR5Model"
+                :arguments 
+                  ( ("desc" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("icm_impl::MemoryDescription" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2098 2138]))                  
+                :type ("std::unique_ptr" type
+                     (:template-specifier 
+                        ( ("icm_impl::Memory" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2018 3248]))          
+      :file "ICM_CortexR5Model.cpp"
+      :pointmax 3249
+      :fsize 3243
+      :lastmodtime '(23418 65365 0 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!src!cpus!CortexR5!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

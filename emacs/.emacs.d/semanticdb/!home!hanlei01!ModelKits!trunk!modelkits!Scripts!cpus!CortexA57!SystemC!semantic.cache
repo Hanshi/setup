@@ -1,0 +1,45 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("LINUX_DIR" variable (:default-value (".")) nil [1 15])
+            ("PACKAGE_LIB_DIR" variable (:default-value ("./lib")) nil [67 91])
+            ("COMP_NAME" variable (:default-value ("$(subst lib,,$(basename $(notdir $(wildcard $(PACKAGE_LIB_DIR)/lib*.a))))")) nil [189 275])
+            ("clean" function nil nil [276 301])
+            ("gen_code" function nil nil [302 312])
+            ("NUM_CPUS" variable (:default-value ("$(shell grep NUM_CPUS ./$(COMP_NAME).xmlAnswers)")) nil [394 454])
+            ("NUM_CPUS" variable (:default-value ("4")) nil [508 519])
+            ("NUM_CPUS" variable (:default-value ("3")) nil [579 590])
+            ("NUM_CPUS" variable (:default-value ("2")) nil [650 661])
+            ("NUM_CPUS" variable (:default-value ("1")) nil [666 677])
+            ("Makefile.internal" include nil nil [714 740])
+            ("CXX" variable (:default-value ("g++")) nil [802 810])
+            ("CXXFLAGS" variable (:default-value ("-fPIC" "-g" "-DCARBON_DUMP_VCD=0" "-std=c++11" "-I$(SYSTEMC_HOME)/include" "-I$(CARBON_HOME)/include" "$(CM_SYSC_CXXFLAGS)" "-I." "-I$(LINUX_DIR)" "-DNUM_CPUS=$(NUM_CPUS)")) nil [811 1025])
+            ("ENABLE_PMU" variable (:default-value ("-DENABLE_PMU=1")) nil [1025 1051])
+            ("DISABLE_PMU" variable (:default-value ("-DENABLE_PMU=0")) nil [1052 1079])
+            ("OBJS" variable (:default-value ("$(COMP_NAME)Imp.o" "lib$(COMP_NAME).systemc.o")) nil [1080 1142])
+            ("OBJS_noPMU" variable (:default-value ("$(COMP_NAME)Imp_noPMU.o" "lib$(COMP_NAME)_noPMU.systemc.o")) nil [1142 1222])
+            ("all" function (:arguments ("lib$(COMP_NAME)_noPMU.so" "lib$(COMP_NAME).so")) nil [1222 1271])
+            ("lib" function (:arguments ("$(OBJS_noPMU)")) nil [1272 1692])
+            ("lib" function (:arguments ("$(OBJS)")) nil [1693 2090])
+            ("$(COMP_NAME)" function (:arguments ("gen_code")) nil [2091 2121])
+            ("$(COMP_NAME)" function (:arguments ("$(COMP_NAME)Imp.cpp")) nil [2123 2209])
+            ("$(COMP_NAME)" function (:arguments ("$(COMP_NAME)Imp.cpp")) nil [2210 2303])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp" "gen_code")) nil [2304 2414])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp" "gen_code")) nil [2415 2532]))          
+      :file "Makefile"
+      :pointmax 2532
+      :fsize 2531
+      :lastmodtime '(22783 52715 984427 0)
+      :unmatched-syntax '((shell-command 2486 . 2531) (bol 2485 . 2485) (symbol 771 . 800) (semantic-list 757 . 771) (punctuation 756 . 757) (symbol 747 . 755) (bol 747 . 747) (ELSE 590 . 594) (bol 590 . 590) (ELSE 519 . 523) (bol 519 . 519) (symbol 125 . 133) (semantic-list 108 . 125) (punctuation 107 . 108) (punctuation 105 . 106) (punctuation 104 . 105) (symbol 91 . 103) (bol 91 . 91) (symbol 31 . 65) (punctuation 29 . 30) (punctuation 28 . 29) (symbol 15 . 27) (bol 15 . 15)))
+    (semanticdb-table "Makefile.internal"
+      :file "Makefile.internal"
+      :fsize 2671
+      :lastmodtime '(22778 21340 913548 0)))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!Scripts!cpus!CortexA57!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

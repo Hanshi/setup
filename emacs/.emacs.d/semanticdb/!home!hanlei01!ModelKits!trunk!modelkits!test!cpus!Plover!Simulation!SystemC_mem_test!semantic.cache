@@ -1,0 +1,967 @@
+;; Object SystemC_mem_test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC_mem_test/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("$(CM_CXX_SYSTEMC_COMMON)" "-g" "-O0" "-Wno-unused-variable" "-D$(MODEL_CONFIG)")) nil [129 205])
+            ("PLOVER_DIR" variable (:default-value ("./MODELS/Plover/$(MODEL_CONFIG)/gcc/SystemC")) nil [338 395])
+            ("NUM_CPUS" variable (:default-value ("$(shell echo $(MODEL_CONFIG) | grep -o '[0-9]\\+' | head -n 1)")) nil [439 512])
+            ("$(CM_SYSC_PACKAGE)/rel_ext/makefiles/cm_sysc_common.mak" include nil nil [513 577])
+            ("system_test_" function (:arguments ("system_test_$(MODEL_CONFIG).o" "PloverResetImp.o" "$(PLOVER_DIR)/libPlover.tlm.a" "$(PLOVER_DIR)/lib/libPlover.icm.so" "$(PLOVER_DIR)/lib/libicm_runtime.so" "$(FM_LIB)" "tlm_bridge.o" "trickbox.o" "trickbox_memory.o" "trickbox_uart.o" "trickbox_test.o")) nil [578 1168])
+            ("PloverResetImp.o" function (:arguments ("$(PLOVER_DIR)/PloverResetImp.cpp")) nil [1168 1345])
+            ("system_test_" function (:arguments ("system_test_$(MODEL_CONFIG).cpp")) nil [1346 1568])
+            ("system_test.o" function (:arguments ("system_test.cpp")) nil [1568 1752])
+            ("%.o" function (:arguments ("%.cpp")) nil [1753 1936])
+            ("clean" function nil nil [1938 2023]))          
+      :file "Makefile"
+      :pointmax 2025
+      :fsize 2024
+      :lastmodtime '(23394 4055 164518 0)
+      :unmatched-syntax '((symbol 429 . 437) (semantic-list 412 . 429) (punctuation 411 . 412) (punctuation 409 . 410) (punctuation 408 . 409) (symbol 395 . 407) (bol 395 . 395)))
+    (semanticdb-table "trickbox_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("trickbox_memory.h" include nil nil [1 29])
+            ("tlm.h" include nil nil [31 47])
+            ("trickbox_test.h" include nil nil [48 74])
+            ("algorithm" include (:system-flag t) nil [76 96])
+            ("array" include (:system-flag t) nil [97 113])
+            ("cstdint" include (:system-flag t) nil [114 132])
+            ("iterator" include (:system-flag t) nil [133 152])
+            ("vector" include (:system-flag t) nil [153 170])
+            ("iomanip" include (:system-flag t) nil [171 189])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [191 211])
+            ("tlm" using (:type ("tlm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [212 232])
+            ("icm_halted_callback" function
+               (:arguments 
+                  ( ("model" variable (:type ("icm_model_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [260 278])
+                    ("client_context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [279 301])
+                    ("success" variable (:type "int") (reparse-symbol arg-sub-list) [302 314]))                  
+                :type "void")
+                nil [235 423])
+            ("armmk" type
+               (:members 
+                  ( ("halted_callback" function
+                       (:parent "trickbox_test"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [443 2254])
+                    ("()" function
+                       (:operator-flag t
+                        :parent "trickbox_test"
+                        :arguments 
+                          ( ("gp" variable
+                               (:reference 1
+                                :type ("tlm::tlm_generic_payload" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2287 2316]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2256 2801])
+                    ("set_icm_ptr" function
+                       (:parent "trickbox_test"
+                        :arguments 
+                          ( ("i" variable (:type ("icm_model_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2835 2849]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2803 3579])
+                    ("read" function
+                       (:parent "trickbox_test"
+                        :arguments 
+                          ( ("address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3606 3623])
+                            ("data_ptr" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3624 3642])
+                            ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3643 3659]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3581 3824])
+                    ("write" function
+                       (:parent "trickbox_test"
+                        :arguments 
+                          ( ("address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3852 3869])
+                            ("data_ptr" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3870 3888])
+                            ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3889 3905]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3826 4098]))                  
+                :type "namespace")
+                nil [425 4101]))          
+      :file "trickbox_test.cpp"
+      :pointmax 4121
+      :fsize 3809
+      :lastmodtime '(23449 30737 594336 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "trickbox_memory.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("tlm.h" include nil nil [15 31])
+            ("trickbox_operation.h" include nil nil [32 63])
+            ("array" include (:system-flag t) nil [65 81])
+            ("vector" include (:system-flag t) nil [82 99])
+            ("armmk" type
+               (:members 
+                  ( ("page_size" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [119 154])
+                    ("trickbox_memory" type
+                       (:superclasses 
+                          ( ("trickbox_operation" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [208 215])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [272 281])
+                            ("read" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [294 311])
+                                    ("data_ptr" variable
+                                       (:pointer 1
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [312 330])
+                                    ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [331 347]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [284 348])
+                            ("write" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [362 379])
+                                    ("data_ptr" variable
+                                       (:pointer 1
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [380 398])
+                                    ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [399 415]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [351 416])
+                            ("private" label nil (reparse-symbol classsubparts) [418 426])
+                            ("page_mask" variable
+                               (:constant-flag t
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [429 471])
+                            ("page" type
+                               (:members 
+                                  ( ("base_address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [494 516])
+                                    ("data" variable (:type ("std::array" type
+                                         (:template-specifier 
+                                            ( ("uint8_t" type nil nil nil)
+                                              ("page_size" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [521 557]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [474 596])
+                            ("pages" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("page" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [599 623])
+                            ("get_page" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("page_address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [667 689]))                                  
+                                :type ("std::array" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil)
+                                          ("page_size" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [626 690]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [156 693]))                  
+                :type "namespace")
+                nil [101 696]))          
+      :file "trickbox_memory.h"
+      :pointmax 716
+      :fsize 715
+      :lastmodtime '(23404 20892 404329 0)
+      :unmatched-syntax '((semantic-list 241 . 271) (semantic-list 239 . 241) (OPERATOR 231 . 239) (VOID 226 . 230) (VIRTUAL 218 . 225) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "trickbox_test.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("tlm.h" include nil nil [15 31])
+            ("trickbox_operation.h" include nil nil [32 63])
+            ("trickbox_defs.h" include nil nil [64 90])
+            ("icm/api/icm_api.h" include nil nil [91 119])
+            ("icm/api/icm_types.h" include nil nil [120 150])
+            ("icm/api/icm_memory.h" include nil nil [151 182])
+            ("icm/api/icm_model_info.h" include nil nil [183 218])
+            ("icm/integration/icm_scx_model.h" include nil nil [219 261])
+            ("array" include (:system-flag t) nil [263 279])
+            ("vector" include (:system-flag t) nil [280 297])
+            ("armmk" type
+               (:members 
+                  ( ("trickbox_test" type
+                       (:superclasses 
+                          ( ("trickbox_operation" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [367 374])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [431 440])
+                            ("set_icm_ptr" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("i" variable (:type ("icm_model_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [460 474]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [443 475])
+                            ("halted_callback" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [478 501])
+                            ("private" label nil (reparse-symbol classsubparts) [502 510])
+                            ("read" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [524 541])
+                                    ("data_ptr" variable
+                                       (:pointer 1
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [542 560])
+                                    ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [561 577]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [514 578])
+                            ("write" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [592 609])
+                                    ("data_ptr" variable
+                                       (:pointer 1
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [610 628])
+                                    ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [629 645]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [581 646])
+                            ("data" variable
+                               (:dereference 1
+                                :type "unsigned char")
+                                (reparse-symbol classsubparts) [650 692])
+                            ("icm" variable (:type ("icm_model_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [695 711])
+                            ("icm_mem" variable (:type ("icm_memory_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [714 735])
+                            ("model_ctrl" variable
+                               (:pointer 1
+                                :type ("icm_api_control_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [738 768])
+                            ("api_mem_spaces" variable
+                               (:pointer 1
+                                :type ("icm_api_memory_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [771 804]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [317 807]))                  
+                :type "namespace")
+                nil [299 810]))          
+      :file "trickbox_test.h"
+      :pointmax 830
+      :fsize 829
+      :lastmodtime '(23378 7910 324956 0)
+      :unmatched-syntax '((semantic-list 400 . 430) (semantic-list 398 . 400) (OPERATOR 390 . 398) (VOID 385 . 389) (VIRTUAL 377 . 384) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "trickbox_defs.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("TRICKBOX_DEFS_H" variable (:constant-flag t) nil [33 48])
+            ("stdint.h" include (:system-flag t) nil [49 68])
+            ("TRICKBOX_SPACE_BASE" variable (:constant-flag t) nil [78 97])
+            ("operations" type
+               (:members 
+                  ( ("read_and_check" variable
+                       (:constant-flag t
+                        :default-value (147 148)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [130 148])
+                    ("write_no_check" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [152 168]))                  
+                :type "enum")
+                nil [110 169])
+            ("OPERATION_INDEX" variable (:constant-flag t) nil [179 194])
+            ("DATA_INDEX" variable (:constant-flag t) nil [207 217])
+            ("MAX_DATA_LENGTH" variable (:constant-flag t) nil [271 286])
+            ("DATA_LENGTH_INDEX" variable (:constant-flag t) nil [301 318])
+            ("ADDRESS_INDEX" variable (:constant-flag t) nil [358 371])
+            ("WAITING_INDEX" variable (:constant-flag t) nil [419 432])
+            ("TRICKBOX_SPACE_LENGTH" variable (:constant-flag t) nil [476 497]))          
+      :file "trickbox_defs.h"
+      :pointmax 570
+      :fsize 569
+      :lastmodtime '(23404 20892 387328 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DATA_INDEX" . ((semantic-list "(OPERATION_INDEX + sizeof(enum operations))" 218 . 261)))
+          ("TRICKBOX_DEFS_H")
+          ("DATA_LENGTH_INDEX" . ((semantic-list "(DATA_INDEX + MAX_DATA_LENGTH)" 319 . 349)))
+          ("WAITING_INDEX" . ((semantic-list "(ADDRESS_INDEX + sizeof(uint32_t))" 433 . 467)))
+          ("TRICKBOX_SPACE_LENGTH" . ((semantic-list "(WAITING_INDEX + sizeof(uint32_t))" 498 . 532)))
+          ("TRICKBOX_SPACE_BASE" . ((number "0xF0000000" 98 . 108)))
+          ("MAX_DATA_LENGTH" . ((number "0x100" 287 . 292)))
+          ("ADDRESS_INDEX" . ((semantic-list "(DATA_LENGTH_INDEX + sizeof(uint32_t))" 372 . 410)))
+          ("OPERATION_INDEX" . ((number "0x0" 195 . 198)))
+          )
+)
+    (semanticdb-table "trickbox_uart.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("trickbox_uart.h" include nil nil [1 27])
+            ("iostream" include (:system-flag t) nil [29 48])
+            ("string" include (:system-flag t) nil [49 66])
+            ("armmk" type
+               (:members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :parent "trickbox_uart"
+                        :arguments 
+                          ( ("gp" variable
+                               (:reference 1
+                                :type ("tlm::tlm_generic_payload" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [117 146]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [86 318]))                  
+                :type "namespace")
+                nil [68 320]))          
+      :file "trickbox_uart.cpp"
+      :pointmax 340
+      :fsize 339
+      :lastmodtime '(23321 36366 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "trickbox_uart.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("trickbox_operation.h" include nil nil [1 32])
+            ("armmk" type
+               (:members 
+                  ( ("trickbox_uart" type
+                       (:superclasses 
+                          ( ("trickbox_operation" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("override" variable (:type "int") (reparse-symbol classsubparts) [158 167]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [52 170]))                  
+                :type "namespace")
+                nil [34 172]))          
+      :file "trickbox_uart.h"
+      :pointmax 173
+      :fsize 172
+      :lastmodtime '(23321 36366 0 0)
+      :unmatched-syntax '((semantic-list 127 . 157) (semantic-list 125 . 127) (OPERATOR 117 . 125) (VOID 112 . 116) (VIRTUAL 104 . 111)))
+    (semanticdb-table "trickbox_operation.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("cstddef" include (:system-flag t) nil [15 33])
+            ("tlm_core/tlm_2/tlm_generic_payload/tlm_generic_payload.h" include nil nil [35 102])
+            ("cstddef" include (:system-flag t) nil [104 122])
+            ("cstdint" include (:system-flag t) nil [123 141])
+            ("armmk" type
+               (:members 
+                  ( ("trickbox_operation" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [907 914])
+                            ("()" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :operator-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("gp" variable
+                                       (:reference 1
+                                        :type ("tlm::tlm_generic_payload" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [941 970]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [917 975])
+                            ("write" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [997 1014])
+                                    ("data_ptr" variable
+                                       (:pointer 1
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1015 1033])
+                                    ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1034 1050]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [978 1066]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [880 1069]))                  
+                :type "namespace")
+                nil [862 1071]))          
+      :file "trickbox_operation.h"
+      :pointmax 1091
+      :fsize 1090
+      :lastmodtime '(23321 36366 0 0)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "tlm_bridge.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("tlm_bridge.h" include nil nil [1 24])
+            ("cassert" include (:system-flag t) nil [26 44])
+            ("map" include (:system-flag t) nil [45 59])
+            ("string" include (:system-flag t) nil [60 77])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [79 99])
+            ("tlm" using (:type ("tlm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [100 120])
+            ("armmk" type
+               (:members 
+                  ( ("tlm_bridge" function
+                       (:constructor-flag t
+                        :parent "tlm_bridge"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_core::sc_module_name" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [163 199]))                          
+                        :type ("tlm_bridge" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [140 641])
+                    ("copy_payload" function
+                       (:parent "tlm_bridge"
+                        :arguments 
+                          ( ("gp" variable
+                               (:reference 1
+                                :type ("tlm::tlm_generic_payload" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [673 702])
+                            ("payload" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PayloadT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [733 757]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [643 1220])
+                    ("print_phase" function
+                       (:arguments 
+                          ( ("p" variable (:type ("ARM::AXI4::Phase" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1239 1258]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1222 1967])
+                    ("nb_transport_fw" function
+                       (:parent "tlm_bridge"
+                        :arguments 
+                          ( ("payload" variable
+                               (:reference 1
+                                :type ("PayloadT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2058 2076])
+                            ("phase" variable
+                               (:reference 1
+                                :type ("PhaseT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2077 2091]))                          
+                        :type ("tlm_sync_enum" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2016 4176])
+                    ("transport_dbg" function
+                       (:parent "tlm_bridge"
+                        :arguments 
+                          ( ("trans" variable
+                               (:reference 1
+                                :type ("tlm::tlm_generic_payload" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4217 4249]))                          
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [4178 4373])
+                    ("clock_posedge" function
+                       (:parent "tlm_bridge"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4375 4496])
+                    ("clock_negedge" function
+                       (:parent "tlm_bridge"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4497 5599]))                  
+                :type "namespace")
+                nil [121 5602]))          
+      :file "tlm_bridge.cpp"
+      :pointmax 5622
+      :fsize 5621
+      :lastmodtime '(23404 20892 364335 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "tlm_bridge.h"
+      :file "tlm_bridge.h"
+      :fsize 2205
+      :lastmodtime '(23378 7910 182938 0))
+    (semanticdb-table "system_test_TEMPLATE.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/SimpleFlash.h" include nil nil [831 862])
+            ("models/SimpleFlashImp.h" include nil nil [863 897])
+            ("models/RAMBlock.h" include nil nil [898 926])
+            ("models/SimpleBus.h" include nil nil [927 956])
+            ("models/BasicUART.h" include nil nil [957 986])
+            ("models/ElfLoader.h" include nil nil [987 1016])
+            ("libPlover.tlm.h" include nil nil [1017 1043])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [1044 1090])
+            ("iostream" include (:system-flag t) nil [1092 1111])
+            ("scx/scx.h" include (:system-flag t) nil [1113 1133])
+            ("scx_simcontroller.cpp" include (:system-flag t) nil [1134 1166])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1167 1203])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1204 1237])
+            ("tlm_bridge.h" include nil nil [1239 1262])
+            ("trickbox.h" include nil nil [1263 1284])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1286 1310])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1324 1333])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1334 1347]))                  
+                :type "int")
+                nil [1312 3577]))          
+      :file "system_test_TEMPLATE.cpp"
+      :pointmax 3578
+      :fsize 3577
+      :lastmodtime '(23449 30227 529141 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "trickbox.h"
+      :file "trickbox.h"
+      :fsize 1065
+      :lastmodtime '(23378 7910 236947 0))
+    (semanticdb-table "trickbox.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("trickbox.h" include nil nil [1 22])
+            ("trickbox_memory.h" include nil nil [23 51])
+            ("trickbox_operation.h" include nil nil [52 83])
+            ("trickbox_uart.h" include nil nil [84 110])
+            ("trickbox_test.h" include nil nil [111 137])
+            ("systemc" include (:system-flag t) nil [139 157])
+            ("algorithm" include (:system-flag t) nil [159 179])
+            ("iterator" include (:system-flag t) nil [180 199])
+            ("memory" include (:system-flag t) nil [200 217])
+            ("utility" include (:system-flag t) nil [218 236])
+            ("std" type
+               (:members 
+                  ( ("make_unique" function
+                       (:arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Args" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [329 336])
+                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [340 345]))                          
+                        :type ("std::unique_ptr" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [298 420]))                  
+                :type "namespace")
+                nil [238 422])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [441 461])
+            ("armmk" type
+               (:members 
+                  ( ("trickbox" function
+                       (:constructor-flag t
+                        :parent "trickbox"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sc_core::sc_module_name" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [590 626])
+                            ("icm" variable (:type ("icm_model_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [627 643]))                          
+                        :type ("trickbox" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [571 931])
+                    ("b_transport" function
+                       (:parent "trickbox"
+                        :arguments 
+                          ( ("gp" variable
+                               (:reference 1
+                                :type ("tlm::tlm_generic_payload" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [960 989])
+                            ("t" variable
+                               (:reference 1
+                                :type ("sc_core::sc_time" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [990 1010]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [933 1562])
+                    ("write" function
+                       (:parent "trickbox"
+                        :arguments 
+                          ( ("address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1585 1602])
+                            ("data_ptr" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1603 1621])
+                            ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1622 1638]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1564 2009]))                  
+                :type "namespace")
+                nil [463 2012]))          
+      :file "trickbox.cpp"
+      :pointmax 2032
+      :fsize 2031
+      :lastmodtime '(23404 20892 377332 0)
+      :unmatched-syntax '((punctuation 338 . 339) (punctuation 337 . 338) (punctuation 336 . 337) (punctuation 335 . 336) (punctuation 294 . 295) (symbol 290 . 294) (punctuation 288 . 289) (punctuation 287 . 288) (punctuation 286 . 287) (TYPENAME 278 . 286) (punctuation 276 . 277) (symbol 275 . 276) (TYPENAME 266 . 274) (punctuation 265 . 266) (TEMPLATE 256 . 264)))
+    (semanticdb-table "autoappgen.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [1264 1274])
+            ("xml.dom.minidom" include nil nil [1275 1297])
+            ("random" include nil nil [1298 1311])
+            ("asmHex" function (:arguments 
+              ( ("val" variable nil (reparse-symbol function_parameters) [1508 1511]))              ) nil [1497 1601])
+            ("removeLeadingDollar" function (:arguments 
+              ( ("val" variable nil (reparse-symbol function_parameters) [1626 1629]))              ) nil [1602 1685])
+            ("RandomData" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("seed" variable nil (reparse-symbol indented_block_body) [2049 2057])
+                            ("strLen" variable nil (reparse-symbol indented_block_body) [2062 2083])
+                            ("strPos" variable nil (reparse-symbol indented_block_body) [2088 2098])
+                            ("while" code nil (reparse-symbol indented_block_body) [2103 2393])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2398 2427])
+                            ("self" code nil (reparse-symbol indented_block_body) [2432 2454]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1885 1889])
+                            ("randStr" variable nil (reparse-symbol function_parameters) [1891 1898]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1872 2455])
+                    ("getData" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2470 2474]))                          )
+                        (reparse-symbol indented_block_body) [2458 2523]))                  
+                :type "class")
+                nil [1851 2523])
+            ("LabelRegManager" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [5633 5665])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5702 5727]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5609 5613])
+                            ("labelPrefix" variable nil (reparse-symbol function_parameters) [5615 5626]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5596 5728])
+                    ("getLabelPrefix" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5779 5783]))                          )
+                        (reparse-symbol indented_block_body) [5760 5816])
+                    ("numLabels" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5833 5837]))                          )
+                        (reparse-symbol indented_block_body) [5819 5873])
+                    ("getLabel" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5916 5920]))                          )
+                        (reparse-symbol indented_block_body) [5903 6036]))                  
+                :type "class")
+                nil [5570 6036])
+            ("LabelRegDataManager" type
+               (:superclasses ("LabelRegManager")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("LabelRegManager" code nil (reparse-symbol indented_block_body) [6787 6830])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6835 6853])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6858 6878]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6757 6761])
+                            ("labelPrefix" variable nil (reparse-symbol function_parameters) [6763 6774])
+                            ("rand" variable nil (reparse-symbol function_parameters) [6776 6780]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [6744 6879])
+                    ("genRandomData" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6937 6941])
+                            ("label" variable nil (reparse-symbol function_parameters) [6943 6948])
+                            ("size" variable nil (reparse-symbol function_parameters) [6950 6954]))                          )
+                        (reparse-symbol indented_block_body) [6919 7190])
+                    ("getRandomData" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7277 7281])
+                            ("label" variable nil (reparse-symbol function_parameters) [7283 7288]))                          )
+                        (reparse-symbol indented_block_body) [7259 7416]))                  
+                :type "class")
+                nil [6697 7416])
+            ("StoreManager" type
+               (:superclasses ("LabelRegDataManager")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("LabelRegDataManager" code nil (reparse-symbol indented_block_body) [7604 7653]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7587 7591])
+                            ("rand" variable nil (reparse-symbol function_parameters) [7593 7597]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [7574 7654])
+                    ("genStoreData" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7751 7755])
+                            ("label" variable nil (reparse-symbol function_parameters) [7757 7762])
+                            ("addr" variable nil (reparse-symbol function_parameters) [7764 7768])
+                            ("size" variable nil (reparse-symbol function_parameters) [7770 7774])
+                            ("outStr" variable nil (reparse-symbol function_parameters) [7776 7782])
+                            ("indent" variable nil (reparse-symbol function_parameters) [7784 7790]))                          )
+                        (reparse-symbol indented_block_body) [7734 10343]))                  
+                :type "class")
+                nil [7530 10343])
+            ("WriteTrack" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [11450 11466]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11439 11443]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [11426 11467])
+                    ("addReg" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11481 11485])
+                            ("reg" variable nil (reparse-symbol function_parameters) [11487 11490]))                          )
+                        (reparse-symbol indented_block_body) [11470 11519])
+                    ("setByteModified" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11542 11546])
+                            ("reg" variable nil (reparse-symbol function_parameters) [11548 11551])
+                            ("offset" variable nil (reparse-symbol function_parameters) [11553 11559])
+                            ("label" variable nil (reparse-symbol function_parameters) [11561 11566])
+                            ("isDebugWrite" variable nil (reparse-symbol function_parameters) [11568 11580]))                          )
+                        (reparse-symbol indented_block_body) [11522 11661])
+                    ("getByteModified" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11743 11747])
+                            ("reg" variable nil (reparse-symbol function_parameters) [11749 11752])
+                            ("offset" variable nil (reparse-symbol function_parameters) [11754 11760]))                          )
+                        (reparse-symbol indented_block_body) [11723 11825])
+                    ("setHalfwordModified" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11852 11856])
+                            ("reg" variable nil (reparse-symbol function_parameters) [11858 11861])
+                            ("offset" variable nil (reparse-symbol function_parameters) [11863 11869])
+                            ("label" variable nil (reparse-symbol function_parameters) [11871 11876])
+                            ("isDebugWrite" variable nil (reparse-symbol function_parameters) [11878 11890]))                          )
+                        (reparse-symbol indented_block_body) [11828 12020])
+                    ("setWordModified" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12043 12047])
+                            ("reg" variable nil (reparse-symbol function_parameters) [12049 12052])
+                            ("offset" variable nil (reparse-symbol function_parameters) [12054 12060])
+                            ("label" variable nil (reparse-symbol function_parameters) [12062 12067])
+                            ("isDebugWrite" variable nil (reparse-symbol function_parameters) [12069 12081]))                          )
+                        (reparse-symbol indented_block_body) [12023 12309])
+                    ("__getEntry" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12327 12331])
+                            ("reg" variable nil (reparse-symbol function_parameters) [12333 12336]))                          )
+                        (reparse-symbol indented_block_body) [12312 12448]))                  
+                :type "class")
+                nil [11405 12448])
+            ("TestGenerator" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [12588 12645])
+                            ("self" variable nil (reparse-symbol indented_block_body) [12650 12684])
+                            ("self" variable nil (reparse-symbol indented_block_body) [12689 12711])
+                            ("self" variable nil (reparse-symbol indented_block_body) [12716 12737])
+                            ("self" variable nil (reparse-symbol indented_block_body) [12742 12763])
+                            ("self" variable nil (reparse-symbol indented_block_body) [12768 12787])
+                            ("self" variable nil (reparse-symbol indented_block_body) [12792 12813])
+                            ("self" variable nil (reparse-symbol indented_block_body) [12818 12840])
+                            ("self" variable nil (reparse-symbol indented_block_body) [12845 12865])
+                            ("self" variable nil (reparse-symbol indented_block_body) [12870 12890])
+                            ("self" variable nil (reparse-symbol indented_block_body) [12895 12921])
+                            ("self" variable nil (reparse-symbol indented_block_body) [12970 13014])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13019 13045])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13050 13075])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13080 13112])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13117 13135])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13140 13163])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13168 13192])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13197 13220])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13225 13250])
+                            ("self" variable nil (reparse-symbol indented_block_body) [14240 14267]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12536 12540])
+                            ("configFilename" variable nil (reparse-symbol function_parameters) [12542 12556])
+                            ("thumbModeEnable" variable nil (reparse-symbol function_parameters) [12558 12573]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [12523 14268])
+                    ("gen" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14301 14305]))                          )
+                        (reparse-symbol indented_block_body) [14293 15452])
+                    ("genHeader" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15766 15770]))                          )
+                        (reparse-symbol indented_block_body) [15752 18287])
+                    ("genCode" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21144 21148])
+                            ("node" variable nil (reparse-symbol function_parameters) [21150 21154])
+                            ("indent" variable nil (reparse-symbol function_parameters) [21163 21169]))                          )
+                        (reparse-symbol indented_block_body) [21132 21725])
+                    ("genFooter" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21742 21746]))                          )
+                        (reparse-symbol indented_block_body) [21728 21781])
+                    ("genAsm" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22690 22694])
+                            ("node" variable nil (reparse-symbol function_parameters) [22696 22700])
+                            ("indent" variable nil (reparse-symbol function_parameters) [22702 22708]))                          )
+                        (reparse-symbol indented_block_body) [22679 22984])
+                    ("genMov" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22998 23002])
+                            ("node" variable nil (reparse-symbol function_parameters) [23004 23008])
+                            ("indent" variable nil (reparse-symbol function_parameters) [23010 23016]))                          )
+                        (reparse-symbol indented_block_body) [22987 23335])
+                    ("genAdd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23349 23353])
+                            ("node" variable nil (reparse-symbol function_parameters) [23355 23359])
+                            ("indent" variable nil (reparse-symbol function_parameters) [23361 23367]))                          )
+                        (reparse-symbol indented_block_body) [23338 23797])
+                    ("genLoop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23813 23817])
+                            ("node" variable nil (reparse-symbol function_parameters) [23819 23823])
+                            ("indent" variable nil (reparse-symbol function_parameters) [23825 23831]))                          )
+                        (reparse-symbol indented_block_body) [23801 24920])
+                    ("genStore" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24941 24945])
+                            ("node" variable nil (reparse-symbol function_parameters) [24947 24951])
+                            ("indent" variable nil (reparse-symbol function_parameters) [24953 24959]))                          )
+                        (reparse-symbol indented_block_body) [24928 27016])
+                    ("genLoad" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27032 27036])
+                            ("node" variable nil (reparse-symbol function_parameters) [27038 27042])
+                            ("indent" variable nil (reparse-symbol function_parameters) [27044 27050]))                          )
+                        (reparse-symbol indented_block_body) [27020 30735]))                  
+                :type "class")
+                nil [12499 30735])
+            ("run" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [43336 43340]))              ) nil [43328 43669])
+            ("if" code nil nil [43670 43717]))          
+      :file "autoappgen.py"
+      :pointmax 43717
+      :fsize 43716
+      :lastmodtime '(23449 28386 378570 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "trickbox_memory.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("trickbox_memory.h" include nil nil [1 29])
+            ("tlm.h" include nil nil [31 47])
+            ("algorithm" include (:system-flag t) nil [49 69])
+            ("array" include (:system-flag t) nil [70 86])
+            ("cstdint" include (:system-flag t) nil [87 105])
+            ("iterator" include (:system-flag t) nil [106 125])
+            ("vector" include (:system-flag t) nil [126 143])
+            ("iomanip" include (:system-flag t) nil [144 162])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [164 184])
+            ("tlm" using (:type ("tlm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [185 205])
+            ("armmk" type
+               (:members 
+                  ( ("get_page" function
+                       (:parent "trickbox_memory"
+                        :arguments 
+                          ( ("page_address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [284 306]))                          
+                        :type ("std::array" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil)
+                                  ("page_size" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [226 665])
+                    ("()" function
+                       (:operator-flag t
+                        :parent "trickbox_memory"
+                        :arguments 
+                          ( ("gp" variable
+                               (:reference 1
+                                :type ("tlm::tlm_generic_payload" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [700 729]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [667 1425])
+                    ("read" function
+                       (:parent "trickbox_memory"
+                        :arguments 
+                          ( ("address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1455 1472])
+                            ("data_ptr" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1473 1491])
+                            ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1492 1508]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1428 2072])
+                    ("write" function
+                       (:parent "trickbox_memory"
+                        :arguments 
+                          ( ("address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2102 2119])
+                            ("data_ptr" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2120 2138])
+                            ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2139 2155]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2074 2742]))                  
+                :type "namespace")
+                nil [207 2744]))          
+      :file "trickbox_memory.cpp"
+      :pointmax 2764
+      :fsize 2763
+      :lastmodtime '(23449 30720 443321 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!Plover!Simulation!SystemC_mem_test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

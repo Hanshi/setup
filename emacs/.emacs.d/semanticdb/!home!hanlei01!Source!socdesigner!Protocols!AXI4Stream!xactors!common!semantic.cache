@@ -1,0 +1,57 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables
+  (list
+    (semanticdb-table "AXI4Stream_SSData.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("AXI4Stream_SSData.h" include nil nil [1 31])
+            ("AXI4Stream_Channel_Port.h" include nil nil [32 68])
+            ("AXI4Stream_Sender_Port.h" include nil nil [69 104])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [106 126])
+            ("AXI4Stream_SSData" function
+               (:constructor-flag t
+                :parent "AXI4Stream_SSData"
+                :arguments 
+                  ( ("_owner" variable
+                       (:pointer 1
+                        :type ("CASIModule" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [164 183])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [184 199])
+                    ("port" variable
+                       (:pointer 1
+                        :type ("casiaxi4stream::AXI4Stream_Sender_PortBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [200 249])
+                    ("sigIdx" variable (:type ("casiaxi4stream::AXI4STREAM_SIGNAL_IDX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [250 295])
+                    ("gChange" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [296 311]))                  
+                :type ("AXI4Stream_SSData" type (:type "class") nil nil))
+                nil [127 373])
+            ("driveSignal" function
+               (:parent "AXI4Stream_SSData"
+                :arguments 
+                  ( ("value" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [411 426])
+                    ("extValue" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [427 446]))                  
+                :type "void")
+                nil [375 814]))          
+      :file "AXI4Stream_SSData.cpp"
+      :pointmax 816
+      :fsize 815
+      :lastmodtime '(22617 57219 143907 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "AXI4Stream_SSData.h"
+      :file "AXI4Stream_SSData.h"
+      :fsize 554
+      :lastmodtime '(22617 57219 145904 0)))
+  :file "!home!hanlei01!Source!socdesigner!Protocols!AXI4Stream!xactors!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,28 @@
+;; Object SystemC_DS5/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC_DS5/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("$(CM_CXX_SYSTEMC_COMMON)" "-g" "-O0" "-DNUM_CPUS=$(CONFIG_CPUS)")) nil [128 190])
+            ("KITE_DIR" variable (:default-value ("./MODELS/Kite/$(MODEL_CONFIG)/gcc/SystemC")) nil [293 346])
+            ("NUM_CPU" variable (:default-value ("$(shell expr match \"$(MODEL_CONFIG)\" \".*\\([1-9]CPU\\)\")")) nil [390 455])
+            ("CONFIG_CPUS" variable (:default-value ("$(shell expr match \"$(MODEL_CONFIG)\" \".*\\([1-9]\\)\")")) nil [455 521])
+            ("$(CM_SYSC_HOME)/makefiles/cm_sysc_common.mak" include nil nil [674 727])
+            ("PMU" variable (:default-value ("True")) nil [728 737])
+            ("system_test_" function (:arguments ("system_test_$(MODEL_CONFIG).o" "KiteResetImp.o" "$(KITE_DIR)/libKite.tlm.a" "$(KITE_DIR)/lib/libKite.icm.so" "$(KITE_DIR)/lib/libicm_runtime.so" "$(FM_LIB)")) nil [737 1269])
+            ("KiteResetImp.o" function (:arguments ("$(KITE_DIR)/KiteResetImp.cpp")) nil [1270 1439])
+            ("system_test_" function (:arguments ("system_test_$(MODEL_CONFIG).cpp")) nil [1460 1666])
+            ("system_test_" function (:arguments ("system_test_$(MODEL_CONFIG).cpp")) nil [1692 1879])
+            ("system_test_" function (:arguments ("system_test_$(MODEL_CONFIG).cpp")) nil [1884 2020])
+            ("clean" function nil nil [2033 2127]))          
+      :file "Makefile"
+      :pointmax 2130
+      :fsize 2129
+      :lastmodtime '(23387 32767 0 0)
+      :unmatched-syntax '((bol 672 . 672) (symbol 381 . 389) (semantic-list 364 . 381) (punctuation 363 . 364) (punctuation 361 . 362) (punctuation 360 . 361) (symbol 347 . 359) (bol 347 . 347))))
+  :file "!home!hanlei01!ModelKits!real_trunk!modelkits!test!cpus!Kite!Simulation!SystemC_DS5!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

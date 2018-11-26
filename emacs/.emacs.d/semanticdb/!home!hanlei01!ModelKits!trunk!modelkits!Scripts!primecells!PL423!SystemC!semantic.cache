@@ -1,0 +1,34 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("LINUX_DIR" variable (:default-value (".")) nil [1 15])
+            ("PACKAGE_LIB_DIR" variable (:default-value ("./lib")) nil [66 90])
+            ("COMP_NAME" variable (:default-value ("$(subst lib,,$(basename $(notdir $(wildcard $(PACKAGE_LIB_DIR)/lib*.a))))")) nil [188 274])
+            ("clean" function nil nil [275 300])
+            ("gen_code" function nil nil [301 311])
+            ("Makefile.internal" include nil nil [330 356])
+            ("CXX" variable (:default-value ("g++")) nil [419 427])
+            ("CXXFLAGS" variable (:default-value ("-fPIC" "-g" "-DCARBON_DUMP_VCD=0" "-std=c++11" "-I$(SYSTEMC_HOME)/include" "-I$(CARBON_HOME)/include" "$(CM_SYSC_CXXFLAGS)" "-I." "-I$(LINUX_DIR)" "-DGENERATE_SLAVE_PORTS=1")) nil [428 641])
+            ("OBJS" variable (:default-value ("$(COMP_NAME)Imp.o" "lib$(COMP_NAME).systemc.o")) nil [642 700])
+            ("all" function (:arguments ("lib$(COMP_NAME).so")) nil [701 725])
+            ("lib" function (:arguments ("$(OBJS)")) nil [726 1123])
+            ("$(COMP_NAME)" function (:arguments ("gen_code")) nil [1125 1155])
+            ("$(COMP_NAME)" function (:arguments ("$(COMP_NAME)Imp.cpp")) nil [1156 1228])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp" "gen_code")) nil [1229 1325]))          
+      :file "Makefile"
+      :pointmax 1326
+      :fsize 1325
+      :lastmodtime '(22786 3285 732883 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile.internal"
+      :file "Makefile.internal"
+      :fsize 1965
+      :lastmodtime '(22778 22495 692244 0)))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!Scripts!primecells!PL423!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

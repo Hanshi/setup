@@ -1,0 +1,48 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "AXI4_Master_Port.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("AXI4_MASTER_PORT__H" variable (:constant-flag t) nil [410 429])
+            ("AXI4PortIF.h" include nil nil [431 454])
+            ("ProtocolUtils.h" include nil nil [455 481])
+            ("casiaxi4" type
+               (:members 
+                  ( ("AXI_Sender_PortBase" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [505 531])
+                    ("AXI_Receiver_PortBase" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [532 560])
+                    ("AXI_Signal_Sender_Port" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [562 591])
+                    ("AXI_Signal_Receiver_Port" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [592 623])
+                    ("AXIPortIF" variable (:type "int") (reparse-symbol namespacesubparts) [864 8242]))                  
+                :type "namespace")
+                nil [483 8244]))          
+      :file "AXI4_Master_Port.h"
+      :pointmax 8305
+      :fsize 8304
+      :lastmodtime '(22246 65486 742521 0)
+      :unmatched-syntax '((PUBLIC 857 . 863) (punctuation 855 . 856) (symbol 832 . 855) (PUBLIC 825 . 831) (punctuation 823 . 824) (symbol 806 . 822) (symbol 796 . 805) (CLASS 790 . 795))
+      :lexical-table 
+        '(("AXI4_MASTER_PORT__H")
+          )
+)
+    (semanticdb-table "AXI4PortIF.h"
+      :file "AXI4PortIF.h"
+      :fsize 2501
+      :lastmodtime '(22246 65486 734516 0)))
+  :file "!mnt!home!hlei!source!socdesigner!Protocols!AXI4!ports!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

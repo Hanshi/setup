@@ -1,0 +1,216 @@
+;; Object CortexR7/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "CortexR7/"
+  :tables
+  (list
+    (semanticdb-table "CarbonMemSystem.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_CARBONCORTEXR7L1MEMSYSTEM_H_" variable (:constant-flag t) nil [557 586])
+            ("map" include (:system-flag t) nil [588 602])
+            ("string" include (:system-flag t) nil [603 620])
+            ("stddef.h" include nil nil [621 640])
+            ("carbon/carbon_capi.h" include nil nil [641 672])
+            ("carbon/CarbonCADITypes.h" include nil nil [673 708])
+            ("cpus/CarbonTransTableEntry.h" include nil nil [709 748])
+            ("common/carbon_mkversion.h" include nil nil [749 785])
+            ("common/CarbonComponentHelper.h" include nil nil [786 827])
+            ("ArchRestoreHandlerIF.h" include nil nil [828 861])
+            ("CarbonComponentHelperIF" type
+               (:prototype t
+                :type "class")
+                nil [888 918])
+            ("CARBON_MKLIB_NAMESPACE" type
+               (:members 
+                  ( ("CarbonComponentHelper" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [958 986])
+                    ("CARBONMKLIBRARYCORTEXR7" type
+                       (:members 
+                          ( ("TCM" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1027 1037])
+                            ("DataCache" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1040 1056])
+                            ("CarbonMemSystem" type
+                               (:superclasses 
+                                  ( ("Carbon::ArchRestoreHandlerIF::ArchRestoreHandlerIF" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1148 1155])
+                                    ("CarbonMemSystem" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("compHelper" variable
+                                               (:pointer 1
+                                                :type ("CarbonComponentHelperIF" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1344 1380])
+                                            ("procInst" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1382 1400])
+                                            ("cadi" variable
+                                               (:pointer 1
+                                                :type ("eslapi::CADI" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1424 1443])
+                                            ("mem_system_idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1444 1472])
+                                            ("sctlr_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1495 1517])
+                                            ("rgnr_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1518 1535])
+                                            ("drbar_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1536 1554])
+                                            ("drsr_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1555 1572])
+                                            ("dracr_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1573 1591]))                                          
+                                        :type ("CarbonMemSystem" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1328 1592])
+                                    ("CarbonMemSystem" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1619 1638])
+                                    ("createTCM" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1671 1688])
+                                    ("createCache" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1723 1742])
+                                    ("isTCMEnabled" function
+                                       (:prototype-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1814 1834])
+                                    ("getTcmData" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("tag_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1924 1946]))                                          
+                                        :type ("CarbonUInt8" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1901 1947])
+                                    ("read" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2016 2033])
+                                            ("tag_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2049 2071])
+                                            ("bytes" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2087 2106])
+                                            ("buf" variable
+                                               (:pointer 1
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2122 2135]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2006 2136])
+                                    ("write" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("idx_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2212 2234])
+                                            ("tag_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2251 2273])
+                                            ("bytes" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2290 2309])
+                                            ("buf" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2326 2345]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2201 2346])
+                                    ("restore" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("name" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2391 2415])
+                                            ("stream" variable
+                                               (:reference 1
+                                                :type ("Carbon::ArchRestoreHandlerIF::RestoreArchStream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2416 2472]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2379 2473])
+                                    ("restoreRegisters" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("stream" variable
+                                               (:reference 1
+                                                :type ("Carbon::ArchRestoreHandlerIF::RestoreArchStream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2529 2585])
+                                            ("numMPUReg" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2586 2605]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2508 2606])
+                                    ("regWrite" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("reg" variable
+                                               (:reference 1
+                                                :type ("eslapi::CADIReg_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2625 2648])
+                                            ("val" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2649 2662]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2611 2663])
+                                    ("ObtainInterface" function
+                                       (:pointer 1
+                                        :arguments 
+                                          ( ("ifName" variable (:type ("eslapi::if_name_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2699 2724])
+                                            ("minRev" variable (:type ("eslapi::if_rev_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2724 2748])
+                                            ("actualRev" variable
+                                               (:pointer 1
+                                                :type ("eslapi::if_rev_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2748 2776]))                                          
+                                        :type ("CAInterface" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2669 2821])
+                                    ("setTcmData" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("tag_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2879 2901])
+                                            ("memdata" variable
+                                               (:pointer 1
+                                                :type ("CarbonUInt8" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2902 2923]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2863 2924])
+                                    ("mDoesTCMExist" variable (:type "bool") (reparse-symbol classsubparts) [2929 2948])
+                                    ("protected" label nil (reparse-symbol classsubparts) [2951 2961])
+                                    ("mCompHelper" variable
+                                       (:pointer 1
+                                        :type ("CARBON_MKLIB_NAMESPACE::CarbonComponentHelper" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2966 3029])
+                                    ("mCarbonObj" variable
+                                       (:pointer 1
+                                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3034 3093])
+                                    ("mTcmPresent" variable (:type "bool") (reparse-symbol classsubparts) [3098 3116])
+                                    ("mCachePresent" variable (:type "bool") (reparse-symbol classsubparts) [3121 3141])
+                                    ("mSCTLRReg" variable (:type ("eslapi::CADIReg_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3147 3208])
+                                    ("mRGNRReg" variable (:type ("eslapi::CADIReg_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3213 3273])
+                                    ("mDRBARReg" variable (:type ("eslapi::CADIReg_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3278 3339])
+                                    ("mDRSRReg" variable (:type ("eslapi::CADIReg_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3344 3404])
+                                    ("mDRACRReg" variable (:type ("eslapi::CADIReg_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3409 3470])
+                                    ("mMemSystemIdx" variable (:type "unsigned int") (reparse-symbol classsubparts) [3475 3540])
+                                    ("mProcInst" variable (:type "unsigned int") (reparse-symbol classsubparts) [3545 3606])
+                                    ("mcpuNum" variable (:type "unsigned int") (reparse-symbol classsubparts) [3611 3670])
+                                    ("mTCM" variable
+                                       (:pointer 1
+                                        :type ("TCM" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3675 3731])
+                                    ("mCache" variable
+                                       (:pointer 1
+                                        :type ("DataCache" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3737 3795]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1060 3801]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [988 3831]))                  
+                :type "namespace")
+                nil [920 3872]))          
+      :file "CarbonMemSystem.h"
+      :pointmax 3944
+      :fsize 3943
+      :lastmodtime '(22100 57315 0 0)
+      :unmatched-syntax '((punctuation 3831 . 3832))
+      :lexical-table 
+        '(("_CARBONCORTEXR7L1MEMSYSTEM_H_")
+          )
+))
+  :file "!home!hlei!modelkit!modelkits!src!include!cpus!CortexR7!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

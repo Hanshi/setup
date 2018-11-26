@@ -1,0 +1,654 @@
+;; Object icm_impl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "icm_impl/"
+  :tables
+  (list
+    (semanticdb-table "ICMModel.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("fmt/format.h" include nil nil [52 75])
+            ("icm/api/icm_memory.h" include nil nil [76 107])
+            ("icm/runtime/api_registry.h" include nil nil [108 145])
+            ("icm_impl/api_utils.h" include nil nil [146 177])
+            ("icm_impl/Model.h" include nil nil [178 205])
+            ("icm_impl/component_description.h" include nil nil [206 249])
+            ("icm_impl/cpp14.h" include nil nil [250 277])
+            ("icm_impl/debug_controller.h" include nil nil [278 316])
+            ("icm_impl/exceptions.h" include nil nil [317 349])
+            ("icm_impl/icm_logger.h" include nil nil [350 382])
+            ("icm_impl/icm_model.h" include nil nil [383 414])
+            ("icm_impl/memory/Memory.h" include nil nil [415 450])
+            ("icm_impl/memory/memory_api.h" include nil nil [451 490])
+            ("icm_impl/meta_file_parser.h" include nil nil [491 529])
+            ("icm_impl/model_info.h" include nil nil [530 562])
+            ("icm_impl/disassembler/disassembler_api.h" include nil nil [563 614])
+            ("icm_impl/disassembler/Disassembler.h" include nil nil [615 662])
+            ("icm_impl/exceptions.h" include nil nil [663 695])
+            ("icm_impl/registers/register.h" include nil nil [696 736])
+            ("icm_impl/registers/register_api.h" include nil nil [737 781])
+            ("icm_impl/registers/register_description.h" include nil nil [782 834])
+            ("icm_impl/registers/registers_from_descriptions.h" include nil nil [835 894])
+            ("icm_impl/memory/memory_port_api.h" include nil nil [895 939])
+            ("icm_impl/memory/MemoryPort.h" include nil nil [940 979])
+            ("pugixml.hpp" include nil nil [980 1002])
+            ("boost/current_function.hpp" include (:system-flag t) nil [1004 1041])
+            ("cassert" include (:system-flag t) nil [1042 1060])
+            ("iostream" include (:system-flag t) nil [1061 1080])
+            ("memory" include (:system-flag t) nil [1081 1098])
+            ("string" include (:system-flag t) nil [1099 1116])
+            ("vector" include (:system-flag t) nil [1117 1134])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1135 1155])
+            ("fmt" using (:type ("fmt" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1156 1176])
+            ("pugi" using (:type ("pugi" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1177 1198])
+            ("icm_impl" type
+               (:members 
+                  ( ("impl" type
+                       (:parent "ICMModel"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1498 1505])
+                            ("impl" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("model" variable
+                                       (:pointer 1
+                                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1513 1535])
+                                    ("back_pointer" variable
+                                       (:pointer 1
+                                        :type ("ICMModel" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1536 1559]))                                  
+                                :type ("impl" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1508 1777])
+                            ("impl" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1780 1928])
+                            ("init_registers" function
+                               (:arguments 
+                                  ( ("node" variable (:type ("xml_node" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2143 2157]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2123 2639])
+                            ("init_registers" function
+                               (:arguments 
+                                  ( ("component" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ComponentDescription" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2663 2701]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2643 2987])
+                            ("init_tarmac" function
+                               (:arguments 
+                                  ( ("tarmac_paths" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3069 3114])
+                                    ("create_function" variable (:type ("tarmac_create" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3135 3165])
+                                    ("destroy_function" variable (:type ("tarmac_destroy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3186 3218]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3051 4386])
+                            ("get_mem_port" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4488 4507]))                                  
+                                :type ("MemoryPort" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4462 4940])
+                            ("init_memory_ports" function
+                               (:arguments 
+                                  ( ("component" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ComponentDescription" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5074 5112]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5051 5923])
+                            ("init_memories" function
+                               (:arguments 
+                                  ( ("component" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ComponentDescription" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5946 5984]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5927 6934])
+                            ("init_from_component_description" function
+                               (:arguments 
+                                  ( ("component" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ComponentDescription" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6975 7013])
+                                    ("memory_ports" variable (:type ("shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("vector" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [7054 7110]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6938 9648])
+                            ("number_children" function (:type "int") (reparse-symbol classsubparts) [9697 9772])
+                            ("child_at" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [9970 9980]))                                  
+                                :type ("ICMModel" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9951 10025])
+                            ("debug_controller" function
+                               (:pointer 1
+                                :type ("DebugController" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10029 10107])
+                            ("get_RTL_tag_paths" function
+                               (:arguments 
+                                  ( ("tagName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10229 10250]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [10185 10339])
+                            ("reset_done" function (:type "void") (reparse-symbol classsubparts) [10405 10631])
+                            ("public" label nil (reparse-symbol classsubparts) [10633 10640])
+                            ("m_cycle_model" variable
+                               (:pointer 1
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10643 10673])
+                            ("m_model" variable (:type ("Model" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10676 10690])
+                            ("m_owner" variable
+                               (:pointer 1
+                                :type ("ICMModel" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10693 10711])
+                            ("m_children" variable (:type ("vector" type
+                                 (:template-specifier 
+                                    ( ("unique_ptr" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [10714 10754])
+                            ("m_registers" variable (:type ("vector" type
+                                 (:template-specifier 
+                                    ( ("unique_ptr" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [10757 10798])
+                            ("m_disasm" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("Disassembler" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [10801 10840])
+                            ("m_hdl_path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10902 10925])
+                            ("m_error_api" variable (:type ("unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("icm_api_error_t" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [11053 11093])
+                            ("m_info_api" variable (:type ("unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("icm_api_model_info_t" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [11096 11140])
+                            ("m_control_api" variable (:type ("unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("icm_api_control_t" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [11143 11187])
+                            ("m_register_api" variable (:type ("unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("icm_api_registers_t" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [11190 11237])
+                            ("m_mem_ports_api" variable (:type ("unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("icm_api_memory_ports_t" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [11240 11291])
+                            ("m_memory_api" variable (:type ("unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("icm_api_memory_t" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [11294 11336])
+                            ("m_disasm_api" variable (:type ("unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("icm_api_disasm_t" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [11339 11381])
+                            ("m_name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11385 11399])
+                            ("m_description" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11402 11423])
+                            ("m_id" variable (:type "int") (reparse-symbol classsubparts) [11426 11435])
+                            ("m_property" variable (:type ("std::map" type
+                                 (:template-specifier 
+                                    ( ("string" type nil nil nil)
+                                      ("string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [11438 11475])
+                            ("m_debug_controller" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("DebugController" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [11479 11531])
+                            ("m_memories" variable (:type ("vector" type
+                                 (:template-specifier 
+                                    ( ("unique_ptr" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [11535 11573])
+                            ("m_memory_ports" variable (:type ("shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("vector" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [11576 11634])
+                            ("private" label nil (reparse-symbol classsubparts) [11638 11646])
+                            ("m_tarmac_cores" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("void" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [11649 11683])
+                            ("m_tarmac_destroy_function" variable (:type ("tarmac_destroy" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11686 11727]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1475 11730])
+                    ("ICMModel" function
+                       (:constructor-flag t
+                        :parent "ICMModel"
+                        :arguments 
+                          ( ("model" variable
+                               (:pointer 1
+                                :type ("CarbonObjectID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11769 11791]))                          
+                        :type ("ICMModel" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11750 11841])
+                    ("ICMModel" function
+                       (:destructor-flag t
+                        :parent "ICMModel"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11843 11968])
+                    ("register_count" function
+                       (:parent "ICMModel"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [12018 12114])
+                    ("get_memory_ports_count" function
+                       (:parent "ICMModel"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12160 12165]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12118 12223])
+                    ("get_memory_port_info" function
+                       (:parent "ICMModel"
+                        :arguments 
+                          ( ("index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12263 12278])
+                            ("name" variable
+                               (:pointer 2
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [12318 12336])
+                            ("desc" variable
+                               (:pointer 2
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [12337 12355]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12227 12711])
+                    ("set_memory_port_read_handler" function
+                       (:parent "ICMModel"
+                        :arguments 
+                          ( ("index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12758 12773])
+                            ("client_context" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [12774 12795])
+                            ("callback" variable (:type ("icm_memory_port_read_handler_fn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12843 12884]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12714 13398])
+                    ("set_memory_port_write_handler" function
+                       (:parent "ICMModel"
+                        :arguments 
+                          ( ("index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13446 13461])
+                            ("client_context" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [13462 13483])
+                            ("callback" variable (:type ("icm_memory_port_write_handler_fn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13532 13574]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [13401 14265])
+                    ("get_register" function
+                       (:pointer 1
+                        :parent "ICMModel"
+                        :arguments 
+                          ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [14355 14365]))                          
+                        :type ("Register" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14322 14458])
+                    ("get_cycle_model" function
+                       (:pointer 1
+                        :parent "ICMModel"
+                        :type ("CarbonObjectID" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14460 14546])
+                    ("get_model" function
+                       (:parent "ICMModel"
+                        :type ("Model" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14547 14609])
+                    ("get_RTL_tag_paths" function
+                       (:parent "ICMModel"
+                        :arguments 
+                          ( ("tagName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14737 14758]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [14683 14822])
+                    ("reset_done" function
+                       (:parent "ICMModel"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14824 14880])
+                    ("debug_controller" function
+                       (:pointer 1
+                        :parent "ICMModel"
+                        :type ("DebugController" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14882 14981])
+                    ("get_property" function
+                       (:pointer 1
+                        :parent "ICMModel"
+                        :constant-flag t
+                        :arguments 
+                          ( ("prop_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [15020 15042]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [14985 15285])
+                    ("set_property" function
+                       (:parent "ICMModel"
+                        :arguments 
+                          ( ("prop_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [15344 15366])
+                            ("prop_value" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [15367 15390]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [15317 15534])
+                    ("get_disasm_mode_count" function
+                       (:parent "ICMModel"
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [15537 15710])
+                    ("get_disasm_mode_info" function
+                       (:pointer 1
+                        :parent "ICMModel"
+                        :constant-flag t
+                        :arguments 
+                          ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [15758 15768]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [15714 15938])
+                    ("get_disasm_current_mode" function
+                       (:parent "ICMModel"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15983 15988]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [15940 16430])
+                    ("disassemble" function
+                       (:parent "ICMModel"
+                        :arguments 
+                          ( ("index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16459 16474])
+                            ("space" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16502 16517])
+                            ("addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16518 16532])
+                            ("opcode" variable
+                               (:pointer 2
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [16560 16580])
+                            ("disassembly" variable
+                               (:pointer 2
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [16608 16633])
+                            ("next_addr" variable
+                               (:pointer 1
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16661 16681]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [16432 18005])
+                    ("translate_IndexToDisasmMode" function
+                       (:parent "ICMModel"
+                        :arguments 
+                          ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [18049 18059]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [18007 18452])
+                    ("translate_DisasmModeToIndex" function
+                       (:parent "ICMModel"
+                        :arguments 
+                          ( ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [18496 18505]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [18454 18871])
+                    ("create_debug_controller" function
+                       (:parent "ICMModel"
+                        :arguments 
+                          ( ("component_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19046 19075])
+                            ("hdl_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19110 19133]))                          
+                        :type ("std::unique_ptr" type
+                             (:template-specifier 
+                                ( ("icm_impl::DebugController" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [18969 19195])
+                    ("create_child_model" function
+                       (:parent "ICMModel"
+                        :arguments 
+                          ( ("parent" variable
+                               (:pointer 1
+                                :type ("ICMModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19347 19364]))                          
+                        :type ("std::unique_ptr" type
+                             (:template-specifier 
+                                ( ("ICMModel" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [19292 19426])
+                    ("create_user_defined_memory" function
+                       (:parent "ICMModel"
+                        :arguments 
+                          ( ("desc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MemoryDescription" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19756 19786]))                          
+                        :type ("std::unique_ptr" type
+                             (:template-specifier 
+                                ( ("icm_impl::Memory" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [19683 19854])
+                    ("init_from_meta_xml" function
+                       (:parent "ICMModel"
+                        :arguments 
+                          ( ("meta_data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [19949 19971])
+                            ("meta_data_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19972 19994]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [19915 20508])
+                    ("init_from_meta_xml" function
+                       (:parent "ICMModel"
+                        :arguments 
+                          ( ("doc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pugi::xml_document" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20594 20624]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [20560 20764])
+                    ("init_from_serialized_description" function
+                       (:parent "ICMModel"
+                        :arguments 
+                          ( ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [20867 20884])
+                            ("meta_data_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20933 20955]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [20819 21313])
+                    ("init_tarmac" function
+                       (:parent "ICMModel"
+                        :arguments 
+                          ( ("tarmac_prefix" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21441 21467])
+                            ("create_function" variable (:type ("tarmac_create" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21496 21526])
+                            ("destroy_function" variable (:type ("tarmac_destroy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21554 21586]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [21414 22013])
+                    ("number_children" function
+                       (:parent "ICMModel"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [22054 22130])
+                    ("child_at" function
+                       (:pointer 1
+                        :parent "ICMModel"
+                        :arguments 
+                          ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [22191 22201]))                          
+                        :type ("ICMModel" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [22162 22283])
+                    ("name" function
+                       (:parent "ICMModel"
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [22318 22380])
+                    ("description" function
+                       (:parent "ICMModel"
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [22422 22498])
+                    ("id" function
+                       (:parent "ICMModel"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [22555 22605])
+                    ("add_register" function
+                       (:parent "ICMModel"
+                        :arguments 
+                          ( ("reg" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("Register" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [22690 22720]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22662 22774])
+                    ("get_register_by_name" function
+                       (:pointer 1
+                        :parent "ICMModel"
+                        :arguments 
+                          ( ("name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22817 22829]))                          
+                        :type ("Register" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [22776 23089])
+                    ("get_register_by_id" function
+                       (:pointer 1
+                        :parent "ICMModel"
+                        :arguments 
+                          ( ("id" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23130 23140]))                          
+                        :type ("Register" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [23091 23394])
+                    ("get_cpsr" function
+                       (:pointer 1
+                        :parent "ICMModel"
+                        :typemodifiers ("inline")
+                        :type ("Register" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [23396 23615])
+                    ("get_memory_count" function
+                       (:parent "ICMModel"
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [23664 23771])
+                    ("get_memory_info" function
+                       (:parent "ICMModel"
+                        :arguments 
+                          ( ("index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23812 23827])
+                            ("name" variable
+                               (:pointer 2
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [23828 23846])
+                            ("desc" variable
+                               (:pointer 2
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [23886 23904])
+                            ("start" variable
+                               (:pointer 1
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23905 23921])
+                            ("end" variable
+                               (:pointer 1
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23961 23975])
+                            ("mem_attr" variable
+                               (:pointer 1
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23976 23995]))                          
+                        :type ("icm_memory_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [23773 24713])
+                    ("get_mem_port" function
+                       (:pointer 1
+                        :parent "ICMModel"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24753 24772]))                          
+                        :type ("MemoryPort" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [24717 24820]))                  
+                :type "namespace")
+                nil [1200 24823]))          
+      :file "ICMModel.cpp"
+      :pointmax 24824
+      :fsize 24823
+      :lastmodtime '(23142 19830 280955 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "api_utils.h"
+      :file "api_utils.h"
+      :fsize 1623
+      :lastmodtime '(23142 19830 341976 0))
+    (semanticdb-table "Model.h"
+      :file "Model.h"
+      :fsize 1135
+      :lastmodtime '(23142 19830 328962 0))
+    (semanticdb-table "component_description.h"
+      :file "component_description.h"
+      :fsize 5154
+      :lastmodtime '(23142 19830 431958 0))
+    (semanticdb-table "icm_logger.h"
+      :file "icm_logger.h"
+      :fsize 1391
+      :lastmodtime '(23142 19831 857965 0))
+    (semanticdb-table "meta_file_parser.h"
+      :file "meta_file_parser.h"
+      :fsize 240
+      :lastmodtime '(23142 19832 40956 0))
+    (semanticdb-table "model_info.h"
+      :file "model_info.h"
+      :fsize 288
+      :lastmodtime '(23142 19832 78963 0)))
+  :file "!home!hanlei01!Source!icm!src!icm_impl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,919 @@
+;; Object cmm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cmm/"
+  :tables
+  (list
+    (semanticdb-table "main.cxx"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("util/CarbonPlatform.h" include nil nil [539 571])
+            ("QtGui/QApplication" include (:system-flag t) nil [573 602])
+            ("QtGui" include (:system-flag t) nil [603 619])
+            ("cmm.h" include nil nil [620 636])
+            ("gui/CQt.h" include nil nil [637 657])
+            ("CQtWizardContext.h" include nil nil [658 687])
+            ("util/CarbonVersion.h" include nil nil [688 719])
+            ("util/CarbonHome.h" include nil nil [721 749])
+            ("util/OSWrapper.h" include nil nil [750 777])
+            ("gDisableCarbonMemSystem" variable
+               (:typemodifiers ("extern")
+                :type "bool")
+                nil [779 815])
+            ("gCarbonMemSystemIsInitialized" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "bool")
+                nil [816 860])
+            ("gCarbonVersion" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [861 897])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [908 917])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [918 931]))                  
+                :type "int")
+                nil [899 4125]))          
+      :file "main.cxx"
+      :pointmax 4126
+      :fsize 4125
+      :lastmodtime '(22018 53282 835183 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "cmm.h"
+      :file "cmm.h"
+      :fsize 8709
+      :lastmodtime '(21827 60761 495892 0))
+    (semanticdb-table "cmm.cxx"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("util/CarbonPlatform.h" include nil nil [539 571])
+            ("cmm.h" include nil nil [573 589])
+            ("QWorkspace" include (:system-flag t) nil [591 612])
+            ("QSignalMapper" include (:system-flag t) nil [613 637])
+            ("QtGui" include (:system-flag t) nil [638 654])
+            ("CQtWizardContext.h" include nil nil [656 685])
+            ("util/ArgProc.h" include nil nil [686 711])
+            ("util/CarbonVersion.h" include nil nil [712 743])
+            ("util/UtShellTok.h" include nil nil [744 772])
+            ("gui/CQt.h" include nil nil [773 793])
+            ("Mdi.h" include nil nil [794 810])
+            ("MdiTextEditor.h" include nil nil [811 837])
+            ("MdiProject.h" include nil nil [838 861])
+            ("MdiCoware.h" include nil nil [862 884])
+            ("MdiMaxsim.h" include nil nil [885 907])
+            ("MdiSystemC.h" include nil nil [908 931])
+            ("MdiDirectives.h" include nil nil [932 958])
+            ("MdiRuntime.h" include nil nil [959 982])
+            ("MdiOnDemandTrace.h" include nil nil [983 1012])
+            ("MdiMV.h" include nil nil [1013 1031])
+            ("MdiMemoryMaps.h" include nil nil [1032 1058])
+            ("MdiRegisterEditor.h" include nil nil [1059 1089])
+            ("MdiPackageTool.h" include nil nil [1090 1117])
+            ("MdiPlugin.h" include nil nil [1118 1140])
+            ("MdiWebView.h" include nil nil [1141 1164])
+            ("QTextEditor.h" include nil nil [1165 1189])
+            ("CarbonMakerContext.h" include nil nil [1190 1221])
+            ("CarbonProjectWidget.h" include nil nil [1222 1254])
+            ("CarbonProject.h" include nil nil [1255 1281])
+            ("RichOutputWindow.h" include nil nil [1282 1311])
+            ("SettingsEditor.h" include nil nil [1312 1339])
+            ("SettingsContainer.h" include nil nil [1340 1370])
+            ("Config.h" include nil nil [1371 1390])
+            ("DlgNewProject.h" include nil nil [1391 1417])
+            ("DlgPreferences.h" include nil nil [1418 1445])
+            ("PropertyEditor.h" include nil nil [1446 1473])
+            ("RemoteConsole.h" include nil nil [1474 1500])
+            ("CarbonConsole.h" include nil nil [1501 1527])
+            ("ErrorInfoWidget.h" include nil nil [1528 1556])
+            ("ProjectWidget.h" include nil nil [1557 1583])
+            ("WorkspaceModelMaker.h" include nil nil [1584 1616])
+            ("CarbonFiles.h" include nil nil [1617 1641])
+            ("ProcessTree.h" include nil nil [1642 1666])
+            ("DlgDriveMappings.h" include nil nil [1667 1696])
+            ("DlgPreferences.h" include nil nil [1697 1724])
+            ("SpiritXML.h" include nil nil [1725 1747])
+            ("DlgFindInFiles.h" include nil nil [1748 1775])
+            ("ModelKitWizard.h" include nil nil [1776 1803])
+            ("CarbonConsole.h" include nil nil [1805 1831])
+            ("ScrCcfg.h" include nil nil [1832 1852])
+            ("ScrProject.h" include nil nil [1853 1876])
+            ("ScrCarbonDB.h" include nil nil [1877 1901])
+            ("ScrApplication.h" include nil nil [1902 1929])
+            ("DesignXML.h" include nil nil [1930 1952])
+            ("ScriptingEngine.h" include nil nil [1954 1982])
+            ("JavaScriptAPIs.h" include nil nil [1983 2010])
+            ("EmbeddedMono.h" include nil nil [2012 2037])
+            ("cmmLogFile" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("QFile" type (:type "class") nil nil))
+                nil [2706 2731])
+            ("sLogFilePath" variable (:type ("QString" type (:type "class") nil nil)) nil [2732 2753])
+            ("theApp" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("cmm" type (:type "class") nil nil))
+                nil [2754 2773])
+            ("gCarbonVersion" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [2774 2810])
+            ("replaceSubstring" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type ("UtString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2836 2850])
+                    ("oldStr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2851 2870])
+                    ("newStr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2871 2890]))                  
+                :type ("UInt32" type (:type "class") nil nil))
+                nil [2812 3107])
+            ("isBatchMode" function
+               (:parent "cmm"
+                :type "bool")
+                nil [3109 3176])
+            ("replaceWithVar" function
+               (:arguments 
+                  ( ("absPath" variable
+                       (:reference 1
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3198 3215])
+                    ("varName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3216 3239])
+                    ("varPath" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3240 3263]))                  
+                :type "bool")
+                nil [3178 3442])
+            ("setEnvironment" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3553 3573])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3574 3595]))                  
+                :type "void")
+                nil [3528 3692])
+            ("normalizePath" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("absolutePath" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3722 3750]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [3695 4495])
+            ("expandPath" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("normalizedPath" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4521 4551]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [4497 5901])
+            ("removeVariable" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("varName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5928 5951]))                  
+                :type "void")
+                nil [5903 5983])
+            ("removeAllEnvironmentVariables" function
+               (:parent "cmm"
+                :type "void")
+                nil [5985 6131])
+            ("lookupVariable" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("var" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6161 6180]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [6133 6262])
+            ("getEnvVariable" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("index" variable (:type ("quint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6292 6306]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [6264 6345])
+            ("addEnvVar" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("varName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6367 6390]))                  
+                :type "void")
+                nil [6347 6469])
+            ("cmmRenameAndTrimLogs" function
+               (:arguments 
+                  ( ("homePath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6497 6518]))                  
+                :type "void")
+                nil [6471 7861])
+            ("cmmMessageOutput" function
+               (:arguments 
+                  ( ("type" variable (:type ("QtMsgType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7888 7903])
+                    ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7904 7920]))                  
+                :type "void")
+                nil [7866 8985])
+            ("shutdown" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("exitCode" variable (:type "int") (reparse-symbol arg-sub-list) [9006 9019]))                  
+                :type "void")
+                nil [8987 9100])
+            ("onShutdown" function
+               (:parent "cmm"
+                :type "void")
+                nil [9102 10561])
+            ("showEvent" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("QShowEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10584 10599]))                  
+                :type "void")
+                nil [10564 10632])
+            ("closeTab" function
+               (:parent "cmm"
+                :type "void")
+                nil [10635 10883])
+            ("openRecent" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10906 10927]))                  
+                :type "void")
+                nil [10885 11505])
+            ("openRecentFile" function
+               (:parent "cmm"
+                :type "void")
+                nil [11507 12110])
+            ("strippedName" function
+               (:arguments 
+                  ( ("fullFileName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12133 12161]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [12112 12210])
+            ("updateRecentFileActions" function
+               (:parent "cmm"
+                :type "void")
+                nil [12212 12907])
+            ("updateRecentFile" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("fileName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12936 12957])
+                    ("removeFile" variable (:type "bool") (reparse-symbol arg-sub-list) [12958 12974]))                  
+                :type "void")
+                nil [12909 13526])
+            ("projectModified" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [13554 13565]))                  
+                :type "void")
+                nil [13528 13597])
+            ("checkArgument" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("argument" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13623 13647]))                  
+                :type "bool")
+                nil [13599 13906])
+            ("argumentValue" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("argument" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13935 13959]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [13908 14377])
+            ("checkArgument" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("argument" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14404 14425]))                  
+                :type "bool")
+                nil [14380 14831])
+            ("loadBuiltinPage" function
+               (:parent "cmm"
+                :type "void")
+                nil [14833 15296])
+            ("loadFinished" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("result" variable (:type "bool") (reparse-symbol arg-sub-list) [15321 15333]))                  
+                :type "void")
+                nil [15298 15577])
+            ("urlChanged" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("url" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QUrl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15602 15620]))                  
+                :type "void")
+                nil [15580 15660])
+            ("loadProgress" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("progress" variable (:type "int") (reparse-symbol arg-sub-list) [15686 15699]))                  
+                :type "void")
+                nil [15663 15739])
+            ("loadStarted" function
+               (:parent "cmm"
+                :type "void")
+                nil [15741 15797])
+            ("statusBarMessage" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15826 15845]))                  
+                :type "void")
+                nil [15799 15883])
+            ("cmm" function
+               (:constructor-flag t
+                :parent "cmm"
+                :arguments 
+                  ( ("cqt" variable
+                       (:pointer 1
+                        :type ("CQtWizardContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15895 15917])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15918 15934])
+                    ("flags" variable (:type ("Qt::WFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15935 15952]))                  
+                :type ("cmm" type (:type "class") nil nil))
+                nil [15886 33651])
+            ("getArgumentPath" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("arg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33682 33701])
+                    ("foundValue" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [33702 33719]))                  
+                :type ("QString" type (:type "class") nil nil))
+                nil [33653 34144])
+            ("apiPreparationFinished" function
+               (:parent "cmm"
+                :type "void")
+                nil [34146 34312])
+            ("tabSelected" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [34336 34346]))                  
+                :type "void")
+                nil [34314 34665])
+            ("windowActivated" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("win" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34693 34706]))                  
+                :type "void")
+                nil [34667 34976])
+            ("processArguments" function
+               (:parent "cmm"
+                :type "void")
+                nil [34978 39537])
+            ("maybeShowWizard" function
+               (:parent "cmm"
+                :type "void")
+                nil [39539 39728])
+            ("eventFilter" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39752 39765])
+                    ("ev" variable
+                       (:pointer 1
+                        :type ("QEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39766 39777]))                  
+                :type "bool")
+                nil [39730 40201])
+            ("closeEvent" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("QCloseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40224 40243]))                  
+                :type "void")
+                nil [40203 42323])
+            ("compilationModeChanged" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("inProgress" variable (:type "bool") (reparse-symbol arg-sub-list) [42358 42374]))                  
+                :type "void")
+                nil [42325 42519])
+            ("cmm" function
+               (:destructor-flag t
+                :parent "cmm"
+                :type "void")
+                nil [42521 42557])
+            ("on_actionExit_triggered" function
+               (:parent "cmm"
+                :type "void")
+                nil [42559 42625])
+            ("getCmmVersionString" function
+               (:typemodifiers ("inline")
+                :type ("QString" type (:type "class") nil nil))
+                nil [42627 42799])
+            ("setProjectRemoteParams" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("remoteWorkingDir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42834 42863])
+                    ("remoteUsername" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42864 42891])
+                    ("remoteServer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42892 42917])
+                    ("remoteCarbonHome" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42918 42947])
+                    ("remotePrefix" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42948 42973]))                  
+                :type "void")
+                nil [42801 43568])
+            ("createEmptyProject" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("projDir" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43599 43622])
+                    ("projName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43623 43647]))                  
+                :type "void")
+                nil [43570 44064])
+            ("on_actionNewProject_triggered" function
+               (:parent "cmm"
+                :type "void")
+                nil [44066 50363])
+            ("createModelKitProject" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("modelKitDir" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50397 50424])
+                    ("projName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50425 50449])
+                    ("fileName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50450 50474]))                  
+                :type "void")
+                nil [50365 51408])
+            ("on_actionOpenProject_triggered" function
+               (:parent "cmm"
+                :type "void")
+                nil [51410 52050])
+            ("on_actionNewFile_triggered" function
+               (:parent "cmm"
+                :type "void")
+                nil [52052 53865])
+            ("openProjectFile" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("projectFile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [53893 53917]))                  
+                :type "void")
+                nil [53867 54247])
+            ("on_actionFileOpen_triggered" function
+               (:parent "cmm"
+                :type "void")
+                nil [54249 54956])
+            ("findDockWidget" function
+               (:pointer 1
+                :parent "cmm"
+                :arguments 
+                  ( ("name" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54991 55004]))                  
+                :type ("QDockWidget" type (:type "class") nil nil))
+                nil [54958 55222])
+            ("actionResetWindows" function
+               (:parent "cmm"
+                :type "void")
+                nil [55224 56004])
+            ("on_actionFind_in_Files_triggered" function
+               (:parent "cmm"
+                :type "void")
+                nil [56006 56255])
+            ("on_actionPreferences_triggered" function
+               (:parent "cmm"
+                :type "void")
+                nil [56258 56346])
+            ("on_actionDriveMappings_triggered" function
+               (:parent "cmm"
+                :type "void")
+                nil [56348 56440])
+            ("createActions" function
+               (:parent "cmm"
+                :type "void")
+                nil [56442 59539])
+            ("dumpModelKit" function
+               (:parent "cmm"
+                :type "void")
+                nil [59541 60389])
+            ("showKitWizard" function
+               (:parent "cmm"
+                :type "void")
+                nil [60391 60823])
+            ("showDocs" function
+               (:parent "cmm"
+                :type "void")
+                nil [60825 61330])
+            ("showDocs2" function
+               (:parent "cmm"
+                :type "void")
+                nil [61332 61859])
+            ("createMenus" function
+               (:parent "cmm"
+                :type "void")
+                nil [61861 62793])
+            ("dockVisibilityChanged" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [62828 62833]))                  
+                :type "void")
+                nil [62796 63028])
+            ("toggleDockWindow" function
+               (:parent "cmm"
+                :type "void")
+                nil [63030 63439])
+            ("registerDockWidget" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("QDockWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63470 63490])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [63491 63508])
+                    ("shortCut" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [63509 63530]))                  
+                :type "void")
+                nil [63441 64002])
+            ("updateMenus" function
+               (:parent "cmm"
+                :type "void")
+                nil [64004 64348])
+            ("readSettings" function
+               (:parent "cmm"
+                :type "void")
+                nil [64349 64904])
+            ("writeSettings" function
+               (:parent "cmm"
+                :type "void")
+                nil [64906 65390])
+            ("updateWindowMenu" function
+               (:parent "cmm"
+                :type "void")
+                nil [65391 66547])
+            ("abortApplication" function
+               (:parent "cmm"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66576 66595])
+                    ("exitCode" variable (:type "int") (reparse-symbol arg-sub-list) [66596 66609]))                  
+                :type "void")
+                nil [66549 66666])
+            ("about" function
+               (:parent "cmm"
+                :type "void")
+                nil [66668 68455])
+            ("createTextEditor" function
+               (:pointer 1
+                :parent "cmm"
+                :type ("QTextEditor" type (:type "class") nil nil))
+                nil [68458 68666])
+            ("activeMdiWindow" function
+               (:pointer 1
+                :parent "cmm"
+                :type ("MDIWidget" type (:type "class") nil nil))
+                nil [68668 68796])
+            ("findTextEditor" function
+               (:pointer 1
+                :parent "cmm"
+                :arguments 
+                  ( ("fileName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68831 68855]))                  
+                :type ("QTextEditor" type (:type "class") nil nil))
+                nil [68798 69270])
+            ("printHandler" function
+               (:parent "ModelStudioAbort"
+                :arguments 
+                  ( ("abortMsg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [69308 69329]))                  
+                :type "void")
+                nil [69272 69614])
+            ("abortHandler" function
+               (:parent "ModelStudioAbort"
+                :type "void")
+                nil [69616 69706]))          
+      :file "cmm.cxx"
+      :pointmax 70046
+      :fsize 70045
+      :lastmodtime '(22018 53281 824206 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Mdi.h"
+      :file "Mdi.h"
+      :fsize 7896
+      :lastmodtime '(21827 60778 729745 0))
+    (semanticdb-table "MdiTextEditor.h"
+      :file "MdiTextEditor.h"
+      :fsize 1713
+      :lastmodtime '(21827 60782 645488 0))
+    (semanticdb-table "MdiProject.h"
+      :file "MdiProject.h"
+      :fsize 4276
+      :lastmodtime '(21827 60783 785410 0))
+    (semanticdb-table "MdiCoware.h"
+      :file "MdiCoware.h"
+      :fsize 666
+      :lastmodtime '(21827 60779 286700 0))
+    (semanticdb-table "MdiMaxsim.h"
+      :file "MdiMaxsim.h"
+      :fsize 779
+      :lastmodtime '(21827 60752 987420 0))
+    (semanticdb-table "MdiSystemC.h"
+      :file "MdiSystemC.h"
+      :fsize 705
+      :lastmodtime '(21827 60754 211356 0))
+    (semanticdb-table "MdiDirectives.h"
+      :file "MdiDirectives.h"
+      :fsize 788
+      :lastmodtime '(21827 60791 966873 0))
+    (semanticdb-table "MdiRuntime.h"
+      :file "MdiRuntime.h"
+      :fsize 2488
+      :lastmodtime '(21827 60784 453371 0))
+    (semanticdb-table "MdiOnDemandTrace.h"
+      :file "MdiOnDemandTrace.h"
+      :fsize 1252
+      :lastmodtime '(21827 60780 235637 0))
+    (semanticdb-table "MdiMV.h"
+      :file "MdiMV.h"
+      :fsize 733
+      :lastmodtime '(21827 60793 514771 0))
+    (semanticdb-table "MdiMemoryMaps.h"
+      :file "MdiMemoryMaps.h"
+      :fsize 697
+      :lastmodtime '(21827 60752 933426 0))
+    (semanticdb-table "MdiRegisterEditor.h"
+      :file "MdiRegisterEditor.h"
+      :fsize 707
+      :lastmodtime '(21827 60791 809873 0))
+    (semanticdb-table "MdiPackageTool.h"
+      :file "MdiPackageTool.h"
+      :fsize 1304
+      :lastmodtime '(21827 60768 236445 0))
+    (semanticdb-table "MdiPlugin.h"
+      :file "MdiPlugin.h"
+      :fsize 639
+      :lastmodtime '(21827 60791 917884 0))
+    (semanticdb-table "MdiWebView.h"
+      :file "MdiWebView.h"
+      :fsize 1579
+      :lastmodtime '(21827 60793 360776 0))
+    (semanticdb-table "QTextEditor.h"
+      :file "QTextEditor.h"
+      :fsize 3237
+      :lastmodtime '(21827 60751 755518 0))
+    (semanticdb-table "CarbonMakerContext.h"
+      :file "CarbonMakerContext.h"
+      :fsize 6278
+      :lastmodtime '(21827 60767 818478 0))
+    (semanticdb-table "CarbonProjectWidget.h"
+      :file "CarbonProjectWidget.h"
+      :fsize 11590
+      :lastmodtime '(21827 60793 274793 0))
+    (semanticdb-table "CarbonProject.h"
+      :file "CarbonProject.h"
+      :fsize 14422
+      :lastmodtime '(21827 60784 150382 0))
+    (semanticdb-table "RichOutputWindow.h"
+      :file "RichOutputWindow.h"
+      :fsize 475
+      :lastmodtime '(21827 60751 487537 0))
+    (semanticdb-table "SettingsEditor.h"
+      :file "SettingsEditor.h"
+      :fsize 1222
+      :lastmodtime '(21827 60791 472932 0))
+    (semanticdb-table "SettingsContainer.h"
+      :file "SettingsContainer.h"
+      :fsize 107
+      :lastmodtime '(21827 60782 924465 0))
+    (semanticdb-table "Config.h"
+      :file "Config.h"
+      :fsize 879
+      :lastmodtime '(21827 60752 187473 0))
+    (semanticdb-table "DlgNewProject.h"
+      :file "DlgNewProject.h"
+      :fsize 2099
+      :lastmodtime '(21827 60752 218497 0))
+    (semanticdb-table "DlgPreferences.h"
+      :file "DlgPreferences.h"
+      :fsize 2879
+      :lastmodtime '(21827 60778 479755 0))
+    (semanticdb-table "PropertyEditor.h"
+      :file "PropertyEditor.h"
+      :fsize 3996
+      :lastmodtime '(21827 60783 213466 0))
+    (semanticdb-table "RemoteConsole.h"
+      :file "RemoteConsole.h"
+      :fsize 4004
+      :lastmodtime '(21827 60752 364474 0))
+    (semanticdb-table "CarbonConsole.h"
+      :file "CarbonConsole.h"
+      :fsize 7633
+      :lastmodtime '(21827 60760 172951 0))
+    (semanticdb-table "ErrorInfoWidget.h"
+      :file "ErrorInfoWidget.h"
+      :fsize 861
+      :lastmodtime '(21827 60761 976858 0))
+    (semanticdb-table "ProjectWidget.h"
+      :file "ProjectWidget.h"
+      :fsize 786
+      :lastmodtime '(21827 60760 602926 0))
+    (semanticdb-table "WorkspaceModelMaker.h"
+      :file "WorkspaceModelMaker.h"
+      :fsize 1134
+      :lastmodtime '(21827 60747 624794 0))
+    (semanticdb-table "CarbonFiles.h"
+      :file "CarbonFiles.h"
+      :fsize 2994
+      :lastmodtime '(21827 60761 719855 0))
+    (semanticdb-table "ProcessTree.h"
+      :file "ProcessTree.h"
+      :fsize 437
+      :lastmodtime '(21827 60752 97502 0))
+    (semanticdb-table "DlgDriveMappings.h"
+      :file "DlgDriveMappings.h"
+      :fsize 644
+      :lastmodtime '(21827 60767 867460 0))
+    (semanticdb-table "SpiritXML.h"
+      :file "SpiritXML.h"
+      :fsize 38217
+      :lastmodtime '(21827 60760 281961 0))
+    (semanticdb-table "DlgFindInFiles.h"
+      :file "DlgFindInFiles.h"
+      :fsize 3652
+      :lastmodtime '(21827 60778 455769 0))
+    (semanticdb-table "ModelKitWizard.h"
+      :file "ModelKitWizard.h"
+      :fsize 4072
+      :lastmodtime '(21827 60784 119374 0))
+    (semanticdb-table "ScrCcfg.h"
+      :file "ScrCcfg.h"
+      :fsize 72239
+      :lastmodtime '(21827 60753 173434 0))
+    (semanticdb-table "ScrProject.h"
+      :file "ScrProject.h"
+      :fsize 3239
+      :lastmodtime '(21827 60751 783511 0))
+    (semanticdb-table "ScrCarbonDB.h"
+      :file "ScrCarbonDB.h"
+      :fsize 10123
+      :lastmodtime '(21827 60791 266933 0))
+    (semanticdb-table "ScrApplication.h"
+      :file "ScrApplication.h"
+      :fsize 5210
+      :lastmodtime '(21827 60752 784454 0))
+    (semanticdb-table "DesignXML.h"
+      :file "DesignXML.h"
+      :fsize 34247
+      :lastmodtime '(21827 60782 28538 0))
+    (semanticdb-table "ScriptingEngine.h"
+      :file "ScriptingEngine.h"
+      :fsize 3453
+      :lastmodtime '(21827 60760 220965 0))
+    (semanticdb-table "JavaScriptAPIs.h"
+      :file "JavaScriptAPIs.h"
+      :fsize 6070
+      :lastmodtime '(21827 60760 860932 0))
+    (semanticdb-table "EmbeddedMono.h"
+      :file "EmbeddedMono.h"
+      :fsize 1858
+      :lastmodtime '(21827 60781 503548 0)))
+  :file "!mnt!home!hlei!source!cms_trunk_source!cbuild!src!cmm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

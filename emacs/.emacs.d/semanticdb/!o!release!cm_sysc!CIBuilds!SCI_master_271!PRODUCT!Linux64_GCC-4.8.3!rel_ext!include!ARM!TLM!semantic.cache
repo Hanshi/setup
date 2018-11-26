@@ -1,0 +1,1769 @@
+;; Object TLM/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "TLM/"
+  :tables
+  (list
+    (semanticdb-table "arm_tlm_protocol.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ARM_TLM_PROTOCOL_H" variable (:constant-flag t) nil [922 940])
+            ("ARM" type
+               (:members 
+                  ( ("TLM" type
+                       (:members 
+                          ( ("Protocol" type
+                               (:members 
+                                  ( ("PROTOCOL_ACE" variable
+                                       (:constant-flag t
+                                        :default-value (1071 1072)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1047 1072])
+                                    ("PROTOCOL_ACE_LITE" variable
+                                       (:constant-flag t
+                                        :default-value (1102 1103)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1078 1103])
+                                    ("PROTOCOL_ACE_LITE_DVM" variable
+                                       (:constant-flag t
+                                        :default-value (1133 1134)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1109 1134])
+                                    ("PROTOCOL_AXI4" variable
+                                       (:constant-flag t
+                                        :default-value (1164 1165)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1140 1165])
+                                    ("PROTOCOL_AXI4_LITE" variable
+                                       (:constant-flag t
+                                        :default-value (1195 1196)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1171 1196])
+                                    ("PROTOCOL_CHI" variable
+                                       (:constant-flag t
+                                        :default-value (1226 1227)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1202 1227])
+                                    ("PROTOCOL_CHIE" variable
+                                       (:constant-flag t
+                                        :default-value (1290 1291)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1266 1291])
+                                    ("PROTOCOL_OTHER" variable
+                                       (:constant-flag t
+                                        :default-value (1439 1442)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1415 1442]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [1027 1445]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [958 1448]))                  
+                :type "namespace")
+                nil [942 1450]))          
+      :file "arm_tlm_protocol.h"
+      :pointmax 1481
+      :fsize 1480
+      :lastmodtime '(23424 27255 809553 631000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ARM_TLM_PROTOCOL_H")
+          )
+)
+    (semanticdb-table "arm_axi4_payload.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ARM_AXI4_PAYLOAD_H" variable (:constant-flag t) nil [922 940])
+            ("stdint.h" include (:system-flag t) nil [942 961])
+            ("cstddef" include (:system-flag t) nil [962 980])
+            ("iostream" include (:system-flag t) nil [981 1000])
+            ("arm_tlm_helpers.h" include nil nil [1002 1030])
+            ("ARM" type
+               (:members 
+                  ( ("AXI4" type
+                       (:members 
+                          ( ("ARM_AXI4_TLM_API_VERSION" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1074 1098])
+                            ("ARM_AXI4_TLM_API_1" type
+                               (:members 
+                                  ( ("ARM_AXI4_TLM_API_1" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("ARM_AXI4_TLM_API_1" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1150 1177]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1118 1179])
+                            ("api_version_check" variable
+                               (:typemodifiers ("static")
+                                :type ("ARM_AXI4_TLM_API_1" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1180 1230])
+                            ("CommandEnum" type
+                               (:members 
+                                  ( ("COMMAND_READ" variable
+                                       (:constant-flag t
+                                        :default-value (1501 1502)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1485 1502])
+                                    ("COMMAND_WRITE" variable
+                                       (:constant-flag t
+                                        :default-value (1524 1525)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1508 1525])
+                                    ("COMMAND_SNOOP" variable
+                                       (:constant-flag t
+                                        :default-value (1547 1548)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1531 1548]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [1462 1551])
+                            ("SizeEnum" type
+                               (:members 
+                                  ( ("SIZE_1" variable
+                                       (:constant-flag t
+                                        :default-value (1766 1767)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1755 1767])
+                                    ("SIZE_2" variable
+                                       (:constant-flag t
+                                        :default-value (1784 1785)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1773 1785])
+                                    ("SIZE_4" variable
+                                       (:constant-flag t
+                                        :default-value (1802 1803)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1791 1803])
+                                    ("SIZE_8" variable
+                                       (:constant-flag t
+                                        :default-value (1820 1821)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1809 1821])
+                                    ("SIZE_16" variable
+                                       (:constant-flag t
+                                        :default-value (1838 1839)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1827 1839])
+                                    ("SIZE_32" variable
+                                       (:constant-flag t
+                                        :default-value (1856 1857)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1845 1857])
+                                    ("SIZE_64" variable
+                                       (:constant-flag t
+                                        :default-value (1874 1875)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1863 1875])
+                                    ("SIZE_128" variable
+                                       (:constant-flag t
+                                        :default-value (1892 1893)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1881 1893]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [1735 1896])
+                            ("BurstEnum" type
+                               (:members 
+                                  ( ("BURST_FIXED" variable
+                                       (:constant-flag t
+                                        :default-value (1995 1996)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1981 1996])
+                                    ("BURST_INCR" variable
+                                       (:constant-flag t
+                                        :default-value (2016 2017)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2002 2017])
+                                    ("BURST_WRAP" variable
+                                       (:constant-flag t
+                                        :default-value (2037 2038)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2023 2038]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [1960 2041])
+                            ("LockEnum" type
+                               (:members 
+                                  ( ("LOCK_NORMAL" variable
+                                       (:constant-flag t
+                                        :default-value (2141 2142)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2124 2142])
+                                    ("LOCK_EXCLUSIVE" variable
+                                       (:constant-flag t
+                                        :default-value (2165 2166)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2148 2166])
+                                    ("LOCK_LOCKED" variable
+                                       (:constant-flag t
+                                        :default-value (2189 2190)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2172 2190]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [2104 2210])
+                            ("CacheEnum" type
+                               (:members 
+                                  ( ("CACHE_AW_NA_NOA_NM_NB" variable
+                                       (:constant-flag t
+                                        :default-value (2705 2708)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2681 2708])
+                                    ("CACHE_AW_NA_NOA_NM_B" variable
+                                       (:constant-flag t
+                                        :default-value (2738 2741)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2714 2741])
+                                    ("CACHE_AW_NA_NOA_M_NB" variable
+                                       (:constant-flag t
+                                        :default-value (2771 2774)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2747 2774])
+                                    ("CACHE_AW_NA_NOA_M_B" variable
+                                       (:constant-flag t
+                                        :default-value (2804 2807)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2780 2807])
+                                    ("CACHE_AW_NA_OA_NM_NB" variable
+                                       (:constant-flag t
+                                        :default-value (2837 2840)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2813 2840])
+                                    ("CACHE_AW_NA_OA_NM_B" variable
+                                       (:constant-flag t
+                                        :default-value (2870 2873)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2846 2873])
+                                    ("CACHE_AW_NA_OA_M_NB" variable
+                                       (:constant-flag t
+                                        :default-value (2903 2906)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2879 2906])
+                                    ("CACHE_AW_NA_OA_M_B" variable
+                                       (:constant-flag t
+                                        :default-value (2936 2939)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2912 2939])
+                                    ("CACHE_AW_A_NOA_NM_NB" variable
+                                       (:constant-flag t
+                                        :default-value (2969 2972)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2945 2972])
+                                    ("CACHE_AW_A_NOA_NM_B" variable
+                                       (:constant-flag t
+                                        :default-value (3002 3005)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2978 3005])
+                                    ("CACHE_AW_A_NOA_M_NB" variable
+                                       (:constant-flag t
+                                        :default-value (3035 3038)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3011 3038])
+                                    ("CACHE_AW_A_NOA_M_B" variable
+                                       (:constant-flag t
+                                        :default-value (3068 3071)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3044 3071])
+                                    ("CACHE_AW_A_OA_NM_NB" variable
+                                       (:constant-flag t
+                                        :default-value (3101 3104)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3077 3104])
+                                    ("CACHE_AW_A_OA_NM_B" variable
+                                       (:constant-flag t
+                                        :default-value (3134 3137)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3110 3137])
+                                    ("CACHE_AW_A_OA_M_NB" variable
+                                       (:constant-flag t
+                                        :default-value (3167 3170)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3143 3170])
+                                    ("CACHE_AW_A_OA_M_B" variable
+                                       (:constant-flag t
+                                        :default-value (3200 3203)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3176 3203])
+                                    ("CACHE_AR_NOA_NA_NM_NB" variable
+                                       (:constant-flag t
+                                        :default-value (3256 3259)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3232 3259])
+                                    ("CACHE_AR_NOA_NA_NM_B" variable
+                                       (:constant-flag t
+                                        :default-value (3289 3292)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3265 3292])
+                                    ("CACHE_AR_NOA_NA_M_NB" variable
+                                       (:constant-flag t
+                                        :default-value (3322 3325)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3298 3325])
+                                    ("CACHE_AR_NOA_NA_M_B" variable
+                                       (:constant-flag t
+                                        :default-value (3355 3358)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3331 3358])
+                                    ("CACHE_AR_NOA_A_NM_NB" variable
+                                       (:constant-flag t
+                                        :default-value (3388 3391)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3364 3391])
+                                    ("CACHE_AR_NOA_A_NM_B" variable
+                                       (:constant-flag t
+                                        :default-value (3421 3424)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3397 3424])
+                                    ("CACHE_AR_NOA_A_M_NB" variable
+                                       (:constant-flag t
+                                        :default-value (3454 3457)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3430 3457])
+                                    ("CACHE_AR_NOA_A_M_B" variable
+                                       (:constant-flag t
+                                        :default-value (3487 3490)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3463 3490])
+                                    ("CACHE_AR_OA_NA_NM_NB" variable
+                                       (:constant-flag t
+                                        :default-value (3520 3523)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3496 3523])
+                                    ("CACHE_AR_OA_NA_NM_B" variable
+                                       (:constant-flag t
+                                        :default-value (3553 3556)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3529 3556])
+                                    ("CACHE_AR_OA_NA_M_NB" variable
+                                       (:constant-flag t
+                                        :default-value (3586 3589)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3562 3589])
+                                    ("CACHE_AR_OA_NA_M_B" variable
+                                       (:constant-flag t
+                                        :default-value (3619 3622)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3595 3622])
+                                    ("CACHE_AR_OA_A_NM_NB" variable
+                                       (:constant-flag t
+                                        :default-value (3652 3655)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3628 3655])
+                                    ("CACHE_AR_OA_A_NM_B" variable
+                                       (:constant-flag t
+                                        :default-value (3685 3688)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3661 3688])
+                                    ("CACHE_AR_OA_A_M_NB" variable
+                                       (:constant-flag t
+                                        :default-value (3718 3721)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3694 3721])
+                                    ("CACHE_AR_OA_A_M_B" variable
+                                       (:constant-flag t
+                                        :default-value (3751 3754)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3727 3754])
+                                    ("CACHE_AW_DEVICE_NB" variable
+                                       (:constant-flag t
+                                        :default-value (3867 3888)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3838 3888])
+                                    ("CACHE_AW_DEVICE_B" variable
+                                       (:constant-flag t
+                                        :default-value (3933 3953)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3904 3953])
+                                    ("CACHE_AW_NORMAL_NC_NB" variable
+                                       (:constant-flag t
+                                        :default-value (3999 4019)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3970 4019])
+                                    ("CACHE_AW_NORMAL_NC_B" variable
+                                       (:constant-flag t
+                                        :default-value (4065 4084)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4036 4084])
+                                    ("CACHE_AW_WRITE_THROUGH_NA" variable
+                                       (:constant-flag t
+                                        :default-value (4131 4150)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4102 4150])
+                                    ("CACHE_AW_WRITE_THROUGH_RA" variable
+                                       (:constant-flag t
+                                        :default-value (4197 4216)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4168 4216])
+                                    ("CACHE_AW_WRITE_THROUGH_WA" variable
+                                       (:constant-flag t
+                                        :default-value (4263 4281)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4234 4281])
+                                    ("CACHE_AW_WRITE_THROUGH_RWA" variable
+                                       (:constant-flag t
+                                        :default-value (4329 4347)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4300 4347])
+                                    ("CACHE_AW_WRITE_BACK_NA" variable
+                                       (:constant-flag t
+                                        :default-value (4395 4413)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4366 4413])
+                                    ("CACHE_AW_WRITE_BACK_RA" variable
+                                       (:constant-flag t
+                                        :default-value (4461 4479)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4432 4479])
+                                    ("CACHE_AW_WRITE_BACK_WA" variable
+                                       (:constant-flag t
+                                        :default-value (4527 4544)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4498 4544])
+                                    ("CACHE_AW_WRITE_BACK_RWA" variable
+                                       (:constant-flag t
+                                        :default-value (4593 4610)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4564 4610])
+                                    ("CACHE_AR_DEVICE_NB" variable
+                                       (:constant-flag t
+                                        :default-value (4681 4702)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4652 4702])
+                                    ("CACHE_AR_DEVICE_B" variable
+                                       (:constant-flag t
+                                        :default-value (4747 4767)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4718 4767])
+                                    ("CACHE_AR_NORMAL_NC_NB" variable
+                                       (:constant-flag t
+                                        :default-value (4813 4833)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4784 4833])
+                                    ("CACHE_AR_NORMAL_NC_B" variable
+                                       (:constant-flag t
+                                        :default-value (4879 4898)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4850 4898])
+                                    ("CACHE_AR_WRITE_THROUGH_NA" variable
+                                       (:constant-flag t
+                                        :default-value (4945 4964)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4916 4964])
+                                    ("CACHE_AR_WRITE_THROUGH_RA" variable
+                                       (:constant-flag t
+                                        :default-value (5011 5029)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4982 5029])
+                                    ("CACHE_AR_WRITE_THROUGH_WA" variable
+                                       (:constant-flag t
+                                        :default-value (5077 5096)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5048 5096])
+                                    ("CACHE_AR_WRITE_THROUGH_RWA" variable
+                                       (:constant-flag t
+                                        :default-value (5143 5161)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5114 5161])
+                                    ("CACHE_AR_WRITE_BACK_NA" variable
+                                       (:constant-flag t
+                                        :default-value (5209 5227)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5180 5227])
+                                    ("CACHE_AR_WRITE_BACK_RA" variable
+                                       (:constant-flag t
+                                        :default-value (5275 5292)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5246 5292])
+                                    ("CACHE_AR_WRITE_BACK_WA" variable
+                                       (:constant-flag t
+                                        :default-value (5341 5359)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5312 5359])
+                                    ("CACHE_AR_WRITE_BACK_RWA" variable
+                                       (:constant-flag t
+                                        :default-value (5407 5424)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5378 5424]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [2350 5442])
+                            ("CacheBitEnum" type
+                               (:members 
+                                  ( ("CACHE_AW_A" variable
+                                       (:constant-flag t
+                                        :default-value (5541 5542)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5527 5542])
+                                    ("CACHE_AW_OA" variable
+                                       (:constant-flag t
+                                        :default-value (5590 5591)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5576 5591])
+                                    ("CACHE_AW_M" variable
+                                       (:constant-flag t
+                                        :default-value (5653 5654)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5639 5654])
+                                    ("CACHE_AW_B" variable
+                                       (:constant-flag t
+                                        :default-value (5698 5699)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5684 5699])
+                                    ("CACHE_AR_OA" variable
+                                       (:constant-flag t
+                                        :default-value (5767 5768)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5753 5768])
+                                    ("CACHE_AR_A" variable
+                                       (:constant-flag t
+                                        :default-value (5830 5831)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5816 5831])
+                                    ("CACHE_AR_M" variable
+                                       (:constant-flag t
+                                        :default-value (5877 5878)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5863 5878])
+                                    ("CACHE_AR_B" variable
+                                       (:constant-flag t
+                                        :default-value (5921 5922)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5907 5922]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [5479 5949])
+                            ("ProtEnum" type
+                               (:members 
+                                  ( ("PROT_D_S_UP" variable
+                                       (:constant-flag t
+                                        :default-value (6091 6092)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6076 6092])
+                                    ("PROT_D_S_P" variable
+                                       (:constant-flag t
+                                        :default-value (6113 6114)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6098 6114])
+                                    ("PROT_D_NS_UP" variable
+                                       (:constant-flag t
+                                        :default-value (6135 6136)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6120 6136])
+                                    ("PROT_D_NS_P" variable
+                                       (:constant-flag t
+                                        :default-value (6157 6158)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6142 6158])
+                                    ("PROT_I_S_UP" variable
+                                       (:constant-flag t
+                                        :default-value (6179 6180)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6164 6180])
+                                    ("PROT_I_S_P" variable
+                                       (:constant-flag t
+                                        :default-value (6201 6202)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6186 6202])
+                                    ("PROT_I_NS_UP" variable
+                                       (:constant-flag t
+                                        :default-value (6223 6224)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6208 6224])
+                                    ("PROT_I_NS_P" variable
+                                       (:constant-flag t
+                                        :default-value (6245 6246)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6230 6246]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [6056 6249])
+                            ("ProtBitEnum" type
+                               (:members 
+                                  ( ("PROT_P" variable
+                                       (:constant-flag t
+                                        :default-value (6318 6319)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6308 6319])
+                                    ("PROT_NS" variable
+                                       (:constant-flag t
+                                        :default-value (6352 6353)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6342 6353])
+                                    ("PROT_I" variable
+                                       (:constant-flag t
+                                        :default-value (6386 6387)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6376 6387]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [6285 6415])
+                            ("RespEnum" type
+                               (:members 
+                                  ( ("RESP_OKAY" variable
+                                       (:constant-flag t
+                                        :default-value (6548 6549)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6534 6549])
+                                    ("RESP_EXOKAY" variable
+                                       (:constant-flag t
+                                        :default-value (6569 6570)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6555 6570])
+                                    ("RESP_SLVERR" variable
+                                       (:constant-flag t
+                                        :default-value (6590 6591)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6576 6591])
+                                    ("RESP_DECERR" variable
+                                       (:constant-flag t
+                                        :default-value (6611 6612)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6597 6612])
+                                    ("RESP_INCONSISTENT" variable
+                                       (:constant-flag t
+                                        :default-value (6804 6808)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6784 6808]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [6514 6811])
+                            ("RespBitEnum" type
+                               (:members 
+                                  ( ("RESP_DATA_TRANSFER" variable
+                                       (:constant-flag t
+                                        :default-value (6888 6892)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6867 6892])
+                                    ("RESP_ERROR" variable
+                                       (:constant-flag t
+                                        :default-value (6919 6923)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6898 6923])
+                                    ("RESP_DIRTY" variable
+                                       (:constant-flag t
+                                        :default-value (6950 6954)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6929 6954])
+                                    ("RESP_SHARED" variable
+                                       (:constant-flag t
+                                        :default-value (6981 6985)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6960 6985])
+                                    ("RESP_WAS_UNIQUE" variable
+                                       (:constant-flag t
+                                        :default-value (7012 7016)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6991 7016])
+                                    ("RESP_R_BASE_MASK" variable
+                                       (:constant-flag t
+                                        :default-value (7153 7184)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7134 7184]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [6844 7187])
+                            ("DomainEnum" type
+                               (:members 
+                                  ( ("DOMAIN_NSH" variable
+                                       (:constant-flag t
+                                        :default-value (7287 7288)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7274 7288])
+                                    ("DOMAIN_ISH" variable
+                                       (:constant-flag t
+                                        :default-value (7307 7308)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7294 7308])
+                                    ("DOMAIN_OSH" variable
+                                       (:constant-flag t
+                                        :default-value (7327 7328)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7314 7328])
+                                    ("DOMAIN_SYS" variable
+                                       (:constant-flag t
+                                        :default-value (7347 7348)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7334 7348]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [7252 7351])
+                            ("BarEnum" type
+                               (:members 
+                                  ( ("BAR_NORM" variable
+                                       (:constant-flag t
+                                        :default-value (7445 7446)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7432 7446])
+                                    ("BAR_MEMBAR" variable
+                                       (:constant-flag t
+                                        :default-value (7465 7466)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7452 7466])
+                                    ("BAR_IGNORE" variable
+                                       (:constant-flag t
+                                        :default-value (7485 7486)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7472 7486])
+                                    ("BAR_SYNC" variable
+                                       (:constant-flag t
+                                        :default-value (7505 7506)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7492 7506]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [7413 7509])
+                            ("SnoopEnum" type
+                               (:members 
+                                  ( ("SNOOP_AW_WRITE_NO_SNOOP" variable
+                                       (:constant-flag t
+                                        :default-value (7662 7665)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7627 7665])
+                                    ("SNOOP_AW_WRITE_UNIQUE" variable
+                                       (:constant-flag t
+                                        :default-value (7706 7709)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7671 7709])
+                                    ("SNOOP_AW_BARRIER" variable
+                                       (:constant-flag t
+                                        :default-value (7750 7753)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7715 7753])
+                                    ("SNOOP_AW_WRITE_LINE_UNIQUE" variable
+                                       (:constant-flag t
+                                        :default-value (7794 7797)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7759 7797])
+                                    ("SNOOP_AW_WRITE_CLEAN" variable
+                                       (:constant-flag t
+                                        :default-value (7838 7841)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7803 7841])
+                                    ("SNOOP_AW_WRITE_BACK" variable
+                                       (:constant-flag t
+                                        :default-value (7882 7885)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7847 7885])
+                                    ("SNOOP_AW_EVICT" variable
+                                       (:constant-flag t
+                                        :default-value (7926 7929)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7891 7929])
+                                    ("SNOOP_AW_WRITE_EVICT" variable
+                                       (:constant-flag t
+                                        :default-value (7970 7973)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7935 7973])
+                                    ("SNOOP_AW_WRITE_UNIQUE_PTL_STASH" variable
+                                       (:constant-flag t
+                                        :default-value (8014 8017)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [7979 8017])
+                                    ("SNOOP_AW_WRITE_UNIQUE_FULL_STASH" variable
+                                       (:constant-flag t
+                                        :default-value (8058 8061)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8023 8061])
+                                    ("SNOOP_AW_STASH_ONCE_SHARED" variable
+                                       (:constant-flag t
+                                        :default-value (8102 8105)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8067 8105])
+                                    ("SNOOP_AW_STASH_ONCE_UNIQUE" variable
+                                       (:constant-flag t
+                                        :default-value (8146 8149)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8111 8149])
+                                    ("SNOOP_AW_STASH_TRANSACTION" variable
+                                       (:constant-flag t
+                                        :default-value (8190 8193)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8155 8193])
+                                    ("SNOOP_AR_READ_NO_SNOOP" variable
+                                       (:constant-flag t
+                                        :default-value (8267 8270)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8232 8270])
+                                    ("SNOOP_AR_READ_ONCE" variable
+                                       (:constant-flag t
+                                        :default-value (8311 8314)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8276 8314])
+                                    ("SNOOP_AR_BARRIER" variable
+                                       (:constant-flag t
+                                        :default-value (8355 8358)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8320 8358])
+                                    ("SNOOP_AR_READ_SHARED" variable
+                                       (:constant-flag t
+                                        :default-value (8399 8402)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8364 8402])
+                                    ("SNOOP_AR_READ_CLEAN" variable
+                                       (:constant-flag t
+                                        :default-value (8443 8446)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8408 8446])
+                                    ("SNOOP_AR_READ_NOT_SHARED_DIRTY" variable
+                                       (:constant-flag t
+                                        :default-value (8487 8490)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8452 8490])
+                                    ("SNOOP_AR_READ_ONCE_CLEAN_INVALID" variable
+                                       (:constant-flag t
+                                        :default-value (8531 8534)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8496 8534])
+                                    ("SNOOP_AR_READ_ONCE_MAKE_INVALID" variable
+                                       (:constant-flag t
+                                        :default-value (8575 8578)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8540 8578])
+                                    ("SNOOP_AR_READ_UNIQUE" variable
+                                       (:constant-flag t
+                                        :default-value (8619 8622)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8584 8622])
+                                    ("SNOOP_AR_CLEAN_SHARED" variable
+                                       (:constant-flag t
+                                        :default-value (8663 8666)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8628 8666])
+                                    ("SNOOP_AR_CLEAN_INVALID" variable
+                                       (:constant-flag t
+                                        :default-value (8707 8710)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8672 8710])
+                                    ("SNOOP_AR_CLEAN_SHARED_PERSIST" variable
+                                       (:constant-flag t
+                                        :default-value (8751 8754)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8716 8754])
+                                    ("SNOOP_AR_CLEAN_UNIQUE" variable
+                                       (:constant-flag t
+                                        :default-value (8795 8798)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8760 8798])
+                                    ("SNOOP_AR_MAKE_UNIQUE" variable
+                                       (:constant-flag t
+                                        :default-value (8839 8842)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8804 8842])
+                                    ("SNOOP_AR_MAKE_INVALID" variable
+                                       (:constant-flag t
+                                        :default-value (8883 8886)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8848 8886])
+                                    ("SNOOP_AR_DVM_COMPLETE" variable
+                                       (:constant-flag t
+                                        :default-value (8927 8930)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8892 8930])
+                                    ("SNOOP_AR_DVM_MESSAGE" variable
+                                       (:constant-flag t
+                                        :default-value (8971 8974)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [8936 8974])
+                                    ("SNOOP_AC_READ_ONCE" variable
+                                       (:constant-flag t
+                                        :default-value (9056 9059)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9021 9059])
+                                    ("SNOOP_AC_READ_SHARED" variable
+                                       (:constant-flag t
+                                        :default-value (9100 9103)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9065 9103])
+                                    ("SNOOP_AC_READ_CLEAN" variable
+                                       (:constant-flag t
+                                        :default-value (9144 9147)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9109 9147])
+                                    ("SNOOP_AC_READ_NOT_SHARED_DIRTY" variable
+                                       (:constant-flag t
+                                        :default-value (9188 9191)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9153 9191])
+                                    ("SNOOP_AC_READ_UNIQUE" variable
+                                       (:constant-flag t
+                                        :default-value (9232 9235)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9197 9235])
+                                    ("SNOOP_AC_CLEAN_SHARED" variable
+                                       (:constant-flag t
+                                        :default-value (9276 9279)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9241 9279])
+                                    ("SNOOP_AC_CLEAN_INVALID" variable
+                                       (:constant-flag t
+                                        :default-value (9320 9323)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9285 9323])
+                                    ("SNOOP_AC_MAKE_INVALID" variable
+                                       (:constant-flag t
+                                        :default-value (9364 9367)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9329 9367])
+                                    ("SNOOP_AC_DVM_COMPLETE" variable
+                                       (:constant-flag t
+                                        :default-value (9408 9411)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9373 9411])
+                                    ("SNOOP_AC_DVM_MESSAGE" variable
+                                       (:constant-flag t
+                                        :default-value (9452 9455)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9417 9455]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [7573 9458])
+                            ("AtopEnum" type
+                               (:members 
+                                  ( ("ATOP_NON_ATOMIC" variable
+                                       (:constant-flag t
+                                        :default-value (9566 9569)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9541 9569])
+                                    ("ATOP_STORE_ADD" variable
+                                       (:constant-flag t
+                                        :default-value (9601 9605)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9576 9605])
+                                    ("ATOP_STORE_CLR" variable
+                                       (:constant-flag t
+                                        :default-value (9636 9640)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9611 9640])
+                                    ("ATOP_STORE_EOR" variable
+                                       (:constant-flag t
+                                        :default-value (9671 9675)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9646 9675])
+                                    ("ATOP_STORE_SET" variable
+                                       (:constant-flag t
+                                        :default-value (9706 9710)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9681 9710])
+                                    ("ATOP_STORE_SMAX" variable
+                                       (:constant-flag t
+                                        :default-value (9741 9745)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9716 9745])
+                                    ("ATOP_STORE_SMIN" variable
+                                       (:constant-flag t
+                                        :default-value (9776 9780)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9751 9780])
+                                    ("ATOP_STORE_UMAX" variable
+                                       (:constant-flag t
+                                        :default-value (9811 9815)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9786 9815])
+                                    ("ATOP_STORE_UMIN" variable
+                                       (:constant-flag t
+                                        :default-value (9846 9850)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9821 9850])
+                                    ("ATOP_STORE_ADD_BE" variable
+                                       (:constant-flag t
+                                        :default-value (9882 9886)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9857 9886])
+                                    ("ATOP_STORE_CLR_BE" variable
+                                       (:constant-flag t
+                                        :default-value (9917 9921)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9892 9921])
+                                    ("ATOP_STORE_EOR_BE" variable
+                                       (:constant-flag t
+                                        :default-value (9952 9956)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9927 9956])
+                                    ("ATOP_STORE_SET_BE" variable
+                                       (:constant-flag t
+                                        :default-value (9987 9991)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9962 9991])
+                                    ("ATOP_STORE_SMAX_BE" variable
+                                       (:constant-flag t
+                                        :default-value (10022 10026)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9997 10026])
+                                    ("ATOP_STORE_SMIN_BE" variable
+                                       (:constant-flag t
+                                        :default-value (10057 10061)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10032 10061])
+                                    ("ATOP_STORE_UMAX_BE" variable
+                                       (:constant-flag t
+                                        :default-value (10092 10096)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10067 10096])
+                                    ("ATOP_STORE_UMIN_BE" variable
+                                       (:constant-flag t
+                                        :default-value (10127 10131)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10102 10131])
+                                    ("ATOP_LOAD_ADD" variable
+                                       (:constant-flag t
+                                        :default-value (10163 10167)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10138 10167])
+                                    ("ATOP_LOAD_CLR" variable
+                                       (:constant-flag t
+                                        :default-value (10198 10202)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10173 10202])
+                                    ("ATOP_LOAD_EOR" variable
+                                       (:constant-flag t
+                                        :default-value (10233 10237)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10208 10237])
+                                    ("ATOP_LOAD_SET" variable
+                                       (:constant-flag t
+                                        :default-value (10268 10272)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10243 10272])
+                                    ("ATOP_LOAD_SMAX" variable
+                                       (:constant-flag t
+                                        :default-value (10303 10307)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10278 10307])
+                                    ("ATOP_LOAD_SMIN" variable
+                                       (:constant-flag t
+                                        :default-value (10338 10342)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10313 10342])
+                                    ("ATOP_LOAD_UMAX" variable
+                                       (:constant-flag t
+                                        :default-value (10373 10377)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10348 10377])
+                                    ("ATOP_LOAD_UMIN" variable
+                                       (:constant-flag t
+                                        :default-value (10408 10412)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10383 10412])
+                                    ("ATOP_LOAD_ADD_BE" variable
+                                       (:constant-flag t
+                                        :default-value (10444 10448)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10419 10448])
+                                    ("ATOP_LOAD_CLR_BE" variable
+                                       (:constant-flag t
+                                        :default-value (10479 10483)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10454 10483])
+                                    ("ATOP_LOAD_EOR_BE" variable
+                                       (:constant-flag t
+                                        :default-value (10514 10518)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10489 10518])
+                                    ("ATOP_LOAD_SET_BE" variable
+                                       (:constant-flag t
+                                        :default-value (10549 10553)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10524 10553])
+                                    ("ATOP_LOAD_SMAX_BE" variable
+                                       (:constant-flag t
+                                        :default-value (10584 10588)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10559 10588])
+                                    ("ATOP_LOAD_SMIN_BE" variable
+                                       (:constant-flag t
+                                        :default-value (10619 10623)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10594 10623])
+                                    ("ATOP_LOAD_UMAX_BE" variable
+                                       (:constant-flag t
+                                        :default-value (10654 10658)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10629 10658])
+                                    ("ATOP_LOAD_UMIN_BE" variable
+                                       (:constant-flag t
+                                        :default-value (10689 10693)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10664 10693])
+                                    ("ATOP_SWAP" variable
+                                       (:constant-flag t
+                                        :default-value (10725 10729)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10700 10729])
+                                    ("ATOP_COMPARE" variable
+                                       (:constant-flag t
+                                        :default-value (10760 10764)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10735 10764]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [9521 10767])
+                            ("AtopBitEnum" type
+                               (:members 
+                                  ( ("ATOP_ENDIAN" variable
+                                       (:constant-flag t
+                                        :default-value (10844 10848)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10823 10848])
+                                    ("ATOP_STORE" variable
+                                       (:constant-flag t
+                                        :default-value (10875 10879)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10854 10879])
+                                    ("ATOP_LOAD" variable
+                                       (:constant-flag t
+                                        :default-value (10906 10910)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10885 10910]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [10800 10913])
+                            ("Command" type
+                               (:typedef ("TLM::EnumWrapper" type
+                                     (:template-specifier 
+                                        ( ("CommandEnum" type nil nil nil)
+                                          ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [11025 11080])
+                            ("Size" type
+                               (:typedef ("TLM::EnumWrapper" type
+                                     (:template-specifier 
+                                        ( ("SizeEnum" type nil nil nil)
+                                          ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [11081 11130])
+                            ("Burst" type
+                               (:typedef ("TLM::EnumWrapper" type
+                                     (:template-specifier 
+                                        ( ("BurstEnum" type nil nil nil)
+                                          ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [11131 11182])
+                            ("Lock" type
+                               (:typedef ("TLM::EnumWrapper" type
+                                     (:template-specifier 
+                                        ( ("LockEnum" type nil nil nil)
+                                          ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [11183 11232])
+                            ("Cache" type
+                               (:typedef ("TLM::BitEnumWrapper" type
+                                     (:template-specifier 
+                                        ( ("CacheEnum" type nil nil nil)
+                                          ("CacheBitEnum" type nil nil nil)
+                                          ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [11233 11301])
+                            ("Prot" type
+                               (:typedef ("TLM::BitEnumWrapper" type
+                                     (:template-specifier 
+                                        ( ("ProtEnum" type nil nil nil)
+                                          ("ProtBitEnum" type nil nil nil)
+                                          ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [11302 11367])
+                            ("Resp" type
+                               (:typedef ("TLM::BitEnumWrapper" type
+                                     (:template-specifier 
+                                        ( ("RespEnum" type nil nil nil)
+                                          ("RespBitEnum" type nil nil nil)
+                                          ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [11368 11433])
+                            ("Domain" type
+                               (:typedef ("TLM::EnumWrapper" type
+                                     (:template-specifier 
+                                        ( ("DomainEnum" type nil nil nil)
+                                          ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [11434 11487])
+                            ("Bar" type
+                               (:typedef ("TLM::EnumWrapper" type
+                                     (:template-specifier 
+                                        ( ("BarEnum" type nil nil nil)
+                                          ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [11488 11535])
+                            ("Snoop" type
+                               (:typedef ("TLM::EnumWrapper" type
+                                     (:template-specifier 
+                                        ( ("SnoopEnum" type nil nil nil)
+                                          ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [11536 11587])
+                            ("Atop" type
+                               (:typedef ("TLM::BitEnumWrapper" type
+                                     (:template-specifier 
+                                        ( ("AtopEnum" type nil nil nil)
+                                          ("AtopBitEnum" type nil nil nil)
+                                          ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [11588 11653])
+                            ("PayloadData" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [11655 11673])
+                            ("PayloadPool" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [11674 11692])
+                            ("Payload" type
+                               (:members 
+                                  ( ("PayloadPool" friend nil (reparse-symbol classsubparts) [11751 11775])
+                                    ("private" label nil (reparse-symbol classsubparts) [11777 11785])
+                                    ("refcount" variable
+                                       (:typemodifiers ("mutable")
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [12072 12098])
+                                    ("public" label nil (reparse-symbol classsubparts) [12100 12107])
+                                    ("uid" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12355 12374])
+                                    ("parent" variable
+                                       (:pointer 1
+                                        :type ("Payload" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [12646 12668])
+                                    ("private" label nil (reparse-symbol classsubparts) [12670 12678])
+                                    ("payload_data" variable
+                                       (:pointer 1
+                                        :type ("PayloadData" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [12830 12862])
+                                    ("private" label nil (reparse-symbol classsubparts) [12864 12872])
+                                    ("address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13123 13140])
+                                    ("public" label nil (reparse-symbol classsubparts) [13142 13149])
+                                    ("id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13180 13192])
+                                    ("lock" variable (:type ("Lock" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13327 13337])
+                                    ("cache" variable (:type ("Cache" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13342 13354])
+                                    ("prot" variable (:type ("Prot" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13359 13369])
+                                    ("qos" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13374 13386])
+                                    ("region" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13391 13406])
+                                    ("user" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13411 13425])
+                                    ("snoop" variable (:type ("Snoop" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13548 13560])
+                                    ("domain" variable (:type ("Domain" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13565 13579])
+                                    ("bar" variable (:type ("Bar" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13584 13592])
+                                    ("atop" variable (:type ("Atop" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13597 13607])
+                                    ("vmid_ext" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13612 13629])
+                                    ("stash_nid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13635 13654])
+                                    ("stash_lpid" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13659 13678])
+                                    ("unique" variable
+                                       (:suffix ":1"
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [13684 13711])
+                                    ("stash_nid_valid" variable
+                                       (:suffix ":1"
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [13716 13743])
+                                    ("stash_lpid_valid" variable
+                                       (:suffix ":1"
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [13748 13775])
+                                    ("private" label nil (reparse-symbol classsubparts) [13777 13785])
+                                    ("Payload" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("command" variable (:type ("Command" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13935 13951])
+                                            ("address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13952 13969])
+                                            ("size" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13970 13980])
+                                            ("len" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13981 13993])
+                                            ("burst" variable (:type ("Burst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14002 14014]))                                          
+                                        :type ("Payload" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [13927 14015])
+                                    ("Payload" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("payload_data_" variable
+                                               (:pointer 1
+                                                :type ("PayloadData" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [14163 14190])
+                                            ("address_" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14191 14209])
+                                            ("parent_" variable
+                                               (:pointer 1
+                                                :type ("Payload" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [14218 14235]))                                          
+                                        :type ("Payload" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [14155 14236])
+                                    ("Payload" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Payload" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [14287 14308]))                                          
+                                        :type ("Payload" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [14279 14309])
+                                    ("=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Payload" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [14365 14386]))                                          
+                                        :type ("Payload" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [14345 14404])
+                                    ("Payload" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [14560 14571])
+                                    ("public" label nil (reparse-symbol classsubparts) [14573 14580])
+                                    ("ref" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [14623 14640])
+                                    ("unref" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [14684 14703])
+                                    ("new_payload" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("command" variable (:type ("Command" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14993 15009])
+                                            ("address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15010 15027])
+                                            ("size" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15028 15038])
+                                            ("len" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15047 15059])
+                                            ("burst" variable
+                                               (:default-value "BURST_INCR"
+                                                :type ("Burst" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [15060 15084]))                                          
+                                        :type ("Payload" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [14965 15086])
+                                    ("clone" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :type ("Payload" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [15243 15260])
+                                    ("descend" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :arguments 
+                                          ( ("command" variable (:type ("Command" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15580 15596])
+                                            ("address_" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15597 15615])
+                                            ("size" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15616 15626])
+                                            ("len" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15635 15647])
+                                            ("burst" variable
+                                               (:default-value "BURST_INCR"
+                                                :type ("Burst" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [15648 15672]))                                          
+                                        :type ("Payload" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [15563 15674])
+                                    ("get_beat_data_length" function
+                                       (:prototype-flag t
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [15740 15781])
+                                    ("get_data_length" function
+                                       (:prototype-flag t
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [15849 15885])
+                                    ("get_address" function
+                                       (:prototype-flag t
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [15971 16000])
+                                    ("set_address" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("new_address" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16366 16387]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [16349 16388])
+                                    ("get_base_address" function
+                                       (:prototype-flag t
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [16510 16544])
+                                    ("get_resp" function
+                                       (:prototype-flag t
+                                        :type ("Resp" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [16734 16756])
+                                    ("set_resp" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("resp" variable (:type ("Resp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16811 16821]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [16797 16822])
+                                    ("get_command" function
+                                       (:prototype-flag t
+                                        :type ("Command" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [16862 16890])
+                                    ("get_len" function
+                                       (:prototype-flag t
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [16969 16993])
+                                    ("get_size" function
+                                       (:prototype-flag t
+                                        :type ("Size" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [17047 17069])
+                                    ("get_burst" function
+                                       (:prototype-flag t
+                                        :type ("Burst" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [17117 17141])
+                                    ("get_beat_count" function
+                                       (:prototype-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [17197 17229])
+                                    ("get_beats_complete" function
+                                       (:prototype-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [17276 17312])
+                                    ("read_in" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("data" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [17535 17555])
+                                            ("resp" variable
+                                               (:pointer 1
+                                                :default-value "NULL"
+                                                :type ("Resp" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [17556 17573]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [17522 17575])
+                                    ("read_out" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("data" variable
+                                               (:pointer 1
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [17712 17726]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [17698 17733])
+                                    ("read_out_resps" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("resp" variable
+                                               (:pointer 1
+                                                :type ("Resp" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [17893 17904]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [17873 17911])
+                                    ("write_in" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("data" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18376 18396])
+                                            ("strobe" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :default-value "NULL"
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18397 18425]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [18362 18427])
+                                    ("write_out" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("data" variable
+                                               (:pointer 1
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18570 18584]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [18555 18591])
+                                    ("write_out_strobes" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("strobe" variable
+                                               (:pointer 1
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18757 18773]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [18734 18780])
+                                    ("snoop_in" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("data" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18921 18941]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [18907 18942])
+                                    ("snoop_out" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("data" variable
+                                               (:pointer 1
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [19085 19099]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [19070 19106])
+                                    ("read_in_beat" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("data" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [19302 19322])
+                                            ("resp" variable
+                                               (:default-value "RESP_OKAY"
+                                                :type ("Resp" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [19323 19344]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [19284 19346])
+                                    ("read_out_beat" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("beat_index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [19637 19657])
+                                            ("data" variable
+                                               (:pointer 1
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [19658 19672]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [19618 19679])
+                                    ("read_out_beat_resp" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("beat_index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [19921 19941]))                                          
+                                        :type ("Resp" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [19897 19948])
+                                    ("write_in_beat" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("data" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [20247 20267])
+                                            ("strobe" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20268 20284]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [20228 20285])
+                                    ("write_in_beat" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("data" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [20659 20679])
+                                            ("strobe" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :default-value "NULL"
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [20680 20708]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [20640 20710])
+                                    ("write_out_beat" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("beat_index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21001 21021])
+                                            ("data" variable
+                                               (:pointer 1
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21022 21036]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [20981 21043])
+                                    ("write_out_beat_strobe" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("beat_index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21357 21377]))                                          
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [21326 21384])
+                                    ("write_out_beat_strobe" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("beat_index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21861 21881])
+                                            ("strobe" variable
+                                               (:pointer 1
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21882 21898]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [21834 21905])
+                                    ("snoop_in_beat" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("data" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22062 22082]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [22043 22083])
+                                    ("snoop_out_beat" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("beat_index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22393 22413])
+                                            ("data" variable
+                                               (:pointer 1
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22414 22428]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [22373 22435])
+                                    ("read_in_beat_raw" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("width" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22752 22763])
+                                            ("data" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22764 22784])
+                                            ("resp" variable
+                                               (:default-value "RESP_OKAY"
+                                                :type ("Resp" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22793 22814]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [22730 22816])
+                                    ("read_out_beat_raw" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("width" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23270 23281])
+                                            ("beat_index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [23282 23302])
+                                            ("data" variable
+                                               (:pointer 1
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [23311 23325]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [23247 23332])
+                                    ("write_in_beat_raw" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("width" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23760 23771])
+                                            ("data" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [23772 23792])
+                                            ("strobe" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23793 23809]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [23737 23810])
+                                    ("write_in_beat_raw" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("width" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24404 24415])
+                                            ("data" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [24416 24436])
+                                            ("strobe" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [24445 24467]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [24381 24468])
+                                    ("write_out_beat_raw" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("width" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24940 24951])
+                                            ("beat_index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [24952 24972])
+                                            ("data" variable
+                                               (:pointer 1
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [24981 24995]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [24916 25002])
+                                    ("write_out_beat_raw_strobe" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("width" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25546 25557])
+                                            ("beat_index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [25558 25578]))                                          
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [25511 25585])
+                                    ("write_out_beat_raw_strobe" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("width" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26093 26104])
+                                            ("beat_index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [26105 26125])
+                                            ("strobe" variable
+                                               (:pointer 1
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [26134 26150]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [26062 26157])
+                                    ("get_extension_offset" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [26631 26645])
+                                            ("name" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [26646 26663]))                                          
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [26591 26664])
+                                    ("debug_payload_pool" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("stream" variable
+                                               (:reference 1
+                                                :type ("std::ostream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [26819 26840]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [26788 26841]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [11731 26844])
+                            ("PayloadExtension" type
+                               (:template 
+                                  ( ("Type" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [27117 27125])
+                                    ("offset" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [27204 27223])
+                                    ("public" label nil (reparse-symbol classsubparts) [27225 27232])
+                                    ("PayloadExtension" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("name" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [27377 27394]))                                          
+                                        :type ("PayloadExtension" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [27360 27474])
+                                    ("get" function
+                                       (:arguments 
+                                          ( ("payload" variable
+                                               (:pointer 1
+                                                :type ("Payload" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [27541 27558]))                                          
+                                        :type ("Type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [27531 27667])
+                                    ("set" function
+                                       (:arguments 
+                                          ( ("payload" variable
+                                               (:pointer 1
+                                                :type ("Payload" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [27729 27746])
+                                            ("value" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [27747 27765]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [27720 27807]))                                  )
+                                (reparse-symbol namespacesubparts) [27067 27810]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1048 27813]))                  
+                :type "namespace")
+                nil [1032 27815]))          
+      :file "arm_axi4_payload.h"
+      :pointmax 27846
+      :fsize 27845
+      :lastmodtime '(23424 27255 809553 631000)
+      :unmatched-syntax '((punctuation 14507 . 14508) (semantic-list 14498 . 14507) (DELETE 14491 . 14497) (OPERATOR 14482 . 14490) (VOID 14477 . 14481) (punctuation 11775 . 11776))
+      :lexical-table 
+        '(("ARM_AXI4_TLM_API_VERSION" . ((symbol "ARM_AXI4_TLM_API_1" 1099 . 1117)))
+          ("ARM_AXI4_PAYLOAD_H")
+          )
+)
+    (semanticdb-table "arm_tlm_helpers.h"
+      :file "arm_tlm_helpers.h"
+      :fsize 4420
+      :lastmodtime '(23424 27255 809553 631000)))
+  :file "!o!release!cm_sysc!CIBuilds!SCI_master_271!PRODUCT!Linux64_GCC-4.8.3!rel_ext!include!ARM!TLM!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

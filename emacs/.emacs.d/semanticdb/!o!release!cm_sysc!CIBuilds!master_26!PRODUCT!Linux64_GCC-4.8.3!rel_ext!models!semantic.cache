@@ -1,0 +1,142 @@
+;; Object models/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "models/"
+  :tables
+  (list
+    (semanticdb-table "SimpleBus.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ARM_MODELUTILS_SIMPLEBUSIMP_H" variable (:constant-flag t) nil [848 877])
+            ("stdint.h" include (:system-flag t) nil [879 898])
+            ("systemc" include (:system-flag t) nil [900 918])
+            ("RAMBlock.h" include nil nil [920 941])
+            ("BasicUART.h" include nil nil [942 964])
+            ("TLM/arm_axi4.h" include nil nil [965 990])
+            ("TargetMemoryMap.h" include nil nil [991 1019])
+            ("ARM" type
+               (:members 
+                  ( ("Models" type
+                       (:members 
+                          ( ("SimpleBus" type
+                               (:superclasses 
+                                  ( ("sc_core::sc_module" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("SlaveSocketT" type
+                                       (:typedef ("ARM::AXI4::SimpleSlaveSocket" type
+                                             (:template-specifier 
+                                                ( ("SimpleBus" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1107 1170])
+                                    ("MasterSocketT" type
+                                       (:typedef ("ARM::AXI4::SimpleMasterSocket" type
+                                             (:template-specifier 
+                                                ( ("SimpleBus" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1175 1239])
+                                    ("PayloadT" type
+                                       (:typedef ("ARM::AXI4::Payload" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1244 1306])
+                                    ("PhaseT" type
+                                       (:typedef ("ARM::AXI4::Phase" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1311 1371])
+                                    ("public" label nil (reparse-symbol classsubparts) [1373 1380])
+                                    ("SC_HAS_PROCESS" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("SimpleBus" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1400 1410]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1385 1411])
+                                    ("SimpleBus" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("p_scName" variable (:type ("sc_core::sc_module_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1444 1477])
+                                            ("numMasters" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1478 1498])
+                                            ("numTargets" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1499 1519])
+                                            ("busWidthBits_" variable
+                                               (:default-value "128"
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1520 1548]))                                          
+                                        :type ("SimpleBus" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1434 1550])
+                                    ("SimpleBus" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1573 1586])
+                                    ("nb_transport_fw" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("payload" variable
+                                               (:reference 1
+                                                :type ("PayloadT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1627 1645])
+                                            ("phase" variable
+                                               (:reference 1
+                                                :type ("PhaseT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1646 1660]))                                          
+                                        :type ("tlm::tlm_sync_enum" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1592 1661])
+                                    ("nb_transport_bw" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("payload" variable
+                                               (:reference 1
+                                                :type ("PayloadT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1702 1720])
+                                            ("phase" variable
+                                               (:reference 1
+                                                :type ("PhaseT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1721 1735]))                                          
+                                        :type ("tlm::tlm_sync_enum" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1667 1736])
+                                    ("addMap" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("portId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1755 1771])
+                                            ("baseAddr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1772 1790])
+                                            ("slaveSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1791 1810]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1743 1811])
+                                    ("public" label nil (reparse-symbol classsubparts) [1812 1819])
+                                    ("clock" variable (:type ("sc_core::sc_in" type
+                                         (:template-specifier 
+                                            ( ("bool" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1871 1898])
+                                    ("iSkt" variable
+                                       (:pointer 2
+                                        :type ("MasterSocketT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1923 1956])
+                                    ("tSkt" variable (:type ("SlaveSocketT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1984 2016])
+                                    ("memoryMap" variable (:type ("TargetMemoryMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2022 2059])
+                                    ("private" label nil (reparse-symbol classsubparts) [2060 2068])
+                                    ("numMasters" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2073 2093])
+                                    ("numTargets" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2099 2119]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1057 2122]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1037 2125]))                  
+                :type "namespace")
+                nil [1021 2127]))          
+      :file "SimpleBus.h"
+      :pointmax 2169
+      :fsize 2168
+      :lastmodtime '(22812 35857 658439 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ARM_MODELUTILS_SIMPLEBUSIMP_H")
+          )
+))
+  :file "!o!release!cm_sysc!CIBuilds!master_26!PRODUCT!Linux64_GCC-4.8.3!rel_ext!models!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

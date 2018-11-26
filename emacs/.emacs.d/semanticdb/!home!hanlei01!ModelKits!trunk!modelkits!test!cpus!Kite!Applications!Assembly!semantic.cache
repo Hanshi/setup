@@ -1,0 +1,22 @@
+;; Object Assembly/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Assembly/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("INCDIRS" variable (:default-value (".")) nil [734 746])
+            ("TESTNAME" variable (:default-value ("CORTEXR7_instruction_execution")) nil [746 788])
+            ("ASMOBJS" variable (:default-value ("CORTEXR7_instruction_execution.o")) nil [788 831])
+            ("ASFLAGS" variable (:default-value ("--cpu=Cortex-R52" "--unsafe" "--nowarn" "--apcs" "/inter" "--fpu" "vfpv3" "--PD" "'VERBOSE SETA 3'" "--PD" "'TESTNAME_CRC32 SETA 0x73256832'")) nil [832 970])
+            ("LDFLAGS" variable (:default-value ("--keep" "'*'" "--ro-base" "0x0" "--map" "--entry" "0x0")) nil [970 1023])
+            ("../makefile" include nil nil [1052 1072]))          
+      :file "Makefile"
+      :pointmax 1073
+      :fsize 1072
+      :lastmodtime '(22981 1665 0 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!Kite!Applications!Assembly!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

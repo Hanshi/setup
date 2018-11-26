@@ -1,0 +1,48 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("LINUX_DIR" variable (:default-value (".")) nil [1 15])
+            ("PACKAGE_LIB_DIR" variable (:default-value ("./lib")) nil [66 90])
+            ("COMP_NAME" variable (:default-value ("$(subst lib,,$(basename $(notdir $(wildcard $(PACKAGE_LIB_DIR)/lib*.a))))")) nil [188 274])
+            ("clean" function nil nil [275 300])
+            ("gen_code" function nil nil [301 311])
+            ("NUM_CPUS" variable (:default-value ("$(shell grep NUM_CPUS ./$(COMP_NAME).xmlAnswers)")) nil [393 453])
+            ("NUM_CPUS" variable (:default-value ("4")) nil [507 518])
+            ("NUM_CPUS" variable (:default-value ("3")) nil [578 589])
+            ("NUM_CPUS" variable (:default-value ("2")) nil [649 660])
+            ("NUM_CPUS" variable (:default-value ("1")) nil [665 676])
+            ("MASTER_PROTOCOL" variable (:default-value ("$(shell grep BUS_INTERFACE ./$(COMP_NAME).xmlAnswers)")) nil [696 768])
+            ("Makefile.internal" include nil nil [858 884])
+            ("CXX" variable (:default-value ("g++")) nil [1013 1021])
+            ("CXXFLAGS" variable (:default-value ("-fPIC" "-g" "-DCARBON_DUMP_VCD=0" "-std=c++11" "-I$(SYSTEMC_HOME)/include" "-I$(CARBON_HOME)/include" "$(CM_SYSC_CXXFLAGS)" "-I." "-I$(LINUX_DIR)" "-DNUM_CPUS=$(NUM_CPUS)" "-DUNIVENT_TARMAC=1")) nil [1022 1258])
+            ("ENABLE_PMU" variable (:default-value ("-DENABLE_PMU=1")) nil [1258 1284])
+            ("DISABLE_PMU" variable (:default-value ("-DENABLE_PMU=0")) nil [1284 1311])
+            ("OBJS" variable (:default-value ("$(COMP_NAME)Imp.o" "lib$(COMP_NAME).systemc.o" "univent_tarmac.o")) nil [1312 1391])
+            ("OBJS_noPMU" variable (:default-value ("$(COMP_NAME)Imp_noPMU.o" "lib$(COMP_NAME)_noPMU.systemc.o" "univent_tarmac.o")) nil [1392 1488])
+            ("all" function (:arguments ("lib$(COMP_NAME)_noPMU.so" "lib$(COMP_NAME).so" "univent_tarmac.o")) nil [1489 1555])
+            ("lib" function (:arguments ("$(OBJS_noPMU)")) nil [1557 1977])
+            ("lib" function (:arguments ("$(OBJS)")) nil [1978 2375])
+            ("$(COMP_NAME)" function (:arguments ("gen_code")) nil [2376 2406])
+            ("univent_tarmac.cpp" function (:arguments ("gen_code")) nil [2407 2436])
+            ("$(COMP_NAME)" function (:arguments ("$(COMP_NAME)Imp.cpp")) nil [2437 2523])
+            ("$(COMP_NAME)" function (:arguments ("$(COMP_NAME)Imp.cpp")) nil [2524 2617])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp" "gen_code")) nil [2618 2728])
+            ("lib" function (:arguments ("lib$(COMP_NAME).systemc.cpp" "gen_code")) nil [2729 2846])
+            ("univent_tarmac.o" function (:arguments ("univent_tarmac.cpp" "gen_code")) nil [2847 2925]))          
+      :file "Makefile"
+      :pointmax 2973
+      :fsize 2971
+      :lastmodtime '(22759 59587 65580 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile.internal"
+      :file "Makefile.internal"
+      :fsize 3337
+      :lastmodtime '(22778 21279 591505 0)))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!Scripts!cpus!CortexA35!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

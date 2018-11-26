@@ -1,0 +1,46 @@
+;; Object SystemC_mem_test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC_mem_test/"
+  :tables
+  (list
+    (semanticdb-table "system_test_Plover_1CPU_max.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/SimpleFlash.h" include nil nil [831 862])
+            ("models/SimpleFlashImp.h" include nil nil [863 897])
+            ("models/RAMBlock.h" include nil nil [898 926])
+            ("models/SimpleBus.h" include nil nil [927 956])
+            ("models/BasicUART.h" include nil nil [957 986])
+            ("models/ElfLoader.h" include nil nil [987 1016])
+            ("libPlover.tlm.h" include nil nil [1017 1043])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [1044 1090])
+            ("iostream" include (:system-flag t) nil [1092 1111])
+            ("scx/scx.h" include (:system-flag t) nil [1113 1133])
+            ("scx_simcontroller.cpp" include (:system-flag t) nil [1134 1166])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1167 1203])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1204 1237])
+            ("tlm_bridge.h" include nil nil [1239 1262])
+            ("trickbox.h" include nil nil [1263 1284])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1286 1310])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1324 1333])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1334 1347]))                  
+                :type "int")
+                nil [1312 3588]))          
+      :file "system_test_Plover_1CPU_max.cpp"
+      :pointmax 3589
+      :fsize 3588
+      :lastmodtime '(23448 14274 265999 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!test_result_systemc_mem_tcm!gcc483!test!cpus!Plover!Simulation!SystemC_mem_test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

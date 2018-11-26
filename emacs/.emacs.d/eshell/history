@@ -1,0 +1,128 @@
+ls
+go build
+go build
+ls
+./hello 
+mkdir slice
+go build
+setenv PATH ~/Tools/go/bin:$PATH
+go
+go build
+env | grep PATH
+ll ~/Tools/bin/
+ll ~/Tools/go/bin/
+ls
+ll
+ls
+ll
+ls
+ll *cpp
+cp system_test.cpp system_test_TEMPLATE.cpp
+ls
+ls -l
+grep "TEMPLATE.h" -r *
+grep "*TEMPLATE.h" -r *
+grep "*TEMPLATE" -r *
+grep Debug -r *
+ls -l
+cd ../../
+cd ../../
+cd ../../
+cd ../
+cp -r  modelkits/test/cpus/Kite/Simulation/SystemC_DS5/Registers/ modelkits/test/cpus/CortexM7/Simulation/SystemC_DS5/
+ls -l
+rm test.run.\~1.8.\~
+rm test.run 
+ls
+ll
+ls
+ll write-test.run 
+cd ../../../.
+cd ../../..
+cd ..
+cd modelkits/test/
+ls
+ll
+chmod a+rx system_test.sh write-test.run 
+grep "Bare Metal" -r *
+ls
+ll
+cd ..
+ls
+cd ..
+find . -name "*py"
+cd ../..
+find . -name "*py"
+find . -name "*py"
+cd ../../..
+cd Plover/
+find . -name "*py"
+grep executeDSCommand -r *
+grep Signal -r *
+grep SignalLevel -r *
+grep "SYSC_TO_ARMTLM" -r *
+find . -name "modelbuilder.py"
+grep -ir deimos *
+grep -r deimos *
+grep deimos -r *
+grep deimos -ir *
+grep ARM_RELEASE -ir *
+cd ..
+cd SystemC_execution_tb_profiling/
+grep ARM_RELEASE -ir *
+cd ..
+cd ..
+cd ..
+cd Deimos/Simulation/
+grep ARM_RELEASE -r *
+grep ARM_RELEASE -r *
+grep ARM_RELEASE -r * | grep -i deimos
+grep deimos_vx_aesinv -r *
+ls
+grep -r deimos_vx_aesinv.sv *
+ls
+cd ../../../../..
+ls
+grep ".sv" -r *
+grep ARM_RELEASE -r *
+find . -name "*carbon.*"
+find . -name "*carbon.*"
+grep ARM_RELASE -r *
+ll
+find . -name "Makefile.internal"
+grep ARM_RELEASE -r *
+find . -name "sysc_execution_tb"
+ls
+ll CLUSTER/corinth/logical/testbench/
+tkcvs TarmacDiffCheck_CM_RTL.sh
+grep -ri "Deimos" | grep dispalyValue
+grep -ri "Deimos" | grep displayValue
+grep "Deimos" -ri * | grep displayValue
+grep "Deimos\&BIG_CORE_TYPE" -ri * 
+grep "Deimos*BIG_CORE_TYPE" -ri * 
+grep -E "Deimos.*BIG_CORE_TYPE" -ri * 
+cd ../..
+grep -E "Deimos.*BIG_CORE_TYPE" -ri * 
+cd ../..
+cd ..
+cd ..
+cd modelkits/test/cpus/
+grep -E "Deimos.*BIG_CORE_TYPE" -ri * 
+ls
+ll
+cd ../../../../../../../modelkits/test/cpus/Deimos/Simulation/SystemC/
+ls
+ll
+ll *diff
+ll tarmac.dhrystone_0.Deimos_1CPU_basic_TARMAC*
+ll tarmac.dhrystone_0.Deimos_1CPU_basic_TARMAC.log
+ll tarmac.dhrystone_0.Deimos_1CPU_basic_TARMAC.log.gold
+diff -q tarmac.dhrystone_0.Deimos_1CPU_basic_TARMAC.log tarmac.dhrystone_0.Deimos_1CPU_basic_TARMAC.log.filtered 
+ll *diff
+cp tarmac.dhrystone_0.Deimos_1CPU_basic_TARMAC.log tarmac.dhrystone_0.Deimos_1CPU_basic_TARMAC.log.gold
+ll tarmac.dhrystone_pwr_aarch32el0_0.Deimos_1CPU_basic_TARMAC.log
+cp  tarmac.dhrystone_pwr_aarch32el0_0.Deimos_1CPU_basic_TARMAC.log  tarmac.dhrystone_pwr_aarch32el0_0.Deimos_1CPU_basic_TARMAC.log.gold
+ll *gold
+grep -ir amba
+grep designer -ir *
+ll *.log.diff

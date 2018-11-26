@@ -1,0 +1,96 @@
+;; Object Cortex-M7/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Cortex-M7/"
+  :tables
+  (list
+    (semanticdb-table "registers_symbols.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("BREAKPOINT_CORE_READ" variable
+               (:default-value "0x000000c7"
+                :type "int")
+                nil [1 39])
+            ("BREAKPOINT_CORE_FAIL" variable
+               (:default-value "0x00000135"
+                :type "int")
+                nil [40 78])
+            ("BREAKPOINT_CORE_WRITE" variable
+               (:default-value "0x00000139"
+                :type "int")
+                nil [79 118])
+            ("BREAKPOINT_DEBUG" variable
+               (:default-value "0x0000014d"
+                :type "int")
+                nil [119 153])
+            ("BREAKPOINT_SYSTEM_CONTROL" variable
+               (:default-value "0x000001ab"
+                :type "int")
+                nil [154 197])
+            ("BREAKPOINT_SYSTEM_WRITE" variable
+               (:default-value "0x000001db"
+                :type "int")
+                nil [198 239])
+            ("BREAKPOINT_MPU" variable
+               (:default-value "0x00000225"
+                :type "int")
+                nil [240 272])
+            ("BREAKPOINT_MPU_WRITE" variable
+               (:default-value "0x00000265"
+                :type "int")
+                nil [273 311])
+            ("BREAKPOINT_DWT" variable
+               (:default-value "0x000002a5"
+                :type "int")
+                nil [312 344])
+            ("BREAKPOINT_DWT_WRITE" variable
+               (:default-value "0x000002c5"
+                :type "int")
+                nil [345 383])
+            ("BREAKPOINT_FPB" variable
+               (:default-value "0x000002ed"
+                :type "int")
+                nil [384 416])
+            ("BREAKPOINT_FPB_WRITE" variable
+               (:default-value "0x00000311"
+                :type "int")
+                nil [417 455])
+            ("BREAKPOINT_TCMCR" variable
+               (:default-value "0x0000031d"
+                :type "int")
+                nil [456 490])
+            ("BREAKPOINT_TCMCR_WRITE" variable
+               (:default-value "0x00000325"
+                :type "int")
+                nil [491 531])
+            ("BREAKPOINT_CACHECTRL" variable
+               (:default-value "0x00000335"
+                :type "int")
+                nil [532 570])
+            ("BREAKPOINT_CACHECTRL_WRITE" variable
+               (:default-value "0x00000349"
+                :type "int")
+                nil [571 615])
+            ("BREAKPOINT_FPU" variable
+               (:default-value "0x00000359"
+                :type "int")
+                nil [616 648])
+            ("BREAKPOINT_FPU_WRITE" variable
+               (:default-value "0x00000371"
+                :type "int")
+                nil [649 687])
+            ("BREAKPOINT_NVIC" variable
+               (:default-value "0x00000407"
+                :type "int")
+                nil [688 721])
+            ("BREAKPOINT_NVIC_CLEAR_REGS" variable
+               (:default-value "0x0000049d"
+                :type "int")
+                nil [722 766]))          
+      :file "registers_symbols.h"
+      :pointmax 767
+      :fsize 766
+      :lastmodtime '(23485 14441 11516 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!real_trunk!test_result_m7!gcc483!test!cpus!CortexM7!Applications!Registers!Cortex-M7!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

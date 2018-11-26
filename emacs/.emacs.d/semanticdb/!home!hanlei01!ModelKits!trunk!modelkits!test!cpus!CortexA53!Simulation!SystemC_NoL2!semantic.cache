@@ -1,0 +1,58 @@
+;; Object SystemC_NoL2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC_NoL2/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++" "-g" "-O0" "-DSC_INCLUDE_DYNAMIC_PROCESSES" "-Wall" "-Wextra" "-Werror" "-Wno-unused-parameter" "-std=c++11")) nil [1 102])
+            ("SYSTEMC_INC" variable (:default-value ("$(SYSTEMC_HOME)/include/")) nil [136 175])
+            ("SYSTEMC_LIB" variable (:default-value ("$(SYSTEMC_HOME)/lib-linux64/")) nil [175 218])
+            ("A53_DIR" variable (:default-value ("./MODELS/CortexA53/A53_1CPU_min_8KL1_NoL2_AXI3/gcc/SystemC")) nil [218 287])
+            ("PMU" variable (:default-value ("True")) nil [330 339])
+            ("$(CM_SYSC_HOME)/makefiles/cm_sysc_common.mak" include nil nil [340 393])
+            ("system_test" function (:arguments ("system_test.o" "CortexA53ResetImp.o")) nil [414 815])
+            ("system_test" function (:arguments ("system_test.o" "CortexA53ResetImp.o")) nil [842 1248])
+            ("system_test" function (:arguments ("system_test.o" "CortexA53ResetImp.o")) nil [1254 1374])
+            ("system_test.o" function (:arguments ("system_test.cpp")) nil [1387 1548])
+            ("CortexA53ResetImp.o" function (:arguments ("$(A53_DIR)/CortexA53ResetImp.cpp")) nil [1549 1727])
+            ("clean" function nil nil [1728 1755]))          
+      :file "Makefile"
+      :pointmax 1757
+      :fsize 1756
+      :lastmodtime '(22811 13980 64566 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/RAMBlock.h" include nil nil [831 859])
+            ("models/SimpleBus.h" include nil nil [860 889])
+            ("models/BasicUART.h" include nil nil [890 919])
+            ("models/ElfLoader.h" include nil nil [920 949])
+            ("CortexA53Imp.h" include nil nil [950 975])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [976 1022])
+            ("iostream" include (:system-flag t) nil [1024 1043])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1045 1069])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1083 1092])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1093 1106]))                  
+                :type "int")
+                nil [1071 3094]))          
+      :file "system_test.cpp"
+      :pointmax 3095
+      :fsize 3094
+      :lastmodtime '(22811 10153 835627 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!CortexA53!Simulation!SystemC_NoL2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

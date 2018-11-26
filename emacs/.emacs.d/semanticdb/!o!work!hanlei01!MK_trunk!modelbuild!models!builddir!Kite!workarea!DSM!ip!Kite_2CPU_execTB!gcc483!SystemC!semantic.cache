@@ -1,0 +1,35 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "libKite.systemc.dsm.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("libKite_SYSTEMC_H" variable (:constant-flag t) nil [97 114])
+            ("cctype" include (:system-flag t) nil [240 257])
+            ("systemc.h" include nil nil [260 280])
+            ("carbon/carbon_sc_multiwrite_signal.h" include nil nil [281 328])
+            ("carbon/carbon_capi.h" include nil nil [354 385])
+            ("carbon/carbon_dbapi.h" include nil nil [416 448])
+            ("ARM_CM_SC_MSG_ID" variable (:constant-flag t) nil [490 506])
+            ("scx/scx_dummy.h" include (:system-flag t) nil [525 551])
+            ("scx/scx_wrapper_feature.h" include nil nil [552 588])
+            ("icm/api/icm_types.h" include nil nil [590 620])
+            ("scx::scx_debug_params_if" variable
+               (:typemodifiers ("virtual")
+                :type "int")
+                nil [688 77086]))          
+      :file "libKite.systemc.dsm.h"
+      :pointmax 77095
+      :fsize 77094
+      :lastmodtime '(23386 4089 393845 0)
+      :unmatched-syntax '((PUBLIC 681 . 687) (punctuation 679 . 680) (symbol 657 . 672) (punctuation 656 . 657) (punctuation 655 . 656) (symbol 652 . 655) (PUBLIC 645 . 651) (punctuation 643 . 644) (semantic-list 630 . 636) (symbol 621 . 630) (PUBLIC 681 . 687) (punctuation 679 . 680) (symbol 657 . 672) (punctuation 656 . 657) (punctuation 655 . 656) (symbol 652 . 655) (PUBLIC 645 . 651) (punctuation 643 . 644) (semantic-list 630 . 636) (symbol 621 . 630))
+      :lexical-table 
+        '(("ARM_CM_SC_MSG_ID" . ((string "\"ARM_CM\"" 507 . 515)))
+          ("libKite_SYSTEMC_H")
+          )
+))
+  :file "!o!work!hanlei01!MK_trunk!modelbuild!models!builddir!Kite!workarea!DSM!ip!Kite_2CPU_execTB!gcc483!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

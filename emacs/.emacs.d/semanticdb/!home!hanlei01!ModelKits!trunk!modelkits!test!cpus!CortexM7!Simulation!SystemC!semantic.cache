@@ -1,0 +1,43 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [846 875])
+            ("models/RAMBlock.h" include nil nil [876 904])
+            ("models/SimpleBus.h" include nil nil [905 934])
+            ("models/BasicUART.h" include nil nil [935 964])
+            ("models/ElfLoader.h" include nil nil [965 994])
+            ("libCortexM7.tlm.h" include nil nil [995 1023])
+            ("tlm_utils/simple_target_socket.h" include (:system-flag t) nil [1024 1067])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [1068 1114])
+            ("iostream" include (:system-flag t) nil [1116 1135])
+            ("scx/scx.h" include (:system-flag t) nil [1137 1157])
+            ("scx_simcontroller.cpp" include (:system-flag t) nil [1158 1190])
+            ("scx_scheduler_mapping.cpp" include (:system-flag t) nil [1191 1227])
+            ("scx_report_handler.cpp" include (:system-flag t) nil [1228 1261])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1263 1287])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1301 1310])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1311 1324]))                  
+                :type "int")
+                nil [1289 4176]))          
+      :file "system_test.cpp"
+      :pointmax 4177
+      :fsize 4176
+      :lastmodtime '(23460 8291 503897 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!CortexM7!Simulation!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

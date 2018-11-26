@@ -1,0 +1,128 @@
+;; Object Systems/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Systems/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/AXIMonitor.h" include nil nil [831 861])
+            ("models/RAMBlock.h" include nil nil [862 890])
+            ("models/SimpleBus.h" include nil nil [891 920])
+            ("models/BasicUART.h" include nil nil [921 950])
+            ("models/ElfLoader.h" include nil nil [951 980])
+            ("CortexA53Imp.h" include nil nil [981 1006])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [1007 1053])
+            ("iostream" include (:system-flag t) nil [1055 1074])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1076 1100])
+            ("dummyInitiator" type
+               (:superclasses 
+                  ( ("sc_module" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("isocket" variable (:type ("tlm_utils::simple_initiator_socket" type
+                         (:template-specifier 
+                            ( ("dummyInitiator" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1139 1198])
+                    ("SC_CTOR" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type ("dummyInitiator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1210 1225]))                          
+                        :type ("dummyInitiator" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [1202 1254]))                  
+                :type "struct")
+                nil [1102 1257])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1271 1280])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1281 1294]))                  
+                :type "int")
+                nil [1259 4058]))          
+      :file "system_test.cpp"
+      :pointmax 4059
+      :fsize 3978
+      :lastmodtime '(22806 11484 259759 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++" "-g" "-O0" "-DSC_INCLUDE_DYNAMIC_PROCESSES" "-Wall" "-Wextra" "-Werror" "-Wno-unused-parameter" "-std=c++11")) nil [27 129])
+            ("SYSTEMC_INC" variable (:default-value ("$(SYSTEMC_HOME)/include/")) nil [129 168])
+            ("SYSTEMC_LIB" variable (:default-value ("$(SYSTEMC_HOME)/lib-linux64/")) nil [168 211])
+            ("A53_DIR" variable (:default-value ("../MODELS/CortexA53_1CPU/gcc/SystemC")) nil [211 258])
+            ("all" function (:arguments ("system_test" "system_test_conf")) nil [354 388])
+            ("system_test" function (:arguments ("system_test.o")) nil [389 916])
+            ("system_test.o" function (:arguments ("system_test.cpp")) nil [917 1175])
+            ("system_test_conf" function (:arguments ("system_test_conf.o")) nil [1176 1713])
+            ("system_test_conf.o" function (:arguments ("system_test_conf.cpp")) nil [1714 1982])
+            ("clean" function nil nil [1983 2030]))          
+      :file "Makefile"
+      :pointmax 2032
+      :fsize 2031
+      :lastmodtime '(22806 12048 178978 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "system_test_conf.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/AXIMonitor.h" include nil nil [831 861])
+            ("models/RAMBlock.h" include nil nil [862 890])
+            ("models/SimpleBus.h" include nil nil [891 920])
+            ("models/BasicUART.h" include nil nil [921 950])
+            ("models/ElfLoader.h" include nil nil [951 980])
+            ("CortexA53Imp.h" include nil nil [981 1006])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [1007 1053])
+            ("iostream" include (:system-flag t) nil [1055 1074])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1076 1100])
+            ("dummyInitiator" type
+               (:superclasses 
+                  ( ("sc_module" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("isocket" variable (:type ("tlm_utils::simple_initiator_socket" type
+                         (:template-specifier 
+                            ( ("dummyInitiator" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1139 1198])
+                    ("SC_CTOR" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type ("dummyInitiator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1210 1225]))                          
+                        :type ("dummyInitiator" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [1202 1254]))                  
+                :type "struct")
+                nil [1102 1257])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1271 1280])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1281 1294]))                  
+                :type "int")
+                nil [1259 3980]))          
+      :file "system_test_conf.cpp"
+      :pointmax 3981
+      :fsize 3980
+      :lastmodtime '(22806 12196 30036 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!tmp!A53-SysC-V8.1.1-CMS8.2.1-MK2016.06.30-SOCD8.4.0!Systems!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

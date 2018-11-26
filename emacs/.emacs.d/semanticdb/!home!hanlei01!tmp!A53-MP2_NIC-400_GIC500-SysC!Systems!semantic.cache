@@ -1,0 +1,76 @@
+;; Object Systems/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Systems/"
+  :tables
+  (list
+    (semanticdb-table "system_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [801 820])
+            ("time.h" include (:system-flag t) nil [821 838])
+            ("CORTEXA53_2CPU_AXI3Imp.h" include nil nil [840 875])
+            ("GIC500Imp.h" include nil nil [876 898])
+            ("NIC400Imp.h" include nil nil [899 921])
+            ("BP140Imp.h" include nil nil [922 943])
+            ("BP140_TrickBoxImp.h" include nil nil [944 974])
+            ("scx_signal_sizer.h" include nil nil [975 1004])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1954 1978])
+            ("SC_MODULE" function
+               (:arguments 
+                  ( ("" variable (:type ("Counter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1990 1998]))                  
+                :type "int")
+                nil [1980 2229])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2244 2253])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2254 2267]))                  
+                :type "int")
+                nil [2232 55305]))          
+      :file "system_test.cpp"
+      :pointmax 55306
+      :fsize 55305
+      :lastmodtime '(22815 17812 551710 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++" "-g" "-O0" "-DSC_INCLUDE_DYNAMIC_PROCESSES" "-Wall" "-Wextra" "-Werror" "-Wno-unused-parameter" "-Wno-unused-variable" "-DGENERATE_SLAVE_PORTS=1" "-std=c++11")) nil [98 245])
+            ("SYSTEMC_INC" variable (:default-value ("$(SYSTEMC_HOME)/include/")) nil [308 347])
+            ("SYSTEMC_LIB" variable (:default-value ("$(SYSTEMC_HOME)/lib-linux64/")) nil [347 390])
+            ("CPAK_DIR" variable (:default-value ("$(PWD)/..")) nil [390 411])
+            ("A53_DIR" variable (:default-value ("$(CPAK_DIR)/MODELS/CortexA53_2CPU_AXI/${CM_PLATFORM}/SystemC")) nil [411 482])
+            ("GIC500_DIR" variable (:default-value ("$(CPAK_DIR)/MODELS/GIC500_2Core/${CM_PLATFORM}/SystemC")) nil [482 550])
+            ("BP140_DIR" variable (:default-value ("$(CPAK_DIR)/MODELS/BP140/${CM_PLATFORM}/SystemC")) nil [550 610])
+            ("BP140_TrickBox_DIR" variable (:default-value ("$(CPAK_DIR)/MODELS/BP140_TrickBox/${CM_PLATFORM}/SystemC")) nil [610 688])
+            ("NIC400_DIR" variable (:default-value ("$(CPAK_DIR)/MODELS/NIC400/${CM_PLATFORM}/SystemC")) nil [688 750])
+            ("A53_BUILD_DIR" variable (:default-value ("$(A53_DIR)")) nil [963 990])
+            ("GIC500_BUILD_DIR" variable (:default-value ("$(GIC500_DIR)")) nil [990 1023])
+            ("BP140_BUILD_DIR" variable (:default-value ("$(BP140_DIR)")) nil [1023 1054])
+            ("BP140_TrickBox_BUILD_DIR" variable (:default-value ("$(BP140_TrickBox_DIR)")) nil [1054 1103])
+            ("NIC400_BUILD_DIR" variable (:default-value ("$(NIC400_DIR)")) nil [1103 1136])
+            ("PMU" variable (:default-value ("True")) nil [1202 1211])
+            ("system_test" function (:arguments ("$(A53_BUILD_DIR)/libCORTEXA53_2CPU_AXI3.so" "system_test.o" "CORTEXA53_2CPU_AXI3ResetImp.o" "GIC500ResetImp.o" "NIC400ResetImp.o" "BP140ResetImp.o" "BP140_TrickBoxResetImp.o")) nil [1231 1903])
+            ("system_test" function (:arguments ("$(A53_BUILD_DIR)/libCORTEXA53_2CPU_AXI3.so" "system_test.o" "CORTEXA53_2CPU_AXI3ResetImp.o" "GIC500ResetImp.o" "NIC400ResetImp.o" "BP140ResetImp.o" "BP140_TrickBoxResetImp.o")) nil [1929 2586])
+            ("system_test" function (:arguments ("system_test.o")) nil [2591 2691])
+            ("system_test.o" function (:arguments ("system_test.cpp")) nil [4170 4462])
+            ("CORTEXA53_2CPU_AXI3ResetImp.o" function (:arguments ("$(A53_BUILD_DIR)/CORTEXA53_2CPU_AXI3ResetImp.cpp")) nil [4464 4682])
+            ("GIC500ResetImp.o" function (:arguments ("$(GIC500_BUILD_DIR)/GIC500ResetImp.cpp")) nil [4684 4886])
+            ("NIC400ResetImp.o" function (:arguments ("$(NIC400_BUILD_DIR)/NIC400ResetImp.cpp")) nil [4888 5087])
+            ("BP140ResetImp.o" function (:arguments ("$(BP140_BUILD_DIR)/BP140ResetImp.cpp")) nil [5088 5282])
+            ("BP140_TrickBoxResetImp.o" function (:arguments ("$(BP140_TrickBox_BUILD_DIR)/BP140_TrickBoxResetImp.cpp")) nil [5283 5513])
+            ("clean" function nil nil [5514 5545]))          
+      :file "Makefile"
+      :pointmax 5675
+      :fsize 5674
+      :lastmodtime '(22813 46265 898773 0)
+      :unmatched-syntax '((semantic-list 1186 . 1199) (punctuation 1185 . 1186) (symbol 1165 . 1185) (semantic-list 1155 . 1165) (punctuation 1154 . 1155) (punctuation 1151 . 1152) (punctuation 1150 . 1151) (symbol 1137 . 1149) (bol 1137 . 1137) (symbol 261 . 307) (punctuation 259 . 260) (punctuation 258 . 259) (symbol 245 . 257) (bol 245 . 245))))
+  :file "!home!hanlei01!tmp!A53-MP2_NIC-400_GIC500-SysC!Systems!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

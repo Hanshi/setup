@@ -1,0 +1,70 @@
+;; Object SystemC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SystemC/"
+  :tables
+  (list
+    (semanticdb-table "system_test_1CPU.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/AXIMonitor.h" include nil nil [850 880])
+            ("models/RAMBlock.h" include nil nil [888 916])
+            ("models/SimpleBus.h" include nil nil [917 946])
+            ("models/BasicUART.h" include nil nil [947 976])
+            ("models/ElfLoader.h" include nil nil [977 1006])
+            ("CortexA32Imp.h" include nil nil [1007 1032])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [1033 1079])
+            ("iostream" include (:system-flag t) nil [1081 1100])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1102 1126])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1140 1149])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1150 1163]))                  
+                :type "int")
+                nil [1128 3662]))          
+      :file "system_test_1CPU.cpp"
+      :pointmax 3663
+      :fsize 3662
+      :lastmodtime '(22791 41048 311 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "system_test_4CPU.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("models/SimpleMem.h" include nil nil [801 830])
+            ("models/AXIMonitor.h" include nil nil [850 880])
+            ("models/RAMBlock.h" include nil nil [888 916])
+            ("models/SimpleBus.h" include nil nil [917 946])
+            ("models/BasicUART.h" include nil nil [947 976])
+            ("models/ElfLoader.h" include nil nil [977 1006])
+            ("CortexA32Imp.h" include nil nil [1007 1032])
+            ("tlm_utils/simple_initiator_socket.h" include (:system-flag t) nil [1033 1079])
+            ("iostream" include (:system-flag t) nil [1081 1100])
+            ("sc_core" using (:type ("sc_core" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1102 1126])
+            ("sc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1140 1149])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1150 1163]))                  
+                :type "int")
+                nil [1128 3670]))          
+      :file "system_test_4CPU.cpp"
+      :pointmax 3671
+      :fsize 3670
+      :lastmodtime '(22791 41071 429336 0)
+      :unmatched-syntax nil))
+  :file "!home!hanlei01!ModelKits!trunk!modelkits!test!cpus!CortexA32!Simulation!SystemC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
